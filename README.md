@@ -1,5 +1,7 @@
 *Current Version: 2.1.1 (Sep 2015)*
 
+*If you choose to host Curriculum Builder yourself, please note that EBSCO Support cannot provide assistance with the hosting and troubleshooting of your tool.  If you notice errors with the code, please let us know, but installing this tool locally means you assume all responsibility for the tool.*
+
 Thank you for downloading the EDS Reading List Tool.  This plugin is an LTI Tool Provider 1.0 (http://www.imsglobal.org/toolsinteroperability2.cfm), and is compatible with any learning management system that is LTI-compliant.  A list of compliant LMS's (including Moodle, Blackboard, Canvas, and Desire2Learn) can be found here: http://developers.imsglobal.org/catalog.html
 
 Please skip down to "Upgrading an Existing Installation" if you already have an earlier version of Curriculum Builder running.
@@ -70,4 +72,6 @@ You will be asked for a shared secret and consumer key.  You set this in the sec
 Set privacy setttings such that user names and emails will be shared with the tool if you want to enable student usage data collection.  Otherwise, these can be left to ‘Anonymous’ or ‘Private.’
 
 ## Curriculum Builder Administration
-To maintain the back-end database, open any reading list via your LMS, then change the browser URL to point to your tool's admin.php file.  Login with the consumer key and secret from above.  In this screen, you will configure CB to connect up with the EDS API, filling in the username, password, and profile information received from EBSCO support.
+To maintain the back-end database, set logos and branding elements, select adminstrative options, etc, point your browser to your tool's admin.php file.  Login with the consumer key and secret from above.  In this screen, you will configure CB to connect up with the EDS API, filling in the username, password, and profile information received from EBSCO support.
+
+For more information on administration, see http://ebsco.libguides.com/curriculumbuilder
