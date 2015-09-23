@@ -1,11 +1,11 @@
 
-Version 2.1.1 (Sep 2015)
+Current Version: 2.1.1 (Sep 2015)
 
 Thank you for downloading the EDS Reading List Tool.  This plugin is an LTI Tool Provider 1.0 (http://www.imsglobal.org/toolsinteroperability2.cfm), and is compatible with any learning management system that is LTI-compliant.  A list of compliant LMS's (including Moodle, Blackboard, Canvas, and Desire2Learn) can be found here: http://developers.imsglobal.org/catalog.html
 
 Please skip down to "Upgrading an Existing Installation" if you already have an earlier version of Curriculum Builder running.
 
-=== NEW INSTALLS (you have not installed Curriculum Builder before) ===
+<h2>NEW INSTALLS (you have not installed Curriculum Builder before)</h2>
 
 == ENVIRONMENT REQUIREMENTS ==
 The EDS-in-LMS Plugin requires PHP 5.x or higher, MySQL 5 or higher, and an Apache web server.  You will need to have the mcrypt libraries installed.
