@@ -1,0 +1,9 @@
+<?php
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+}
+include_once('app/app.php');
+include('rest/EBSCOAPI.php');
+include('basic_search.php');
+?>
