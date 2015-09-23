@@ -1,6 +1,6 @@
 *Current Version: 2.1.1 (Sep 2015)*
 
-*<span style="color:red">If you choose to host Curriculum Builder yourself, please note that EBSCO Support cannot provide assistance with the hosting and troubleshooting of your tool.  If you notice errors with the code, please let us know, but installing this tool locally means you assume all responsibility for the tool.</span>*
+*If you choose to host Curriculum Builder yourself, please note that EBSCO Support cannot provide assistance with the hosting and troubleshooting of your tool.  If you notice errors with the code, please let us know, but installing this tool locally means you assume all responsibility for the tool.*
 
 Thank you for downloading the EDS Reading List Tool.  This plugin is an LTI Tool Provider 1.0 (http://www.imsglobal.org/toolsinteroperability2.cfm), and is compatible with any learning management system that is LTI-compliant.  A list of compliant LMS's (including Moodle, Blackboard, Canvas, and Desire2Learn) can be found here: http://developers.imsglobal.org/catalog.html
 
