@@ -1,0 +1,34 @@
+Curriculum Builder Release Notes
+
+Version 2.1.1 Release Notes (Sep 2015)
+     Better support for Sakai LMS.
+     No longer required user’s name and email address.
+     Option to open the tool in a new window.
+
+Version 2.1 Release Notes (May 2015)
+     Session variables are no longer in use, and instead, browser cookies are leverages to power the tool.
+     The new administrative panel for Curriculum Builder allows libraries to configure elements of the user experience. New options include the ability to enable the collection of student names as they access readings, allowing faculty members to see who has done the readings and who hasn’t, as well as options to let faculty members see items that the library does not own in their search results. Your login for this new administrative panel will be the consumer key and secret provided in your Welcome Letter, not your user ID, password and profile information.
+     Faculty members can now use a drag-and-drop sorting mechanism to re-arrange the items on their reading lists and apply the sort order. Icons and book jackets are included in the reading list view, as well as full metadata (author, source, publication and date) for the readings. Support for different character sets in the notes field is improved.
+     Full support for HTTPS is now in place, so Curriculum Builder can be embedded in the frame of your learning management system, creating a more seamless connection. It no longer pops open a new window.
+     Quote/phrase searching and various special characters and languages are now supported in search. Customers who experienced difficulty when trying to apply a facet with special characters in it will now see an improved experience.
+
+Version 2.0 Release Notes
+     The application no longer needs to write to the server.  All information needed by the tool is stored in the MySQL database.
+     This application requires the use of the default session storage location.  If you receive an error when attempting to launch this tool that indicates your session storage is not writable, you will need to follow these steps:
+          Either make the default session storage location writable (recommended), or
+          Add this line just before all instances of the line session_start() in your code:
+          session_save_path(“session”);
+     Then create a directory (if it’s not already there) named session in the root directory of your application.  Set the permissions on this folder such that the webserver can write to it.
+     A Consumer Key/Secret has been added to the application to help prevent unauthorized use of your tool, along with a tool to administer your keys and secrets.
+     Minor bug fixes.
+
+Version 1.1 Release Notes
+     New administration tool that allows you to delete lists from the database (not just from the classes) and provides access to usage statistics. Log in to any reading list, then direct your browser to admin.php 
+     Default of list privacy is set to private. 
+     Improved error messaging for installation process. 
+     Bug fixes: 
+          Reading lists from other institutions might appear in “Copy list” functionality 
+          Detailed records on searches that contained “AND” would display an error 
+          Websites saved to the reading list with hashed would not display in the reading list 
+
+Version 1.0 (Initial Release)
