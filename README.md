@@ -2,7 +2,7 @@
 
 *If you choose to host Curriculum Builder yourself, please note that EBSCO Support cannot provide assistance with the hosting and troubleshooting of your tool.  If you notice errors with the code, please let us know, but installing this tool locally means you assume all responsibility for the tool.*
 
-Thank you for downloading the EDS Reading List Tool.  This plugin is an LTI Tool Provider 1.0 (http://www.imsglobal.org/toolsinteroperability2.cfm), and is compatible with any learning management system that is LTI-compliant.  A list of compliant LMS's (including Moodle, Blackboard, Canvas, and Desire2Learn) can be found here: http://developers.imsglobal.org/catalog.html
+Thank you for downloading Curriculum Builder: Open Source.  This plugin is an LTI Tool Provider 1.0 (http://www.imsglobal.org/toolsinteroperability2.cfm), and is compatible with any learning management system that is LTI-compliant.  A list of compliant LMS's (including Moodle, Blackboard, Canvas, and Desire2Learn) can be found here: http://developers.imsglobal.org/catalog.html
 
 Please skip down to **Upgrading an Existing Installation** if you already have an earlier version of Curriculum Builder running.
 
@@ -10,11 +10,32 @@ Please skip down to **Upgrading an Existing Installation** if you already have a
 
 ### Environment Requirements
 
-The EDS-in-LMS Plugin requires PHP 5.x or higher, MySQL 5 or higher, and an Apache web server.  You will need to have the **mcrypt** libraries installed.
+This tool requires PHP 5.x or higher, MySQL 5 or higher, and an Apache web server.  You will need to have the **mcrypt** libraries installed.
 
-You will also need an EDS API profile on your account, along with its profileid and an associated username and password.  These can be obtained from EBSCO.  Please send a request as follows:
+Even if you intend to use this for EBSCOhost-only databases, you will also need an EDS API profile on your account, along with its profileid and an associated username and password.  
 
+If you are a current EDS customer, then send the following as an email to support@ebsco.com in order to get an API profile and the required credentials:
 "I would like to request a new EDS API profile be set up on our account.  Please ensure that this profile contains the same databases, CustomLinks, and all other settings as found on our main EDS profile.  When this profile has been created, please create a new user in the Authentication tab that has access to the group that contains this EDS API profile.  Finally, please send me this new userid, its associated password, and the profileid for the EDS API profile you create.  This is for the EDS Reading List Tool."
+
+If you are NOT an EDS customer, you can build your API profile yourself pretty quickly following these instructions:
+
+1. In EBSCOadmin, click on *Profile Maintenance*
+2. Click on *Add New Profile*
+3. Give your profile an ID (recommended: *cbuilder*) - you'll need this later
+4. Give your profile a name (recommended: *Self-Hosted Curriculum Builder*)
+5. In the **Interface** dropdown, select EDS API
+6. The rest of the options can stay at their defaults.  Click Submit and it will build your profile.
+7. Click *Customize Services* at the top of the screen
+8. Select your new EDS API Profile (the one titled with the name provided in step 4) from the **Choose Profile** dropdown menu
+9. Click on the *Databases* tab and *Enable All* databases in the tab.  You can also be more selective if you'd rather leave some databases out.  Click *Submit* when done.
+10. In the *Searching* tab, click on *Modify* next to **Limiters**
+11. Default the *Full Text* limiter to **on**.  You can also sort and relabel the other limiters here.
+12. Click *Submit*, then click *View Changes on EBSCO* near the top of the settings.  This will take you to the EDS API Console - you do not have to do anything here.  Clicking the link was required to "push" the changes.
+13. In EBSCOadmin, click on the *Authentication* tab
+14. In the *UserID/Password* tab, click *Add New User*
+15. Make sure the *Group ID* is set to **Main User Group**, then create a new userID and password for Curriculum Builder and write them down somewhere.  You'll need these and the profile ID from step 3 later.
+16. Click *Submit*
+
 
 ### Setting up the Database
 
@@ -47,6 +68,9 @@ studentreadings | records student names as they access individual readings
 1. Open the **conf/keys.php** file found in the conf directory.
 2. Set the **username** and **password** variables to whatever values you wish.  This username and password is used only to log in to **manageaccess.php** and no where else.  If possible, restrict access to manageaccess.php to a local IP address.
 3. Point your web browser to the **manageaccess.php** file.  Log in with the username and password set in **conf/keys.php**.  Here, you will need to create at least one Consumer Key/Secret combination.  It can be any value you wish.
+4. Once created, click on *Configure / Admin* in the row for that key/secret combination.  This will launch the admin panel for that key/secret pair.
+5. Fill in all the options, and for EBSCO User ID, Password and Profile ID, use the values you received from EBSCO or that you created yourself from the **Environment Requirements** above.
+
   * *If you wish to have multiple institutions connect to your tool, it is advisable to create a separate Consumer Key/Secret combination for each one.*
     
 ## Upgrading an existing Curriculum Builder installation without GitHub
@@ -64,12 +88,6 @@ Your instance of Curriculum Builder is now up-to-date.
 ## Configuring Your Learning Management System
 
 Videos and instructions can be found at http://ebsco.libguides.com/curriculumbuilder
-
-Generally, you will follow the steps required of any LTI Tool Provider.  General instuctions for configuring an LTI tool in many LMS's can be found here: http://support.campusconcourse.com/entries/21762847-How-do-I-setup-an-LTI-consumer-in-my-specific-LMS-
-
-You will be asked for a **shared secret** and **consumer key**.  You set this in the section above.
-
-Set privacy setttings such that user **names and emails** will be shared with the tool if you want to enable student usage data collection.  Otherwise, these can be left to ‘Anonymous’ or ‘Private.’
 
 ## Curriculum Builder Administration
 To maintain the back-end database, set logos and branding elements, select adminstrative options, etc, point your browser to your tool's **admin.php** file.  Login with the consumer key and secret from above.  In this screen, you will configure Curriculum Builder to connect up with the EDS API, filling in the username, password, and profile information received from EBSCO support.
