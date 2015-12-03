@@ -19,6 +19,7 @@
 	$priority = $clean['priority'];
 	$url = $clean['url'];
 	$type = $clean['type'];
+	$folder = $clean['folder'];
 	if (isset($clean['instruct'])) {
 		$text = $clean['instruct'];
 	} else {
@@ -26,7 +27,11 @@
 	}
 	
 	if ($action == "1") {
-		$sql = 'INSERT INTO readings (listid, authorid, an, db, url, instruct, title, priority, type) VALUES ('. $listid .',' . $authorID . ',"' . $an . '", "' . $db . '","' . $url . '","' . $text . '","' . $title . '",'. $priority .',' . $type . ');';
+		if (strlen($folder) > 0) {
+			$sql = 'INSERT INTO readings (listid, authorid, an, db, url, instruct, title, priority, type, folderid) VALUES ('. $listid .',' . $authorID . ',"' . $an . '", "' . $db . '","' . $url . '","' . $text . '","' . $title . '",'. $priority .',' . $type . ','.$folder.');';
+		} else {
+			$sql = 'INSERT INTO readings (listid, authorid, an, db, url, instruct, title, priority, type) VALUES ('. $listid .',' . $authorID . ',"' . $an . '", "' . $db . '","' . $url . '","' . $text . '","' . $title . '",'. $priority .',' . $type . ');';			
+		}
 		$results = mysqli_query($c,$sql);
 		echo $sql;
 	} else if ($action == "2") {

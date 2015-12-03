@@ -1,14 +1,34 @@
 <?php
 
 include_once('app/app.php');
+
 $customparams = loadCustomParams($c,decryptCookie($_COOKIE['oauth_consumer_key']));
 include('rest/EBSCOAPI.php');
+
+$clean = strip_tags_deep($_GET);
+
+// temporary - to not collect data on linked lists
+if (isset($_COOKIE['link'])) {
+    $customparams['studentdata'] = 'n';
+}
 
 if (($customparams['studentdata'] == "y") && (!(isInstructor()))) {
     $email = isset($_COOKIE['lis_person_contact_email_primary']) ? decryptCookie($_COOKIE['lis_person_contact_email_primary']) : '';
     recordStudentAccess($c,decryptCookie($_COOKIE['lis_person_name_full']),$email,decryptCookie($_COOKIE['currentListId']));
 }
-$readingList = getReadingList($c);
+
+if (isset($clean['folderid'])) {
+    if (folderExists($c,$clean['folderid'])) {
+        $readingList = getFolderContents($c,$clean['folderid']);
+    } else {
+        header("Location: reading_list.php");
+    }
+} else {
+    $readingList = getReadingList($c);    
+}
+
+$listoffolders = getFolderList($c);
+
 $useCache = false;
 if (sizeof($readingList) >= 75) {
     $results = array();
@@ -83,8 +103,9 @@ $variables = array(
     'readingList'    => $readingList,
     'c'              => $c,
     'customparams'   => $customparams,
-    'useCache'       => $useCache
-    
+    'useCache'       => $useCache,
+    'listoffolders'  => $listoffolders,
+    'clean'          => $clean
 );
 
 ebsco_render('reading_list.html', 'layout.html',$variables);

@@ -1,5 +1,21 @@
 Curriculum Builder Release Notes
 
+Version 2.2 Release Notes (Nov 2015)
+     Foldering Options in Reading Lists
+     For users who only want (or who can only have) one reading list in their course, it hasn't been easy to organize a large number of readings in a single, long list.  With the December release of Curriculum Builder we are introducing folder options that will allow instructors and list authors to build folder of items to make it easier to categorize and organize their readings within a single Curriculum Builder reading list.
+
+     Linking to Curated and Canonical Lists
+     Many institutions leverage instructional designers or librarians to build lists on behalf of their instructional faculty.  In the past, when a designer or librarian has made a list, the faculty member would have to use the Import from Existing List features to bring that list into their own list, creating a copy of the original list.  Instructors will now be able to link to an existing list, making it much easier to manage a list from a central location and have all changes reflected everywhere that list is linked.  This also greatly benefits the LMS copy-course functionality, eliminating the need for faculty to recreate their lists each semester and instead, recreating just the link to the existing, canonical list.  
+
+     Migration Tool
+     Anyone can now migrate and export their reading lists between two different Curriculum Builder systems (e.g., exporting from a locally hosted Curriculum Builder to our cloud-based one, or vice-versa).  
+
+     Privacy Upgrades
+     It is no longer required to share user names and emails with Curriculum Builder, but it is still encourages to make statistics reporting easier to read (e.g., who's using the tool versus who isn't), and it is still required if you want faculty to be able to see which students have clicked on the readings and which ones haven't.
+
+     Minor Updates
+     Improved full text link display, better support for embedding Curriculum Builder in a frame in the LMS due to HTTPS security issues.  Email at bottom of the screen is now a link instead of just plain text.  Teachers Assistants can now edit lists.  Downloadable CSV files detailing what readings are in what lists.  Ability to show only the first full text link on the reading list (detailed records will still show multiple full text links as available).  Full text link now shows on the reading list itself, not just the detailed record.
+
 Version 2.1.1 Release Notes (Sep 2015)
      Better support for Sakai LMS.
      No longer required user’s name and email address.

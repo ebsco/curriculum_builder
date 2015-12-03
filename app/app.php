@@ -253,7 +253,7 @@ function getReadingListPreviewMetadata ($c,$listid) {
 }
 
 function getReadingList ($c) {
-     $sql = 'SELECT id, an, db, title, url, type, priority, instruct, notes FROM readings WHERE listid = ? ORDER BY priority, title;';
+    $sql = 'SELECT id, an, db, title, url, type, priority, instruct, notes, folderid FROM readings WHERE listid = ? AND folderid IS NULL ORDER BY priority, title;';
     $stmt = $c->prepare($sql);
     
     $listid = decryptCookie($_COOKIE['currentListId']);
@@ -373,7 +373,7 @@ function loadCustomParams() {
     $c = func_get_arg(0);
     $oauth_consumer_key = func_get_arg(1);
     
-    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow FROM oauth WHERE oauth_consumer_key = ?';
+    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow, firstftonly, helppages FROM oauth WHERE oauth_consumer_key = ?';
     $stmt = $c->prepare($sql);
     $stmt->bind_param('s',$oauth_consumer_key);
     $stmt->execute();
@@ -430,7 +430,6 @@ function isInstructor () {
      }
      return false;
 }
-
 
 function strip_tags_deep($value)
 {
@@ -554,6 +553,249 @@ function getStudentNamesList($c,$listid) {
         }
     }
     return $students;
+}
+
+function add_to_folder($c,$readingid,$folderid) {
+    $sql = "UPDATE readings SET folderid = ? WHERE id = ?";
+    $stmt = $c->prepare($sql);
+    $stmt->bind_param('ii',$folderid,$readingid);
+    $stmt->execute();
+}
+
+function getFolderContents($c,$folderid) {
+    $sql = 'SELECT id, an, db, title, url, type, priority, instruct, notes, folderid FROM readings WHERE listid = ? AND folderid = ? ORDER BY priority, title;';
+    $stmt = $c->prepare($sql);
+    
+    $listid = decryptCookie($_COOKIE['currentListId']);
+    $stmt->bind_param('ii',$listid,$folderid);
+    $stmt->execute();
+    $folderitems = $stmt->get_result();
+    
+     if ($folderitems) {
+          $numFolderItems = mysqli_num_rows($folderitems);
+          if ($numFolderItems > 0) {
+                  for ($i = 0; $i < $numFolderItems; $i++) {
+                          $folderitemsarray[$i] = mysqli_fetch_array($folderitems);
+                  }
+          } else {
+               $folderitemsarray = new stdClass();
+          }
+          return $folderitemsarray;
+     }
+     $folderitemsarray = new stdClass();
+     return $folderitemsarray;   
+}
+
+function check_reading_in_list($c,$readingid,$listid) {
+    $sql = 'SELECT id FROM readings WHERE id = ? AND listid = ?;';
+    $stmt = $c->prepare($sql);
+    
+    $stmt->bind_param('ii',$readingid,$listid);
+    $stmt->execute();
+    $folderitems = $stmt->get_result();
+    
+    if ($folderitems) {
+        $numFolderItems = mysqli_num_rows($folderitems);
+        if ($numFolderItems > 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function getFolderList($c) {
+    $sql = 'SELECT id, label FROM folders WHERE listid = ?;';
+    $stmt = $c->prepare($sql);
+    
+    $listid = decryptCookie($_COOKIE['currentListId']);
+    $stmt->bind_param('i',$listid);
+    $stmt->execute();
+    $folderitems = $stmt->get_result();
+    
+     if ($folderitems) {
+          $numFolderItems = mysqli_num_rows($folderitems);
+          if ($numFolderItems > 0) {
+                  for ($i = 0; $i < $numFolderItems; $i++) {
+                          $folderitemsarray[$i] = mysqli_fetch_array($folderitems);
+                  }
+          } else {
+               $folderitemsarray = array();
+          }
+          return $folderitemsarray;
+     }
+     $folderitemsarray = array();
+     return $folderitemsarray;   
+}
+
+function add_new_folder($c,$listid,$label) {
+    $sql = 'INSERT INTO folders (label,listid) VALUES (?,?);';
+    $stmt = $c->prepare($sql);
+    
+    $stmt->bind_param('si',$label,$listid);
+    $stmt->execute();
+    $folderitems = $stmt->get_result();
+}
+
+function folderitemcount($c,$folderid) {
+    $sql = 'SELECT id FROM readings WHERE folderid = ?;';
+    $stmt = $c->prepare($sql);
+    
+    $stmt->bind_param('i',$folderid);
+    $stmt->execute();
+    $folderitems = $stmt->get_result();
+    
+     if ($folderitems) {
+          $numFolderItems = mysqli_num_rows($folderitems);
+            return $numFolderItems;
+     } else {
+        return 0;
+     }
+}
+
+function delete_folder($c,$folderid) {
+    $sql = 'DELETE FROM readings WHERE folderid = ?;';
+    $stmt = $c->prepare($sql);
+    $stmt->bind_param('i',$folderid);
+    $stmt->execute();
+    $sql = 'DELETE FROM folders WHERE id = ?;';
+    $stmt = $c->prepare($sql);
+    $stmt->bind_param('i',$folderid);
+    $stmt->execute();
+}
+
+function folderExists($c,$folderid) {
+    $sql = 'SELECT id FROM folders WHERE id = ?;';
+    $stmt = $c->prepare($sql);
+    
+    $stmt->bind_param('i',$folderid);
+    $stmt->execute();
+    $folderitems = $stmt->get_result();
+    
+     if ($folderitems) {
+          $numFolderItems = mysqli_num_rows($folderitems);
+          if ($numFolderItems > 0) {
+            return true;
+          } else {
+            return false;
+          }
+     } else {
+        return false;
+     }  
+}
+
+function export_readings($c,$credentialconsumerid) {
+    $sql = 'SELECT lists.course, lists.linklabel, readings.an, readings.db, readings.title FROM lists,readings WHERE readings.listid = lists.id AND readings.type=1 AND lists.credentialconsumerid = ?;';
+    $stmt = $c->prepare($sql);
+    
+    $stmt->bind_param('i',$credentialconsumerid);
+    $stmt->execute();
+    $folderitems = $stmt->get_result();
+    
+     if ($folderitems) {
+          $numFolderItems = mysqli_num_rows($folderitems);
+          if ($numFolderItems > 0) {
+            return $folderitems;
+          } else {
+            return false;
+          }
+     } else {
+        return false;
+     }  
+}
+
+function export_all_sql($c,$credentialconsumerid) {
+    $sql = 'SELECT authors.fullname AS authors_fullname, authors.email AS authors_emails, authors.lms_id AS authors_lmsid, readings.id AS readings_id, readings.an AS readings_an, readings.db AS readings_db, readings.title AS readings_title, readings.priority AS readings_priority, readings.notes AS readings_notes, readings.url AS readings_url, readings.type AS readings_type, readings.instruct AS readings_instruct, readings.folderid AS readings_folderid, folders.label AS folders_label, lists.linklabel AS lists_linklabel, lists.course AS lists_course, lists.linkid AS lists_linkid, lists.private AS lists_private, lists.last_access AS lists_last_access, credentials.userid AS credentials_userid, credentials.password AS credentials_password, credentials.profile AS credentials_profile, credentialconsumers.`credentialid` AS credentialconsumers_credentialid, credentialconsumers.consumerid AS credentialconsumers_consumerid FROM readings INNER JOIN lists ON readings.listid = lists.id INNER JOIN credentialconsumers ON credentialconsumers.id = lists.credentialconsumerid INNER JOIN credentials ON credentials.id = credentialconsumers.credentialid INNER JOIN authors ON authors.id = readings.authorid LEFT OUTER JOIN folders ON folders.id = readings.folderid WHERE credentials.id=?;';
+    $stmt = $c->prepare($sql);
+    
+    $stmt->bind_param('i',$credentialconsumerid);
+    $stmt->execute();
+    $folderitems = $stmt->get_result();
+    
+     if ($folderitems) {
+          $numFolderItems = mysqli_num_rows($folderitems);
+          if ($numFolderItems > 0) {
+            return $folderitems;
+          } else {
+            return false;
+          }
+     } else {
+        return false;
+     }  
+}
+
+function fixprotocol ($url) {
+    return preg_replace('/http:/', '', $url, 1);    
+}
+
+function textinbrief ($text,$charcount) {
+    $pos=strpos($text, ' ', $charcount);
+    return substr($text,0,$pos ); 
+}
+
+function parseQueryString ($str) {
+  # result array
+  $arr = array();
+
+  # split on outer delimiter
+  $pairs = explode('&', $str);
+
+  # loop through each pair
+  foreach ($pairs as $i) {
+    # split into name and value
+    list($name,$value) = explode('=', $i, 2);
+   
+    # if name already exists
+    if( isset($arr[$name]) ) {
+      # stick multiple values into an array
+      if( is_array($arr[$name]) ) {
+        $arr[$name][] = $value;
+      }
+      else {
+        $arr[$name] = array($arr[$name], $value);
+      }
+    }
+    # otherwise, simply stick it in a scalar
+    else {
+      $arr[$name] = $value;
+    }
+  }
+
+  $explimqs = '';
+  
+  if (isset($arr['expander'])) {
+    if (is_array($arr['expander'])) {
+        foreach($arr['expander'] as $expander) {
+            $explimqs .= "&expander[]=".$expander;
+        }
+    } else {
+        $explimqs .= "&expander=".$arr['expander'];
+    }    
+  }
+  
+  if (isset($arr['limiter'])) {
+    if (is_array($arr['limiter'])) {
+        foreach($arr['limiter'] as $limiter) {
+            $explimqs .= "&limiter[]=".$limiter;
+        }
+    } else {
+        $explimqs .= "&limiter=".$arr['limiter'];
+    }
+  }
+  # return result array
+  
+  if (isset($arr['view'])) {
+    $explimqs .= "&view=".$arr['view'];
+  }
+  
+  if (isset($arr['resultsperpage'])) {
+    $explimqs .= "&resultsperpage=".$arr['resultsperpage'];
+  }
+  
+  if (isset($arr['highlight'])) {
+    $explimqs .= "&highligh=".$arr['highlight'];
+  }
+  return $explimqs;
+
 }
 
 ?>

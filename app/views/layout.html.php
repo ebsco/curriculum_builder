@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="web/pubtype-icons.css" />
 	<?php
 	  if ((isset($customparams['css'])) && (strlen($customparams['css']) > 0)) {
-	    echo '<link rel="stylesheet" href="'.$customparams['css'].'" type="text/css" media="screen" />';
+	    echo '<link rel="stylesheet" href="'.fixprotocol($customparams['css']).'" type="text/css" media="screen" />';
 	  }
 	?>
         <link rel="shortcut icon" href="web/favicon.ico" />
@@ -25,7 +25,7 @@
             <?php
                 if ((isset($customparams['liblogo'])) && ($customparams['liblogo'] != '')) {
             ?>
-            <div><a id="logo" width="120" href="<?php
+            <div><a id="logo" width="120" target="_blank" href="<?php
             
             if ((isset($customparams['liblink'])) && ($customparams['liblink'] != '')) {
                 echo strip_tags_for_display($customparams['liblink']);
@@ -33,7 +33,7 @@
                 echo "#";
             }
             
-            ?>" style='background: url("<?php echo strip_tags_for_display($customparams['liblogo']); ?>") no-repeat scroll left center transparent; background-size:contain;'></a></div>
+            ?>" style='background: url("<?php echo strip_tags_for_display(fixprotocol($customparams['liblogo'])); ?>") no-repeat scroll left center transparent; background-size:contain;'></a></div>
             <?php
                 }
             ?>
@@ -71,7 +71,9 @@
 		    echo ' | ';
 		}
 		if (isInstructor()) {
-                    echo '<a href="reading_list.php">See Current Reading List</a>';
+                    echo '<a href="reading_list.php';
+		    if (isset($clean['folderid'])) { echo "?folderid=" . $clean['folderid']; }
+		    echo '">See Current Reading List</a>';
                 }
 	    ?></div>
 	<?php } ?>
@@ -79,23 +81,31 @@
             <?php echo $content; ?>
         </div>
         <div class="footer">        
-            <div class="span-5">
+            <div class="span-5" style="width:100%;">
                <div style="color: #666666; font-size:small;">
                 <?php if ((isset($customparams['libemail'])) && ($customparams['libemail'] != '')) {
-                  echo "Contact " . $customparams['libemail'] . " for assistance with this tool.";    
+                  echo "Contact <a target='_blank' href='mailto:" . $customparams['libemail'] . "'>" . $customparams['libemail'] . "</a> for assistance with this tool.";    
                 }
                 if ((isset($customparams['liblink'])) && ($customparams['liblink'] != '')) {
                     echo "<br /><a target='_blank' href='" . strip_tags_for_display($customparams['liblink']) . "'>Library Home</a>";
                 }
+		if ((isset($customparams['helppages'])) && ($customparams['helppages'] != '')) {
+                    echo "<br /><a target='_blank' href='" . strip_tags_for_display($customparams['helppages']) . "'>Help Using this Tool</a>";		    
+		}
 		if ((isset($customparams['copyright'])) && ($customparams['copyright'] != '')) {
 		  echo "<br /><br /><a name='copyright'><span style='color:#666666'>".$customparams['copyright']."</span>";
 		}
+		if (isInstructor()) {
                 ?>
-                
+                <span style="float:right; font-size:smaller; color:#999999;"><strong>List ID</strong>: <?php echo decryptCookie($_COOKIE['currentLinkId']); ?></span>
+		<?php
+		}
+		?>
                </div>
            </div>
         </div>
         </div>
 	<div class="debug" style="display:none;"><?php if (isset($_SESSION['debug'])) { echo $_SESSION['debug']; } ?></div>
     </body>
+    <script type="text/javascript" src="//widgets.ebscohost.com/prod/common/branding/curriculumbuilder.js"></script>
 </html>

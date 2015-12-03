@@ -6,12 +6,15 @@ $folderitemsarray = getFolderItems($c);
 
 if (isset($results['queryString'])) {
    $queryStringUrl = $results['queryString'];
+   $emplimqs = parseQueryString($queryStringUrl);
 }
 
 
 if (!(($fieldCode == 'AU') || ($fieldCode == 'TI'))){
    $fieldCode = 'keyword';
 }
+
+
 
 
 // URL used by facets links
@@ -350,7 +353,7 @@ if (!(isInstructor())) {
 
 <?php } ?>
 
-<div class="facet" style="font-size: 80%">
+<div class="facets" style="font-size: 80%">
 
                 <dl class="facet-label">
 
@@ -775,7 +778,7 @@ if (!(isInstructor())) {
 
                     <a href="record.php?db=<?php echo $result['DbId']; ?>&an=<?php echo $result['An']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']; ?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>">                         
 
-                                <img src="<?php echo $result['ImageInfo']['thumb']; ?>" />                                                                       
+                                <img src="<?php echo fixprotocol($result['ImageInfo']['thumb']); ?>" />                                                                       
 
                         </a> 
 
@@ -815,7 +818,7 @@ if (!(isInstructor())) {
 
                             <?php foreach($result['RecordInfo']['BibEntity']['Titles'] as $Ti){ ?> 
 
-                            <a href="record.php?db=<?php echo $result['DbId']; ?>&an=<?php echo $result['An']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']; ?>&<?php echo $encodedSearchTerm; ?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>"><?php echo  $Ti['TitleFull']; ?></a>
+                            <a href="record.php?db=<?php echo $result['DbId']; ?>&an=<?php echo $result['An']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']; ?>&<?php echo $encodedSearchTerm; ?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>"><?php echo $Ti['TitleFull']; ?></a>
 
                            <?php } }
 
@@ -843,17 +846,23 @@ if (!(isInstructor())) {
 
                         <?php if (!empty($result['Items']['Au'])) { ?>
 
-                        <div class="authors">
+                        <div class="authors a">
 
                             <span>
 
                                 <span style="font-style: italic;">By : </span>                                            
 
-                                 <?php foreach($result['Items']['Au'] as $Author){ ?>                                    
+                                 <?php
+                                    $authorstring = '';
+                                    foreach($result['Items']['Au'] as $Author){ ?>                                    
 
-                                    <?php echo $Author['Data']; ?>;                                
+                                    <?php if (strlen($authorstring) <= 200) {
+                                       $authorstring .= $Author['Data'];
+                                       }                               
+                                    }
+                                    echo $authorstring;
 
-                                 <?php } ?>
+                                 ?>
 
                             </span>                        
 
@@ -861,7 +870,7 @@ if (!(isInstructor())) {
 
                         <?php } ?>
 
-                        <div class="authors">
+                        <div class="authors b">
 
                         <span style="font-style: italic; ">
 
@@ -1059,23 +1068,27 @@ if (!(isInstructor())) {
 
                         </div>
 
-                      <?php } ?>
-
-
-
-
-
+                      <?php }
                       
+                     $fulltextlinkfound = false;
 
-                      <div class="links">
+                      ?>
 
-                         <?php if($result['HTML']==1){?> 
 
+
+
+
+                      <?php if(($result['HTML']==1) || (!empty($result['PDF']))) { ?>
+                      <div class="links fulltextlink eric">
+
+                         <?php if($result['HTML']==1){
+                           $fulltextlinkfound = true;
+                           ?> 
                           <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==2){ ?> 
 
                         <a target="_blank" class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>">Full Text</a>
 
-                          <?php } else{?>
+                          <?php } else { ?>
 
                         <a target="_blank" class="icon html fulltext" href="record.php?an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>#html">Full Text</a>
 
@@ -1083,7 +1096,9 @@ if (!(isInstructor())) {
 
                         <?php } ?>
 
-                        <?php if(!empty($result['PDF'])){?> 
+                        <?php if(!empty($result['PDF'])){
+                           $fulltextlinkfound = true;
+                           ?> 
 
                           <a target="_blank" class="icon pdf fulltext" href="PDF.php?an=<?php echo $result['An']?>&db=<?php echo $result['DbId']?>">Full Text</a>
 
@@ -1091,7 +1106,9 @@ if (!(isInstructor())) {
 
                       </div>
 
-                      <?php if (!empty($result['CustomLinks'])){ ?>
+                      <?php }
+                      
+                      if (!empty($result['CustomLinks'])){ ?>
 
                       <div class="custom-links">
 
@@ -1099,15 +1116,19 @@ if (!(isInstructor())) {
 
                     
 
-                            <?php foreach ($result['CustomLinks'] as $customLink) { ?>
+                            <?php foreach ($result['CustomLinks'] as $customLink) {
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                              $fulltextlinkfound = true;
+                              ?>
 
-                                <p>
+                                <div class="fulltextlink">
 
-                                 <a href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if (isset($customLink['Icon']) && (strlen($customLink['Icon']) > 0)) { ?><img src="<?php echo $customLink['Icon']?>" /><?php } else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Text']; ?></a>
+                                 <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if (isset($customLink['Icon']) && (strlen($customLink['Icon']) > 0)) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php } else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Text']; ?></a>
 
-                                </p>
+                                </div>
 
-                            <?php } ?>
+                            <?php }
+                            } ?>
 
                     
 
@@ -1116,22 +1137,25 @@ if (!(isInstructor())) {
                     
 
                             <?php for($i=0; $i<3 ; $i++){
+                                if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
 
                                 $customLink = $result['CustomLinks'][$i];
 
                                 ?>
 
-                                <p> 
+                                <div class="fulltextlink"> 
 
-                                   <a href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+                                   <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
 
-                                </p>
+                                </div>
 
                             <?php } ?>
 
                     
 
-                      <?php } ?>                   
+                      <?php }
+                      } ?>                   
 
                       </div>                      
 
@@ -1143,31 +1167,40 @@ if (!(isInstructor())) {
 
                       <?php if (count($result['FullTextCustomLinks'])<=3){?>                     
 
-                            <?php foreach ($result['FullTextCustomLinks'] as $customLink) { ?>
+                            <?php foreach ($result['FullTextCustomLinks'] as $customLink) {
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+                              
+                              ?>
 
-                                <p>
+                                <div class="fulltextlink">
 
-                                 <a href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']))) { ?><img src="<?php echo $customLink['Icon']?>" /><?php }  else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Name']; ?></a>
+                                 <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']))) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php }  else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Name']; ?></a>
 
-                                </p>
+                                </div>
 
                             <?php } ?>                    
 
-                      <?php } else {?>                    
+                      <?php }
+                      } else {?>                    
 
                             <?php for($i=0; $i<3 ; $i++){
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
 
                                 $customLink = $result['FullTextCustomLinks'][$i];
 
                                 ?>
 
-                                <p> 
+                                <div class="fulltextlink"> 
 
-                                   <a href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+                                   <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
 
-                                </p>
+                                </div>
 
-                            <?php } ?>
+                            <?php }
+                            
+                            } ?>
 
                     
 
@@ -1180,28 +1213,49 @@ if (!(isInstructor())) {
                         
                         foreach($result['Items'] as $item) {
                            if ($item[0]['Group'] == "URL") {
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+
                               ?>
                               
                               <div class="custom-links">
-                                 <p>
+                                 <div class="fulltextlink">
                                  <?php
-                                          
-                                          $docLinks = new DOMDocument();
-                                          $docLinks->loadHTML(html_entity_decode($item[0]['Data']));
-                                          foreach($docLinks->getElementsByTagName('a') as $linkfromcatalog) {
-                                             if ($linkfromcatalog->nodeValue == $linkfromcatalog->getAttribute('href')) {
-                                                $linkfromcatalog->nodeValue = "Online Access";
+
+                                          if (substr_count($item[0]['Data'],"http")) {
+                                             $customlinkURL = substr($item[0]['Data'],strpos($item[0]['Data'],"http"));
+                                             
+                                             if (strpos($customlinkURL," ") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL," "));
                                              }
-                                          }
-                                          $newlinks = $docLinks->saveHTML();
-                                          $newlinks = str_replace("<a","<img src='web/iconFTAccessSm.gif' /> <a",$newlinks);
-                                          echo $newlinks;
-                                    
-                                    ?></p>
+
+                                             if (strpos($customlinkURL,"<") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL,"<"));
+                                             }
+
+                                             if (strpos($customlinkURL,"\"") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL,"\""));
+                                             }
+                                             
+                                             echo "<a target='_blank' href='".$customlinkURL."'><img src='web/iconFTAccessSm.gif' /> Online Access</a>";
+                                          } else {
+                                             $docLinks = new DOMDocument();
+                                             $docLinks->loadHTML(html_entity_decode($item[0]['Data']));
+                                                foreach($docLinks->getElementsByTagName('a') as $linkfromcatalog) {
+                                                   if ($linkfromcatalog->nodeValue == $linkfromcatalog->getAttribute('href')) {
+                                                      $linkfromcatalog->nodeValue = "Online Access";
+                                                   }
+                                                }
+                                             $newlinks = $docLinks->saveHTML();
+                                             $newlinks = str_replace("<a","<img src='web/iconFTAccessSm.gif' /> <a target='_blank'",$newlinks);
+                                             echo $newlinks;
+                                          }                                    
+                                    ?></div>
                               </div>
                               
                               <?php
                            }
+                        }
                         }
                         
                       } ?>
@@ -1302,5 +1356,10 @@ $params = array(
 
 </div>
 
-
-
+<script type="text/javascript">
+   $('a.searchlinks').each(function () {
+      var linktarget = $(this).attr("href");
+      linktarget = linktarget + "<?php echo $emplimqs; ?>";
+      $(this).attr("href",linktarget);
+   });
+</script>

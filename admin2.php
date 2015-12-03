@@ -33,6 +33,7 @@ if (isset( $_GET['logout'] ) && $_GET['logout'] == "YES") {
 
 		if ((isset($_POST['submit'])) && ($_POST['submit'] == "Update Settings")) {
 		    $clean = strip_tags_deep($_POST);
+
 		    $sql = "UPDATE oauth SET userid = ?,
 		                             password = ?,
 		                             profile = ?,
@@ -47,11 +48,15 @@ if (isset( $_GET['logout'] ) && $_GET['logout'] == "YES") {
 					     css = ?,
 					     forceft = ?,
 					     courselink = ?, 
-					     newwindow = ? 
+					     newwindow = ?,
+					     firstftonly = ?,
+					     helppages = ?
 					     WHERE oauth_consumer_key = ?";
 
 		    $stmt = $c->prepare($sql);
-		    $stmt->bind_param('ssssssssssssssss',$clean['userid'],$clean['password'],$clean['profile'],$clean['libemail'],$clean['liblogo'],$clean['libname'],$clean['liblink'],$clean['studentdata'],$clean['EDSlabel'],$clean['copyright'],$clean['copylist'],$clean['css'],$clean['forceft'],$clean['courselink'],$clean['newwindow'],$key);
+
+		    $stmt->bind_param('ssssssssssssssssss',$clean['userid'],$clean['password'],$clean['profile'],$clean['libemail'],$clean['liblogo'],$clean['libname'],$clean['liblink'],$clean['studentdata'],$clean['EDSlabel'],$clean['copyright'],$clean['copylist'],$clean['css'],$clean['forceft'],$clean['courselink'],$clean['newwindow'],$clean['firstftonly'],$clean['helppages'],$key);
+
 		    $stmt->execute();			    
     		}
 		

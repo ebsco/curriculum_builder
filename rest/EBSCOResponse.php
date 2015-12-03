@@ -847,7 +847,7 @@ private function buildRecords()
             if (!empty($group) && in_array($group, $allowed_searchlink_groups)) {
                 $type = $xml_to_search_types[$group];
                 $link_xml = '/<searchLink fieldCode="([^"]*)" term="([^"]*)">/';
-                $link_html = "<a href=\"results.php?query=$2&fieldcode=$1\">";  //replaced $path with "result.php"
+                $link_html = "<a class=\"searchlinks\" href=\"results.php?query=$2&fieldcode=$1\">";  //replaced $path with "result.php"
                 $data = preg_replace($link_xml, $link_html, $data);
                 $data = str_replace('</searchLink>', '</a>', $data);
                 $data = str_replace('*','',$data);
@@ -953,7 +953,7 @@ private function buildRecords()
             if (!empty($group) && in_array($group, $allowed_searchlink_groups)) {
                 $type = $xml_to_search_types[$group];
                 $link_xml = '/<searchLink fieldCode="([^"]*)" term="([^"]*)">/';
-                $link_html = "<a href=\"results.php?query=$2&fieldcode=$1\">";  //replaced $path with "result.php"
+                $link_html = "<a class=\"searchlinks\" href=\"results.php?query=$2&fieldcode=$1\">";  //replaced $path with "result.php"
                 $data = preg_replace($link_xml, $link_html, $data);
                 $data = str_replace('</searchLink>', '</a>', $data);
                 $data = str_replace('<br />', '; ', $data);

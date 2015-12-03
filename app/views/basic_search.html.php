@@ -6,7 +6,7 @@ $Info = $api->getInfo();
 <div class="searchHomeContent">
 <div class="searchHomeForm">
     <div class="searchform">
-<h1>Basic Search</h1>
+<h1>Search for Library Resources</h1>
 <form action="results.php">
     <p>
         <input type="text" name="query" style="width: 350px;" id="lookfor" />
@@ -60,5 +60,10 @@ $Info = $api->getInfo();
 </form>
 </div>
 </div>
+    <?php if (isset($customparams['helppages']) && ($customparams['helppages'] != '')) {
+        ?>
+        <div class="helppages" style="margin:20px auto;width:500px;"><img src="web/help.png" style="padding-right:5px;float:left;"> What does this tool do?  Check <a target="_blank" href="<?php echo $customparams['helppages']; ?>">our help pages on using it</a> for more information.</div>
+        <?php
+    } ?>
 </div>
 </div>

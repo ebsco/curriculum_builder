@@ -7,6 +7,7 @@
     $time = 0; // store for session only //store cookie for one hour
     
     $clean = strip_tags_deep($_POST);
+    $clean_Get = strip_tags_deep($_GET);
     
     // clear any previous launch cookies
     if (isset($_SERVER['HTTP_COOKIE'])) {
@@ -93,6 +94,9 @@ if ($newwindow == 'y') {
 ?>>
 <?php
     foreach ( $clean as $foo=>$bar ) {
+        echo '<input type="hidden" name="' . htmlentities(strip_tags($foo),ENT_QUOTES) . '" value="' . htmlentities(strip_tags($bar),ENT_QUOTES) . '" />';
+    }
+    foreach ( $clean_Get as $foo=>$bar) {
         echo '<input type="hidden" name="' . htmlentities(strip_tags($foo),ENT_QUOTES) . '" value="' . htmlentities(strip_tags($bar),ENT_QUOTES) . '" />';
     }
 ?>

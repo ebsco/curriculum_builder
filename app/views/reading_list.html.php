@@ -20,24 +20,8 @@
   $(function() {
     $( "#readingList" ).sortable({
 	start: function () {
-	    //$( ".buttons" ).css("display","none");
-	    //$( ".notes" ).css("display","none");
-	    //$( ".studentcount" ).css("display","none");
-	    //$( ".reading ").css("height","auto");
-	    //$( ".authors ").css("display","none");
-	    //$( ".pt-icon").css("display","none");
-	    //$( ".pt-cover").css("display","none");
-
 	},
 	stop: function () {
-	    //$( ".buttons" ).css("display","block");
-	    //$( ".notes" ).css("display","block");
-	    //$( ".studentcount" ).css("display","block");
-	    //$( ".reading ").css("height","");
-	    //$( ".authors ").css("display","block");
-	    //$( ".pt-icon").css("display","");
-	    //$( ".pt-cover").css("display","");
-
 	},
 	update: function( event, ui ) {
 	    var priority = 0;
@@ -107,6 +91,7 @@
 <script type="text/javascript" src="websites.js"></script>
 
 <?php
+
     if (isset($_GET['private']) && isInstructor()) {
         if (($_GET['private'] == 0) || ($_GET['private'] == 1)) {
             setListPrivacy($c,$_GET['private']);
@@ -137,7 +122,6 @@
         }
 	
 	?>
-	
 	</div>
         <?php
 	
@@ -165,16 +149,42 @@
 		}
 		?>
 
+<div class="readingListLink" id="createFolder">
+            <span id="foldertitle" onclick="togglethat('folder');"><strong>Add Folder</strong> <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span>
+	    <div id="folderbox" style="display: none;">
+            <table border="0">
+                <tr>
+                    <td><input type="text" name="foldertext" id="folder-text" size="50" placeholder="Folder name" /></td>
+                    <td><button onclick="preAddToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>)">Create Folder</button></td>
+                </tr>
+            </table>
+	    </div>
+        </div>
+		
 		<div class="readingListLink" id="addInstructions">
             <span id="instructiontitle" onclick="togglethat('instruction');"><strong>Add Text or Instructions</strong> <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span>
 	    <div id="instructionbox" style="display: none;">
             <table border="0">
                 <tr>
                     <td>Text</td>
+		    <?php if (count($listoffolders) > 0) { ?>
+			<td>Folder</td>
+		    <?php } ?>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td><input type="text" name="text" id="inst-text" size="50" placeholder="e.g., Read Chapter 5 in Textbook" /></td>
+		    <?php if (count($listoffolders) > 0) { ?>
+<td><select id="folderselector-inst">
+	<option value="0"><em>Main list of Readings</em></option>
+	<?php
+	    foreach ($listoffolders as $folder) {
+		?>
+		    <option value="<?php echo $folder['id']; ?>" <?php if (isset($clean['folderid']) && ($clean['folderid'] == $folder['id'])) { echo 'selected="selected"';}?>><?php echo $folder['label']; ?></option>
+		<?php
+	    }
+	?>
+    </select></td><?php } ?>
                     <td><button onclick="preAddToInstructions(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>)">Add to Reading List</button></td>
                 </tr>
             </table>
@@ -188,11 +198,25 @@
                 <tr>
                     <td>URL</td>
                     <td>Title</td>
+		    <?php if (count($listoffolders) > 0) { ?>
+			<td>Folder</td>
+		    <?php } ?>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td><input type="text" name="url" id="ws-url" size="40" placeholder="e.g., http://library.edu/" /></td>
                     <td><input type="text" name="title" id="ws-title" size="25" placeholder="Link label" /></td>
+		    <?php if (count($listoffolders) > 0) { ?>
+<td><select id="folderselector-ws">
+	<option value="0"><em>Main list of Readings</em></option>
+	<?php
+	    foreach ($listoffolders as $folder) {
+		?>
+		    <option value="<?php echo $folder['id']; ?>" <?php if (isset($clean['folderid']) && ($clean['folderid'] == $folder['id'])) { echo 'selected="selected"';}?>><?php echo $folder['label']; ?></option>
+		<?php
+	    }
+	?>
+    </select></td><?php } ?>
                     <td><button onclick="preAddToWebsites(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>)">Add to Reading List</button></td>
                 </tr>
             </table>
@@ -200,9 +224,47 @@
         </div>
 
         <?php } ?>
+    <?php if (count($listoffolders) > 0) {
+	?>
+    
+	    <div class="folders readingListLink">
+		<?php
+		    if (isset($clean['folderid'])) {
+			?>
+			    <a href="reading_list.php"><strong><img src="web/back.png" style="border: none; max-height: 12px;"> Back to main list</strong></a>
+			<?php
+		    } else {
+			?>
+			    <strong>This list has folders:</strong>
+			<?php
+		    }
+		?>
+
+		<ul class="listoffolders">
+	<?php
+	    foreach ($listoffolders as $folder) {
+		?>
+		    <li><?php
+		    if (isset($clean['folderid']) && ($folder['id'] == $clean['folderid'])) {
+			echo "<strong>".$folder['label']."</strong> (currently selected)";
+		    } else {
+			echo '<a href="reading_list.php?folderid='.$folder['id'].'">'.$folder['label']."</a> (".folderitemcount($c,$folder['id'])." items)";
+		    }
+		    
+		    if (isInstructor()) {
+		    ?> <img src="web/delete.png" style="max-height: 12px; border: none;" onclick="return deletefolderobject(<?php echo $folder['id'].",".decryptCookie($_COOKIE['currentListId']); ?>);"/></li>
+		<?php
+		    }
+	    }
+	?>		</ul>
+	    </div>
+
+
+    <?php } ?>
     <form action="reorder-reading-list.php" method="GET" id="reordernotes">
 
         <div id="readingList">
+
             <?php
                 $count = 0;
                 if (count($readingList) > 0) {
@@ -263,8 +325,18 @@
     <!-- END item in NOT in folder -->
     <!-- If the item is in the folder... -->
     <div id="infolder<?php echo $count; ?>" class="folder" style="font-size: smaller; display: block;">
-    
-    <button type="button"style="font-size:smaller; padding:3px; margin-top:0px;" class="removeFolder" id="removebutton<?php echo $count;?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $reading['an']; ?>', '<?php echo $reading['db']; ?>','<?php echo $reading['url']; ?>','<?php echo urlencode(html_entity_decode(urldecode($reading['instruct']))); ?>','<?php echo urlencode($reading['title']); ?>',2,<?php echo $count; ?>,<?php echo $reading["priority"]; ?>,<?php echo $reading["type"]; ?>); return false;">Delete</button>
+    <?php if (sizeof($listoffolders) > 0) { ?>
+    <span class="folderitemsedit">Move to folder: <select style="font-size:smaller;" id="folderselector<?php echo $reading['id']; ?>" onchange="addreadingtofolder(this,<?php echo $reading['id']; ?>);">
+
+	<option value="0"><em>No Folder</em></option>
+	<?php
+	    foreach ($listoffolders as $folder) {
+		?>
+		    <option value="<?php echo $folder['id']; ?>" <?php if ($reading['folderid'] == $folder['id']) { echo 'selected="selected"';}?>><?php echo $folder['label']; ?></option>
+		<?php
+	    }
+	?>
+    </select><?php } ?></span><button type="button"style="font-size:smaller; padding:3px; margin-top:0px;" class="removeFolder" id="removebutton<?php echo $count;?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $reading['an']; ?>', '<?php echo $reading['db']; ?>','<?php echo $reading['url']; ?>','<?php echo urlencode(html_entity_decode(urldecode($reading['instruct']))); ?>','<?php echo urlencode($reading['title']); ?>',2,<?php echo $count; ?>,<?php echo $reading["priority"]; ?>,<?php echo $reading["type"]; ?>); return false;">Delete</button>
 
 </div>
 
@@ -282,7 +354,7 @@
 
                     <?php if (!empty($readingMetadata['ImageInfo'])) { ?>                    
 
-                                <img class="pt-cover" src="<?php echo $readingMetadata['ImageInfo']['thumb']; ?>" />                                                                       
+                                <img class="pt-cover" src="<?php echo fixprotocol($readingMetadata['ImageInfo']['thumb']); ?>" />                                                                       
 
                     <?php }else{ 
 
@@ -310,7 +382,9 @@
 				if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
-				echo "href='record.php?an=" . $reading["an"] . "&db=" . $reading["db"] . "'>";
+				echo "href='record.php?an=" . $reading["an"] . "&db=" . $reading["db"];
+				if (isset($clean['folderid'])) { echo "&folderid=" . $clean['folderid']; }
+				echo "'>";
 
 				if (!empty($readingMetadata['RecordInfo']['BibEntity']['Titles'])){
 				    foreach($readingMetadata['RecordInfo']['BibEntity']['Titles'] as $Ti){
@@ -331,7 +405,9 @@
 				echo "There was a problem loading this reading.  Your library may no longer subscribe to <em>".$reading["title"]."</em>.  Please contact your library for further assistance.";
 			    }
                         } else if ($reading["type"] == 1) {
-                            echo "<strong><a onclick='addHit(".$reading["id"].")' href='record.php?an=" . $reading["an"] . "&db=" . $reading["db"] . "'>" . html_entity_decode($reading["title"]) . "</a></strong>";
+                            echo "<strong><a onclick='addHit(".$reading["id"].")' href='record.php?an=" . $reading["an"] . "&db=" . $reading["db"];
+			    if (isset($clean['folderid'])) { echo "&folderid=" . $clean['folderid']; }
+			    echo "'>" . html_entity_decode($reading["title"]) . "</a></strong>";
 			} else if ($reading["type"] == 2) {
                             echo "<a onclick='addHit(".$reading["id"].")' href='" . $reading["url"] . "' target='_blank'>" . html_entity_decode($reading["title"]) . "</a>  <em>(website launches in a new window)</em>";
                         } else if ($reading["type"] == 3) {
@@ -409,6 +485,241 @@
 			    echo "</span>";
 			}
                         
+			
+			
+			
+		     if ($reading['type'] == 1) {
+                     $fulltextlinkfound = false;
+
+                      ?>
+
+
+
+
+
+                      <?php if(($readingMetadata['HTML']==1) || (!empty($readingMetadata['PDF']))) { ?>
+                      <div class="links fulltextlink-rl">
+
+                         <?php if($readingMetadata['HTML']==1){
+                           $fulltextlinkfound = true;
+                           ?> 
+
+                          <?php if((!isset($_COOKIE['login']))&&$readingMetadata['AccessLevel']==2){ ?> 
+
+                        <a <?php
+							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+				    echo "onclick='addHit(".$reading["id"].")' ";
+				}
+			?>class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $readingMetadata['An']; ?>&db=<?php echo $readingMetadata['DbId']; ?>&<?php echo $encodedHighLigtTerm ?>&resultId=<?php echo $readingMetadata['ResultId'];?>&recordCount=<?php echo $readingMetadata['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode;
+			if (isset($clean['folderid'])) { echo "&folderid=" . $clean['folderid']; }
+			?>">Full Text</a>
+
+                          <?php } else {?>
+
+                        <a <?php
+							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+				    echo "onclick='addHit(".$reading["id"].")' ";
+				}
+			?>class="icon html fulltext" href="record.php?an=<?php echo $readingMetadata['An']; ?>&db=<?php echo $readingMetadata['DbId']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $readingMetadata['ResultId'];?>&recordCount=<?php echo $readingMetadata['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode;
+			if (isset($clean['folderid'])) { echo "&folderid=" . $clean['folderid']; }
+			?>#html">Full Text</a>
+
+                         <?php } ?>                          
+
+                        <?php } ?>
+
+                        <?php if(!empty($readingMetadata['PDF'])){
+                           $fulltextlinkfound = true;
+                           ?> 
+
+                          <a target="_blank" <?php
+							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+				    echo "onclick='addHit(".$reading["id"].")' ";
+				}
+			?>class="icon pdf fulltext" href="PDF.php?an=<?php echo $readingMetadata['An']?>&db=<?php echo $readingMetadata['DbId']?>">Full Text</a>
+
+                        <?php } ?>
+
+                      </div>
+
+                      <?php }
+                      
+                      if (!empty($readingMetadata['CustomLinks'])){ ?>
+
+                      <div class="custom-links">
+
+                      <?php if (count($readingMetadata['CustomLinks'])<=3){?> 
+
+                    
+
+                            <?php foreach ($readingMetadata['CustomLinks'] as $customLink) {
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                              $fulltextlinkfound = true;
+                              ?>
+
+                                <div class="fulltextlink-rl">
+
+                                 <a target="_blank" <?php
+							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+				    echo "onclick='addHit(".$reading["id"].")' ";
+				}
+			?>href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if (isset($customLink['Icon']) && (strlen($customLink['Icon']) > 0)) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php } else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Text']; ?></a>
+
+                                </div>
+
+                            <?php }
+                            } ?>
+
+                    
+
+                      <?php } else {?>
+
+                    
+
+                            <?php for($i=0; $i<3 ; $i++){
+                                if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+
+                                $customLink = $readingMetadata['CustomLinks'][$i];
+
+                                ?>
+
+                                <div class="fulltextlink-rl"> 
+
+                                   <a target="_blank" <?php
+							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+				    echo "onclick='addHit(".$reading["id"].")' ";
+				}
+			?>href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+
+                                </div>
+
+                            <?php } ?>
+
+                    
+
+                      <?php }
+                      } ?>                   
+
+                      </div>                      
+
+                      <?php } ?>
+
+                      <?php if (!empty($readingMetadata['FullTextCustomLinks'])){ ?>
+
+                      <div class="custom-links">
+
+                      <?php if (count($readingMetadata['FullTextCustomLinks'])<=3){?>                     
+
+                            <?php foreach ($readingMetadata['FullTextCustomLinks'] as $customLink) {
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+                              
+                              ?>
+
+                                <div class="fulltextlink-rl">
+
+                                 <a target="_blank" <?php
+							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+				    echo "onclick='addHit(".$reading["id"].")' ";
+				}
+			?>href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']))) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php }  else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Name']; ?></a>
+
+                                </div>
+
+                            <?php } ?>                    
+
+                      <?php }
+                      } else {?>                    
+
+                            <?php for($i=0; $i<3 ; $i++){
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+
+                                $customLink = $readingMetadata['FullTextCustomLinks'][$i];
+
+                                ?>
+
+                                <div class="fulltextlink-rl"> 
+
+                                   <a target="_blank" <?php
+							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+				    echo "onclick='addHit(".$reading["id"].")' ";
+				}
+			?>href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+
+                                </div>
+
+                            <?php }
+                            
+                            } ?>
+
+                    
+
+                      <?php } ?>                   
+
+                      </div>                     
+
+                      <?php } ?>
+                      <?php if (count($readingMetadata['Items'])) {
+                        
+                        foreach($readingMetadata['Items'] as $item) {
+                           if ($item[0]['Group'] == "URL") {
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+
+                              ?>
+                              
+                              <div class="custom-links">
+                                 <div class="fulltextlink-rl">
+                                 <?php
+
+                                          if (substr_count($item[0]['Data'],"http")) {
+                                             $customlinkURL = substr($item[0]['Data'],strpos($item[0]['Data'],"http"));
+                                             
+                                             if (strpos($customlinkURL," ") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL," "));
+                                             }
+
+                                             if (strpos($customlinkURL,"<") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL,"<"));
+                                             }
+
+                                             if (strpos($customlinkURL,"\"") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL,"\""));
+                                             }
+                                             
+                                             echo "<a target='_blank' ";
+							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+				    echo "onclick='addHit(".$reading["id"].")' ";
+				}
+					     echo "href='".$customlinkURL."'><img src='web/iconFTAccessSm.gif' /> Online Access</a>";
+                                          } else {
+                                             $docLinks = new DOMDocument();
+                                             $docLinks->loadHTML(html_entity_decode($item[0]['Data']));
+                                                foreach($docLinks->getElementsByTagName('a') as $linkfromcatalog) {
+                                                   if ($linkfromcatalog->nodeValue == $linkfromcatalog->getAttribute('href')) {
+                                                      $linkfromcatalog->nodeValue = "Online Access";
+                                                   }
+                                                }
+                                             $newlinks = $docLinks->saveHTML();
+                                             $newlinks = str_replace("<a","<img src='web/iconFTAccessSm.gif' /> <a target='_blank'",$newlinks);
+                                             echo $newlinks;
+                                          }                                    
+                                    ?></div>
+                              </div>
+                              
+                              <?php
+                           }
+                        }
+                        }
+                        
+                      } 
+		     }
+			
+			
+			
+			
                         if (isInstructor()) {
 			    if (($customparams['studentdata'] == "y") && ($reading['type'] != "3")) {
 				    $students = getStudentNamesReadings($c,$reading["id"]);
@@ -451,7 +762,7 @@
     <!-- If the item is in the folder... -->
     <div id="infolder<?php echo $count; ?>" class="folder" style="font-size: 11px; display: block; margin:12px 0 12px 0;">
     
-    <button class="removeFolder" id="removebutton<?php echo $count;?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $reading['an']; ?>', '<?php echo $reading['db']; ?>','<?php echo $reading['url']; ?>','<?php echo urlencode(html_entity_decode(urldecode($reading['instruct']))); ?>','<?php echo urlencode($reading['title']); ?>',2,<?php echo $count; ?>,<?php echo $reading["priority"]; ?>,<?php echo $reading["type"]; ?>); return false;">Remove from Reading List</button>
+    <button class="removeFolder" id="removebutton<?php echo $count;?>" onclick="addToFolder(xmlhttp,<?php echo ($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $reading['an']; ?>', '<?php echo $reading['db']; ?>','<?php echo $reading['url']; ?>','<?php echo urlencode(html_entity_decode(urldecode($reading['instruct']))); ?>','<?php echo urlencode($reading['title']); ?>',2,<?php echo $count; ?>,<?php echo $reading["priority"]; ?>,<?php echo $reading["type"]; ?>); return false;">Remove from Reading List</button>
 
     </div>
 	    
@@ -469,7 +780,11 @@
                     echo "<div class='reading'><div class='readingboxcontent'>Currently, there are no readings.</div></div>";
                 }
 		if ($count == 0) {
-		    echo "<div class='reading'><div class='readingboxcontent'>Currently, there are no readings on this list.</div></div>";
+		    if (sizeof($listoffolders) > 0) {
+			echo "<div class='reading'><div class='readingboxcontent'>Select a folder above to see readings.</div></div>";
+		    } else {
+			echo "<div class='reading'><div class='readingboxcontent'>Currently, there are no readings on this list.</div></div>";
+		    }
 		}
 
             ?>

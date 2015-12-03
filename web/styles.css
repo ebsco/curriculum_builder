@@ -760,3 +760,30 @@ ul.filters {
     padding: 1px;
     margin-left:5px;
 }
+.folderitemsedit {
+    font-size:small;
+    padding-right:10px;
+}
+ul.listoffolders {
+    list-style-image: url("../web/folder.png");
+}
+.fulltextlink {
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(51,51,51,0.45);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(51,51,51,0.45);
+    box-shadow: 3px 3px 5px 0px rgba(51,51,51,0.45);
+    background: white none repeat scroll 0 0;
+    border: thin solid #dddddd;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.fulltextlink-rl {
+    background: #EEEEEE none repeat scroll 0 0;
+    border: thin solid #dddddd;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 20px;    
+}
+a.icon.html.fulltext {
+    padding-right: 20px;
+}

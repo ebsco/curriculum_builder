@@ -7,6 +7,7 @@ if (isset($_SESSION['results'])) {
  $results = $_SESSION['results'];   
  if (isset($results['queryString'])) {
    $queryStringUrl = $results['queryString'];
+   $emplimqs = parseQueryString($queryStringUrl);
 }
 } else {
  $queryStringUrl = $backpath;
@@ -24,7 +25,9 @@ $encodedHighLigtTerm = http_build_query(array('highlight'=>''));
 ?>
 <?php if (!(isInstructor())) {
 
-echo '<div class="readingListLink"><a href="reading_list.php">Back to Reading List</a></div>';    
+echo '<div class="readingListLink"><a href="reading_list.php';
+if (isset($clean['folderid'])) { echo "?folderid=" . $clean['folderid']; }
+echo '">Back to Reading List</a></div>';    
     
 } ?>
 
@@ -111,7 +114,7 @@ Foldering
                  <?php if(!empty($result['PLink'])){?>
                  <ul class="table-cell-box">
                       <li>
-                          <a href="<?php echo $result['PLink'] ?>">
+                          <a target="_blank" href="<?php echo $result['PLink'] ?>">
                         <?php if (isset($customparams['EDSlabel'])) { echo $customparams['EDSlabel']; } else { echo 'See it in EDS'; } ?>
                         </a>
                       </li>
@@ -150,7 +153,7 @@ Foldering
                           
                             <?php foreach ($result['CustomLinks'] as $customLink) { ?>
                                 <li>
-                                    <a href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><img src="<?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']) > 0)) { echo $customLink['Icon']; } else { echo "web/iconFTAccessSm.gif"; } ?>" /> <?php echo $customLink['Text']; ?></a>
+                                    <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><img src="<?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']) > 0)) { echo fixprotocol($customLink['Icon']); } else { echo "web/iconFTAccessSm.gif"; } ?>" /> <?php echo $customLink['Text']; ?></a>
                                 </li>
                             <?php } ?>
                        </ul>
@@ -160,7 +163,7 @@ Foldering
                           <label>Full Text:</label><hr/>
                             <?php foreach ($result['FullTextCustomLinks'] as $customLink) { ?>
                                 <li>
-                                    <a href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><img src="<?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']) > 0)) { echo $customLink['Icon']; } else { echo "web/iconFTAccessSm.gif"; } ?>" /> <?php echo $customLink['Text']; ?></a>
+                                    <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><img src="<?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']) > 0)) { echo fixprotocol($customLink['Icon']); } else { echo "web/iconFTAccessSm.gif"; } ?>" /> <?php echo $customLink['Text']; ?></a>
                                 </li>
                             <?php } ?>
                        </ul>
@@ -175,19 +178,37 @@ Foldering
                                  
 				 <li>
                                  <?php
-                                          
-                                          $docLinks = new DOMDocument();
-                                          $docLinks->loadHTML(html_entity_decode($item['Data']));
-                                          foreach($docLinks->getElementsByTagName('a') as $linkfromcatalog) {
-                                             if ($linkfromcatalog->nodeValue == $linkfromcatalog->getAttribute('href')) {
-                                                $linkfromcatalog->nodeValue = "Online Access";
+
+                                          if (substr_count($item['Data'],"http")) {
+                                             $customlinkURL = substr($item['Data'],strpos($item['Data'],"http"));
+                                             
+                                             if (strpos($customlinkURL," ") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL," "));
                                              }
-                                          }
-                                          $newlinks = $docLinks->saveHTML();
-                                          $newlinks = str_replace("<a","<img src='web/iconFTAccessSm.gif' /> <a",$newlinks);
-                                          echo $newlinks;
-                                    
-                                    ?></li>
+
+                                             if (strpos($customlinkURL,"<") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL,"<"));
+                                             }
+
+                                             if (strpos($customlinkURL,"\"") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL,"\""));
+                                             }
+                                             
+                                             echo "<a target='_blank' href='".$customlinkURL."'><img src='web/iconFTAccessSm.gif' /> Online Access</a>";
+                                          } else {
+                                             $docLinks = new DOMDocument();
+                                             $docLinks->loadHTML(html_entity_decode($item['Data']));
+                                                foreach($docLinks->getElementsByTagName('a') as $linkfromcatalog) {
+                                                   if ($linkfromcatalog->nodeValue == $linkfromcatalog->getAttribute('href')) {
+                                                      $linkfromcatalog->nodeValue = "Online Access";
+                                                   }
+                                                }
+                                             $newlinks = $docLinks->saveHTML();
+                                             $newlinks = str_replace("<a","<img src='web/iconFTAccessSm.gif' /> <a target='_blank'",$newlinks);
+                                             echo $newlinks;
+                                          }                                    
+                                    ?>
+				</li>
                               </div>
                               
                               <?php
@@ -250,11 +271,17 @@ Foldering
          </div>
              <div class="jacket">
                 <?php if(!empty($result['ImageInfo'])) { ?>              
-                 <img width="150px" height="200px" src="<?php echo $result['ImageInfo']['medium']; ?>" />             
+                 <img width="150px" height="200px" src="<?php echo fixprotocol($result['ImageInfo']['medium']); ?>" />             
         <?php } ?>
              </div>
         </div>
       <?php } ?>  
          </div>
 </div>
-
+<script type="text/javascript">
+   $('a.searchlinks').each(function () {
+      var linktarget = $(this).attr("href");
+      linktarget = linktarget + "<?php echo $emplimqs; ?>";
+      $(this).attr("href",linktarget);
+   });
+</script>

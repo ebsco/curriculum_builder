@@ -1,7 +1,7 @@
 <?php
     ini_set("session.cookie_httponly", 1);
     session_start();
-
+    
     include_once('app/app.php');
     
     $clean = strip_tags_deep($_POST);
@@ -22,11 +22,12 @@
     
     if (isset($clean['user_id'])) {
         if (!(isset($clean['lis_person_contact_email_primary']))) {
-            $clean['lis_person_contact_email_primary'] = $clean['tool_consumer_instance_guid'].".".$clean['user_id'];
+            $clean['lis_person_contact_email_primary'] = $clean['tool_consumer_instance_guid'].".".$clean['user_id']."-noEmailShared";
         }
         if (!(isset($clean['lis_person_name_full']))) {
-            $clean['lis_person_name_full'] = $clean['tool_consumer_instance_guid'].".".$clean['user_id'];
+            $clean['lis_person_name_full'] = $clean['tool_consumer_instance_guid'].".".$clean['user_id']."-noNameShared";
         }
+        $clean['user_id'] = $clean['tool_consumer_instance_guid']."-".$clean['user_id'];
     }
     
     // upon new launch, eliminate any existing session tokens to prevent bad API calls from old sessions    
@@ -47,8 +48,36 @@
     $customparams = loadCustomParams($c,$oauth_consumer_key,$clean);
 
     // whitelist of accepted parameters
-    $accepted = array('oauth_consumer_key', 'roles', 'context_label', 'context_title', 'lis_person_name_full', 'lis_person_contact_email_primary', 'resource_link_title', 'resource_link_id', 'tool_consumer_instance_guid', 'launch_presentation_return_url');
+    $accepted = array('user_id', 'oauth_consumer_key', 'roles', 'context_label', 'context_title', 'lis_person_name_full', 'lis_person_contact_email_primary', 'resource_link_title', 'resource_link_id', 'tool_consumer_instance_guid', 'launch_presentation_return_url', 'link', 'custom_link');
 
+    if (isset($clean['custom_link'])) {
+        $clean['link'] = $clean['custom_link'];
+    }
+    
+    // accomodate Teaching Assistants
+    if (!((substr_count($clean['roles'],"Instructor") > 0))) {
+        if (substr_count($clean['roles'],"TeachingAssistant") > 0) {
+            $clean['roles'] = "urn:lti:instrole:ims/lis/Instructor";
+        }
+    }
+    
+    if (isset($clean['link'])) {
+        $clean['roles'] = 'student (overriden by link)';
+        // if link is specified, check to see it if exists.
+        $sql = 'SELECT id, linklabel, course FROM lists WHERE credentialconsumerid = ? AND linkid = ?';
+        $stmt = $c->prepare($sql);
+        $stmt->bind_param('ss',$clean['credential_consumer_id'],$clean['link']);
+        $stmt->execute();
+        $foundList = $stmt->get_result();
+        
+        if ($foundList) {
+
+            if (mysqli_num_rows($foundList) <= 0) {
+                $clean['resource_link_id'] = $clean['link'];
+            }
+        }
+    }
+    
     // transfer variables to session    
     foreach ( $clean as $foo=>$bar ) {
         if ( in_array( $foo, $accepted ) && !empty($bar) ) {
@@ -80,7 +109,7 @@
     
     if ($credentialsresults) {
         if (mysqli_num_rows($credentialsresults) <= 0) {
-            $_SESSION['debug'] .= "<p>NO CREDENTIALS FOUND MAKING NEW ENTRY</p>";
+
             $sql = "INSERT INTO credentials (userid, profile, password) VALUES (?,?,?);";
             $stmt = $c->prepare($sql);    
             $stmt->bind_param('sss',$customparams['userid'],$customparams['profile'],$customparams['password']);
@@ -138,7 +167,7 @@
         // if the list was not found, make a new one and load it into variable foundList
         if (mysqli_num_rows($foundList) <= 0) {
             if (!((substr_count($clean['roles'],"Instructor") > 0))) {
-                die("<p>Your instructor has not added any readings to this list yet.</p>");
+                die("<p>Uh oh!  It looks like your course instructor hasn't added any readings to this list yet.</p><p>If you are a course instructor, it looks as if your account does not indicate that you are.  Your current role appears to be: ".$clean['roles']."<br/><br/>".$sql." with ".$clean['credential_consumer_id']."-".$clean['resource_link_id']."</p>");
             }
 
             $sql = 'INSERT INTO lists (linklabel, course, credentialconsumerid, linkid, private) VALUES (?,?,?,?,1)';
@@ -167,21 +196,23 @@
     $stmt->bind_param('i',$row['id']);
     $stmt->execute();
     
-    // update the name of the list if the label of the link in the LMS changed
-    if ($row['linklabel'] != $clean['resource_link_title']) {
-        $sqlFixLabel = 'UPDATE lists SET linklabel = ? WHERE id = ?';
-        $stmt = $c->prepare($sqlFixLabel);
-        $stmt->bind_param('si',$clean['resource_link_title'],$row['id']);
-        $stmt->execute();
-    }
-    
+    if (!(isset($clean['link']))) {
+        // update the name of the list if the label of the link in the LMS changed
+        if ($row['linklabel'] != $clean['resource_link_title']) {
+            $sqlFixLabel = 'UPDATE lists SET linklabel = ? WHERE id = ?';
+            $stmt = $c->prepare($sqlFixLabel);
+            $stmt->bind_param('si',$clean['resource_link_title'],$row['id']);
+            $stmt->execute();
+        }
+    }    
     // place the id of the current list into the session    
     setcookie('currentListId', encryptCookie($row['id']), $time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
+    setcookie('currentLinkId', encryptCookie($clean['resource_link_id']), $time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
 
     if ((substr_count($clean['roles'],"Instructor") > 0)) {
-        $sql = 'SELECT id, fullname, email FROM authors WHERE id IN (SELECT authorid FROM authorlists WHERE listid = ?) AND email = ?';
+        $sql = 'SELECT id, fullname, email, lms_id FROM authors WHERE id IN (SELECT authorid FROM authorlists WHERE listid = ?) AND lms_id = ?';
         $stmt = $c->prepare($sql);
-        $stmt->bind_param('is',$row['id'],$clean['lis_person_contact_email_primary']);
+        $stmt->bind_param('is',$row['id'],$clean['user_id']);
         $stmt->execute();
         $authorresults = $stmt->get_result();
 
@@ -191,33 +222,52 @@
         if ($authorresults) {
             // if the person accessing the list is a course instructor AND is NOT associated with the list...
             if (mysqli_num_rows($authorresults) <= 0) {
-
-                $sql = "SELECT id, fullname, email FROM authors WHERE email = ?";
+                $sql = "SELECT id, fullname, email, lms_id FROM authors WHERE lms_id = ?;";
                 $stmt = $c->prepare($sql);
-                $stmt->bind_param('s',$clean['lis_person_contact_email_primary']);
+                $stmt->bind_param('s',$clean['user_id']);
                 $stmt->execute();
                 $authorExists = $stmt->get_result();
-        
-                if ($authorExists) {
-                    // ...and that instructor has never accessed any reading list before...
-                    if (mysqli_num_rows($authorExists) <= 0) {
-                        // add the instructor to the 'known instructors' list
-
-                        $sql = 'INSERT INTO authors (fullname, email) VALUES (?,?);';
-                        $stmt = $c->prepare($sql);
-                        $stmt->bind_param('ss',$clean['lis_person_name_full'],$clean['lis_person_contact_email_primary']);
-                        $stmt->execute();
                         
-                        $sql = 'SELECT id FROM authors WHERE email = ?';
+                if ($authorExists) {
+                    if (mysqli_num_rows($authorExists) <= 0) {
+                        
+                        $sql = "SELECT id, fullname, email, lms_id FROM authors WHERE email = ? AND lms_id IS NULL;";
                         $stmt = $c->prepare($sql);
                         $stmt->bind_param('s',$clean['lis_person_contact_email_primary']);
                         $stmt->execute();
-                        $gettingAuthorID = $stmt->get_result();                        
-                                                
-                        $gettingAuthorIDrow = mysqli_fetch_array($gettingAuthorID);
-                        $authorID = $gettingAuthorIDrow['id'];
+                        $authorUIDExists = $stmt->get_result();
                         
-                        $newauthor = TRUE;
+                        if ($authorUIDExists) {
+
+                            if (mysqli_num_rows($authorUIDExists) > 0) {
+
+                                $foundAuthor = mysqli_fetch_array($authorUIDExists);
+                                $authorID = $foundAuthor['id'];
+
+                                $sql = 'UPDATE authors SET lms_id = ? WHERE id = ?';
+                                $stmt = $c->prepare($sql);
+                                $stmt->bind_param('si',$clean['user_id'],$authorID);
+                                $stmt->execute();                                
+                            } else {
+
+                                $sql = 'INSERT INTO authors (fullname, email, lms_id) VALUES (?,?, ?);';
+                                $stmt = $c->prepare($sql);
+                                $stmt->bind_param('sss',$clean['lis_person_name_full'],$clean['lis_person_contact_email_primary'],$clean['user_id']);
+                                $stmt->execute();
+                                
+                                $sql = 'SELECT id FROM authors WHERE lms_id = ?';
+                                $stmt = $c->prepare($sql);
+                                $stmt->bind_param('s',$clean['user_id']);
+                                $stmt->execute();
+                                $gettingAuthorID = $stmt->get_result();                        
+                                                        
+                                $gettingAuthorIDrow = mysqli_fetch_array($gettingAuthorID);
+                                $authorID = $gettingAuthorIDrow['id'];
+                                
+                                $newauthor = TRUE;                                
+                            }
+                        }
+
                     } else {
                         $foundAuthor = mysqli_fetch_array($authorExists);
                         $authorID = $foundAuthor['id'];
@@ -226,12 +276,26 @@
                     die("It looks like the application was unable to connect to your MySQL server, or had trouble looking for the reading list.  Here is the MySQL error: 4");
                 }
 
-                // add this instructor to the authors list for this reading list
-                $sql = "INSERT INTO authorlists (authorid, listid) VALUES (?,?)";
+                $sql = "SELECT id FROM authorlists WHERE authorid = ? AND listid = ?;";
                 $stmt = $c->prepare($sql);
                 $stmt->bind_param('ii',$authorID,$row['id']);
-                $stmt->execute();
-                $added = TRUE;
+                $stmt->execute();                
+                $finalcheckforauthor = $stmt->get_result();
+
+                if ($finalcheckforauthor) {
+                    if (mysqli_num_rows($finalcheckforauthor) <= 0) {
+                
+                        // add this instructor to the authors list for this reading list
+                        $sql = "INSERT INTO authorlists (authorid, listid) VALUES (?,?)";
+                        $stmt = $c->prepare($sql);
+                        $stmt->bind_param('ii',$authorID,$row['id']);
+                        $stmt->execute();
+                        $added = TRUE;
+                    }
+                } else {
+                    die("It looks like the application was unable to connect to your MySQL server, or had trouble looking for the reading list.  Here is the MySQL error: 4");
+                }
+
             } else {
                 $authorIDfetch = mysqli_fetch_array($authorresults);
                 $authorID = $authorIDfetch['id'];

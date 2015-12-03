@@ -15,7 +15,7 @@ include_once("app/app.php");
   if (!(($customparams['userid'] == "") || ($customparams['password'] == "") || ($customparams['profile'] == ""))) {
   ?>
 <div class="readingListLink">
-  <h3><a href="stats.php">Statistics</a></h3>
+  <strong><a href="stats.php">Statistics</a></strong> | <strong><a href="export.php" target="_blank">Download Library Materials in Reading Lists</a></strong> | <strong><a href="exportsql.php" target="_blank">Download Export File</a></strong> | <strong><a href="importsql.php" target="_blank">Import from Export File</a></strong>
 </div>
 <?php
   }
@@ -103,6 +103,10 @@ include_once("app/app.php");
       <td><input type="radio" name="studentdata" value="y" <?php if ($customparams['studentdata'] == "y") { echo 'checked="checked"'; } ?>/> Yes | <input type="radio" name="studentdata" value="n" <?php if ($customparams['studentdata'] == "n") { echo 'checked="checked"'; } ?>/> No</td>
     </tr>
 <tr>
+      <td>Link to Help Pages</td>
+      <td><input type="text" name="helppages" placeholder="URL for LibGuide or other help pages" value="<?php echo $customparams['helppages']; ?>" /></td>
+</tr>
+<tr>
       <td>Footer text</td>
       <td><input type="text" name="copyright" placeholder="e.g., a copyright notice" value="<?php if (isset($customparams['copyright'])) { echo $customparams['copyright']; } ?>" /></td>
     </tr>
@@ -122,6 +126,10 @@ include_once("app/app.php");
       <td>Open all Lists in a New Window</td>
       <td><input type="radio" name="newwindow" value="y" <?php if ($customparams['newwindow'] == "y") { echo 'checked="checked"'; } ?>/> Yes | <input type="radio" name="newwindow" value="n" <?php if ($customparams['newwindow'] == "n") { echo 'checked="checked"'; } ?>/> No</td>
     </tr>
+<tr>
+      <td>Show First Full Text Link Only</td>
+      <td><input type="radio" name="firstftonly" value="y" <?php if ($customparams['firstftonly'] == "y") { echo 'checked="checked"'; } ?>/> Yes | <input type="radio" name="firstftonly" value="n" <?php if ($customparams['firstftonly'] == "n") { echo 'checked="checked"'; } ?>/> No</td>
+</tr>
 <tr>
 
   <td>   </td>

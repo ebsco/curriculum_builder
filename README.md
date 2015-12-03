@@ -1,6 +1,10 @@
-*Current Version: 2.1.1 (Sep 2015)*
+*Current Version: 2.2 (Nov 2015)*
+
+## Important Note
 
 *If you choose to host Curriculum Builder yourself, please note that EBSCO Support cannot provide assistance with the hosting and troubleshooting of your tool.  If you notice errors with the code, please let us know, but installing this tool locally means you assume all responsibility for the tool.*
+
+*Please see license.txt for information on use of this code.*
 
 Thank you for downloading Curriculum Builder: Open Source.  This plugin is an LTI Tool Provider 1.0 (http://www.imsglobal.org/toolsinteroperability2.cfm), and is compatible with any learning management system that is LTI-compliant.  A list of compliant LMS's (including Moodle, Blackboard, Canvas, and Desire2Learn) can be found here: http://developers.imsglobal.org/catalog.html
 
@@ -53,6 +57,7 @@ oauth | manages the Consumer Key / Secret pairs that allow LMSs to connect to th
 authtokens | manages authentication tokens for the EDS API
 studentaccess | records student names as they access lists
 studentreadings | records student names as they access individual readings
+folders | list of folders in reading lists
 
 #### Set Up Steps
 1. Create a new database in MySQL

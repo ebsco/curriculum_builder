@@ -125,7 +125,7 @@ if ($last_access == 0) {
     $sql = "UPDATE oauth SET expires=CURRENT_TIMESTAMP;";
     mysqli_query($c,$sql);
 } else {
-    echo "<p><em>Version 2.2 Update</em>: <strong>Expiration of consumer keys</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.0 Update</em>: <strong>Expiration of consumer keys</strong> is already included in your installation.  No update needed.</p>";
 }
 
 ?>
@@ -145,7 +145,7 @@ if ($v3 == 0) {
     mysqli_query($c,$sql);
     echo "<p><strong>Adding Custom Parameter Fields</strong>.  This will allow you to edit settings from the admin panel.</p>";
 } else {
-    echo "<p><em>Version 3.0 Update</em>: <strong>Custom Parameter Fields</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1 Update</em>: <strong>Custom Parameter Fields</strong> is already included in your installation.  No update needed.</p>";
 }
 
 ?>
@@ -185,7 +185,7 @@ if ($v3 == 0) {
     echo "<p><strong>Adding Student Data Tables</strong>.  This will allow you to collect student data.</p>";
 
 } else {
-    echo "<p><em>Version 3.0b Update</em>: <strong>Student Data</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1b Update</em>: <strong>Student Data</strong> is already included in your installation.  No update needed.</p>";
 }
 ?>
 
@@ -204,7 +204,7 @@ if ($v3 == 0) {
     mysqli_query($c,$sql);
     echo "<p><strong>Adding EDS Label Option</strong>.  This will allow you to relabel the link back to EDS on the detailed record.</p>";
 } else {
-    echo "<p><em>Version 3.0c Update</em>: <strong>Adding EDS Label Option</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1c Update</em>: <strong>Adding EDS Label Option</strong> is already included in your installation.  No update needed.</p>";
 }
 ?>
 
@@ -223,7 +223,7 @@ if ($v3 == 0) {
     mysqli_query($c,$sql);
     echo "<p><strong>Adding Copyright Option</strong>.  This will allow you to add a copyright notice to the bottom of the page.</p>";
 } else {
-    echo "<p><em>Version 3.0c Update</em>: <strong>Copyright notice</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1c Update</em>: <strong>Copyright notice</strong> is already included in your installation.  No update needed.</p>";
 }
 ?>
 
@@ -242,7 +242,7 @@ if ($v3 == 0) {
     mysqli_query($c,$sql);
     echo "<p>".mysqli_error($c)."<strong>Adding ability to copy lists from prior semesters</strong>.  This will prompt users to import an existing list if the title of the list matches an older list.</p>";
 } else {
-    echo "<p><em>Version 3.0d Update</em>: <strong>Copy List</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1d Update</em>: <strong>Copy List</strong> is already included in your installation.  No update needed.</p>";
 }
 ?>
 
@@ -261,7 +261,7 @@ if ($v3 == 0) {
     mysqli_query($c,$sql);
     echo "<p>".mysqli_error($c)."<strong>Adding ability to submit custom CSS</strong>.  You must host custom CSS in a web accessible location.</p>";
 } else {
-    echo "<p><em>Version 3.0e Update</em>: <strong>Custom CSS</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1e Update</em>: <strong>Custom CSS</strong> is already included in your installation.  No update needed.</p>";
 }
 ?>
 
@@ -280,7 +280,7 @@ if ($v3 == 0) {
     mysqli_query($c,$sql);
     echo "<p>".mysqli_error($c)."<strong>Adding ability to add instructions</strong> to lists.</p>";
 } else {
-    echo "<p><em>Version 3.0f Update</em>: <strong>Reading Instructions</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1f Update</em>: <strong>Reading Instructions</strong> is already included in your installation.  No update needed.</p>";
 }
 ?>
 
@@ -299,7 +299,7 @@ if ($v3 == 0) {
     mysqli_query($c,$sql);
     echo "<p>".mysqli_error($c)."<strong>Adding ability to hide full text limiters</strong> to lists.</p>";
 } else {
-    echo "<p><em>Version 3.0g Update</em>: <strong>Full Text Limiter Hiding</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1g Update</em>: <strong>Full Text Limiter Hiding</strong> is already included in your installation.  No update needed.</p>";
 }
 ?>
 
@@ -318,7 +318,7 @@ if ($v3 == 0) {
     mysqli_query($c,$sql);
     echo "<p>".mysqli_error($c)."<strong>Add Course Link</strong> to lists.</p>";
 } else {
-    echo "<p><em>Version 3.0h Update</em>: <strong>Course Links</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1h Update</em>: <strong>Course Links</strong> is already included in your installation.  No update needed.</p>";
 }
 ?>
 
@@ -337,7 +337,7 @@ if ($v3 == 0) {
     mysqli_query($c,$sql);
     echo "<p>".mysqli_error($c)."<strong>Quick Launch</strong> to lists.</p>";
 } else {
-    echo "<p><em>Version 3.0i Update</em>: <strong>Quick Launch</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1i Update</em>: <strong>Quick Launch</strong> is already included in your installation.  No update needed.</p>";
 }
 
 $sql = "SHOW COLUMNS FROM oauth;";
@@ -361,10 +361,100 @@ if ($v3 == 0) {
     
     echo "<p>".mysqli_error($c)." Adding <strong>New Window Option</strong> to lists.</p>";
 } else {
-    echo "<p><em>Version 3.0j Update</em>: <strong>New Window Option</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.1j Update</em>: <strong>New Window Option</strong> is already included in your installation.  No update needed.</p>";
+}
+
+// v.2.2
+
+if (!in_array("folders",$tablearray)) {
+    $sql = "CREATE TABLE folders (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  label text NOT NULL,
+  listid int(11) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;";
+    mysqli_query($c,$sql);
+    echo "<p><em>Version 2.2 Update</em>: Table <strong>Folders</strong> added to database.</p>";
+} else {
+    echo "<p><em>Version 2.2 Update</em>: Table <strong>Folders</strong> already in database.</p>";
+}
+
+$sql = "SHOW COLUMNS FROM readings;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'folderid') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE readings ADD folderid INT(11); ";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>Folders</strong> to Readings Table.</p>";
+} else {
+    echo "<p><em>Version 2.2 Update</em>: <strong>Folders</strong> is already included in your installation.  No update needed.</p>";
+}
+
+
+$sql = "SHOW COLUMNS FROM oauth;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'firstftonly') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE oauth ADD firstftonly VARCHAR(1) DEFAULT 'y'; ";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>First Full Text option</strong> to lists.</p>";
+} else {
+    echo "<p><em>Version 2.2 Update</em>: <strong>First Full Text option</strong> is already included in your installation.  No update needed.</p>";
+}
+
+$sql = "SHOW COLUMNS FROM authors;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'lms_id') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE authors ADD lms_id VARCHAR(200);";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>LMS User ID</strong> to lists.</p>";
+} else {
+    echo "<p><em>Version 2.2 Update</em>: <strong>LMS User ID</strong> is already included in your installation.  No update needed.</p>";
+}
+
+$sql = "SHOW COLUMNS FROM oauth;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'helppages') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE oauth ADD helppages text; ";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>Help Pages option</strong> to lists.</p>";
+} else {
+    echo "<p><em>Version 2.2 Update</em>: <strong>Help Pages option</strong> is already included in your installation.  No update needed.</p>";
 }
 
 
 ?>
+
+
 
 <p><strong>Update complete.</strong></p>
