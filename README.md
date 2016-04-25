@@ -68,6 +68,7 @@ folders | list of folders in reading lists
 1. Place this directory of files in a web accessible place
 2. Make note of the URL for the **lti.php** file found in this directory
 3. Open and edit **connect.php** and enter the values needed to connect to your MySQL instance.
+4. In a web browser, navigate to your **update.php** file. This will run the database updates.
 
 ### Setting up Consumer Key / Secret Pairs
 1. Open the **conf/keys.php** file found in the conf directory.
