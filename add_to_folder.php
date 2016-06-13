@@ -11,7 +11,7 @@
   if (!isInstructor()) {
     die("Only course instructors may perform this action.");
   }
-  
+
   $clean = strip_tags_deep($_GET);
 
   if (isset($clean['action']) && ($clean['action'] == 'newfolder')) {

@@ -472,9 +472,27 @@ if ($v3 == 0) {
     
     echo "<p>".mysqli_error($c)." Adding <strong>Proxy information and Search Label</strong> to lists.</p>";
 } else {
-    echo "<p><em>Version 2.3 Update</em>: <strong>Proxy information and Search Label</strong> is already included in your installation.  No update needed.</p>";
+    echo "<p><em>Version 2.3a Update</em>: <strong>Proxy information and Search Label</strong> is already included in your installation.  No update needed.</p>";
 }
 
+
+$sql = "SHOW COLUMNS FROM folders;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'sortorder') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE folders ADD sortorder INT(11) DEFAULT 0; ";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>Folder Sort Order</strong> to lists.</p>";
+} else {
+    echo "<p><em>Version 2.3b Update</em>: <strong>Folder Sort Order</strong> is already included in your installation.  No update needed.</p>";
+}
 
 ?>
 

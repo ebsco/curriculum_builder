@@ -49,7 +49,23 @@
             }
             ?></strong></h1><span style="color:#333333;"><?php
             if (isset($customparams['libname'])) {
-                echo $customparams['libname'];
+				if (substr_count($customparams['libname'],"http")) {
+					$closeTag = "</a>";
+					$startURL = strpos($customparams['libname'],"http");
+					$endURL = strpos($customparams['libname']," ",$startURL+1);
+					
+					if (!($endURL)) {
+						$opentag = '<a target="_blank" href="'.substr($customparams['libname'],$startURL).'">';
+						$final = substr($customparams['libname'],0,$startURL).$opentag.substr($customparams['libname'],$startURL).$closeTag;
+					} else {
+						$urllength = $endURL - $startURL;
+						$opentag = '<a target="_blank" href="'.substr($customparams['libname'],$startURL,$urllength).'">';
+						$final = substr($customparams['libname'],0,$startURL).$opentag.substr($customparams['libname'],$startURL,$urllength).$closeTag.substr($customparams['libname'],$endURL);						
+					}
+					echo $final;
+				} else {
+	                echo $customparams['libname'];
+				}
             } ?></span>
 			<?php
 			if ((isset($_COOKIE['logged_in_cust_id'])) && (!(isset($_REQUEST['logout'])))){

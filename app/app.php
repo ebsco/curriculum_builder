@@ -604,7 +604,7 @@ function check_reading_in_list($c,$readingid,$listid) {
 }
 
 function getFolderList($c) {
-    $sql = 'SELECT id, label FROM folders WHERE listid = ?;';
+    $sql = 'SELECT id, label, sortorder FROM folders WHERE listid = ? ORDER BY sortorder ASC, label;';
     $stmt = $c->prepare($sql);
     
     $listid = decryptCookie($_COOKIE['currentListId']);
@@ -730,6 +730,20 @@ function fixprotocol ($url) {
 function textinbrief ($text,$charcount) {
     $pos=strpos($text, ' ', $charcount);
     return substr($text,0,$pos ); 
+}
+
+function setFolderName($c,$folderid,$value) {
+    $sql = 'UPDATE folders SET label = ? WHERE id = ?';
+    $stmt = $c->prepare($sql);
+    $stmt->bind_param('si',$value,$folderid);
+    $stmt->execute();
+}
+
+function setFolderOrder($c,$folderid,$value) {
+    $sql = 'UPDATE folders SET sortorder = ? WHERE id = ?';
+    $stmt = $c->prepare($sql);
+    $stmt->bind_param('ii',$value,$folderid);
+    $stmt->execute();
 }
 
 function processProxy ($url, $proxyprefix, $proxyencode) {

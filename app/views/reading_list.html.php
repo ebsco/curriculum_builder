@@ -1,4 +1,31 @@
 <script type="text/javascript">
+	function enableEditFolder(editfolderid) {
+		$('#foldernameedit'+editfolderid).css("display","inline");
+		$('#confirmedit'+editfolderid).css("display","inline");
+		$('#foldername'+editfolderid).css("display","none");
+		$('#editicon'+editfolderid).css("display","none");
+		$('#foldernameedit'+editfolderid).keyup(function (e) {
+			if (e.keyCode == 13) {
+				toggleName(editfolderid);
+			}
+		});
+	}
+	
+	function toggleName(editfolderid) {
+		$.ajax({
+			type: "GET",
+			url: "folderedit.php?action=editname&folderid="+editfolderid+"&value="+encodeURIComponent($('#foldernewname'+editfolderid).val()),
+			success: function(){
+	 
+			}			
+		});
+		$('#folderlabel'+editfolderid).text($('#foldernewname'+editfolderid).val());
+		$('#foldernameedit'+editfolderid).css("display","none");
+		$('#confirmedit'+editfolderid).css("display","none");
+		$('#foldername'+editfolderid).css("display","inline");
+		$('#editicon'+editfolderid).css("display","inline");		
+	}
+		
     function addHit(data1)
     {
 	$.ajax({
@@ -42,6 +69,32 @@
     });
     $( "#readingList" ).enableSelection();
     $( "#readingList" ).sortable({ axis: 'y' });
+
+    $( "#folderList" ).sortable({
+	start: function () {
+	},
+	stop: function () {
+	},
+	update: function( event, ui ) {
+		console.log("Folder reorder detected.");
+	    var priority = 0;
+	    $( ".folderobject").each(function(){
+				priority += 1;
+				$(this).find('.foldersortorder').val(priority);
+				var itemid = $(this).find('.folderidnum').text();
+				$.ajax({
+				   type: "GET",
+				   url: "folderedit.php?action=setorder&folderid="+itemid+"&value="+priority,
+				   success: function(){
+		
+				   }
+		 });
+	    });
+	}
+    });
+    $( "#folderList" ).enableSelection();
+    $( "#folderList" ).sortable({ axis: 'y' });
+
   });
 <?php } ?>
 </script>
@@ -240,19 +293,19 @@
 		    }
 		?>
 
-		<ul class="listoffolders">
+		<ul id="folderList" class="listoffolders">
 	<?php
 	    foreach ($listoffolders as $folder) {
 		?>
-		    <li><?php
+		    <li class="folderobject"><span style="display: none;" class="folderidnum"><?php echo $folder['id']; ?></span><input type="hidden" class="foldersortorder" value="<?php echo $folder['sortorder']; ?>" /><span id="foldername<?php echo $folder['id']; ?>"><?php
 		    if (isset($clean['folderid']) && ($folder['id'] == $clean['folderid'])) {
-			echo "<strong>".$folder['label']."</strong> (currently selected)";
+			echo "<strong id=\"folderlabel".$folder['id']."\">".$folder['label']."</strong></span> <span id=\"foldernameedit".$folder['id']."\" style=\"display:none;\"><input id=\"foldernewname".$folder['id']."\" type=\"text\" value=\"".$folder['label']."\" style=\"height: 12px;font-size: small;\" /></span> (currently selected)";
 		    } else {
-			echo '<a href="reading_list.php?folderid='.$folder['id'].'">'.$folder['label']."</a> (".folderitemcount($c,$folder['id'])." items)";
+			echo '<a href="reading_list.php?folderid='.$folder['id'].'" id="folderlabel'.$folder['id'].'">'.$folder['label']."</a></span> <span id=\"foldernameedit".$folder['id']."\" style=\"display:none;\"><input id=\"foldernewname".$folder['id']."\" type=\"text\" value=\"".$folder['label']."\" style=\"height: 12px;font-size: small;\" /></span> (".folderitemcount($c,$folder['id'])." items)";
 		    }
 		    
 		    if (isInstructor()) {
-		    ?> <img src="web/delete.png" style="max-height: 12px; border: none;" onclick="return deletefolderobject(<?php echo $folder['id'].",".decryptCookie($_COOKIE['currentListId']); ?>);"/></li>
+		    ?> <img src="web/confirm.gif" onclick="toggleName(<?php echo $folder['id']; ?>)" id="confirmedit<?php echo $folder['id']; ?>" onclick="confirmfoldernameedit();" style="display:none;max-height: 12px; border: none;" /><img src="web/edit.png" id="editicon<?php echo $folder['id']; ?>" onclick="enableEditFolder(<?php echo $folder['id']; ?>);" style="max-height: 12px; border: none;" /> <img src="web/drag.png" style="max-height: 12px; border: none;"> <img src="web/delete.png" style="max-height: 12px; border: none;" onclick="return deletefolderobject(<?php echo $folder['id'].",".decryptCookie($_COOKIE['currentListId']); ?>);"/></li>
 		<?php
 		    }
 	    }
