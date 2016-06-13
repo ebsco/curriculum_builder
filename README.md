@@ -1,4 +1,4 @@
-*Current Version: 2.2 (Nov 2015)*
+*Current Version: 2.3 (Aug 2016 est.)*
 
 ## Important Note
 
