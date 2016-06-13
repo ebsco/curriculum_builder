@@ -288,7 +288,7 @@
 					    $readingtitle = html_entity_decode($reading['title'], ENT_QUOTES, 'UTF-8');
 					    //$readingtitle = $reading['title'];
 					    $comparison .= "<br /><br /><textarea style='width:100%;'>".$readingtitle." (from MYSQL)\n".htmlentities($title)." (from API)</textarea>";
-					    if ((htmlentities($title) == $readingtitle) || ($title == $readingtitle)) {
+					    if (((htmlentities($title) == $readingtitle) || ($title == $readingtitle)) && ($reading['an'] == $result['An'])) {
 						$found = 1;
 						$readingMetadata = $result;
 					    }					    
@@ -409,7 +409,7 @@
 			    if (isset($clean['folderid'])) { echo "&folderid=" . $clean['folderid']; }
 			    echo "'>" . html_entity_decode($reading["title"]) . "</a></strong>";
 			} else if ($reading["type"] == 2) {
-                            echo "<a onclick='addHit(".$reading["id"].")' href='" . $reading["url"] . "' target='_blank'>" . html_entity_decode($reading["title"]) . "</a>  <em>(website launches in a new window)</em>";
+                            echo "<a onclick='addHit(".$reading["id"].")' href='" . urldecode($reading["url"]) . "' target='_blank'>" . html_entity_decode($reading["title"]) . "</a>  <em>(website launches in a new window)</em>";
                         } else if ($reading["type"] == 3) {
                             echo "<strong>".html_entity_decode($reading["instruct"])."</strong>";
                         }
@@ -563,7 +563,7 @@
 							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
-			?>href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if (isset($customLink['Icon']) && (strlen($customLink['Icon']) > 0)) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php } else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Text']; ?></a>
+			?>href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if (isset($customLink['Icon']) && (strlen($customLink['Icon']) > 0)) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php } else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Text']; ?></a>
 
                                 </div>
 
@@ -590,7 +590,7 @@
 							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
-			?>href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+			?>href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
 
                                 </div>
 
@@ -623,7 +623,7 @@
 							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
-			?>href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']))) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php }  else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Name']; ?></a>
+			?>href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']))) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php }  else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Name']; ?></a>
 
                                 </div>
 
@@ -646,7 +646,7 @@
 							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
-			?>href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+			?>href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
 
                                 </div>
 

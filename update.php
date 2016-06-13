@@ -453,6 +453,29 @@ if ($v3 == 0) {
 }
 
 
+$sql = "SHOW COLUMNS FROM oauth;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'proxyprefix') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE oauth ADD proxyprefix VARCHAR(100); ";
+    mysqli_query($c,$sql);
+    $sql = "ALTER TABLE oauth ADD proxyencode VARCHAR(1) DEFAULT 'n'; ";
+    mysqli_query($c,$sql);
+    $sql = "ALTER TABLE oauth ADD searchlabel VARCHAR(200) DEFAULT 'Search Library Resources'; ";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>Proxy information and Search Label</strong> to lists.</p>";
+} else {
+    echo "<p><em>Version 2.3 Update</em>: <strong>Proxy information and Search Label</strong> is already included in your installation.  No update needed.</p>";
+}
+
+
 ?>
 
 

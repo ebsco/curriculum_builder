@@ -6,7 +6,7 @@ $Info = $api->getInfo();
 <div class="searchHomeContent">
 <div class="searchHomeForm">
     <div class="searchform">
-<h1>Search for Library Resources</h1>
+<h1><?php echo $customparams['searchlabel']; ?></h1>
 <form action="results.php">
     <p>
         <input type="text" name="query" style="width: 350px;" id="lookfor" />

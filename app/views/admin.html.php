@@ -15,7 +15,7 @@ include_once("app/app.php");
   if (!(($customparams['userid'] == "") || ($customparams['password'] == "") || ($customparams['profile'] == ""))) {
   ?>
 <div class="readingListLink">
-  <strong><a href="stats.php">Statistics</a></strong> | <strong><a href="export.php" target="_blank">Download Library Materials in Reading Lists</a></strong> | <strong><a href="exportsql.php" target="_blank">Download Export File</a></strong> | <strong><a href="importsql.php" target="_blank">Import from Export File</a></strong>
+  <strong><a href="stats.php">Statistics</a></strong> | <strong><a href="exportsql.php" target="_blank">Download Export File</a></strong> | <strong><a href="importsql.php" target="_blank">Import from Export File</a></strong>
 </div>
 <?php
   }
@@ -73,6 +73,13 @@ include_once("app/app.php");
       <td><input type="text" placeholder="Required" name="profile" value="<?php echo $customparams['profile']; ?>" /></td>
     </tr>
 <tr>
+      <td>Proxy Prefix for CustomLinks</td>
+      <td><input type="text" placeholder="Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end" name="proxyprefix" value="<?php echo $customparams['proxyprefix']; ?>" /></td>
+    </tr>
+<tr>
+      <td>Proxy should encode target URL</td>
+      <td><input type="radio" name="proxyencode" value="y" <?php if ($customparams['proxyencode'] == "y") { echo 'checked="checked"'; } ?>/> Yes | <input type="radio" name="proxyencode" value="n" <?php if ($customparams['proxyencode'] == "n") { echo 'checked="checked"'; } ?>/> No</td>    </tr>
+<tr>
       <td>URL for your library logo</td>
       <td><input type="text" placeholder="http://url.to.your/logo.jpg" name="liblogo" value="<?php echo $customparams['liblogo']; ?>" /></td>
     </tr>
@@ -89,11 +96,13 @@ include_once("app/app.php");
       <td><input type="text" placeholder="Branding text at top of screen" name="libname" value="<?php echo $customparams['libname']; ?>" /></td>
     </tr>
 <tr>
-<tr>
       <td>Link to EDS Label</td>
       <td><input type="text" name="EDSlabel" placeholder="Label for the link that points back to EDS from a detailed record" value="<?php echo $customparams['EDSlabel']; ?>" /></td>
     </tr>
 <tr>
+      <td>Label for Search Box</td>
+      <td><input type="text" name="searchlabel" placeholder="Label for the link above the search box" value="<?php echo $customparams['searchlabel']; ?>" /></td>
+    </tr>
 <tr>
       <td>Custom CSS File</td>
       <td><input type="text" name="css" placeholder="URL for CSS Stylesheet" value="<?php echo $customparams['css']; ?>" /></td>

@@ -373,7 +373,7 @@ function loadCustomParams() {
     $c = func_get_arg(0);
     $oauth_consumer_key = func_get_arg(1);
     
-    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow, firstftonly, helppages FROM oauth WHERE oauth_consumer_key = ?';
+    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow, firstftonly, helppages, searchlabel, proxyprefix, proxyencode FROM oauth WHERE oauth_consumer_key = ?';
     $stmt = $c->prepare($sql);
     $stmt->bind_param('s',$oauth_consumer_key);
     $stmt->execute();
@@ -730,6 +730,33 @@ function fixprotocol ($url) {
 function textinbrief ($text,$charcount) {
     $pos=strpos($text, ' ', $charcount);
     return substr($text,0,$pos ); 
+}
+
+function processProxy ($url, $proxyprefix, $proxyencode) {
+    if ((isset($proxyprefix)) && (strlen($proxyprefix) > 0)) {
+        if (substr_count($proxyprefix,"{targetURLdomain}")) {
+            $targetURL = parse_url($url);
+            if (isset($targetURL['query']) && (strlen($targetURL['query']) > 0)) {                
+                $path = $targetURL['path']."?".$targetURL['query'];
+            } else {
+                $path = $targetURL['path'];
+            }
+
+            if ($proxyencode == "y") {
+                return str_replace("{targetURLdomain}",$targetURL['host'],$proxyprefix) . urlencode($path);
+            } else {
+                return str_replace("{targetURLdomain}",$targetURL['host'],$proxyprefix) . $path;
+            }
+        } else {
+            if ($proxyencode == "y") {
+                return trim($proxyprefix) . urlencode($url);
+            } else {
+                return trim($proxyprefix) . $url;
+            }
+        }
+    } else {
+        return $url;
+    }
 }
 
 function parseQueryString ($str) {

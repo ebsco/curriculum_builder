@@ -97,7 +97,7 @@
 		}
 		if (isInstructor()) {
                 ?>
-                <span style="float:right; font-size:smaller; color:#999999;"><strong>List ID</strong>: <?php echo decryptCookie($_COOKIE['currentLinkId']); ?></span>
+                <span style="float:right; font-size:smaller; color:#999999;"><strong>CB Version 2.3</strong> - <strong>List ID</strong>: <?php echo decryptCookie($_COOKIE['currentLinkId']); ?></span>
 		<?php
 		}
 		?>
@@ -107,5 +107,5 @@
         </div>
 	<div class="debug" style="display:none;"><?php if (isset($_SESSION['debug'])) { echo $_SESSION['debug']; } ?></div>
     </body>
-    <script type="text/javascript" src="//widgets.ebscohost.com/prod/common/branding/curriculumbuilder.js"></script>
+    <script type="text/javascript" id="custom_script" data-consumerkey="<?php echo decryptCookie($_COOKIE['oauth_consumer_key']); ?>" src="//widgets.ebscohost.com/prod/common/branding/curriculumbuilder.js"></script>
 </html>

@@ -1123,7 +1123,7 @@ if (!(isInstructor())) {
 
                                 <div class="fulltextlink">
 
-                                 <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if (isset($customLink['Icon']) && (strlen($customLink['Icon']) > 0)) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php } else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Text']; ?></a>
+                                 <a target="_blank" href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if (isset($customLink['Icon']) && (strlen($customLink['Icon']) > 0)) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php } else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Text']; ?></a>
 
                                 </div>
 
@@ -1146,7 +1146,7 @@ if (!(isInstructor())) {
 
                                 <div class="fulltextlink"> 
 
-                                   <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+                                   <a target="_blank" href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
 
                                 </div>
 
@@ -1175,7 +1175,7 @@ if (!(isInstructor())) {
 
                                 <div class="fulltextlink">
 
-                                 <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']))) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php }  else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Name']; ?></a>
+                                 <a target="_blank" href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']))) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php }  else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Name']; ?></a>
 
                                 </div>
 
@@ -1194,7 +1194,7 @@ if (!(isInstructor())) {
 
                                 <div class="fulltextlink"> 
 
-                                   <a target="_blank" href="<?php echo $customLink['Url']; ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+                                   <a target="_blank" href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
 
                                 </div>
 

@@ -85,7 +85,7 @@ if(typeof targetfolder === 'undefined'){
 	targetfolder = '';
 }
 
-var queryString = "?listid=" + listid + "&authorid=" + authorid + "&an=none&db=none&url=none&title=none&instruct=" + insttext + "&action=1&priority=1&type=3&folder="+targetfolder; 
+var queryString = "?listid=" + listid + "&authorid=" + authorid + "&an=none&db=none&url=none&title=none&instruct=" + encodeURIComponent(insttext) + "&action=1&priority=1&type=3&folder="+targetfolder; 
 xmlhttp.open("GET","folder.php" + queryString,true);
 xmlhttp.send();
 		
@@ -101,7 +101,7 @@ if(typeof targetfolder === 'undefined'){
 	targetfolder = '';
 }
 
-var queryString = "?listid=" + listid + "&authorid=" + authorid + "&an=none&db=none&url=" + url + "&text=none&title=" + title + "&action=1&priority=1&type=2&folder="+targetfolder; 
+var queryString = "?listid=" + listid + "&authorid=" + authorid + "&an=none&db=none&url=" + encodeURIComponent(url) + "&text=none&title=" + encodeURIComponent(title) + "&action=1&priority=1&type=2&folder="+targetfolder; 
 
 xmlhttp.open("GET","folder.php" + queryString,true);
 xmlhttp.send();
