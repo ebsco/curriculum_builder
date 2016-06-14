@@ -54,10 +54,20 @@
         $clean['link'] = $clean['custom_link'];
     }
     
-    // accomodate Teaching Assistants
-    if (!((substr_count($clean['roles'],"Instructor") > 0))) {
-        if (substr_count($clean['roles'],"TeachingAssistant") > 0) {
-            $clean['roles'] = "urn:lti:instrole:ims/lis/Instructor";
+    // accomodate other roles
+    
+    if (strlen($customparams['empowered_roles']) > 0) {
+        $acceptedRoles = explode(",",$customparams['empowered_roles']);
+        foreach($acceptedRoles as $role) {
+            if (substr_count(strtolower($clean['roles']),trim(strtolower($role))) > 0) {
+                $clean['roles'] = "urn:lti:instrole:ims/lis/Instructor";
+            }
+        }
+    } else {
+        if (!((substr_count($clean['roles'],"Instructor") > 0))) {
+            if (substr_count($clean['roles'],"TeachingAssistant") > 0) {
+                $clean['roles'] = "urn:lti:instrole:ims/lis/Instructor";
+            }
         }
     }
     
@@ -303,7 +313,11 @@
         } else {
             die("It looks like the application was unable to connect to your MySQL server, or had trouble looking for the reading list.  Here is the MySQL error: 5");
         }
-        setcookie('currentAuthorId', encryptCookie($authorID), $time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
+        if (is_integer($authorID)) {
+            setcookie('currentAuthorId', encryptCookie($authorID), $time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
+        } else {
+            setcookie('currentAuthorId', encryptCookie("0"), $time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
+        }
     }
 
 

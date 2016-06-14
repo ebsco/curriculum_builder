@@ -494,6 +494,25 @@ if ($v3 == 0) {
     echo "<p><em>Version 2.3b Update</em>: <strong>Folder Sort Order</strong> is already included in your installation.  No update needed.</p>";
 }
 
+$sql = "SHOW COLUMNS FROM oauth;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'empowered_roles') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE oauth ADD empowered_roles VARCHAR(200) DEFAULT 'Instructor,TeachingAssistant'; ";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>Role Empowerment</strong> to lists.</p>";
+} else {
+    echo "<p><em>Version 2.3c Update</em>: <strong>Role Empowerment</strong> is already included in your installation.  No update needed.</p>";
+}
+
+
 ?>
 
 

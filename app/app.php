@@ -277,7 +277,7 @@ function getReadingList ($c) {
 }
 
 function getOtherReadingList ($c,$targetlistid) {
-     $sql = 'SELECT id, an, db, title, url, type, priority, instruct, notes FROM readings WHERE listid = ? ORDER BY priority, title;';
+     $sql = 'SELECT id, an, db, title, url, type, priority, instruct, notes, folderid FROM readings WHERE listid = ? ORDER BY folderid, priority, title;';
     $stmt = $c->prepare($sql);
     $stmt->bind_param('i',$targetlistid);
     $stmt->execute();
@@ -344,18 +344,134 @@ function copyList ($c,$from,$to) {
     $results = $stmt->get_result();
     $currentAuthorId = decryptCookie($_COOKIE['currentAuthorId']);
     
+    $folderlookup = [];
+    
     while ($row = mysqli_fetch_array($results)) {
-        if (isset($_COOKIE['currentAuthorId'])) {
-            $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct) VALUES (?,?,?,?,?,?,?,?,?,?);";
-            $stmt = $c->prepare($sqlr);
-            $stmt->bind_param('iisssissis',$to,$currentAuthorId,$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct']);
+        if (is_integer($row['folderid'])) {
+            if (!(isset($folderlookup[$row['folderid']]))) {
+                $sqlr = "SELECT * FROM folders WHERE id = ?";
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('i',$row['folderid']);
+                $stmt->execute();
+                $folderinfo = $stmt->get_result();
+                $folderinforow = mysqli_fetch_array($folderinfo);
+                $sqlr = "INSERT INTO folders (listid,label,sortorder) VALUES (?,?,?);";
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('isi',$to,$folderinforow['label'],$folderinforow['sortorder']);
+                $stmt->execute();
+                $folderlookup[$row['folderid']] = mysqli_insert_id($c);
+            }
+            if (isset($_COOKIE['currentAuthorId'])) {
+                $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct,folderid) VALUES (?,?,?,?,?,?,?,?,?,?,?);";
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('iisssissisi',$to,$currentAuthorId,$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct'],$folderlookup[$row['folderid']]);
+            } else {
+                $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct,folderid) VALUES (?,?,?,?,?,?,?,?,?,?,?);";            
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('iisssissisi',$to,$row['authorid'],$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct'],$folderlookup[$row['folderid']]);
+            }            
         } else {
-            $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct) VALUES (?,?,?,?,?,?,?,?,?,?);";            
-            $stmt = $c->prepare($sqlr);
-            $stmt->bind_param('iisssissis',$to,$row['authorid'],$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct']);
+            if (isset($_COOKIE['currentAuthorId'])) {
+                $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct) VALUES (?,?,?,?,?,?,?,?,?,?);";
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('iisssissis',$to,$currentAuthorId,$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct']);
+            } else {
+                $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct) VALUES (?,?,?,?,?,?,?,?,?,?);";            
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('iisssissis',$to,$row['authorid'],$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct']);
+            }
         }
         $stmt->execute();
     }
+
+    $sqlr = "SELECT * FROM folders WHERE listid = ?";
+    $stmt = $c->prepare($sqlr);
+    $stmt->bind_param('i',$from);
+    $stmt->execute();
+    $folderinfo = $stmt->get_result();
+    while ($folderinforow = mysqli_fetch_array($folderinfo)) {
+        if (!(isset($folderlookup[$folderinforow['id']]))) {
+            $sqlr = "INSERT INTO folders (listid,label,sortorder) VALUES (?,?,?);";
+            $stmt = $c->prepare($sqlr);
+            $stmt->bind_param('isi',$to,$folderinforow['label'],$folderinforow['sortorder']);
+            $stmt->execute();
+            $folderlookup[$folderinforow['id']] = mysqli_insert_id($c);            
+        }
+    }
+
+}
+
+function copyListWithOptions ($c,$to,$listOfReadings,$notes,$sort,$folders) {
+    $toint = (integer)$to;
+    $to = (string)$toint;
+    $folderlookup = [];
+    $currentAuthorId = decryptCookie($_COOKIE['currentAuthorId']);
+
+    foreach($listOfReadings as $readingToAdd) {
+        $sql = "SELECT * FROM readings WHERE id = ?";
+        $stmt = $c->prepare($sql);
+        $stmt->bind_param('i',$readingToAdd);
+        $stmt->execute();
+        $results = $stmt->get_result();
+        $row = mysqli_fetch_array($results);
+        if (!($notes)) {
+            $row['notes'] = '';
+        }
+        if (!($sort)) {
+            $row['priority'] = 0;
+        }
+        if (!($folders)) {
+            $row['folderid'] = null;
+        }
+        if (is_integer($row['folderid'])) {
+            if (!(isset($folderlookup[$row['folderid']]))) {
+                $sqlr = "SELECT * FROM folders WHERE id = ?";
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('i',$row['folderid']);
+                $stmt->execute();
+                $folderinfo = $stmt->get_result();
+                $folderinforow = mysqli_fetch_array($folderinfo);
+                $sqlr = "INSERT INTO folders (listid,label,sortorder) VALUES (?,?,?);";
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('isi',$to,$folderinforow['label'],$folderinforow['sortorder']);
+                $stmt->execute();
+                $folderlookup[$row['folderid']] = mysqli_insert_id($c);
+            }
+            if (isset($_COOKIE['currentAuthorId'])) {
+                $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct,folderid) VALUES (?,?,?,?,?,?,?,?,?,?,?);";
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('iisssissisi',$to,$currentAuthorId,$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct'],$folderlookup[$row['folderid']]);
+            } else {
+                $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct,folderid) VALUES (?,?,?,?,?,?,?,?,?,?,?);";            
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('iisssissisi',$to,$row['authorid'],$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct'],$folderlookup[$row['folderid']]);
+            }            
+        } else {
+            if (isset($_COOKIE['currentAuthorId'])) {
+                $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct) VALUES (?,?,?,?,?,?,?,?,?,?);";
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('iisssissis',$to,$currentAuthorId,$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct']);
+            } else {
+                $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct) VALUES (?,?,?,?,?,?,?,?,?,?);";            
+                $stmt = $c->prepare($sqlr);
+                $stmt->bind_param('iisssissis',$to,$row['authorid'],$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct']);
+            }
+        }
+        $stmt->execute();
+    }
+
+}
+
+function getFolderLabel ($c,$folderid) {
+    $sql = "SELECT label FROM folders WHERE id = ?";
+    $stmt = $c->prepare($sql);
+    $stmt->bind_param('i',$folderid);
+    $stmt->execute();
+    $folderinfo = $stmt->get_result();
+    while ($folderinforow = mysqli_fetch_array($folderinfo)) {
+        return $folderinforow['label'];
+    }
+    return 'Label not found';
 }
 
 function getLinkLabel () {
@@ -373,7 +489,7 @@ function loadCustomParams() {
     $c = func_get_arg(0);
     $oauth_consumer_key = func_get_arg(1);
     
-    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow, firstftonly, helppages, searchlabel, proxyprefix, proxyencode FROM oauth WHERE oauth_consumer_key = ?';
+    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow, firstftonly, helppages, searchlabel, proxyprefix, proxyencode, empowered_roles FROM oauth WHERE oauth_consumer_key = ?';
     $stmt = $c->prepare($sql);
     $stmt->bind_param('s',$oauth_consumer_key);
     $stmt->execute();

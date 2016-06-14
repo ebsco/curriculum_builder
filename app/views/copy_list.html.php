@@ -92,6 +92,7 @@ $(document).ready(function(){
             <strong>Options</strong>
                 <p><input type="checkbox" name="include_notes" value="1" checked="checked">Include Notes in the Import Process</p>
                 <p><input type="checkbox" name="preserve_order" value="1" checked="checked">Preserve Sort Order</p>
+				<p><input type="checkbox" name="include_folders" value="1" checked="checked">Include Folders where applicable</p>
             </div>
             <div class="readingListLink">
                 <p><input type="checkbox" id="chkAll" /> <strong>Check/Uncheck All</strong></p>
@@ -107,9 +108,13 @@ $(document).ready(function(){
 			    } else {
 			    echo $reading['instruct'];
 			    }
-			    ?><?php if (strlen($reading['notes']) > 0) {
+			    if (strlen($reading['notes']) > 0) {
                                 echo '<br /><span style="font-size:smaller;"><strong>Notes: </strong>' . $reading['notes'] . '</span>';
-                                }?></p>
+                                }
+				if (is_integer($reading['folderid'])) {
+								echo '<br /><span style="font-size:smaller;"><strong>Folder: </strong>' . getFolderLabel($c,$reading['folderid']) . '</span>';
+				}
+				?></p>
                             <?php
                         }
                     } else {

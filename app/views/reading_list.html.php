@@ -1,4 +1,14 @@
 <script type="text/javascript">
+ function textCounter(field,field2,maxlimit)
+{
+ var countfield = document.getElementById(field2);
+ if ( field.value.length > maxlimit ) {
+  countfield.innerHTML = (field.value.length - maxlimit)+" over recommended length.  <span style='color:red;'>Notes may not save properly.</span>";
+ } else {
+  countfield.innerText = maxlimit - field.value.length;
+ }
+}
+
 	function enableEditFolder(editfolderid) {
 		$('#foldernameedit'+editfolderid).css("display","inline");
 		$('#confirmedit'+editfolderid).css("display","inline");
@@ -163,7 +173,7 @@
         <?php
             if (isInstructor()) {
         ?>
-        <div class="readingListLink"><a href="index.php"><strong>Search for Library Resources</strong></a> | <a href="copy_list.php"><strong>Import from Existing List</strong></a> | <a href="import_folder.php"><strong>Import from EBSCO Folder (beta)</strong></a> | This list is
+        <div class="readingListLink"><a href="index.php"><strong><?php if (strlen($customparams['searchlabel']) > 0) { echo $customparams['searchlabel']; } else { echo "Search Library Resources"; } ?></strong></a> | <a href="copy_list.php"><strong>Import from Existing List</strong></a> | <a href="import_folder.php"><strong>Import from EBSCO Folder (beta)</strong></a> | This list is
 	<?php
 	
         if ($privacy == 0) { 
@@ -793,7 +803,7 @@
 			    } else {
 				echo 'Add';
 			    }
-			    echo ' Notes</strong>  <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span><div id="notes'.$reading['id'].'box" style="display:none;"><textarea name="notes' . $reading["id"] . '" style="width:100%">' . html_entity_decode($reading["notes"]) . '</textarea><br /><button class="addFolder">Save Notes</button></div></div>';
+			    echo ' Notes</strong>  <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span><div id="notes'.$reading['id'].'box" style="display:none;"><textarea onkeyup="textCounter(this,\'textcounter'.$reading['id'].'\',5000);" name="notes' . $reading["id"] . '" style="width:100%">' . html_entity_decode($reading["notes"]) . '</textarea><br /><span style="font-size:smaller; color: #666666;">Characters remaining: <span id="textcounter'.$reading['id'].'">'.(5000 - strlen(html_entity_decode($reading["notes"]))).'</span></span><br /><button class="addFolder">Save Notes</button></div></div>';
                         } else {
                             if (strlen($reading["notes"]) > 0) {
                                 echo '<div class="studentnotes">' . html_entity_decode($reading["notes"]) . '</div>';

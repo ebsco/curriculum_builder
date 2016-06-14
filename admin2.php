@@ -53,12 +53,13 @@ if (isset( $_GET['logout'] ) && $_GET['logout'] == "YES") {
 					     helppages = ?,
 						 proxyprefix = ?,
 						 proxyencode = ?,
-						 searchlabel = ?
+						 searchlabel = ?,
+						 empowered_roles = ?
 					     WHERE oauth_consumer_key = ?";
 
 		    $stmt = $c->prepare($sql);
 
-		    $stmt->bind_param('sssssssssssssssssssss',$clean['userid'],$clean['password'],$clean['profile'],$clean['libemail'],$clean['liblogo'],$clean['libname'],$clean['liblink'],$clean['studentdata'],$clean['EDSlabel'],$clean['copyright'],$clean['copylist'],$clean['css'],$clean['forceft'],$clean['courselink'],$clean['newwindow'],$clean['firstftonly'],$clean['helppages'],$clean['proxyprefix'],$clean['proxyencode'],$clean['searchlabel'],$key);
+		    $stmt->bind_param('ssssssssssssssssssssss',$clean['userid'],$clean['password'],$clean['profile'],$clean['libemail'],$clean['liblogo'],$clean['libname'],$clean['liblink'],$clean['studentdata'],$clean['EDSlabel'],$clean['copyright'],$clean['copylist'],$clean['css'],$clean['forceft'],$clean['courselink'],$clean['newwindow'],$clean['firstftonly'],$clean['helppages'],$clean['proxyprefix'],$clean['proxyencode'],$clean['searchlabel'],$clean['empowered_roles'],$key);
 
 		    $stmt->execute();			    
     		}

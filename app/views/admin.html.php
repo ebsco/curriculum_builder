@@ -73,6 +73,10 @@ include_once("app/app.php");
       <td><input type="text" placeholder="Required" name="profile" value="<?php echo $customparams['profile']; ?>" /></td>
     </tr>
 <tr>
+      <td>LMS Roles that can edit lists (comma-separated)</td>
+      <td><input type="text" placeholder="e.g., Instructor" name="empowered_roles" value="<?php echo $customparams['empowered_roles']; ?>" /></td>
+    </tr>
+<tr>
       <td>Proxy Prefix for CustomLinks</td>
       <td><input type="text" placeholder="Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end" name="proxyprefix" value="<?php echo $customparams['proxyprefix']; ?>" /></td>
     </tr>
