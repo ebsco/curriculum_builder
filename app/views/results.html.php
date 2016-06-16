@@ -878,9 +878,9 @@ if (!(isInstructor())) {
 
                              <?php foreach($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['Titles'] as $title){ ?>
 
-                               <?php echo $title['TitleFull']?>,                                  
+                               <?php echo $title['TitleFull']; ?>,                                  
 
-                        <?php }}?>
+                        <?php                        }}?>
 
                         </span>
 
@@ -924,7 +924,7 @@ if (!(isInstructor())) {
 
                              <?php foreach($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['date'] as $date){ ?>
 
-                                 Published: <?php echo $date['M']?>/<?php echo $date['D']?>/<?php echo $date['Y']?>, 
+                                 <span class="hiddendata" style="display:none;"><?php echo $date['Y']; ?></span>Published: <?php echo $date['M']?>/<?php echo $date['D']?>/<?php echo $date['Y']?>, 
 
                              <?php }?> 
 

@@ -224,7 +224,19 @@ Foldering
                      <?php for($i=1;$i<count($result['Items']);$i++) { ?>
                      <tr>
                          <td style="width: 150px; vertical-align: top"><strong>
-                     <?php if (strlen($result['Items'][$i]['Label']) > 1) { echo $result['Items'][$i]['Label'] . ":"; } ?>
+                     <?php if (strlen($result['Items'][$i]['Label']) > 1) {
+					  
+					  if (strtolower($result['Items'][$i]['Label']) == "source") {
+						if (substr_count(strtolower($result['Items'][$i]['Data']),"harvard business review") > 0) {
+						  echo '<span style="display:none;" id="hbrcheck"></span>';
+						}
+					  }
+					  
+					  if (strtolower($result['Items'][$i]['Label']) == "publication year") {
+						  echo '<span style="display:none;" id="hbrdate">'.$result['Items'][$i]['Data'].'</span>';
+					  }
+					  
+					  echo $result['Items'][$i]['Label'] . ":"; } ?>
                        </strong></td>
                        <td>
                      <?php if($result['Items'][$i]['Label']=='URL'){ ?> 
