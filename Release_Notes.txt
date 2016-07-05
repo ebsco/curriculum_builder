@@ -1,5 +1,32 @@
 Curriculum Builder Release Notes
 
+Version 2.3 Release Notes (July 2016)
+
+     Proxy Support
+     CB now allows you to specify a proxy in the administrative panel.  This proxy will be applied to all CustomLinks in the system.  This is critical for libraries that rely on systems like EZProxy to automatically proxy all links on a page; since CB is not a proxied service, EZproxy never "sees" links in CB, whereas in EDS proper, they would be proxied.  It supports prefix-style and WAM-style proxy strings, as well as encoding.
+     
+     Folder Improvements
+     Users can no relabel and reorder folders, and folders are now included in all copy-list functions.
+     
+     Research Starters
+     EBSCO Discovery Service Research Starters are now available for EDS users of Curriculum Builder.  These will appear at the top of the results and can be added to reading lists just like any other materials.
+     
+     Student Statistics
+     A more granular downloadable student usage report is now available, allowing libraries to see either anonymized or student-identified access to specific readings in the reading list.  This could be useful for learning analytics purposes.  Libraries will have the option to collect detailed, anonymized, or no student activity data.  The default is NO student activity data.  If anonymized is selected, instructors will not see student names on who read; however, libraries will be able to download anonymized student activity.  The identifier for an individual user is the user ID provided by the LMS.
+     
+     Various Minor Enhancements
+     Ability to relabel the main search box and link formerly labeled "Search for Library Resources"
+     URLs added to the header text automatically become hyperlinked
+     Libraries can specify which roles have editing privileges for lists; before, this was limited to Instructors and Teaching Assistants.
+     Countdown for character limit appears under notes field, alerting list builders how much space they have left for notes.
+     Added help tips for administrative panel
+
+     Bug Fixes
+     There was a bug that would cause two readings with the same title to appear as the same reading, even if they were actually different readings.  This has been fixed.
+     There was a bug that disallowed ampersands and non-latin characters in text fields; this has been fixed.
+     There was a bug that prevented folder structure from being copied by the 'copy lists' feature.  This has been fixed.
+     There was a bug that allowed instructors to add restricted HBR articles to reading lists.  The publisher does not allow these select articles to be used as course materials without an enhanced licensing agreement.  This has been fixed.
+
 Version 2.2 Release Notes (Nov 2015)
      Foldering Options in Reading Lists
      For users who only want (or who can only have) one reading list in their course, it hasn't been easy to organize a large number of readings in a single, long list.  With the December release of Curriculum Builder we are introducing folder options that will allow instructors and list authors to build folder of items to make it easier to categorize and organize their readings within a single Curriculum Builder reading list.

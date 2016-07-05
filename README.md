@@ -1,4 +1,5 @@
-*Current Version: 2.3 (Aug 2016 est.)*
+*Current Version: 2.3 (July 2016 est.)*
+*This code base is still undergoing security and performance assessments.  Please take it as is.*
 
 ## Important Note
 
@@ -53,11 +54,12 @@ authorlists | connects lists to authors
 lists | entries for each reading list
 credentials | manages the EDS Profiles that connect to this tool
 credentialconsumers | ties EDS Profiles to LMSs
-oauth | manages the Consumer Key / Secret pairs that allow LMSs to connect to this tool
+oauth | manages the Consumer Key / Secret pairs that allow LMSs to connect to this tool, contains administrative choices
 authtokens | manages authentication tokens for the EDS API
 studentaccess | records student names as they access lists
 studentreadings | records student names as they access individual readings
 folders | list of folders in reading lists
+
 
 #### Set Up Steps
 1. Create a new database in MySQL
