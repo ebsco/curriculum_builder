@@ -344,7 +344,7 @@ function copyList ($c,$from,$to) {
     $results = $stmt->get_result();
     $currentAuthorId = decryptCookie($_COOKIE['currentAuthorId']);
     
-    $folderlookup = [];
+    $folderlookup = array();
     
     while ($row = mysqli_fetch_array($results)) {
         if (is_integer($row['folderid'])) {
@@ -404,7 +404,7 @@ function copyList ($c,$from,$to) {
 function copyListWithOptions ($c,$to,$listOfReadings,$notes,$sort,$folders) {
     $toint = (integer)$to;
     $to = (string)$toint;
-    $folderlookup = [];
+    $folderlookup = array();
     $currentAuthorId = decryptCookie($_COOKIE['currentAuthorId']);
 
     foreach($listOfReadings as $readingToAdd) {

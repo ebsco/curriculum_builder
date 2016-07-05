@@ -1213,19 +1213,19 @@ Foldering
 ?>                    
 <!-- If the user is logged in -->
 <!-- If the item is not in the folder -->
-	<div id="notinfolder<?php echo $result['ResultId']; ?>" class="folderitem" style="font-size: 11px; display: <?php 
+	<div id="notinfolder0" class="folderitem" style="font-size: 11px; display: <?php 
 		if (itemInFolder($folderitemsarray,$result['An'],$result['DbId'])) {
   			echo "none";
 		} else {
   			echo "inline";
 		}
 ?>;">
-<button class="addFolder" id="addbutton<?php echo $result['ResultId'];?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',1,<?php echo $result['ResultId']; ?>,1,1)">Add to Reading List</button>
+<button class="addFolder" id="addbutton0" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',1,0,1,1)">Add to Reading List</button>
 
 </div>
 <!-- END item in NOT in folder -->
 <!-- If the item is in the folder... -->
-<div id="infolder<?php echo $result['ResultId']; ?>" class="folder" style="font-size: 11px; display: <?php 
+<div id="infolder0" class="folder" style="font-size: 11px; display: <?php 
 
 		if (itemInFolder($folderitemsarray,$result['An'],$result['DbId'])) {
   			echo "inline";
@@ -1233,7 +1233,7 @@ Foldering
   			echo "none";
 		}
 ?>;">
-<button class="removeFolder" id="removebutton<?php echo $result['ResultId'];?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',2,<?php echo $result['ResultId']; ?>,1,1)">Remove from Reading List</button>
+<button class="removeFolder" id="removebutton0" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',2,0,1,1)">Remove from Reading List</button>
 
 </div>
 <!-- END item is in the folder -->
@@ -1242,7 +1242,7 @@ Foldering
 <?php } else {?>
 
 <!-- If user is NOT logged in -->
-<div id="notinfolder<?php echo $result['ResultId']; ?>" class="folderitem" style="font-size: 11px; display: inline;">
+<div id="notinfolder0" class="folderitem" style="font-size: 11px; display: inline;">
 <?php
 $params = array(
                           'path'=>'results',
