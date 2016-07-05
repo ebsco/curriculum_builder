@@ -833,3 +833,9 @@ a.icon.html.fulltext {
 .pubtype.table-cell img {
     max-width: 70px;
 }
+.adminhelptext {
+    font-size: smaller;
+    color: #666666;
+    margin-top:2px;
+    display: none;
+}

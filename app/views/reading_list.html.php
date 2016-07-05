@@ -442,7 +442,7 @@
                         if (($reading["type"] == 1) && ($useCache == false)) {
 			    if ($found == 1) {
 				echo "<a ";
-				if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+				if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
 				echo "href='record.php?an=" . $reading["an"] . "&db=" . $reading["db"];
@@ -570,17 +570,17 @@
                           <?php if((!isset($_COOKIE['login']))&&$readingMetadata['AccessLevel']==2){ ?> 
 
                         <a <?php
-							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+							if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
-			?>class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $readingMetadata['An']; ?>&db=<?php echo $readingMetadata['DbId']; ?>&<?php echo $encodedHighLigtTerm ?>&resultId=<?php echo $readingMetadata['ResultId'];?>&recordCount=<?php echo $readingMetadata['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode;
+			?>class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $readingMetadata['An']; ?>&db=<?php echo $readingMetadata['DbId']; ?><?php
 			if (isset($clean['folderid'])) { echo "&folderid=" . $clean['folderid']; }
 			?>">Full Text</a>
 
                           <?php } else {?>
 
                         <a <?php
-							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+							if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
 			?>class="icon html fulltext" href="record.php?an=<?php echo $readingMetadata['An']; ?>&db=<?php echo $readingMetadata['DbId']; ?><?php 
@@ -596,7 +596,7 @@
                            ?> 
 
                           <a target="_blank" <?php
-							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+							if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
 			?>class="icon pdf fulltext" href="PDF.php?an=<?php echo $readingMetadata['An']?>&db=<?php echo $readingMetadata['DbId']?>">Full Text</a>
@@ -623,7 +623,7 @@
                                 <div class="fulltextlink-rl">
 
                                  <a target="_blank" <?php
-							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+							if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
 			?>href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if (isset($customLink['Icon']) && (strlen($customLink['Icon']) > 0)) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php } else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Text']; ?></a>
@@ -650,7 +650,7 @@
                                 <div class="fulltextlink-rl"> 
 
                                    <a target="_blank" <?php
-							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+							if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
 			?>href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
@@ -683,7 +683,7 @@
                                 <div class="fulltextlink-rl">
 
                                  <a target="_blank" <?php
-							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+							if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
 			?>href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']))) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php }  else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Name']; ?></a>
@@ -706,7 +706,7 @@
                                 <div class="fulltextlink-rl"> 
 
                                    <a target="_blank" <?php
-							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+							if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
 			?>href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
@@ -753,7 +753,7 @@
                                              }
                                              
                                              echo "<a target='_blank' ";
-							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
+							if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
 					     echo "href='".$customlinkURL."'><img src='web/iconFTAccessSm.gif' /> Online Access</a>";
