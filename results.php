@@ -179,6 +179,7 @@ if(isset($clean['back'] )&&isset($_SESSION['results'])){
             // Specifies whether or not to include highlighting in the search results
             'highlight'      => 'y',
             'expander'       => $expander,
+            'relatedcontent'    => 'rs'
         );
 
         if (!(is_array($limiter))) {

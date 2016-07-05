@@ -624,23 +624,15 @@ function recordStudentAccess($c,$name,$email,$listid) {
     }
 }
 
-function recordStudentReading($c,$name,$email,$readingid) {
-    $sql = "SELECT * FROM studentreading WHERE name = ? AND email = ? AND readingid = ?";
+function recordStudentReading($c,$user_id,$name,$email,$readingid) {
+    $sql = "INSERT INTO studentreading (user_id,name,email,readingid,accessed_time) VALUES (?,?,?,?,NOW());";
     $stmt = $c->prepare($sql);
-    $stmt->bind_param('ssi',$name,$email,$readingid);
+    $stmt->bind_param('sssi',$user_id,$name,$email,$readingid);
     $stmt->execute();
-    $results = $stmt->get_result();
-    
-    if (mysqli_num_rows($results) == 0) {
-        $sql = "INSERT INTO studentreading (name,email,readingid) VALUES (?,?,?);";
-        $stmt = $c->prepare($sql);
-        $stmt->bind_param('ssi',$name,$email,$readingid);
-        $stmt->execute();
-    }    
 }
 
 function getStudentNamesReadings($c,$readingid) {
-    $sql = "SELECT name FROM studentreading WHERE readingid = ?";
+    $sql = "SELECT name FROM studentreading WHERE readingid = ? GROUP BY name";
     $stmt = $c->prepare($sql);
     $stmt->bind_param('i',$readingid);
     $stmt->execute();
@@ -821,6 +813,27 @@ function export_readings($c,$credentialconsumerid) {
 
 function export_all_sql($c,$credentialconsumerid) {
     $sql = 'SELECT authors.fullname AS authors_fullname, authors.email AS authors_emails, authors.lms_id AS authors_lmsid, readings.id AS readings_id, readings.an AS readings_an, readings.db AS readings_db, readings.title AS readings_title, readings.priority AS readings_priority, readings.notes AS readings_notes, readings.url AS readings_url, readings.type AS readings_type, readings.instruct AS readings_instruct, readings.folderid AS readings_folderid, folders.label AS folders_label, lists.linklabel AS lists_linklabel, lists.course AS lists_course, lists.linkid AS lists_linkid, lists.private AS lists_private, lists.last_access AS lists_last_access, credentials.userid AS credentials_userid, credentials.password AS credentials_password, credentials.profile AS credentials_profile, credentialconsumers.`credentialid` AS credentialconsumers_credentialid, credentialconsumers.consumerid AS credentialconsumers_consumerid FROM readings INNER JOIN lists ON readings.listid = lists.id INNER JOIN credentialconsumers ON credentialconsumers.id = lists.credentialconsumerid INNER JOIN credentials ON credentials.id = credentialconsumers.credentialid INNER JOIN authors ON authors.id = readings.authorid LEFT OUTER JOIN folders ON folders.id = readings.folderid WHERE credentials.id=?;';
+    $stmt = $c->prepare($sql);
+    
+    $stmt->bind_param('i',$credentialconsumerid);
+    $stmt->execute();
+    $folderitems = $stmt->get_result();
+    
+     if ($folderitems) {
+          $numFolderItems = mysqli_num_rows($folderitems);
+          if ($numFolderItems > 0) {
+            return $folderitems;
+          } else {
+            return false;
+          }
+     } else {
+        return false;
+     }  
+}
+
+function student_export_all_sql($c,$credentialconsumerid) {
+    $sql = 'SELECT studentreading.name AS student_name, studentreading.email AS email_address, studentreading.user_id AS lms_user_id, studentreading.accessed_time AS time_of_access, readings.title AS reading_title, readings.an AS accession_number, readings.db AS database_code, lists.linklabel AS list_name, lists.course AS course_name FROM studentreading INNER JOIN readings ON studentreading.readingid = readings.id INNER JOIN lists ON readings.listid = lists.id INNER JOIN credentialconsumers ON lists.credentialconsumerid = credentialconsumers.id WHERE readings.type = 1 AND credentialconsumers.credentialid = ?';
+
     $stmt = $c->prepare($sql);
     
     $stmt->bind_param('i',$credentialconsumerid);

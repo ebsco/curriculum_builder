@@ -299,7 +299,7 @@ if (!(isInstructor())) {
                            
                         } else {
                       ?>
-                      <dd><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" /><?php echo $limiter['Label'] ?></dd> 
+                      <div class="limiteritem"><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" /><?php echo $limiter['Label'] ?></div>
 
                       <?php } }else{
 
@@ -324,7 +324,7 @@ if (!(isInstructor())) {
                                  } else {
                                  ?>
 
-                                      <dd><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" checked="checked" /><?php echo $limiter['Label'] ?></dd>                               
+                                      <div class="limiteritem"><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" checked="checked" /><?php echo $limiter['Label'] ?></div>                           
 
                       <?php } }else{
                         
@@ -333,7 +333,7 @@ if (!(isInstructor())) {
                         } else {
                         ?>
 
-                                      <dd><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" /><?php echo $limiter['Label'] ?></dd> 
+                                      <div class="limiteritem"><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" /><?php echo $limiter['Label'] ?></div>
 
                       <?php }}}}}?>
 
@@ -371,7 +371,7 @@ if (!(isInstructor())) {
 
                        if(empty($results['appliedExpanders'])){ ?>
 
-                           <dd><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>" /><?php echo $exp['Label'];?></dd>
+                           <div class="limiteritem"><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>" /><?php echo $exp['Label'];?></div>
 
                     <?php }else{
 
@@ -393,11 +393,11 @@ if (!(isInstructor())) {
 
                         if($flag==TRUE){ ?>
 
-                           <dd><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>"  checked="checked"/><?php echo $exp['Label'];?></dd>
+                           <div class="limiteritem"><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>"  checked="checked"/><?php echo $exp['Label'];?></div>
 
                    <?php }else{ ?>
 
-                            <dd><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>" /><?php echo $exp['Label'];?></dd>
+                            <div class="limiteritem"><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>" /><?php echo $exp['Label'];?></div>
 
                    <?php   }
 
@@ -509,7 +509,7 @@ if (!(isInstructor())) {
 
         </div>
 
-<div class="table-cell">
+<div class="table-cell" style="width:100%;">
 
 <?php if($debug=='y'){?>
 
@@ -744,6 +744,534 @@ if (!(isInstructor())) {
 
 
 <div class="results table">
+   
+   <div id="placard_container"></div>
+   <?php foreach ($results['researchStarters'] as $result) {
+      if ($result['ResultId'] == "1") {
+// BEGIN RS
+
+?>
+   <div id="researchStarters">
+            <div class="result table-row">
+               
+
+                 <?php if (!empty($result['pubType'])) { ?>
+
+                <div class="pubtype table-cell" style="text-align: center">  
+
+                    <?php if (!empty($result['ImageInfo'])) { ?>                    
+
+                    <a href="record.php?db=<?php echo $result['DbId']; ?>&an=<?php echo $result['An']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']; ?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>">                         
+
+                                <img class="researchStartersImage" src="<?php echo fixprotocol($result['ImageInfo']['thumb']); ?>" />                                                                       
+
+                        </a> 
+
+                    <?php }else{ 
+
+                     $pubTypeId =  $result['PubTypeId'];                    
+
+                     $pubTypeClass = "pt-".$pubTypeId;
+
+                    ?>
+
+                    <span class="pt-icon <?php echo $pubTypeClass?>"></span>
+
+                    <?php } ?>
+
+                </div>     
+
+                <?php } ?>       
+
+                <div class="info table-cell">
+
+                    <div style="margin-left: 10px">
+
+               <div class="rsheader">
+                  Research Starter
+               </div>
+
+                        <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==1){ ?>
+
+                            <p>This record from <b>[<?php echo $result['DbLabel'] ?>]</b> cannot be displayed to guests.<a href="login.php?path=results&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>">Login</a> for full access.</p>
+
+                       <?php }else{  ?>
+
+                        <div class="title">                     
+
+                            <?php if (!empty($result['RecordInfo']['BibEntity']['Titles'])){ ?>
+
+                            <?php foreach($result['RecordInfo']['BibEntity']['Titles'] as $Ti){ ?> 
+
+                            <a href="record.php?db=<?php echo $result['DbId']; ?>&an=<?php echo $result['An']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']; ?>&<?php echo $encodedSearchTerm; ?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>"><?php echo $Ti['TitleFull']; ?></a>
+
+                           <?php } }
+
+                            else { ?> 
+
+                            <a href="record.php?db=<?php echo $result['DbId']; ?>&an=<?php echo $result['An']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']; ?>&<?php echo $encodedSearchTerm; ?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>"><?php echo "Title is not available"; ?></a>                   
+
+                          <?php  } ?>                
+
+                        </div>
+
+                        <?php if(!empty($result['Items']['TiAtl'])){ ?>
+
+                        <div>
+
+                        <?php foreach($result['Items']['TiAtl'] as $TiAtl){ 
+
+                              echo $TiAtl['Data']; 
+
+                              } ?>
+
+                        </div>
+
+                        <?php } ?>
+
+                        <div class="authors b">
+
+                        <span style="font-style: italic; ">
+
+                        <?php if(isset($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['Titles'])){?>                                                 
+
+                             <?php foreach($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['Titles'] as $title){ ?>
+
+                               <?php echo $title['TitleFull']; ?>,                                  
+
+                        <?php                        }}?>
+
+                        </span>
+
+                        <?php if(!empty($result['RecordInfo']['BibEntity']['Identifiers'])){
+
+                                 foreach($result['RecordInfo']['BibEntity']['Identifiers'] as $identifier){
+
+                                     $pieces = explode('-',$identifier['Type']); 
+
+                                     if(isset($pieces[1])){                                       
+
+                                       echo strtoupper($pieces[0]).'-'.ucfirst( $pieces[1]);
+
+                                       }else{ 
+
+                                       echo strtoupper($pieces[0]);
+
+                                       }?>: <?php echo $identifier['Value']?>,                                                                
+
+                        <?php }} ?>
+
+                        <?php if(isset($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['Identifiers'])){?>
+
+                             <?php foreach($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['Identifiers'] as $identifier){
+
+                                    $pieces = explode('-',$identifier['Type']);
+
+                                    if(isset($pieces[1])){                                        
+
+                                       }else{ 
+
+                                       echo strtoupper($pieces[0]);
+
+                                       }?>: <?php echo $identifier['Value']?>, 
+
+                             <?php }?>  
+
+                        <?php }?>
+
+                        <?php if(isset($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['date'])){?>
+
+                             <?php foreach($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['date'] as $date){ ?>
+
+                                 <span class="hiddendata" style="display:none;"><?php echo $date['Y']; ?></span>Published: <?php echo $date['M']?>/<?php echo $date['D']?>/<?php echo $date['Y']?>, 
+
+                             <?php }?> 
+
+                        <?php }?>
+
+                        <?php if(isset($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['numbering'])){ 
+
+                                foreach($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['numbering'] as $number){?>
+
+                                  <?php $type = str_replace('volume','Vol',$number['Type']); $type = str_replace('issue','Issue',$type); ?>
+
+                                    <?php echo $type;?>: <?php echo $number['Value']; ?>, 
+
+                        <?php } } ?>
+
+                        <?php if(!empty($result['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage'])){?>
+
+                                 Start Page: <?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage']?>, 
+
+                        <?php } ?>                        
+
+                        <?php if(!empty($result['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination'])){ ?>
+
+                                 Page Count: <?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination']?>, 
+
+                        <?php } ?>
+
+                        <?php if(!empty($result['RecordInfo']['BibEntity']['Languages'])){ ?>
+
+                        <?php foreach($result['RecordInfo']['BibEntity']['Languages'] as $language){ ?> 
+
+                                 Language: <?php echo $language['Text']?>
+
+                        <?php } }?>
+
+                        </div>
+
+                        <?php if (isset($result['Items']['Ab'])) { ?>
+
+             <script type="text/javascript">            
+
+                 $(document).ready(function(){             
+
+                 $("#rsabstract-plug<?php echo $result['ResultId']; ?>").click(function(){              
+
+                     $("#rsfull-abstract<?php echo $result['ResultId']; ?>").show() ; 
+
+                     $("#rsabstract<?php echo $result['ResultId']; ?>").hide() ; 
+
+                 }); 
+
+                 $("#rsfull-abstract-plug<?php echo $result['ResultId']; ?>").click(function(){              
+
+                     $("#rsfull-abstract<?php echo $result['ResultId']; ?>").hide() ; 
+
+                     $("#rsabstract<?php echo $result['ResultId']; ?>").show() ; 
+
+                 });   
+
+                });
+
+             </script>
+
+                        <div id="rsabstract<?php echo $result['ResultId'];?>" class="abstract">
+
+                            <span>
+
+                                      <?php foreach($result['Items']['Ab'] as $Abstract){ ?>                                            
+
+                                                     <?php
+
+                                                      $length = 300;
+
+                                                      if($length == 'Full'){
+
+                                                            echo $Abstract['Data'];
+
+                                                      }else{
+
+                                                            $data = str_replace(array('<span class="highlight">','</span>'), array('',''), $Abstract['Data']);
+
+                                                            $data = substr($data, 0, $length).'...';
+
+                                                            
+
+                                                            echo $data;
+
+                                                      }
+
+                                                     ?>                                                
+
+                                            <?php } ?>                                  
+
+                                        
+
+                                    <span id="rsabstract-plug<?php echo $result['ResultId'];?>">[+]</span>                                
+
+                            </span>
+
+                        </div>
+
+                        <div id="rsfull-abstract<?php echo $result['ResultId'];?>" class="full-abstract">
+
+                            <span>
+
+                                          <?php foreach($result['Items']['Ab'] as $Abstract){ ?>                                          
+
+                                               <?php echo $Abstract['Data']; ?>                                                                                                                                                   
+
+                                          <?php } ?>                                        
+
+                                    <span id="rsfull-abstract-plug<?php echo $result['ResultId'];?>">[-]</span>
+
+                                </tr>
+
+                            </span>
+
+                        </div>
+
+                      <?php } 
+
+                      
+                     $fulltextlinkfound = false;
+
+                      ?>
+
+
+
+
+
+                      <?php if((!empty($result['PDF']))) { ?>
+                      <div class="links fulltextlink eric">
+
+                         <?php if($result['HTML']==1){
+                           $fulltextlinkfound = true;
+                           ?> 
+                          <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==2){ ?> 
+
+                        <a target="_blank" class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>">Full Text</a>
+
+                          <?php } else { ?>
+
+                        <a target="_blank" class="icon html fulltext" href="record.php?an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>#html">Full Text</a>
+
+                         <?php } ?>                          
+
+                        <?php } ?>
+
+                        <?php if(!empty($result['PDF'])){
+                           $fulltextlinkfound = true;
+                           ?> 
+
+                          <a target="_blank" class="icon pdf fulltext" href="PDF.php?an=<?php echo $result['An']?>&db=<?php echo $result['DbId']?>">Full Text</a>
+
+                        <?php } ?>
+
+                      </div>
+
+                      <?php }
+                      
+                      if (!empty($result['CustomLinks'])){ ?>
+
+                      <div class="custom-links">
+
+                      <?php if (count($result['CustomLinks'])<=3){?> 
+
+                    
+
+                            <?php foreach ($result['CustomLinks'] as $customLink) {
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                              $fulltextlinkfound = true;
+                              ?>
+
+                                <div class="fulltextlink">
+
+                                 <a target="_blank" href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if (isset($customLink['Icon']) && (strlen($customLink['Icon']) > 0)) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php } else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Text']; ?></a>
+
+                                </div>
+
+                            <?php }
+                            } ?>
+
+                    
+
+                      <?php } else {?>
+
+                    
+
+                            <?php for($i=0; $i<3 ; $i++){
+                                if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+
+                                $customLink = $result['CustomLinks'][$i];
+
+                                ?>
+
+                                <div class="fulltextlink"> 
+
+                                   <a target="_blank" href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+
+                                </div>
+
+                            <?php } ?>
+
+                    
+
+                      <?php }
+                      } ?>                   
+
+                      </div>                      
+
+                      <?php } ?>
+
+                      <?php if (!empty($result['FullTextCustomLinks'])){ ?>
+
+                      <div class="custom-links">
+
+                      <?php if (count($result['FullTextCustomLinks'])<=3){?>                     
+
+                            <?php foreach ($result['FullTextCustomLinks'] as $customLink) {
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+                              
+                              ?>
+
+                                <div class="fulltextlink">
+
+                                 <a target="_blank" href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php if ((isset($customLink['Icon'])) && (strlen($customLink['Icon']))) { ?><img src="<?php echo fixprotocol($customLink['Icon']); ?>" /><?php }  else { echo "<img src='web/iconFTAccessSm.gif' />"; } ?> <?php echo $customLink['Name']; ?></a>
+
+                                </div>
+
+                            <?php } ?>                    
+
+                      <?php }
+                      } else {?>                    
+
+                            <?php for($i=0; $i<3 ; $i++){
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+
+                                $customLink = $result['FullTextCustomLinks'][$i];
+
+                                ?>
+
+                                <div class="fulltextlink"> 
+
+                                   <a target="_blank" href="<?php echo processProxy($customLink['Url'],$customparams['proxyprefix'],$customparams['proxyencode']); ?>" title="<?php echo $customLink['MouseOverText']; ?>"><?php echo $customLink['Name']; ?></a>
+
+                                </div>
+
+                            <?php }
+                            
+                            } ?>
+
+                    
+
+                      <?php } ?>                   
+
+                      </div>                     
+
+                      <?php } ?>
+                      <?php if (count($result['Items'])) {
+                        
+                        foreach($result['Items'] as $item) {
+                           if ($item[0]['Group'] == "URL") {
+                              if (!(($customparams['firstftonly'] == 'y') && ($fulltextlinkfound))) {
+                                 $fulltextlinkfound = true;
+
+                              ?>
+                              
+                              <div class="custom-links">
+                                 <div class="fulltextlink">
+                                 <?php
+
+                                          if (substr_count($item[0]['Data'],"http")) {
+                                             $customlinkURL = substr($item[0]['Data'],strpos($item[0]['Data'],"http"));
+                                             
+                                             if (strpos($customlinkURL," ") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL," "));
+                                             }
+
+                                             if (strpos($customlinkURL,"<") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL,"<"));
+                                             }
+
+                                             if (strpos($customlinkURL,"\"") > -1) {
+                                             $customlinkURL = substr($customlinkURL,0,strpos($customlinkURL,"\""));
+                                             }
+                                             
+                                             echo "<a target='_blank' href='".$customlinkURL."'><img src='web/iconFTAccessSm.gif' /> Online Access</a>";
+                                          } else {
+                                             $docLinks = new DOMDocument();
+                                             $docLinks->loadHTML(html_entity_decode($item[0]['Data']));
+                                                foreach($docLinks->getElementsByTagName('a') as $linkfromcatalog) {
+                                                   if ($linkfromcatalog->nodeValue == $linkfromcatalog->getAttribute('href')) {
+                                                      $linkfromcatalog->nodeValue = "Online Access";
+                                                   }
+                                                }
+                                             $newlinks = $docLinks->saveHTML();
+                                             $newlinks = str_replace("<a","<img src='web/iconFTAccessSm.gif' /> <a target='_blank'",$newlinks);
+                                             echo $newlinks;
+                                          }                                    
+                                    ?></div>
+                              </div>
+                              
+                              <?php
+                           }
+                        }
+                        }
+                        
+                      } ?>
+
+                      <?php } ?>
+
+<?php if (isInstructor()) { ?>                  
+<!--
+  
+Foldering
+   Display 'add to folder' link to allow logged in users to save items.
+   If the user is not logged in, invite them to.
+   Uses AJAX to automatically insert and remove items from folders without reloading page.
+  
+-->
+<div class="folderblock">
+<?php 
+	if (isset($_COOKIE['login'])) {
+?>                    
+<!-- If the user is logged in -->
+<!-- If the item is not in the folder -->
+	<div id="notinfolder<?php echo $result['ResultId']; ?>" class="folderitem" style="font-size: 11px; display: <?php 
+		if (itemInFolder($folderitemsarray,$result['An'],$result['DbId'])) {
+  			echo "none";
+		} else {
+  			echo "inline";
+		}
+?>;">
+<button class="addFolder" id="addbutton<?php echo $result['ResultId'];?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',1,<?php echo $result['ResultId']; ?>,1,1)">Add to Reading List</button>
+
+</div>
+<!-- END item in NOT in folder -->
+<!-- If the item is in the folder... -->
+<div id="infolder<?php echo $result['ResultId']; ?>" class="folder" style="font-size: 11px; display: <?php 
+
+		if (itemInFolder($folderitemsarray,$result['An'],$result['DbId'])) {
+  			echo "inline";
+		} else {
+  			echo "none";
+		}
+?>;">
+<button class="removeFolder" id="removebutton<?php echo $result['ResultId'];?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',2,<?php echo $result['ResultId']; ?>,1,1)">Remove from Reading List</button>
+
+</div>
+<!-- END item is in the folder -->
+<!-- END user is logged in -->
+
+<?php } else {?>
+
+<!-- If user is NOT logged in -->
+<div id="notinfolder<?php echo $result['ResultId']; ?>" class="folderitem" style="font-size: 11px; display: inline;">
+<?php
+$params = array(
+                          'path'=>'results',
+                          'query'=>$searchTerm,
+                          'fieldcode'=>$fieldCode
+                      );
+                      $params = http_build_query($params);
+?>
+
+</div>
+<!-- END user is NOT logged in -->
+
+<?php } ?>
+</div>
+<!-- END folders -->
+<?php } ?>
+
+                </div>
+
+                </div>
+
+            </div>
+</div>
+<?php
+
+// END RS
+      }
+   }
+   ?></div>
 
     <?php if (empty($results['records'])) { ?>
 
@@ -762,13 +1290,7 @@ if (!(isInstructor())) {
         <?php foreach ($results['records'] as $result) { 
           ?>
 
-            <div class="result table-row">
-                  
-                <div class="record-id table-cell">
-
-                    <?php echo $result['ResultId']; ?>.
-
-                </div>               
+            <div class="result table-row">              
 
                  <?php if (!empty($result['pubType'])) { ?>
 
@@ -804,7 +1326,11 @@ if (!(isInstructor())) {
 
                     <div style="margin-left: 10px">
 
-                        
+                        <div class="record-id table-cell">
+        
+                            Result #<?php echo $result['ResultId']; ?>.
+        
+                        </div> 
 
                         <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==1){ ?>
 

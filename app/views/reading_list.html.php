@@ -583,7 +583,7 @@
 							if ((!(isInstructor())) && ($customparams['studentdata'] == "y")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
-			?>class="icon html fulltext" href="record.php?an=<?php echo $readingMetadata['An']; ?>&db=<?php echo $readingMetadata['DbId']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $readingMetadata['ResultId'];?>&recordCount=<?php echo $readingMetadata['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode;
+			?>class="icon html fulltext" href="record.php?an=<?php echo $readingMetadata['An']; ?>&db=<?php echo $readingMetadata['DbId']; ?><?php 
 			if (isset($clean['folderid'])) { echo "&folderid=" . $clean['folderid']; }
 			?>#html">Full Text</a>
 

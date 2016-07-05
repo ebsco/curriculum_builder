@@ -15,7 +15,7 @@ include_once("app/app.php");
   if (!(($customparams['userid'] == "") || ($customparams['password'] == "") || ($customparams['profile'] == ""))) {
   ?>
 <div class="readingListLink">
-  <strong><a href="stats.php">Statistics</a></strong> | <strong><a href="exportsql.php" target="_blank">Download Export File</a></strong> | <strong><a href="importsql.php" target="_blank">Import from Export File</a></strong>
+  <strong><a href="stats.php">Statistics</a></strong> | <strong><a href="exportsql.php" target="_blank">Download Export File</a></strong> | <strong><a href="importsql.php" target="_blank">Import from Export File</a></strong><?php if ($customparams['studentdata'] == "y") { ?> | <strong><a href="exportsql-studentdata.php" target="_blank">Download Student Data</a></strong><?php } ?>
 </div>
 <?php
   }

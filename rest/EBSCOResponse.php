@@ -175,6 +175,7 @@ class EBSCOResponse
         
         if ($hits > 0) {
             $records = $this->buildRecords();
+            $researchStarters = $this->buildResearchStarters();
             $facets = $this->buildFacets();
         }
 
@@ -186,7 +187,8 @@ class EBSCOResponse
             'appliedLimiters'=>$appliedLimiters,
             'appliedExpanders'=>$appliedExpanders,
             'records'     => $records,
-            'facets'      => $facets
+            'facets'      => $facets,
+            'researchStarters'=>$researchStarters
         );
 
         return $results;
@@ -458,6 +460,194 @@ private function buildRecords()
         return $results;
     }
 
+private function buildResearchStarters()            
+    {
+        $results = array();
+        if (!(isset($this->response->SearchResult->RelatedContent->RelatedRecords))) {
+            return $results;
+        }
+        $records = $this->response->SearchResult->RelatedContent->RelatedRecords->RelatedRecord;
+        $count = 0;
+
+        foreach ($records as $relatedrecord) {
+            if ((string)$relatedrecord->Type == 'rs') {
+                $relatedRecords = $relatedrecord->Records->Record;
+                foreach($relatedRecords as $record) {
+                    $result = array();                
+                    $result['AccessLevel'] = $record->Header -> AccessLevel?(string)$record->Header -> AccessLevel:'';
+                    $result['pubType'] = $record -> Header-> PubType? (string)$record -> Header-> PubType:'';  
+                    $result['PubTypeId']=$record->Header->PubTypeId? (string) $record->Header->PubTypeId:'';
+                    $result['ResultId'] = $record->ResultId ? (integer) $record->ResultId : '';
+                    $result['DbId'] = $record->Header->DbId ? (string) $record->Header->DbId : '';
+                    $result['DbLabel'] = $record->Header->DbLabel ? (string) $record->Header->DbLabel:'';
+                    $result['An'] = $record->Header->An ? (string) $record->Header->An : '';
+                    $result['PLink'] = $record->PLink ? (string) $record->PLink : '';
+                    $result['PDF'] = $record->FullText->Links ? (string) $record->FullText->Links->Link->Type : '';
+                    //$result['HTML'] = $record->FullText->Text->Availability? (string) $record->FullText->Text->Availability : '';
+                    if (!empty($record->ImageInfo->CoverArt)) {
+                        foreach ($record->ImageInfo->CoverArt as $image) {
+                            $size = (string) $image->Size;
+                            $target = (string) $image->Target;
+                            $result['ImageInfo'][$size] = $target;
+                        }
+                    } else {
+                        $result['ImageInfo'] = '';
+                    }
+        
+                    $result['FullText'] = $record->FullText ? (string) $record->FullText : '';
+        
+        
+                    if($record->Items) {
+                        $result['Items'] = array();
+                        foreach ($record->Items->Item as $item) {                   
+                            $label = $item->Label ? (string) $item->Label : '';
+                            $group = $item->Group ? (string) $item->Group : '';
+                            $data = $item->Data ? (string) $item->Data : '';
+                            $result['Items'][$group][] = array(                     
+                                'Label' => $label,
+                                'Group' => $group,
+                                'Data'  => $this->toHTML($data, $group)
+                            );
+                        }
+                    }
+                    
+                    if($record->RecordInfo){
+                       $result['RecordInfo'] = array();
+                       $result['RecordInfo']['BibEntity']=array(
+                           'Identifiers'=>array(),
+                           'Languages'=>array(),
+                           'PhysicalDescription'=>array(),
+                           'Subjects'=>array(),
+                           'Titles'=>array()
+                       );
+                        
+                       if($record->RecordInfo->BibRecord->BibEntity->Identifiers){
+                       foreach($record->RecordInfo->BibRecord->BibEntity->Identifiers->Identifier as $identifier){
+                           $type = $identifier->Type? (string) $identifier->Type:'';
+                           $value = $identifier->Value? (string) $identifier->Value:'';
+                           $result['RecordInfo']['BibEntity']['Identifiers'][]= array(
+                           'Type'=>$type,
+                           'Value'=>$value
+                           );
+                       }            
+                       }
+                       
+                       if($record->RecordInfo->BibRecord->BibEntity->Languages){
+                       foreach($record->RecordInfo->BibRecord->BibEntity->Languages->Language as $language){
+                           $code = $language->Code? (string)$language->Code:'';
+                           $text = $language->Text? (string)$language->Text:'';
+                           $result['RecordInfo']['BibEntity']['Languages'][]= array(
+                           'Code'=>$code,
+                           'Text'=>$text
+                           );
+                       }             
+                       }
+                       
+                       if($record->RecordInfo->BibRecord->BibEntity->PhysicalDescription){
+                       $pageCount = $record->RecordInfo->BibRecord->BibEntity->PhysicalDescription->Pagination->PageCount? (string) $record->RecordInfo->BibRecord->BibEntity->PhysicalDescription->Pagination->PageCount:'';
+                       $startPage = $record->RecordInfo->BibRecord->BibEntity->PhysicalDescription->Pagination->StartPage? (string) $record->RecordInfo->BibRecord->BibEntity->PhysicalDescription->Pagination->StartPage:'';
+                       $result['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination'] = $pageCount;
+                       $result['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage'] = $startPage;
+                       }
+                       
+                       if($record->RecordInfo->BibRecord->BibEntity->Subjects){
+                       foreach($record->RecordInfo->BibRecord->BibEntity->Subjects->Subject as $subject){
+                           $subjectFull = $subject->SubjectFull? (string)$subject->SubjectFull:'';
+                           $type = $subject->Type? (string)$subject->Type:'';
+                           $result['RecordInfo']['BibEntity']['Subjects'][]=array(
+                               'SubjectFull'=>$subjectFull,
+                               'Type'=>$type
+                           );
+                       }
+                       }
+                       
+                       if($record->RecordInfo->BibRecord->BibEntity->Titles){
+                       foreach($record->RecordInfo->BibRecord->BibEntity->Titles->Title as $title){
+                           $titleFull = $title->TitleFull? (string)$title->TitleFull:'';
+                           $type = $title->Type? (string)$title->Type:'';
+                           $result['RecordInfo']['BibEntity']['Titles'][]=array(
+                               'TitleFull'=>$titleFull,
+                               'Type'=>$type
+                           );
+                       }
+                       }
+                       
+                       $result['RecordInfo']['BibRelationships']=array(
+                           'HasContributorRelationships'=>array(),
+                           'IsPartOfRelationships'=>array()                
+                       );
+                       
+                       if($record->RecordInfo->BibRecord->BibRelationships->HasContributorRelationships){
+                       foreach($record->RecordInfo->BibRecord->BibRelationships->HasContributorRelationships->HasContributor as $contributor){
+                           $nameFull = $contributor->PersonEntity->Name->NameFull? (string)$contributor->PersonEntity->Name->NameFull:'';
+                           $result['RecordInfo']['BibRelationships']['HasContributorRelationships'][]=array(
+                               'NameFull'=>$nameFull
+                           );
+                       }
+                       }
+                       
+                       if($record->RecordInfo->BibRecord->BibRelationships){
+                       foreach($record->RecordInfo->BibRecord->BibRelationships->IsPartOfRelationships->IsPartOf as $relationship){
+                           if($relationship->BibEntity->Dates){
+                               foreach($relationship->BibEntity->Dates->Date as $date){
+                           $d = $date->D? (string)$date->D:'';
+                           $m = $date->M? (string)$date->M:'';
+                           $type = $date->Type? (string)$date->Type:'';
+                           $y = $date->Y? (string)$date->Y:'';
+                           $result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['date'][] = array(
+                             'D'=> $d,
+                             'M'=>$m,
+                             'Type'=>$type,
+                             'Y'=>$y
+                           );
+                           }
+                           }
+                           
+                           if($relationship->BibEntity->Identifiers){
+                           foreach($relationship->BibEntity->Identifiers->Identifier as $identifier){
+                               $type = $identifier->Type? (string) $identifier->Type :'';
+                               $value = $identifier->Value? (string) $identifier->Value:'';
+                               $result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['Identifiers'][]=array(
+                                   'Type'=>$type,
+                                   'Value'=>$value
+                               );
+                           }
+                           }
+                           
+                           if($relationship->BibEntity->Titles){
+                               foreach($relationship->BibEntity->Titles->Title as $title){
+                                  $titleFull = $title->TitleFull? (string)$title->TitleFull:'';
+                                  $type = $title->Type? (string)$title->Type:'';
+                                   $result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['Titles'][]=array(
+                                     'TitleFull' => $titleFull,
+                                     'Type'=>$type
+                                   );
+                               }
+                           }
+                           
+                           if($relationship->BibEntity->Numbering){
+                               foreach($relationship->BibEntity->Numbering->Number as $number){
+                                $type = (string)$number->Type;
+                                $value= (string)$number->Value;
+                           $result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['numbering'][] = array(
+                             'Type'=> $type,
+                             'Value'=>$value
+                           );
+                           }
+                           }
+                       }
+                    }
+                    }
+            $results[] = $result;
+
+                }
+
+            }
+        }
+
+        return $results;
+    }
+    
 
     /**
      * Parse the SimpleXml object when an Info API call was executed

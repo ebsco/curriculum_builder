@@ -282,9 +282,12 @@ Foldering
          <?php } ?>
          </div>
              <div class="jacket">
-                <?php if(!empty($result['ImageInfo'])) { ?>              
+                <?php if(!empty($result['ImageInfo'])) {
+				 if (isset($result['ImageInfo']['medium'])) {
+				  ?>              
+
                  <img width="150px" height="200px" src="<?php echo fixprotocol($result['ImageInfo']['medium']); ?>" />             
-        <?php } ?>
+        <?php }} ?>
              </div>
         </div>
       <?php } ?>  

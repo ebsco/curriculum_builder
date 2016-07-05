@@ -3,8 +3,8 @@ p, ul, dl, form, input, textarea, select, label {
     margin-bottom: 0.2em;
 }
 select, button, input {
-    font-size: larger;
-    padding: 5px;
+    font-size: 12px;
+    padding: 2px;
 }
 button, input[type="submit"] {
     border-radius: 5px;
@@ -250,6 +250,9 @@ div.searchHomeForm
     margin-left: 5px;
     margin-right: 5px;
     background-color: white;
+    
+    width: 100%;
+    
 }
 
 .table-row {
@@ -327,19 +330,17 @@ ul.filters {
     width: 210px;
 }
 .results {
-    width: 660px;
+    width: 95%;
     border-left: none;
     border-right: none;
     border-bottom: none;
 }
 
-.result:nth-child(2n+0) {
-    background-color: #eeeeee;
-}
-
 .record-id {
-    width: 30px;
-    text-align: center;
+    text-align: left;
+    font-weight: bold;
+    color: #666666;
+    font-size: 12px;
 }
 
 .pubtype {
@@ -351,7 +352,7 @@ ul.filters {
 }
 
 .info {   
-    width: 600px;
+    width: 100%;
 }
 
 .title {
@@ -372,12 +373,14 @@ ul.filters {
 
 .authors {
     margin-bottom: 10px;
-    font-size: small;
+    font-size: smaller;
 }
-
+.authors.a {
+    margin-bottom: 0;
+}
 .subjects {
     margin-bottom: 10px;
-    font-size: small;
+    font-size: smaller;
 }
 
 .links {
@@ -786,4 +789,47 @@ ul.listoffolders {
 }
 a.icon.html.fulltext {
     padding-right: 20px;
+}
+#researchStarters {
+    padding: 5px;
+    border: thin solid #666666;
+    background-color: #EEEEEE;
+    margin-bottom: 20px;
+    font-size:smaller;
+}
+#researchStarters .authors, #researchStarters .subjects {
+    font-size:smaller;
+    margin-bottom:0px;
+}
+#researchStarters .abstract, #researchStarters .full-abstract {
+    margin-top:10px;
+    font-size: 11px;
+}
+.researchStartersImage {
+    max-width: 160px;
+    max-height: 100px;
+}
+#researchStarters .addFolder, #researchStarters .removeFolder {
+    font-size: 12px;
+    padding: 6px;
+}
+#researchStarters .table-row {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#researchStarters .title {
+    margin-bottom: 2px;
+    font-size:16px;
+}
+#researchStarters .rsheader {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.limiteritem {
+    border-bottom: 1px solid #E3E3E3;
+}
+.pubtype.table-cell img {
+    max-width: 70px;
 }
