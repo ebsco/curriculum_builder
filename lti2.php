@@ -43,6 +43,10 @@
         $clean['custom_password'] = $clean['custom_ebsco_password'];
     }
     
+    if (isset($clean['list_history'])) {
+        $clean['custom_list_history'] = $clean['list_history'];
+    }
+    
     $oauth_consumer_key = $clean['oauth_consumer_key'];
     // this loads in custom settings, such as email, api credentials, logo, etc.  
     $customparams = loadCustomParams($c,$oauth_consumer_key,$clean);
@@ -171,11 +175,18 @@
     $stmt->bind_param('ss',$clean['credential_consumer_id'],$clean['resource_link_id']);
     $stmt->execute();
     $foundList = $stmt->get_result();
-    
+    $copy_target = "none";    
     $newlist = FALSE;
     if ($foundList) {
         // if the list was not found, make a new one and load it into variable foundList
+        // or if custom_list_history is set, base this new list off of prior list
+        
         if (mysqli_num_rows($foundList) <= 0) {
+
+            if ((isset($clean['custom_list_history'])) && (strlen($clean['custom_list_history']) > 0)) {
+                $listhistory = explode(",",$clean['custom_list_history']);
+                $copy_target = $listhistory[0];
+            }
             if (!((substr_count($clean['roles'],"Instructor") > 0))) {
                 die("<p>Uh oh!  It looks like your course instructor hasn't added any readings to this list yet.</p><p>If you are a course instructor, it looks as if your account does not indicate that you are.  Your current role appears to be: ".$clean['roles']."<br/><br/>".$sql." with ".$clean['credential_consumer_id']."-".$clean['resource_link_id']."</p>");
             }
@@ -214,7 +225,9 @@
             $stmt->bind_param('si',$clean['resource_link_title'],$row['id']);
             $stmt->execute();
         }
-    }    
+    }
+    
+    $currentListId = $row['id'];
     // place the id of the current list into the session    
     setcookie('currentListId', encryptCookie($row['id']), $time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
     setcookie('currentLinkId', encryptCookie($clean['resource_link_id']), $time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
@@ -316,13 +329,17 @@
         if (is_integer($authorID)) {
             setcookie('currentAuthorId', encryptCookie($authorID), $time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
         } else {
+            $authorID = 0;
             setcookie('currentAuthorId', encryptCookie("0"), $time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
         }
     }
 
 
     $foundCopy = FALSE;
-    if (($newlist) && ((isset($customparams['copylist'])) && ($customparams['copylist'] == 'y'))) {
+
+    if (($newlist) && ($copy_target != "none")) {
+        copyListByResourceLinkId($c,$copy_target,$currentListId,$authorID);
+    } else if (($newlist) && ((isset($customparams['copylist'])) && ($customparams['copylist'] == 'y'))) {
         if (substr_count($clean['roles'],"Instructor") > 0) {
 
             $sql = "SELECT id, linklabel, course, linkid FROM lists WHERE (id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND linklabel = ? AND linkid != ? AND credentialconsumerid = ?) OR (private = 0 AND credentialconsumerid = ? AND linklabel = ?) ORDER BY private, last_access DESC;";

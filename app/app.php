@@ -332,17 +332,40 @@ function setReadingPriority ($c,$readingId,$priority) {
     }
 }
 
-function copyList ($c,$from,$to) {
+function copyListByResourceLinkId ($c,$fromlink,$to,$author) {
+    $sql = "SELECT id FROM lists WHERE linkid = ?";
+    $stmt = $c->prepare($sql);
+    $stmt->bind_param('s',$fromlink);
+    $stmt->execute();
+    $results = $stmt->get_result();
+
+    if (mysqli_num_rows($results) > 0) {
+        $row = mysqli_fetch_array($results);
+        copyList($c,$row['id'],$to,$author);
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function copyList ($c,$from,$to,$author = "") {
     $fromint = (integer)$from;
     $from = (string)$fromint;
     $toint = (integer)$to;
     $to = (string)$toint;
+
     $sql = "SELECT * FROM readings WHERE listid = ?";
     $stmt = $c->prepare($sql);
     $stmt->bind_param('i',$from);
     $stmt->execute();
     $results = $stmt->get_result();
-    $currentAuthorId = decryptCookie($_COOKIE['currentAuthorId']);
+    $currentAuthorId = "";
+
+    if ($author != "") {
+        $currentAuthorId = $author;
+    } else if (isset($_COOKIE['currentAuthorId'])) {
+        $currentAuthorId = decryptCookie($_COOKIE['currentAuthorId']);
+    }
     
     $folderlookup = array();
     
@@ -361,7 +384,7 @@ function copyList ($c,$from,$to) {
                 $stmt->execute();
                 $folderlookup[$row['folderid']] = mysqli_insert_id($c);
             }
-            if (isset($_COOKIE['currentAuthorId'])) {
+            if (strlen($currentAuthorId) > 0) {
                 $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct,folderid) VALUES (?,?,?,?,?,?,?,?,?,?,?);";
                 $stmt = $c->prepare($sqlr);
                 $stmt->bind_param('iisssissisi',$to,$currentAuthorId,$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct'],$folderlookup[$row['folderid']]);
@@ -371,7 +394,7 @@ function copyList ($c,$from,$to) {
                 $stmt->bind_param('iisssissisi',$to,$row['authorid'],$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct'],$folderlookup[$row['folderid']]);
             }            
         } else {
-            if (isset($_COOKIE['currentAuthorId'])) {
+            if (strlen($currentAuthorId) > 0) {
                 $sqlr = "INSERT INTO readings (listid,authorid,an,db,title,priority,notes,url,type,instruct) VALUES (?,?,?,?,?,?,?,?,?,?);";
                 $stmt = $c->prepare($sqlr);
                 $stmt->bind_param('iisssissis',$to,$currentAuthorId,$row['an'],$row['db'],$row['title'],$row['priority'],$row['notes'],$row['url'],$row['type'],$row['instruct']);
