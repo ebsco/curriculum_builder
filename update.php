@@ -512,6 +512,25 @@ if ($v3 == 0) {
     echo "<p><em>Version 2.3c Update</em>: <strong>Role Empowerment</strong> is already included in your installation.  No update needed.</p>";
 }
 
+$sql = "SHOW COLUMNS FROM studentreading;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'accessed_time') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE studentreading ADD user_id VARCHAR(200); ";
+    mysqli_query($c,$sql);
+    $sql = "ALTER TABLE studentreading ADD accessed_time datetime; ";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>Granular Student Statistics</strong> to lists.</p>";
+} else {
+    echo "<p><em>Version 2.3c Update</em>: <strong>Granular Student Statistics</strong> is already included in your installation.  No update needed.</p>";
+}
 
 ?>
 

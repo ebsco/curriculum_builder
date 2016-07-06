@@ -334,6 +334,8 @@
                     foreach ($readingList as $reading) {
 			$comparison = '';
 			$found = 0;
+			$readingMetadata = '';
+
 			if (($reading['type'] == 1) && ($useCache == false)) {
 			    if (isset($results['records'])) {
 				foreach ($results['records'] as $result) {
@@ -465,7 +467,7 @@
 				    }
                                 }
 			    } else {
-				echo "There was a problem loading this reading.  Your library may no longer subscribe to <em>".$reading["title"]."</em>.  Please contact your library for further assistance.";
+				echo "<strong><a href=\"record.php?an=" . $reading["an"] . "&db=" . $reading["db"] . "\">".$reading["title"]."</a></strong><br /><span style=\"font-size:small;color:#666666;\">There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item.</span>";
 			    }
                         } else if ($reading["type"] == 1) {
                             echo "<strong><a onclick='addHit(".$reading["id"].")' href='record.php?an=" . $reading["an"] . "&db=" . $reading["db"];
@@ -560,7 +562,7 @@
 
 
 
-                      <?php if(($readingMetadata['HTML']==1) || (!empty($readingMetadata['PDF']))) { ?>
+                      <?php if(($found != 0) && (($readingMetadata['HTML']==1) || (!empty($readingMetadata['PDF'])))) { ?>
                       <div class="links fulltextlink-rl">
 
                          <?php if($readingMetadata['HTML']==1){
@@ -724,7 +726,7 @@
                       </div>                     
 
                       <?php } ?>
-                      <?php if (count($readingMetadata['Items'])) {
+                      <?php if (($found != 0) && (count($readingMetadata['Items']))) {
                         
                         foreach($readingMetadata['Items'] as $item) {
                            if ($item[0]['Group'] == "URL") {

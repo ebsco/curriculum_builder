@@ -6,7 +6,7 @@ Version 2.3 Release Notes (July 2016)
      CB now allows you to specify a proxy in the administrative panel.  This proxy will be applied to all CustomLinks in the system.  This is critical for libraries that rely on systems like EZProxy to automatically proxy all links on a page; since CB is not a proxied service, EZproxy never "sees" links in CB, whereas in EDS proper, they would be proxied.  It supports prefix-style and WAM-style proxy strings, as well as encoding.
      
      Folder Improvements
-     Users can no relabel and reorder folders, and folders are now included in all copy-list functions.
+     Users can now relabel and reorder folders, and folders are now included in all copy-list functions.
      
      Research Starters
      EBSCO Discovery Service Research Starters are now available for EDS users of Curriculum Builder.  These will appear at the top of the results and can be added to reading lists just like any other materials.
