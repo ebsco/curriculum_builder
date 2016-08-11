@@ -15,7 +15,7 @@ Please skip down to **Upgrading an Existing Installation** if you already have a
 
 ### Environment Requirements
 
-This tool requires PHP 5.x or higher, MySQL 5 or higher, and an Apache web server.  You will need to have the **mcrypt** libraries installed.
+This tool requires PHP 5.x or higher, MySQL 5 or higher, and an Apache web server.  You will need to have the **mcrypt** libraries installed.  Some servers, particularly Debian, will also require you to **apt-get install php5-mysqlnd** to get required MySQLi functions.
 
 Even if you intend to use this for EBSCOhost-only databases, you will also need an EDS API profile on your account, along with its profileid and an associated username and password.  
 
