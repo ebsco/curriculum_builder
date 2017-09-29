@@ -1,11 +1,40 @@
 <?php
+	// save current language to cookie by default
+	if (!isset($_SESSION["language"])){
+		$_SESSION["language"]=$customparams['language'];
+	}
+	// check if parameters are passed from url, language change 
+	if (isset($_REQUEST["language"])) {
+		$_SESSION["language"]=urldecode($_REQUEST["language"]);
+	}
+	$language = $_SESSION["language"];
+	if (stripos($language,"utf-8")===false) {
+	   $language.=".UTF-8";
+	}
+	putenv("LC_ALL=$language");
+	setlocale(LC_ALL, $language);
+	if (defined('LC_MESSAGES')) // available if PHP was compiled with libintl
+	{
+	   setlocale(LC_MESSAGES, $language);
+	}   
+	else
+	{       
+	   setlocale(LC_ALL, $language);
+	}       
+			
+	bindtextdomain("messages", dirname(__FILE__)."/locale");                                
+	bind_textdomain_codeset('messages', 'UTF-8');
+	textdomain("messages");
+
+?>
+<?php
   include_once("app/app.php");
 ?>
 <style type="text/css">
   #currentList { display: none; }
 </style>
 <div class="readingListLink">
-  <h3><a href="admin2.php">Administration</a></h3>
+  <h3><a href="admin2.php"><?php echo _("Administration");?></a></h3>
 </div>
 <div class="readingListLink">
 
@@ -50,7 +79,7 @@
       echo $num_rows . " <em>(" . $privateLists . " marked as private)";
 	  
     ?></p>
-    <p><strong>Total Readings</strong>: 
+    <p><strong><?php echo _("Total Readings");?></strong>: 
     <?php
 
     $numReadings = 0;
@@ -75,7 +104,7 @@
     echo $numReadings;
 
 	?></p>
-    <p><strong>Total People Using Tool</strong>: 
+    <p><strong><?php echo _("Total People Using Tool");?></strong>: 
     <?php
       // Find the number of authors (instructors) using the tool at the institution.
      $numPeople = 0;
@@ -106,7 +135,7 @@
         }
 		echo $numPeople;
     ?></p>
-    <p><strong>Users</strong>:<span style="font-size:smaller;">
+    <p><strong><?php echo _("Users");?></strong>:<span style="font-size:smaller;">
       <?php
         
 		//for each author find their name, email and the number of lists they authored. 
@@ -135,7 +164,7 @@
 		
       ?>
       </span></p>
-    <p><strong>Total Courses Using Tool</strong>: 
+    <p><strong><?php echo _("Total Courses Using Tool");?></strong>: 
       <?php
       $numCourses = 0;
 		$courses=array(); //will be used in next stat.
@@ -165,7 +194,7 @@
          echo $numCourses;         
       ?>
       </p>
-    <p><strong>Courses</strong>:<span style="font-size:smaller;">
+    <p><strong><?php echo _("Courses");?></strong>:<span style="font-size:smaller;">
       <?php
         
         foreach ($consumerids['logged_in_consumerid'] as $consumerid) {

@@ -512,7 +512,7 @@ function loadCustomParams() {
     $c = func_get_arg(0);
     $oauth_consumer_key = func_get_arg(1);
     
-    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow, firstftonly, helppages, searchlabel, proxyprefix, proxyencode, empowered_roles FROM oauth WHERE oauth_consumer_key = ?';
+    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow, firstftonly, helppages, searchlabel, proxyprefix, proxyencode, empowered_roles, language   FROM oauth WHERE oauth_consumer_key = ?';
     $stmt = $c->prepare($sql);
     $stmt->bind_param('s',$oauth_consumer_key);
     $stmt->execute();

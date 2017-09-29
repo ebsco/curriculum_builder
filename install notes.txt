@@ -1,0 +1,32 @@
+http://192.168.238.133/curriculumbuilder/reading_list.php
+
+
+
+1)    check which locales are supported:
+
+    locale -a
+
+2)   add the locales you want (for example ru):
+
+    sudo locale-gen ru_RU
+    sudo locale-gen ru_RU.UTF-8
+
+3)    run this update comand
+
+    sudo update-locale 
+
+
+	4) used locales
+	
+	In centos
+	localedef -c -i pt_PT -f UTF-8  pt_PT.utf8
+	localedef -c -i es_ES -f UTF-8  es_ES.utf8
+	localedef -c -i es_CO -f UTF-8  es_CO.utf8
+	localedef -c -i de_DE -f UTF-8  de_DE.utf8
+	localedef -c -i it_IT -f UTF-8  it_IT.utf8
+	localedef -c -i fr_FR -f UTF-8  fr_FR.utf8
+	
+	in other ?
+	locale-gen en_US.utf8
+	locale-gen de_DE.utf8
+	locale-gen it_IT.utf8

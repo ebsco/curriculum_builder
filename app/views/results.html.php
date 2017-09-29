@@ -1,4 +1,32 @@
 <?php
+	// save current language to cookie by default
+	if (!isset($_SESSION["language"])){
+		$_SESSION["language"]=$customparams['language'];
+	}
+	// check if parameters are passed from url, language change 
+	if (isset($_REQUEST["language"])) {
+		$_SESSION["language"]=urldecode($_REQUEST["language"]);
+	}
+	$language = $_SESSION["language"];
+	if (stripos($language,"utf-8")===false) {
+	   $language.=".UTF-8";
+	}
+	putenv("LC_ALL=$language");
+	setlocale(LC_ALL, $language);
+	if (defined('LC_MESSAGES')) // available if PHP was compiled with libintl
+	{
+	   setlocale(LC_MESSAGES, $language);
+	}   
+	else
+	{       
+	   setlocale(LC_ALL, $language);
+	}       
+			
+	bindtextdomain("messages", dirname(__FILE__)."/locale");                                
+	bind_textdomain_codeset('messages', 'UTF-8');
+	textdomain("messages");
+
+
 
 libxml_use_internal_errors(true);
 
@@ -40,7 +68,7 @@ $encodedHighLigtTerm = http_build_query(array('highlight'=>$searchTerm));
 if (!(isInstructor())) {
 ?>
 <div class="readingListLink" id="currentList">
-   <a href="reading_list.php">Back to Reading List</a>
+   <a href="reading_list.php"><?php echo _("Back to Reading List");?></a>
 </div>
 <?php
 }
@@ -100,7 +128,7 @@ if (!(isInstructor())) {
 
         <select name="fieldcode">
 
-        <option id="type-keyword" name="fieldcode" value="keyword" <?php echo $selected1 ?> >Keyword</option>
+        <option id="type-keyword" name="fieldcode" value="keyword" <?php echo $selected1 ?> ><?php echo _("Keyword");?></option>
 
         <?php if(!empty($Info['search'])){ ?>
 
@@ -110,7 +138,7 @@ if (!(isInstructor())) {
 
                   $fieldc= $searchField['Code']; ?>
 
-                  <option id="type-author" name="fieldcode" value="<?php echo $fieldc; ?>"<?php echo $selected2; ?> >Author</option>
+                  <option id="type-author" name="fieldcode" value="<?php echo $fieldc; ?>"<?php echo $selected2; ?> ><?php echo _("Author");?></option>
 
         <?php }
 
@@ -118,7 +146,7 @@ if (!(isInstructor())) {
 
                   $fieldc = $searchField['Code']; ?>
 
-                  <option id="type-title" name="fieldcode" value="<?php echo $fieldc; ?>"<?php echo $selected3 ?> >Title</option>     
+                  <option id="type-title" name="fieldcode" value="<?php echo $fieldc; ?>"<?php echo $selected3 ?> ><?php echo _("Title");?></option>     
 
         <?php      }
 
@@ -128,7 +156,7 @@ if (!(isInstructor())) {
 
         </select>
 
-        <input type="submit" value="Search" />
+        <input type="submit" value="<?php echo _('Search');?>" />
 
         
 
@@ -144,7 +172,7 @@ if (!(isInstructor())) {
 
         <div class="table-cell">         
 
-            <div><h4>Refine Search</h4></div>
+            <div><h4><?php echo _("Refine Search");?></h4></div>
 
             
 
@@ -152,7 +180,7 @@ if (!(isInstructor())) {
 
 <div class="filters">
 
-    <strong>Remove Facets</strong>
+    <strong><?php echo _("Remove Facets");?></strong>
 
     <ul class="filters">
 
@@ -220,7 +248,7 @@ if (!(isInstructor())) {
 
         </a>
 
-        <a href="<?php echo $refineSearchUrl.'&'.$queryStringUrl.'&'.$action. '&backpath='.$backpath; ?>">Limiter: <?php echo $limiterLabel; ?></a>
+        <a href="<?php echo $refineSearchUrl.'&'.$queryStringUrl.'&'.$action. '&backpath='.$backpath; ?>"><?php echo _("Limiter: ");?><?php echo $limiterLabel; ?></a>
 
         </li>
 
@@ -258,7 +286,7 @@ if (!(isInstructor())) {
 
         </a>
 
-        <a href="<?php echo $refineSearchUrl.'&'.$queryStringUrl.'&'.$action. '&backpath='.$backpath; ?>">Expander: <?php echo $expanderLabel; ?></a>
+        <a href="<?php echo $refineSearchUrl.'&'.$queryStringUrl.'&'.$action. '&backpath='.$backpath; ?>"><?php echo _("Expander: ");?><?php echo $expanderLabel; ?></a>
 
         </li>
 
@@ -276,7 +304,7 @@ if (!(isInstructor())) {
 
                 <dl class="facet-label">
 
-                    <dt>Limit your results</dt>
+                    <dt><?php echo _("Limit your results");?></dt>
 
                 </dl>
 
@@ -299,7 +327,7 @@ if (!(isInstructor())) {
                            
                         } else {
                       ?>
-                      <div class="limiteritem"><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" /><?php echo $limiter['Label'] ?></div>
+                      <div class="limiteritem"><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" /><?php echo gettext($limiter['Label']); ?></div>
 
                       <?php } }else{
 
@@ -324,7 +352,7 @@ if (!(isInstructor())) {
                                  } else {
                                  ?>
 
-                                      <div class="limiteritem"><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" checked="checked" /><?php echo $limiter['Label'] ?></div>                           
+                                      <div class="limiteritem"><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" checked="checked" /><?php echo gettext($limiter['Label']); ?></div>                           
 
                       <?php } }else{
                         
@@ -333,7 +361,7 @@ if (!(isInstructor())) {
                         } else {
                         ?>
 
-                                      <div class="limiteritem"><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" /><?php echo $limiter['Label'] ?></div>
+                                      <div class="limiteritem"><input type="checkbox" value="<?php echo $limiter['Action'];?>" name="<?php echo $limiter['Id']; ?>" /><?php echo _($limiter['Label']); ?></div>
 
                       <?php }}}}}?>
 
@@ -343,7 +371,7 @@ if (!(isInstructor())) {
 
                     
 
-                    <input type="submit" value="Update" />
+                    <input type="submit" value="<?php echo _('Update');?>" />
 
                     </form>               
 
@@ -357,7 +385,7 @@ if (!(isInstructor())) {
 
                 <dl class="facet-label">
 
-                    <dt>Expand your results</dt>
+                    <dt><?php echo _("Expand your results");?></dt>
 
                 </dl>
 
@@ -371,7 +399,7 @@ if (!(isInstructor())) {
 
                        if(empty($results['appliedExpanders'])){ ?>
 
-                           <div class="limiteritem"><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>" /><?php echo $exp['Label'];?></div>
+                           <div class="limiteritem"><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>" /><?php echo _($exp['Label']);?></div>
 
                     <?php }else{
 
@@ -393,11 +421,11 @@ if (!(isInstructor())) {
 
                         if($flag==TRUE){ ?>
 
-                           <div class="limiteritem"><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>"  checked="checked"/><?php echo $exp['Label'];?></div>
+                           <div class="limiteritem"><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>"  checked="checked"/><?php echo _($exp['Label']);?></div>
 
                    <?php }else{ ?>
 
-                            <div class="limiteritem"><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>" /><?php echo $exp['Label'];?></div>
+                            <div class="limiteritem"><input type="checkbox" value="<?php echo $exp['Action'];?>" name="<?php echo $exp['Id']; ?>" /><?php echo _($exp['Label']);?></div>
 
                    <?php   }
 
@@ -409,7 +437,7 @@ if (!(isInstructor())) {
 
                     <input type="hidden" value="<?php echo $fieldCode;?>"  name="fieldcode" />
 
-                    <input type="submit" value="Update"/>
+                    <input type="submit" value="<?php echo _('Update');?>"/>
 
                 </form>
 
@@ -459,7 +487,7 @@ if (!(isInstructor())) {
 
                 <dl class="facet-label" id="flip<?php echo $i ?>">
 
-                    <dt><a style="font-weight: lighter;" id="plus<?php echo $i ?>" href="javascript:;" >[+]</a><?php echo $facet['Label']; ?></dt>
+                    <dt><a style="font-weight: lighter;" id="plus<?php echo $i ?>" href="javascript:;" >[+]</a><?php echo gettext($facet['Label']); ?></dt>
 
                 </dl>
 
@@ -483,7 +511,7 @@ if (!(isInstructor())) {
 
                              
 
-                                <?php echo $facetValue['Value']; ?>
+                                <?php echo _($facetValue['Value']); ?>
 
                             </a>
 
@@ -513,13 +541,13 @@ if (!(isInstructor())) {
 
 <?php if($debug=='y'){?>
 
-    <div style="float:right"><a target="_blank" href="debug.php?result=y">Search response XML</a></div>
+    <div style="float:right"><a target="_blank" href="debug.php?result=y"><?php echo _("Search response XML");?></a></div>
 
 <?php } ?>
 
 <div class="top-menu">
 
-    <h2>Results</h2> 
+    <h2><?php echo _("Results");?></h2> 
 
 <?php if ($error) { ?>
 
@@ -537,11 +565,11 @@ if (!(isInstructor())) {
 
     <div class="statistics">
 
-        Showing <strong><?php if($results['recordCount']>0){ echo ($start - 1) * $limit + 1;} else { echo 0; } ?>  - <?php if((($start - 1) * $limit + $limit)>=$results['recordCount']){ echo $results['recordCount']; } else { echo ($start - 1) * $limit + $limit;} ?></strong>  
+        <?php echo _("Showing");?> <strong><?php if($results['recordCount']>0){ echo ($start - 1) * $limit + 1;} else { echo 0; } ?>  - <?php if((($start - 1) * $limit + $limit)>=$results['recordCount']){ echo $results['recordCount']; } else { echo ($start - 1) * $limit + $limit;} ?></strong>  
 
-            of <strong><?php echo $results['recordCount']; ?></strong>
+            <?php echo _("of");?> <strong><?php echo $results['recordCount']; ?></strong>
 
-            for <strong><?php echo str_replace("&amp;","&",htmlspecialchars(strip_tags(urldecode($searchTerm)))); ?></strong>
+            <?php echo _("for");?> <strong><?php echo str_replace("&amp;","&",htmlspecialchars(strip_tags(urldecode($searchTerm)))); ?></strong>
 
     </div><br>            
 
@@ -557,7 +585,7 @@ if (!(isInstructor())) {
 
                         <input type="hidden" name="backpath" value="<?php echo $backpath; ?>" />
 
-                        <label><b>Sort</b></label>
+                        <label><b><?php echo _("Sort");?></b></label>
 
                         <select onchange="this.form.submit()" name="sort" > 
 
@@ -565,11 +593,11 @@ if (!(isInstructor())) {
 
                                   if($sortBy==$s['Id']){ ?>
 
-                                <option selected="selected" value="<?php echo $s['Action']; ?>"><?php echo $s['Label'] ?></option>
+                                <option selected="selected" value="<?php echo $s['Action']; ?>"><?php echo _($s['Label']) ?></option>
 
                             <?php }else{ ?>
 
-                                <option value="<?php echo $s['Action']; ?>"><?php echo $s['Label'] ?></option>
+                                <option value="<?php echo $s['Action']; ?>"><?php echo _($s['Label']) ?></option>
 
                             <?php }}?>
 
@@ -619,15 +647,15 @@ if (!(isInstructor())) {
 
                         <input type="hidden" name="backpath" value="<?php echo $backpath; ?>" />
 
-                        <label><b>Page options</b></label>
+                        <label><b><?php echo _("Page options");?></b></label>
 
                         <select onchange="this.form.submit()" name="view">
 
-                            <option  <?php echo $option['Detailed']?> value="detailed">Detailed</option>
+                            <option  <?php echo $option['Detailed']?> value="detailed"><?php echo _("Detailed");?></option>
 
-                            <option  <?php echo $option['Brief']?> value="brief">Brief</option>
+                            <option  <?php echo $option['Brief']?> value="brief"><?php echo _("Brief");?></option>
 
-                            <option  <?php echo $option['Title']?> value="title">Title Only</option>
+                            <option  <?php echo $option['Title']?> value="title"><?php echo _("Title Only");?></option>
 
                         </select>
 
@@ -701,7 +729,7 @@ if (!(isInstructor())) {
 
                         <input type="hidden" name="backpath" value="<?php echo $backpath; ?>" />
 
-                        <label><b>Results per page</b></label>
+                        <label><b><?php echo _("Results per page");?></b></label>
 
                         <select onchange="this.form.submit()" name="resultsperpage">
 
@@ -788,12 +816,12 @@ if (!(isInstructor())) {
                     <div style="margin-left: 10px">
 
                <div class="rsheader">
-                  Research Starter
+                  <?php echo _("Research Starter");?>
                </div>
 
                         <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==1){ ?>
 
-                            <p>This record from <b>[<?php echo $result['DbLabel'] ?>]</b> cannot be displayed to guests.<a href="login.php?path=results&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>">Login</a> for full access.</p>
+                            <p><?php echo _("This record from ");?><b>[<?php echo $result['DbLabel'] ?>]</b><?php echo _(" cannot be displayed to guests.");?><a href="login.php?path=results&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>"><?php echo _("Login");?></a><?php echo _(" for full access.");?></p>
 
                        <?php }else{  ?>
 
@@ -883,7 +911,7 @@ if (!(isInstructor())) {
 
                              <?php foreach($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['date'] as $date){ ?>
 
-                                 <span class="hiddendata" style="display:none;"><?php echo $date['Y']; ?></span>Published: <?php echo $date['M']?>/<?php echo $date['D']?>/<?php echo $date['Y']?>, 
+                                 <span class="hiddendata" style="display:none;"><?php echo $date['Y']; ?></span><?php echo _("Published: ");?><?php echo $date['M']?>/<?php echo $date['D']?>/<?php echo $date['Y']?>, 
 
                              <?php }?> 
 
@@ -901,13 +929,13 @@ if (!(isInstructor())) {
 
                         <?php if(!empty($result['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage'])){?>
 
-                                 Start Page: <?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage']?>, 
+                                 <?php echo _("Start Page: ");?><?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage']?>, 
 
                         <?php } ?>                        
 
                         <?php if(!empty($result['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination'])){ ?>
 
-                                 Page Count: <?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination']?>, 
+                                 <?php echo _("Page Count: ");?><?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination']?>, 
 
                         <?php } ?>
 
@@ -915,7 +943,7 @@ if (!(isInstructor())) {
 
                         <?php foreach($result['RecordInfo']['BibEntity']['Languages'] as $language){ ?> 
 
-                                 Language: <?php echo $language['Text']?>
+                                 <?php echo _("Language: ");?><?php echo $language['Text']?>
 
                         <?php } }?>
 
@@ -1022,11 +1050,11 @@ if (!(isInstructor())) {
                            ?> 
                           <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==2){ ?> 
 
-                        <a target="_blank" class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>">Full Text</a>
+                        <a target="_blank" class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>"><?php echo _("Full Text");?></a>
 
                           <?php } else { ?>
 
-                        <a target="_blank" class="icon html fulltext" href="record.php?an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>#html">Full Text</a>
+                        <a target="_blank" class="icon html fulltext" href="record.php?an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>#html"><?php echo _("Full Text");?></a>
 
                          <?php } ?>                          
 
@@ -1036,7 +1064,7 @@ if (!(isInstructor())) {
                            $fulltextlinkfound = true;
                            ?> 
 
-                          <a target="_blank" class="icon pdf fulltext" href="PDF.php?an=<?php echo $result['An']?>&db=<?php echo $result['DbId']?>">Full Text</a>
+                          <a target="_blank" class="icon pdf fulltext" href="PDF.php?an=<?php echo $result['An']?>&db=<?php echo $result['DbId']?>"><?php echo _("Full Text");?></a>
 
                         <?php } ?>
 
@@ -1220,7 +1248,7 @@ Foldering
   			echo "inline";
 		}
 ?>;">
-<button class="addFolder" id="addbutton0" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',1,0,1,1)">Add to Reading List</button>
+<button class="addFolder" id="addbutton0" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',1,0,1,1)"><?php echo _("Add to Reading List");?></button>
 
 </div>
 <!-- END item in NOT in folder -->
@@ -1233,7 +1261,7 @@ Foldering
   			echo "none";
 		}
 ?>;">
-<button class="removeFolder" id="removebutton0" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',2,0,1,1)">Remove from Reading List</button>
+<button class="removeFolder" id="removebutton0" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',2,0,1,1)"><?php echo _("Remove from Reading List");?></button>
 
 </div>
 <!-- END item is in the folder -->
@@ -1279,7 +1307,7 @@ $params = array(
 
             <div class="table-cell">
 
-                <h2><i>No results were found.</i></h2>
+                <h2><i><?php echo _("No results were found.");?></i></h2>
 
             </div>
 
@@ -1316,7 +1344,7 @@ $params = array(
 
                     <?php } ?>
 
-                    <div><?php echo $result['pubType'] ?></div>
+                    <div><?php echo _($result['pubType']); ?></div>
 
                 </div>     
 
@@ -1328,13 +1356,13 @@ $params = array(
 
                         <div class="record-id table-cell">
         
-                            Result #<?php echo $result['ResultId']; ?>.
+                            <?php echo _("Result")."# ";?><?php echo $result['ResultId']; ?>.
         
                         </div> 
 
                         <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==1){ ?>
 
-                            <p>This record from <b>[<?php echo $result['DbLabel'] ?>]</b> cannot be displayed to guests.<a href="login.php?path=results&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>">Login</a> for full access.</p>
+                            <p>This record from <b>[<?php echo $result['DbLabel'] ?>]</b><?php echo _(" cannot be displayed to guests.");?><a href="login.php?path=results&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>"><?php echo _("Login");?></a><?php echo _(" for full access.");?></p>
 
                        <?php }else{  ?>
 
@@ -1350,7 +1378,7 @@ $params = array(
 
                             else { ?> 
 
-                            <a href="record.php?db=<?php echo $result['DbId']; ?>&an=<?php echo $result['An']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']; ?>&<?php echo $encodedSearchTerm; ?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>"><?php echo "Title is not available"; ?></a>                   
+                            <a href="record.php?db=<?php echo $result['DbId']; ?>&an=<?php echo $result['An']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']; ?>&<?php echo $encodedSearchTerm; ?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>"><?php echo _("Title is not available"); ?></a>                   
 
                           <?php  } ?>                
 
@@ -1376,7 +1404,7 @@ $params = array(
 
                             <span>
 
-                                <span style="font-style: italic;">By : </span>                                            
+                                <span style="font-style: italic;"><?php echo _("By : ");?></span>                                            
 
                                  <?php
                                     $authorstring = '';
@@ -1450,7 +1478,7 @@ $params = array(
 
                              <?php foreach($result['RecordInfo']['BibRelationships']['IsPartOfRelationships']['date'] as $date){ ?>
 
-                                 <span class="hiddendata" style="display:none;"><?php echo $date['Y']; ?></span>Published: <?php echo $date['M']?>/<?php echo $date['D']?>/<?php echo $date['Y']?>, 
+                                 <span class="hiddendata" style="display:none;"><?php echo $date['Y']; ?></span><?php echo _("Published: ");?><?php echo $date['M']?>/<?php echo $date['D']?>/<?php echo $date['Y']?>, 
 
                              <?php }?> 
 
@@ -1468,13 +1496,13 @@ $params = array(
 
                         <?php if(!empty($result['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage'])){?>
 
-                                 Start Page: <?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage']?>, 
+                                 <?php echo _("Start Page: ");?><?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage']?>, 
 
                         <?php } ?>                        
 
                         <?php if(!empty($result['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination'])){ ?>
 
-                                 Page Count: <?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination']?>, 
+                                 <?php echo _("Page Count: ");?><?php echo $result['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination']?>, 
 
                         <?php } ?>
 
@@ -1482,7 +1510,7 @@ $params = array(
 
                         <?php foreach($result['RecordInfo']['BibEntity']['Languages'] as $language){ ?> 
 
-                                 Language: <?php echo $language['Text']?>
+                                 <?php echo _("Language: ");?><?php echo $language['Text']?>
 
                         <?php } }?>
 
@@ -1518,7 +1546,7 @@ $params = array(
 
                             <span>
 
-                                <span style="font-style: italic;">Abstract: </span>                                    
+                                <span style="font-style: italic;"><?php echo _("Abstract:");?> </span>                                    
 
                                       <?php foreach($result['Items']['Ab'] as $Abstract){ ?>                                            
 
@@ -1558,7 +1586,7 @@ $params = array(
 
                             <span>
 
-                                    <span style="font-style: italic;">Abstract: </span>
+                                    <span style="font-style: italic;"><?php echo _("Abstract: ");?></span>
 
                                           <?php foreach($result['Items']['Ab'] as $Abstract){ ?>                                          
 
@@ -1582,7 +1610,7 @@ $params = array(
 
                             <span>
 
-                                    <span style="font-style: italic;">Subjects:</span>
+                                    <span style="font-style: italic;"><?php echo _("Subjects:");?></span>
 
                                              <?php foreach($result['Items']['Su'] as $Subject){ ?>
 
@@ -1612,11 +1640,11 @@ $params = array(
                            ?> 
                           <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==2){ ?> 
 
-                        <a target="_blank" class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>">Full Text</a>
+                        <a target="_blank" class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>"><?php echo _("Full Text");?></a>
 
                           <?php } else { ?>
 
-                        <a target="_blank" class="icon html fulltext" href="record.php?an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>#html">Full Text</a>
+                        <a target="_blank" class="icon html fulltext" href="record.php?an=<?php echo $result['An']; ?>&db=<?php echo $result['DbId']; ?>&<?php echo $encodedHighLigtTerm; ?>&resultId=<?php echo $result['ResultId'];?>&recordCount=<?php echo $results['recordCount']?>&<?php echo $encodedSearchTerm;?>&fieldcode=<?php echo $fieldCode; ?>&backpath=<?php echo $backpath; ?>#html"><?php echo _("Full Text");?></a>
 
                          <?php } ?>                          
 
@@ -1626,7 +1654,7 @@ $params = array(
                            $fulltextlinkfound = true;
                            ?> 
 
-                          <a target="_blank" class="icon pdf fulltext" href="PDF.php?an=<?php echo $result['An']?>&db=<?php echo $result['DbId']?>">Full Text</a>
+                          <a target="_blank" class="icon pdf fulltext" href="PDF.php?an=<?php echo $result['An']?>&db=<?php echo $result['DbId']?>"><?php echo _("Full Text");?></a>
 
                         <?php } ?>
 
@@ -1810,7 +1838,7 @@ Foldering
   			echo "inline";
 		}
 ?>;">
-<button class="addFolder" id="addbutton<?php echo $result['ResultId'];?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',1,<?php echo $result['ResultId']; ?>,1,1)">Add to Reading List</button>
+<button class="addFolder" id="addbutton<?php echo $result['ResultId'];?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',1,<?php echo $result['ResultId']; ?>,1,1)"><?php echo _("Add to Reading List");?></button>
 
 </div>
 <!-- END item in NOT in folder -->
@@ -1823,7 +1851,7 @@ Foldering
   			echo "none";
 		}
 ?>;">
-<button class="removeFolder" id="removebutton<?php echo $result['ResultId'];?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',2,<?php echo $result['ResultId']; ?>,1,1)">Remove from Reading List</button>
+<button class="removeFolder" id="removebutton<?php echo $result['ResultId'];?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($Ti['TitleFull']); ?>',2,<?php echo $result['ResultId']; ?>,1,1)"><?php echo _("Remove from Reading List");?></button>
 
 </div>
 <!-- END item is in the folder -->

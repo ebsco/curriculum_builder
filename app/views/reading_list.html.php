@@ -1,3 +1,32 @@
+<?php
+	// save current language to cookie by default
+	if (!isset($_SESSION["language"])){
+		$_SESSION["language"]=$customparams['language'];
+	}
+	// check if parameters are passed from url, language change 
+	if (isset($_REQUEST["language"])) {
+		$_SESSION["language"]=urldecode($_REQUEST["language"]);
+	}
+	$language = $_SESSION["language"];
+	if (stripos($language,"utf-8")===false) {
+	   $language.=".UTF-8";
+	}
+	putenv("LC_ALL=$language");
+	setlocale(LC_ALL, $language);
+	if (defined('LC_MESSAGES')) // available if PHP was compiled with libintl
+	{
+	   setlocale(LC_MESSAGES, $language);
+	}   
+	else
+	{       
+	   setlocale(LC_ALL, $language);
+	}       
+			
+	bindtextdomain("messages", dirname(__FILE__)."/locale");                                
+	bind_textdomain_codeset('messages', 'UTF-8');
+	textdomain("messages");
+
+?>
 <script type="text/javascript">
  function textCounter(field,field2,maxlimit)
 {
@@ -173,14 +202,14 @@
         <?php
             if (isInstructor()) {
         ?>
-        <div class="readingListLink"><a href="index.php"><strong><?php if (strlen($customparams['searchlabel']) > 0) { echo $customparams['searchlabel']; } else { echo "Search Library Resources"; } ?></strong></a> | <a href="copy_list.php"><strong>Import from Existing List</strong></a> | <a href="import_folder.php"><strong>Import from EBSCO Folder (beta)</strong></a> | This list is
+        <div class="readingListLink"><a href="index.php"><strong><?php if (strlen($customparams['searchlabel']) > 0) { echo $customparams['searchlabel']; } else { echo _("Search Library Resources"); } ?></strong></a> | <a href="copy_list.php"><strong><?php echo _("Import from Existing List");?></strong></a> | <a href="import_folder.php"><strong><?php echo _("Import from EBSCO Folder (beta)");?></strong></a> | <?php echo _("This list is");?>
 	<?php
 	
         if ($privacy == 0) { 
-			?><strong><a href="reading_list.php?private=1">public</a></strong>.<?php
+			?><strong><a href="reading_list.php?private=1"><?php echo _("public");?></a></strong>.<?php
         } else {
             ?>
-            <strong><a href="reading_list.php?private=0">private</a></strong>.
+            <strong><a href="reading_list.php?private=0"><?php echo _("private");?></a></strong>.
             <?php
         }
 	
@@ -192,13 +221,13 @@
 		$students = getStudentNamesList($c,decryptCookie($_COOKIE['currentListId']));
 		$studentsStr = implode("</li><li>",$students);
 	    echo '<div class="readingListLink"><span id="listStatstitle" onclick="togglethat(\'listStats\');"><strong>';
-	    echo sizeof($students) . " student(s) have accessed this list.";
+	    echo sizeof($students).' '. _("student(s) have accessed this list.");
 	    echo '</strong> <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span><div id="listStatsbox" style="display:none;">';
-		echo '<div class="studentdata">Students that have accessed this list: ';
+		echo '<div class="studentdata">'._('Students that have accessed this list:').' ';
 		if (sizeof($students) > 0) {
     		echo "<ul><li>".$studentsStr."</li></ul>";
 		} else {
-		    echo "No students have accessed this list.  A list of names will appear here when at least one student accesses it.";
+		    echo _("No students have accessed this list.  A list of names will appear here when at least one student accesses it.");
 		}
 		echo '</div></div></div>';
 	}
@@ -213,33 +242,33 @@
 		?>
 
 <div class="readingListLink" id="createFolder">
-            <span id="foldertitle" onclick="togglethat('folder');"><strong>Add Folder</strong> <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span>
+            <span id="foldertitle" onclick="togglethat('folder');"><strong><?php echo _("Add Folder");?></strong> <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span>
 	    <div id="folderbox" style="display: none;">
             <table border="0">
                 <tr>
-                    <td><input type="text" name="foldertext" id="folder-text" size="50" placeholder="Folder name" /></td>
-                    <td><button onclick="preAddToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>)">Create Folder</button></td>
+                    <td><input type="text" name="foldertext" id="folder-text" size="50" placeholder="<?php echo gettext('Folder name');?>" /></td>
+                    <td><button onclick="preAddToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>)"><?php echo _("Create Folder");?></button></td>
                 </tr>
             </table>
 	    </div>
         </div>
 		
 		<div class="readingListLink" id="addInstructions">
-            <span id="instructiontitle" onclick="togglethat('instruction');"><strong>Add Text or Instructions</strong> <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span>
+            <span id="instructiontitle" onclick="togglethat('instruction');"><strong><?php echo _("Add Text or Instructions");?></strong> <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span>
 	    <div id="instructionbox" style="display: none;">
             <table border="0">
                 <tr>
-                    <td>Text</td>
+                    <td><?php echo _("Text");?></td>
 		    <?php if (count($listoffolders) > 0) { ?>
-			<td>Folder</td>
+			<td><?php echo _("Folder");?></td>
 		    <?php } ?>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="text" id="inst-text" size="50" placeholder="e.g., Read Chapter 5 in Textbook" /></td>
+                    <td><input type="text" name="text" id="inst-text" size="50" placeholder="<?php echo gettext('e.g., Read Chapter 5 in Textbook');?>" /></td>
 		    <?php if (count($listoffolders) > 0) { ?>
 <td><select id="folderselector-inst">
-	<option value="0"><em>Main list of Readings</em></option>
+	<option value="0"><em><?php echo _("Main list of Readings");?></em></option>
 	<?php
 	    foreach ($listoffolders as $folder) {
 		?>
@@ -248,30 +277,30 @@
 	    }
 	?>
     </select></td><?php } ?>
-                    <td><button onclick="preAddToInstructions(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>)">Add to Reading List</button></td>
+                    <td><button onclick="preAddToInstructions(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>)"><?php echo _("Add to Reading List");?></button></td>
                 </tr>
             </table>
 	    </div>
         </div>
 
 		<div class="readingListLink" id="addWebsite">
-            <span id="weblinktitle" onclick="togglethat('weblink');"><strong>Add Web Resource</strong> <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span>
+            <span id="weblinktitle" onclick="togglethat('weblink');"><strong><?php echo _("Add Web Resource");?></strong> <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span>
 	    <div id="weblinkbox" style="display: none;">
             <table border="0">
                 <tr>
-                    <td>URL</td>
-                    <td>Title</td>
+                    <td><?php echo _("URL");?></td>
+                    <td><?php echo _("Title");?></td>
 		    <?php if (count($listoffolders) > 0) { ?>
-			<td>Folder</td>
+			<td><?php echo _("Folder");?></td>
 		    <?php } ?>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="url" id="ws-url" size="40" placeholder="e.g., http://library.edu/" /></td>
-                    <td><input type="text" name="title" id="ws-title" size="25" placeholder="Link label" /></td>
+                    <td><input type="text" name="url" id="ws-url" size="40" placeholder="<?php echo gettext('e.g., http://library.edu/');?>" /></td>
+                    <td><input type="text" name="title" id="ws-title" size="25" placeholder="<?php echo gettext('Link label');?>" /></td>
 		    <?php if (count($listoffolders) > 0) { ?>
 <td><select id="folderselector-ws">
-	<option value="0"><em>Main list of Readings</em></option>
+	<option value="0"><em><?php echo _("Main list of Readings");?></em></option>
 	<?php
 	    foreach ($listoffolders as $folder) {
 		?>
@@ -280,7 +309,7 @@
 	    }
 	?>
     </select></td><?php } ?>
-                    <td><button onclick="preAddToWebsites(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>)">Add to Reading List</button></td>
+                    <td><button onclick="preAddToWebsites(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>)"><?php echo _("Add to Reading List");?></button></td>
                 </tr>
             </table>
 	    </div>
@@ -294,11 +323,11 @@
 		<?php
 		    if (isset($clean['folderid'])) {
 			?>
-			    <a href="reading_list.php"><strong><img src="web/back.png" style="border: none; max-height: 12px;"> Back to main list</strong></a>
+			    <a href="reading_list.php"><strong><img src="web/back.png" style="border: none; max-height: 12px;"><?php echo _("Back to main list");?></strong></a>
 			<?php
 		    } else {
 			?>
-			    <strong>This list has folders:</strong>
+			    <strong><?php echo _("This list has folders:");?></strong>
 			<?php
 		    }
 		?>
@@ -309,9 +338,9 @@
 		?>
 		    <li class="folderobject"><span style="display: none;" class="folderidnum"><?php echo $folder['id']; ?></span><input type="hidden" class="foldersortorder" value="<?php echo $folder['sortorder']; ?>" /><span id="foldername<?php echo $folder['id']; ?>"><?php
 		    if (isset($clean['folderid']) && ($folder['id'] == $clean['folderid'])) {
-			echo "<strong id=\"folderlabel".$folder['id']."\">".$folder['label']."</strong></span> <span id=\"foldernameedit".$folder['id']."\" style=\"display:none;\"><input id=\"foldernewname".$folder['id']."\" type=\"text\" value=\"".$folder['label']."\" style=\"height: 12px;font-size: small;\" /></span> (currently selected)";
+			echo "<strong id=\"folderlabel".$folder['id']."\">".$folder['label']."</strong></span> <span id=\"foldernameedit".$folder['id']."\" style=\"display:none;\"><input id=\"foldernewname".$folder['id']."\" type=\"text\" value=\"".$folder['label']."\" style=\"height: 12px;font-size: small;\" /></span> ("._("currently selected").")";
 		    } else {
-			echo '<a href="reading_list.php?folderid='.$folder['id'].'" id="folderlabel'.$folder['id'].'">'.$folder['label']."</a></span> <span id=\"foldernameedit".$folder['id']."\" style=\"display:none;\"><input id=\"foldernewname".$folder['id']."\" type=\"text\" value=\"".$folder['label']."\" style=\"height: 12px;font-size: small;\" /></span> (".folderitemcount($c,$folder['id'])." items)";
+			echo '<a href="reading_list.php?folderid='.$folder['id'].'" id="folderlabel'.$folder['id'].'">'.$folder['label']."</a></span> <span id=\"foldernameedit".$folder['id']."\" style=\"display:none;\"><input id=\"foldernewname".$folder['id']."\" type=\"text\" value=\"".$folder['label']."\" style=\"height: 12px;font-size: small;\" /></span> (".folderitemcount($c,$folder['id'])." ".("items").")";
 		    }
 		    
 		    if (isInstructor()) {
@@ -378,22 +407,22 @@
 			}
 			
                         if (isInstructor()) { ?>
-			    <div class="topreadings" id="topbar<?php echo $reading['id']; ?>"><span class='ui-icon ui-icon-arrowthick-2-n-s'></span><span style="padding-left:20px;font-size:smaller;"><em>Sort Order:</em> <input type="text" size="3" class="sortInput" onclick="document.getElementById('savebutton<?php echo $reading['id']; ?>').style.display = '';" name="priority<?php echo $reading["id"]; ?>" value="<?php echo $reading["priority"]; ?>" /><input type="submit" class="savebutton" id="savebutton<?php echo $reading['id']; ?>" style="display: none;" value="Save Changes" /></span> <div class='idnum' style='display:none;'><?php echo $reading['id']; ?></div>
+			    <div class="topreadings" id="topbar<?php echo $reading['id']; ?>"><span class='ui-icon ui-icon-arrowthick-2-n-s'></span><span style="padding-left:20px;font-size:smaller;"><em><?php echo _("Sort Order:");?></em> <input type="text" size="3" class="sortInput" onclick="document.getElementById('savebutton<?php echo $reading['id']; ?>').style.display = '';" name="priority<?php echo $reading["id"]; ?>" value="<?php echo $reading["priority"]; ?>" /><input type="submit" class="savebutton" id="savebutton<?php echo $reading['id']; ?>" style="display: none;" value="<?php echo _('Save Changes');?>" /></span> <div class='idnum' style='display:none;'><?php echo $reading['id']; ?></div>
 
     <div style="text-align:right;float:right;">
     
     
 <div id="notinfolder<?php echo $count; ?>" class="folderitem" style="font-size: smaller; display: none;">
         
-    <span><span style="font-size:smaller; padding:3px;" class="addFolder">Removing...</span></span>
+    <span><span style="font-size:smaller; padding:3px;" class="addFolder"><?php echo _("Removing...");?></span></span>
     </div>
     <!-- END item in NOT in folder -->
     <!-- If the item is in the folder... -->
     <div id="infolder<?php echo $count; ?>" class="folder" style="font-size: smaller; display: block;">
     <?php if (sizeof($listoffolders) > 0) { ?>
-    <span class="folderitemsedit">Move to folder: <select style="font-size:smaller;" id="folderselector<?php echo $reading['id']; ?>" onchange="addreadingtofolder(this,<?php echo $reading['id']; ?>);">
+    <span class="folderitemsedit"><?php echo _("Move to folder").":";?> <select style="font-size:smaller;" id="folderselector<?php echo $reading['id']; ?>" onchange="addreadingtofolder(this,<?php echo $reading['id']; ?>);">
 
-	<option value="0"><em>No Folder</em></option>
+	<option value="0"><em><?php echo _("No Folder");?></em></option>
 	<?php
 	    foreach ($listoffolders as $folder) {
 		?>
@@ -401,7 +430,7 @@
 		<?php
 	    }
 	?>
-    </select><?php } ?></span><button type="button"style="font-size:smaller; padding:3px; margin-top:0px;" class="removeFolder" id="removebutton<?php echo $count;?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $reading['an']; ?>', '<?php echo $reading['db']; ?>','<?php echo $reading['url']; ?>','<?php echo urlencode(html_entity_decode(urldecode($reading['instruct']))); ?>','<?php echo urlencode($reading['title']); ?>',2,<?php echo $count; ?>,<?php echo $reading["priority"]; ?>,<?php echo $reading["type"]; ?>); return false;">Delete</button>
+    </select><?php } ?></span><button type="button"style="font-size:smaller; padding:3px; margin-top:0px;" class="removeFolder" id="removebutton<?php echo $count;?>" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $reading['an']; ?>', '<?php echo $reading['db']; ?>','<?php echo $reading['url']; ?>','<?php echo urlencode(html_entity_decode(urldecode($reading['instruct']))); ?>','<?php echo urlencode($reading['title']); ?>',2,<?php echo $count; ?>,<?php echo $reading["priority"]; ?>,<?php echo $reading["type"]; ?>); return false;"><?php echo _("Delete");?></button>
 
 </div>
 
@@ -433,7 +462,7 @@
 
                     <?php } ?>
 
-                    <div class="pt-label"><?php echo $readingMetadata['pubType'] ?></div>
+                    <div class="pt-label"><?php echo _($readingMetadata['pubType']) ?></div>
 
                 </div>     
 
@@ -467,7 +496,7 @@
 				    }
                                 }
 			    } else {
-				echo "<strong><a href=\"record.php?an=" . $reading["an"] . "&db=" . $reading["db"] . "\">".$reading["title"]."</a></strong><br /><span style=\"font-size:small;color:#666666;\">There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item.</span>";
+				echo "<strong><a href=\"record.php?an=" . $reading["an"] . "&db=" . $reading["db"] . "\">".$reading["title"]."</a></strong><br /><span style=\"font-size:small;color:#666666;\">"._("There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item.")."</span>";
 			    }
                         } else if ($reading["type"] == 1) {
                             echo "<strong><a onclick='addHit(".$reading["id"].")' href='record.php?an=" . $reading["an"] . "&db=" . $reading["db"];
@@ -487,7 +516,7 @@
                         <?php if (!empty($readingMetadata['Items']['Au'])) { ?>
 			    <div class="authors">
 				<span>
-				    <span style="font-style: italic;">By : </span>                                            
+				    <span style="font-style: italic;"><?php echo _("By : ");?></span>                                            
 				     <?php foreach($readingMetadata['Items']['Au'] as $Author){ ?>
 				        <?php if (isInstructor()) { ?>
 					<?php echo $Author['Data']; ?>;
@@ -526,7 +555,7 @@
                         <?php }?>
                         <?php if(isset($readingMetadata['RecordInfo']['BibRelationships']['IsPartOfRelationships']['date'])){?>
                              <?php foreach($readingMetadata['RecordInfo']['BibRelationships']['IsPartOfRelationships']['date'] as $date){ ?>
-                                 Published: <?php echo $date['M']?>/<?php echo $date['D']?>/<?php echo $date['Y']?>, 
+                                 <?php echo _("Published:")." ";?><?php echo $date['M']?>/<?php echo $date['D']?>/<?php echo $date['Y']?>, 
                              <?php }?> 
                         <?php }?>
                         <?php if(isset($readingMetadata['RecordInfo']['BibRelationships']['IsPartOfRelationships']['numbering'])){ 
@@ -535,14 +564,14 @@
                                     <?php echo $type;?>: <?php echo $number['Value']; ?>, 
                         <?php } } ?>
                         <?php if(!empty($readingMetadata['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage'])){?>
-                                 Start Page: <?php echo $readingMetadata['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage']?>, 
+                                 <?php echo _("Start Page:")." ";?><?php echo $readingMetadata['RecordInfo']['BibEntity']['PhysicalDescription']['StartPage']?>, 
                         <?php } ?>                        
                         <?php if(!empty($readingMetadata['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination'])){ ?>
-                                 Page Count: <?php echo $readingMetadata['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination']?>, 
+                                 <?php echo _("Page Count:")." ";?><?php echo $readingMetadata['RecordInfo']['BibEntity']['PhysicalDescription']['Pagination']?>, 
                         <?php } ?>
                         <?php if(!empty($readingMetadata['RecordInfo']['BibEntity']['Languages'])){ ?>
                         <?php foreach($readingMetadata['RecordInfo']['BibEntity']['Languages'] as $language){ ?> 
-                                 Language: <?php echo $language['Text']?>
+                                 <?php echo _("Language:")." ";?><?php echo $language['Text']?>
                         <?php } }?>
                         </div>
 			
@@ -587,7 +616,7 @@
 				}
 			?>class="icon html fulltext" href="record.php?an=<?php echo $readingMetadata['An']; ?>&db=<?php echo $readingMetadata['DbId']; ?><?php 
 			if (isset($clean['folderid'])) { echo "&folderid=" . $clean['folderid']; }
-			?>#html">Full Text</a>
+			?>#html"><?php echo _("Full Text");?></a>
 
                          <?php } ?>                          
 
@@ -601,7 +630,7 @@
 							if ((!(isInstructor())) && ($customparams['studentdata'] != "n")){
 				    echo "onclick='addHit(".$reading["id"].")' ";
 				}
-			?>class="icon pdf fulltext" href="PDF.php?an=<?php echo $readingMetadata['An']?>&db=<?php echo $readingMetadata['DbId']?>">Full Text</a>
+			?>class="icon pdf fulltext" href="PDF.php?an=<?php echo $readingMetadata['An']?>&db=<?php echo $readingMetadata['DbId']?>"><?php echo _("Full Text");?></a>
 
                         <?php } ?>
 
@@ -790,22 +819,22 @@
 				    $students = getStudentNamesReadings($c,$reading["id"]);
 				    $studentsStr = implode("</li><li>",$students);
 				    echo '<div class="studentcount" style="padding-top:10px;" id="readingdata'.$reading['id'].'title" onclick="togglethat(\'readingdata'.$reading['id'].'\')"><strong>';
-				    echo sizeof($students).' student(s) have clicked this reading.</strong>';
-				    echo '<img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></div><div class="studentdata" id="readingdata'.$reading['id'].'box" style="display:none;">Students that have clicked this reading: ';
+				    echo sizeof($students)." "._('student(s) have clicked this reading.')."</strong>";
+				    echo '<img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></div><div class="studentdata" id="readingdata'.$reading['id'].'box" style="display:none;">'._('Students that have clicked this reading: ');
 				    if (sizeof($students) > 0) {
 				    echo "<ul><li>".$studentsStr."</li></ul>";
 				    } else {
-					echo "No students have read this item.  A list of names will appear here when at least one student clicks this item.";
+					echo " "._("No students have read this item.  A list of names will appear here when at least one student clicks this item.");
 				    }
 				    echo '</div>';
 			    }
                             echo '<div class="notes"><span id="notes'.$reading['id'].'" onclick="togglethat(\'notes'.$reading['id'].'\');"><strong>';
 			    if (strlen($reading['notes']) > 0) {
-				echo 'Edit';
+				echo _('Edit');
 			    } else {
-				echo 'Add';
+				echo _('Add');
 			    }
-			    echo ' Notes</strong>  <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span><div id="notes'.$reading['id'].'box" style="display:none;"><textarea onkeyup="textCounter(this,\'textcounter'.$reading['id'].'\',5000);" name="notes' . $reading["id"] . '" style="width:100%">' . html_entity_decode($reading["notes"]) . '</textarea><br /><span style="font-size:smaller; color: #666666;">Characters remaining: <span id="textcounter'.$reading['id'].'">'.(5000 - strlen(html_entity_decode($reading["notes"]))).'</span></span><br /><button class="addFolder">Save Notes</button></div></div>';
+			    echo _(' notes').'</strong>  <img src="web/right.png" class="toggleicon" /><img src="web/down.png" class="toggleicon" style="display:none;" /></span><div id="notes'.$reading['id'].'box" style="display:none;"><textarea onkeyup="textCounter(this,\'textcounter'.$reading['id'].'\',5000);" name="notes' . $reading["id"] . '" style="width:100%">' . html_entity_decode($reading["notes"]) . '</textarea><br /><span style="font-size:smaller; color: #666666;">'._("Characters remaining").":"." ".'<span id="textcounter'.$reading['id'].'">'.(5000 - strlen(html_entity_decode($reading["notes"]))).'</span></span><br /><button class="addFolder">'._('Save notes').'</button></div></div>';
                         } else {
                             if (strlen($reading["notes"]) > 0) {
                                 echo '<div class="studentnotes">' . html_entity_decode($reading["notes"]) . '</div>';
@@ -827,13 +856,13 @@
     <!-- If the item is in the folder... -->
     <div id="infolder<?php echo $count; ?>" class="folder" style="font-size: 11px; display: block; margin:12px 0 12px 0;">
     
-    <button class="removeFolder" id="removebutton<?php echo $count;?>" onclick="addToFolder(xmlhttp,<?php echo ($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $reading['an']; ?>', '<?php echo $reading['db']; ?>','<?php echo $reading['url']; ?>','<?php echo urlencode(html_entity_decode(urldecode($reading['instruct']))); ?>','<?php echo urlencode($reading['title']); ?>',2,<?php echo $count; ?>,<?php echo $reading["priority"]; ?>,<?php echo $reading["type"]; ?>); return false;">Remove from Reading List</button>
+    <button class="removeFolder" id="removebutton<?php echo $count;?>" onclick="addToFolder(xmlhttp,<?php echo ($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $reading['an']; ?>', '<?php echo $reading['db']; ?>','<?php echo $reading['url']; ?>','<?php echo urlencode(html_entity_decode(urldecode($reading['instruct']))); ?>','<?php echo urlencode($reading['title']); ?>',2,<?php echo $count; ?>,<?php echo $reading["priority"]; ?>,<?php echo $reading["type"]; ?>); return false;"><?php echo _("Remove from Reading List");?></button>
 
     </div>
 	    
 	</td>
 	<td>
-    <button class="addFolder">Update Notes and Sort Order</button>	    
+    <button class="addFolder"><?php echo _("Update Notes and Sort Order");?></button>	    
 	</td>
     </tr>
 </table></div>                     
@@ -842,13 +871,13 @@
                         echo "</div></div></div>";
                     }
                 } else {
-                    echo "<div class='reading'><div class='readingboxcontent'>Currently, there are no readings.</div></div>";
+                    echo "<div class='reading'><div class='readingboxcontent'>"._('Currently, there are no readings.')."</div></div>";
                 }
 		if ($count == 0) {
 		    if (sizeof($listoffolders) > 0) {
-			echo "<div class='reading'><div class='readingboxcontent'>Select a folder above to see readings.</div></div>";
+			echo "<div class='reading'><div class='readingboxcontent'>"._('Select a folder above to see readings.')."</div></div>";
 		    } else {
-			echo "<div class='reading'><div class='readingboxcontent'>Currently, there are no readings on this list.</div></div>";
+			echo "<div class='reading'><div class='readingboxcontent'>"._('Currently, there are no readings on this list.')."</div></div>";
 		    }
 		}
 
