@@ -101,23 +101,23 @@ include_once("app/app.php");
   <table style="width: 100%">
     <tr>
       <td style="width: 300px;"><?php echo _("EBSCO User ID")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('useridhelp');" /><div class="adminhelptext" id="useridhelp"><?php echo _("Select")." ";?><a href="web/uidexample.png" target="_blank"><?php echo _("a User ID & Password combo from EBSCOadmin's Authentication section.")." ";?></a><?php echo _("The username/password combo must be associated with the group containing the profile specified below.");?></div></td>
-      <td><input type="text" style="width:100%" placeholder="Required" name="userid" value="<?php echo $customparams['userid']; ?>" /></td>
+      <td><input type="text" style="width:100%" placeholder="<?php echo _('Required');?>" name="userid" value="<?php echo $customparams['userid']; ?>" /></td>
     </tr>
     <tr>
       <td><?php echo _("EBSCO Password")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('passwordhelp');" /><div class="adminhelptext" id="passwordhelp"><?php echo _("Select")." ";?><a href="web/uidexample.png" target="_blank"><?php echo _("a User ID & Password combo from EBSCOadmin's Authentication section.")." ";?></a><?php echo _("The username/password combo must be associated with the group containing the profile specified below.");?></div></td>
-      <td><input type="text" style="width:100%" placeholder="Required" name="password" value="<?php echo $customparams['password']; ?>" /></td>
+      <td><input type="text" style="width:100%" placeholder="<?php echo _('Required');?>" name="password" value="<?php echo $customparams['password']; ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("EDS API Profile ID")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('profilehelp');" /><div class="adminhelptext" id="profilehelp"><?php echo _("This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to.");?></div></td>
-      <td><input type="text" style="width:100%" placeholder="Required" name="profile" value="<?php echo $customparams['profile']; ?>" /></td>
+      <td><input type="text" style="width:100%" placeholder="<?php echo _('Required');?>" name="profile" value="<?php echo $customparams['profile']; ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("LMS Roles that can edit lists (comma-separated)")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('empowered_roleshelp');" /><div class="adminhelptext" id="empowered_roleshelp"><?php echo _("By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists.")."<br /><br /><strong>"._("Default:")."</strong>"." "._("Instructor,TeachingAssistant");?></div></td>
-      <td><input type="text" style="width:100%" placeholder="e.g., Instructor" name="empowered_roles" value="<?php echo $customparams['empowered_roles']; ?>" /></td>
+      <td><input type="text" style="width:100%" placeholder="<?php echo _('e.g., Instructor');?>" name="empowered_roles" value="<?php echo $customparams['empowered_roles']; ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("Proxy Prefix for CustomLinks")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('proxyhelp');" /><div class="adminhelptext" id="proxyhelp"><?php echo _("If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder.");?><br /><br ><strong><?php echo _("Examples");?></strong><br />http://myproxy.myuni.edu/login?url=<br />http://0-{targetURLdomain}.myproxy.myuni.eds</div></td>
-      <td><input type="text" style="width:100%" placeholder="Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end" name="proxyprefix" value="<?php echo $customparams['proxyprefix']; ?>" /></td>
+      <td><input type="text" style="width:100%" placeholder="<?php echo _('Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end');?>" name="proxyprefix" value="<?php echo $customparams['proxyprefix']; ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("Proxy should encode target URL")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('proxyencodehelp');" /><div class="adminhelptext" id="proxyencodehelp"><?php echo _("If your proxy prefix ends with");?> <strong>?qurl=</strong>, <?php echo _("this probably needs to be set to")." ";?><strong><?php echo _("Yes");?></strong>; <?php echo _("otherwise");?> <strong><?php echo _("No");?></strong> <?php echo _("is probably correct.");?></div></td>
@@ -128,7 +128,7 @@ include_once("app/app.php");
     </tr>
 <tr>
       <td><?php echo _("Contact Email");?></td>
-      <td><input type="text" style="width:100%" placeholder="Email for contact person for tool" name="libemail" value="<?php echo $customparams['libemail']; ?>" /></td>
+      <td><input type="text" style="width:100%" placeholder="<?php echo _('Email for contact person for tool');?>" name="libemail" value="<?php echo $customparams['libemail']; ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("Link to Library Home Page");?></td>
@@ -136,19 +136,19 @@ include_once("app/app.php");
     </tr>
 <tr>
       <td><?php echo _("Text to display at top of screen")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('brandingtexthelp');" /><div class="adminhelptext" id="brandingtexthelp"><?php echo _("This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked.");?></div></td>
-      <td><input type="text" style="width:100%" placeholder="Branding text at top of screen" name="libname" value="<?php echo $customparams['libname']; ?>" /></td>
+      <td><input type="text" style="width:100%" placeholder="<?php echo _('Branding text at top of screen');?>" name="libname" value="<?php echo $customparams['libname']; ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("Label for Link to EDS")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('edslinkhelp');" /><div class="adminhelptext" id="edslinkhelp"><?php echo _("This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear.");?></div></td>
-      <td><input type="text" style="width:100%" name="EDSlabel" placeholder="e.g., See Record in EDS" value="<?php echo $customparams['EDSlabel']; ?>" /></td>
+      <td><input type="text" style="width:100%" name="EDSlabel" placeholder="<?php echo _('e.g., See Record in EDS');?>" value="<?php echo $customparams['EDSlabel']; ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("Label for Search Box");?></td>
-      <td><input type="text" style="width:100%" name="searchlabel" placeholder="e.g., Search for Library Resources" value="<?php echo $customparams['searchlabel']; ?>" /></td>
+      <td><input type="text" style="width:100%" name="searchlabel" placeholder="<?php echo _('e.g., Search for Library Resources');?>" value="<?php echo $customparams['searchlabel']; ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("Custom CSS File")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('csshelp');" /><div class="adminhelptext" id="csshelp"><strong><?php echo _("Optional.");?></strong><?php echo " "._("Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only.");?></div></td>
-      <td><input type="text" style="width:100%" name="css" placeholder="Optional.  URL for CSS Stylesheet" value="<?php echo $customparams['css']; ?>" /></td>
+      <td><input type="text" style="width:100%" name="css" placeholder="<?php echo _('Optional.  URL for CSS Stylesheet');?>" value="<?php echo $customparams['css']; ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("Collect Student Data")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('studentdatahelp');" /><div class="adminhelptext" id="studentdatahelp"><strong><?php echo _("Detailed")." ";?></strong><?php echo _("will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider.");?><br /><br /><strong><?php echo _("Anonymized")." ";?></strong><?php echo _("will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID.");?><br /><br /><strong><?php echo _("None")." ";?></strong><?php echo _("will collect no student activity. No reporting will be available.");?></div></td>
@@ -156,11 +156,11 @@ include_once("app/app.php");
     </tr>
 <tr>
       <td><?php echo _("Link to Help Pages");?></td>
-      <td><input type="text" style="width:100%" name="helppages" placeholder="URL for LibGuide or other help pages" value="<?php echo $customparams['helppages']; ?>" /></td>
+      <td><input type="text" style="width:100%" name="helppages" placeholder="<?php echo _('URL for LibGuide or other help pages');?>" value="<?php echo $customparams['helppages']; ?>" /></td>
 </tr>
 <tr>
       <td><?php echo _("Footer text");?></td>
-      <td><input type="text" style="width:100%" name="copyright" placeholder="e.g., a copyright notice" value="<?php if (isset($customparams['copyright'])) { echo $customparams['copyright']; } ?>" /></td>
+      <td><input type="text" style="width:100%" name="copyright" placeholder="<?php echo _('e.g., a copyright notice');?>" value="<?php if (isset($customparams['copyright'])) { echo $customparams['copyright']; } ?>" /></td>
     </tr>
 <tr>
       <td><?php echo _("Copy Course Support")." ";?><img src="web/help.png" style="max-height:12px;" title="Click for help with this feature" onclick="toggleHelp('copycoursehelp');" /><div class="adminhelptext" id="copycoursehelp"><?php echo _("Selecting")." "."<strong>"._("Yes")."</strong>"." "._("for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If")." ";?><strong><?php echo _("No");?></strong><?php echo " "._("is selected, all new lists will be blank.");?></div></td>
@@ -191,14 +191,15 @@ include_once("app/app.php");
 			<option value="de_DE.UTF-8" <?php if ($customparams['language'] == 'de_DE.UTF-8') echo 'selected' ?>><?php echo _("German");?></option>
 			<option value="it_IT.UTF-8" <?php if ($customparams['language'] == 'it_IT.UTF-8') echo 'selected' ?>><?php echo _("Italian");?></option>
 			<option value="pt_PT.UTF-8" <?php if ($customparams['language'] == 'pt_PT.UTF-8') echo 'selected' ?>><?php echo _("Portuguese");?></option>
-			<option value="fr_FR.UTF-8" <?php if ($customparams['language'] == 'fr_FR.UTF-8') echo 'selected' ?>><?php echo _("Francaise");?></option>
-			<option value="tr_TR.UTF-8" <?php if ($customparams['language'] == 'tr_TR.UTF-8') echo 'selected' ?>><?php echo _("Turkish");?></option>
+			<option value="fr_FR.UTF-8" <?php if ($customparams['language'] == 'fr_FR.UTF-8') echo 'selected' ?>><?php echo _("French");?></option>
 			<option value="th_TH.UTF-8" <?php if ($customparams['language'] == 'th_TH.UTF-8') echo 'selected' ?>><?php echo _("Thai");?></option>
 			<option value="zh_TW.UTF-8" <?php if ($customparams['language'] == 'zh_TW.UTF-8') echo 'selected' ?>><?php echo _("traditional Chinese");?></option>
 			<option value="zh_CN.UTF-8" <?php if ($customparams['language'] == 'zh_CN.UTF-8') echo 'selected' ?>><?php echo _("Simplified Chinese");?></option>
 			<option value="ja_JP.UTF-8" <?php if ($customparams['language'] == 'ja_JP.UTF-8') echo 'selected' ?>><?php echo _("Japanese");?></option>
 			<option value="pl_PL.UTF-8" <?php if ($customparams['language'] == 'pl_PL.UTF-8') echo 'selected' ?>><?php echo _("Polish");?></option>
 			<option value="sv_SE.UTF-8" <?php if ($customparams['language'] == 'sv_SE.UTF-8') echo 'selected' ?>><?php echo _("Swedish");?></option>
+			<option value="he_IL.UTF-8" <?php if ($customparams['language'] == 'he_IL.UTF-8') echo 'selected' ?>><?php echo _("Hebrew");?></option>
+            <option value="ko_KR.UTF-8" <?php if ($customparams['language'] == 'ko_KR.UTF-8') echo 'selected' ?>><?php echo _("Korean");?></option>
 		</select>
 	  </td>
 </tr>

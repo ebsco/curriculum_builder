@@ -204,7 +204,7 @@ if (!(isInstructor())) {
 
         </a>
 
-        <a href="<?php echo $refineSearchUrl.'&'.$queryStringUrl.'&'.$action. '&backpath='.$backpath; ?>"><?php echo $facetValue['Id']; ?>: <?php echo $facetValue['value']; ?></a>
+        <a href="<?php echo $refineSearchUrl.'&'.$queryStringUrl.'&'.$action. '&backpath='.$backpath; ?>"><?php echo _($facetValue['Id']); ?>: <?php echo _($facetValue['value']); ?></a>
 
         </li>
 
@@ -248,7 +248,7 @@ if (!(isInstructor())) {
 
         </a>
 
-        <a href="<?php echo $refineSearchUrl.'&'.$queryStringUrl.'&'.$action. '&backpath='.$backpath; ?>"><?php echo _("Limiter: ");?><?php echo $limiterLabel; ?></a>
+        <a href="<?php echo $refineSearchUrl.'&'.$queryStringUrl.'&'.$action. '&backpath='.$backpath; ?>"><?php echo _("Limiter: ");?><?php echo _($limiterLabel); ?></a>
 
         </li>
 
@@ -266,7 +266,7 @@ if (!(isInstructor())) {
 
                         if($exp['Id']==$filter['Id']){
 
-                            $expanderLabel = $exp['Label'];
+                            $expanderLabel = _($exp['Label']);
 
                             break;
 

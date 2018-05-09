@@ -1,0 +1,1346 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: CB2\n"
+"Language: he\n"
+
+#: 
+msgid "English"
+msgstr "English"
+
+#: 
+msgid "Back to Reading List"
+msgstr "חזרה לרשימת הקריאה"
+
+#: 
+msgid " << Back to Results"
+msgstr "<< חזרה לרשימת התוצאות "
+
+#: 
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr " &nbsp;&nbsp;&nbsp;&nbsp;"
+
+#: 
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
+msgstr "אוי לא! נראה שמאמר זה אינו זמין עוד דרך הספריה שלך. אנא דווח לספריה ולמורה שלך על הודעת תקלה זו:"
+
+#. There shouldn't be a space between the end of this translation and the next word. The word "from" in Hebrew is represented by a single letter (מ) which is added to the beginning of the word after it.
+#: 
+msgid "This record from "
+msgstr "רשומה זו מ-"
+
+#: 
+msgid " cannot be displayed to guests."
+msgstr "לא זמין לאורחים."
+
+#: 
+msgid "Login</a> for full access."
+msgstr "התחבר</a> עבור גישה מלאה."
+
+#: 
+msgid "Add to Reading List"
+msgstr "הוספה לרשימת הקריאה"
+
+#: 
+msgid "Remove from Reading List"
+msgstr "הסרה מרשימת הקריאה"
+
+#: 
+msgid "PDF full text"
+msgstr "טקסט מלא PDF"
+
+#: 
+msgid "HTML full text"
+msgstr "טקסט מלא HTML"
+
+#: 
+msgid "HTML Full Text"
+msgstr "טקסט מלא HTML"
+
+#: 
+msgid "Full Text:"
+msgstr "טקסט מלא:"
+
+#: 
+msgid "PubType:"
+msgstr "סוג החומר:"
+
+#: 
+msgid "Database:"
+msgstr "מאגר מידע:"
+
+#: 
+msgid "Statistics"
+msgstr "סטטיסטיקה:"
+
+#: 
+msgid "Curriculum Builder Settings"
+msgstr "הגדרות בונה תוכנית הלימודים"
+
+#: 
+#, fuzzy
+msgid "EBSCO User ID"
+msgstr "שם משתמש EBSCO שלך"
+
+#: 
+#, fuzzy
+msgid "EBSCO Password"
+msgstr "סיסמת EBSCO שלך"
+
+#: 
+msgid "Your EDS API Profile"
+msgstr "פרופיל EDS API שלך"
+
+#: 
+msgid "URL for your library logo"
+msgstr "קישור ללוגו הספרייה"
+
+#: 
+msgid "Contact Email"
+msgstr "אימייל איש קשר"
+
+#: 
+msgid "Link to Library Home Page"
+msgstr "קישור לדף הבית של הספרייה"
+
+#: 
+msgid "Text to display at top of screen"
+msgstr "טקסט להציג בראש המסך"
+
+#: 
+msgid "Link to EDS Label"
+msgstr "קישור לתווית EDS"
+
+#: 
+msgid "Custom CSS File"
+msgstr "קובץ CSS מתאם"
+
+#: 
+msgid "Collect student names as they access assigned readings?"
+msgstr "אסוף שמות סטודנטים כשהם ניגשים למטלת קריאה?"
+
+#: 
+msgid "Yes"
+msgstr "כן"
+
+#: 
+msgid "No"
+msgstr "לא"
+
+#: 
+msgid "Footer text"
+msgstr "טקסט תחתון"
+
+#: 
+msgid "Copy Course Support"
+msgstr "העתק תמיכת קורס"
+
+#: 
+msgid "Remove Full Text and Available in Library Collection Limiters from view"
+msgstr "הסתר אפשרות טקסט מלא וזמין באוסף הספרייה"
+
+#: 
+msgid "Show 'Return to Course' Link at top of page"
+msgstr "הצג קישור 'חזרה לקורס' בראש הדף"
+
+#: 
+msgid "Open all Lists in a New Window"
+msgstr "פתח את כל הרשימות בחלון חדש"
+
+#: 
+msgid "View Lists"
+msgstr "צפייה ברשימות"
+
+#: 
+msgid "Select one: "
+msgstr "בחר אחד: "
+
+#: 
+msgid "Preview Selected List"
+msgstr "תצוגה מקדימה של רשימה נבחרת"
+
+#: 
+msgid "Delete Lists"
+msgstr "מחיקת רשימה"
+
+#: 
+msgid "Delete Selected Lists"
+msgstr "מחיקת רשימה נבחרת"
+
+#: 
+msgid "Basic Search"
+msgstr "חיפוש בסיסי"
+
+#: 
+msgid "Keyword"
+msgstr "מילות מפתח"
+
+#: 
+msgid "Author"
+msgstr "מחבר"
+
+#: 
+msgid "Title"
+msgstr "כותר"
+
+#: 
+msgid "View this list"
+msgstr "צפייה ברשימה"
+
+#: 
+msgid "Untitled List"
+msgstr "רשימה חסרת שם"
+
+#: 
+msgid "All Public Lists:"
+msgstr "כל הרשימות הפומביות:"
+
+#: 
+msgid "There are no public reading lists to copy."
+msgstr "אין רשימות קריאה פומביות להעתיק."
+
+#: 
+msgid "Options"
+msgstr "אפשרויות"
+
+#: 
+msgid "Include Notes in the Import Process"
+msgstr "כלול הערות בתהליך הייבוא"
+
+#: 
+msgid "Preserve Sort Order"
+msgstr "שמור מיון"
+
+#: 
+msgid "Check/Uncheck All"
+msgstr "בחר/בטל בחירת הכל"
+
+#: 
+msgid "Notes:"
+msgstr "הערות:"
+
+#: 
+msgid "There are no readings in this list."
+msgstr "אין פריטים לקריאה ברשימה."
+
+#: 
+msgid "Copy Selected Readings"
+msgstr "העתק פריטים נבחרים"
+
+#: 
+msgid "You are unauthorized to access this page."
+msgstr "אין לך הרשאה לדף זה."
+
+#: 
+msgid "You must be logged in to access that service, please login"
+msgstr "עליך להתחבר כדי לגשת לשירות זה, אנא נסה שנית."
+
+#: 
+msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
+msgstr "אזהרה: אתם עומדים למחוק רשימה זו לצמיתות. פעולה זו אינה הפיכה. כל מרצה שינסה לגשת לרשימה זו מהקורס שלהם ימצא רשימה ריקה."
+
+#: 
+msgid "NEVER accessed since update"
+msgstr "לא נרשמה כניסה מאז העדכון"
+
+#: 
+msgid "LAST ACCESSED"
+msgstr "כניסה אחרונה"
+
+#: 
+msgid "DELETE"
+msgstr "מחיקה"
+
+#: 
+msgid "this list"
+msgstr "רשימה זו"
+
+#: 
+msgid "these "
+msgstr "אלו "
+
+#: 
+msgid "lists"
+msgstr "רשימות"
+
+#: 
+msgid "or"
+msgstr "או"
+
+#: 
+msgid "Cancel"
+msgstr "ביטול"
+
+#: 
+msgid "No lists selected to delete."
+msgstr "לא נבחרו רשימות למחיקה."
+
+#: 
+msgid "Back to Administration Screen"
+msgstr "חזרה למסך אדמין"
+
+#: 
+msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
+msgstr "אופס! התרחשה תקלה. המידע ברשומה אחת או יותר אינו מלא. אנא נסו שנית וודאו להוסיף את הרשומה המלאה לכל פריט."
+
+#: 
+msgid "Enter bibliographic info from the list into this box:"
+msgstr "הכנס מידע ביבליוגרפי מהרשימה לתיבה זו:"
+
+#: 
+msgid "CB Version 2.3"
+msgstr "בונה תוכניות לימודים גירסה 2.3"
+
+#: 
+msgid "List ID"
+msgstr "מזהה רשימה"
+
+#: 
+msgid "Login"
+msgstr "התחברות"
+
+#: 
+msgid "Invalid login -- pleasae try again"
+msgstr "פרטי כניסה שגויים - אנא נסו שנית"
+
+#: 
+msgid "Username:"
+msgstr "שם משתמש:"
+
+#: 
+msgid "Password:"
+msgstr "סיסמה:"
+
+#: 
+msgid "Successfully logged in."
+msgstr "התחברת בהצלחה."
+
+#: 
+msgid "Successfully updated expiration date for "
+msgstr "הצלחת לעדכן תאריך תפוגה עבור "
+
+#: 
+msgid "Successfully deleted "
+msgstr "מחקת בהצלחה את "
+
+#: 
+msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
+msgstr "מפתח לקוח או סיסמה אינם יכולים להיות ריקות, ועליך לקבוע תאריך תפוגה. אנא נסו שנית."
+
+#: 
+msgid "Consumer key "
+msgstr "מפתח לקוח "
+
+#: 
+msgid "already exists. Please delete the existing one first before creating a new one."
+msgstr "כבר קיים. אנא מחקו את הקיים לפני יצירת חדש."
+
+#: 
+msgid "Successfully inserted consumer key: "
+msgstr "הצלחת להכניס את מפתח לקוח: "
+
+#: 
+msgid "Unrecognized Actions.  Try again."
+msgstr "פעולה לא מזוהה. נסו שנית."
+
+#: 
+msgid "Create New Access Key Pair"
+msgstr "יצירת זיווג מפתח גישה"
+
+#: 
+msgid "Consumer Key"
+msgstr "מפתח לקוח"
+
+#: 
+msgid "Secret"
+msgstr "סוד"
+
+#: 
+msgid "Expiration Date"
+msgstr "תאריך תפוגה"
+
+#: 
+msgid "Edit or Delete Existing Access Key Pair"
+msgstr "ערוך או מחק זוג מפתחות גישה קיימים"
+
+#: 
+msgid "Warning:"
+msgstr "אזהרה:"
+
+#: 
+msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
+msgstr "הסרת זיווג מפתח לקוח/סוד או הגדרת תאריך תפוגה שגוי ימנע גישה לרשימת הקריאה לכל אתר המשתמש במפתח זה."
+
+#: 
+msgid "Expiration"
+msgstr "תפוגה"
+
+#: 
+msgid "Configure / Admin"
+msgstr "הגדרות/אדמין"
+
+#: 
+msgid "Are you sure you want to delete this key"
+msgstr "האם אתה בטוח שברצונך למחוק מפתח זה?"
+
+#: 
+msgid "You have been logged out."
+msgstr "התנתקת."
+
+#: 
+msgid "Your login credentials are incorrect.  Please try again."
+msgstr "פרטי המשתמש שלך שגויים. אנא נסה שנית."
+
+#: 
+msgid "Manage Access to the Reading List Tool"
+msgstr "נהל גישה לכלי רשימת הקריאה"
+
+#: 
+msgid "Create New Key Pair"
+msgstr "צור זיווג מפתחות"
+
+#: 
+msgid "Log Out"
+msgstr "התנתק"
+
+#: 
+msgid "Notes may not save properly."
+msgstr "הערות עלולות לא להישמר כהלכה."
+
+#: 
+msgid "Import from Existing List"
+msgstr "יבא מרשימה קיימת"
+
+#: 
+msgid "Import from EBSCO Folder (beta)"
+msgstr "יבא מתיקיית EBSCO (בטא)"
+
+#: 
+msgid "This list is"
+msgstr "רשימה זו היא"
+
+#: 
+msgid "public"
+msgstr "פומבית"
+
+#: 
+msgid "private"
+msgstr "פרטית"
+
+#: 
+msgid "student(s) have accessed this list."
+msgstr "לסטודנט(ים) קיימת גישה לרשימה זו."
+
+#: 
+msgid "Students that have accessed this list:"
+msgstr "סטודנטים בעלי גישה לרשימה זו:"
+
+#: 
+msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
+msgstr "אין סטודנטים בעלי גישה לרשימה זו. רשימת שמות תופיע כאן כאשר לסטודנט אחד לפחות תהיה גישה אליה."
+
+#: 
+msgid "Add Folder"
+msgstr "הוסף תיקייה"
+
+#: 
+msgid "Create Folder"
+msgstr "צור תיקייה"
+
+#: 
+msgid "Add Text or Instructions"
+msgstr "הוספת טקסט או הוראות"
+
+#: 
+msgid "Text"
+msgstr "טקסט"
+
+#: 
+msgid "Folder"
+msgstr "תיקייה"
+
+#: 
+msgid "e.g., Read Chapter 5 in Textbook"
+msgstr "לדוגמה קראו פרק 5 בספר הלימוד"
+
+#: 
+msgid "Main list of Readings"
+msgstr "רשימת קריאה ראשית"
+
+#: 
+msgid "Add Web Resource"
+msgstr "הוסף משאב רשת"
+
+#: 
+msgid "URL"
+msgstr "קישור"
+
+#: 
+msgid "e.g., http://library.edu/"
+msgstr "לדוגמה http://library.edu/"
+
+#: 
+msgid "Link label"
+msgstr "תווית קישור"
+
+#: 
+msgid " Back to main list"
+msgstr " חזרה לרשימה הראשית"
+
+#: 
+msgid "This list has folders:"
+msgstr "לרשימה זו יש תיקיות:"
+
+#: 
+msgid "Sort Order:"
+msgstr "מיון:"
+
+#: 
+msgid "Removing..."
+msgstr "הסרה..."
+
+#: 
+msgid "Move to folder"
+msgstr "העבר לתיקייה: "
+
+#: 
+msgid "No Folder"
+msgstr "אין תיקייה"
+
+#: 
+msgid "Delete"
+msgstr "מחיקה"
+
+#: 
+msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
+msgstr "התרחשה תקלה בטעינת פרטים לרשומה זו. אולי הספרייה שלך אינה מנויה לפריט זה, או שהפריט הוא עותק של פריט אחר ברשימה זו. אנא צור קשר עם הספרייה לקבלת תמיכה נוספת אם אין באפשרותך לגשת לפריט זה."
+
+#: 
+msgid "By : "
+msgstr "מאת: "
+
+#: 
+msgid "Published:"
+msgstr "פורסם:"
+
+#: 
+msgid "Start Page: "
+msgstr "עמוד ראשון: "
+
+#: 
+msgid "Page Count: "
+msgstr "מספר עמודים: "
+
+#: 
+msgid "Language:"
+msgstr "שפה:"
+
+#: 
+msgid "Full Text"
+msgstr "טקסט מלא"
+
+#: 
+msgid "Online Access"
+msgstr "גישה מקוונת"
+
+#: 
+msgid "Students that have clicked this reading: "
+msgstr "סטודנטים שלחצו על פריט זה: "
+
+#: 
+msgid "student(s) have clicked this reading."
+msgstr "סטודנט(ים) לחץ על פריט זה."
+
+#: 
+msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
+msgstr "אף סטודנט לא קרא פריט זה. רשמת שמות תופיע כאן כאשר סטודנט אחד לפחות לחץ על פריט זה."
+
+#: 
+msgid "Characters remaining"
+msgstr "תווים שנותרו: "
+
+#: 
+msgid "Removing... please wait."
+msgstr "מסיר... אנא המתן."
+
+#: 
+msgid "Update Notes and Sort Order"
+msgstr "עדכון הערות ומיון"
+
+#: 
+msgid "Currently, there are no readings."
+msgstr "אין כרגע פריטים."
+
+#: 
+msgid "Select a folder above to see readings."
+msgstr "בחר תיקייה למעלה כדי לצפות בפריטים."
+
+#: 
+msgid "Currently, there are no readings on this list."
+msgstr "אין כרגע פריטים ברשימה זו."
+
+#: 
+msgid "<< Back to Results"
+msgstr "<< חזרה לתוצאות"
+
+#: 
+msgid "Retrieve response XML"
+msgstr "קבלת תגובת XML"
+
+#: 
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
+msgstr "אוי לא! נראה שמאמר זה אינו זמין עוד דרך הספריה שלך. אנא דווח לספריה ולמורה שלך על הודעת תקלה זו:"
+
+#: 
+msgid "This record from"
+msgstr "רשומה זו מ-"
+
+#: 
+msgid "cannot be displayed to guests."
+msgstr "לא נגיש לאורחים."
+
+#: 
+msgid "for full access."
+msgstr "לגישה מלאה."
+
+#: 
+msgid "See it in EDS"
+msgstr "צפה ב-EDS."
+
+#: 
+msgid " Online Access"
+msgstr " גישה מקוונת"
+
+#: 
+msgid "Refine Search"
+msgstr "הגבל חיפוש"
+
+#: 
+msgid "Remove Facets"
+msgstr "הסר הגבלות"
+
+#: 
+msgid "Limiter: "
+msgstr "מגבלה: "
+
+#: 
+msgid "Limit your results"
+msgstr "צמצם תוצאות"
+
+#: 
+msgid "Expand your results"
+msgstr "הרחב תוצאות"
+
+#: 
+msgid "Search response XML"
+msgstr "חפש תגובת XML"
+
+#: 
+msgid "Results"
+msgstr "תוצאות"
+
+#: 
+msgid "Showing"
+msgstr "מציג"
+
+#: 
+msgid "of"
+msgstr "מ-"
+
+#: 
+msgid "for"
+msgstr "עבור"
+
+#: 
+msgid "Sort"
+msgstr "מיין"
+
+#: 
+msgid "Page options"
+msgstr "אפשרויות תצוגה"
+
+#: 
+msgid "Detailed"
+msgstr "פרטים"
+
+#: 
+msgid "Brief"
+msgstr "תקציר"
+
+#: 
+msgid "Title Only"
+msgstr "כותרת בלבד"
+
+#: 
+msgid "Results per page"
+msgstr "תוצאות לדף"
+
+#: 
+msgid "Research Starter"
+msgstr "התחלת חיפוש"
+
+#: 
+msgid "for full access"
+msgstr "עבור גישה מלאה"
+
+#: 
+msgid "Published: "
+msgstr "פורסם: "
+
+#: 
+msgid "No results were found."
+msgstr "לא נמצאו תוצאות."
+
+#: 
+msgid "Result #"
+msgstr "תוצאה מספר"
+
+#: 
+msgid "Title is not available"
+msgstr "הכותר אינו זמין"
+
+#: 
+msgid "By :"
+msgstr "מאת :"
+
+#: 
+msgid "Start Page:"
+msgstr "עמוד ראשון:"
+
+#: 
+msgid "Page Count:"
+msgstr "מספר עמודים:"
+
+#: 
+msgid "Abstract:"
+msgstr "תקציר:"
+
+#: 
+msgid "Subjects:"
+msgstr "נושאים:"
+
+#: 
+msgid "Key:"
+msgstr "מפתח:"
+
+#: 
+msgid "Secret:"
+msgstr "סוד:"
+
+#: 
+msgid "Administration"
+msgstr "מנהלה"
+
+#: 
+msgid "Total Lists"
+msgstr "סה\"כ רשימות"
+
+#: 
+msgid "Total People Using Tool"
+msgstr "סה\"כ אנשים משתמשים בכלי"
+
+#: 
+msgid "Users"
+msgstr "משתמשים"
+
+#: 
+msgid "Total Courses Using Tool"
+msgstr "סה\"כ קורסים משתמשים בכלי"
+
+#: 
+msgid "Courses"
+msgstr "קורסים"
+
+#: 
+msgid "Search"
+msgstr "חיפוש"
+
+#: 
+msgid "Return to Course"
+msgstr "חזרה לקורס"
+
+#: 
+msgid "See Current Reading List"
+msgstr "ראה רשימת קריאה נוכחית"
+
+#: 
+msgid "Update"
+msgstr "עדכון"
+
+#: 
+msgid "Add"
+msgstr "הוספה"
+
+#: 
+msgid " notes"
+msgstr " הערות"
+
+#: 
+msgid "Save notes"
+msgstr "שמירת הערות"
+
+#: 
+msgid "edit notes"
+msgstr "עריכת הערות"
+
+#: 
+msgid "items"
+msgstr "פריטים"
+
+#: 
+msgid "currently selected"
+msgstr "נבחרים"
+
+#: 
+msgid "Result"
+msgstr "תוצאה"
+
+#: 
+msgid "Folder name"
+msgstr "שם תיקייה"
+
+#: 
+msgid "Back to the main list"
+msgstr "חזרה לרשימה הראשית"
+
+#: 
+msgid "Save Changes"
+msgstr "שמירת שינויים"
+
+#: 
+msgid "Contact"
+msgstr "איש קשר"
+
+#: 
+msgid "for assistance with this tool."
+msgstr "לתמיכה עבור כלי זה."
+
+#: 
+msgid "Download Export File"
+msgstr "הורד קובץ ייצוא"
+
+#: 
+msgid "Import from Export File"
+msgstr "ייבא מקובץ ייצוא"
+
+#: 
+msgid "Download Student Data"
+msgstr "הורד מידע סטודנט"
+
+#: 
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "היזהר בעריכת הגדרות אלו, שכן הן ידרסו הגדרות במסך ההגדרות LTI במערכת ניהול הלמידה. אנא פתח לפחות רשימת קריאה אחת ממערכת ניהול הלמידה כדי לאכלס שדות אלה, או צור קשר עם eds@ebscohost.com לקבלת תמיכה עם הגדרות אלה."
+
+#: 
+msgid "If you change the "
+msgstr "אם יתבצע שינוי ב"
+
+#: 
+msgid "user id"
+msgstr "שם משתמש"
+
+#: 
+msgid "password"
+msgstr "סיסמה"
+
+#: 
+msgid "API profile ID"
+msgstr "פרופיל משתמש API"
+
+#: 
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "יהיה צורך בהתנתקות והתחברות מחדש כדי לראות סטטיסטיקות מדויקות ורשימות."
+
+#: 
+msgid "Select"
+msgstr "בחרו"
+
+#: 
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "צירוף שם משתמש וסיסמה מטאב ה-Authentication ב-EBSCOadmin."
+
+#: 
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "צירוף שם המשתמש/סיסמה חייב להשתייך לקבוצה המכילה את הפרופיל למטה."
+
+#: 
+msgid "Total Readings"
+msgstr "סה\"כ פריטים"
+
+#: 
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "זהו פרופיל EDS API בו תשתמשו בבונה תוכנית הלימודים. עליו להיות בקבוצה אליה לשם המשתמש והסיסמה שהוכנסו למעלה יש גישה."
+
+#: 
+msgid "EDS API Profile ID"
+msgstr "מזהה פרופיל EDS API"
+
+#: 
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "תפקידי מערכת ניהול למידה בעלי הרשאת עריכת רשימות (מופרדים בפסיק)"
+
+#: 
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "כברירת מחדר, רק למרצים ומתרגלים השראה לעריכת רשימות. עם זאת, יש אפשרות להוסיף תפקידים כאן כדי לאשר למשתמשים נוספים לערכות רשימות."
+
+#: 
+msgid "Default:"
+msgstr "ברירת מחדל:"
+
+#: 
+msgid "Proxy Prefix for CustomLinks"
+msgstr "תחילית פרוקסי עבור CustomLinks"
+
+#: 
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "אם מלא, פרוקסי זה יוכל על כל ה-CustomLinks בבונה תוכניות הלימוד."
+
+#: 
+msgid "Examples"
+msgstr "דוגמאות"
+
+#: 
+msgid "Proxy should encode target URL"
+msgstr "הפרוקסי צריך לקודד קישור מטרה"
+
+#: 
+msgid "If your proxy prefix ends with"
+msgstr "אם תחילית הפרוקסי מסתיימת עם"
+
+#: 
+msgid "this probably needs to be set to"
+msgstr "סביר שזה צריך להיות"
+
+#: 
+msgid "otherwise"
+msgstr "אחרת"
+
+#: 
+msgid "is probably correct."
+msgstr "כנראה נכון."
+
+#: 
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "אם מערכת ניהול הלמידה שלך מקושרת לבונה תוכניות הלימודים באמצעות HTTPS, הלוגו שלך צריך גם כן להיות זמין ב-HTTPS."
+
+#: 
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "טקסט זה יופיע מתחת לכותרת הרשימה. כתובות יסומנו אוטומטית כקישורים."
+
+#: 
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "זוהי התווית עבור הקישור שיופיע מצד שמאל לרשומה המפורטת אשר מעביר את המשתמש לקריאת הרשומה ב-EDS. אם השדה ישאר ריק, לא יוצג קישור ל-EDS."
+
+#: 
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "הכנס קישור לקובץ CSS. סגנונות בקובץ זה יופעלו על המסכים בבונה תוכניות הלימודים. חייב להכיל כתובת HTTPS אם מערכת ניהול הספריות מאפשרת קישורי HTTPS בלבד."
+
+#: 
+msgid "Optional."
+msgstr "לא חובה."
+
+#: 
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "יאספו שמות, כתובות אימייל ומספר מזהה של סטודנטים. מידע זה ישמש להודיע למרצים כאשר סטודנט לוחץ על קישור לקריאה. המידע גם יאכלס שדות בדו\"חות אשר יסופקו לספרייה. כדי לנטרל איסוף כתובות אימייל, אחרי מערכת ניהול הספרייה יכול לבחור שלא לשתף מידע זה עם ספק הכלי."
+
+#: 
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "לא יספק לפקולטה שמות סטודנטים אשר לחצו על קישורי הקריאה. הספריות יקבלו דו\"חות המפרטים מתי ואילו רשומות נקראו עם המספר המזהה המופיע במערכת ניהול הספרייה בלבד."
+
+#: 
+msgid "Anonymized"
+msgstr "אנונימית"
+
+#: 
+msgid "None"
+msgstr "אף אחת"
+
+#: 
+msgid "will collect no student activity. No reporting will be available."
+msgstr "לא יאסוף מידע על פעילות סטודנטים. אף דו\"ח לא יהיה זמין."
+
+#: 
+msgid "Link to Help Pages"
+msgstr "קישור לדפי תמיכה."
+
+#: 
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "לאפשרות זו משמעותה שבעת יצירת רשימה חדשה, מרצים יתבקשו לבחור האם ליצור רשימה חדשה או לאכלס את הרשימה מתוך רשימות בעלות שם דומה. אם"
+
+#: 
+msgid "is selected, all new lists will be blank."
+msgstr "תיבחר, כל הרשימות החדשות יהיו ריקות."
+
+#: 
+msgid "Hide"
+msgstr "הסתר"
+
+#: 
+msgid "and"
+msgstr "ו"
+
+#: 
+msgid "Available in Library Collection"
+msgstr "זמין באוסף הספרייה."
+
+#: 
+msgid "Limiters"
+msgstr "הגבלות"
+
+#: 
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "הסתרת הגבלות אלה ימנע מהסגל להסירן, מה שימנע הוספת פריטים מחוץ לאוסף הספרייה לרשימת הקריאה."
+
+#: 
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "קישור זה מגיע ממערכת ניהול הספרייה. אם מערכת ניהול הספרייה מוגדרת בצורה נכונה, הוא יעביר את המשתמש חזרה לאתר הקורס."
+
+#: 
+msgid "Show First Full Text Link Only"
+msgstr "הצג קישורים לטקסט מלא בלבד ראשונים."
+
+#: 
+msgid "Language"
+msgstr "שפה"
+
+#: 
+msgid "Spanish"
+msgstr "ספרדית"
+
+#: 
+msgid "German"
+msgstr "גרמנית"
+
+#: 
+msgid "Italian"
+msgstr "איטלקית"
+
+#: 
+msgid "Portuguese"
+msgstr "פורטוגזית"
+
+#: 
+msgid "French"
+msgstr "צרפתית"
+
+#: 
+msgid "Simplified Chinese"
+msgstr "סינית (מופשטת)"
+
+#: 
+msgid "traditional Chinese"
+msgstr "סינית (מסורתית)"
+
+#: 
+msgid "Japanese"
+msgstr "יפנית"
+
+#: 
+msgid "Polish"
+msgstr "פולנית"
+
+#: 
+msgid "Swedish"
+msgstr "שוודית"
+
+#: 
+msgid "Thai"
+msgstr "תאילנדית"
+
+#: 
+msgid "Turkish"
+msgstr "טורקית"
+
+#: 
+msgid "Required"
+msgstr "חובה"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "לדוגמה מרצה"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "תחילית פרוקסי כאן: אם משתמשים ב-WAM, ניתן להשתמש ב{targetURLdomain} כדי לציין את הדומיין של פרוקסי WAM שלך - שאר הקישור יתווסף לאחר מכן."
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "אימייל לאיש הקשר של הכלי"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "טקסט מותג לראש המסך"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "לדוגמה הצד רשומה ב-EDS"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "לדוגמה חפש משאבי ספרייה"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "לא חובה. קישור לדף CSS"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "קישור ל-LibGuide או דפי תמיכה אחרים"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "לדוגמה הודעת זכויות יוצרים"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "תווית עבור קישור ל-EDS"
+
+#: 
+msgid "Label for Search Box"
+msgstr "תווית עבור תיבת חיפוש"
+
+#: 
+msgid "Collect Student Data"
+msgstr "אסוף מידע על סטודנט"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "קישור לדף הבית של הספרייה"
+
+#: 
+msgid "Search Library Resources"
+msgstr "חפש במשאבי הספרייה"
+
+#: 
+msgid "Update Settings"
+msgstr "עדכן הגדרות"
+
+#: 
+msgid "Expander: "
+msgstr "הרחבה: "
+
+#: 
+msgid "Edit"
+msgstr "עריכה"
+
+#: 
+msgid "Relevance"
+msgstr "רלוונטיות"
+
+#: 
+msgid "Source Type"
+msgstr "סוג המקור"
+
+#: 
+msgid "Subject"
+msgstr "נושא"
+
+#: 
+msgid "Publication"
+msgstr "כתב העת"
+
+#: 
+msgid "Geography"
+msgstr "גאוגרפיה"
+
+#: 
+msgid "Content Provider"
+msgstr "ספק התוכן"
+
+#: 
+msgid "Academic Journal"
+msgstr "כתב עת אקדמי"
+
+#: 
+msgid "Biographie"
+msgstr "ביבליוגרפיה"
+
+#: 
+msgid "Book"
+msgstr "ספר"
+
+#: 
+msgid "Conference Material"
+msgstr "פרוטוקול ועידה"
+
+#: 
+msgid "Magazine"
+msgstr "מגזין"
+
+#: 
+msgid "New"
+msgstr "חדשה"
+
+#: 
+msgid "Primary Source Document"
+msgstr "מסמך ממקור ראשון"
+
+#: 
+msgid "Report"
+msgstr "דו\"ח"
+
+#: 
+msgid "Review"
+msgstr "ביקורת"
+
+#: 
+msgid "Trade Publication"
+msgstr "הוצאה מסחרית"
+
+#: 
+msgid "Date Newest"
+msgstr "תאריך מהחדש"
+
+#: 
+msgid "Date Oldest"
+msgstr "תאריך מהישן"
+
+#: 
+msgid "Authors"
+msgstr "כותבים"
+
+#: 
+msgid "Document Type"
+msgstr "סוג המסמך"
+
+#: 
+msgid "Subject Terms"
+msgstr "מונח מהנושא"
+
+#: 
+msgid "Author-Supplied Keywords"
+msgstr "מילות מפתח של המחבר"
+
+#: 
+msgid "Abstract"
+msgstr "תקציר"
+
+#: 
+msgid "Author Affiliations"
+msgstr "השתייכות המחבר"
+
+#: 
+msgid "Accession Number"
+msgstr "מספר מערכת"
+
+#: 
+msgid "Publisher"
+msgstr "מוציא לאור"
+
+#: 
+msgid "Source"
+msgstr "מקור"
+
+#: 
+msgid "Geographic Terms"
+msgstr "מונח גיאוגרפי"
+
+#: 
+msgid "Academic Journals"
+msgstr "כתבי עת אקדמיים"
+
+#: 
+msgid "Books"
+msgstr "ספרים"
+
+#: 
+msgid "Conference Materials"
+msgstr "פרוטוקולי ועידות"
+
+#: 
+msgid "Magazines"
+msgstr "מגזינים"
+
+#: 
+msgid "Biographies"
+msgstr "ביבליוגרפיות"
+
+#: 
+msgid "News"
+msgstr "חדשות"
+
+#: 
+msgid "Primary Source Documents"
+msgstr "מסמכים ממקור ראשון"
+
+#: 
+msgid "Reports"
+msgstr "דו\"חות"
+
+#: 
+msgid "Reviews"
+msgstr "ביקורות"
+
+#: 
+msgid "Trade Publications"
+msgstr "הוצאות מסחריות"
+
+#: 
+msgid "Apply equivalent subjects"
+msgstr "כלול נושאים דומים"
+
+#: 
+msgid "Apply related words"
+msgstr "כלול מילים קשורות"
+
+#: 
+msgid "Also search within the full text of the articles"
+msgstr "חפש גם בטקסט המלא של המאמר"
+
+#: 
+msgid "References Available"
+msgstr "הפניות זמינות"
+
+#: 
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "כתב עת אקדמי (הערכת עמיתים)"
+
+#: 
+msgid "Library Home"
+msgstr "דף הבית של הספרייה"
+
+#: 
+msgid "Periodical"
+msgstr "תקופתיים"
+
+#: 
+msgid "Selecting"
+msgstr "בחירה"
+
+#: 
+msgid "Publication Year"
+msgstr "שנת ההוצאה"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "אין לך רשימות קריאה אחרות."
+
+#: 
+msgid "No statistics to report yet."
+msgstr "אין עדיין נתונים סטטיסטיים."
+
+#: 
+msgid "Select one:"
+msgstr "תבחר אחד:"
+
+#: 
+msgid "Hebrew"
+msgstr "עִברִית"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "אוּנִיבֶרְסִיטָה"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "אוסף"
+
+#: 
+msgid "Generate list"
+msgstr "צור רשימה"
+

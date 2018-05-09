@@ -1,0 +1,1346 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: CB2\n"
+"Language: ko\n"
+
+#: 
+msgid "English"
+msgstr "영어"
+
+#: 
+msgid "Back to Reading List"
+msgstr "읽기목록으로 돌아가기"
+
+#: 
+msgid " << Back to Results"
+msgstr "결과로 돌아가기"
+
+#: 
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
+
+#: 
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
+msgstr "이 기사(Article)은 당신의 도서관에서 이용이 불가한 것으로 보입니다.\n"
+"도서관에 해당 오류에 대해 문의하세요."
+
+#: 
+msgid "This record from "
+msgstr "이 레코드는"
+
+#: 
+msgid " cannot be displayed to guests."
+msgstr "Guest 이용자에게는 보여지지 않습니다."
+
+#: 
+msgid "Login</a> for full access."
+msgstr "로그인"
+
+#: 
+msgid "Add to Reading List"
+msgstr "읽기목록에 추가"
+
+#: 
+msgid "Remove from Reading List"
+msgstr "읽기목록에서 삭제"
+
+#: 
+msgid "PDF full text"
+msgstr "PDF 원문"
+
+#: 
+msgid "HTML full text"
+msgstr "HTML 원문"
+
+#: 
+msgid "HTML Full Text"
+msgstr "HTML 원문"
+
+#: 
+msgid "Full Text:"
+msgstr "원문"
+
+#: 
+msgid "PubType:"
+msgstr "자료유형"
+
+#: 
+msgid "Database:"
+msgstr "데이터베이스"
+
+#: 
+msgid "Statistics"
+msgstr "통계"
+
+#: 
+msgid "Curriculum Builder Settings"
+msgstr "Curriculum Builder 설정"
+
+#: 
+msgid "EBSCO User ID"
+msgstr "당신의 EBSCO User ID"
+
+#: 
+msgid "EBSCO Password"
+msgstr "당신의 EBSCO Password"
+
+#: 
+msgid "Your EDS API Profile"
+msgstr "EDS API 프로파일"
+
+#: 
+msgid "URL for your library logo"
+msgstr "도서관 Logo URL"
+
+#: 
+msgid "Contact Email"
+msgstr "연락할 Email"
+
+#: 
+msgid "Link to Library Home Page"
+msgstr "도서관 홈페이지 링크"
+
+#: 
+msgid "Text to display at top of screen"
+msgstr "화면 상단에 출력된 문구"
+
+#: 
+msgid "Link to EDS Label"
+msgstr "EDS Label 에 링크될 URL"
+
+#: 
+msgid "Custom CSS File"
+msgstr "Custom CSS 파일"
+
+#: 
+msgid "Collect student names as they access assigned readings?"
+msgstr "할당된 읽기목록을 수행할 수 있게 학생 이름을 수집하겠습니까?"
+
+#: 
+msgid "Yes"
+msgstr "예"
+
+#: 
+msgid "No"
+msgstr "아니오"
+
+#: 
+msgid "Footer text"
+msgstr "Footer 문구"
+
+#: 
+msgid "Copy Course Support"
+msgstr "Course Support 복사하기"
+
+#: 
+msgid "Remove Full Text and Available in Library Collection Limiters from view"
+msgstr "보기에서 도서관에서 이용가능 자원과 원문 제거하기"
+
+#: 
+msgid "Show 'Return to Course' Link at top of page"
+msgstr "페이지 상단에서 'Course로 돌아가기' 링크 보여주기"
+
+#: 
+msgid "Open all Lists in a New Window"
+msgstr "새창에서 전체목록 열기"
+
+#: 
+msgid "View Lists"
+msgstr "목록보기"
+
+#: 
+msgid "Select one: "
+msgstr "선택하기"
+
+#: 
+msgid "Preview Selected List"
+msgstr "선택된 목록 미리보기"
+
+#: 
+msgid "Delete Lists"
+msgstr "목록 삭제하기"
+
+#: 
+msgid "Delete Selected Lists"
+msgstr "선택된 목록 삭제하기"
+
+#: 
+msgid "Basic Search"
+msgstr "기본검색"
+
+#: 
+msgid "Keyword"
+msgstr "키워드"
+
+#: 
+msgid "Author"
+msgstr "저자"
+
+#: 
+msgid "Title"
+msgstr "제목"
+
+#: 
+msgid "View this list"
+msgstr "이 목록 보기"
+
+#: 
+msgid "Untitled List"
+msgstr "무제목 목록"
+
+#: 
+msgid "All Public Lists:"
+msgstr "전체 공용 목록"
+
+#: 
+msgid "There are no public reading lists to copy."
+msgstr "복사할 공용 목록이 없습니다."
+
+#: 
+msgid "Options"
+msgstr "부가기능"
+
+#: 
+msgid "Include Notes in the Import Process"
+msgstr "반입할 때 Notes 포함하기"
+
+#: 
+msgid "Preserve Sort Order"
+msgstr "정렬 순서 저장하기"
+
+#: 
+msgid "Check/Uncheck All"
+msgstr "선택/선택해제 전체"
+
+#: 
+msgid "Notes:"
+msgstr "Notes"
+
+#: 
+msgid "There are no readings in this list."
+msgstr "현재 목록에는 읽을 내용이 더 이상 없습니다."
+
+#: 
+msgid "Copy Selected Readings"
+msgstr "선택된 읽기 복사하기"
+
+#: 
+msgid "You are unauthorized to access this page."
+msgstr "현재 페이지에 권한이 없습니다."
+
+#: 
+msgid "You must be logged in to access that service, please login"
+msgstr "이 서비스를 이용하기 위해 로그인 해야 합니다. 로그인 하세요."
+
+#: 
+msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
+msgstr "경고: 아래의 목록이 영구적으로 삭제됩니다. 삭제 후 되돌릴 수 없으며, 이 후 이용자는 빈 목록으로 접근하게 될 것입니다."
+
+#: 
+msgid "NEVER accessed since update"
+msgstr "업데이트 이후 Access 한 적이 없음"
+
+#: 
+msgid "LAST ACCESSED"
+msgstr "마지막 Access 일자"
+
+#: 
+msgid "DELETE"
+msgstr "삭제하기"
+
+#: 
+msgid "this list"
+msgstr "현재 목록"
+
+#: 
+msgid "these "
+msgstr "이 "
+
+#: 
+msgid "lists"
+msgstr "목록들"
+
+#: 
+msgid "or"
+msgstr "또는 "
+
+#: 
+msgid "Cancel"
+msgstr "취소하기"
+
+#: 
+msgid "No lists selected to delete."
+msgstr "삭제할 선택된 목록이 없습니다."
+
+#: 
+msgid "Back to Administration Screen"
+msgstr "관리자 화면으로 돌아가기"
+
+#: 
+msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
+msgstr "제공된 데이터가 충분하지 않아 Error 가 발생하였습니다. 1개 이상의 레코드가 누락되었을 가능성이 있습니다. 모든 레코드가 포함되었는지 확인 후 다시 시도하시기 바랍니다."
+
+#: 
+msgid "Enter bibliographic info from the list into this box:"
+msgstr "리스트에 있는 서지정보를 박스에 입력하세요."
+
+#: 
+msgid "CB Version 2.3"
+msgstr "\n"
+"CB Version 2.3"
+
+#: 
+msgid "List ID"
+msgstr "목록 ID"
+
+#: 
+msgid "Login"
+msgstr "로그인"
+
+#: 
+msgid "Invalid login -- pleasae try again"
+msgstr "로그인 실패 -- 다시 시도하세요."
+
+#: 
+msgid "Username:"
+msgstr "이름"
+
+#: 
+msgid "Password:"
+msgstr "패스워드"
+
+#: 
+msgid "Successfully logged in."
+msgstr "로그인 성공."
+
+#: 
+msgid "Successfully updated expiration date for "
+msgstr "만료일 업데이트 성공"
+
+#: 
+msgid "Successfully deleted "
+msgstr "삭제 성공 "
+
+#: 
+msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
+msgstr "사용자 키(key), 비밀번호 그리고 만료일 없이 진행하실 수 없습니다. 다시 시도해주세요."
+
+#: 
+msgid "Consumer key "
+msgstr "사용자 키(key)"
+
+#: 
+msgid "already exists. Please delete the existing one first before creating a new one."
+msgstr "이미 존재합니다. 만들기 전에 삭제하세요."
+
+#: 
+msgid "Successfully inserted consumer key: "
+msgstr "사용자 키(key)가 성공적으로 입력되었습니다."
+
+#: 
+msgid "Unrecognized Actions.  Try again."
+msgstr "잘못된 방식입니다. 다시 시도하세요."
+
+#: 
+msgid "Create New Access Key Pair"
+msgstr "새로운 인증키(Access Key)를 만드세요."
+
+#: 
+msgid "Consumer Key"
+msgstr "사용자 키(key)"
+
+#: 
+msgid "Secret"
+msgstr "비밀"
+
+#: 
+msgid "Expiration Date"
+msgstr "만료 날짜"
+
+#: 
+msgid "Edit or Delete Existing Access Key Pair"
+msgstr "인증키(Access Key) 편집 및 삭제"
+
+#: 
+msgid "Warning:"
+msgstr "경고"
+
+#: 
+msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
+msgstr "사용자 키(key) / 암호를 지우거나 만료일을 잘못 지정한다면 해당 key를 사용하는 사이트들에서 접근이 제한됩니다."
+
+#: 
+msgid "Expiration"
+msgstr "만료"
+
+#: 
+msgid "Configure / Admin"
+msgstr "설정 / 관리자"
+
+#: 
+msgid "Are you sure you want to delete this key"
+msgstr "이 Key 를 삭제하시겠습니까?"
+
+#: 
+msgid "You have been logged out."
+msgstr "로그아웃 했습니다."
+
+#: 
+msgid "Your login credentials are incorrect.  Please try again."
+msgstr "로그인 정보가 잘못되었습니다. 다시 시도 하십시오."
+
+#: 
+msgid "Manage Access to the Reading List Tool"
+msgstr "읽기 목록 도구의 접근 관리"
+
+#: 
+msgid "Create New Key Pair"
+msgstr "새로운 Key 생성하기"
+
+#: 
+msgid "Log Out"
+msgstr "로그아웃"
+
+#: 
+msgid "Notes may not save properly."
+msgstr "노트가 저장되지 않았을 수 있습니다."
+
+#: 
+msgid "Import from Existing List"
+msgstr "목록에서 반입하기"
+
+#: 
+msgid "Import from EBSCO Folder (beta)"
+msgstr "EBSCO 폴더에서 반입하기 (beta)"
+
+#: 
+msgid "This list is"
+msgstr "이 목록은 "
+
+#: 
+msgid "public"
+msgstr "공용"
+
+#: 
+msgid "private"
+msgstr "개인"
+
+#: 
+msgid "student(s) have accessed this list."
+msgstr "학생은 이 목록을 이용하고 있습니다."
+
+#: 
+msgid "Students that have accessed this list:"
+msgstr "이 목록을 이용하고 있는 학생 목록:"
+
+#: 
+msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
+msgstr "이 목록을 이용하고 있는 학생이 없습니다. 학생이 이 목록을 이용한 후에 명단을 확인할 수 있습니다."
+
+#: 
+msgid "Add Folder"
+msgstr "폴더에 추가하기"
+
+#: 
+msgid "Create Folder"
+msgstr "폴더 만들기"
+
+#: 
+msgid "Add Text or Instructions"
+msgstr "텍스트 혹은 안내문구 추가하기"
+
+#: 
+msgid "Text"
+msgstr "문구"
+
+#: 
+msgid "Folder"
+msgstr "폴더"
+
+#: 
+msgid "e.g., Read Chapter 5 in Textbook"
+msgstr "예) "
+
+#: 
+msgid "Main list of Readings"
+msgstr "주요 읽기 목록"
+
+#: 
+msgid "Add Web Resource"
+msgstr "웹자원(Web Resource) 추가하기"
+
+#: 
+msgid "URL"
+msgstr "URL"
+
+#: 
+msgid "e.g., http://library.edu/"
+msgstr "예) http://library.edu/"
+
+#: 
+msgid "Link label"
+msgstr "링크될 라벨"
+
+#: 
+msgid " Back to main list"
+msgstr "주요 목록으로 돌아가기"
+
+#: 
+msgid "This list has folders:"
+msgstr "이 목록은 폴더를 가지고 있습니다."
+
+#: 
+msgid "Sort Order:"
+msgstr "정렬 순서"
+
+#: 
+msgid "Removing..."
+msgstr "삭제 중..."
+
+#: 
+msgid "Move to folder"
+msgstr "폴더로 이동하기"
+
+#: 
+msgid "No Folder"
+msgstr "폴더 없음"
+
+#: 
+msgid "Delete"
+msgstr "삭제하기"
+
+#: 
+msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
+msgstr "불러오는 중에 오류가 발생하였습니다. 도서관에서 더 이상 구독하지 않거나, 다른 중복된 자료일 가능성이 있습니다. 도서관에 해당 오류에 대해 문의하세요."
+
+#: 
+msgid "By : "
+msgstr "By :"
+
+#: 
+msgid "Published:"
+msgstr "발행날짜 :"
+
+#: 
+msgid "Start Page: "
+msgstr "시작 페이지 :"
+
+#: 
+msgid "Page Count: "
+msgstr "페이지 수 :"
+
+#: 
+msgid "Language:"
+msgstr "언어 :"
+
+#: 
+msgid "Full Text"
+msgstr "전문(Full Text)"
+
+#: 
+msgid "Online Access"
+msgstr "Online Access"
+
+#: 
+msgid "Students that have clicked this reading: "
+msgstr "이 자료를 클릭한 학생 목록:"
+
+#: 
+msgid "student(s) have clicked this reading."
+msgstr "학생은 이 자료를 클릭하였습니다."
+
+#: 
+msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
+msgstr "이 자료를 읽은 학생이 없습니다. 학생이 자료를 클릭한 후에 이름이 명단에 나타나게 됩니다."
+
+#: 
+msgid "Characters remaining"
+msgstr "남은 글자수:"
+
+#: 
+msgid "Removing... please wait."
+msgstr "삭제 중... 기다려 주세요."
+
+#: 
+msgid "Update Notes and Sort Order"
+msgstr "메모 및 정렬 순서 업데이트 하기"
+
+#: 
+msgid "Currently, there are no readings."
+msgstr "현재, 읽을 내용이 없습니다."
+
+#: 
+msgid "Select a folder above to see readings."
+msgstr "자료를 보기 위하여 위 폴더를 선택하시오"
+
+#: 
+msgid "Currently, there are no readings on this list."
+msgstr "현재 이 목록에는 읽을 내용이 없습니다."
+
+#: 
+msgid "<< Back to Results"
+msgstr "<< 결과 목록으로 돌아가기"
+
+#: 
+msgid "Retrieve response XML"
+msgstr "응답 전문(response XML)을 조회하기"
+
+#: 
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
+msgstr "이 자료는 도서관에서 접근할 수 없는 자료입니다. 도서관에 해당 오류에 관하여 문의하세요."
+
+#: 
+msgid "This record from"
+msgstr "이 레코드는"
+
+#: 
+msgid "cannot be displayed to guests."
+msgstr "Guest 이용자에겐 보여지지 않습니다."
+
+#: 
+msgid "for full access."
+msgstr "전체 이용을 위하여"
+
+#: 
+msgid "See it in EDS"
+msgstr "EDS에서 보기"
+
+#: 
+msgid " Online Access"
+msgstr "온라인 이용"
+
+#: 
+msgid "Refine Search"
+msgstr "상세 검색"
+
+#: 
+msgid "Remove Facets"
+msgstr "패싯 제거"
+
+#: 
+msgid "Limiter: "
+msgstr "제한자(Limiter) :"
+
+#: 
+msgid "Limit your results"
+msgstr "검색결과 제한하기"
+
+#: 
+msgid "Expand your results"
+msgstr "검색결과 확장하기"
+
+#: 
+msgid "Search response XML"
+msgstr "응답전문(response XML) 검색하기"
+
+#: 
+msgid "Results"
+msgstr "결과"
+
+#: 
+msgid "Showing"
+msgstr "보여주기"
+
+#: 
+msgid "of"
+msgstr "의"
+
+#: 
+msgid "for"
+msgstr "를 위한"
+
+#: 
+msgid "Sort"
+msgstr "정렬"
+
+#: 
+msgid "Page options"
+msgstr "페이지 옵션"
+
+#: 
+msgid "Detailed"
+msgstr "상세보기"
+
+#: 
+msgid "Brief"
+msgstr "간략보기"
+
+#: 
+msgid "Title Only"
+msgstr "제목만"
+
+#: 
+msgid "Results per page"
+msgstr "페이지당 검색결과 수"
+
+#: 
+msgid "Research Starter"
+msgstr "Research Starter"
+
+#: 
+msgid "for full access"
+msgstr "전체 이용을 위해서"
+
+#: 
+msgid "Published: "
+msgstr "발행일자 :"
+
+#: 
+msgid "No results were found."
+msgstr "검색결과가 없습니다."
+
+#: 
+msgid "Result #"
+msgstr "결과 #"
+
+#: 
+msgid "Title is not available"
+msgstr "타이틀(Title)이 유효하지 않습니다."
+
+#: 
+msgid "By :"
+msgstr "저자 :"
+
+#: 
+msgid "Start Page:"
+msgstr "시작 페이지 :"
+
+#: 
+msgid "Page Count:"
+msgstr "페이지 수 :"
+
+#: 
+msgid "Abstract:"
+msgstr "초록 :"
+
+#: 
+msgid "Subjects:"
+msgstr "주제어 :"
+
+#: 
+msgid "Key:"
+msgstr "키 (Key) : "
+
+#: 
+msgid "Secret:"
+msgstr "비밀 :"
+
+#: 
+msgid "Administration"
+msgstr "관리"
+
+#: 
+msgid "Total Lists"
+msgstr "전체 목록"
+
+#: 
+msgid "Total People Using Tool"
+msgstr "도구를 이용하는 전체 사용자 수"
+
+#: 
+msgid "Users"
+msgstr "이용자"
+
+#: 
+msgid "Total Courses Using Tool"
+msgstr "도구를 이용하는 전체 코스(Course) 수"
+
+#: 
+msgid "Courses"
+msgstr "코스(Courses)"
+
+#: 
+msgid "Search"
+msgstr "검색"
+
+#: 
+msgid "Return to Course"
+msgstr "코스(Course)로 돌아가기"
+
+#: 
+msgid "See Current Reading List"
+msgstr "현재 읽기 목록 보기"
+
+#: 
+msgid "Update"
+msgstr "업데이트"
+
+#: 
+msgid "Add"
+msgstr "추가하기"
+
+#: 
+msgid " notes"
+msgstr "메모"
+
+#: 
+msgid "Save notes"
+msgstr "메모 저장하기"
+
+#: 
+msgid "edit notes"
+msgstr "메모 편집하기"
+
+#: 
+msgid "items"
+msgstr "항목(Items)"
+
+#: 
+msgid "currently selected"
+msgstr "현재 선택된"
+
+#: 
+msgid "Result"
+msgstr "결과"
+
+#: 
+msgid "Folder name"
+msgstr "폴더 이름"
+
+#: 
+msgid "Back to the main list"
+msgstr "주요 목록으로 돌아가기"
+
+#: 
+msgid "Save Changes"
+msgstr "변경된 내용 저장하기"
+
+#: 
+msgid "Contact"
+msgstr "연락처"
+
+#: 
+msgid "for assistance with this tool."
+msgstr "이용에 도움이 필요하다면"
+
+#: 
+msgid "Download Export File"
+msgstr "반출 파일 다운로드하기"
+
+#: 
+msgid "Import from Export File"
+msgstr "반출 파일로 반입하기"
+
+#: 
+msgid "Download Student Data"
+msgstr "학생 데이터 다운로드하기"
+
+#: 
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "변경에 주의하세요. 변경사항은 LMS의 LTI 환경설정에도 반영됩니다. 변경\n"
+" 후 자료의 변동사항을 꼭 확인해야 합니다. 아니면 eds@ebscohost.com에 연락하여 도움을 받으시기 바랍니다."
+
+#: 
+msgid "If you change the "
+msgstr "변경한다면 "
+
+#: 
+msgid "user id"
+msgstr "이용자 아이디(user id)"
+
+#: 
+msgid "password"
+msgstr "비밀번호(password)"
+
+#: 
+msgid "API profile ID"
+msgstr "API 프로파일 아이디"
+
+#: 
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "정확한 통계 정보를 열람하시려면 재로그인 하세요."
+
+#: 
+msgid "Select"
+msgstr "선택하기"
+
+#: 
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "EBSCOadmin 접속 인증을 위한 ID/Password"
+
+#: 
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "ID/Password와 함께 group과 profile을 지정하시오."
+
+#: 
+msgid "Total Readings"
+msgstr "전체 읽기"
+
+#: 
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "이 프로파일은 Curriculum Builder에서 사용하는 EDS API 프로파일입니다. 사용하기 위해서는 ID/Password와 Group으로 연동됩니다."
+
+#: 
+msgid "EDS API Profile ID"
+msgstr "EDS API 프로파일 아이디"
+
+#: 
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "편집 권한을 가진 LMS Roles (Comma-separated)"
+
+#: 
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "기본적으로 교수와 조교만이 리스트를 편집할 수 있습니다. 다만, 다른 유저에게 편집 권한을 추가할 수 있습니다."
+
+#: 
+msgid "Default:"
+msgstr "기본 :"
+
+#: 
+msgid "Proxy Prefix for CustomLinks"
+msgstr "CustomLinks에 적용할 Proxy Prefix"
+
+#: 
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "이 Proxy은 Curriculum Builder에 나타나는 모든 CustomLinks에 적용됩니다."
+
+#: 
+msgid "Examples"
+msgstr "예"
+
+#: 
+msgid "Proxy should encode target URL"
+msgstr "프록시(Proxy)는 목적지 주소를 인코딩해야합니다."
+
+#: 
+msgid "If your proxy prefix ends with"
+msgstr "프록시 끝부분이"
+
+#: 
+msgid "this probably needs to be set to"
+msgstr "세팅이 필요합니다."
+
+#: 
+msgid "otherwise"
+msgstr "아니라면"
+
+#: 
+msgid "is probably correct."
+msgstr "수정되었습니다."
+
+#: 
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "LMS가 HTTPS 프로토콜을 사용한다면, 로고 URL도 HTTPS로 연결되어야 합니다."
+
+#: 
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "이 문구는 헤더의 타이틀 밑에 출력됩니다. URL은 하이퍼링크 처리됩니다."
+
+#: 
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "이 라벨은 상세화면 페이지에서 EBSCO Discovery Service 로 넘어가는 링크를 표시합니다. 빈 칸이라면, 링크가 생성되지 않습니다."
+
+#: 
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "CSS 파일 경로를 입력하세요. 이 CSS는 Curriculum Builder 화면에 반영됩니다. LMS에서 HTTPS 프로토콜을 사용하시면, CSS 파일도 HTTPS 프로토콜을 사용해야 합니다."
+
+#: 
+msgid "Optional."
+msgstr "부가 기능"
+
+#: 
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "학생의 이름, 메일 주소 그리고 ID를 수집합니다. 이는 도서관과 교수에게 학생들이 자료를 이용함을 알릴 때 사용됩니다. 메일 주소 수집은 LMS 관리자가 공유 지정을 해제할 수 있습니다."
+
+#: 
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "교수에게 학생의 이름을 제공해주지 않습니다. 그러나 도서관에 제공되는 보고서에는 접근한 자료와 그 일시가 LMS 유저 ID와 함께 제공됩니다."
+
+#: 
+msgid "Anonymized"
+msgstr "익명화"
+
+#: 
+msgid "None"
+msgstr "없음"
+
+#: 
+msgid "will collect no student activity. No reporting will be available."
+msgstr "학생의 이용 내역이 없습니다. 보고서가 출력되지 않습니다."
+
+#: 
+msgid "Link to Help Pages"
+msgstr "도움말 페이지 링크"
+
+#: 
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "이 옵션은 새로운 목록을 만들 때 기존의 목록으로 참고하거나 아예 새로운 목록을 만들 수 있도록 도와줍니다."
+
+#: 
+msgid "is selected, all new lists will be blank."
+msgstr "선택되었습니다, 전체 새 목록은 비워질 것입니다."
+
+#: 
+msgid "Hide"
+msgstr "숨기기"
+
+#: 
+msgid "and"
+msgstr "와"
+
+#: 
+msgid "Available in Library Collection"
+msgstr "Library Collection에서 이용 가능"
+
+#: 
+msgid "Limiters"
+msgstr "제한자(Limiters)"
+
+#: 
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "리미터를 숨김으로서 교수가 설정을 해지하는 것을 막을 수 있으며, 외부 자원을 읽기 목록에 추가하는 것을 가능하게 합니다."
+
+#: 
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "이 링크는 LMS에서 제공됩니다. 세팅이 정확하다면 이용자를 코스 페이지로 리다이렉트 시킵니다."
+
+#: 
+msgid "Show First Full Text Link Only"
+msgstr "원문 보기 링크들 중 첫 번째만 보여주기"
+
+#: 
+msgid "Language"
+msgstr "언어"
+
+#: 
+msgid "Spanish"
+msgstr "스페인어"
+
+#: 
+msgid "German"
+msgstr "독일어"
+
+#: 
+msgid "Italian"
+msgstr "이탈리아어"
+
+#: 
+msgid "Portuguese"
+msgstr "포르투갈어"
+
+#: 
+msgid "French"
+msgstr "프랑스어"
+
+#: 
+msgid "Simplified Chinese"
+msgstr "중국어 (간체)"
+
+#: 
+msgid "traditional Chinese"
+msgstr "중국어 (번체)"
+
+#: 
+msgid "Japanese"
+msgstr "일본어"
+
+#: 
+msgid "Polish"
+msgstr "폴란드어"
+
+#: 
+msgid "Swedish"
+msgstr "스웨덴어"
+
+#: 
+msgid "Thai"
+msgstr "타이어"
+
+#: 
+msgid "Turkish"
+msgstr "터키어"
+
+#: 
+msgid "Required"
+msgstr "필수"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "예) 강사"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Proxy prefix 를 입력하세요; WAM을 사용한다면, {targetURLdomain}를 이용해 the domain of your WAM proxy 선언하세요."
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "담당자에게 Email로 연락하기"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "화면 윗 부분 브랜딩 문구"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "예) EDS에서 레코드 보기"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "예) 도서관 자원에서 찾아보기"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "부가기능. CSS Stylesheet 를 위한 URL"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "LibGuide 또는 도움말 페이지를 위한 URL"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "예) 저작권(copyright) 공지"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "EDS 링크에 해당하는 라벨"
+
+#: 
+msgid "Label for Search Box"
+msgstr "검색창 라벨"
+
+#: 
+msgid "Collect Student Data"
+msgstr "학생 데이터 수집하기"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "도서관 홈페이지로 링크될 URL"
+
+#: 
+msgid "Search Library Resources"
+msgstr "도서관 자원 검색하기"
+
+#: 
+msgid "Update Settings"
+msgstr "세팅값 업데이트하기"
+
+#: 
+msgid "Expander: "
+msgstr "확장자 :"
+
+#: 
+msgid "Edit"
+msgstr "편집하기"
+
+#: 
+msgid "Relevance"
+msgstr "관련도"
+
+#: 
+msgid "Source Type"
+msgstr "자료 유형"
+
+#: 
+msgid "Subject"
+msgstr "주제"
+
+#: 
+msgid "Publication"
+msgstr "출판물"
+
+#: 
+msgid "Geography"
+msgstr "지리"
+
+#: 
+msgid "Content Provider"
+msgstr "수록 DB"
+
+#: 
+msgid "Academic Journal"
+msgstr "학술 저널"
+
+#: 
+msgid "Biographie"
+msgstr "전기"
+
+#: 
+msgid "Book"
+msgstr "단행본"
+
+#: 
+msgid "Conference Material"
+msgstr "컨퍼런스 자료"
+
+#: 
+msgid "Magazine"
+msgstr "매거진"
+
+#: 
+msgid "New"
+msgstr "뉴스"
+
+#: 
+msgid "Primary Source Document"
+msgstr "연구/조사 자료"
+
+#: 
+msgid "Report"
+msgstr "레포트"
+
+#: 
+msgid "Review"
+msgstr "리뷰"
+
+#: 
+msgid "Trade Publication"
+msgstr "업계 간행물"
+
+#: 
+msgid "Date Newest"
+msgstr "최신순"
+
+#: 
+msgid "Date Oldest"
+msgstr "과거순"
+
+#: 
+msgid "Authors"
+msgstr "저자"
+
+#: 
+msgid "Document Type"
+msgstr "문서 유형"
+
+#: 
+msgid "Subject Terms"
+msgstr "주제어"
+
+#: 
+msgid "Author-Supplied Keywords"
+msgstr "저자 제공 키워드"
+
+#: 
+msgid "Abstract"
+msgstr "초록"
+
+#: 
+msgid "Author Affiliations"
+msgstr "저자 소속기관"
+
+#: 
+msgid "Accession Number"
+msgstr "제어 번호"
+
+#: 
+msgid "Publisher"
+msgstr "출판사"
+
+#: 
+msgid "Source"
+msgstr "출처"
+
+#: 
+msgid "Geographic Terms"
+msgstr "지리 용어"
+
+#: 
+msgid "Academic Journals"
+msgstr "학술 저널"
+
+#: 
+msgid "Books"
+msgstr "단행본"
+
+#: 
+msgid "Conference Materials"
+msgstr "컨퍼런스 자료"
+
+#: 
+msgid "Magazines"
+msgstr "매거진"
+
+#: 
+msgid "Biographies"
+msgstr "전기"
+
+#: 
+msgid "News"
+msgstr "뉴스"
+
+#: 
+msgid "Primary Source Documents"
+msgstr "연구/조사 자료"
+
+#: 
+msgid "Reports"
+msgstr "보고서"
+
+#: 
+msgid "Reviews"
+msgstr "리뷰"
+
+#: 
+msgid "Trade Publications"
+msgstr "업계 간행물"
+
+#: 
+msgid "Apply equivalent subjects"
+msgstr "동등 주제 적용하기"
+
+#: 
+msgid "Apply related words"
+msgstr "관련어 적용하기"
+
+#: 
+msgid "Also search within the full text of the articles"
+msgstr "전문(full text) 내용에서도 검색하기"
+
+#: 
+msgid "References Available"
+msgstr "가능한 참고문헌"
+
+#: 
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Peer Reviewed 학술 저널"
+
+#: 
+msgid "Library Home"
+msgstr "도서관 홈페이지"
+
+#: 
+msgid "Periodical"
+msgstr "정기간행물"
+
+#: 
+msgid "Selecting"
+msgstr "선택하는 중"
+
+#: 
+msgid "Publication Year"
+msgstr "발행년도"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "당신은 다른 읽기 목록이 없습니다."
+
+#: 
+msgid "No statistics to report yet."
+msgstr "보고될 통계가 아직 없습니다."
+
+#: 
+msgid "Select one:"
+msgstr "하나를 선택하세요 :"
+
+#: 
+msgid "Hebrew"
+msgstr "히브리어"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "대학"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "모음"
+
+#: 
+msgid "Generate list"
+msgstr "일반 목록"
+

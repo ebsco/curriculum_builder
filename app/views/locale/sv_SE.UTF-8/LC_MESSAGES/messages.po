@@ -80,15 +80,13 @@ msgid "Curriculum Builder Settings"
 msgstr "Curriculum Builder Inställningar"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings.<br /><br />If you change the <strong>user id</strong>, <strong>password</strong> or <strong>API profile ID</strong>, you will need to log out and log back in to see accurate statistics and lists."
-msgstr "Var försiktig när du ändrar dessa inställningar eftersom de skriver över original inställningarna satta för ditt LMS:s LTI konfiguration. Vänligen skapa minst en läslista  från ditt LMS för att fylla dessa fält alternativt kontakta eds@ebscohos.com för assistans med inställningarna.<br /><br />Om du ändrar <strong>användarnamn</strong>, <strong>lösenord</strong> or <strong>API profil ID</strong, så måste du logga ut och in igen för att se aktuell statistik och uppdaterade listor."
-
-#: 
-msgid "Your EBSCO User ID"
+#, fuzzy
+msgid "EBSCO User ID"
 msgstr "Ditt EBSCO Användarid"
 
 #: 
-msgid "Your EBSCO Password"
+#, fuzzy
+msgid "EBSCO Password"
 msgstr "Ditt EBSCO Lösenord"
 
 #: 
@@ -288,7 +286,7 @@ msgid "Oops! An error occurred. The data for one or more records is incomplete. 
 msgstr "Attans! Ett fel uppstod. Datan från en eller flera poster är ej komplett. Vänligen försök igen, säkerställ att inkludera hela posten för varje läspost."
 
 #: 
-msgid " Enter bibliographic info from the list into this box:"
+msgid "Enter bibliographic info from the list into this box:"
 msgstr " Ange bibliografisk information från listan in i denna ruta:"
 
 #: 
@@ -504,7 +502,8 @@ msgid "Removing..."
 msgstr "Tar bort..."
 
 #: 
-msgid "Move to folder: "
+#, fuzzy
+msgid "Move to folder"
 msgstr "Flytta till mapp: "
 
 #: 
@@ -560,7 +559,8 @@ msgid "No students have read this item.  A list of names will appear here when a
 msgstr "Inga studenter har läst denna post. Namnen på studenterna visas så fort någon klickat på den."
 
 #: 
-msgid "Characters remaining: "
+#, fuzzy
+msgid "Characters remaining"
 msgstr "Tecken kvar: "
 
 #: 
@@ -757,309 +757,591 @@ msgstr "Kurser"
 
 #: 
 msgid "Search"
-msgstr "Search"
+msgstr "Sök"
 
 #: 
 msgid "Return to Course"
-msgstr "Return to Course"
+msgstr "Tillbaka till kursen"
 
 #: 
 msgid "See Current Reading List"
-msgstr "See Current Reading List"
+msgstr "Se aktuell läslista"
 
 #: 
 msgid "Update"
-msgstr "Update"
+msgstr "Uppdatera"
 
 #: 
 msgid "Add"
-msgstr "Add"
+msgstr "Lägg till"
 
 #: 
 msgid " notes"
-msgstr " notes"
+msgstr " anteckningar"
 
 #: 
-msgid "save notes"
-msgstr "save notes"
+msgid "Save notes"
+msgstr "spara anteckningar"
 
 #: 
 msgid "edit notes"
-msgstr "edit notes"
+msgstr "uppdatera anteckningar"
 
 #: 
 msgid "items"
-msgstr "items"
-
-#: 
-msgid "move to folder"
-msgstr "move to folder"
+msgstr "resurser"
 
 #: 
 msgid "currently selected"
-msgstr "currently selected"
-
-#: 
-msgid "characters remaining"
-msgstr "characters remaining"
+msgstr "valda"
 
 #: 
 msgid "Result"
-msgstr "Result"
+msgstr "Resultat"
 
 #: 
 msgid "Folder name"
-msgstr "Folder name"
+msgstr "Mappnamn"
 
 #: 
 msgid "Back to the main list"
-msgstr "Back to the main list"
+msgstr "Tillbaka till huvudlista"
 
 #: 
 msgid "Save Changes"
-msgstr "Save Changes"
+msgstr "Spara ändringar"
 
 #: 
 msgid "Contact"
-msgstr "Contact"
+msgstr "Kontakt"
 
 #: 
 msgid "for assistance with this tool."
-msgstr "for assistance with this tool."
+msgstr "för hjälp med detta verktyg."
 
 #: 
 msgid "Download Export File"
-msgstr "Download Export File"
+msgstr "Ladda ned Exportfil"
 
 #: 
 msgid "Import from Export File"
-msgstr "Import from Export File"
+msgstr "Importera från Exportfil"
 
 #: 
 msgid "Download Student Data"
-msgstr "Download Student Data"
+msgstr "Ladda ned studentdata"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
-msgstr "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "Var vaksam när du redigerar dessa inställningar, då de överskrider originaluppsättningen i ert LMS LTI konfiguration. Vänligen aktivera minst en läslista från ditt LMS för att fylla dessa fält eller kontakta eds@ebscohost.com för hjälp med inställningarna."
 
 #: 
-msgid "If you change the"
-msgstr "If you change the"
+msgid "If you change the "
+msgstr "Om du ändrar"
 
 #: 
 msgid "user id"
-msgstr "user id"
+msgstr "användarid"
 
 #: 
 msgid "password"
-msgstr "password"
+msgstr "lösenord"
 
 #: 
 msgid "API profile ID"
-msgstr "API profile ID"
+msgstr "API profilid"
 
 #: 
 msgid "you will need to log out and log back in to see accurate statistics and lists."
-msgstr "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "du kommer att behöva logga ut och in igen för att se aktuell statistik och aktuella listor."
 
 #: 
 msgid "Select"
-msgstr "Select"
+msgstr "Välj"
 
 #: 
 msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
-msgstr "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "en kombination av Användarid & Lösenord från EBSCOAdmin:s Authentication flik."
 
 #: 
 msgid "The username/password combo must be associated with the group containing the profile specified below."
-msgstr "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "Kombinationen användarnamn/lösenord måste vara kopplade till den grupp som innehåller profilen som är specificerad nedan."
 
 #: 
 msgid "Total Readings"
-msgstr "Total Readings"
+msgstr "Totalt läst"
 
 #: 
 msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
-msgstr "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "Detta är den EDS API profil som du vill använda i Curriculum Builder. Den måste vara i den grupp som Användarnamnet/Lösenordet du specificerat har tillgång till."
 
 #: 
 msgid "EDS API Profile ID"
-msgstr "EDS API Profile ID"
+msgstr "EDS API Profil ID"
 
 #: 
 msgid "LMS Roles that can edit lists (comma-separated)"
-msgstr "LMS Roles that can edit lists (comma-separated)"
+msgstr "LMS roller som kan editera läslistor (kommaseparerade)"
 
 #: 
 msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
-msgstr "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "Som standard kan endast Instruktörer och Amanuenser redigera listor. Du kan dock lägga till fler roller genom att aktivera dem här."
 
 #: 
 msgid "Default:"
-msgstr "Default:"
+msgstr "Standard:"
 
 #: 
 msgid "Proxy Prefix for CustomLinks"
-msgstr "Proxy Prefix for CustomLinks"
+msgstr "Proxyprefix för CustomLinks"
 
 #: 
 msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
-msgstr "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "Om ifyllt så kommer denna proxy användas på alla CustomLinks som dyker upp i Curriculum Builder."
 
 #: 
 msgid "Examples"
-msgstr "Examples"
+msgstr "Exempel"
 
 #: 
 msgid "Proxy should encode target URL"
-msgstr "Proxy should encode target URL"
+msgstr "Proxyn ska koda mål URL:en"
 
 #: 
 msgid "If your proxy prefix ends with"
-msgstr "If your proxy prefix ends with"
+msgstr "Om ditt Proxy prefix slutar med"
 
 #: 
 msgid "this probably needs to be set to"
-msgstr "this probably needs to be set to"
+msgstr "behöver detta nog sättas till"
 
 #: 
 msgid "otherwise"
-msgstr "otherwise"
+msgstr "annars"
 
 #: 
 msgid "is probably correct."
-msgstr "is probably correct."
+msgstr "är det säkerligen korrekt."
 
 #: 
 msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
-msgstr "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "Om ditt LMS system anropar Curriculum Builder över HTTPS så ska din logotyp också pekas ut via HTTPS."
 
 #: 
 msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
-msgstr "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "Denna text kommer dyka upp under titeln av läslistan i sidohuvudet. URL:er kommer automatiskt bli länkade."
 
 #: 
 msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
-msgstr "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "Detta är märkningen för länken som visas till vänster om detaljposterna som länkar användaren till EBSCO Discovery Service för att läsa. Om den lämnas tom så kommer inga länkar till EDS visas. "
 
 #: 
 msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
-msgstr "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "Lägg till en URL till en CSS fil. Stilarna i filen kommer användas i Curriculum Builders vyer. Måste vara HTTPS om ditt LMS använder HTTPS."
 
 #: 
 msgid "Optional."
-msgstr "Optional."
+msgstr "Valfritt."
 
 #: 
 msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
-msgstr "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "kommer samla studenternas namn, e-post och ID:n. Denna data kommer användas för informera kursledaren om att en student klickat på resursen. Datan kommer även användas för att fylla rapporten til biblioteket. För att inaktivera sparandet av e-post så kan din LMS ansvariga välja att inte dela den informationen med verktyget."
 
 #: 
 msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
-msgstr "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "kommer inte delge fakulteten med namn på studenter som klickat på en läsning. Däremot kommer biblioteket få en rapport som visas när och vad som använts med endast LMS:ets användarnamn."
 
 #: 
 msgid "Anonymized"
-msgstr "Anonymized"
+msgstr "Anonymiserad"
 
 #: 
 msgid "None"
-msgstr "None"
+msgstr "Ingen"
 
 #: 
 msgid "will collect no student activity. No reporting will be available."
-msgstr "will collect no student activity. No reporting will be available."
+msgstr "ingen studentaktivitet sparas. Ingen rapport kommer vara tillgänglig."
 
 #: 
 msgid "Link to Help Pages"
-msgstr "Link to Help Pages"
+msgstr "Länk till hjälpsidor."
 
 #: 
 msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
-msgstr "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "för detta val kommer instruktörer bli tvungna att skapa en lista från grunden eller välja från en lista med liknande namn när de skapar en ny läslista. Om"
 
 #: 
 msgid "is selected, all new lists will be blank."
-msgstr "is selected, all new lists will be blank."
+msgstr "vald så kommer alla lista vara tomma."
 
 #: 
 msgid "Hide"
-msgstr "Hide"
+msgstr "Göm"
 
 #: 
 msgid "and"
-msgstr "and"
+msgstr "och"
 
 #: 
 msgid "Available in Library Collection"
-msgstr "Available in Library Collection"
+msgstr "Tillgänglig i Bibliotekets bestånd"
 
 #: 
 msgid "Limiters"
-msgstr "Limiters"
+msgstr "Avgränsare"
 
 #: 
 msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
-msgstr "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "Genom att dölja dessa avgränsare så kommer inte personal inte kunna avmarkera dem och därigenom aldrig kunna hitta källor utanför beståndet till läslistan. "
 
 #: 
 msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
-msgstr "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "Denna länk är skapad av ert LMS. Om LMS:et är korrekt konfigurerat så kommer den skicka tillbaka användaren till kurssidan. "
 
 #: 
 msgid "Show First Full Text Link Only"
-msgstr "Show First Full Text Link Only"
+msgstr "Visa enbart första tillgängliga Fulltext länk "
 
 #: 
 msgid "Language"
-msgstr "Language"
+msgstr "Språk"
 
 #: 
 msgid "Spanish"
-msgstr "Spanish"
+msgstr "Spanska"
 
 #: 
 msgid "German"
-msgstr "German"
+msgstr "Tyska"
 
 #: 
 msgid "Italian"
-msgstr "Italian"
+msgstr "Italienska"
 
 #: 
 msgid "Portuguese"
-msgstr "Portuguese"
+msgstr "Portugisiska"
 
 #: 
 msgid "French"
-msgstr "French"
+msgstr "Franska"
 
 #: 
-msgid "Chinese (simplified)"
-msgstr "Chinese (simplified)"
+msgid "Simplified Chinese"
+msgstr "Kinesiska (enkel) "
 
 #: 
-msgid "Chinese (traditional)"
-msgstr "Chinese (traditional)"
+msgid "traditional Chinese"
+msgstr "Kinesiska (traditionell)"
 
 #: 
 msgid "Japanese"
-msgstr "Japanese"
+msgstr "Japanska"
 
 #: 
 msgid "Polish"
-msgstr "Polish"
+msgstr "Polska"
 
 #: 
 msgid "Swedish"
-msgstr "Swedish"
+msgstr "Svenska"
 
 #: 
 msgid "Thai"
-msgstr "Thai"
+msgstr "Thailändska"
 
 #: 
 msgid "Turkish"
-msgstr "Turkish"
+msgstr "Turkiska"
+
+#: 
+msgid "Required"
+msgstr "Obligatorisk"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "t.ex. Instruktör"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Proxy prefix här; om WAM används så kan du använda {targetURLdomain} för att specificera domänen av din WAM proxy, resterande kommer placeras i slutet."
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "E-post för kontaktperson av verktyget"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "Brandingtext i toppen av skärmen"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "t.ex. Se post i EDS"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "t.ex. Sök bland Bibliotekets resurser"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Valfritt. URL till CSS fil"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "URL till LibGuide eller andra hjälpsidor"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "t.ex. copyright information"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "Etikett för länk till EDS"
+
+#: 
+msgid "Label for Search Box"
+msgstr "Etikett för Sökruta"
+
+#: 
+msgid "Collect Student Data"
+msgstr "Samla in Studentdata"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "URL till Bibliotekets hemsida"
+
+#: 
+msgid "Search Library Resources"
+msgstr "Sök i Bibliotekets resurser"
+
+#: 
+msgid "Update Settings"
+msgstr "Uppdatera inställningar"
+
+#: 
+msgid "Expander: "
+msgstr "Expandera: "
+
+#: 
+msgid "Edit"
+msgstr "Redigera"
+
+#: 
+msgid "Relevance"
+msgstr "Relevans"
+
+#: 
+msgid "Source Type"
+msgstr "Källtyp"
+
+#: 
+msgid "Subject"
+msgstr "Ämne"
+
+#: 
+msgid "Publication"
+msgstr "Publikation"
+
+#: 
+msgid "Geography"
+msgstr "Geografi"
+
+#: 
+msgid "Content Provider"
+msgstr "Databas"
+
+#: 
+msgid "Academic Journal"
+msgstr "Akademisk tidskrift"
+
+#: 
+msgid "Biographie"
+msgstr "Biografi"
+
+#: 
+msgid "Book"
+msgstr "Bok"
+
+#: 
+msgid "Conference Material"
+msgstr "Konferensmaterial"
+
+#: 
+msgid "Magazine"
+msgstr "Magasin"
+
+#: 
+msgid "New"
+msgstr "Ny"
+
+#: 
+msgid "Primary Source Document"
+msgstr "Primärkälla"
+
+#: 
+msgid "Report"
+msgstr "Rapport"
+
+#: 
+msgid "Review"
+msgstr "Recension"
+
+#: 
+msgid "Trade Publication"
+msgstr "Affärspublikation"
+
+#: 
+msgid "Date Newest"
+msgstr "Senaste datum"
+
+#: 
+msgid "Date Oldest"
+msgstr "Äldsta datum"
+
+#: 
+msgid "Authors"
+msgstr "Författare"
+
+#: 
+msgid "Document Type"
+msgstr "Dokumenttyp"
+
+#: 
+msgid "Subject Terms"
+msgstr "Ämnesord"
+
+#: 
+msgid "Author-Supplied Keywords"
+msgstr "Författarens nyckelord"
+
+#: 
+msgid "Abstract"
+msgstr "Sammanfattning"
+
+#: 
+msgid "Author Affiliations"
+msgstr "Författarens kopplingar"
+
+#: 
+msgid "Accession Number"
+msgstr "Unik identifierare"
+
+#: 
+msgid "Publisher"
+msgstr "Förlag"
+
+#: 
+msgid "Source"
+msgstr "Källa"
+
+#: 
+msgid "Geographic Terms"
+msgstr "Geografiska termer"
+
+#: 
+msgid "Academic Journals"
+msgstr "Akademiska tidskrifter"
+
+#: 
+msgid "Books"
+msgstr "Böcker"
+
+#: 
+msgid "Conference Materials"
+msgstr "Konferensmaterial"
+
+#: 
+msgid "Magazines"
+msgstr "Magasin"
+
+#: 
+msgid "Biographies"
+msgstr "Biografier"
+
+#: 
+msgid "News"
+msgstr "Nyheter"
+
+#: 
+msgid "Primary Source Documents"
+msgstr "Primärkällor"
+
+#: 
+msgid "Reports"
+msgstr "Rapporter"
+
+#: 
+msgid "Reviews"
+msgstr "Recensioner"
+
+#: 
+msgid "Trade Publications"
+msgstr "Affärspublikationer"
+
+#: 
+msgid "Apply equivalent subjects"
+msgstr "Använd motsvarande ämnesord"
+
+#: 
+msgid "Apply related words"
+msgstr "Använd synononymer"
+
+#: 
+msgid "Also search within the full text of the articles"
+msgstr "Sök även inom fulltext av artiklar"
+
+#: 
+msgid "References Available"
+msgstr "Referenser finns tillgängliga"
+
+#: 
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Peer-reviewed Tidskrifter"
+
+#: 
+msgid "Library Home"
+msgstr "Biblioteket"
+
+#: 
+msgid "Periodical"
+msgstr "Periodisk"
+
+#: 
+msgid "Selecting"
+msgstr "Väljer"
+
+#: 
+msgid "Publication Year"
+msgstr "Publikationsår"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "Du har inga fler läslistor."
+
+#: 
+msgid "No statistics to report yet."
+msgstr "Ingen statistik att rapportera ännu."
+
+#: 
+msgid "Select one:"
+msgstr "Välj en:"
+
+#: 
+msgid "Hebrew"
+msgstr "Hebreiska"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "Universitet"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "Kollektion"
+
+#: 
+msgid "Generate list"
+msgstr "Generera lista"
 

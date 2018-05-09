@@ -17,7 +17,7 @@ msgstr "กลับไปยังรายการอ่าน"
 
 #: 
 msgid " << Back to Results"
-msgstr "กลับไปสู่ผลการสืบค้น"
+msgstr "กลับไปหน้าผลการสืบค้น"
 
 #: 
 msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
@@ -25,7 +25,7 @@ msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
 
 #: 
 msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
-msgstr "เอ่อโอ้! ดูเหมือนว่าบทความนี้อาจไม่สามารถใช้งานได้จากห้องสมุดอีกต่อไป โปรดแจ้งให้ห้องสมุดและครูทราบเกี่ยวกับข้อความแสดงข้อผิดพลาดนี้:"
+msgstr "เอ๊ะ! ดูเหมือนว่าบทความนี้อาจไม่สามารถใช้งานได้จากห้องสมุดอีกต่อไป โปรดแจ้งให้ห้องสมุดและอาจารย์ทราบเกี่ยวกับบทความนี้:"
 
 #: 
 msgid "This record from "
@@ -77,18 +77,16 @@ msgstr "สถิติ:"
 
 #: 
 msgid "Curriculum Builder Settings"
-msgstr "การตั้งค่าเครื่องมือสร้างหลักสูตร"
+msgstr "การตั้งค่าเครื่องมือสร้างหลักสูตร (Curriculum Builder)"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings.<br /><br />If you change the <strong>user id</strong>, <strong>password</strong> or <strong>API profile ID</strong>, you will need to log out and log back in to see accurate statistics and lists."
-msgstr "โปรดระมัดระวังการแก้ไขการตั้งค่าเหล่านี้ เนื่องจากปรับปรุงการตั้งค่าจะแทนที่การตั้งค่าที่กำหนดไว้ในหน้าจอเดิม LTI กรุณาเปิดรายการอ่านอย่างน้อยหนึ่งรายการจาก LMS ของคุณเพื่อเติมข้อมูล หรือติดต่อ eds@ebscohost.com เพื่อขอความช่วยเหลือเกี่ยวกับการตั้งค่าเหล่านี้ <br /><br />หากคุณเปลี่ยนแปลง<strong>user id</strong>,<strong>password</strong> หรือ<strong>API profile ID</strong>,คุณจำเป็นต้อง  log out ออกจากระบบและ login กลับเข้ามาใหม่"
-
-#: 
-msgid "Your EBSCO User ID"
+#, fuzzy
+msgid "EBSCO User ID"
 msgstr "EBSCO User ID"
 
 #: 
-msgid "Your EBSCO Password"
+#, fuzzy
+msgid "EBSCO Password"
 msgstr "EBSCO Password"
 
 #: 
@@ -109,7 +107,7 @@ msgstr "ลิ้งก์กลับไปยังหน้าห้องส
 
 #: 
 msgid "Text to display at top of screen"
-msgstr "ข้อความสำหรับแสดงบนหน้าจอ"
+msgstr "ข้อความสำหรับแสดงบนหน้าจอด้านบน"
 
 #: 
 msgid "Link to EDS Label"
@@ -202,7 +200,7 @@ msgstr "รายการสาธารณะทั้งหมด:"
 
 #: 
 msgid "There are no public reading lists to copy."
-msgstr "ไม่มีรายการอ่านสาธารณะที่สำหรับคัดลอก"
+msgstr "ไม่มีรายการอ่านสาธารณะสำหรับคัดลอก"
 
 #: 
 msgid "Options"
@@ -242,11 +240,11 @@ msgstr "คุณต้องเข้าสู่ระบบเพื่อเ
 
 #: 
 msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
-msgstr "คำเตือน: คุณกำลังจะลบรายการต่อไปนี้อย่างถาวร ไม่สามารถยกเลิกการดำเนินการนี้ได้ ผู้สอนที่พยายามเข้าถึงรายการเหล่านี้จากหลักสูตรของพวกเขาจะไม่พบรายการ"
+msgstr "คำเตือน: คุณกำลังจะลบรายการต่อไปนี้อย่างถาวร ไม่สามารถยกเลิกการดำเนินการนี้ได้ ผู้สอนที่พยายามเข้าถึงรายการเหล่านี้จากหลักสูตรของพวกเขาจะพบรายการว่างเปล่า"
 
 #: 
 msgid "NEVER accessed since update"
-msgstr "ไม่เคยเข้าใช้งาน ตั้งแต่อัพเดต"
+msgstr "ไม่เคยเข้าใช้งาน ตั้งแต่"
 
 #: 
 msgid "LAST ACCESSED"
@@ -289,7 +287,7 @@ msgid "Oops! An error occurred. The data for one or more records is incomplete. 
 msgstr "อ๊ะ! เกิดข้อผิดพลาด. ข้อมูลสำหรับระเบียนอย่างน้อยหนึ่งรายการไม่สมบูรณ์ โปรดตรวจสอบให้แน่ใจว่าได้ใส่ข้อมูลทั้งหมดสำหรับแต่ละรายการอ่าน"
 
 #: 
-msgid " Enter bibliographic info from the list into this box:"
+msgid "Enter bibliographic info from the list into this box:"
 msgstr "ป้อนข้อมูลบรรณานุกรมจากรายการลงในช่องนี้:"
 
 #: 
@@ -338,7 +336,7 @@ msgstr "Consumer key"
 
 #: 
 msgid "already exists. Please delete the existing one first before creating a new one."
-msgstr "มีอยู่แล้ว กรุณาลบหนึ่งก่อนที่จะมีอยู่สร้างใหม่"
+msgstr "มีข้อมูลอยู่แล้ว กรุณาลบรายการหนึ่งก่อนที่จะสร้างใหม่"
 
 #: 
 msgid "Successfully inserted consumer key: "
@@ -386,7 +384,7 @@ msgstr "Configure / Admin"
 
 #: 
 msgid "Are you sure you want to delete this key"
-msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบคีย์นี้"
+msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบ key นี้"
 
 #: 
 msgid "You have been logged out."
@@ -505,7 +503,8 @@ msgid "Removing..."
 msgstr "กำลังลบ…"
 
 #: 
-msgid "Move to folder: "
+#, fuzzy
+msgid "Move to folder"
 msgstr "ย้ายไปยังโฟลเดอร์:"
 
 #: 
@@ -561,7 +560,8 @@ msgid "No students have read this item.  A list of names will appear here when a
 msgstr "ไม่พบนักเรียนเข้าใช้งานรายการนี้ รายการการใช้งานจะปรากฎเมื่อมีนักเรียนอาย่างน้อยหนึ่งคนเข้าใช้งานรายการอ่าน"
 
 #: 
-msgid "Characters remaining: "
+#, fuzzy
+msgid "Characters remaining"
 msgstr "จำนวนอักขระที่เหลือ:"
 
 #: 
@@ -758,95 +758,87 @@ msgstr "หลักสูตร"
 
 #: 
 msgid "Search"
-msgstr "Search"
+msgstr "ค้นหา"
 
 #: 
 msgid "Return to Course"
-msgstr "Return to Course"
+msgstr "กลับไปยังหน้าหลักสูตร"
 
 #: 
 msgid "See Current Reading List"
-msgstr "See Current Reading List"
+msgstr "ดูรายการอ่านปัจจุบัน"
 
 #: 
 msgid "Update"
-msgstr "Update"
+msgstr "ปรับปรุง"
 
 #: 
 msgid "Add"
-msgstr "Add"
+msgstr "เพิ่ม"
 
 #: 
 msgid " notes"
-msgstr " notes"
+msgstr "หมายเหตุ"
 
 #: 
-msgid "save notes"
-msgstr "save notes"
+msgid "Save notes"
+msgstr "บันทึกหมายเหตุ"
 
 #: 
 msgid "edit notes"
-msgstr "edit notes"
+msgstr "แก้ไขหมายเหตุ"
 
 #: 
 msgid "items"
-msgstr "items"
-
-#: 
-msgid "move to folder"
-msgstr "move to folder"
+msgstr "รายการ"
 
 #: 
 msgid "currently selected"
-msgstr "currently selected"
-
-#: 
-msgid "characters remaining"
-msgstr "characters remaining"
+msgstr "รายการที่เลือกในปัจจุบัน"
 
 #: 
 msgid "Result"
-msgstr "Result"
+msgstr "ผลการค้นหา"
 
 #: 
 msgid "Folder name"
-msgstr "Folder name"
+msgstr "ชื่อโฟลเดอร์"
 
 #: 
 msgid "Back to the main list"
-msgstr "Back to the main list"
+msgstr "กลับไปที่รายการหลัก"
 
 #: 
 msgid "Save Changes"
-msgstr "Save Changes"
+msgstr "บันทึกการเปลี่ยนแปลง"
 
 #: 
 msgid "Contact"
-msgstr "Contact"
+msgstr "ติดต่อ"
 
 #: 
 msgid "for assistance with this tool."
-msgstr "for assistance with this tool."
+msgstr "สำหรับความช่วยเหลือเกี่ยวกับเครื่องมือนี้"
 
 #: 
 msgid "Download Export File"
-msgstr "Download Export File"
+msgstr "ดาวน์โหลดไฟล์ที่ส่งออก"
 
 #: 
 msgid "Import from Export File"
-msgstr "Import from Export File"
+msgstr "นำเข้าจากไฟล์ที่ส่งออก"
 
 #: 
 msgid "Download Student Data"
-msgstr "Download Student Data"
+msgstr "ดาวน์โหลดข้อมูลนักศึกษา"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
-msgstr "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "โปรดระวังการแก้ไขหรือตั้งค่าเหล่านี้ เนื่องจากการตั้งค่าจะบันทึกข้อมูลทับสิ่งที่กำหนดไว้ในหน้าจอ LTI ของ LMS ค่าเดิม  โปรดเปิดรายการการอ่านอย่างน้อยหนึ่งรายการจาก LMS เพื่อเพิ่มข้อมูลเหล่านี้หรือติดต่อ eds@ebscohost.com เพื่อขอความช่วยเหลือเกี่ยวกับการตั้งค่าเหล่านี้"
 
 #: 
-msgid "If you change the"
-msgstr "If you change the"
+msgid "If you change the "
+msgstr "ถ้าคุณเปลี่ยน"
 
 #: 
 msgid "user id"
@@ -862,27 +854,27 @@ msgstr "API profile ID"
 
 #: 
 msgid "you will need to log out and log back in to see accurate statistics and lists."
-msgstr "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "คุณจะต้องออกจากระบบและลงชื่อเข้าใช้เพื่อดูสถิติและรายการที่ถูกต้อง"
 
 #: 
 msgid "Select"
-msgstr "Select"
+msgstr "เลือก"
 
 #: 
 msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
-msgstr "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "ข้อมูล รหัสผู้ใช้และรหัสผ่าน จากส่วนการตรวจสอบสิทธิ์ของ EBSCOadmin"
 
 #: 
 msgid "The username/password combo must be associated with the group containing the profile specified below."
-msgstr "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "ข้อมูล รหัสผู้ใช้และรหัสผ่าน จำเป็นต้องประกอบด้วยกลุ่มของ profile  ที่ระบุไว้ด้านล่างนี้"
 
 #: 
 msgid "Total Readings"
-msgstr "Total Readings"
+msgstr "จำนวนการอ่านทั้งหมด"
 
 #: 
 msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
-msgstr "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "นี่คือโปรไฟล์ EDS API ที่คุณต้องการใช้ใน Curriculum Builder ต้องอยู่ในกลุ่มที่ User ID และรหัสผ่านที่คุณป้อนข้างต้นมีสิทธิ์เข้าถึงได้"
 
 #: 
 msgid "EDS API Profile ID"
@@ -890,177 +882,468 @@ msgstr "EDS API Profile ID"
 
 #: 
 msgid "LMS Roles that can edit lists (comma-separated)"
-msgstr "LMS Roles that can edit lists (comma-separated)"
+msgstr "บทบาทบน LMS ที่สามารถแก้ไขรายการ (คั่นด้วยจุลภาค)"
 
 #: 
 msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
-msgstr "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "ค่าเริ่มต้น, เฉพาะผู้สอนและผู้ช่วยสอนเท่านั้นที่สามารถแก้ไขรายการได้ อย่างไรก็ตามคุณสามารถเพิ่มบทบาทได้ที่นี่เพื่อเปิดใช้งานประเภทอื่น ๆ ของผู้ใช้ในการแก้ไขรายการ"
 
 #: 
 msgid "Default:"
-msgstr "Default:"
+msgstr "ค่าเริ่มต้น:"
 
 #: 
 msgid "Proxy Prefix for CustomLinks"
-msgstr "Proxy Prefix for CustomLinks"
+msgstr "Proxy Prefix สำหรับ  CustomLinks"
 
 #: 
 msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
-msgstr "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "ถ้ากรอกข้อมูลนี้ proxy นี้จะถูกใช้กับ CustomLinks ทั้งหมดที่ปรากฏใน Curriculum Builder"
 
 #: 
 msgid "Examples"
-msgstr "Examples"
+msgstr "ตัวอย่าง"
 
 #: 
 msgid "Proxy should encode target URL"
-msgstr "Proxy should encode target URL"
+msgstr "Proxy ควรเข้ารหัส target URL"
 
 #: 
 msgid "If your proxy prefix ends with"
-msgstr "If your proxy prefix ends with"
+msgstr "ถ้า proxy prefix ของคุณลงท้ายด้วย"
 
 #: 
 msgid "this probably needs to be set to"
-msgstr "this probably needs to be set to"
+msgstr "อาจจะต้องมีการตั้งค่าไป"
 
 #: 
 msgid "otherwise"
-msgstr "otherwise"
+msgstr "อีกนัยหนึ่ง"
 
 #: 
 msgid "is probably correct."
-msgstr "is probably correct."
+msgstr "น่าจะถูกต้อง"
 
 #: 
 msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
-msgstr "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "ถ้าคุณเข้าใช้งาน Curriculum Builder บน LMS ผ่าน HTTPS,  logo จำเป็นต้องสามารถโหลดได้ผ่าน HTTPS เช่นกัน."
 
 #: 
 msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
-msgstr "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "ข้อความนี้จะปรากฏอยู่ใต้ชื่อเรื่องของรายการในช่วงบน URL โดยสร้างเป็น  hyperlink อัตโนมัติ"
 
 #: 
 msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
-msgstr "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "นี่เป็นข้อความสำหรับลิงก์ที่จะปรากฏที่ด้านซ้ายของรายการแบบละเอียด ที่จะเชื่อมโยงผู้ใช้ไปยังระเบียนใน EBSCO Discovery Service สำหรับอ่านเนื้อหา หากปล่อยว่างไว้ จะไม่มีลิงก์ไปยัง EDS จะปรากฏขึ้น"
 
 #: 
 msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
-msgstr "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "ป้อน URL ของไฟล์ CSS  โดย Style นี้จะนำไปใช้กับหน้าจอ Curriculum Builder และ  ถ้า LMS ของคุณเป็น HTTPS แล้ว CSS ต้องเป็นที่อยู่แบบ HTTPS เท่านั้น"
 
 #: 
 msgid "Optional."
-msgstr "Optional."
+msgstr "มีทางเลือก"
 
 #: 
 msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
-msgstr "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "จะเก็บชื่อนักเรียน ที่อยู่อีเมล และรหัสของนักเรียน ข้อมูลเหล่านี้จะถูกใช้เพื่อแจ้งให้ผู้สอนหลักสูตร เมื่อนักเรียนคลิกที่รายการอ่าน นอกจากนี้ระบบจะเพิ่มข้อมูลเหล่านี้ลงในรายงานที่จัดเตรียมไว้ในห้องสมุด หากต้องการปิดใช้งาน email collection เท่านั้น อาจารย์ผู้สอน LMS ของคุณสามารถเลือกที่จะไม่แบ่งปันข้อมูลนี้กับผู้ดูแลระบบ"
 
 #: 
 msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
-msgstr "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "จะไม่ให้อาจารย์เห็นชื่อของนักเรียนที่คลิกรายการอ่าน อย่างไรก็ตาม บรรณารักษ์จะได้รับรายงานเฉพาะ LMS user เท่านั้น เมื่อมีการเข้าถึงรายการอ่านผ่าน  LMS"
 
 #: 
 msgid "Anonymized"
-msgstr "Anonymized"
+msgstr "ไม่ระบุชื่อ"
 
 #: 
 msgid "None"
-msgstr "None"
+msgstr "ไม่มี"
 
 #: 
 msgid "will collect no student activity. No reporting will be available."
-msgstr "will collect no student activity. No reporting will be available."
+msgstr "จะไม่เก็บการกระทำของนักเรียน ดังนั้นจะไม่มีการรายงานสถิติใด ๆ"
 
 #: 
 msgid "Link to Help Pages"
-msgstr "Link to Help Pages"
+msgstr "ลิ้งก์กลับไปยังหน้าช่วยเหลือ"
 
 #: 
 msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
-msgstr "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "สำหรับตัวเลือกนี้ หมายถึง ผู้สอนจะได้รับแจ้งเมื่อเปิดตัวรายการอ่านใหม่ เพื่อสร้างรายชื่อใหม่ตั้งแต่เริ่มต้น หรือเลือกจากรายการอื่นๆที่มีชื่อคล้ายคลึงกันที่มีอยู่แล้ว "
 
 #: 
 msgid "is selected, all new lists will be blank."
-msgstr "is selected, all new lists will be blank."
+msgstr "ถ้าเลือกตัวเลือกนี้ รายการใหม่ทั้งหมดจะว่างเปล่า"
 
 #: 
 msgid "Hide"
-msgstr "Hide"
+msgstr "ซ่อน"
 
 #: 
 msgid "and"
-msgstr "and"
+msgstr "และ"
 
 #: 
 msgid "Available in Library Collection"
-msgstr "Available in Library Collection"
+msgstr "ทรัพยากรจากห้องสมุด"
 
 #: 
 msgid "Limiters"
-msgstr "Limiters"
+msgstr "ตัวกรองข้อมูล"
 
 #: 
 msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
-msgstr "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "การซ่อนตัวกรองจะป้องกัน อาจารย์ในการยกเลิกตัวกรองเหล่านี้ ทั้งนี้เพื่อป้องกันอาจารย์เลือก Collection นอกเหนือจากสิ่งที่ห้องสมุดมีมาใส่ในรายการอ่าน"
 
 #: 
 msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
-msgstr "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "ลิงก์นี้ให้บริการโดย LMS  หาก LMS มีการกำหนดค่าอย่างถูกต้อง ระบบจะเชื่อมต่อผู้ใช้กลับไปที่หน้าเวปไซต์ของหลักสูตร"
 
 #: 
 msgid "Show First Full Text Link Only"
-msgstr "Show First Full Text Link Only"
+msgstr "แสดงลิ้งก์แรกของเอกสารฉบับเต็มเท่านั้น"
 
 #: 
 msgid "Language"
-msgstr "Language"
+msgstr "ภาษา"
 
 #: 
 msgid "Spanish"
-msgstr "Spanish"
+msgstr "สเปน"
 
 #: 
 msgid "German"
-msgstr "German"
+msgstr "เยอรมัน"
 
 #: 
 msgid "Italian"
-msgstr "Italian"
+msgstr "อิตาลี"
 
 #: 
 msgid "Portuguese"
-msgstr "Portuguese"
+msgstr "โปรตุเกส"
 
 #: 
 msgid "French"
-msgstr "French"
+msgstr "ฝรั่งเศส"
 
 #: 
-msgid "Chinese (simplified)"
-msgstr "Chinese (simplified)"
+msgid "Simplified Chinese"
+msgstr "จีน (ตัวย่อ)"
 
 #: 
-msgid "Chinese (traditional)"
-msgstr "Chinese (traditional)"
+msgid "traditional Chinese"
+msgstr "\n"
+"จีน (ดั้งเดิม)"
 
 #: 
 msgid "Japanese"
-msgstr "Japanese"
+msgstr "ญี่ปุ่น"
 
 #: 
 msgid "Polish"
-msgstr "Polish"
+msgstr "โปแลนด์"
 
 #: 
 msgid "Swedish"
-msgstr "Swedish"
+msgstr "สวีเดน"
 
 #: 
 msgid "Thai"
-msgstr "Thai"
+msgstr "ไทย"
 
 #: 
 msgid "Turkish"
-msgstr "Turkish"
+msgstr "ตุรกี"
+
+#: 
+msgid "Required"
+msgstr "ข้อมูลที่ต้องใส่"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "ตัวอย่างเช่น ผู้สอน"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "ใส่ Proxy prefix ที่นี่; หากใช้ WAM คุณสามารถใช้ {targetURLdomain} เพื่อระบุโดเมนของ WAM proxy ของคุณ - ส่วนที่เหลือจะถูกวางไว้ในส่วนท้าย"
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "อีเมลสำหรับผู้ติดต่อสำหรับเครื่องมือนี้"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "ข้อความโฆษณาที่ด้านบนของหน้าจอ"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "ตัวอย่างเช่น ดูรายการนี้ใน  EDS"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "ตัวอย่างเช่น ค้นหาทรัพยากรห้องสมุด"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "[Optional] URL สำหรับ CSS Stylesheet"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "URL สำหรับ LibGuide หรือหน้าเวปไซต์ช่วยเหลืออื่น ๆ"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "ตัวอย่างเช่น ประกาศเกี่ยวกับลิขสิทธิ์"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "ข้อความสำหรับลิ้งก์กลับไปที่  EDS"
+
+#: 
+msgid "Label for Search Box"
+msgstr "ข้อความสำหรับใส่ในกล่องสืบค้น"
+
+#: 
+msgid "Collect Student Data"
+msgstr "เก็บข้อมูลนักเรียน"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "URL  กลับไปยังหน้าห้องสมุด"
+
+#: 
+msgid "Search Library Resources"
+msgstr "ค้นหาทรัพยากรห้องสมุด"
+
+#: 
+msgid "Update Settings"
+msgstr "ปรับปรุงการติดตั้ง"
+
+#: 
+msgid "Expander: "
+msgstr "ขยายผลการสืบค้น"
+
+#: 
+msgid "Edit"
+msgstr "แก้ไข"
+
+#: 
+msgid "Relevance"
+msgstr "ความเกี่ยวข้อง"
+
+#: 
+msgid "Source Type"
+msgstr "ชนิดของแหล่งที่มา"
+
+#: 
+msgid "Subject"
+msgstr "หัวเรื่อง"
+
+#: 
+msgid "Publication"
+msgstr "ชื่อเอกสาร"
+
+#: 
+msgid "Geography"
+msgstr "ประวัติโดยสังเขป"
+
+#: 
+msgid "Content Provider"
+msgstr "ผู้ให้บริการเนื้อหา"
+
+#: 
+msgid "Academic Journal"
+msgstr "วารสารทางวิชาการ"
+
+#: 
+msgid "Biographie"
+msgstr "ประวัติโดยสังเขป"
+
+#: 
+msgid "Book"
+msgstr "หนังสือ"
+
+#: 
+msgid "Conference Material"
+msgstr "ทรัพยากรการประชุม"
+
+#: 
+msgid "Magazine"
+msgstr "นิตยสาร"
+
+#: 
+msgid "New"
+msgstr "ข่าวสาร"
+
+#: 
+msgid "Primary Source Document"
+msgstr "เอกสารต้นฉบับ"
+
+#: 
+msgid "Report"
+msgstr "รายงาน"
+
+#: 
+msgid "Review"
+msgstr "รีวิว Review"
+
+#: 
+msgid "Trade Publication"
+msgstr "สิ่งตีพิมพ์ทางการค้า"
+
+#: 
+msgid "Date Newest"
+msgstr "รายการใหม่ที่สุด"
+
+#: 
+msgid "Date Oldest"
+msgstr "รายการเก่าที่สุด"
+
+#: 
+msgid "Authors"
+msgstr "ผู้แต่ง"
+
+#: 
+msgid "Document Type"
+msgstr "ประเภทของเอกสาร"
+
+#: 
+msgid "Subject Terms"
+msgstr "คำสำคัญต่างๆ ที่เกี่ยวข้อง"
+
+#: 
+msgid "Author-Supplied Keywords"
+msgstr "คำหลักที่ผู้เขียนให้มา"
+
+#: 
+msgid "Abstract"
+msgstr "บทคัดย่อ"
+
+#: 
+msgid "Author Affiliations"
+msgstr "ผู้ร่วมวิจัย"
+
+#: 
+msgid "Accession Number"
+msgstr "เลขที่อ้างอิง"
+
+#: 
+msgid "Publisher"
+msgstr "สำนักพิมพ์"
+
+#: 
+msgid "Source"
+msgstr "แหล่งที่มา"
+
+#: 
+msgid "Geographic Terms"
+msgstr "ข้อกำหนดทางภูมิศาสตร์"
+
+#: 
+msgid "Academic Journals"
+msgstr "วารสารทางวิขาการ"
+
+#: 
+msgid "Books"
+msgstr "หนังสือ"
+
+#: 
+msgid "Conference Materials"
+msgstr "ทรัพยากรการประชุม"
+
+#: 
+msgid "Magazines"
+msgstr "นิตยสาร"
+
+#: 
+msgid "Biographies"
+msgstr "ประวัติโดยสังเขป"
+
+#: 
+msgid "News"
+msgstr "ข่าวสาร"
+
+#: 
+msgid "Primary Source Documents"
+msgstr "เอกสารต้นฉบับ"
+
+#: 
+msgid "Reports"
+msgstr "รายงาน"
+
+#: 
+msgid "Reviews"
+msgstr "รีวิว Reviews"
+
+#: 
+msgid "Trade Publications"
+msgstr "สิ่งตีพิมพ์ทางการค้า"
+
+#: 
+msgid "Apply equivalent subjects"
+msgstr "ค้นหาหัวเรื่องที่มีความหมายคล้ายกัน"
+
+#: 
+msgid "Apply related words"
+msgstr "ค้นหาคำที่เกี่ยวข้อง"
+
+#: 
+msgid "Also search within the full text of the articles"
+msgstr "ค้นหาภายในข้อความทั้งหมดของบทความด้วย"
+
+#: 
+msgid "References Available"
+msgstr "มีการอ้างอิง"
+
+#: 
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "วารสารทางวิชาการ (Peer Reviewed)"
+
+#: 
+msgid "Library Home"
+msgstr "หน้าแรกของห้องสมุด"
+
+#: 
+msgid "Periodical"
+msgstr "วารสาร"
+
+#: 
+msgid "Selecting"
+msgstr "กำลังเลือก"
+
+#: 
+msgid "Publication Year"
+msgstr "ปีที่พิมพ์"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "คุณไม่มีรายการการอ่านอื่น"
+
+#: 
+msgid "No statistics to report yet."
+msgstr "ยังไม่มีรายงานสถิติ"
+
+#: 
+msgid "Select one:"
+msgstr "เลือกหนึ่งอัน:"
+
+#: 
+msgid "Hebrew"
+msgstr "ชาวอิสราเอล"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "มหาวิทยาลัย"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "ชุด"
+
+#: 
+msgid "Generate list"
+msgstr "สร้างรายการ"
 

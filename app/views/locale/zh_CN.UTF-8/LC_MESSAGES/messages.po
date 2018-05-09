@@ -29,7 +29,7 @@ msgstr "看起来您的图书馆可能不再订购这篇文章。 请让你的�
 
 #: 
 msgid "This record from "
-msgstr "该条记录来自"
+msgstr "该条记录来自 "
 
 #: 
 msgid " cannot be displayed to guests."
@@ -80,15 +80,13 @@ msgid "Curriculum Builder Settings"
 msgstr "Curriculum Builder 设置"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings.<br /><br />If you change the <strong>user id</strong>, <strong>password</strong> or <strong>API profile ID</strong>, you will need to log out and log back in to see accurate statistics and lists."
-msgstr "请您仔细编辑这些设置，因为它们将覆盖您LMS LTI配置屏幕中最初设置的设置。 请从您的LMS中至少启动一个阅读列表以填充这些字段，或联系eds@ebscohost.com以获得有关这些设置的帮助。<br /> <br />如果您更改<strong>用户ID</ strong> <strong>密码</ strong>或<strong> API Profile ID </ strong>，您将需要注销并重新登录才能查看准确的统计信息和清单。"
-
-#: 
-msgid "Your EBSCO User ID"
+#, fuzzy
+msgid "EBSCO User ID"
 msgstr "您的EBSCO账户ID"
 
 #: 
-msgid "Your EBSCO Password"
+#, fuzzy
+msgid "EBSCO Password"
 msgstr "您的EBSCO账户密码"
 
 #: 
@@ -288,7 +286,7 @@ msgid "Oops! An error occurred. The data for one or more records is incomplete. 
 msgstr "哎呀！ 发生错误。一个或多个记录的数据不完整。 请再试一次，确保每个记录都包含完整内容。"
 
 #: 
-msgid " Enter bibliographic info from the list into this box:"
+msgid "Enter bibliographic info from the list into this box:"
 msgstr "在此框中输入清单的书目信息："
 
 #: 
@@ -504,7 +502,8 @@ msgid "Removing..."
 msgstr "正在移除……"
 
 #: 
-msgid "Move to folder: "
+#, fuzzy
+msgid "Move to folder"
 msgstr "移到文件夹："
 
 #: 
@@ -560,7 +559,8 @@ msgid "No students have read this item.  A list of names will appear here when a
 msgstr "没有学生看过这个项目。 当至少有一个学生点击此项目时，名单列表将显示在此处。"
 
 #: 
-msgid "Characters remaining: "
+#, fuzzy
+msgid "Characters remaining"
 msgstr "剩余字数："
 
 #: 
@@ -757,103 +757,95 @@ msgstr "课程数"
 
 #: 
 msgid "Search"
-msgstr "Search"
+msgstr "检索"
 
 #: 
 msgid "Return to Course"
-msgstr "Return to Course"
+msgstr "返回课程"
 
 #: 
 msgid "See Current Reading List"
-msgstr "See Current Reading List"
+msgstr "查看当前阅读列表"
 
 #: 
 msgid "Update"
-msgstr "Update"
+msgstr "更新"
 
 #: 
 msgid "Add"
-msgstr "Add"
+msgstr "新增"
 
 #: 
 msgid " notes"
-msgstr " notes"
+msgstr " 笔记"
 
 #: 
-msgid "save notes"
-msgstr "save notes"
+msgid "Save notes"
+msgstr "保存笔记"
 
 #: 
 msgid "edit notes"
-msgstr "edit notes"
+msgstr "编辑笔记"
 
 #: 
 msgid "items"
-msgstr "items"
-
-#: 
-msgid "move to folder"
-msgstr "move to folder"
+msgstr "条目"
 
 #: 
 msgid "currently selected"
-msgstr "currently selected"
-
-#: 
-msgid "characters remaining"
-msgstr "characters remaining"
+msgstr "当前选择"
 
 #: 
 msgid "Result"
-msgstr "Result"
+msgstr "结果"
 
 #: 
 msgid "Folder name"
-msgstr "Folder name"
+msgstr "文件夹名"
 
 #: 
 msgid "Back to the main list"
-msgstr "Back to the main list"
+msgstr "返回主列表"
 
 #: 
 msgid "Save Changes"
-msgstr "Save Changes"
+msgstr "保存更改"
 
 #: 
 msgid "Contact"
-msgstr "Contact"
+msgstr "联系人"
 
 #: 
 msgid "for assistance with this tool."
-msgstr "for assistance with this tool."
+msgstr "寻求这个工具的帮助。"
 
 #: 
 msgid "Download Export File"
-msgstr "Download Export File"
+msgstr "下载导出的文件"
 
 #: 
 msgid "Import from Export File"
-msgstr "Import from Export File"
+msgstr "导入导出的文件"
 
 #: 
 msgid "Download Student Data"
-msgstr "Download Student Data"
+msgstr "下载学生数据"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
-msgstr "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "请小心编辑这些设置，因为它们将覆盖在LMS的LTI配置中的原始设置。 请从您的LMS启动至少一个阅读列表来填充这些字段，或联系eds@ebscohost.com获取这些设置的帮助。"
 
 #: 
-msgid "If you change the"
-msgstr "If you change the"
+msgid "If you change the "
+msgstr "如果您更改"
 
 #: 
 msgid "user id"
-msgstr "user id"
+msgstr "用户名"
 
 #: 
 msgid "password"
-msgstr "password"
+msgstr "密码"
 
 #: 
 msgid "API profile ID"
@@ -861,27 +853,28 @@ msgstr "API profile ID"
 
 #: 
 msgid "you will need to log out and log back in to see accurate statistics and lists."
-msgstr "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "您需要注销并重新登录才能看到准确的统计信息和列表。"
 
 #: 
 msgid "Select"
-msgstr "Select"
+msgstr "选择"
 
 #: 
 msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
-msgstr "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "EBSCOadmin认证部分的用户名和密码组合。"
 
 #: 
 msgid "The username/password combo must be associated with the group containing the profile specified below."
-msgstr "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "用户名/密码组合必须与包含下面指定的配置文件的组相关联。"
 
 #: 
 msgid "Total Readings"
-msgstr "Total Readings"
+msgstr "总阅读数"
 
+#. The first "the" in original sentence should be "is".
 #: 
 msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
-msgstr "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "这是您要在Curriculum Builder中使用的EDS API配置文件。 它需要在您上面输入的用户名和密码可访问的组中。"
 
 #: 
 msgid "EDS API Profile ID"
@@ -889,177 +882,468 @@ msgstr "EDS API Profile ID"
 
 #: 
 msgid "LMS Roles that can edit lists (comma-separated)"
-msgstr "LMS Roles that can edit lists (comma-separated)"
+msgstr "LMS可以编辑列表的角色（以逗号分隔）"
 
 #: 
 msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
-msgstr "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "默认情况下，只有教师和助教可以编辑列表。 但是，您可以在此处添加角色以使其他类型的用户能够编辑列表。"
 
 #: 
 msgid "Default:"
-msgstr "Default:"
+msgstr "默认："
 
 #: 
 msgid "Proxy Prefix for CustomLinks"
-msgstr "Proxy Prefix for CustomLinks"
+msgstr "自定义链接的代理前缀"
 
 #: 
 msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
-msgstr "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "如果填写，则此代理将应用于出现在Curriculum Builder中的所有“自定义链接”。"
 
 #: 
 msgid "Examples"
-msgstr "Examples"
+msgstr "范例"
 
 #: 
 msgid "Proxy should encode target URL"
-msgstr "Proxy should encode target URL"
+msgstr "代理应该编码目标网址"
 
 #: 
 msgid "If your proxy prefix ends with"
-msgstr "If your proxy prefix ends with"
+msgstr "如果您的代理前缀结尾是"
 
 #: 
 msgid "this probably needs to be set to"
-msgstr "this probably needs to be set to"
+msgstr "这可能需要设置为"
 
 #: 
 msgid "otherwise"
-msgstr "otherwise"
+msgstr "否则"
 
 #: 
 msgid "is probably correct."
-msgstr "is probably correct."
+msgstr "被正确设置"
 
 #: 
 msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
-msgstr "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "如果您的LMS通过HTTPS访问Curriculum Builder，则您的徽标也应该通过HTTPS提供。"
 
 #: 
 msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
-msgstr "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "该文本将显示在标题列表的标题下方。 网址将自动被赋予超链接。"
 
 #: 
 msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
-msgstr "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "显示在详细记录的左侧链接的标签，将被用于指导用户阅读EBSCO发现服务记录。 如果留空则不会显示EDS链接。"
 
 #: 
 msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
-msgstr "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "输入一个CSS文件的URL。 此文件中的样式将应用于Curriculum Builder屏幕。 如果您的LMS仅支持HTTPS，则其必须为HTTPS地址。"
 
 #: 
 msgid "Optional."
-msgstr "Optional."
+msgstr "可选的。"
 
 #: 
 msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
-msgstr "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "将收集学生的姓名，电子邮件地址和ID。 当学生点击阅读时，这些数据将被用于通知课程导师。 它也将在提供给图书馆的报告中填充这些字段。 要仅禁用电子邮件收集，您的LMS讲师可以选择不与工具提供者共享此信息。"
 
 #: 
 msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
-msgstr "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "不会为教师提供点击阅读的学生的姓名。 但是图书馆将提供一份报告显示何时以及哪些读数仅通过LMS用户标识进行访问。"
 
 #: 
 msgid "Anonymized"
-msgstr "Anonymized"
+msgstr "匿名"
 
 #: 
 msgid "None"
-msgstr "None"
+msgstr "空"
 
 #: 
 msgid "will collect no student activity. No reporting will be available."
-msgstr "will collect no student activity. No reporting will be available."
+msgstr "将不收集学生活动。 无报告可用。"
 
 #: 
 msgid "Link to Help Pages"
-msgstr "Link to Help Pages"
+msgstr "链接到帮助页面"
 
 #: 
 msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
-msgstr "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "对于这个选项，意味着教师将在启动一个新的列表时被提示，从头开始创建一个新的列表，或者从类似命名的列表中进行选择以用来预先填充新的列表。 如果"
 
 #: 
 msgid "is selected, all new lists will be blank."
-msgstr "is selected, all new lists will be blank."
+msgstr "被选中时，所有新的列表将是空白的。"
 
 #: 
 msgid "Hide"
-msgstr "Hide"
+msgstr "隐藏"
 
 #: 
 msgid "and"
-msgstr "and"
+msgstr "和"
 
 #: 
 msgid "Available in Library Collection"
-msgstr "Available in Library Collection"
+msgstr "图书馆馆藏中提供"
 
 #: 
 msgid "Limiters"
-msgstr "Limiters"
+msgstr "限制条件"
 
 #: 
 msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
-msgstr "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "隐藏这些限制条件将会阻止教师取消选中这些内容，从而无法将收藏以外的内容添加到阅读列表中。"
 
 #: 
 msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
-msgstr "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "该链接由LMS提供。 如果LMS配置正确，则会将用户重定向回到课程的网站。"
 
 #: 
 msgid "Show First Full Text Link Only"
-msgstr "Show First Full Text Link Only"
+msgstr "仅显示第一个全文链接"
 
 #: 
 msgid "Language"
-msgstr "Language"
+msgstr "语言"
 
 #: 
 msgid "Spanish"
-msgstr "Spanish"
+msgstr "Español"
 
 #: 
 msgid "German"
-msgstr "German"
+msgstr "Deutsch\n"
+""
 
 #: 
 msgid "Italian"
-msgstr "Italian"
+msgstr "Italiano"
 
 #: 
 msgid "Portuguese"
-msgstr "Portuguese"
+msgstr "Português"
 
 #: 
 msgid "French"
-msgstr "French"
+msgstr "Français"
 
 #: 
-msgid "Chinese (simplified)"
-msgstr "Chinese (simplified)"
+msgid "Simplified Chinese"
+msgstr "简体中文"
 
 #: 
-msgid "Chinese (traditional)"
-msgstr "Chinese (traditional)"
+msgid "traditional Chinese"
+msgstr "繁體中文"
 
 #: 
 msgid "Japanese"
-msgstr "Japanese"
+msgstr "日本語"
 
 #: 
 msgid "Polish"
-msgstr "Polish"
+msgstr "Polski"
 
 #: 
 msgid "Swedish"
-msgstr "Swedish"
+msgstr "Svenska"
 
 #: 
 msgid "Thai"
-msgstr "Thai"
+msgstr "ภาษาไทย"
 
 #: 
 msgid "Turkish"
-msgstr "Turkish"
+msgstr "Türkçe"
+
+#: 
+msgid "Required"
+msgstr "需要"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "例如讲师"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "代理前缀在这里; 如果使用WAM，则可以使用{targetURLdomain}指定WAM代理的域 - 其余部分将放置在末尾"
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "工具的联系人的电子邮件"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "屏幕的顶部的品牌文字"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "例如，参见EDS中的记录"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "例如搜索图书馆资源"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "可选的。 CSS样式表的URL"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "LibGuide或其他帮助页面的URL"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "例如版权声明"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "链接到EDS的标签"
+
+#: 
+msgid "Label for Search Box"
+msgstr "搜索框的标签"
+
+#: 
+msgid "Collect Student Data"
+msgstr "收集学生数据"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "图书馆主页的URL"
+
+#: 
+msgid "Search Library Resources"
+msgstr "搜索图书馆资源"
+
+#: 
+msgid "Update Settings"
+msgstr "更新设置"
+
+#: 
+msgid "Expander: "
+msgstr "扩展条件："
+
+#: 
+msgid "Edit"
+msgstr "编辑"
+
+#: 
+msgid "Relevance"
+msgstr "相关度"
+
+#: 
+msgid "Source Type"
+msgstr "来源类型"
+
+#: 
+msgid "Subject"
+msgstr "主题"
+
+#: 
+msgid "Publication"
+msgstr "出版物"
+
+#: 
+msgid "Geography"
+msgstr "地理位置信息"
+
+#: 
+msgid "Content Provider"
+msgstr "内容提供商"
+
+#: 
+msgid "Academic Journal"
+msgstr "学术期刊"
+
+#: 
+msgid "Biographie"
+msgstr "传记"
+
+#: 
+msgid "Book"
+msgstr "图书"
+
+#: 
+msgid "Conference Material"
+msgstr "会议资料"
+
+#: 
+msgid "Magazine"
+msgstr "杂志"
+
+#: 
+msgid "New"
+msgstr "新"
+
+#: 
+msgid "Primary Source Document"
+msgstr "主要来源文件"
+
+#: 
+msgid "Report"
+msgstr "报告"
+
+#: 
+msgid "Review"
+msgstr "评论"
+
+#: 
+msgid "Trade Publication"
+msgstr "贸易出版物"
+
+#: 
+msgid "Date Newest"
+msgstr "最近日期"
+
+#: 
+msgid "Date Oldest"
+msgstr "最早日期"
+
+#: 
+msgid "Authors"
+msgstr "作者"
+
+#: 
+msgid "Document Type"
+msgstr "文档类型"
+
+#: 
+msgid "Subject Terms"
+msgstr "主题词"
+
+#: 
+msgid "Author-Supplied Keywords"
+msgstr "作者提供的关键词"
+
+#: 
+msgid "Abstract"
+msgstr "摘要"
+
+#: 
+msgid "Author Affiliations"
+msgstr "作者机构"
+
+#: 
+msgid "Accession Number"
+msgstr "访问编号"
+
+#: 
+msgid "Publisher"
+msgstr "出版者"
+
+#: 
+msgid "Source"
+msgstr "来源"
+
+#: 
+msgid "Geographic Terms"
+msgstr "地理术语"
+
+#: 
+msgid "Academic Journals"
+msgstr "学术期刊"
+
+#: 
+msgid "Books"
+msgstr "图书"
+
+#: 
+msgid "Conference Materials"
+msgstr "会议资料"
+
+#: 
+msgid "Magazines"
+msgstr "杂志"
+
+#: 
+msgid "Biographies"
+msgstr "传记"
+
+#: 
+msgid "News"
+msgstr "新闻"
+
+#: 
+msgid "Primary Source Documents"
+msgstr "主要来源文件"
+
+#: 
+msgid "Reports"
+msgstr "报告"
+
+#: 
+msgid "Reviews"
+msgstr "评论"
+
+#: 
+msgid "Trade Publications"
+msgstr "贸易出版物"
+
+#: 
+msgid "Apply equivalent subjects"
+msgstr "应用对等科目"
+
+#: 
+msgid "Apply related words"
+msgstr "应用相关词语"
+
+#: 
+msgid "Also search within the full text of the articles"
+msgstr "同时在文章全文范围内搜索"
+
+#: 
+msgid "References Available"
+msgstr "可用参考"
+
+#: 
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "学术（同行评审）期刊"
+
+#: 
+msgid "Library Home"
+msgstr "图书馆主页"
+
+#: 
+msgid "Periodical"
+msgstr "期刊"
+
+#: 
+msgid "Selecting"
+msgstr "筛选"
+
+#: 
+msgid "Publication Year"
+msgstr "出版年"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "您没有其他的阅读列表。"
+
+#: 
+msgid "No statistics to report yet."
+msgstr "还没有统计报告。"
+
+#: 
+msgid "Select one:"
+msgstr "请选择一个："
+
+#: 
+msgid "Hebrew"
+msgstr "עִברִית"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "大学"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "收藏集"
+
+#: 
+msgid "Generate list"
+msgstr "生成列表"
 

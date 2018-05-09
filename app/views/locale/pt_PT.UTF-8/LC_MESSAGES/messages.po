@@ -9,7 +9,7 @@ msgstr ""
 
 #: 
 msgid "English"
-msgstr "Portuguese (PT)"
+msgstr "English"
 
 #: 
 msgid "Back to Reading List"
@@ -33,11 +33,11 @@ msgstr "Registo de "
 
 #: 
 msgid " cannot be displayed to guests."
-msgstr "não está disponivél para convidados."
+msgstr "não está disponivél para utilizadores não autenticados."
 
 #: 
 msgid "Login</a> for full access."
-msgstr "Autenticar</a> para aceder ao texto completo."
+msgstr "Autenticar</a> para aceder ao texto integral."
 
 #: 
 msgid "Add to Reading List"
@@ -80,15 +80,13 @@ msgid "Curriculum Builder Settings"
 msgstr "Opções do Curriculum Builder"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings.<br /><br />If you change the <strong>user id</strong>, <strong>password</strong> or <strong>API profile ID</strong>, you will need to log out and log back in to see accurate statistics and lists."
-msgstr "Tenha cuidado ao editar estas configurações pois irão substituir as configurações originais do LTI no LMS. Insira pelo menos uma Lista de bibligrafia recomendada no seu LMS para preencher esses campos, ou entre em contato com eds@ebscohost.com para obter ajuda. <br /> <br /> Se você alterar o <strong> id do utilizador </ strong> <Strong> senha </ strong> ou <strong> ID do perfil da API </ strong>, você precisará de sair e fazer login novamente para ver estatísticas e listas."
-
-#: 
-msgid "Your EBSCO User ID"
+#, fuzzy
+msgid "EBSCO User ID"
 msgstr "O seu EBSCO User ID"
 
 #: 
-msgid "Your EBSCO Password"
+#, fuzzy
+msgid "EBSCO Password"
 msgstr "A sua password EBSCO"
 
 #: 
@@ -288,7 +286,7 @@ msgid "Oops! An error occurred. The data for one or more records is incomplete. 
 msgstr "Ops! Um erro ocorreu. Os dados de um ou mais registos estão incompletos. Tente novamente, certificando-se que inclui todos o registos para cada bibliografia."
 
 #: 
-msgid " Enter bibliographic info from the list into this box:"
+msgid "Enter bibliographic info from the list into this box:"
 msgstr "Insira a informação da bibliografia da lista para esta caixa:"
 
 #: 
@@ -504,7 +502,8 @@ msgid "Removing..."
 msgstr "A remover..."
 
 #: 
-msgid "Move to folder: "
+#, fuzzy
+msgid "Move to folder"
 msgstr "Mover para pasta"
 
 #: 
@@ -560,7 +559,8 @@ msgid "No students have read this item.  A list of names will appear here when a
 msgstr "Nenhum estudante leu este item. A lista de nomes aparecerá aqui quando pelo menos um aluno clica neste item."
 
 #: 
-msgid "Characters remaining: "
+#, fuzzy
+msgid "Characters remaining"
 msgstr "Caracteres disponiveis:"
 
 #: 
@@ -692,10 +692,6 @@ msgid "Published: "
 msgstr "Publicado:"
 
 #: 
-msgid "Language: "
-msgstr "Idioma:"
-
-#: 
 msgid "No results were found."
 msgstr "Não foram encontrados resultados."
 
@@ -758,4 +754,600 @@ msgstr "Total de cursos que utilizam esta ferramenta"
 #: 
 msgid "Courses"
 msgstr "Cursos"
+
+#: 
+msgid "Search"
+msgstr "Pesquisar"
+
+#: 
+msgid "Return to Course"
+msgstr "Voltar ao curso"
+
+#: 
+msgid "See Current Reading List"
+msgstr "Ver lista de leitura actual"
+
+#: 
+msgid "Update"
+msgstr "Actualizar"
+
+#: 
+msgid "Add"
+msgstr "Adicionar"
+
+#: 
+msgid " notes"
+msgstr "notas"
+
+#: 
+#, fuzzy
+msgid "Save notes"
+msgstr "guardar notas"
+
+#: 
+msgid "edit notes"
+msgstr "editar notas"
+
+#: 
+msgid "items"
+msgstr "items"
+
+#: 
+msgid "currently selected"
+msgstr "actualmente seleccionados"
+
+#: 
+msgid "Result"
+msgstr "Resultado"
+
+#: 
+msgid "Folder name"
+msgstr "Nome da pasta"
+
+#: 
+msgid "Back to the main list"
+msgstr "Voltar à lista principal"
+
+#: 
+msgid "Save Changes"
+msgstr "Guardar alterações"
+
+#: 
+msgid "Contact"
+msgstr "Contactar"
+
+#: 
+msgid "for assistance with this tool."
+msgstr "Para suporte com esta ferramenta"
+
+#: 
+msgid "Download Export File"
+msgstr "Descarregar ficheiro com exportações"
+
+#: 
+msgid "Import from Export File"
+msgstr "Importar do ficheiro exportado"
+
+#: 
+msgid "Download Student Data"
+msgstr "Descarregar dados de estudantes"
+
+#: 
+#, fuzzy
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "Tenha cuidado ao editar estas configurações, pois eles vão substituir as configurações originalmente configurados no ecrã de configuração do seu LMS LTI. Por favor, inicie pelo menos uma lista de leitura do seu LMS para preencher estes campos ou contacte o suporte em EDS@EBSCOhost.com para obter assistência com estas definições."
+
+#: 
+#, fuzzy
+msgid "If you change the "
+msgstr "se mudar "
+
+#: 
+msgid "user id"
+msgstr "Código utilizador"
+
+#: 
+msgid "password"
+msgstr "Password"
+
+#: 
+msgid "API profile ID"
+msgstr "Perfil API"
+
+#: 
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "necessitar de sair e voltar a autenticar para visualizar actualizadas as estatísticas e as listas"
+
+#: 
+msgid "Select"
+msgstr "Seleccionar"
+
+#: 
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "um codigo de utilizador e password do separador \"authentication\" no EBSCOAdmin"
+
+#: 
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "O código de utilizador/"
+
+#: 
+msgid "Total Readings"
+msgstr "Total de leituras"
+
+#: 
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "Este é o perfil EDS API que deseja utilizar no Curriculum Builder. Necessita de estar no mesmo grupo que o código de utilizador e password introduzidos acima"
+
+#: 
+msgid "EDS API Profile ID"
+msgstr "Perfil EDS API ID"
+
+#: 
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "Perfis LMS que podem editar as listas (separado por vírgula)"
+
+#: 
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "Por omissão, apenas os Instructors e Teaching Assistants podem editar as listas. Contudo, pode adicionar outros roles aqui para permitir que outros tipos de utilizadores editem listas"
+
+#: 
+msgid "Default:"
+msgstr "Omissão:"
+
+#: 
+msgid "Proxy Prefix for CustomLinks"
+msgstr "Prefixo do proxy para os customlinks"
+
+#: 
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "Se preenchido, este proxy vai ser utilizado em todos os customlinks apresentados no Curriculum Builder."
+
+#: 
+msgid "Examples"
+msgstr "Exemplos"
+
+#: 
+msgid "Proxy should encode target URL"
+msgstr "Proxy deve realizar o url encode "
+
+#: 
+msgid "If your proxy prefix ends with"
+msgstr "Se o seu prefixo de proxy termina com "
+
+#: 
+msgid "this probably needs to be set to"
+msgstr "isto provavelmente deverá ser definido"
+
+#: 
+msgid "otherwise"
+msgstr "senão"
+
+#: 
+msgid "is probably correct."
+msgstr "está provavelmente correcto"
+
+#: 
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "Se o seu LMS acede ao Curriculum Builder através de HTTPS, o seu logotipo também deve utilizar HTTPS"
+
+#: 
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "Este texto vai aparecer debaixo do titulo da lista no cabeçalho. Os URLs serão automaticamente linkados"
+
+#: 
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "Este é o texto para o link que aparece no lado esquerdo do registo detalhado que redirecciona o utilizador para o registo no EBSCO Discovery Service. Se deixado em branco, nenhum link para o EDS será apresentado"
+
+#: 
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "Introduz o URL do ficheiro CSS. Os estilos neste ficheiro serão aplicados nos ecrãs do Curriculum Builder. Talvez necessite de estar em HTTPS se o LMS também utiliza HTTPS"
+
+#: 
+msgid "Optional."
+msgstr "Opcional"
+
+#: 
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "irá recolher nomes de alunos, endereços de e-mail e IDs. Estes dados serão usados para informar os professores quando um aluno clica em uma leitura. Irá também preencher esses campos nos relatórios fornecidos à biblioteca. Para desativar somente a recolha de e-mail, seu professor LMS pode optar por não partilhar essas informações"
+
+#: 
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "Não vai fornecer aos professores nomes de alunos que clicaram nas leituras. No entanto, as bibliotecas receberão um relatório mostrando quando e quais leituras foram acedidas com apenas o ID do LMS."
+
+#: 
+msgid "Anonymized"
+msgstr "Anonimas"
+
+#: 
+msgid "None"
+msgstr "Nenhum"
+
+#: 
+msgid "will collect no student activity. No reporting will be available."
+msgstr "Não vamos recolher dados dos estudantes. Não estarão disponíveis estatísticas"
+
+#: 
+msgid "Link to Help Pages"
+msgstr "Link para a página de Ajuda"
+
+#: 
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "para esta opção significa que os instrutores serão questionados na criação de uma nova lista para criar uma nova lista a partir do zero, ou selecionar a partir de uma coleção de listas disponíveis para usar para carregar a nova lista. Se"
+
+#: 
+msgid "is selected, all new lists will be blank."
+msgstr "está seleccionado, todas as novas listas estão vazias"
+
+#: 
+msgid "Hide"
+msgstr "ocultar"
+
+#: 
+msgid "and"
+msgstr "e"
+
+#: 
+msgid "Available in Library Collection"
+msgstr "Disponível na coleção da biblioteca"
+
+#: 
+msgid "Limiters"
+msgstr "Limitadores"
+
+#: 
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "Ocultar estes limitadores vão prevenir"
+
+#: 
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "O link é fornecido pelo LMS. Se o LMS estiver configurado correctamente, vai redireccinar o utilizador para o site do curso."
+
+#: 
+msgid "Show First Full Text Link Only"
+msgstr "Mostrar apenas o primeiro link de texto integral"
+
+#: 
+msgid "Language"
+msgstr "Idioma"
+
+#: 
+msgid "Spanish"
+msgstr "Espanhol"
+
+#: 
+msgid "German"
+msgstr "Alemão"
+
+#: 
+msgid "Italian"
+msgstr "Italiano"
+
+#: 
+msgid "Portuguese"
+msgstr "Português"
+
+#: 
+msgid "French"
+msgstr "Francês"
+
+#: 
+#, fuzzy
+msgid "Simplified Chinese"
+msgstr "Chinês (simplificado)"
+
+#: 
+#, fuzzy
+msgid "traditional Chinese"
+msgstr "Chinês ( tradicional)"
+
+#: 
+msgid "Japanese"
+msgstr "Japonês"
+
+#: 
+msgid "Polish"
+msgstr "Polaco"
+
+#: 
+msgid "Swedish"
+msgstr "Sueco"
+
+#: 
+msgid "Thai"
+msgstr "Tailandês"
+
+#: 
+msgid "Turkish"
+msgstr "Turco"
+
+#: 
+msgid "Required"
+msgstr "Obrigatório"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "ex: Professor"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Prefixo de proxy aqui; Se estiver a utilizar WAM, pode utilizar {targetURLdomain} para indicar o dominio do seu proxy WAM. O restante será colocado no final"
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "Email de contacto do responsável da ferramenta"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "Texto mostrado no inicio de página"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "ex: Ver registo no EDS"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "ex: Pesquisar nos recursos da Biblioteca"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Opcional. URL do ficheiro de estilos CSS"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "URL do Libguides ou outras páginas de ajuda"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "ex. aviso de direitos de autor"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "Texto para o link para o EDS"
+
+#: 
+msgid "Label for Search Box"
+msgstr "Texto para a caixa de pesquisa"
+
+#: 
+msgid "Collect Student Data"
+msgstr "Recolher dados dos estudantes"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "URL para a página da Biblioteca"
+
+#: 
+msgid "Search Library Resources"
+msgstr "Pesquisar nos recursos da biblioteca"
+
+#: 
+msgid "Update Settings"
+msgstr "Actualizar definições"
+
+#: 
+msgid "Expander: "
+msgstr "Expansor:"
+
+#: 
+msgid "Edit"
+msgstr "Editar"
+
+#: 
+msgid "Relevance"
+msgstr "Relevância"
+
+#: 
+msgid "Source Type"
+msgstr "Tipo de fonte"
+
+#: 
+msgid "Subject"
+msgstr "Assunto"
+
+#: 
+msgid "Publication"
+msgstr "Publicação"
+
+#: 
+msgid "Geography"
+msgstr "Geografia"
+
+#: 
+msgid "Content Provider"
+msgstr "Fornecedor de conteúdos"
+
+#: 
+msgid "Academic Journal"
+msgstr "Revista académica"
+
+#: 
+msgid "Biographie"
+msgstr "Biografia"
+
+#: 
+msgid "Book"
+msgstr "Livro"
+
+#: 
+msgid "Conference Material"
+msgstr "Material de conferência"
+
+#: 
+msgid "Magazine"
+msgstr "Revista"
+
+#: 
+msgid "New"
+msgstr "Novo"
+
+#: 
+msgid "Primary Source Document"
+msgstr "Documento de fonte primária"
+
+#: 
+msgid "Report"
+msgstr "Relatório"
+
+#: 
+msgid "Review"
+msgstr "Resenha"
+
+#: 
+msgid "Trade Publication"
+msgstr "Publicação comercial"
+
+#: 
+msgid "Date Newest"
+msgstr "Mais recente"
+
+#: 
+msgid "Date Oldest"
+msgstr "Mais antigo"
+
+#: 
+msgid "Authors"
+msgstr "Autores"
+
+#: 
+msgid "Document Type"
+msgstr "Tipo de documento"
+
+#: 
+msgid "Subject Terms"
+msgstr "Assuntos"
+
+#: 
+msgid "Author-Supplied Keywords"
+msgstr "Keywords"
+
+#: 
+msgid "Abstract"
+msgstr "Resumo"
+
+#: 
+msgid "Author Affiliations"
+msgstr "Filiações do autor"
+
+#: 
+msgid "Accession Number"
+msgstr "Número de registo"
+
+#: 
+msgid "Publisher"
+msgstr "Editor"
+
+#: 
+msgid "Source"
+msgstr "Fonte"
+
+#: 
+msgid "Geographic Terms"
+msgstr "Termos geográficos"
+
+#: 
+msgid "Academic Journals"
+msgstr "Revistas académicas"
+
+#: 
+msgid "Books"
+msgstr "Livros"
+
+#: 
+msgid "Conference Materials"
+msgstr "Materiais de conferências"
+
+#: 
+msgid "Magazines"
+msgstr "Revistas"
+
+#: 
+msgid "Biographies"
+msgstr "Biografias"
+
+#: 
+msgid "News"
+msgstr "Notícias"
+
+#: 
+msgid "Primary Source Documents"
+msgstr "Documentos de fonte primária"
+
+#: 
+msgid "Reports"
+msgstr "Relatórios"
+
+#: 
+msgid "Reviews"
+msgstr "Resenhas"
+
+#: 
+msgid "Trade Publications"
+msgstr "Publicações comerciais"
+
+#: 
+msgid "Apply equivalent subjects"
+msgstr "Aplicar assuntos equivalentes"
+
+#: 
+msgid "Apply related words"
+msgstr "Palavras relacionadas"
+
+#: 
+msgid "Also search within the full text of the articles"
+msgstr "Pesquisar também no texto integral dos artigos\n"
+""
+
+#: 
+msgid "References Available"
+msgstr "Referencias disponíveis"
+
+#: 
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Revistas Peer Reviewed "
+
+#: 
+msgid "Library Home"
+msgstr "Página da Biblioteca"
+
+#: 
+msgid "Periodical"
+msgstr "Periódico"
+
+#: 
+msgid "Selecting"
+msgstr "A seleccionar"
+
+#: 
+msgid "Publication Year"
+msgstr "Ano de publicação"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "Você não possui outras listas de leitura."
+
+#: 
+msgid "No statistics to report yet."
+msgstr "Nenhuma estatística a reportar ainda."
+
+#: 
+msgid "Select one:"
+msgstr "Selecione um:"
+
+#: 
+msgid "Hebrew"
+msgstr "hebraico"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "Universidade"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "Coleção"
+
+#: 
+msgid "Generate list"
+msgstr "Gerar lista"
 

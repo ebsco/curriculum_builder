@@ -80,15 +80,13 @@ msgid "Curriculum Builder Settings"
 msgstr "Ayarlar"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings.<br /><br />If you change the <strong>user id</strong>, <strong>password</strong> or <strong>API profile ID</strong>, you will need to log out and log back in to see accurate statistics and lists."
-msgstr "Bu ayarları değiştirirken dikkatli olun, çünkü LMS's LTI ayarlarları ekranındaki orijinal ayarlar değiştirilecektir. Lütfen en az bir okuma listesi ile bu alanların doldurulmasını deneyin, veya bu ayarlarla ilgili yardım için eds@ebscohost.com e-posta ile iletişime geçin.<br /><br />Kullanıcı Adı, şifre veya API profilini değiştirirseniz, ilgili istatistikler ve listeleri görmek için, oturumu kapatıp tekrar oturum açmalısınız."
-
-#: 
-msgid "Your EBSCO User ID"
+#, fuzzy
+msgid "EBSCO User ID"
 msgstr "EBSCO Kullanıcı Adınız"
 
 #: 
-msgid "Your EBSCO Password"
+#, fuzzy
+msgid "EBSCO Password"
 msgstr "EBSCO Şifreniz"
 
 #: 
@@ -288,7 +286,7 @@ msgid "Oops! An error occurred. The data for one or more records is incomplete. 
 msgstr "Hata! Bir hata oluştu! Bir veya birden fazla kayıtlar için veri tamamlanamadı. Lütfen her okumanın tüm kaydını eklediğinizden emin olarak tekrar deneyin."
 
 #: 
-msgid " Enter bibliographic info from the list into this box:"
+msgid "Enter bibliographic info from the list into this box:"
 msgstr " Listeden künye bilgilerini bu kutuya girin:"
 
 #: 
@@ -504,7 +502,8 @@ msgid "Removing..."
 msgstr "Kaldırılıyor…"
 
 #: 
-msgid "Move to folder: "
+#, fuzzy
+msgid "Move to folder"
 msgstr "Dosyaya taşı"
 
 #: 
@@ -560,7 +559,8 @@ msgid "No students have read this item.  A list of names will appear here when a
 msgstr "Hiçbir öğrenci bu kaynağa giriş yapmadı. En az bir öğrenci giriş yaptığınızda isimler burada listenelecektir."
 
 #: 
-msgid "Characters remaining: "
+#, fuzzy
+msgid "Characters remaining"
 msgstr "Kalan karakter sayısı:"
 
 #: 
@@ -780,7 +780,8 @@ msgid " notes"
 msgstr " notlar"
 
 #: 
-msgid "save notes"
+#, fuzzy
+msgid "Save notes"
 msgstr "notları kaydet"
 
 #: 
@@ -792,16 +793,8 @@ msgid "items"
 msgstr "kaynaklar"
 
 #: 
-msgid "move to folder"
-msgstr "dosyaya taşı"
-
-#: 
 msgid "currently selected"
 msgstr "seçilenler"
-
-#: 
-msgid "characters remaining"
-msgstr "kalan karakter sayısı"
 
 #: 
 msgid "Result"
@@ -840,11 +833,13 @@ msgid "Download Student Data"
 msgstr "Öğrenci verilerini indir"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+#, fuzzy
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
 msgstr "Bu ayarları değiştirirken dikkatli olun, çünkü LMS's LTI ayarlarları ekranındaki orijinal ayarlar değiştirilecektir. Lütfen en az bir okuma listesi ile bu alanların doldurulmasını deneyin, veya bu ayarlarla ilgili yardım için eds@ebscohost.com e-posta ile iletişime geçin."
 
 #: 
-msgid "If you change the"
+#, fuzzy
+msgid "If you change the "
 msgstr "    eğer değiştirirseniz"
 
 #: 
@@ -1036,11 +1031,13 @@ msgid "French"
 msgstr "Fransızca"
 
 #: 
-msgid "Chinese (simplified)"
+#, fuzzy
+msgid "Simplified Chinese"
 msgstr "Çince (basitleştirilmiş)"
 
 #: 
-msgid "Chinese (traditional)"
+#, fuzzy
+msgid "traditional Chinese"
 msgstr "Çince (geleneksel)"
 
 #: 
@@ -1062,4 +1059,294 @@ msgstr "Tayland"
 #: 
 msgid "Turkish"
 msgstr "Türk"
+
+#: 
+msgid "Required"
+msgstr "Gerekli"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "Ör., Eğitmen"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Proxy önek; Eğer WAM kullanıyorsanız, WAM proxy alan adını belirtmek için {targetURLdomain} parametresini kullanabilirsiniz - kalan kısım sonda yer alacaktır"
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "Bu araç için iletişim için ilgili kişinin email adresi"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "Sayfa üstünde yer alacak Metin"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "Ör., Kaydı EDS'de Görüntüle"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "Ör., Kütüphane Kaynaklarında Arayın"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "İsteğe Bağlı. CSS dosyası linki"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "LibGuide ve diğer yardım sayfaları için Link"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "Ör., telif hakkı uyarısı"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "EDS Linki için Metin"
+
+#: 
+msgid "Label for Search Box"
+msgstr "Arama Kutusu için Metin"
+
+#: 
+msgid "Collect Student Data"
+msgstr "Öğrenci Bilgilerini Topla"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "Kütüphane Ana Sayfa Linki"
+
+#: 
+msgid "Search Library Resources"
+msgstr "Kütüphane Kaynaklarında Arayın"
+
+#: 
+msgid "Update Settings"
+msgstr "Ayarları Güncelle"
+
+#: 
+msgid "Expander: "
+msgstr "Genişletici:"
+
+#: 
+msgid "Edit"
+msgstr "Değiştir"
+
+#: 
+msgid "Relevance"
+msgstr "İlgililik"
+
+#: 
+msgid "Source Type"
+msgstr "Kaynak Türü"
+
+#: 
+msgid "Subject"
+msgstr "Konu"
+
+#: 
+msgid "Publication"
+msgstr "Yayın"
+
+#: 
+msgid "Geography"
+msgstr "Coğrafya"
+
+#: 
+msgid "Content Provider"
+msgstr "İçerik Sağlayıcı"
+
+#: 
+msgid "Academic Journal"
+msgstr "Akademik Dergi"
+
+#: 
+msgid "Biographie"
+msgstr "Biyografi"
+
+#: 
+msgid "Book"
+msgstr "Kitap"
+
+#: 
+msgid "Conference Material"
+msgstr "Konferans Materyali"
+
+#: 
+msgid "Magazine"
+msgstr "Güncel Dergi"
+
+#: 
+msgid "New"
+msgstr "Haber"
+
+#: 
+msgid "Primary Source Document"
+msgstr "Temel Kaynak Doküman"
+
+#: 
+msgid "Report"
+msgstr "Rapor"
+
+#: 
+msgid "Review"
+msgstr "Değerlendirme"
+
+#: 
+msgid "Trade Publication"
+msgstr "Ticari Yayın"
+
+#: 
+msgid "Date Newest"
+msgstr "En Yeni Tarih"
+
+#: 
+msgid "Date Oldest"
+msgstr "En Eski Tarih"
+
+#: 
+msgid "Authors"
+msgstr "Yazarlar"
+
+#: 
+msgid "Document Type"
+msgstr "Doküman Türü"
+
+#: 
+msgid "Subject Terms"
+msgstr "Konu Terimleri"
+
+#: 
+msgid "Author-Supplied Keywords"
+msgstr "Yazar Tarafından Sağlanan Anahtar Kelimeler"
+
+#: 
+msgid "Abstract"
+msgstr "Özet"
+
+#: 
+msgid "Author Affiliations"
+msgstr "Yazar Kurumları"
+
+#: 
+msgid "Accession Number"
+msgstr "Erişim Numarası"
+
+#: 
+msgid "Publisher"
+msgstr "Yayıncı"
+
+#: 
+msgid "Source"
+msgstr "Kaynak"
+
+#: 
+msgid "Geographic Terms"
+msgstr "Coğrafi Terimler"
+
+#: 
+msgid "Academic Journals"
+msgstr "Akademik Dergiler"
+
+#: 
+msgid "Books"
+msgstr "Kitaplar"
+
+#: 
+msgid "Conference Materials"
+msgstr "Konferans Materyalleri"
+
+#: 
+msgid "Magazines"
+msgstr "Güncel Dergiler"
+
+#: 
+msgid "Biographies"
+msgstr "Biyografiler"
+
+#: 
+msgid "News"
+msgstr "Haberler"
+
+#: 
+msgid "Primary Source Documents"
+msgstr "Temel Kaynak Dokümanlar"
+
+#: 
+msgid "Reports"
+msgstr "Raporlar"
+
+#: 
+msgid "Reviews"
+msgstr "Değerlendirmeler"
+
+#: 
+msgid "Trade Publications"
+msgstr "Ticari Yayınlar"
+
+#: 
+msgid "Apply equivalent subjects"
+msgstr "Eşdeğer konuları uygula"
+
+#: 
+msgid "Apply related words"
+msgstr "İlgili sözcükleri uygula"
+
+#: 
+msgid "Also search within the full text of the articles"
+msgstr "Makalelerin tam metni içinde de arama yap"
+
+#: 
+msgid "References Available"
+msgstr "Kullanılabilir Referanslar"
+
+#: 
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Hakemli Dergiler"
+
+#: 
+msgid "Library Home"
+msgstr "Kütüphane Sayfası"
+
+#: 
+msgid "Periodical"
+msgstr "Süreli Yayın"
+
+#: 
+msgid "Selecting"
+msgstr "Seçici"
+
+#: 
+msgid "Publication Year"
+msgstr "Yayın Yılı"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "Başka okuma listeniz yok."
+
+#: 
+msgid "No statistics to report yet."
+msgstr "Henüz raporlamanız gereken istatistik yok."
+
+#: 
+msgid "Select one:"
+msgstr "Birini seç:"
+
+#: 
+msgid "Hebrew"
+msgstr "İbranice"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "Üniversite"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "Toplamak"
+
+#: 
+msgid "Generate list"
+msgstr "Listeyi oluştur"
 

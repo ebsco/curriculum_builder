@@ -4,8 +4,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: Es-CO3\n"
-"Language: es-co\n"
+"Project-Id-Version: CB2\n"
+"Language: es\n"
+
+#: 
+msgid "English"
+msgstr "English"
 
 #: 
 msgid "Back to Reading List"
@@ -13,7 +17,11 @@ msgstr "Regreso a la lista de lectura"
 
 #: 
 msgid " << Back to Results"
-msgstr "<< Regreso a resultados"
+msgstr "Regreso a resultados"
+
+#: 
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
 
 #: 
 msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
@@ -28,12 +36,8 @@ msgid " cannot be displayed to guests."
 msgstr "no puede mostrarse a invitados"
 
 #: 
-msgid "Login"
-msgstr "Ingreso"
-
-#: 
-msgid "for full access."
-msgstr "para acceso completo."
+msgid "Login</a> for full access."
+msgstr "Ingresa </a> para tener acceso completo"
 
 #: 
 msgid "Add to Reading List"
@@ -76,11 +80,13 @@ msgid "Curriculum Builder Settings"
 msgstr "Ajustes de Curriculum Builder"
 
 #: 
-msgid "Your EBSCO User ID"
+#, fuzzy
+msgid "EBSCO User ID"
 msgstr "Su Usuario de EBSCO"
 
 #: 
-msgid "Your EBSCO Password"
+#, fuzzy
+msgid "EBSCO Password"
 msgstr "Su contraseña de EBSCO"
 
 #: 
@@ -157,11 +163,11 @@ msgstr "vista anticipada de listas seleccionadas"
 
 #: 
 msgid "Delete Lists"
-msgstr "Eliminar listas"
+msgstr "Borrar lista"
 
 #: 
 msgid "Delete Selected Lists"
-msgstr "Eliminar listas seleccionadas"
+msgstr "Borrar listas seleccionadas"
 
 #: 
 msgid "Basic Search"
@@ -280,7 +286,7 @@ msgid "Oops! An error occurred. The data for one or more records is incomplete. 
 msgstr "Oh! un error a ocurrido, los datos de uno o mas registros esta incompleto, por favor trate de nuevo, este seguro que incluye el registro completo para cada lectura"
 
 #: 
-msgid " Enter bibliographic info from the list into this box:"
+msgid "Enter bibliographic info from the list into this box:"
 msgstr " Entre la información bibliográfica desde la lista a esta caja: "
 
 #: 
@@ -290,6 +296,10 @@ msgstr "CB versión 2.3 "
 #: 
 msgid "List ID"
 msgstr "ID de la Lista"
+
+#: 
+msgid "Login"
+msgstr "Ingreso"
 
 #: 
 msgid "Invalid login -- pleasae try again"
@@ -426,7 +436,7 @@ msgstr "Estudiantes que han accedido a esta lista."
 
 #: 
 msgid "Students that have accessed this list:"
-msgstr "Estudiantes que han accedido a esta lista:"
+msgstr "Los estudiantes que han accedido a esta lista:"
 
 #: 
 msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
@@ -454,7 +464,7 @@ msgstr "Carpeta"
 
 #: 
 msgid "e.g., Read Chapter 5 in Textbook"
-msgstr "Ej.: Leer el capitulo 5 en el libro de texto"
+msgstr "Ej: Leer el capitulo 5 en el libro de texto"
 
 #: 
 msgid "Main list of Readings"
@@ -493,7 +503,8 @@ msgid "Removing..."
 msgstr "Quitar ..."
 
 #: 
-msgid "Move to folder: "
+#, fuzzy
+msgid "Move to folder"
 msgstr "Mover a carpeta: "
 
 #: 
@@ -549,7 +560,8 @@ msgid "No students have read this item.  A list of names will appear here when a
 msgstr "Ningún estudiante ha accedido a esta lectura. Una lista de nombres aparecerá aquí cuando al menos un estudiante acceda a ella."
 
 #: 
-msgid "Characters remaining: "
+#, fuzzy
+msgid "Characters remaining"
 msgstr "Caracteres restantes:"
 
 #: 
@@ -573,6 +585,10 @@ msgid "Currently, there are no readings on this list."
 msgstr "Actualmente, no hay lecturas en esta lista."
 
 #: 
+msgid "<< Back to Results"
+msgstr "<< Volver a resultados"
+
+#: 
 msgid "Retrieve response XML"
 msgstr "Recuperar XML de respuesta"
 
@@ -587,6 +603,10 @@ msgstr "Este registro de"
 #: 
 msgid "cannot be displayed to guests."
 msgstr "no se puede mostrar a los invitados"
+
+#: 
+msgid "for full access."
+msgstr "para acceso completo."
 
 #: 
 msgid "See it in EDS"
@@ -673,12 +693,12 @@ msgid "Published: "
 msgstr "Publicado: "
 
 #: 
-msgid "Language: "
-msgstr "Idioma: "
-
-#: 
 msgid "No results were found."
 msgstr "No se encontraron resultados."
+
+#: 
+msgid "Result #"
+msgstr "Resultado #"
 
 #: 
 msgid "Title is not available"
@@ -705,22 +725,6 @@ msgid "Subjects:"
 msgstr "Materias:"
 
 #: 
-msgid "SELECT userid, password, profile FROM oauth WHERE oauth_consumer_key"
-msgstr "SELECIONE ID de usuario, contraseña, perfil DE OAuth DONDE oauth_consumer_key"
-
-#: 
-msgid "AND secret"
-msgstr "Y secreto"
-
-#: 
-msgid "SELECT id FROM credentials WHERE userid"
-msgstr "SELECCIONE id DE credenciales DONDE usuario"
-
-#: 
-msgid "AND password"
-msgstr "Y secreto"
-
-#: 
 msgid "Key:"
 msgstr "Llave: "
 
@@ -734,7 +738,7 @@ msgstr "Administración"
 
 #: 
 msgid "Total Lists"
-msgstr "Listas totales"
+msgstr "Total de listas"
 
 #: 
 msgid "Total People Using Tool"
@@ -762,7 +766,7 @@ msgstr "Regreso al curso"
 
 #: 
 msgid "See Current Reading List"
-msgstr "Ver la lisita de lectura actual"
+msgstr "Ver la Lsita de lectura actual"
 
 #: 
 msgid "Update"
@@ -777,28 +781,21 @@ msgid " notes"
 msgstr " notas"
 
 #: 
+#, fuzzy
 msgid "Save notes"
-msgstr "Salvar notas"
+msgstr "salvar notas"
 
 #: 
-msgid "Edit"
-msgstr "Editar"
+msgid "edit notes"
+msgstr "editar notas"
 
 #: 
 msgid "items"
 msgstr "Ejemplares"
 
 #: 
-msgid "Move to folder"
-msgstr "mover a carpeta"
-
-#: 
 msgid "currently selected"
 msgstr "actualmente seleccionado"
-
-#: 
-msgid "Characters remaining"
-msgstr "Caracteres restantes"
 
 #: 
 msgid "Result"
@@ -809,7 +806,7 @@ msgid "Folder name"
 msgstr "Nombre de la carpeta"
 
 #: 
-msgid "Back to main list"
+msgid "Back to the main list"
 msgstr "Regreso a la lista principal"
 
 #: 
@@ -822,7 +819,7 @@ msgstr "Contactar"
 
 #: 
 msgid "for assistance with this tool."
-msgstr "Para asistencia con esta herramienta."
+msgstr "Para sistencia con esta herramienta."
 
 #: 
 msgid "Download Export File"
@@ -837,11 +834,13 @@ msgid "Download Student Data"
 msgstr "Descargar información de estudiantes"
 
 #: 
+#, fuzzy
 msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
 msgstr "Tenga cuidado al editar estos ajustes, ya que anularán los ajustes originalmente configurados en la pantalla de configuración LTI de su LMS. Inicie por lo menos una lista de lectura de su LMS para rellenar estos campos, o póngase en contacto con eds@ebscohost.com para obtener ayuda con estos ajustes."
 
 #: 
-msgid "If you change the"
+#, fuzzy
+msgid "If you change the "
 msgstr "Si cambia el"
 
 #: 
@@ -858,11 +857,7 @@ msgstr "Identificador del perfil API"
 
 #: 
 msgid "you will need to log out and log back in to see accurate statistics and lists."
-msgstr "tendrá que cerrar sesión y volver a iniciar sesión para ver estadísticas y listas."
-
-#: 
-msgid "EBSCO User ID"
-msgstr "Identificador de usuario de EBSCO"
+msgstr "tendrá que cerrar sesión y volver a iniciar sesión para ver estadísticas y listas exactas."
 
 #: 
 msgid "Select"
@@ -875,10 +870,6 @@ msgstr "un ID de usuario y una combinación de contraseñas de la sección Auten
 #: 
 msgid "The username/password combo must be associated with the group containing the profile specified below."
 msgstr "El combo usuario/contraseña debe estar asociado con el grupo que contiene el perfil especificado a continuación."
-
-#: 
-msgid "EBSCO Password"
-msgstr "Contraseña de Ebsco"
 
 #: 
 msgid "Total Readings"
@@ -982,7 +973,7 @@ msgstr "Enlace a páginas de ayuda"
 
 #: 
 msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
-msgstr "para esta opción significa que se pedirá a los instructores al iniciar una nueva lista para crear una nueva lista desde cero o seleccionarla en una lista de listas con nombres similares para usarla para pre popular la nueva lista. Si"
+msgstr "para esta opción significa que se pedirá a los instructores al iniciar una nueva lista para crear una nueva lista desde cero o seleccionarla en una lista de listas con nombres similares para usarla para prepopular la nueva lista. Si"
 
 #: 
 msgid "is selected, all new lists will be blank."
@@ -1025,10 +1016,6 @@ msgid "Spanish"
 msgstr "Español"
 
 #: 
-msgid "English"
-msgstr "Inglés"
-
-#: 
 msgid "German"
 msgstr "Alemán"
 
@@ -1041,8 +1028,110 @@ msgid "Portuguese"
 msgstr "Portugués"
 
 #: 
-msgid "Select one:"
-msgstr "Seleccione uno:"
+msgid "French"
+msgstr "Francés"
+
+#: 
+#, fuzzy
+msgid "Simplified Chinese"
+msgstr "Chino (simplificado)"
+
+#: 
+#, fuzzy
+msgid "traditional Chinese"
+msgstr "Chino (traditional)"
+
+#: 
+msgid "Japanese"
+msgstr "Japonés"
+
+#: 
+msgid "Polish"
+msgstr "Polaco"
+
+#: 
+msgid "Swedish"
+msgstr "Sueco"
+
+#: 
+msgid "Thai"
+msgstr "Tailandés"
+
+#: 
+msgid "Turkish"
+msgstr "Turco"
+
+#: 
+msgid "Required"
+msgstr "Requerido"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "Ej. Profesor"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Proxy prefijo aquí; si utiliza WAM, puede utilizar {targetURLdomain} para especificar el dominio de su proxy WAM - el resto se colocará al final"
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "Correo electrónico para la persona de contacto para la herramienta"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "Texto de marca en la parte superior de la pantalla"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "Ej. Ver registro en EDS"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "Ej. Buscar recursos de la biblioteca"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Opcional. URL para hoja de estilo CSS"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "URL de LibGuide u otras páginas de ayuda"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "Ej. un aviso de copyright"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "Etiqueta para Vinculo de EDS"
+
+#: 
+msgid "Label for Search Box"
+msgstr "Etiqueta para caja de búsqueda"
+
+#: 
+msgid "Collect Student Data"
+msgstr "Recolectar datos de los estudiantes"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "URL para la pagina de la Biblioteca"
+
+#: 
+msgid "Search Library Resources"
+msgstr "Buscar en recursos de la Biblioteca"
+
+#: 
+msgid "Update Settings"
+msgstr "Actualizar Ajustes"
+
+#: 
+msgid "Expander: "
+msgstr "Expandir: "
+
+#: 
+msgid "Edit"
+msgstr "Editar"
 
 #: 
 msgid "Relevance"
@@ -1225,22 +1314,40 @@ msgid "Periodical"
 msgstr "Publicación periódica"
 
 #: 
-msgid "Label for Link to EDS"
-msgstr "Etiqueta para Vinculo de EDS"
-
-#: 
-msgid "Label for Search Box"
-msgstr "Etiqueta para caja de búsqueda"
-
-#: 
-msgid "Collect Student Data"
-msgstr "Recolectar datos de los estudiantes"
-
-#: 
 msgid "Selecting"
 msgstr "Seleccionando"
 
 #: 
-msgid "Update Settings"
-msgstr "Actualizar Ajustes"
+msgid "Publication Year"
+msgstr "Año de publicacíon"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "Usted no tiene otras listas de lectura."
+
+#: 
+msgid "No statistics to report yet."
+msgstr "No se han reportado estadísticas aun."
+
+#: 
+msgid "Select one:"
+msgstr "Seleccione uno:"
+
+#: 
+msgid "Hebrew"
+msgstr "Hebreo"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "Universidad"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "Colección"
+
+#: 
+msgid "Generate list"
+msgstr "Generar lista"
 

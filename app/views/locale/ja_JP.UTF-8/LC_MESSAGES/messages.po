@@ -80,15 +80,13 @@ msgid "Curriculum Builder Settings"
 msgstr "Curriculum Builder 設定"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings.<br /><br />If you change the <strong>user id</strong>, <strong>password</strong> or <strong>API profile ID</strong>, you will need to log out and log back in to see accurate statistics and lists."
-msgstr "これらの設定はLMSのLTI構成画面での初期設定を上書きするので変更には注意が必要です。これらのフィールド設定を反映させるには少なくとも1つのリーディングリストをLMSに追加するか、eds@ebscohost.comに問い合わせてください。<br /><br /><strong>ユーザID</strong>、<strong>パスワード</strong>、<strong>APIプロファイルID</strong>を変更した場合には、一旦ログアウトしてログインし直さないと正しい統計やリストを見ることができません。"
-
-#: 
-msgid "Your EBSCO User ID"
+#, fuzzy
+msgid "EBSCO User ID"
 msgstr "EBSCOユーザID"
 
 #: 
-msgid "Your EBSCO Password"
+#, fuzzy
+msgid "EBSCO Password"
 msgstr "EBSCOパスワード"
 
 #: 
@@ -288,7 +286,7 @@ msgid "Oops! An error occurred. The data for one or more records is incomplete. 
 msgstr "エラーが発生しました。1つ以上のレコードでデータが不完全です。各アイテムに完全なレコードを含むことを確認のうえ、再度実行してください。"
 
 #: 
-msgid " Enter bibliographic info from the list into this box:"
+msgid "Enter bibliographic info from the list into this box:"
 msgstr " リストの書誌情報をこのボックスに入力してください:"
 
 #: 
@@ -505,7 +503,8 @@ msgid "Removing..."
 msgstr "削除中…"
 
 #: 
-msgid "Move to folder: "
+#, fuzzy
+msgid "Move to folder"
 msgstr "フォルダに移動:"
 
 #: 
@@ -561,7 +560,8 @@ msgid "No students have read this item.  A list of names will appear here when a
 msgstr "このアイテムを購読した学生はいません。少なくとも1人がクリックすれば学生の名前がリスト表示されます。"
 
 #: 
-msgid "Characters remaining: "
+#, fuzzy
+msgid "Characters remaining"
 msgstr "残り文字数:"
 
 #: 
@@ -758,309 +758,592 @@ msgstr "コース"
 
 #: 
 msgid "Search"
-msgstr "Search"
+msgstr "検索"
 
 #: 
 msgid "Return to Course"
-msgstr "Return to Course"
+msgstr "コースに戻る"
 
 #: 
 msgid "See Current Reading List"
-msgstr "See Current Reading List"
+msgstr "現在のリーディング・リストを見る"
 
 #: 
 msgid "Update"
-msgstr "Update"
+msgstr "更新"
 
 #: 
 msgid "Add"
-msgstr "Add"
+msgstr "追加"
 
 #: 
 msgid " notes"
-msgstr " notes"
+msgstr "ノート"
 
 #: 
-msgid "save notes"
-msgstr "save notes"
+msgid "Save notes"
+msgstr "ノートを保存"
 
 #: 
 msgid "edit notes"
-msgstr "edit notes"
+msgstr "ノートを編集"
 
 #: 
 msgid "items"
-msgstr "items"
-
-#: 
-msgid "move to folder"
-msgstr "move to folder"
+msgstr "アイテム"
 
 #: 
 msgid "currently selected"
-msgstr "currently selected"
-
-#: 
-msgid "characters remaining"
-msgstr "characters remaining"
+msgstr "現在の選択"
 
 #: 
 msgid "Result"
-msgstr "Result"
+msgstr "結果"
 
 #: 
 msgid "Folder name"
-msgstr "Folder name"
+msgstr "フォルダ名"
 
 #: 
 msgid "Back to the main list"
-msgstr "Back to the main list"
+msgstr "メインリストに戻る"
 
 #: 
 msgid "Save Changes"
-msgstr "Save Changes"
+msgstr "変更を保存"
 
 #: 
 msgid "Contact"
-msgstr "Contact"
+msgstr "コンタクト"
 
 #: 
 msgid "for assistance with this tool."
-msgstr "for assistance with this tool."
+msgstr "このツールのアシスタンス"
 
 #: 
 msgid "Download Export File"
-msgstr "Download Export File"
+msgstr "エクスポート・ファイルのダウンロード"
 
 #: 
 msgid "Import from Export File"
-msgstr "Import from Export File"
+msgstr "エクスポート・ファイルからのインポート"
 
 #: 
 msgid "Download Student Data"
-msgstr "Download Student Data"
+msgstr "学生データのダウンロード"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
-msgstr "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "これらの設定の編集には注意が必要です。LMSのLTI設定画面でセットアップされた、元々の設定を上書きしてしまう可能性があります。これらのフィールドに値を設定するには、自分のLMSから少なくとも一つのリーディング・リストをローンチしてください。もしくは、eds@ebscohost.comにこれらの設定のアシスタンスを依頼してください。"
 
 #: 
-msgid "If you change the"
-msgstr "If you change the"
+msgid "If you change the "
+msgstr "もし␣を変更する場合"
 
 #: 
 msgid "user id"
-msgstr "user id"
+msgstr "ユーザーID"
 
 #: 
 msgid "password"
-msgstr "password"
+msgstr "パスワード"
 
 #: 
 msgid "API profile ID"
-msgstr "API profile ID"
+msgstr "APIプロファイルID"
 
 #: 
 msgid "you will need to log out and log back in to see accurate statistics and lists."
-msgstr "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "正確な統計とリストを見るためには、ログアウトしてもう一度ログインする必要があります。"
 
 #: 
 msgid "Select"
-msgstr "Select"
+msgstr "選択"
 
 #: 
 msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
-msgstr "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "EBSCOアドミンのAuthenticationセクションからのユーザーIDとパスワードの組み合わせ"
 
 #: 
 msgid "The username/password combo must be associated with the group containing the profile specified below."
-msgstr "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "ユーザー名/パスワードの組みまわせは以下に指定されプロファイルを含むグループに関連付けられている必要があります。"
 
 #: 
 msgid "Total Readings"
-msgstr "Total Readings"
+msgstr "全部のリーディング"
 
 #: 
 msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
-msgstr "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "これはカリキュラム・ビルダーで使用するEDS APIプロファイルです。 上記で入力したユーザーIDとパスワードがアクセスできるグループに含まれている必要があります。"
 
 #: 
 msgid "EDS API Profile ID"
-msgstr "EDS API Profile ID"
+msgstr "EDS APIプロファイルID"
 
 #: 
 msgid "LMS Roles that can edit lists (comma-separated)"
-msgstr "LMS Roles that can edit lists (comma-separated)"
+msgstr "リストを編集できるLMSロール（カンマ区切り）"
 
 #: 
 msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
-msgstr "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "デフォルトでは、インストラクターとティーチング・アシスタントのみがリストを編集できます。 ただし、ここにロールを追加して、他のタイプのユーザーがリストを編集できるようにすることができます。"
 
 #: 
 msgid "Default:"
-msgstr "Default:"
+msgstr "デフォルト："
 
 #: 
 msgid "Proxy Prefix for CustomLinks"
-msgstr "Proxy Prefix for CustomLinks"
+msgstr "カスタムリンクのプロキシ・プレフィクス"
 
 #: 
 msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
-msgstr "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "入力されると、カリキュラム・ビルダーに表示されるカスタムリンクのすべてにこのプロキシが適用されます。"
 
 #: 
 msgid "Examples"
-msgstr "Examples"
+msgstr "例"
 
 #: 
 msgid "Proxy should encode target URL"
-msgstr "Proxy should encode target URL"
+msgstr "プロキシはターゲットURLをエンコードする必要があります。"
 
 #: 
 msgid "If your proxy prefix ends with"
-msgstr "If your proxy prefix ends with"
+msgstr "もしプロキシ・プレフィクスが次で終わる場合："
 
 #: 
 msgid "this probably needs to be set to"
-msgstr "this probably needs to be set to"
+msgstr "これはおそらく次のように設定する必要があります："
 
 #: 
 msgid "otherwise"
-msgstr "otherwise"
+msgstr "あるいは"
 
 #: 
 msgid "is probably correct."
-msgstr "is probably correct."
+msgstr "はおそらく正しいでしょう。"
 
 #: 
 msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
-msgstr "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "あなたのLMSがHTTPS経由でCurriculum Builderにアクセスする場合、あなたのロゴもHTTPS経由で利用できるべきです。"
 
 #: 
 msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
-msgstr "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "このテキストは、ヘッダー内のリストのタイトルの下に表示されます。 URLは自動的にハイパーリンクされます。"
 
 #: 
 msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
-msgstr "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "これは、詳細レコードの左側に表示されるリンクのラベルで、ユーザーがレコードを見るためのEBSCOディスカバリーサービスへ導きます。 空白のままにすると、EDSへのリンクは表示されません。"
 
 #: 
 msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
-msgstr "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "CSSファイルのURLを入力します。 このファイルのスタイルはカリキュラム・ビルダーの画面に適用されます。 LMSがHTTPSのみの場合は、HTTPSアドレスでなければなりません。"
 
 #: 
 msgid "Optional."
-msgstr "Optional."
+msgstr "任意。"
 
 #: 
 msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
-msgstr "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "は生徒の名前、メールアドレス、IDを収集します。 これらのデータは、生徒がリーディングをクリックした時に、コースのインストラクターに通知するために使用されます。 また、図書館に提供されるレポートにある、これらのフィールドに値を入れます。 メールの収集のみを無効にするには、LMSインストラクターがこの情報をツール提供者と共有しないよう選択できます。"
 
 #: 
 msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
-msgstr "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "は、リーディングをクリックした生徒の名前を教員に提供しません。 ただし、図書館には、いつ、どのリーディングにアクセスされ、アクセスしたLMSのuserIDのみのレポートが提供されます。"
 
 #: 
 msgid "Anonymized"
-msgstr "Anonymized"
+msgstr "匿名化"
 
 #: 
 msgid "None"
-msgstr "None"
+msgstr "なし"
 
 #: 
 msgid "will collect no student activity. No reporting will be available."
-msgstr "will collect no student activity. No reporting will be available."
+msgstr "は学生のアクティビティを収集しません。 レポートは利用できません。"
 
 #: 
 msgid "Link to Help Pages"
-msgstr "Link to Help Pages"
+msgstr "ヘルプ・ページへのリンク"
 
 #: 
 msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
-msgstr "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "このオプションでは、インストラクターは、新しいリストを最初から作成するか、同様の名前のリストから事前入力されたリストを利用して新しいリストを作成するかの選択を促されます。 もし"
 
 #: 
 msgid "is selected, all new lists will be blank."
-msgstr "is selected, all new lists will be blank."
+msgstr "が選択されると、すべての新しいリストはブランクになります。"
 
 #: 
 msgid "Hide"
-msgstr "Hide"
+msgstr "隠す"
 
 #: 
 msgid "and"
-msgstr "and"
+msgstr "と"
 
 #: 
 msgid "Available in Library Collection"
-msgstr "Available in Library Collection"
+msgstr "図書館のコレクションで入手可能"
 
 #: 
 msgid "Limiters"
-msgstr "Limiters"
+msgstr "リミター"
 
 #: 
 msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
-msgstr "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "これらのリミッターを非表示にすると、教員がこれらのチェックを外すのを防ぎ、あなたのコレクションに含まれないアイテムを読書リストに追加することを不可能にします。"
 
 #: 
 msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
-msgstr "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "このリンクはLMSによって提供されます。 LMSが正しく設定されている場合、ユーザーはコースのサイトにリダイレクトされます"
 
 #: 
 msgid "Show First Full Text Link Only"
-msgstr "Show First Full Text Link Only"
+msgstr "最初のフルテキストリンクだけを表示する"
 
 #: 
 msgid "Language"
-msgstr "Language"
+msgstr "言語"
 
 #: 
 msgid "Spanish"
-msgstr "Spanish"
+msgstr "スペイン語"
 
 #: 
 msgid "German"
-msgstr "German"
+msgstr "ドイツ語"
 
 #: 
 msgid "Italian"
-msgstr "Italian"
+msgstr "イタリア語"
 
 #: 
 msgid "Portuguese"
-msgstr "Portuguese"
+msgstr "ポルトガル語"
 
 #: 
 msgid "French"
-msgstr "French"
+msgstr "フランス語"
 
 #: 
-msgid "Chinese (simplified)"
-msgstr "Chinese (simplified)"
+msgid "Simplified Chinese"
+msgstr "中国語（簡体字）"
 
 #: 
-msgid "Chinese (traditional)"
-msgstr "Chinese (traditional)"
+msgid "traditional Chinese"
+msgstr "中国語（繁体字）"
 
 #: 
 msgid "Japanese"
-msgstr "Japanese"
+msgstr "日本語"
 
 #: 
 msgid "Polish"
-msgstr "Polish"
+msgstr "ポーランド語"
 
 #: 
 msgid "Swedish"
-msgstr "Swedish"
+msgstr "スウェーデン語"
 
 #: 
 msgid "Thai"
-msgstr "Thai"
+msgstr "タイ語"
 
 #: 
 msgid "Turkish"
-msgstr "Turkish"
+msgstr "トルコ語"
+
+#: 
+msgid "Required"
+msgstr "必須"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "例：インストラクター"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "プロキシ・プレフィクスはここです；WAMを使用している場合は、{targetURLdomain}を使用してWAMプロキシのドメインを指定できます。残りの部分は末尾に配置されます。"
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "ツールの連絡先へのメール"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "画面上部のテキストのブランディング"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "例：EDSのレコードを見る"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "例：図書館リソースの検索"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "任意。 CSSスタイルシートのURL"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "LibGuideまたはその他のヘルプページのURL"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "例えば、著作権表示"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "EDSへのリンクのラベル"
+
+#: 
+msgid "Label for Search Box"
+msgstr "検索ボックスのラベル"
+
+#: 
+msgid "Collect Student Data"
+msgstr "学生データの収集"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "図書館ホームページへのURL"
+
+#: 
+msgid "Search Library Resources"
+msgstr "図書館リソースの検索"
+
+#: 
+msgid "Update Settings"
+msgstr "設定の更新"
+
+#: 
+msgid "Expander: "
+msgstr "エキスパンダー:␣"
+
+#: 
+msgid "Edit"
+msgstr "編集"
+
+#: 
+msgid "Relevance"
+msgstr "関連"
+
+#: 
+msgid "Source Type"
+msgstr "ソース・タイプ"
+
+#: 
+msgid "Subject"
+msgstr "主題"
+
+#: 
+msgid "Publication"
+msgstr "出版物"
+
+#: 
+msgid "Geography"
+msgstr "地理"
+
+#: 
+msgid "Content Provider"
+msgstr "コンテンツ・プロバイダー"
+
+#: 
+msgid "Academic Journal"
+msgstr "学術誌"
+
+#: 
+msgid "Biographie"
+msgstr "伝記"
+
+#: 
+msgid "Book"
+msgstr "書籍"
+
+#: 
+msgid "Conference Material"
+msgstr "会議資料"
+
+#: 
+msgid "Magazine"
+msgstr "雑誌"
+
+#: 
+msgid "New"
+msgstr "New"
+
+#: 
+msgid "Primary Source Document"
+msgstr "一次資料ドキュメント\n"
+""
+
+#: 
+msgid "Report"
+msgstr "レポート"
+
+#: 
+msgid "Review"
+msgstr "レビュー"
+
+#: 
+msgid "Trade Publication"
+msgstr "業界誌"
+
+#: 
+msgid "Date Newest"
+msgstr "一番最近の日付"
+
+#: 
+msgid "Date Oldest"
+msgstr "一番古い日付"
+
+#: 
+msgid "Authors"
+msgstr "著者"
+
+#: 
+msgid "Document Type"
+msgstr "ドキュメント・タイプ"
+
+#: 
+msgid "Subject Terms"
+msgstr "主題用語"
+
+#: 
+msgid "Author-Supplied Keywords"
+msgstr "著者によるキーワード"
+
+#: 
+msgid "Abstract"
+msgstr "抄録"
+
+#: 
+msgid "Author Affiliations"
+msgstr "著者略歴"
+
+#: 
+msgid "Accession Number"
+msgstr "受入番号"
+
+#: 
+msgid "Publisher"
+msgstr "出版社"
+
+#: 
+msgid "Source"
+msgstr "ソース"
+
+#: 
+msgid "Geographic Terms"
+msgstr "地理用語"
+
+#: 
+msgid "Academic Journals"
+msgstr "学術誌"
+
+#: 
+msgid "Books"
+msgstr "書籍"
+
+#: 
+msgid "Conference Materials"
+msgstr "会議資料"
+
+#: 
+msgid "Magazines"
+msgstr "雑誌"
+
+#: 
+msgid "Biographies"
+msgstr "伝記"
+
+#: 
+msgid "News"
+msgstr "ニュース"
+
+#: 
+msgid "Primary Source Documents"
+msgstr "一次資料ドキュメント"
+
+#: 
+msgid "Reports"
+msgstr "レポート"
+
+#: 
+msgid "Reviews"
+msgstr "レビュー"
+
+#: 
+msgid "Trade Publications"
+msgstr "業界誌"
+
+#: 
+msgid "Apply equivalent subjects"
+msgstr "同意義のサブジェクトを適用する"
+
+#: 
+msgid "Apply related words"
+msgstr "関連するワードを適用する"
+
+#: 
+msgid "Also search within the full text of the articles"
+msgstr "記事のフルテキストでも検索する"
+
+#: 
+msgid "References Available"
+msgstr "利用可能なリファレンス"
+
+#: 
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "学術研究（査読）ジャーナル"
+
+#: 
+msgid "Library Home"
+msgstr "図書館ホーム"
+
+#: 
+msgid "Periodical"
+msgstr "定期出版物"
+
+#: 
+msgid "Selecting"
+msgstr "選択中"
+
+#: 
+msgid "Publication Year"
+msgstr "出版年"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "他の読書リストはありません。"
+
+#: 
+msgid "No statistics to report yet."
+msgstr "報告する統計情報はまだありません。"
+
+#: 
+msgid "Select one:"
+msgstr "一つ選択してください："
+
+#: 
+msgid "Hebrew"
+msgstr "ヘブライ語"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "大学"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "コレクション"
+
+#: 
+msgid "Generate list"
+msgstr "リストを生成する"
 

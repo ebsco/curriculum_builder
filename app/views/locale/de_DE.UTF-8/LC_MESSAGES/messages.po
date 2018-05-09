@@ -80,15 +80,13 @@ msgid "Curriculum Builder Settings"
 msgstr "Curriculum Builder Einstellungen"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings.<br /><br />If you change the <strong>user id</strong>, <strong>password</strong> or <strong>API profile ID</strong>, you will need to log out and log back in to see accurate statistics and lists."
-msgstr "Bitte seien Sie vorsichtig, wenn Sie diese Einstellungen bearbeiten, da diese die Einstellungen überschreiben, die ursprünglich in der LTI Konfiguration des LMS festgelegt wurden. Bitte öffnen Sie zu mindestens eine Leseliste aus dem LMS, damit die Einstellungen übernommen werden können. Sofern benötigt, kontaktieren Sie eds@ebscohost.com für Unterstützung bei diesen Einstellungen <br/><br/> Sollten Sie <strong>user id</strong>, <strong>password</strong> oder <strong>API profile ID</strong> verändern, loggen Sie sich aus und erneut ein, damit Statistiken und Listen aktualisiert werden können."
-
-#: 
-msgid "Your EBSCO User ID"
+#, fuzzy
+msgid "EBSCO User ID"
 msgstr "Ihre EBSCO Nutzer-ID"
 
 #: 
-msgid "Your EBSCO Password"
+#, fuzzy
+msgid "EBSCO Password"
 msgstr "Ihr EBSCO Passwort"
 
 #: 
@@ -288,7 +286,7 @@ msgid "Oops! An error occurred. The data for one or more records is incomplete. 
 msgstr "Ein Fehler ist aufgetreten. Die Daten für einen oder mehrere Datensätze ist unvollständig. Bitte versuchen Sie es erneut und stellen Sie sicher, den vollständigen Datensatz einzuschliessen."
 
 #: 
-msgid " Enter bibliographic info from the list into this box:"
+msgid "Enter bibliographic info from the list into this box:"
 msgstr " Fügen Sie die bibliografischen Informationen aus der Liste in diese Box ein:"
 
 #: 
@@ -473,7 +471,7 @@ msgstr "Hauptleseliste"
 
 #: 
 msgid "Add Web Resource"
-msgstr "Web-Quelle hinzufügen"
+msgstr "Internetquelle hinzufügen"
 
 #: 
 msgid "URL"
@@ -504,12 +502,13 @@ msgid "Removing..."
 msgstr "Entfernen..."
 
 #: 
-msgid "Move to folder: "
-msgstr "In Ordner verschieben:"
+#, fuzzy
+msgid "Move to folder"
+msgstr "In Ordner verschieben "
 
 #: 
 msgid "No Folder"
-msgstr "Keine Ordner"
+msgstr "Kein Ordner"
 
 #: 
 msgid "Delete"
@@ -560,8 +559,9 @@ msgid "No students have read this item.  A list of names will appear here when a
 msgstr "Bisher hat kein Student diesen Eintrag ausgewählt. Eine Liste der Namen wird hier erscheinen, sobald zu mindestens ein Student diesen Eintrag ausgewählt hat."
 
 #: 
-msgid "Characters remaining: "
-msgstr "Noch verfügbare Zeichen:"
+#, fuzzy
+msgid "Characters remaining"
+msgstr "Noch verfügbare Zeichen "
 
 #: 
 msgid "Removing... please wait."
@@ -777,10 +777,11 @@ msgstr "Hinzufügen"
 
 #: 
 msgid " notes"
-msgstr "␣Notizen"
+msgstr " Notizen"
 
 #: 
-msgid "save notes"
+#, fuzzy
+msgid "Save notes"
 msgstr "Notiz speichern"
 
 #: 
@@ -792,16 +793,8 @@ msgid "items"
 msgstr "Einträge"
 
 #: 
-msgid "move to folder"
-msgstr "In Ordner verschieben"
-
-#: 
 msgid "currently selected"
 msgstr "aktuelle Auswahl"
-
-#: 
-msgid "characters remaining"
-msgstr "verfügbare Zeichen"
 
 #: 
 msgid "Result"
@@ -840,11 +833,13 @@ msgid "Download Student Data"
 msgstr "Studentendaten herunterlade"
 
 #: 
-msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen. Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+#, fuzzy
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
 msgstr "Bitte seien Sie vorsichtig, wenn Sie diese Werte verändern, da diese die ursprüngliche Einstellung aus der LTI-Konfiguration Ihres LMS überschreiben. Bitte testen Sie zu mindestens eine Leseliste aus Ihrem LMS, um diese Felder zu befüllen, or kontaktieren Sie eds@ebscohost.com für Unterstützung."
 
 #: 
-msgid "If you change the"
+#, fuzzy
+msgid "If you change the "
 msgstr "Wenn Sie folgendes ändern"
 
 #: 
@@ -1036,11 +1031,13 @@ msgid "French"
 msgstr "Französisch"
 
 #: 
-msgid "Chinese (simplified)"
+#, fuzzy
+msgid "Simplified Chinese"
 msgstr "Chinesisch (vereinfacht)"
 
 #: 
-msgid "Chinese (traditional)"
+#, fuzzy
+msgid "traditional Chinese"
 msgstr "Chinesisch (traditionell)"
 
 #: 
@@ -1062,4 +1059,295 @@ msgstr "Thai"
 #: 
 msgid "Turkish"
 msgstr "Türkisch"
+
+#: 
+msgid "Required"
+msgstr "Obligatorisch"
+
+#: 
+msgid "e.g., Instructor"
+msgstr "z.B. Lehrbeauftragter"
+
+#: 
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Proxy-Prefix; sofern Sie einen WAM Proxy nutzen, können Sie {targetURLdomain} verwenden, um den Domain-Name Ihres WAM Proxy zu hinterlegen, die restliche URL wird ans Ende der URL gesetzt"
+
+#: 
+msgid "Email for contact person for tool"
+msgstr "E-Mail für die Kontaktperson für dieses Werkzeug"
+
+#: 
+msgid "Branding text at top of screen"
+msgstr "Branding-Text am Bildschirmanfang"
+
+#: 
+msgid "e.g., See Record in EDS"
+msgstr "z.B. Datensatz in EDS anzeigen"
+
+#: 
+msgid "e.g., Search for Library Resources"
+msgstr "z.B. Durchsuchen Sie Bibliotheksressourcen"
+
+#: 
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Optional. URL eines CSS Stylesheets"
+
+#: 
+msgid "URL for LibGuide or other help pages"
+msgstr "URL für LibGuide oder andere Hilfeseiten"
+
+#: 
+msgid "e.g., a copyright notice"
+msgstr "z.B. einen Urheberrechtshinweis"
+
+#: 
+msgid "Label for Link to EDS"
+msgstr "Benennung des Links zu EDS"
+
+#: 
+msgid "Label for Search Box"
+msgstr "Benennung der Suchbox"
+
+#: 
+msgid "Collect Student Data"
+msgstr "Nutzerdaten sammeln"
+
+#: 
+msgid "URL to Library Home Page"
+msgstr "UR zur Bibliothekswebseite"
+
+#: 
+msgid "Search Library Resources"
+msgstr "Bibliotheksresourcen durchsuchen"
+
+#: 
+msgid "Update Settings"
+msgstr "Einstellungen aktualisieren"
+
+#: 
+msgid "Expander: "
+msgstr "Erweiterungen: "
+
+#: 
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: 
+msgid "Relevance"
+msgstr "Relevanz"
+
+#: 
+msgid "Source Type"
+msgstr "Quelltypen"
+
+#: 
+msgid "Subject"
+msgstr "Thema"
+
+#: 
+msgid "Publication"
+msgstr "Publikation"
+
+#: 
+msgid "Geography"
+msgstr "Geografie"
+
+#: 
+msgid "Content Provider"
+msgstr "Inhaltsanbieter"
+
+#: 
+msgid "Academic Journal"
+msgstr "Wissensch. Zeitschrift"
+
+#: 
+msgid "Biographie"
+msgstr "Biografien"
+
+#: 
+msgid "Book"
+msgstr "Buch"
+
+#: 
+msgid "Conference Material"
+msgstr "Konferenzmaterialien"
+
+#: 
+msgid "Magazine"
+msgstr "Zeitschrift"
+
+#: 
+msgid "New"
+msgstr "Neu"
+
+#: 
+msgid "Primary Source Document"
+msgstr "Primärquellen"
+
+#: 
+msgid "Report"
+msgstr "Bericht"
+
+#: 
+msgid "Review"
+msgstr "Rezension"
+
+#: 
+msgid "Trade Publication"
+msgstr "Handelspublikationen"
+
+#: 
+msgid "Date Newest"
+msgstr "Jüngstes Datum"
+
+#: 
+msgid "Date Oldest"
+msgstr "Ältestes Datum"
+
+#: 
+msgid "Authors"
+msgstr "Autoren"
+
+#: 
+msgid "Document Type"
+msgstr "Dokumenttyp"
+
+#: 
+msgid "Subject Terms"
+msgstr "Schlagwörter"
+
+#: 
+msgid "Author-Supplied Keywords"
+msgstr "Stichwörter der Autoren"
+
+#: 
+msgid "Abstract"
+msgstr "Abstract"
+
+#: 
+msgid "Author Affiliations"
+msgstr "Autorzugehörigkeiten"
+
+#: 
+msgid "Accession Number"
+msgstr "Akzessionsnummer"
+
+#: 
+msgid "Publisher"
+msgstr "Verlag"
+
+#: 
+msgid "Source"
+msgstr "Quelle"
+
+#: 
+msgid "Geographic Terms"
+msgstr "Geografische Schlagworte"
+
+#: 
+msgid "Academic Journals"
+msgstr "Wissenschaftliche Zeitschriften"
+
+#: 
+msgid "Books"
+msgstr "Bücher"
+
+#: 
+msgid "Conference Materials"
+msgstr "Konferenzmaterialien"
+
+#: 
+msgid "Magazines"
+msgstr "Zeitschriften"
+
+#: 
+msgid "Biographies"
+msgstr "Biografien"
+
+#: 
+msgid "News"
+msgstr "Presse/Nachrichten"
+
+#: 
+msgid "Primary Source Documents"
+msgstr "Primärquellen"
+
+#: 
+msgid "Reports"
+msgstr "Berichte"
+
+#: 
+msgid "Reviews"
+msgstr "Rezensionen"
+
+#: 
+msgid "Trade Publications"
+msgstr "Handelspublikationen"
+
+#: 
+msgid "Apply equivalent subjects"
+msgstr "Entsprechende Themen anwenden"
+
+#: 
+msgid "Apply related words"
+msgstr "Verwandte Wörter verwenden"
+
+#: 
+msgid "Also search within the full text of the articles"
+msgstr "Auch innerhalb des Volltext-Artikels suchen"
+
+#: 
+msgid "References Available"
+msgstr "Referenzen verfügbar"
+
+#: 
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Peer-Reviewed"
+
+#: 
+msgid "Library Home"
+msgstr "Bibliothekswebseite"
+
+#: 
+msgid "Periodical"
+msgstr "Zeitschrift"
+
+#. Do we have context for this one, please?
+#: 
+msgid "Selecting"
+msgstr "Auswählen"
+
+#: 
+msgid "Publication Year"
+msgstr "Jahr der Veröffentlichung"
+
+#: 
+msgid "You have no other reading lists."
+msgstr "Sie haben keine anderen Leselisten."
+
+#: 
+msgid "No statistics to report yet."
+msgstr "Noch keine Statistiken."
+
+#: 
+msgid "Select one:"
+msgstr "Wähle eins:"
+
+#: 
+msgid "Hebrew"
+msgstr "hebräisch"
+
+#: 
+msgctxt "Facet"
+msgid "University"
+msgstr "Universität"
+
+#: 
+msgctxt "Facet"
+msgid "Collection"
+msgstr "Sammlung"
+
+#: 
+msgid "Generate list"
+msgstr "Liste generieren"
 

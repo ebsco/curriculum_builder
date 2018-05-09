@@ -512,6 +512,24 @@ if ($v3 == 0) {
     echo "<p><em>Version 2.3c Update</em>: <strong>Role Empowerment</strong> is already included in your installation.  No update needed.</p>";
 }
 
+$sql = "SHOW COLUMNS FROM oauth;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'language') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE oauth ADD language VARCHAR(25); ";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>language</strong> to lists.</p>";
+} else {
+    echo "<p><em>Version 2.3c Update</em>: <strong>language</strong> is already included in your installation.  No update needed.</p>";
+}
+
 $sql = "SHOW COLUMNS FROM studentreading;";
 $results = mysqli_query($c,$sql);
 $v3 = 0;

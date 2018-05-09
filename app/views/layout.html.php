@@ -28,10 +28,21 @@
 	bindtextdomain("messages", dirname(__FILE__)."/locale");                                
 	bind_textdomain_codeset('messages', 'UTF-8');
 	textdomain("messages");
+	
+	//define direction of the page RTL support
+	$langRTL = array (
+			"he_HE.UTF-8",
+			"he_IL.UTF-8"
+		);
+	
+	$pageDir="ltr";
+	if (in_array($language, $langRTL)) {
+		$pageDir="rtl";
+	}
 
 ?>
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="<?php echo $pageDir; ?>">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Search</title>
@@ -75,18 +86,21 @@
 				
 				// check if language exists and remove it , because its already set on the cookie
 				$a1=array (
-					"language=en_US.UTF-8",
-					"language=es_CO.UTF-8",
-					"language=de_DE.UTF-8",
-					"language=pt_PT.UTF-8",
-					"language=it_IT.UTF-8",
-					"language=tr_TR.UTF-8",
-					"language=zh_TW.UTF-8",
-					"language=zh_CN.UTF-8",
-					"language=ja_JP.UTF-8",
-					"language=th_TH.UTF-8",
-					"language=pl_PL.UTF-8",
-					"language=sv_SE.UTF-8",
+					"language=en_US.UTF-8&",
+					"language=es_CO.UTF-8&",
+					"language=de_DE.UTF-8&",
+					"language=pt_PT.UTF-8&",
+					"language=it_IT.UTF-8&",
+					"language=tr_TR.UTF-8&",
+					"language=fr_FR.UTF-8&",					
+					"language=zh_TW.UTF-8&",
+					"language=zh_CN.UTF-8&",
+					"language=ja_JP.UTF-8&",
+					"language=th_TH.UTF-8&",
+					"language=pl_PL.UTF-8&",
+					"language=sv_SE.UTF-8&",
+					"language=he_IL.UTF-8&",
+                    "language=ko_KR.UTF-8&",
 				);
 				$queryString=str_replace($a1,"",$queryString);
 				
@@ -102,13 +116,15 @@
 					<option value="<?php echo $urlWithoutparameters."?language=pt_PT.UTF-8&".$queryString; ?>"  <?php echo ($language=='pt_PT.UTF-8'?' selected ':''); ?> >Português</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=it_IT.UTF-8&".$queryString; ?>"  <?php echo ($language=='it_IT.UTF-8'?' selected ':''); ?> >Italiano</option>
 					<option value="<?php echo $urlWithoutparameters."?language=fr_FR.UTF-8&".$queryString; ?>"  <?php echo ($language=='fr_FR.UTF-8'?' selected ':''); ?> >Français</option>
-					<option value="<?php echo $urlWithoutparameters."?language=tr_TR.UTF-8&".$queryString; ?>"  <?php echo ($language=='tr_TR.UTF-8'?' selected ':''); ?> >Türk</option> 
+					
 					<option value="<?php echo $urlWithoutparameters."?language=zh_TW.UTF-8&".$queryString; ?>"  <?php echo ($language=='zh_TW.UTF-8'?' selected ':''); ?> >繁體中文</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=zh_CN.UTF-8&".$queryString; ?>"  <?php echo ($language=='zh_CN.UTF-8'?' selected ':''); ?> >简体中文</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=ja_JP.UTF-8&".$queryString; ?>"  <?php echo ($language=='ja_JP.UTF-8'?' selected ':''); ?> >日本語</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=th_TH.UTF-8&".$queryString; ?>"  <?php echo ($language=='th_TH.UTF-8'?' selected ':''); ?> >ไทย</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=pl_PL.UTF-8&".$queryString; ?>"  <?php echo ($language=='pl_PL.UTF-8'?' selected ':''); ?> >Polski</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=sv_SE.UTF-8&".$queryString; ?>"  <?php echo ($language=='sv_SE.UTF-8'?' selected ':''); ?> >Svenska</option> 
+					<option value="<?php echo $urlWithoutparameters."?language=he_IL.UTF-8&".$queryString; ?>"  <?php echo ($language=='he_IL.UTF-8'?' selected ':''); ?> >עברית</option>	
+                    <option value="<?php echo $urlWithoutparameters."?language=ko_KR.UTF-8&".$queryString; ?>"  <?php echo ($language=='ko_KR.UTF-8'?' selected ':''); ?> >한국어</option>	
 				</select>
 				<script>
 					jQuery(function(){
@@ -155,7 +171,7 @@
 			<?php
 			if ((isset($_COOKIE['logged_in_cust_id'])) && (!(isset($_REQUEST['logout'])))){
 			
-			echo "<br /><a href=\"admin2.php?logout=YES\" title=\"Staff Login\">Log Out</a>";
+			echo "<a href=\"admin2.php?logout=YES\" title=\"Staff Login\">"._("Log Out")."</a>";
 			
 			}
 
