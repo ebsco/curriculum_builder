@@ -3,1350 +3,1011 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: POEditor.com\n"
+"X-Generator: Poedit 2.0.7\n"
 "Project-Id-Version: CB2\n"
 "Language: tr\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 
-#: 
 msgid "English"
-msgstr "English"
+msgstr "ingiltere"
 
-#: 
 msgid "Back to Reading List"
 msgstr "Okuma Listesine Geri Dön"
 
-#: 
 msgid " << Back to Results"
 msgstr "Arama Sonuçlarına Geri Dön"
 
-#: 
 msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
 msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
 
-#: 
 msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
 msgstr "Ah ah! Makale kütüphaneniz aracılığıyla artık erişiminize açık görünmüyor. Lütfen kütüphanenize ve öğretmeninize bu hata mesajını bildirin:"
 
-#: 
 msgid "This record from "
 msgstr "Bu kayıt:"
 
-#: 
 msgid " cannot be displayed to guests."
 msgstr " ziyaretçiler görüntüleyemez."
 
-#: 
 msgid "Login</a> for full access."
 msgstr "Tam erişim için Giriş</a>."
 
-#: 
 msgid "Add to Reading List"
 msgstr "Okuma Listesine ekle"
 
-#: 
 msgid "Remove from Reading List"
 msgstr "Okuma Listesinden kaldır"
 
-#: 
 msgid "PDF full text"
 msgstr "PDF tam metin"
 
-#: 
 msgid "HTML full text"
 msgstr "HTML Tam Metin"
 
-#: 
 msgid "HTML Full Text"
 msgstr "HTML Tam Metin"
 
-#: 
 msgid "Full Text:"
 msgstr "Tam Metin:"
 
-#: 
 msgid "PubType:"
 msgstr "YayınTürü:"
 
-#: 
 msgid "Database:"
 msgstr "Veritabanı:"
 
-#: 
 msgid "Statistics"
 msgstr "İstatistikler"
 
-#: 
 msgid "Curriculum Builder Settings"
 msgstr "Ayarlar"
 
-#: 
-#, fuzzy
 msgid "EBSCO User ID"
 msgstr "EBSCO Kullanıcı Adınız"
 
-#: 
-#, fuzzy
 msgid "EBSCO Password"
 msgstr "EBSCO Şifreniz"
 
-#: 
 msgid "Your EDS API Profile"
 msgstr "EBSCO API Profili"
 
-#: 
 msgid "URL for your library logo"
 msgstr "Kütüphane logo URL"
 
-#: 
 msgid "Contact Email"
 msgstr "İletişim E-Posta Adresi"
 
-#: 
 msgid "Link to Library Home Page"
 msgstr "Kütüphane Anasayfa linkiniz"
 
-#: 
 msgid "Text to display at top of screen"
 msgstr "Ekran üst kısımda görüntülenecek metin"
 
-#: 
 msgid "Link to EDS Label"
 msgstr "EDS metinleri için link"
 
-#: 
 msgid "Custom CSS File"
 msgstr "Özelleştirilmiş CSS dosyası"
 
-#: 
 msgid "Collect student names as they access assigned readings?"
 msgstr "Verilmiş okuma kaynaklarına giriş yapan öğrenci isimlerini topla"
 
-#: 
 msgid "Yes"
 msgstr "Evet"
 
-#: 
 msgid "No"
 msgstr "Hayır"
 
-#: 
 msgid "Footer text"
 msgstr "Altbilgi metni"
 
-#: 
 msgid "Copy Course Support"
 msgstr "Ders Desteğini Kopyala"
 
-#: 
 msgid "Remove Full Text and Available in Library Collection Limiters from view"
 msgstr "Tam Metin ve Kütüphane Koleksiyonunda Bulunur limitini kaldır"
 
-#: 
 msgid "Show 'Return to Course' Link at top of page"
 msgstr "\"Ders'e Geri Dön\" linkini sayfa üstünde göster"
 
-#: 
 msgid "Open all Lists in a New Window"
 msgstr "Tüm Listeleri Yeni Pencerede Aç"
 
-#: 
 msgid "View Lists"
 msgstr "Listeleri Görüntüle"
 
-#: 
 msgid "Select one: "
 msgstr "Birini seçin:"
 
-#: 
 msgid "Preview Selected List"
 msgstr "Seçilen Lisleteleri Önizleme"
 
-#: 
 msgid "Delete Lists"
 msgstr "Listeleri Sil"
 
-#: 
 msgid "Delete Selected Lists"
 msgstr "Seçilen Listeleri Sil"
 
-#: 
 msgid "Basic Search"
 msgstr "Basit Arama"
 
-#: 
 msgid "Keyword"
 msgstr "Anahtar Kelime"
 
-#: 
 msgid "Author"
 msgstr "Yazar"
 
-#: 
 msgid "Title"
 msgstr "Başlık"
 
-#: 
 msgid "View this list"
 msgstr "Bu Listeyi Görüntüle"
 
-#: 
 msgid "Untitled List"
 msgstr "Başlıksız Liste"
 
-#: 
 msgid "All Public Lists:"
 msgstr "Tüm Genel Listeler:"
 
-#: 
 msgid "There are no public reading lists to copy."
 msgstr "Kopyalanacak genel bir okuma listesi yok."
 
-#: 
 msgid "Options"
 msgstr "Seçenekler"
 
-#: 
 msgid "Include Notes in the Import Process"
 msgstr "Ekleme işleminde notları dahil et"
 
-#: 
 msgid "Preserve Sort Order"
 msgstr "Sıralamayı koru"
 
-#: 
 msgid "Check/Uncheck All"
 msgstr "Tümünü Seç / Tümünde Seçimi Kaldır"
 
-#: 
 msgid "Notes:"
 msgstr "Notlar:"
 
-#: 
 msgid "There are no readings in this list."
 msgstr "Bu listede okuma kaynağı yok."
 
-#: 
 msgid "Copy Selected Readings"
 msgstr "Seçili olanları kopyala"
 
-#: 
 msgid "You are unauthorized to access this page."
 msgstr "Bu sayfayı görüntüleme yetkiniz yok."
 
-#: 
 msgid "You must be logged in to access that service, please login"
 msgstr "Bu hizmete girmek için giriş yapmak zorundasınız, lütfen giriş yapın"
 
-#: 
 msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
 msgstr "Uyarı: Aşağıdaki listeleri kalıcı olacak silmek üzeresiniz. Bu işlem geri alınamaz."
 
-#: 
 msgid "NEVER accessed since update"
 msgstr "Güncellemeden sonra HİÇ giriş yok"
 
-#: 
 msgid "LAST ACCESSED"
 msgstr "EN SON GİRİŞ"
 
-#: 
 msgid "DELETE"
 msgstr "SİL"
 
-#: 
 msgid "this list"
 msgstr "bu liste"
 
-#: 
 msgid "these "
 msgstr "bunlar"
 
-#: 
 msgid "lists"
 msgstr "listeler"
 
-#: 
 msgid "or"
 msgstr "veya"
 
-#: 
 msgid "Cancel"
 msgstr "İptal"
 
-#: 
 msgid "No lists selected to delete."
 msgstr "Silinecek seçili listeler yok."
 
-#: 
 msgid "Back to Administration Screen"
 msgstr "Yönetim Ekranına Geri Dön"
 
-#: 
 msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
 msgstr "Hata! Bir hata oluştu! Bir veya birden fazla kayıtlar için veri tamamlanamadı. Lütfen her okumanın tüm kaydını eklediğinizden emin olarak tekrar deneyin."
 
-#: 
 msgid "Enter bibliographic info from the list into this box:"
 msgstr " Listeden künye bilgilerini bu kutuya girin:"
 
-#: 
 msgid "CB Version 2.3"
 msgstr "CB versiyon 2.3"
 
-#: 
 msgid "List ID"
 msgstr "Liste Numarası"
 
-#: 
 msgid "Login"
 msgstr "Giriş"
 
-#: 
 msgid "Invalid login -- pleasae try again"
 msgstr "Geçersiz giriş -- lütfen tekrar deneyin"
 
-#: 
 msgid "Username:"
 msgstr "Kullanıcı Adı:"
 
-#: 
 msgid "Password:"
 msgstr "Şifre"
 
-#: 
 msgid "Successfully logged in."
 msgstr "Başarıyla oturum açıldı"
 
-#: 
 msgid "Successfully updated expiration date for "
 msgstr "için başarıyla bitiş tarihi güncellendi"
 
-#: 
 msgid "Successfully deleted "
 msgstr "Başarıyla silindi"
 
-#: 
 msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
 msgstr "Tüketici Anahtar bilgisini ya da şifresini boş bırakamazsınız, ve bitiş tarihini ayarlamalısınız. Lütfen tekrar deneyiniz."
 
-#: 
 msgid "Consumer key "
 msgstr "Tüketici anahtar bilgisi"
 
-#: 
 msgid "already exists. Please delete the existing one first before creating a new one."
 msgstr "Zaten mevcut. Yeni birtane oluşturmadan önce, lütfen önce mevcut olanı silin."
 
-#: 
 msgid "Successfully inserted consumer key: "
 msgstr "Başarıyla Tüketici anahtar bilgisi girildi:"
 
-#: 
 msgid "Unrecognized Actions.  Try again."
 msgstr "Tanımlamayan işlem. Tekrar deneyin."
 
-#: 
 msgid "Create New Access Key Pair"
 msgstr "Yeni Giriş anahtar eşleştirmesi oluştur."
 
-#: 
 msgid "Consumer Key"
 msgstr "Tüketici Anahtar Bilgisi"
 
-#: 
 msgid "Secret"
 msgstr "Gizli"
 
-#: 
 msgid "Expiration Date"
 msgstr "Bitiş Tarihi"
 
-#: 
 msgid "Edit or Delete Existing Access Key Pair"
 msgstr "Mevcut Anahtar Bilgisi Eşleştirmesini Değiştir veya Sil"
 
-#: 
 msgid "Warning:"
 msgstr "Uyarı:"
 
-#: 
 msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
 msgstr "Tüketici Anahtar Bilgisi Kaldırılıyor / Gizli eşleştirme veya yanlış bitiş tatihi ayarları, bu anahtar bilgisi eşleştirmesini kullanan herhangi bir sitenin okuma listesine erişimine izin vermez."
 
-#: 
 msgid "Expiration"
 msgstr "Bitiş"
 
-#: 
 msgid "Configure / Admin"
 msgstr "Yapılandırma / Yönetim"
 
-#: 
 msgid "Are you sure you want to delete this key"
 msgstr "Oturumunuz kapatıldı."
 
-#: 
 msgid "You have been logged out."
 msgstr "Oturum kapatıldı."
 
-#: 
 msgid "Your login credentials are incorrect.  Please try again."
 msgstr "Giriş bilgileriniz yanlış. Lütfen tekrar deneyin."
 
-#: 
 msgid "Manage Access to the Reading List Tool"
 msgstr "Okuma Listeleri Araçlarına Giriş izinlerini Yönet"
 
-#: 
 msgid "Create New Key Pair"
 msgstr "Yeni Giriş anahtar eşleştirmesi oluştur"
 
-#: 
 msgid "Log Out"
 msgstr "Çıkış"
 
-#: 
 msgid "Notes may not save properly."
 msgstr "Notlar düzgün kaydedilmeyebilir."
 
-#: 
 msgid "Import from Existing List"
 msgstr "Mevcut Listeden ekle"
 
-#: 
 msgid "Import from EBSCO Folder (beta)"
 msgstr "EBSCO dosyasından ekle"
 
-#: 
 msgid "This list is"
 msgstr "Bu liste"
 
-#: 
 msgid "public"
 msgstr "genel"
 
-#: 
 msgid "private"
 msgstr "özel"
 
-#: 
 msgid "student(s) have accessed this list."
 msgstr "Öğrenci(ler) bu listeye giriş yaptı."
 
-#: 
 msgid "Students that have accessed this list:"
 msgstr "Öğrenci(ler)in giriş yaptığı liste:"
 
-#: 
 msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
 msgstr "Hiçbir öğrenci bu listeye giriş yapmadı. En az bir öğrenci giriş yaptığınızda isimler burada listenelecektir."
 
-#: 
 msgid "Add Folder"
 msgstr "Dosya ekle"
 
-#: 
 msgid "Create Folder"
 msgstr "Dosya yarat"
 
-#: 
 msgid "Add Text or Instructions"
 msgstr "Metin veya Yönergeler ekle"
 
-#: 
 msgid "Text"
 msgstr "Metin"
 
-#: 
 msgid "Folder"
 msgstr "Dosya"
 
-#: 
 msgid "e.g., Read Chapter 5 in Textbook"
 msgstr "ör., Ders kitabında 5. bölümü okuyun"
 
-#: 
 msgid "Main list of Readings"
 msgstr "Okuma kaynaklarının ana Listesi"
 
-#: 
 msgid "Add Web Resource"
 msgstr "Web Kaynağı ekle"
 
-#: 
 msgid "URL"
 msgstr "URL"
 
-#: 
 msgid "e.g., http://library.edu/"
 msgstr "ör., http://library.edu/"
 
-#: 
 msgid "Link label"
 msgstr "Link metni"
 
-#: 
 msgid " Back to main list"
 msgstr " Ana listeye geri dön"
 
-#: 
 msgid "This list has folders:"
 msgstr "Bu liste dosya"
 
-#: 
 msgid "Sort Order:"
 msgstr "Sıralama:"
 
-#: 
 msgid "Removing..."
 msgstr "Kaldırılıyor…"
 
-#: 
-#, fuzzy
 msgid "Move to folder"
 msgstr "Dosyaya taşı"
 
-#: 
 msgid "No Folder"
 msgstr "Dosya yok"
 
-#: 
 msgid "Delete"
 msgstr "Sil"
 
-#: 
 msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
 msgstr "Bu kaynağın detayları yüklenirken hata oluştu. Kütüphaneniz bu kaynağa artık abone olmayabilir, veya bu okuma listesinde zaten mevcut olan diğer bir kaynak ile aynı olabilir. Eğer bu kaynağa erişimde zorluk çekiyorsanız, daha fazla yardım için lütfen kütüphaneniz ile iletişime geçiniz."
 
-#: 
 msgid "By : "
 msgstr "Yazar:"
 
-#: 
 msgid "Published:"
 msgstr "Yayınlayan:"
 
-#: 
 msgid "Start Page: "
 msgstr "Başlangıç sayfası:"
 
-#: 
 msgid "Page Count: "
 msgstr "Sayfa sayısı:"
 
-#: 
 msgid "Language:"
 msgstr "Dil:"
 
-#: 
 msgid "Full Text"
 msgstr "Tam Metin"
 
-#: 
 msgid "Online Access"
 msgstr "Çevrimiçi Erişim"
 
-#: 
 msgid "Students that have clicked this reading: "
 msgstr "Bu Listeye giriş yapan öğrenci(ler):"
 
-#: 
 msgid "student(s) have clicked this reading."
 msgstr "okuma kaynağına tıklayan öğrenci(ler)."
 
-#: 
 msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
 msgstr "Hiçbir öğrenci bu kaynağa giriş yapmadı. En az bir öğrenci giriş yaptığınızda isimler burada listenelecektir."
 
-#: 
-#, fuzzy
 msgid "Characters remaining"
 msgstr "Kalan karakter sayısı:"
 
-#: 
 msgid "Removing... please wait."
 msgstr "Kaldırılıyor… lütfen bekleyin."
 
-#: 
 msgid "Update Notes and Sort Order"
 msgstr "Notları güncelle ve sırala"
 
-#: 
 msgid "Currently, there are no readings."
 msgstr "Henüz, okuma kaynağı yok."
 
-#: 
 msgid "Select a folder above to see readings."
 msgstr "Okuma kaynaklarını görmek için yukarıdan bir dosya seçiniz."
 
-#: 
 msgid "Currently, there are no readings on this list."
 msgstr "Henüz, bu listede okuma kaynağı yok."
 
-#: 
 msgid "<< Back to Results"
 msgstr "Arama Sonuçlarına Geri Dön"
 
-#: 
 msgid "Retrieve response XML"
 msgstr "Geşen XML'i al"
 
-#: 
 msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
 msgstr "Ah ah! Makale kütüphaneniz aracılığıyla artık erişiminize açık görünmüyor. Lütfen kütüphanenize ve öğretmeninize bu hata mesajını bildirin:"
 
-#: 
 msgid "This record from"
 msgstr "Bu kayıt:"
 
-#: 
 msgid "cannot be displayed to guests."
 msgstr " ziyaretçiler görüntüleyemez."
 
-#: 
 msgid "for full access."
 msgstr "Tam metin için"
 
-#: 
 msgid "See it in EDS"
 msgstr "EDS'de görüntüle"
 
-#: 
 msgid " Online Access"
 msgstr "Tam Metin:"
 
-#: 
 msgid "Refine Search"
 msgstr "Sonuçları filtrele"
 
-#: 
 msgid "Remove Facets"
 msgstr "Sınırlayıcıları kaldır"
 
-#: 
 msgid "Limiter: "
 msgstr "Sınırlayıcılar:"
 
-#: 
 msgid "Limit your results"
 msgstr "Sonuçları sınırla"
 
-#: 
 msgid "Expand your results"
 msgstr "Sonuçları genişlet"
 
-#: 
 msgid "Search response XML"
 msgstr "gelen XML'de Arama"
 
-#: 
 msgid "Results"
 msgstr "Sonuçlar"
 
-#: 
 msgid "Showing"
 msgstr "Gösteriliyor"
 
-#: 
 msgid "of"
 msgstr "nın"
 
-#: 
 msgid "for"
 msgstr "için"
 
-#: 
 msgid "Sort"
 msgstr "Sıralama"
 
-#: 
 msgid "Page options"
 msgstr "Sayfa seçenekleri"
 
-#: 
 msgid "Detailed"
 msgstr "Detaylı"
 
-#: 
 msgid "Brief"
 msgstr "Kısa"
 
-#: 
 msgid "Title Only"
 msgstr "Sadece başlık"
 
-#: 
 msgid "Results per page"
 msgstr "Her sayfada sonuç"
 
-#: 
 msgid "Research Starter"
 msgstr "Research Starter"
 
-#: 
 msgid "for full access"
 msgstr "Tam metin için"
 
-#: 
 msgid "Published: "
 msgstr "Yayınlayan:"
 
-#: 
 msgid "No results were found."
 msgstr "Sonuç bulunamadı."
 
-#: 
 msgid "Result #"
 msgstr "Sonuç #"
 
-#: 
 msgid "Title is not available"
 msgstr "Başlık mevcut değil"
 
-#: 
 msgid "By :"
 msgstr "Yazar:"
 
-#: 
 msgid "Start Page:"
 msgstr "Başlangıç sayfası:"
 
-#: 
 msgid "Page Count:"
 msgstr "Sayfa sayısı:"
 
-#: 
 msgid "Abstract:"
 msgstr "Özet:"
 
-#: 
 msgid "Subjects:"
 msgstr "Konular:"
 
-#: 
 msgid "Key:"
 msgstr "Anahtar Bilgisi:"
 
-#: 
 msgid "Secret:"
 msgstr "Gizli:"
 
-#: 
 msgid "Administration"
 msgstr "Yönetim"
 
-#: 
 msgid "Total Lists"
 msgstr "Tüm Listeler"
 
-#: 
 msgid "Total People Using Tool"
 msgstr "Araçları kullananlar"
 
-#: 
 msgid "Users"
 msgstr "Kullanıcılar"
 
-#: 
 msgid "Total Courses Using Tool"
 msgstr "Araçları kullanan Tüm Dersler"
 
-#: 
 msgid "Courses"
 msgstr "Dersler"
 
-#: 
 msgid "Search"
 msgstr "Ara"
 
-#: 
 msgid "Return to Course"
 msgstr "Ders'e Geri Dön"
 
-#: 
 msgid "See Current Reading List"
 msgstr "Güncel Okuma Listesini Göster"
 
-#: 
 msgid "Update"
 msgstr "Güncelle"
 
-#: 
 msgid "Add"
 msgstr "Ekle"
 
-#: 
 msgid " notes"
 msgstr " notlar"
 
-#: 
-#, fuzzy
 msgid "Save notes"
 msgstr "notları kaydet"
 
-#: 
 msgid "edit notes"
 msgstr "notları değiştir"
 
-#: 
 msgid "items"
 msgstr "kaynaklar"
 
-#: 
 msgid "currently selected"
 msgstr "seçilenler"
 
-#: 
 msgid "Result"
 msgstr "Sonuç"
 
-#: 
 msgid "Folder name"
 msgstr "Dosya ismi"
 
-#: 
 msgid "Back to the main list"
 msgstr "Ana Listeye geri dön"
 
-#: 
 msgid "Save Changes"
 msgstr "Değişiklikleri kaydet"
 
-#: 
 msgid "Contact"
 msgstr "İletişim"
 
-#: 
 msgid "for assistance with this tool."
 msgstr "Bu araç ile ilgili yardım"
 
-#: 
 msgid "Download Export File"
 msgstr "Dışa aktarılan dosyayı indir"
 
-#: 
 msgid "Import from Export File"
 msgstr "Dışa aktarılan dosyadan içe aktar"
 
-#: 
 msgid "Download Student Data"
 msgstr "Öğrenci verilerini indir"
 
-#: 
-#, fuzzy
 msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
 msgstr "Bu ayarları değiştirirken dikkatli olun, çünkü LMS's LTI ayarlarları ekranındaki orijinal ayarlar değiştirilecektir. Lütfen en az bir okuma listesi ile bu alanların doldurulmasını deneyin, veya bu ayarlarla ilgili yardım için eds@ebscohost.com e-posta ile iletişime geçin."
 
-#: 
-#, fuzzy
 msgid "If you change the "
-msgstr "    eğer değiştirirseniz"
+msgstr "eğer değiştirirseniz"
 
-#: 
 msgid "user id"
 msgstr "Kullanıcı adı"
 
-#: 
 msgid "password"
 msgstr "şifre"
 
-#: 
 msgid "API profile ID"
 msgstr "API profil Adı"
 
-#: 
 msgid "you will need to log out and log back in to see accurate statistics and lists."
 msgstr "İlgili istatistikler ve listeleri görmek için, oturumu kapatıp tekrar oturum açmalısınız."
 
-#: 
 msgid "Select"
 msgstr "Seç"
 
-#: 
 msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
 msgstr "Bir kullanıcı adı ve şifre EBSCO Yönetim sayfasından Şifre bölümünden alınabilir."
 
-#: 
 msgid "The username/password combo must be associated with the group containing the profile specified below."
 msgstr "Kullanıcı adı/şifre api profilinin olduğu grup'tan alınmalıdır."
 
-#: 
 msgid "Total Readings"
 msgstr "Tüm Okuma Listeleri"
 
-#: 
 msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
 msgstr "Ders yönetim için kullanmak istediğiniz EDS API profili budur. Yukarıda girdiğiniz kullanıcı adı ve şifre API profili grubunda olan bir kullanıcı adı ve şifre olmalıdır."
 
-#: 
 msgid "EDS API Profile ID"
 msgstr "EDS API Profil Adı"
 
-#: 
 msgid "LMS Roles that can edit lists (comma-separated)"
 msgstr "LMS izinleri listeleri değiştirebilir(noktalı virgül)"
 
-#: 
 msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
 msgstr "Varsayılan ayarlara göre, sadece eğitmenler ve öğretim asistanları listeleri değiştirebilir. Yine de değiştirmek için, izinlerinize diğer kullanıcı türünü ekleyebilirsiniz."
 
-#: 
 msgid "Default:"
 msgstr "Varsayılan:"
 
-#: 
 msgid "Proxy Prefix for CustomLinks"
 msgstr "Linkler için proxy önek linki"
 
-#: 
 msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
 msgstr "Bu ayar doldurulursa, Ders Yönetim sayfasındaki tüm linklere bu ayar uygulanacaktır."
 
-#: 
 msgid "Examples"
 msgstr "Örnekler"
 
-#: 
 msgid "Proxy should encode target URL"
 msgstr "Proxy hedef Linki kodlanmalı"
 
-#: 
 msgid "If your proxy prefix ends with"
 msgstr "Eğer proxy önek kodunuz …. ile bitiyorsa"
 
-#: 
 msgid "this probably needs to be set to"
 msgstr "Muhtemelen bu …. Şeklinde ayarlanmalı"
 
-#: 
 msgid "otherwise"
 msgstr "Aksi halde"
 
-#: 
 msgid "is probably correct."
 msgstr "Büyük ihtimalle doğru."
 
-#: 
 msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
 msgstr "Eğer LMS Ders Yönetim sayfasına HTTPS ile giriş yapıyorsa, logonuz yine HTTPS ile girilmelidir."
 
-#: 
 msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
 msgstr "Bu metin listenin başlığı altında görünecektir. Sayfa adresleri otomatik olarak link şeklinde görünecektir."
 
-#: 
 msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
 msgstr "Bu link metni kullanıcıları EBSCO Keşif aracına yönlendiren detay sayfasındaki sol taraftaki linktir. Eğer boş bırakılırsa, EDS link yönlendirmesi görünmeyecektir."
 
-#: 
 msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
 msgstr "CSS dosyanızın linkini girin. Bu dosyada stiller Ders Yönetim sayfasına uygulanacaktır. Eğer Ders Yönetim sayfanız HTTPS üzerinde ise yine CSS dosya adresinin HTTPS ile olmalıdır."
 
-#: 
 msgid "Optional."
 msgstr "İsteğe bağlı."
 
-#: 
 msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
 msgstr "Öğrenci isimleri, email adresleri ve kullanıcı adları toplanacak. Bu veri, bir öğrenci okuma listesine tıkladığı zaman ders eğitmenini bilgilendirmek amaçlı kullanılacak. Kütüphane tarafından sağlanan rapor içerisinde de yer alacaktır. Sadece email listesini devre dışı bırakmak için, LMS eğitmeniniz bu bilgiyi araç sağlayıcı ile paylaşma seçeneğini seçebilir."
 
-#: 
 msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
 msgstr "Okuma listelerine tıklayan öğrencilerin isimlerinin listelenmesi yetkisi sağlanmayacak. Yine de,  ne zaman ve hangi okuma listelerine giriş bilgilerini içeren bir rapor, sadece LMS kullanıcı adı ile kütüphanelere sağlanacak."
 
-#: 
 msgid "Anonymized"
 msgstr "Anonim durumundakiler"
 
-#: 
 msgid "None"
 msgstr "Hiç"
 
-#: 
 msgid "will collect no student activity. No reporting will be available."
 msgstr "Kullanıcı aktiviteleri toplanmayacak. Bununla ilgili raporlar olmayacak."
 
-#: 
 msgid "Link to Help Pages"
 msgstr "Yardım Sayfalarına Link"
 
-#: 
 msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
 msgstr "Bu seçenek ile eğitmenler yeni bir listenin, boş bir listeden mi yoksa benzer isimdeki listelerden tekrar liste oluşturulması şeçeneklerine yönlendirilecektir. Eğer"
 
-#: 
 msgid "is selected, all new lists will be blank."
 msgstr "seçilirse, tüm yeni listeler boş olacak."
 
-#: 
 msgid "Hide"
 msgstr "Gizle"
 
-#: 
 msgid "and"
 msgstr "ve"
 
-#: 
 msgid "Available in Library Collection"
 msgstr "Kütüphane Koleksiyonunda Bulunur"
 
-#: 
 msgid "Limiters"
 msgstr "Filtrelemeler"
 
-#: 
 msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
 msgstr "Bu filtrelemelerin gizlenmesi, bu filtrelerin aramalarda kaldırılmasını  engelleyecektir, bu da kolaksiyonunuz dışındaki kaynakları okuma listelerine eklemeye imkansız kılacaktır."
 
-#: 
 msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
 msgstr "Bu link LMS tarafından sağlandı. Eğer LMS doğru ayarlandıysa, Kullacıyı doğru ders sayfasına yönlendirecektir."
 
-#: 
 msgid "Show First Full Text Link Only"
 msgstr "Sadece ilk Tam Metin linkini göster"
 
-#: 
 msgid "Language"
 msgstr "Dil"
 
-#: 
 msgid "Spanish"
 msgstr "İspanyolca"
 
-#: 
 msgid "German"
 msgstr "Almanca"
 
-#: 
 msgid "Italian"
 msgstr "İtalyanca"
 
-#: 
 msgid "Portuguese"
 msgstr "Portekizce"
 
-#: 
 msgid "French"
 msgstr "Fransızca"
 
-#: 
-#, fuzzy
 msgid "Simplified Chinese"
 msgstr "Çince (basitleştirilmiş)"
 
-#: 
-#, fuzzy
 msgid "traditional Chinese"
 msgstr "Çince (geleneksel)"
 
-#: 
 msgid "Japanese"
 msgstr "Japonca"
 
-#: 
 msgid "Polish"
 msgstr "Lehçe"
 
-#: 
 msgid "Swedish"
 msgstr "İsveç"
 
-#: 
 msgid "Thai"
 msgstr "Tayland"
 
-#: 
 msgid "Turkish"
 msgstr "Türk"
 
-#: 
 msgid "Required"
 msgstr "Gerekli"
 
-#: 
 msgid "e.g., Instructor"
 msgstr "Ör., Eğitmen"
 
-#: 
 msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
 msgstr "Proxy önek; Eğer WAM kullanıyorsanız, WAM proxy alan adını belirtmek için {targetURLdomain} parametresini kullanabilirsiniz - kalan kısım sonda yer alacaktır"
 
-#: 
 msgid "Email for contact person for tool"
 msgstr "Bu araç için iletişim için ilgili kişinin email adresi"
 
-#: 
 msgid "Branding text at top of screen"
 msgstr "Sayfa üstünde yer alacak Metin"
 
-#: 
 msgid "e.g., See Record in EDS"
 msgstr "Ör., Kaydı EDS'de Görüntüle"
 
-#: 
 msgid "e.g., Search for Library Resources"
 msgstr "Ör., Kütüphane Kaynaklarında Arayın"
 
-#: 
 msgid "Optional.  URL for CSS Stylesheet"
 msgstr "İsteğe Bağlı. CSS dosyası linki"
 
-#: 
 msgid "URL for LibGuide or other help pages"
 msgstr "LibGuide ve diğer yardım sayfaları için Link"
 
-#: 
 msgid "e.g., a copyright notice"
 msgstr "Ör., telif hakkı uyarısı"
 
-#: 
 msgid "Label for Link to EDS"
 msgstr "EDS Linki için Metin"
 
-#: 
 msgid "Label for Search Box"
 msgstr "Arama Kutusu için Metin"
 
-#: 
 msgid "Collect Student Data"
 msgstr "Öğrenci Bilgilerini Topla"
 
-#: 
 msgid "URL to Library Home Page"
 msgstr "Kütüphane Ana Sayfa Linki"
 
-#: 
 msgid "Search Library Resources"
 msgstr "Kütüphane Kaynaklarında Arayın"
 
-#: 
 msgid "Update Settings"
 msgstr "Ayarları Güncelle"
 
-#: 
 msgid "Expander: "
 msgstr "Genişletici:"
 
-#: 
 msgid "Edit"
 msgstr "Değiştir"
 
-#: 
 msgid "Relevance"
 msgstr "İlgililik"
 
-#: 
 msgid "Source Type"
 msgstr "Kaynak Türü"
 
-#: 
 msgid "Subject"
 msgstr "Konu"
 
-#: 
 msgid "Publication"
 msgstr "Yayın"
 
-#: 
 msgid "Geography"
 msgstr "Coğrafya"
 
-#: 
 msgid "Content Provider"
 msgstr "İçerik Sağlayıcı"
 
-#: 
 msgid "Academic Journal"
 msgstr "Akademik Dergi"
 
-#: 
 msgid "Biographie"
 msgstr "Biyografi"
 
-#: 
 msgid "Book"
 msgstr "Kitap"
 
-#: 
 msgid "Conference Material"
 msgstr "Konferans Materyali"
 
-#: 
 msgid "Magazine"
 msgstr "Güncel Dergi"
 
-#: 
 msgid "New"
 msgstr "Haber"
 
-#: 
 msgid "Primary Source Document"
 msgstr "Temel Kaynak Doküman"
 
-#: 
 msgid "Report"
 msgstr "Rapor"
 
-#: 
 msgid "Review"
 msgstr "Değerlendirme"
 
-#: 
 msgid "Trade Publication"
 msgstr "Ticari Yayın"
 
-#: 
 msgid "Date Newest"
 msgstr "En Yeni Tarih"
 
-#: 
 msgid "Date Oldest"
 msgstr "En Eski Tarih"
 
-#: 
 msgid "Authors"
 msgstr "Yazarlar"
 
-#: 
 msgid "Document Type"
 msgstr "Doküman Türü"
 
-#: 
 msgid "Subject Terms"
 msgstr "Konu Terimleri"
 
-#: 
 msgid "Author-Supplied Keywords"
 msgstr "Yazar Tarafından Sağlanan Anahtar Kelimeler"
 
-#: 
 msgid "Abstract"
 msgstr "Özet"
 
-#: 
 msgid "Author Affiliations"
 msgstr "Yazar Kurumları"
 
-#: 
 msgid "Accession Number"
 msgstr "Erişim Numarası"
 
-#: 
 msgid "Publisher"
 msgstr "Yayıncı"
 
-#: 
 msgid "Source"
 msgstr "Kaynak"
 
-#: 
 msgid "Geographic Terms"
 msgstr "Coğrafi Terimler"
 
-#: 
 msgid "Academic Journals"
 msgstr "Akademik Dergiler"
 
-#: 
 msgid "Books"
 msgstr "Kitaplar"
 
-#: 
 msgid "Conference Materials"
 msgstr "Konferans Materyalleri"
 
-#: 
 msgid "Magazines"
 msgstr "Güncel Dergiler"
 
-#: 
 msgid "Biographies"
 msgstr "Biyografiler"
 
-#: 
 msgid "News"
 msgstr "Haberler"
 
-#: 
 msgid "Primary Source Documents"
 msgstr "Temel Kaynak Dokümanlar"
 
-#: 
 msgid "Reports"
 msgstr "Raporlar"
 
-#: 
 msgid "Reviews"
 msgstr "Değerlendirmeler"
 
-#: 
 msgid "Trade Publications"
 msgstr "Ticari Yayınlar"
 
-#: 
 msgid "Apply equivalent subjects"
 msgstr "Eşdeğer konuları uygula"
 
-#: 
 msgid "Apply related words"
 msgstr "İlgili sözcükleri uygula"
 
-#: 
 msgid "Also search within the full text of the articles"
 msgstr "Makalelerin tam metni içinde de arama yap"
 
-#: 
 msgid "References Available"
 msgstr "Kullanılabilir Referanslar"
 
-#: 
 msgid "Scholarly (Peer Reviewed) Journals"
 msgstr "Hakemli Dergiler"
 
-#: 
 msgid "Library Home"
 msgstr "Kütüphane Sayfası"
 
-#: 
 msgid "Periodical"
 msgstr "Süreli Yayın"
 
-#: 
 msgid "Selecting"
 msgstr "Seçici"
 
-#: 
 msgid "Publication Year"
 msgstr "Yayın Yılı"
 
-#: 
 msgid "You have no other reading lists."
 msgstr "Başka okuma listeniz yok."
 
-#: 
 msgid "No statistics to report yet."
 msgstr "Henüz raporlamanız gereken istatistik yok."
 
-#: 
 msgid "Select one:"
 msgstr "Birini seç:"
 
-#: 
 msgid "Hebrew"
 msgstr "İbranice"
 
-#: 
 msgctxt "Facet"
 msgid "University"
 msgstr "Üniversite"
 
-#: 
 msgctxt "Facet"
 msgid "Collection"
 msgstr "Toplamak"
 
-#: 
 msgid "Generate list"
 msgstr "Listeyi oluştur"
-

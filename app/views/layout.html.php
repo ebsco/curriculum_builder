@@ -90,6 +90,7 @@
 					"language=es_CO.UTF-8&",
 					"language=de_DE.UTF-8&",
 					"language=pt_PT.UTF-8&",
+					"language=pt_BR.UTF-8&",
 					"language=it_IT.UTF-8&",
 					"language=tr_TR.UTF-8&",
 					"language=fr_FR.UTF-8&",					
@@ -101,6 +102,7 @@
 					"language=sv_SE.UTF-8&",
 					"language=he_IL.UTF-8&",
                     "language=ko_KR.UTF-8&",
+                    "language=nl_NL.UTF-8&",
 				);
 				$queryString=str_replace($a1,"",$queryString);
 				
@@ -113,7 +115,8 @@
 					<option value="<?php echo $urlWithoutparameters."?language=en_US.UTF-8&".$queryString; ?>"  <?php echo ($language=='en_US.UTF-8'?' selected ':''); ?> >English</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=es_CO.UTF-8&".$queryString; ?>"  <?php echo ($language=='es_CO.UTF-8'?' selected ':''); ?> >Español</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=de_DE.UTF-8&".$queryString; ?>"  <?php echo ($language=='de_DE.UTF-8'?' selected ':''); ?> >Deutsch</option> 
-					<option value="<?php echo $urlWithoutparameters."?language=pt_PT.UTF-8&".$queryString; ?>"  <?php echo ($language=='pt_PT.UTF-8'?' selected ':''); ?> >Português</option> 
+					<option value="<?php echo $urlWithoutparameters."?language=pt_PT.UTF-8&".$queryString; ?>"  <?php echo ($language=='pt_PT.UTF-8'?' selected ':''); ?> >Português (Portugal)</option> 
+					<option value="<?php echo $urlWithoutparameters."?language=pt_BR.UTF-8&".$queryString; ?>"  <?php echo ($language=='pt_BR.UTF-8'?' selected ':''); ?> >Português (Brasil)</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=it_IT.UTF-8&".$queryString; ?>"  <?php echo ($language=='it_IT.UTF-8'?' selected ':''); ?> >Italiano</option>
 					<option value="<?php echo $urlWithoutparameters."?language=fr_FR.UTF-8&".$queryString; ?>"  <?php echo ($language=='fr_FR.UTF-8'?' selected ':''); ?> >Français</option>
 					
@@ -125,6 +128,7 @@
 					<option value="<?php echo $urlWithoutparameters."?language=sv_SE.UTF-8&".$queryString; ?>"  <?php echo ($language=='sv_SE.UTF-8'?' selected ':''); ?> >Svenska</option> 
 					<option value="<?php echo $urlWithoutparameters."?language=he_IL.UTF-8&".$queryString; ?>"  <?php echo ($language=='he_IL.UTF-8'?' selected ':''); ?> >עברית</option>	
                     <option value="<?php echo $urlWithoutparameters."?language=ko_KR.UTF-8&".$queryString; ?>"  <?php echo ($language=='ko_KR.UTF-8'?' selected ':''); ?> >한국어</option>	
+                    <option value="<?php echo $urlWithoutparameters."?language=nl_NL.UTF-8&".$queryString; ?>"  <?php echo ($language=='nl_NL.UTF-8'?' selected ':''); ?> >Nederlands</option>	
 				</select>
 				<script>
 					jQuery(function(){
