@@ -51,7 +51,7 @@ include_once("app/app.php");
   if (!(($customparams['userid'] == "") || ($customparams['password'] == "") || ($customparams['profile'] == ""))) {
   ?>
 <div class="readingListLink">
-  <strong><a href="stats.php"><?php echo _("Statistics");?></a></strong> | <strong><a href="exportsql.php" target="_blank"><?php echo _("Download Export File");?></a></strong> | <strong><a href="importsql.php" target="_blank" title="Used when migrating to and from different Curriculum Builder instalations"><?php echo _("Import from Export File");?></a></strong><?php if ($customparams['studentdata'] != "n") { ?> | <strong><a href="exportsql-studentdata.php" target="_blank"><?php echo _("Download Student Data");?></a></strong><?php } ?>
+  <strong><a href="stats.php"><?php echo _("Statistics");?></a></strong> | <strong><a href="exportsql.php" target="_blank"><?php echo _("Download Export File");?></a></strong><!-- | <strong><a href="importsql.php" target="_blank" title="Used when migrating to and from different Curriculum Builder instalations"><?php echo _("Import from Export File");?></a></strong><?php if ($customparams['studentdata'] != "n") { ?>--> | <strong><a href="exportsql-studentdata.php" target="_blank"><?php echo _("Download Student Data");?></a></strong><?php } ?>
 </div>
 <?php
   }
@@ -226,14 +226,10 @@ include_once("app/app.php");
         <select name="copyid" id="selectList">
     <?php
     foreach ($consumeridsArray['logged_in_consumerid'] as $consumerid) {
-          $querystring = 'SELECT id FROM credentialconsumers WHERE credentialid = ' . decryptCookie($_COOKIE['logged_in_cust_id']) . ' AND consumerid = "' . $consumerid . '";';
-          $credconsumresults = mysqli_query($c,$querystring);
-          $credconsumrow = mysqli_fetch_array($credconsumresults);
-	  $credconsumer = $credconsumrow['id'];
 	  
-	  $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE credentialconsumerid = ? ORDER BY course;");
+	  $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE consumerid = ? ORDER BY course;");
       
-	  $sql->bind_param('i', $credconsumer); // set parameter so it only pulls lists from the user's institution
+	  $sql->bind_param('i', $consumerid); // set parameter so it only pulls lists from the user's institution
 	  $sql->execute();
 	  $sql->store_result();
 	  $sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel, $mylists_private, $mylists_last_access, $mylists_linkid); 
@@ -275,14 +271,10 @@ include_once("app/app.php");
 	//create and execute the query.
     echo '<form id="mylist" action="delete_list.php" method="get"><select id="mylists" name="listid[]" multiple="multiple" size="15">';
     foreach ($consumeridsArray['logged_in_consumerid'] as $consumerid) {
-          $querystring = 'SELECT id FROM credentialconsumers WHERE credentialid = ' . decryptCookie($_COOKIE['logged_in_cust_id']) . ' AND consumerid = "' . $consumerid . '";';
-          $credconsumresults = mysqli_query($c,$querystring);
-          $credconsumrow = mysqli_fetch_array($credconsumresults);
-	  $credconsumer = $credconsumrow['id'];
 	  
-	  $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE credentialconsumerid = ? ORDER BY last_access;");
+	  $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE consumerid = ? ORDER BY last_access;");
       
-	  $sql->bind_param('i', $credconsumer); // set parameter so it only pulls lists from the user's institution
+	  $sql->bind_param('i', $consumerid); // set parameter so it only pulls lists from the user's institution
 	  $sql->execute();
 	  $sql->store_result();
 	  $sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel, $mylists_private, $mylists_last_access, $mylists_linkid); 

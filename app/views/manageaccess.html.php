@@ -42,7 +42,7 @@ td {
   }
   
   if (((isset($_COOKIE['manage_access_login'])) || isset($loggedin)) && (!(isset($loggedout)))) {
-
+ 
         if (isset($clean['action'])) {
             if ($clean['action'] == "Set New Expiration") {
                 $sql = "UPDATE oauth SET expires = '".$clean['expires']."' WHERE id = " . $clean['id'] . ";";

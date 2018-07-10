@@ -2,13 +2,13 @@
 
 include("app/app.php");
 
-if (isset($_COOKIE['logged_in_cust_id'])) {
-    $credentialconsumerid = decryptCookie($_COOKIE['logged_in_cust_id']);
+if (isset($_COOKIE['consumeridsArray'])) {
+    $consumerids = decryptCookie($_COOKIE['consumeridsArray']);
 } else {
     die("You are unauthorized to perform this action.");
 }
 
-$rows = student_export_all_sql($c,$credentialconsumerid);
+$rows = student_export_all_sql($c,$consumerids);
 
 if ($rows) {
     

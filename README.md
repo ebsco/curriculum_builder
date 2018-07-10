@@ -53,7 +53,7 @@ authors | name and contact information for reading list users
 authorlists | connects lists to authors
 lists | entries for each reading list
 credentials | manages the EDS Profiles that connect to this tool
-credentialconsumers | ties EDS Profiles to LMSs
+onsumers | ties EDS Profiles to LMSs
 oauth | manages the Consumer Key / Secret pairs that allow LMSs to connect to this tool, contains administrative choices
 authtokens | manages authentication tokens for the EDS API
 studentaccess | records student names as they access lists
