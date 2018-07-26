@@ -3,7 +3,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.1\n"
 "Project-Id-Version: CB2\n"
 "Language: nl\n"
 "POT-Creation-Date: \n"
@@ -81,7 +81,7 @@ msgid "Contact Email"
 msgstr "Contact Email"
 
 msgid "Link to Library Home Page"
-msgstr "Link naar Bibliotheek pagina"
+msgstr "Link naar bibliotheekpagina"
 
 msgid "Text to display at top of screen"
 msgstr "Text aan de bovenkant van het scherm"
@@ -126,7 +126,7 @@ msgid "Preview Selected List"
 msgstr "Voorvertoning geselecteerde lijst"
 
 msgid "Delete Lists"
-msgstr "Vewijder lijst"
+msgstr "Verwijder lijst(en)"
 
 msgid "Delete Selected Lists"
 msgstr "Verwijder geselecteerde lijst(en)"
@@ -210,7 +210,7 @@ msgid "Cancel"
 msgstr "Annuleren"
 
 msgid "No lists selected to delete."
-msgstr "Geen lijsten geselecteerd om te verwijderen"
+msgstr "Geen lijsten geselecteerd om te verwijderen."
 
 msgid "Back to Administration Screen"
 msgstr "Terug naar admin scherm"
@@ -627,22 +627,22 @@ msgid "Download Student Data"
 msgstr "Download student gegevens"
 
 msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
-msgstr "Wees voorzichtig met het bewerken van deze instellingen, omdat ze de instellingen overschrijven die oorspronkelijk zijn ingesteld in het Configuratiescherm van het LMS.  Start ten minste één leeslijst van uw LMS om deze velden te vullen, of neem contact op met eds@ebscohost.com voor hulp bij deze instellingen."
+msgstr "Wees voorzichtig met het bewerken van deze instellingen, omdat ze de instellingen overschrijven die oorspronkelijk zijn ingesteld in het configuratiescherm van het LMS.  Open ten minste één leeslijst van uw LMS om deze velden te vullen, of neem contact op met eds@ebscohost.com voor hulp bij deze instellingen."
 
 msgid "If you change the "
-msgstr "Als u de "
+msgstr "Verandert u "
 
 msgid "user id"
-msgstr "Gebruikersnaam"
+msgstr "gebruikersnaam"
 
 msgid "password"
 msgstr "wachtwoord"
 
 msgid "API profile ID"
-msgstr "EDS API Profile ID"
+msgstr "EDS API Profiel ID"
 
 msgid "you will need to log out and log back in to see accurate statistics and lists."
-msgstr "u moet uitloggen en weer inloggen om accurate statistieken en lijsten te zien."
+msgstr "log dan uit en log weer opnieuw in om accurate statistieken en lijsten te zien."
 
 msgid "Select"
 msgstr "Selecteer"
@@ -687,10 +687,10 @@ msgid "If your proxy prefix ends with"
 msgstr "Als uw proxy prefix eindigt met"
 
 msgid "this probably needs to be set to"
-msgstr "Dit moet waarschijnlijk worden ingesteld op"
+msgstr "moet dit waarschijnlijk ingesteld worden op"
 
 msgid "otherwise"
-msgstr "Anders"
+msgstr "eindigt de proxy prefix anders dan kiest u"
 
 msgid "is probably correct."
 msgstr "is waarschijnlijk juist."
@@ -714,10 +714,10 @@ msgid "will collect students names, email addresses, and IDs. These data will be
 msgstr "verzamelt studenten namen, e-mailadressen en id's. Deze gegevens zullen worden gebruikt om cursus instructeurs te informeren wanneer een student op een lezing klikt. Deze velden worden ook ingevuld in de rapporten die aan de bibliotheek worden verstrekt. Als u de e-mail verzameling alleen wilt uitschakelen, kan uw LMS-instructeur ervoor kiezen deze informatie niet met de provider te delen."
 
 msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
-msgstr "zal geen faculteit met namen van studenten voorzien die geklikt op lezingen. Echter, bibliotheken zullen worden voorzien van een rapport waaruit blijkt wanneer en welke lezingen werden benaderd met alleen het LMS userid."
+msgstr "zal geen faculteit met namen van studenten voorzien die geklikt hebben op lezingen. Echter, bibliotheken zullen worden voorzien van een rapport waaruit blijkt wanneer en welke lezingen werden benaderd met alleen het LMS userid."
 
 msgid "Anonymized"
-msgstr "Anonieme"
+msgstr "Anoniem"
 
 msgid "None"
 msgstr "Geen"
@@ -729,10 +729,10 @@ msgid "Link to Help Pages"
 msgstr "Link naar Help pagina's"
 
 msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
-msgstr "voor deze optie betekent het dat instructeurs zal worden gevraagd bij het maken van een nieuwe lijst om ofwel een nieuwe lijst te maken vanaf het begin, of te selecteren uit een lijst van identieke naamlijsten  om de nieuwe lijst vooraf invullen. Als"
+msgstr "voor deze optie betekent dat instructeurs zal worden gevraagd bij het maken van een nieuwe lijst om ofwel een nieuwe lijst te maken vanaf het begin, of te selecteren uit een lijst van identieke naamlijsten  om de nieuwe lijst vooraf invullen. Als"
 
 msgid "is selected, all new lists will be blank."
-msgstr "is geselecteerd, alle nieuwe lijsten zullen leeg zijn."
+msgstr "is geselecteerd, zullen alle nieuwe lijsten leeg zijn."
 
 msgid "Hide"
 msgstr "Verberg"
@@ -984,7 +984,7 @@ msgid "Periodical"
 msgstr "Tijdschrift"
 
 msgid "Selecting"
-msgstr "Kiezen"
+msgstr "Keuze"
 
 msgid "Publication Year"
 msgstr "Publikatie jaar"

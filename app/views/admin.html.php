@@ -229,12 +229,13 @@ include_once("app/app.php");
 	  
 	  $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE consumerid = ? ORDER BY course;");
       
-	  $sql->bind_param('i', $consumerid); // set parameter so it only pulls lists from the user's institution
+	  $sql->bind_param('s', $consumerid); // set parameter so it only pulls lists from the user's institution
 	  $sql->execute();
 	  $sql->store_result();
 	  $sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel, $mylists_private, $mylists_last_access, $mylists_linkid); 
 	  
 	  if ($sql->num_rows > 0) { //check to see if there are any results
+          echo '<option disabled>=== '.$consumerid.' ('.$sql->num_rows.') ===</option>';
 	  while($sql->fetch()) {
 
 	      if (strlen($mylists_linklabel) <= 0) {  //if no lable add one
@@ -267,19 +268,22 @@ include_once("app/app.php");
 <div class="readingListLink">
   <h3><?php echo _("Delete Lists");?></h3>
 <?php
-
+       
+    $queries = "";
 	//create and execute the query.
-    echo '<form id="mylist" action="delete_list.php" method="get"><select id="mylists" name="listid[]" multiple="multiple" size="15">';
+    echo '<form id="mylist" action="delete_list.php" method="get"><select id="mylists" style="width:100%;" name="listid[]" multiple="multiple" size="15">';
     foreach ($consumeridsArray['logged_in_consumerid'] as $consumerid) {
 	  
-	  $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE consumerid = ? ORDER BY last_access;");
-      
-	  $sql->bind_param('i', $consumerid); // set parameter so it only pulls lists from the user's institution
+
+$sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE consumerid = ? ORDER BY last_access;");
+$queries .= "SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE consumerid = \"".$consumerid."\" ORDER BY last_access;<br/>";
+	  $sql->bind_param('s', $consumerid); // set parameter so it only pulls lists from the user's institution
 	  $sql->execute();
 	  $sql->store_result();
 	  $sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel, $mylists_private, $mylists_last_access, $mylists_linkid); 
 	  
 	  if ($sql->num_rows > 0) { //check to see if there are any results
+          echo '<option disabled>=== '.$consumerid.' ('.$sql->num_rows.') ===</option>';
 	  while($sql->fetch()) {
 
 	      if (strlen($mylists_linklabel) <= 0) {  //if no lable add one
@@ -294,7 +298,7 @@ include_once("app/app.php");
 		      echo ' selected="selected"';
 		  }
 	      }
-	      echo '>Id #' .$mylists_linkid . ': ' .$mylists_course . ' - ' . $mylists_linklabel;
+	      echo '>' .$mylists_course . ' - ' . $mylists_linklabel;
 	      if ($mylists_last_access == '') {
 		echo ' (NEVER accessed)';
 	      } else {
@@ -304,6 +308,8 @@ include_once("app/app.php");
 	      if ($mylists_private == 1) {
 		  echo ' (private)';
 	      }
+
+              echo ' - Id #' .$mylists_linkid; 
 	      echo '</option>';
 	  }
 	  
@@ -312,7 +318,7 @@ include_once("app/app.php");
       }
     }
     echo '</select> <br /> <input type="submit" value="'._("Delete Selected Lists").'" name="submit" /></form>';
-
+    //echo $queries;
 ?></div><?php
     }
     mysqli_close($c);

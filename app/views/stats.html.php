@@ -155,16 +155,21 @@
       <?php
       $numCourses = 0;
 		$courses=array(); //will be used in next stat.
-
+$fixedCourses = array();
          foreach($consumerids['logged_in_consumerid'] as $consumerid) {
            $courses[$consumerid] = array();
-          
+                    
         $sql = $c->prepare("SELECT DISTINCT course FROM lists WHERE consumerid = ?;");
-		$sql->bind_param('i',$consumerid);
+		$sql->bind_param('s',$consumerid);
 		$sql->execute();
 		$sql->store_result();
 		$sql->bind_result($course);//will be used to populate the courses array.
 		while($sql->fetch()){ //populate the array
+			
+                        
+                        //if (!(in_array($course,$fixedCourses))) {
+                        //    array_push($fixedCourses,$course);
+                        //}
 			$courses[$consumerid][] = $course;
 		}
 		$numCourses += $sql->num_rows;
@@ -177,7 +182,14 @@
       ?>
       </p>
     <p><strong><?php echo _("Courses");?></strong>:<span style="font-size:smaller;">
-      <?php
+      
+    <table>
+      <tr>
+        <th>LMS ID</th>
+        <th>Course Name/ID</th>
+        <th>Number of Lists</th>
+      <tr>
+    <?php
         
         foreach ($consumerids['logged_in_consumerid'] as $consumerid) {
 
@@ -185,23 +197,23 @@
         foreach ($courses[$consumerid] as $course) {
             
             
-          echo "<br />" . $course;
+          echo "<tr><td>".$consumerid."</td><td>" . $course."</td><td>";
           $sql = $c->prepare("SELECT id FROM lists WHERE course = ? AND consumerid = ?;");
 		  $sql->bind_param('si', $course, $consumerid);
 		  $sql->execute();
 		  $sql->store_result();
 		  
           $numListsInCourse = $sql->num_rows;
-          echo " <em>(" . $numListsInCourse . " list";
+          echo $numListsInCourse . " list";
           if ($numListsInCourse != 1) {
             echo "s";
           }
-          echo ")</em>";
+          echo "</td></tr>";
         }
         }
 		mysqli_close($c);
       ?>
-      </span></p>
+      </table></span></p>
 <?php
       }
   } else {
