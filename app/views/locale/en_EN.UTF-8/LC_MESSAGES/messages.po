@@ -1351,3 +1351,7 @@ msgstr "Collection"
 msgid "Generate list"
 msgstr "Generate list"
 
+
+msgctxt "Facet"
+msgid "Category"
+msgstr "Category"

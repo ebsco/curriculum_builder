@@ -3,1347 +3,1016 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: POEditor.com\n"
+"X-Generator: Poedit 2.1.1\n"
 "Project-Id-Version: CB2\n"
 "Language: ja\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 
-#: 
 msgid "English"
 msgstr "English"
 
-#: 
 msgid "Back to Reading List"
 msgstr "リーディングリストに戻る"
 
-#: 
 msgid " << Back to Results"
 msgstr "<<結果に戻る"
 
-#: 
 msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
 msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
 
-#: 
 msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
 msgstr "その論文にアクセスできない可能性があります。図書館と教師にこのエラーを伝えてください:"
 
-#: 
 msgid "This record from "
 msgstr "これは "
 
-#: 
 msgid " cannot be displayed to guests."
 msgstr " からのレコードでゲストには表示できません。"
 
-#: 
 msgid "Login</a> for full access."
 msgstr "ログイン</a>してアクセス。"
 
-#: 
 msgid "Add to Reading List"
 msgstr "リーディングリストに追加"
 
-#: 
 msgid "Remove from Reading List"
 msgstr "リーディングリストから削除"
 
-#: 
 msgid "PDF full text"
 msgstr "PDFフルテキスト"
 
-#: 
 msgid "HTML full text"
 msgstr "HTMLフルテキスト"
 
-#: 
 msgid "HTML Full Text"
 msgstr "HTMLフルテキスト"
 
-#: 
 msgid "Full Text:"
 msgstr "フルテキスト:"
 
-#: 
 msgid "PubType:"
 msgstr "出版物タイプ:"
 
-#: 
 msgid "Database:"
 msgstr "データベース:"
 
-#: 
 msgid "Statistics"
 msgstr "統計"
 
-#: 
 msgid "Curriculum Builder Settings"
 msgstr "Curriculum Builder 設定"
 
-#: 
 #, fuzzy
 msgid "EBSCO User ID"
 msgstr "EBSCOユーザID"
 
-#: 
 #, fuzzy
 msgid "EBSCO Password"
 msgstr "EBSCOパスワード"
 
-#: 
 msgid "Your EDS API Profile"
 msgstr "EDS APIプロファイルID"
 
-#: 
 msgid "URL for your library logo"
 msgstr "図書館ロゴのURL"
 
-#: 
 msgid "Contact Email"
 msgstr "メールアドレス"
 
-#: 
 msgid "Link to Library Home Page"
 msgstr "図書館ページのURL"
 
-#: 
 msgid "Text to display at top of screen"
 msgstr "ページトップに表示されるテキスト"
 
-#: 
 msgid "Link to EDS Label"
 msgstr "EDSへのリンクラベル"
 
-#: 
 msgid "Custom CSS File"
 msgstr "カスタムCSSファイル"
 
-#: 
 msgid "Collect student names as they access assigned readings?"
 msgstr "割り当てられたアイテムにアクセスした学生の名前を記録しますか？"
 
-#: 
 msgid "Yes"
 msgstr "はい"
 
-#: 
 msgid "No"
 msgstr "いいえ"
 
-#: 
 msgid "Footer text"
 msgstr "フッタテキスト"
 
-#: 
 msgid "Copy Course Support"
 msgstr "コースのコピーをサポート"
 
-#: 
 msgid "Remove Full Text and Available in Library Collection Limiters from view"
 msgstr "Full TextおよびAvailable in Library Collectionのリミッターを削除する"
 
-#: 
 msgid "Show 'Return to Course' Link at top of page"
 msgstr "「コースへ戻る」リンクをページトップに表示"
 
-#: 
 msgid "Open all Lists in a New Window"
 msgstr "リストを新規ウィンドウで開く"
 
-#: 
 msgid "View Lists"
 msgstr "リストを見る"
 
-#: 
 msgid "Select one: "
 msgstr "選択してください:"
 
-#: 
 msgid "Preview Selected List"
 msgstr "選択したリストをプレビュー"
 
-#: 
 msgid "Delete Lists"
 msgstr "リストの削除"
 
-#: 
 msgid "Delete Selected Lists"
 msgstr "選択したリストを削除"
 
-#: 
 msgid "Basic Search"
 msgstr "基本検索"
 
-#: 
 msgid "Keyword"
 msgstr "キーワード"
 
-#: 
 msgid "Author"
 msgstr "著者"
 
-#: 
 msgid "Title"
 msgstr "タイトル"
 
-#: 
 msgid "View this list"
 msgstr "このリストを見る"
 
-#: 
 msgid "Untitled List"
 msgstr "無題のリスト"
 
-#: 
 msgid "All Public Lists:"
 msgstr "すべてのパブリックリスト:"
 
-#: 
 msgid "There are no public reading lists to copy."
 msgstr "コピーするパブリックリーディングリストがありません。"
 
-#: 
 msgid "Options"
 msgstr "オプション"
 
-#: 
 msgid "Include Notes in the Import Process"
 msgstr "インポート時にノートを含める"
 
-#: 
 msgid "Preserve Sort Order"
 msgstr "ソート順を保存"
 
-#: 
 msgid "Check/Uncheck All"
 msgstr "すべてをチェック／アンチェック"
 
-#: 
 msgid "Notes:"
 msgstr "ノート:"
 
-#: 
 msgid "There are no readings in this list."
 msgstr "リストにアイテムがありません。"
 
-#: 
 msgid "Copy Selected Readings"
 msgstr "選択したアイテムをコピー"
 
-#: 
 msgid "You are unauthorized to access this page."
 msgstr "このページへのアクセスには許可が必要です。"
 
-#: 
 msgid "You must be logged in to access that service, please login"
 msgstr "このサービスにアクセスするにはログインする必要があります。ログインしてください。"
 
-#: 
 msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
 msgstr "警告: 次のリストを完全に削除します。このアクションはやり直しできません。インストラクタがコースにアクセスすると空のリストが表示されます。"
 
-#: 
 msgid "NEVER accessed since update"
 msgstr "更新してからアクセスされていません"
 
-#: 
 msgid "LAST ACCESSED"
 msgstr "最終アクセス"
 
-#: 
 msgid "DELETE"
 msgstr "削除"
 
-#: 
 msgid "this list"
 msgstr "このリスト"
 
-#: 
 msgid "these "
 msgstr "これらの"
 
-#: 
 msgid "lists"
 msgstr "リスト"
 
-#: 
 msgid "or"
 msgstr "または"
 
-#: 
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: 
 msgid "No lists selected to delete."
 msgstr "削除するリストが選択されていません。"
 
-#: 
 msgid "Back to Administration Screen"
 msgstr "管理者画面に戻る"
 
-#: 
 msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
 msgstr "エラーが発生しました。1つ以上のレコードでデータが不完全です。各アイテムに完全なレコードを含むことを確認のうえ、再度実行してください。"
 
-#: 
 msgid "Enter bibliographic info from the list into this box:"
 msgstr " リストの書誌情報をこのボックスに入力してください:"
 
-#: 
 msgid "CB Version 2.3"
 msgstr "CB Version 2.3"
 
-#: 
 msgid "List ID"
 msgstr "リストID"
 
-#: 
 msgid "Login"
 msgstr "ログイン"
 
-#: 
 msgid "Invalid login -- pleasae try again"
 msgstr "ログインできません。やり直してください。"
 
-#: 
 msgid "Username:"
 msgstr "ユーザ名:"
 
-#: 
 msgid "Password:"
 msgstr "パスワード:"
 
-#: 
 msgid "Successfully logged in."
 msgstr "ログインしました。"
 
-#: 
 msgid "Successfully updated expiration date for "
 msgstr "有効期限を更新しました: "
 
-#: 
 msgid "Successfully deleted "
 msgstr "削除しました: "
 
-#: 
 msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
 msgstr "Consumerキーとパスワードはブランクにはできません。または有効期限を設定する必要があります。再度実行してください。"
 
-#: 
 msgid "Consumer key "
 msgstr "Consumerキー"
 
-#: 
 msgid "already exists. Please delete the existing one first before creating a new one."
 msgstr "は既に存在しています。新規作成の前に既存のものを削除してください。"
 
-#: 
 msgid "Successfully inserted consumer key: "
 msgstr "Consumerキーを追加しました:"
 
-#: 
 msgid "Unrecognized Actions.  Try again."
 msgstr "アクションが不正です。やり直してください。"
 
-#: 
 msgid "Create New Access Key Pair"
 msgstr "新規アクセスキーペアを作成"
 
-#: 
 msgid "Consumer Key"
 msgstr "Consumerキー"
 
-#: 
 msgid "Secret"
 msgstr "Secret"
 
-#: 
 msgid "Expiration Date"
 msgstr "有効期限"
 
-#: 
 msgid "Edit or Delete Existing Access Key Pair"
 msgstr "既存のアクセスキーペアを編集または削除"
 
-#: 
 msgid "Warning:"
 msgstr "警告:"
 
-#: 
 msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
-msgstr "Consumerキー／Secretペアを削除、または無効な期限を設定すると、そのキーペアを使うすべてのサイトでリーディングリストへのアクセスが拒否されます。\n"
-""
+msgstr "Consumerキー／Secretペアを削除、または無効な期限を設定すると、そのキーペアを使うすべてのサイトでリーディングリストへのアクセスが拒否されます。"
 
-#: 
 msgid "Expiration"
 msgstr "有効期限"
 
-#: 
 msgid "Configure / Admin"
 msgstr "構成／管理"
 
-#: 
 msgid "Are you sure you want to delete this key"
 msgstr "このキーを削除してもよいですか"
 
-#: 
 msgid "You have been logged out."
 msgstr "ログアウトしました。"
 
-#: 
 msgid "Your login credentials are incorrect.  Please try again."
 msgstr "ログイン情報が正しくありません。再度実行してください。"
 
-#: 
 msgid "Manage Access to the Reading List Tool"
 msgstr "リーディングリストツールへのアクセスを管理"
 
-#: 
 msgid "Create New Key Pair"
 msgstr "新規キーペアを作成"
 
-#: 
 msgid "Log Out"
 msgstr "ログアウト"
 
-#: 
 msgid "Notes may not save properly."
 msgstr "ノートは正しく保存されていないかもしれません。"
 
-#: 
 msgid "Import from Existing List"
 msgstr "既存のリストよりインポート"
 
-#: 
 msgid "Import from EBSCO Folder (beta)"
 msgstr "EBSCOフォルダーよりインポート（ベータ版）"
 
-#: 
 msgid "This list is"
 msgstr "このリストは"
 
-#: 
 msgid "public"
 msgstr "パブリック"
 
-#: 
 msgid "private"
 msgstr "プライベート"
 
-#: 
 msgid "student(s) have accessed this list."
 msgstr "人の学生がこのリストにアクセスしました。"
 
-#: 
 msgid "Students that have accessed this list:"
 msgstr "このリストにアクセスした学生:"
 
-#: 
 msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
 msgstr "このリストにアクセスした学生はいません。少なくとも1人がアクセスすれば学生の名前がリスト表示されます。"
 
-#: 
 msgid "Add Folder"
 msgstr "フォルダに追加"
 
-#: 
 msgid "Create Folder"
 msgstr "フォルダを作成"
 
-#: 
 msgid "Add Text or Instructions"
 msgstr "テキストまたは指示を追加"
 
-#: 
 msgid "Text"
 msgstr "テキスト"
 
-#: 
 msgid "Folder"
 msgstr "フォルダー"
 
-#: 
 msgid "e.g., Read Chapter 5 in Textbook"
 msgstr "例. テキストブックの5章を読んでください"
 
-#: 
 msgid "Main list of Readings"
 msgstr "メインリスト"
 
-#: 
 msgid "Add Web Resource"
 msgstr "Webリソースを追加"
 
-#: 
 msgid "URL"
 msgstr "URL"
 
-#: 
 msgid "e.g., http://library.edu/"
 msgstr "例. Http://library.edu/"
 
-#: 
 msgid "Link label"
 msgstr "リンクラベル"
 
-#: 
 msgid " Back to main list"
 msgstr "メインリストに戻る"
 
-#: 
 msgid "This list has folders:"
 msgstr "このリストのフォルダ:"
 
-#: 
 msgid "Sort Order:"
 msgstr "並べ替え順:"
 
-#: 
 msgid "Removing..."
 msgstr "削除中…"
 
-#: 
 #, fuzzy
 msgid "Move to folder"
 msgstr "フォルダに移動:"
 
-#: 
 msgid "No Folder"
 msgstr "フォルダがありません"
 
-#: 
 msgid "Delete"
 msgstr "削除"
 
-#: 
 msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
 msgstr "このリストの詳細を読み込みできません。図書館はこのアイテムを契約していないか、既にリストにある別なアイテムと重複しているかもしれません。このアイテムにアクセスできない場合は図書館に問い合わせてください。"
 
-#: 
 msgid "By : "
 msgstr "By : "
 
-#: 
 msgid "Published:"
 msgstr "出版日:"
 
-#: 
 msgid "Start Page: "
 msgstr "開始ページ:"
 
-#: 
 msgid "Page Count: "
 msgstr "ページ数:"
 
-#: 
 msgid "Language:"
 msgstr "言語:"
 
-#: 
 msgid "Full Text"
 msgstr "フルテキスト"
 
-#: 
 msgid "Online Access"
 msgstr "オンラインアクセス"
 
-#: 
 msgid "Students that have clicked this reading: "
 msgstr "このアイテムをクリックした学生:"
 
-#: 
 msgid "student(s) have clicked this reading."
 msgstr "人の学生がこのアイテムをクリックしました。"
 
-#: 
 msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
 msgstr "このアイテムを購読した学生はいません。少なくとも1人がクリックすれば学生の名前がリスト表示されます。"
 
-#: 
 #, fuzzy
 msgid "Characters remaining"
 msgstr "残り文字数:"
 
-#: 
 msgid "Removing... please wait."
 msgstr "削除中です。お待ちください。"
 
-#: 
 msgid "Update Notes and Sort Order"
 msgstr "ノートと並べ替え順を更新"
 
-#: 
 msgid "Currently, there are no readings."
 msgstr "現在アイテムがありません。"
 
-#: 
 msgid "Select a folder above to see readings."
 msgstr "フォルダを選択してアイテムを表示します。"
 
-#: 
 msgid "Currently, there are no readings on this list."
 msgstr "このリストには現在アイテムがありません。"
 
-#: 
 msgid "<< Back to Results"
 msgstr "<< 結果に戻る"
 
-#: 
 msgid "Retrieve response XML"
 msgstr "レスポンスXMLを取得"
 
-#: 
 msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
 msgstr "その論文にアクセスできない可能性があります。図書館と教師にこのエラーを伝えてください:"
 
-#: 
 msgid "This record from"
 msgstr "これは "
 
-#: 
 msgid "cannot be displayed to guests."
 msgstr " からのレコードでゲストには表示できません。"
 
-#: 
 msgid "for full access."
 msgstr "してフルアクセス。"
 
-#: 
 msgid "See it in EDS"
 msgstr "EDSで見る"
 
-#: 
 msgid " Online Access"
 msgstr "オンラインアクセス"
 
-#: 
 msgid "Refine Search"
 msgstr "検索条件の見直し"
 
-#: 
 msgid "Remove Facets"
 msgstr "ファセットを削除"
 
-#: 
 msgid "Limiter: "
 msgstr "リミッター:"
 
-#: 
 msgid "Limit your results"
 msgstr "結果を限定"
 
-#: 
 msgid "Expand your results"
 msgstr "結果を拡張"
 
-#: 
 msgid "Search response XML"
 msgstr "検索レスポンスXML"
 
-#: 
 msgid "Results"
 msgstr "検索結果"
 
-#: 
 msgid "Showing"
 msgstr "表示中:"
 
-#: 
 msgid "of"
 msgstr "総数:"
 
-#: 
 msgid "for"
 msgstr "検索語:"
 
-#: 
 msgid "Sort"
 msgstr "並べ替え"
 
-#: 
 msgid "Page options"
 msgstr "ページオプション"
 
-#: 
 msgid "Detailed"
 msgstr "詳細"
 
-#: 
 msgid "Brief"
 msgstr "概要"
 
-#: 
 msgid "Title Only"
 msgstr "タイトルのみ"
 
-#: 
 msgid "Results per page"
 msgstr "ページ当たりの結果"
 
-#: 
 msgid "Research Starter"
 msgstr "リサーチスターター"
 
-#: 
 msgid "for full access"
 msgstr "してフルアクセス。"
 
-#: 
 msgid "Published: "
 msgstr "出版日:"
 
-#: 
 msgid "No results were found."
 msgstr "検索結果がありません。"
 
-#: 
 msgid "Result #"
 msgstr "結果 #"
 
-#: 
 msgid "Title is not available"
 msgstr "タイトルがありません"
 
-#: 
 msgid "By :"
 msgstr "By : "
 
-#: 
 msgid "Start Page:"
 msgstr "開始ページ:"
 
-#: 
 msgid "Page Count:"
 msgstr "ページ数:"
 
-#: 
 msgid "Abstract:"
 msgstr "概要:"
 
-#: 
 msgid "Subjects:"
 msgstr "件名:"
 
-#: 
 msgid "Key:"
 msgstr "キー:"
 
-#: 
 msgid "Secret:"
 msgstr "Secret:"
 
-#: 
 msgid "Administration"
 msgstr "管理"
 
-#: 
 msgid "Total Lists"
 msgstr "総リスト"
 
-#: 
 msgid "Total People Using Tool"
 msgstr "ツールを利用している人々"
 
-#: 
 msgid "Users"
 msgstr "ユーザ"
 
-#: 
 msgid "Total Courses Using Tool"
 msgstr "ツールを利用しているコース"
 
-#: 
 msgid "Courses"
 msgstr "コース"
 
-#: 
 msgid "Search"
 msgstr "検索"
 
-#: 
 msgid "Return to Course"
 msgstr "コースに戻る"
 
-#: 
 msgid "See Current Reading List"
 msgstr "現在のリーディング・リストを見る"
 
-#: 
 msgid "Update"
 msgstr "更新"
 
-#: 
 msgid "Add"
 msgstr "追加"
 
-#: 
 msgid " notes"
 msgstr "ノート"
 
-#: 
 msgid "Save notes"
 msgstr "ノートを保存"
 
-#: 
 msgid "edit notes"
 msgstr "ノートを編集"
 
-#: 
 msgid "items"
 msgstr "アイテム"
 
-#: 
 msgid "currently selected"
 msgstr "現在の選択"
 
-#: 
 msgid "Result"
 msgstr "結果"
 
-#: 
 msgid "Folder name"
 msgstr "フォルダ名"
 
-#: 
 msgid "Back to the main list"
 msgstr "メインリストに戻る"
 
-#: 
 msgid "Save Changes"
 msgstr "変更を保存"
 
-#: 
 msgid "Contact"
 msgstr "コンタクト"
 
-#: 
 msgid "for assistance with this tool."
 msgstr "このツールのアシスタンス"
 
-#: 
 msgid "Download Export File"
 msgstr "エクスポート・ファイルのダウンロード"
 
-#: 
 msgid "Import from Export File"
 msgstr "エクスポート・ファイルからのインポート"
 
-#: 
 msgid "Download Student Data"
 msgstr "学生データのダウンロード"
 
-#: 
 msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
 msgstr "これらの設定の編集には注意が必要です。LMSのLTI設定画面でセットアップされた、元々の設定を上書きしてしまう可能性があります。これらのフィールドに値を設定するには、自分のLMSから少なくとも一つのリーディング・リストをローンチしてください。もしくは、eds@ebscohost.comにこれらの設定のアシスタンスを依頼してください。"
 
-#: 
 msgid "If you change the "
 msgstr "もし␣を変更する場合"
 
-#: 
 msgid "user id"
 msgstr "ユーザーID"
 
-#: 
 msgid "password"
 msgstr "パスワード"
 
-#: 
 msgid "API profile ID"
 msgstr "APIプロファイルID"
 
-#: 
 msgid "you will need to log out and log back in to see accurate statistics and lists."
 msgstr "正確な統計とリストを見るためには、ログアウトしてもう一度ログインする必要があります。"
 
-#: 
 msgid "Select"
 msgstr "選択"
 
-#: 
 msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
 msgstr "EBSCOアドミンのAuthenticationセクションからのユーザーIDとパスワードの組み合わせ"
 
-#: 
 msgid "The username/password combo must be associated with the group containing the profile specified below."
 msgstr "ユーザー名/パスワードの組みまわせは以下に指定されプロファイルを含むグループに関連付けられている必要があります。"
 
-#: 
 msgid "Total Readings"
 msgstr "全部のリーディング"
 
-#: 
 msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
 msgstr "これはカリキュラム・ビルダーで使用するEDS APIプロファイルです。 上記で入力したユーザーIDとパスワードがアクセスできるグループに含まれている必要があります。"
 
-#: 
 msgid "EDS API Profile ID"
 msgstr "EDS APIプロファイルID"
 
-#: 
 msgid "LMS Roles that can edit lists (comma-separated)"
 msgstr "リストを編集できるLMSロール（カンマ区切り）"
 
-#: 
 msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
 msgstr "デフォルトでは、インストラクターとティーチング・アシスタントのみがリストを編集できます。 ただし、ここにロールを追加して、他のタイプのユーザーがリストを編集できるようにすることができます。"
 
-#: 
 msgid "Default:"
 msgstr "デフォルト："
 
-#: 
 msgid "Proxy Prefix for CustomLinks"
 msgstr "カスタムリンクのプロキシ・プレフィクス"
 
-#: 
 msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
 msgstr "入力されると、カリキュラム・ビルダーに表示されるカスタムリンクのすべてにこのプロキシが適用されます。"
 
-#: 
 msgid "Examples"
 msgstr "例"
 
-#: 
 msgid "Proxy should encode target URL"
 msgstr "プロキシはターゲットURLをエンコードする必要があります。"
 
-#: 
 msgid "If your proxy prefix ends with"
 msgstr "もしプロキシ・プレフィクスが次で終わる場合："
 
-#: 
 msgid "this probably needs to be set to"
 msgstr "これはおそらく次のように設定する必要があります："
 
-#: 
 msgid "otherwise"
 msgstr "あるいは"
 
-#: 
 msgid "is probably correct."
 msgstr "はおそらく正しいでしょう。"
 
-#: 
 msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
 msgstr "あなたのLMSがHTTPS経由でCurriculum Builderにアクセスする場合、あなたのロゴもHTTPS経由で利用できるべきです。"
 
-#: 
 msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
 msgstr "このテキストは、ヘッダー内のリストのタイトルの下に表示されます。 URLは自動的にハイパーリンクされます。"
 
-#: 
 msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
 msgstr "これは、詳細レコードの左側に表示されるリンクのラベルで、ユーザーがレコードを見るためのEBSCOディスカバリーサービスへ導きます。 空白のままにすると、EDSへのリンクは表示されません。"
 
-#: 
 msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
 msgstr "CSSファイルのURLを入力します。 このファイルのスタイルはカリキュラム・ビルダーの画面に適用されます。 LMSがHTTPSのみの場合は、HTTPSアドレスでなければなりません。"
 
-#: 
 msgid "Optional."
 msgstr "任意。"
 
-#: 
 msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
 msgstr "は生徒の名前、メールアドレス、IDを収集します。 これらのデータは、生徒がリーディングをクリックした時に、コースのインストラクターに通知するために使用されます。 また、図書館に提供されるレポートにある、これらのフィールドに値を入れます。 メールの収集のみを無効にするには、LMSインストラクターがこの情報をツール提供者と共有しないよう選択できます。"
 
-#: 
 msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
 msgstr "は、リーディングをクリックした生徒の名前を教員に提供しません。 ただし、図書館には、いつ、どのリーディングにアクセスされ、アクセスしたLMSのuserIDのみのレポートが提供されます。"
 
-#: 
 msgid "Anonymized"
 msgstr "匿名化"
 
-#: 
 msgid "None"
 msgstr "なし"
 
-#: 
 msgid "will collect no student activity. No reporting will be available."
 msgstr "は学生のアクティビティを収集しません。 レポートは利用できません。"
 
-#: 
 msgid "Link to Help Pages"
 msgstr "ヘルプ・ページへのリンク"
 
-#: 
 msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
 msgstr "このオプションでは、インストラクターは、新しいリストを最初から作成するか、同様の名前のリストから事前入力されたリストを利用して新しいリストを作成するかの選択を促されます。 もし"
 
-#: 
 msgid "is selected, all new lists will be blank."
 msgstr "が選択されると、すべての新しいリストはブランクになります。"
 
-#: 
 msgid "Hide"
 msgstr "隠す"
 
-#: 
 msgid "and"
 msgstr "と"
 
-#: 
 msgid "Available in Library Collection"
 msgstr "図書館のコレクションで入手可能"
 
-#: 
 msgid "Limiters"
 msgstr "リミター"
 
-#: 
 msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
 msgstr "これらのリミッターを非表示にすると、教員がこれらのチェックを外すのを防ぎ、あなたのコレクションに含まれないアイテムを読書リストに追加することを不可能にします。"
 
-#: 
 msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
 msgstr "このリンクはLMSによって提供されます。 LMSが正しく設定されている場合、ユーザーはコースのサイトにリダイレクトされます"
 
-#: 
 msgid "Show First Full Text Link Only"
 msgstr "最初のフルテキストリンクだけを表示する"
 
-#: 
 msgid "Language"
 msgstr "言語"
 
-#: 
 msgid "Spanish"
 msgstr "スペイン語"
 
-#: 
 msgid "German"
 msgstr "ドイツ語"
 
-#: 
 msgid "Italian"
 msgstr "イタリア語"
 
-#: 
 msgid "Portuguese"
 msgstr "ポルトガル語"
 
-#: 
 msgid "French"
 msgstr "フランス語"
 
-#: 
 msgid "Simplified Chinese"
 msgstr "中国語（簡体字）"
 
-#: 
 msgid "traditional Chinese"
 msgstr "中国語（繁体字）"
 
-#: 
 msgid "Japanese"
 msgstr "日本語"
 
-#: 
 msgid "Polish"
 msgstr "ポーランド語"
 
-#: 
 msgid "Swedish"
 msgstr "スウェーデン語"
 
-#: 
 msgid "Thai"
 msgstr "タイ語"
 
-#: 
 msgid "Turkish"
 msgstr "トルコ語"
 
-#: 
 msgid "Required"
 msgstr "必須"
 
-#: 
 msgid "e.g., Instructor"
 msgstr "例：インストラクター"
 
-#: 
 msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
 msgstr "プロキシ・プレフィクスはここです；WAMを使用している場合は、{targetURLdomain}を使用してWAMプロキシのドメインを指定できます。残りの部分は末尾に配置されます。"
 
-#: 
 msgid "Email for contact person for tool"
 msgstr "ツールの連絡先へのメール"
 
-#: 
 msgid "Branding text at top of screen"
 msgstr "画面上部のテキストのブランディング"
 
-#: 
 msgid "e.g., See Record in EDS"
 msgstr "例：EDSのレコードを見る"
 
-#: 
 msgid "e.g., Search for Library Resources"
 msgstr "例：図書館リソースの検索"
 
-#: 
 msgid "Optional.  URL for CSS Stylesheet"
 msgstr "任意。 CSSスタイルシートのURL"
 
-#: 
 msgid "URL for LibGuide or other help pages"
 msgstr "LibGuideまたはその他のヘルプページのURL"
 
-#: 
 msgid "e.g., a copyright notice"
 msgstr "例えば、著作権表示"
 
-#: 
 msgid "Label for Link to EDS"
 msgstr "EDSへのリンクのラベル"
 
-#: 
 msgid "Label for Search Box"
 msgstr "検索ボックスのラベル"
 
-#: 
 msgid "Collect Student Data"
 msgstr "学生データの収集"
 
-#: 
 msgid "URL to Library Home Page"
 msgstr "図書館ホームページへのURL"
 
-#: 
 msgid "Search Library Resources"
 msgstr "図書館リソースの検索"
 
-#: 
 msgid "Update Settings"
 msgstr "設定の更新"
 
-#: 
 msgid "Expander: "
 msgstr "エキスパンダー:␣"
 
-#: 
 msgid "Edit"
 msgstr "編集"
 
-#: 
 msgid "Relevance"
 msgstr "関連"
 
-#: 
 msgid "Source Type"
 msgstr "ソース・タイプ"
 
-#: 
 msgid "Subject"
 msgstr "主題"
 
-#: 
 msgid "Publication"
 msgstr "出版物"
 
-#: 
 msgid "Geography"
 msgstr "地理"
 
-#: 
 msgid "Content Provider"
 msgstr "コンテンツ・プロバイダー"
 
-#: 
 msgid "Academic Journal"
 msgstr "学術誌"
 
-#: 
 msgid "Biographie"
 msgstr "伝記"
 
-#: 
 msgid "Book"
 msgstr "書籍"
 
-#: 
 msgid "Conference Material"
 msgstr "会議資料"
 
-#: 
 msgid "Magazine"
 msgstr "雑誌"
 
-#: 
 msgid "New"
 msgstr "New"
 
-#: 
 msgid "Primary Source Document"
-msgstr "一次資料ドキュメント\n"
-""
+msgstr "一次資料ドキュメン"
 
-#: 
 msgid "Report"
 msgstr "レポート"
 
-#: 
 msgid "Review"
 msgstr "レビュー"
 
-#: 
 msgid "Trade Publication"
 msgstr "業界誌"
 
-#: 
 msgid "Date Newest"
 msgstr "一番最近の日付"
 
-#: 
 msgid "Date Oldest"
 msgstr "一番古い日付"
 
-#: 
 msgid "Authors"
 msgstr "著者"
 
-#: 
 msgid "Document Type"
 msgstr "ドキュメント・タイプ"
 
-#: 
 msgid "Subject Terms"
 msgstr "主題用語"
 
-#: 
 msgid "Author-Supplied Keywords"
 msgstr "著者によるキーワード"
 
-#: 
 msgid "Abstract"
 msgstr "抄録"
 
-#: 
 msgid "Author Affiliations"
 msgstr "著者略歴"
 
-#: 
 msgid "Accession Number"
 msgstr "受入番号"
 
-#: 
 msgid "Publisher"
 msgstr "出版社"
 
-#: 
 msgid "Source"
 msgstr "ソース"
 
-#: 
 msgid "Geographic Terms"
 msgstr "地理用語"
 
-#: 
 msgid "Academic Journals"
 msgstr "学術誌"
 
-#: 
 msgid "Books"
 msgstr "書籍"
 
-#: 
 msgid "Conference Materials"
 msgstr "会議資料"
 
-#: 
 msgid "Magazines"
 msgstr "雑誌"
 
-#: 
 msgid "Biographies"
 msgstr "伝記"
 
-#: 
 msgid "News"
 msgstr "ニュース"
 
-#: 
 msgid "Primary Source Documents"
 msgstr "一次資料ドキュメント"
 
-#: 
 msgid "Reports"
 msgstr "レポート"
 
-#: 
 msgid "Reviews"
 msgstr "レビュー"
 
-#: 
 msgid "Trade Publications"
 msgstr "業界誌"
 
-#: 
 msgid "Apply equivalent subjects"
 msgstr "同意義のサブジェクトを適用する"
 
-#: 
 msgid "Apply related words"
 msgstr "関連するワードを適用する"
 
-#: 
 msgid "Also search within the full text of the articles"
 msgstr "記事のフルテキストでも検索する"
 
-#: 
 msgid "References Available"
 msgstr "利用可能なリファレンス"
 
-#: 
 msgid "Scholarly (Peer Reviewed) Journals"
 msgstr "学術研究（査読）ジャーナル"
 
-#: 
 msgid "Library Home"
 msgstr "図書館ホーム"
 
-#: 
 msgid "Periodical"
 msgstr "定期出版物"
 
-#: 
 msgid "Selecting"
 msgstr "選択中"
 
-#: 
 msgid "Publication Year"
 msgstr "出版年"
 
-#: 
 msgid "You have no other reading lists."
 msgstr "他の読書リストはありません。"
 
-#: 
 msgid "No statistics to report yet."
 msgstr "報告する統計情報はまだありません。"
 
-#: 
 msgid "Select one:"
 msgstr "一つ選択してください："
 
-#: 
 msgid "Hebrew"
 msgstr "ヘブライ語"
 
-#: 
-msgctxt "Facet"
 msgid "University"
 msgstr "大学"
 
-#: 
-msgctxt "Facet"
 msgid "Collection"
 msgstr "コレクション"
 
-#: 
+msgid "Category"
+msgstr "カテゴリー"
+
 msgid "Generate list"
 msgstr "リストを生成する"
-

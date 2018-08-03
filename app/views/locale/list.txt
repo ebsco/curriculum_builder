@@ -3,27 +3,29 @@
 
  Directory of C:\EBSCO\CurriculumBuilder\app\views\locale
 
-19-12-2017  06:17    <DIR>          .
-19-12-2017  06:17    <DIR>          ..
-13-12-2017  13:44    <DIR>          de_DE.UTF-8
-13-12-2017  13:44    <DIR>          en_EN.UTF-8
-13-12-2017  13:44    <DIR>          es_CO.UTF-8
-13-12-2017  13:44    <DIR>          fr_FR.UTF-8
-16-10-2017  09:42    <DIR>          he_HE.UTF-8
-13-12-2017  13:44    <DIR>          he_IL.UTF-8
-13-12-2017  13:44    <DIR>          it_IT.UTF-8
-13-12-2017  13:44    <DIR>          ja_JP.UTF-8
-13-12-2017  13:44    <DIR>          ko_KR.UTF-8
-19-12-2017  06:17                 0 list.txt
-13-12-2017  13:44    <DIR>          pl_PL.UTF-8
-13-12-2017  13:44    <DIR>          pt_PT.UTF-8
-13-12-2017  13:44    <DIR>          sv_SE.UTF-8
-13-12-2017  13:44    <DIR>          th_TH.UTF-8
-13-12-2017  13:44    <DIR>          tr_TR.UTF-8
-12-10-2017  10:13    <DIR>          zh.UTF-8
-13-12-2017  13:44    <DIR>          zh_CN.UTF-8
-16-10-2017  09:42    <DIR>          zh_Hans.UTF-8
-16-10-2017  09:42    <DIR>          zh_Hant.UTF-8
-13-12-2017  13:44    <DIR>          zh_TW.UTF-8
+27-07-2018  14:17    <DIR>          .
+27-07-2018  14:17    <DIR>          ..
+13-12-2017  14:44    <DIR>          de_DE.UTF-8
+13-12-2017  14:44    <DIR>          en_EN.UTF-8
+13-12-2017  14:44    <DIR>          es_CO.UTF-8
+13-12-2017  14:44    <DIR>          fr_FR.UTF-8
+16-10-2017  10:42    <DIR>          he_HE.UTF-8
+13-12-2017  14:44    <DIR>          he_IL.UTF-8
+13-12-2017  14:44    <DIR>          it_IT.UTF-8
+13-12-2017  14:44    <DIR>          ja_JP.UTF-8
+13-12-2017  14:44    <DIR>          ko_KR.UTF-8
+27-07-2018  14:17                 0 list.txt
+15-05-2018  22:03    <DIR>          nl_NL.UTF-8
+13-12-2017  14:44    <DIR>          pl_PL.UTF-8
+26-06-2018  06:52    <DIR>          pt_BR.UTF-8
+13-12-2017  14:44    <DIR>          pt_PT.UTF-8
+13-12-2017  14:44    <DIR>          sv_SE.UTF-8
+13-12-2017  14:44    <DIR>          th_TH.UTF-8
+13-12-2017  14:44    <DIR>          tr_TR.UTF-8
+12-10-2017  11:13    <DIR>          zh.UTF-8
+13-12-2017  14:44    <DIR>          zh_CN.UTF-8
+16-10-2017  10:42    <DIR>          zh_Hans.UTF-8
+16-10-2017  10:42    <DIR>          zh_Hant.UTF-8
+13-12-2017  14:44    <DIR>          zh_TW.UTF-8
                1 File(s)              0 bytes
-              21 Dir(s)  113.751.400.448 bytes free
+              23 Dir(s)  94.524.956.672 bytes free

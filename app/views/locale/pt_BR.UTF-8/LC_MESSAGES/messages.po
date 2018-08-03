@@ -3,7 +3,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1.1\n"
 "Project-Id-Version: CB-pt_BR\n"
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -1003,13 +1003,14 @@ msgstr "Selecione um:"
 msgid "Hebrew"
 msgstr "Hebraico"
 
-msgctxt "Facet"
 msgid "University"
 msgstr "Universidade"
 
-msgctxt "Facet"
-msgid "Collection"
-msgstr "Coleção"
-
 msgid "Generate list"
 msgstr "Gerar lista"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "Collection"
+msgstr "Coleção"
