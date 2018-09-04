@@ -1,0 +1,1023 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"Project-Id-Version: CB2\n"
+"Language: it\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgid "English"
+msgstr "English"
+
+msgid "Back to Reading List"
+msgstr "Torna alla lista"
+
+msgid " << Back to Results"
+msgstr "<< Torna ai risultati"
+
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
+msgstr "Oh oh! Sembra che l'articolo non sia può disponibile attraverso la biblioteca. Avverti il docente e la biblioteca di questo errore: "
+
+msgid "This record from "
+msgstr "Questo record proveniente da"
+
+msgid " cannot be displayed to guests."
+msgstr "non può essere visualizzato da utenti non registrati."
+
+msgid "Login</a> for full access."
+msgstr "Login</a> per visualizzarlo."
+
+msgid "Add to Reading List"
+msgstr "Aggiungi alla lista"
+
+msgid "Remove from Reading List"
+msgstr "Rimuovi dalla lista"
+
+msgid "PDF full text"
+msgstr "PDF full text"
+
+msgid "HTML full text"
+msgstr "HTML full text"
+
+msgid "HTML Full Text"
+msgstr "HTML Full Text"
+
+msgid "Full Text:"
+msgstr "Full Text:"
+
+msgid "PubType:"
+msgstr "Tipo di pubblicazione:"
+
+msgid "Database:"
+msgstr "Database:"
+
+msgid "Statistics"
+msgstr "Statistiche"
+
+msgid "Curriculum Builder Settings"
+msgstr "Impostazioni Curriculum Builder"
+
+#, fuzzy
+msgid "EBSCO User ID"
+msgstr "Il tuo User ID EBSCO"
+
+#, fuzzy
+msgid "EBSCO Password"
+msgstr "La tua password EBSCO"
+
+msgid "Your EDS API Profile"
+msgstr "Il tuo profilo EDS API"
+
+msgid "URL for your library logo"
+msgstr "URL del logo della biblioteca"
+
+msgid "Contact Email"
+msgstr "Email di contatto"
+
+msgid "Link to Library Home Page"
+msgstr "Link al sito della biblioteca"
+
+msgid "Text to display at top of screen"
+msgstr "Testo da mostrare come intestazione di pagina"
+
+msgid "Link to EDS Label"
+msgstr "Etichetta del link a EDS"
+
+msgid "Custom CSS File"
+msgstr "File CSS personalizzato"
+
+msgid "Collect student names as they access assigned readings?"
+msgstr "Raccogli i nomi degli studenti quando accedono alle letture assegnate?"
+
+msgid "Yes"
+msgstr "Sì"
+
+msgid "No"
+msgstr "No"
+
+msgid "Footer text"
+msgstr "Testo del pie' di pagina"
+
+msgid "Copy Course Support"
+msgstr "Invia in copia al supporto del corso"
+
+msgid "Remove Full Text and Available in Library Collection Limiters from view"
+msgstr "Rimuovi i filtri Full Text e Disponibile nel posseduto della biblioteca"
+
+msgid "Show 'Return to Course' Link at top of page"
+msgstr "Mostra in cima alla pagina un link per tornare al corso"
+
+msgid "Open all Lists in a New Window"
+msgstr "Apri tutte le liste in una nuova finestra"
+
+msgid "View Lists"
+msgstr "Vedi le liste"
+
+msgid "Select one: "
+msgstr "Seleziona una:"
+
+msgid "Preview Selected List"
+msgstr "Anteprima delle liste selezionate"
+
+msgid "Delete Lists"
+msgstr "Cancella liste"
+
+msgid "Delete Selected Lists"
+msgstr "Cancella le liste selezionate"
+
+msgid "Basic Search"
+msgstr "Ricerca semplice"
+
+msgid "Keyword"
+msgstr "Keyword"
+
+msgid "Author"
+msgstr "Autore"
+
+msgid "Title"
+msgstr "Titolo"
+
+msgid "View this list"
+msgstr "Vedi questa lista"
+
+msgid "Untitled List"
+msgstr "Lista senza titolo"
+
+msgid "All Public Lists:"
+msgstr "Tutte le liste pubbliche:"
+
+msgid "There are no public reading lists to copy."
+msgstr "Non ci sono liste pubbliche da copiare."
+
+msgid "Options"
+msgstr "Opzioni"
+
+msgid "Include Notes in the Import Process"
+msgstr "Includi l'importazione delle note"
+
+msgid "Preserve Sort Order"
+msgstr "Conserva l'ordinamento"
+
+msgid "Check/Uncheck All"
+msgstr "Seleziona/deseleziona tutto"
+
+msgid "Notes:"
+msgstr "Note:"
+
+msgid "There are no readings in this list."
+msgstr "Non ci sono letture in questa lista."
+
+msgid "Copy Selected Readings"
+msgstr "Copia le letture selezionate"
+
+msgid "You are unauthorized to access this page."
+msgstr "Non sei autorizzato ad accedere a questa pagina."
+
+msgid "You must be logged in to access that service, please login"
+msgstr "Devi essere autenticato per accedere al servizi, fai login."
+
+msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
+msgstr "Attenzione: stai per cancellare permanentemente le liste sottostanti. Questa azione non è modificabile. Ogni docente che tenterà di accedere a queste liste dal suo corso troverà una lista vuota."
+
+msgid "NEVER accessed since update"
+msgstr "NESSUN accesso"
+
+msgid "LAST ACCESSED"
+msgstr "ULTIMO ACCESSO"
+
+msgid "DELETE"
+msgstr "CANCELLA"
+
+msgid "this list"
+msgstr "questa lista"
+
+msgid "these "
+msgstr "queste"
+
+msgid "lists"
+msgstr "liste"
+
+msgid "or"
+msgstr "o"
+
+msgid "Cancel"
+msgstr "Cancella"
+
+msgid "No lists selected to delete."
+msgstr "Nessuna lista selezionata per la cancellazione"
+
+msgid "Back to Administration Screen"
+msgstr "Torna alla schermata di amministrazione"
+
+msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
+msgstr "Oops! Si è verificato un errore. I dati di uno o più record sono incompleti. Perfavore, riprova, facendo attenzione a includere tutto il record per ciascuna lettura."
+
+msgid "Enter bibliographic info from the list into this box:"
+msgstr "Inserisci le informazioni bibliografiche dalla lista in questo box:"
+
+msgid "CB Version 2.3"
+msgstr "CB Version 2.3"
+
+msgid "List ID"
+msgstr "ID della lista"
+
+msgid "Login"
+msgstr "login"
+
+msgid "Invalid login -- pleasae try again"
+msgstr "Login non valido, perfavore riprova"
+
+msgid "Username:"
+msgstr "Username:"
+
+msgid "Password:"
+msgstr "Password:"
+
+msgid "Successfully logged in."
+msgstr "Login avvenuto con successo"
+
+msgid "Successfully updated expiration date for "
+msgstr "Effettuato aggiornamento data di scadenza per"
+
+msgid "Successfully deleted "
+msgstr "Cancellazione effettuata"
+
+msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
+msgstr "Non puoi lasciare vuota la Consumer Key o la password e devi indicare una data di scadenza"
+
+msgid "Consumer key "
+msgstr "Consumer key "
+
+msgid "already exists. Please delete the existing one first before creating a new one."
+msgstr "già esistente. Cancella quella esistente prima di crearne un'altra."
+
+msgid "Successfully inserted consumer key: "
+msgstr "Consumer key inserita con successo:"
+
+msgid "Unrecognized Actions.  Try again."
+msgstr "Azione non riconosciuta. Riprova"
+
+msgid "Create New Access Key Pair"
+msgstr "Crea una nuova coppia di chiavi"
+
+msgid "Consumer Key"
+msgstr "Consumer Key"
+
+msgid "Secret"
+msgstr "Secret"
+
+msgid "Expiration Date"
+msgstr "Data di scadenza"
+
+msgid "Edit or Delete Existing Access Key Pair"
+msgstr "Modifica o cancella una coppia di chiavi esistente"
+
+msgid "Warning:"
+msgstr "Attenzione:"
+
+msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
+msgstr "Rimuovendo una coppia Consumer Key / Secret o configurando una data di scadenza sbagliata impedirà l'accesso alla lista di letture per ogni sito che utilizzi quelle credenziali."
+
+msgid "Expiration"
+msgstr "Scadenza"
+
+msgid "Configure / Admin"
+msgstr "Configurazione"
+
+msgid "Are you sure you want to delete this key"
+msgstr "Sey sicuro di voler rimuovere questa chiave?"
+
+msgid "You have been logged out."
+msgstr "Sei stato disconnesso"
+
+msgid "Your login credentials are incorrect.  Please try again."
+msgstr "Le tue credenziali non sono corrette. Riprova."
+
+msgid "Manage Access to the Reading List Tool"
+msgstr "Gestisci l'accesso al tool Liste di lettura"
+
+msgid "Create New Key Pair"
+msgstr "Crea una nuova coppia di chiavi"
+
+msgid "Log Out"
+msgstr "Esci"
+
+msgid "Notes may not save properly."
+msgstr "Le note potrebbero non essere salvate correttamente"
+
+msgid "Import from Existing List"
+msgstr "Importa da una lista esistente"
+
+msgid "Import from EBSCO Folder (beta)"
+msgstr "Importa dalla cartella EBSCO (beta)"
+
+msgid "This list is"
+msgstr "Questa lista è"
+
+msgid "public"
+msgstr "pubblica"
+
+msgid "private"
+msgstr "privata"
+
+msgid "student(s) have accessed this list."
+msgstr "studenti hanno visualizzato questa lista"
+
+msgid "Students that have accessed this list:"
+msgstr "Studenti che hanno visualizzato questa lista:"
+
+msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
+msgstr "Nessuno studente ha visualizzato questa lista. Quando lo faranno comparirà la lista dei loro nomi"
+
+msgid "Add Folder"
+msgstr "Aggiungi cartella"
+
+msgid "Create Folder"
+msgstr "Crea cartella"
+
+msgid "Add Text or Instructions"
+msgstr "Aggiungi testo o istruzioni"
+
+msgid "Text"
+msgstr "Testo"
+
+msgid "Folder"
+msgstr "Cartella"
+
+msgid "e.g., Read Chapter 5 in Textbook"
+msgstr "es., Leggere capitolo 5 del Manuale"
+
+msgid "Main list of Readings"
+msgstr "Lista di letture principale"
+
+msgid "Add Web Resource"
+msgstr "Aggiungi risorsa web"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "e.g., http://library.edu/"
+msgstr "es., http://biblioteca.it"
+
+msgid "Link label"
+msgstr "Etichetta del link"
+
+msgid " Back to main list"
+msgstr "Ritorna alla lista principale"
+
+msgid "This list has folders:"
+msgstr "Questa lista contiene queste cartelle:"
+
+msgid "Sort Order:"
+msgstr "Ordina per:"
+
+msgid "Removing..."
+msgstr "Rimozione"
+
+#, fuzzy
+msgid "Move to folder"
+msgstr "Sposta nella cartella:"
+
+msgid "No Folder"
+msgstr "Nessuna cartella"
+
+msgid "Delete"
+msgstr "Cancella"
+
+msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
+msgstr "Si è verificato un problema nel caricamento dei dettagli di questa lettura. La tua biblioteca potrebbe non essere più abbonata ala risorsa, o potrebbe essere il duplicato di una risorsa già in questa lista. Perfavore contatta la tua biblioteca per maggiori informazioni se hai difficoltà ad accedere a questa risorsa."
+
+msgid "By : "
+msgstr "di:"
+
+msgid "Published:"
+msgstr "Pubblicato:"
+
+msgid "Start Page: "
+msgstr "Pagina iniziale:"
+
+msgid "Page Count: "
+msgstr "Numero di pagine:"
+
+msgid "Language:"
+msgstr "Lingua:"
+
+msgid "Full Text"
+msgstr "Full Text"
+
+msgid "Online Access"
+msgstr "Accesso online"
+
+msgid "Students that have clicked this reading: "
+msgstr "Studenti che hanno cliccato queste letture:"
+
+msgid "student(s) have clicked this reading."
+msgstr "studenti hanno cliccato queste letture"
+
+msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
+msgstr "Nessuno studente ha visualizzato questo elemento Quando lo faranno comparirà la lista dei loro nomi"
+
+#, fuzzy
+msgid "Characters remaining"
+msgstr "Caratteri rimanenti:"
+
+msgid "Removing... please wait."
+msgstr "In corso di rimozione. Attendere prego"
+
+msgid "Update Notes and Sort Order"
+msgstr "Aggiorna note e ordinamento"
+
+msgid "Currently, there are no readings."
+msgstr "Attualmente non ci sono letture"
+
+msgid "Select a folder above to see readings."
+msgstr "Seleziona una cartella per vedere le letture"
+
+msgid "Currently, there are no readings on this list."
+msgstr "Attualmente non ci sono letture in questa lista"
+
+msgid "<< Back to Results"
+msgstr "<< Torna ai risultati"
+
+msgid "Retrieve response XML"
+msgstr "Recupera risposta XML"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
+msgstr "Oh oh! Sembra che l'articolo non sia può disponibile attraverso la biblioteca. Avverti il docente e la biblioteca di questo errore: "
+
+msgid "This record from"
+msgstr "Questo record proveniente da"
+
+msgid "cannot be displayed to guests."
+msgstr "non può essere visualizzato dai guest"
+
+msgid "for full access."
+msgstr "per visualizzare il full text"
+
+msgid "See it in EDS"
+msgstr "Vedi in EDS"
+
+msgid " Online Access"
+msgstr "Accesso online"
+
+msgid "Refine Search"
+msgstr "Raffina la ricerca"
+
+msgid "Remove Facets"
+msgstr "Rimuovi i filtri"
+
+msgid "Limiter: "
+msgstr "Filtri:"
+
+msgid "Limit your results"
+msgstr "Filtra i risultati"
+
+msgid "Expand your results"
+msgstr "Espandi i risultati"
+
+msgid "Search response XML"
+msgstr "Vedi risposta XML"
+
+msgid "Results"
+msgstr "Risultati"
+
+msgid "Showing"
+msgstr "Mostro"
+
+msgid "of"
+msgstr "di:"
+
+msgid "for"
+msgstr "per"
+
+msgid "Sort"
+msgstr "Ordinamento"
+
+msgid "Page options"
+msgstr "Opzioni pagina"
+
+msgid "Detailed"
+msgstr "Dettagliato"
+
+msgid "Brief"
+msgstr "Breve"
+
+msgid "Title Only"
+msgstr "Solo titolo"
+
+msgid "Results per page"
+msgstr "Risultati per pagina"
+
+msgid "Research Starter"
+msgstr "Research Starter"
+
+msgid "for full access"
+msgstr "per visualizzare il full text"
+
+msgid "Published: "
+msgstr "Pubblicato:"
+
+msgid "No results were found."
+msgstr "Nessun risultato trovato."
+
+msgid "Result #"
+msgstr "Risultati n."
+
+msgid "Title is not available"
+msgstr "Titolo non disponibile"
+
+msgid "By :"
+msgstr "di:"
+
+msgid "Start Page:"
+msgstr "Pagina iniziale:"
+
+msgid "Page Count:"
+msgstr "Numero di pagine:"
+
+msgid "Abstract:"
+msgstr "Abstract:"
+
+msgid "Subjects:"
+msgstr "Argomenti"
+
+msgid "Key:"
+msgstr "Key:"
+
+msgid "Secret:"
+msgstr "Secret:"
+
+msgid "Administration"
+msgstr "Amministrazione"
+
+msgid "Total Lists"
+msgstr "Totale delle liste"
+
+msgid "Total People Using Tool"
+msgstr "Totale delle persone che utilizzano il tool"
+
+msgid "Users"
+msgstr "Utenti"
+
+msgid "Total Courses Using Tool"
+msgstr "Totale dei corsi che usano il tool"
+
+msgid "Courses"
+msgstr "Corsi"
+
+msgid "Search"
+msgstr "Cerca"
+
+msgid "Return to Course"
+msgstr "Torna al corso"
+
+msgid "See Current Reading List"
+msgstr "Vedi la lista corrente"
+
+msgid "Update"
+msgstr "Aggiorna"
+
+msgid "Add"
+msgstr "Aggiungi"
+
+msgid " notes"
+msgstr " note"
+
+#, fuzzy
+msgid "Save notes"
+msgstr "salva note"
+
+msgid "edit notes"
+msgstr "modifica note"
+
+msgid "items"
+msgstr "elementi"
+
+msgid "currently selected"
+msgstr "attualmente selezionati"
+
+msgid "Result"
+msgstr "Risultati"
+
+msgid "Folder name"
+msgstr "Nome della cartella"
+
+msgid "Back to the main list"
+msgstr "Torna alla lista principale"
+
+msgid "Save Changes"
+msgstr "Salva le modifiche"
+
+msgid "Contact"
+msgstr "Contattare"
+
+msgid "for assistance with this tool."
+msgstr "per ricevere assistenza sull'uso di questo strumento"
+
+msgid "Download Export File"
+msgstr "Scarica il file di export"
+
+msgid "Import from Export File"
+msgstr "Importa da file"
+
+msgid "Download Student Data"
+msgstr "Scarica i dati degli studenti"
+
+#, fuzzy
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "Fai attenzione nel modificare queste impostazioni poiché modificherai le impostazioni originali configurate per il tuo LTI. Lancia almeno una lista dal tuo LMS per popolare questi campi, oppure contatta eds@ebscohost.com per assistenza su queste configurazioni."
+
+#, fuzzy
+msgid "If you change the "
+msgstr "Se cambi "
+
+msgid "user id"
+msgstr "user id"
+
+msgid "password"
+msgstr "password"
+
+msgid "API profile ID"
+msgstr "ID del profilo API"
+
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "dovrai uscire e rientrare per vedere statistiche e liste aggiornate"
+
+msgid "Select"
+msgstr "Seleziona"
+
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "una combinazione di User ID & Password dalla sezione Authenticazione di EBSCOadmin"
+
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "La combinazione username/password deve essere associata con il gruppo contenente il profilo specificato sotto."
+
+msgid "Total Readings"
+msgstr "Totale letture"
+
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "Questo è il profilo EDS API che vuoi utilizzare in Curriculum Builder. Deve essere nello stesso gruppo per il quale hanno diritto di accesso le credenziali userid/password che hai inserito sopra."
+
+msgid "EDS API Profile ID"
+msgstr "ID profilo EDS API"
+
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "Lista dei ruoli del LMS che possono modificare le liste (separati da virgola)"
+
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "Per default, solo docenti e assistenti docenti possono modificare le liste. Tuttavia puoi aggiungere ruoli qui per abilitare altri tipi di utenti a modificare le liste"
+
+msgid "Default:"
+msgstr "Default:"
+
+msgid "Proxy Prefix for CustomLinks"
+msgstr "Prefisso del proxy per i CustomLinks"
+
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "Se compilato, il proxy verrà applicato a tutti i CustomLinks che appaiono in Curriculum Builder"
+
+msgid "Examples"
+msgstr "Esempi"
+
+msgid "Proxy should encode target URL"
+msgstr "Il proxy deve codificare le URL target"
+
+msgid "If your proxy prefix ends with"
+msgstr "Il prefisso del proxy termina per"
+
+msgid "this probably needs to be set to"
+msgstr "probabilmente devi configurare questo"
+
+msgid "otherwise"
+msgstr "altrimenti"
+
+msgid "is probably correct."
+msgstr "probabilmente è corretto"
+
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "Se il tuo LMS accede a Curriculum Builder via HTTPS, anche il tuo logo deve essere disponibile via HTTPS."
+
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "Questo testo apparirà sotto al titolo della lista nell'intestazione. Le URL verranno automaticamente trasformate in link."
+
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "Questa è l'etichetta del link che apparirà sul lato sinistro del Dettaglio del record che porta gli utenti al record in EBSCO Discovery Service. Se lasciato vuoto, non apparirà alcun link a EDS."
+
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "Inserisci la URL di un file CSS. Gli stili di questo file verranno applicati alle schermate di Curriculum Builder. Deve essere in HTTPS se il tuo LMS è in HTTPS."
+
+msgid "Optional."
+msgstr "Facoltativo."
+
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "raccoglieremo nomi, indirizzi email e ID degli studenti. Questi dati verranno utilizzati per informare i docenti dei corsi quando uno studente fa click sulla lista. Inoltre verranno utilizzati per popolare i report forniti alla biblioteca. Per disabilitare solamente la raccolta degli indirizzi, il docente del LMS può scegliere di NON condividere l'informazione con il fornitore di questo strumento."
+
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "non forniremo ai docenti i nomi degli studenti che hanno cliccato sulla lista. Tuttavia, la biblioteca avrà un report che mostra quando e quali liste sono state accedute con solo l'userID del LMS"
+
+msgid "Anonymized"
+msgstr "Anonimizzati"
+
+msgid "None"
+msgstr "Nessuno"
+
+msgid "will collect no student activity. No reporting will be available."
+msgstr "non raccoglieremo l'attività degli studenti. Non sarà disponibile alcun report"
+
+msgid "Link to Help Pages"
+msgstr "Link alla pagina di Help"
+
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "questa opzione significa che al lancio di una nuova lista il docente potrà scegliere se creare una lista da zero o selezionare dall'elenco una lista dal nome simile e usarla per prepopolare la sua nuova lista. Se"
+
+msgid "is selected, all new lists will be blank."
+msgstr "se selezionato, tutte le nuove liste saranno vuote."
+
+msgid "Hide"
+msgstr "Nascondi"
+
+msgid "and"
+msgstr "e"
+
+msgid "Available in Library Collection"
+msgstr "Disponibile nelle collezioni della biblioteca"
+
+msgid "Limiters"
+msgstr "Filtri"
+
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "Nascondere questi filtri impedirà ai docenti di deselezionarli, rendendo impossibile l'aggiunta alla lista di elementi al di fuori delle collezioni della biblioteca."
+
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "Questo link è generato dal tuo LMS. Se il LMS è configurato correttamente, redirigerà gli utenti al sito del corso"
+
+msgid "Show First Full Text Link Only"
+msgstr "Mostra solo il primo link al full text"
+
+msgid "Language"
+msgstr "Lingua"
+
+msgid "Spanish"
+msgstr "Spagnolo"
+
+msgid "German"
+msgstr "Tedesco"
+
+msgid "Italian"
+msgstr "Italiano"
+
+msgid "Portuguese"
+msgstr "Portoghese"
+
+msgid "French"
+msgstr "Francese"
+
+#, fuzzy
+msgid "Simplified Chinese"
+msgstr "Cinese (semplificato)"
+
+#, fuzzy
+msgid "traditional Chinese"
+msgstr "Cinese (tradizionale)"
+
+msgid "Japanese"
+msgstr "Giapponese"
+
+msgid "Polish"
+msgstr "Polacco"
+
+msgid "Swedish"
+msgstr "Svedese"
+
+msgid "Thai"
+msgstr "Tailandese"
+
+msgid "Turkish"
+msgstr "Turco"
+
+msgid "Required"
+msgstr "Obbligatorio"
+
+msgid "e.g., Instructor"
+msgstr "per esempio, Docente"
+
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Inserisci qui il prefisso del proxy; se stai usando WAM, puoi usare {targetURLdomain} per specificare il dominio del tuo WAM proxy - il segnaposto verrà posto alla fine"
+
+msgid "Email for contact person for tool"
+msgstr "Persona da contatare per il tool"
+
+msgid "Branding text at top of screen"
+msgstr "Intestazione delle pagine"
+
+msgid "e.g., See Record in EDS"
+msgstr "per esempio, Vedi record in EDS"
+
+msgid "e.g., Search for Library Resources"
+msgstr "per esempio, Cerca nelle risorse della biblioteca"
+
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Facoltativo. URL del foglio di stile CSS"
+
+msgid "URL for LibGuide or other help pages"
+msgstr "URL delle LibGuides o altre pagine di aiuto"
+
+msgid "e.g., a copyright notice"
+msgstr "esempio, una nota sul copyright"
+
+msgid "Label for Link to EDS"
+msgstr "Etichetta per i link verso EDS"
+
+msgid "Label for Search Box"
+msgstr "Etichetta per la box di ricerca"
+
+msgid "Collect Student Data"
+msgstr "Raccogli i dati degli studenti"
+
+msgid "URL to Library Home Page"
+msgstr "URL della home page della biblioteca"
+
+msgid "Search Library Resources"
+msgstr "Cerca nelle risorse della biblioteca"
+
+msgid "Update Settings"
+msgstr "Aggiorna le impostazioni"
+
+msgid "Expander: "
+msgstr "Espansore: "
+
+msgid "Edit"
+msgstr "Modifica"
+
+msgid "Relevance"
+msgstr "Rilevanza"
+
+msgid "Source Type"
+msgstr "Tipo di fonte"
+
+msgid "Subject"
+msgstr "Argomento"
+
+msgid "Publication"
+msgstr "Pubblicazione"
+
+msgid "Geography"
+msgstr "Geografia"
+
+msgid "Content Provider"
+msgstr "Fornitore di contenuti"
+
+msgid "Academic Journal"
+msgstr "Rivista accademica"
+
+msgid "Biographie"
+msgstr "Biografie"
+
+msgid "Book"
+msgstr "Libro"
+
+msgid "Conference Material"
+msgstr "Materiale di convegno"
+
+msgid "Magazine"
+msgstr "Rivista"
+
+msgid "New"
+msgstr "Nuovo"
+
+msgid "Primary Source Document"
+msgstr "Fonte primaria"
+
+msgid "Report"
+msgstr "Report"
+
+msgid "Review"
+msgstr "Recensione"
+
+msgid "Trade Publication"
+msgstr "Pubblicazione commerciale"
+
+msgid "Date Newest"
+msgstr "Data più recente"
+
+msgid "Date Oldest"
+msgstr "Data meno recente"
+
+msgid "Authors"
+msgstr "Autori"
+
+msgid "Document Type"
+msgstr "Tipo di documento"
+
+msgid "Subject Terms"
+msgstr "Termini di soggetto"
+
+msgid "Author-Supplied Keywords"
+msgstr "Parole chiave fornite dall'autore"
+
+msgid "Abstract"
+msgstr "Abstract"
+
+msgid "Author Affiliations"
+msgstr "Affiliazione del'autore"
+
+msgid "Accession Number"
+msgstr "Numero di acquisizione"
+
+msgid "Publisher"
+msgstr "Editore"
+
+msgid "Source"
+msgstr "Fonte"
+
+msgid "Geographic Terms"
+msgstr "Termini geografici"
+
+msgid "Academic Journals"
+msgstr "Riviste accademiche"
+
+msgid "Books"
+msgstr "Libri"
+
+msgid "Conference Materials"
+msgstr "Materiali di convegno"
+
+msgid "Magazines"
+msgstr "Riviste"
+
+msgid "Biographies"
+msgstr "Biografie"
+
+msgid "News"
+msgstr "News"
+
+msgid "Primary Source Documents"
+msgstr "Fonti primarie"
+
+msgid "Reports"
+msgstr "Report"
+
+msgid "Reviews"
+msgstr "Recensioni"
+
+msgid "Trade Publications"
+msgstr "Pubblicazioni commerciali"
+
+msgid "Apply equivalent subjects"
+msgstr "Applica argomenti equivalenti"
+
+msgid "Apply related words"
+msgstr "Applica termini correlati"
+
+msgid "Also search within the full text of the articles"
+msgstr "Cerca anche nel full text degli articoli"
+
+msgid "References Available"
+msgstr "Bibliografia disponibile"
+
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Riviste peer reviewed"
+
+msgid "Library Home"
+msgstr "Home page della biblioteca"
+
+msgid "Periodical"
+msgstr "Periodico"
+
+msgid "Selecting"
+msgstr "Selezionando"
+
+msgid "Publication Year"
+msgstr "Anno di pubblicazione"
+
+msgid "You have no other reading lists."
+msgstr "Non ci sono altre liste."
+
+msgid "No statistics to report yet."
+msgstr "Ancora non ci sono dati statistici."
+
+msgid "Select one:"
+msgstr "Seleziona:"
+
+msgid "Hebrew"
+msgstr "Ebraico"
+
+msgid "University"
+msgstr "Università"
+
+msgid "Collection"
+msgstr "Collezione"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "Generate list"
+msgstr "Genera la lista"

@@ -1,0 +1,1014 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"Project-Id-Version: CB2\n"
+"Language: nl\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgid "English"
+msgstr "Engels"
+
+msgid "Back to Reading List"
+msgstr "Terug naar leeslijst"
+
+msgid " << Back to Results"
+msgstr " << Terug naar resultaten"
+
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
+msgstr "Uh oh!  Het is artikel is mogelijk niet langer meer beschikbaar via de bibliotheek.  Informeer de bibliotheek  over deze foutmelding:"
+
+msgid "This record from "
+msgstr "Dit artikel van"
+
+msgid " cannot be displayed to guests."
+msgstr "Niet beschikbaar voor gastgebruikers"
+
+msgid "Login</a> for full access."
+msgstr "Login </a> voor volledige toegang."
+
+msgid "Add to Reading List"
+msgstr "Voeg toe aan leestlijst"
+
+msgid "Remove from Reading List"
+msgstr "Verwijder van leeslijst"
+
+msgid "PDF full text"
+msgstr "PDF full text"
+
+msgid "HTML full text"
+msgstr "HTML full text"
+
+msgid "HTML Full Text"
+msgstr "HTML Full Text"
+
+msgid "Full Text:"
+msgstr "Full Text:"
+
+msgid "PubType:"
+msgstr "Publicatie Type:"
+
+msgid "Database:"
+msgstr "Database:"
+
+msgid "Statistics"
+msgstr "Statistieken"
+
+msgid "Curriculum Builder Settings"
+msgstr "Curriculum Builder Instellingen"
+
+msgid "EBSCO User ID"
+msgstr "EBSCO Gebruikersnaam"
+
+msgid "EBSCO Password"
+msgstr "EBSCO Wachtwoord"
+
+msgid "Your EDS API Profile"
+msgstr "EBSCO EDS API Profiel"
+
+msgid "URL for your library logo"
+msgstr "URL van uw bibliotheek logo"
+
+msgid "Contact Email"
+msgstr "Contact Email"
+
+msgid "Link to Library Home Page"
+msgstr "Link naar bibliotheekpagina"
+
+msgid "Text to display at top of screen"
+msgstr "Text aan de bovenkant van het scherm"
+
+msgid "Link to EDS Label"
+msgstr "Link naar EDS Label"
+
+msgid "Custom CSS File"
+msgstr "Custom CSS bestand"
+
+msgid "Collect student names as they access assigned readings?"
+msgstr "Wie heeft de verplichte leeslijsten bekeken?"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nee"
+
+msgid "Footer text"
+msgstr "Footer tekst"
+
+msgid "Copy Course Support"
+msgstr "Kopieer Cursus"
+
+msgid "Remove Full Text and Available in Library Collection Limiters from view"
+msgstr "Verberg Full Text en Beschikbaar in Bibliotheek Collectie limiters"
+
+msgid "Show 'Return to Course' Link at top of page"
+msgstr "Toon 'Terug naar cursus' link bovenaan"
+
+msgid "Open all Lists in a New Window"
+msgstr "Open alle lijsten in een nieuw scherm"
+
+msgid "View Lists"
+msgstr "Weergave lijsten"
+
+msgid "Select one: "
+msgstr "Selecteer een:"
+
+msgid "Preview Selected List"
+msgstr "Voorvertoning geselecteerde lijst"
+
+msgid "Delete Lists"
+msgstr "Verwijder lijst(en)"
+
+msgid "Delete Selected Lists"
+msgstr "Verwijder geselecteerde lijst(en)"
+
+msgid "Basic Search"
+msgstr "Eenvoudig zoeken"
+
+msgid "Keyword"
+msgstr "Zoekterm"
+
+msgid "Author"
+msgstr "Auteur"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "View this list"
+msgstr "Bekijk deze lijst"
+
+msgid "Untitled List"
+msgstr "Naamloze lijst"
+
+msgid "All Public Lists:"
+msgstr "Alle openbare lijsten:"
+
+msgid "There are no public reading lists to copy."
+msgstr "Geen openbare leeslijsten om te kopieren"
+
+msgid "Options"
+msgstr "Opties"
+
+msgid "Include Notes in the Import Process"
+msgstr "Voeg notities toe tijdens het import proces"
+
+msgid "Preserve Sort Order"
+msgstr "Behoud soorteervolgorde"
+
+msgid "Check/Uncheck All"
+msgstr "Selecteer/De-selecteer alles"
+
+msgid "Notes:"
+msgstr "Notities:"
+
+msgid "There are no readings in this list."
+msgstr "Er zijn geen lezingen in deze lijst."
+
+msgid "Copy Selected Readings"
+msgstr "Kopieer geselecteerde leeslijsten"
+
+msgid "You are unauthorized to access this page."
+msgstr "U ben niet geautoriseerd om deze pagina te bezoeken."
+
+msgid "You must be logged in to access that service, please login"
+msgstr "Meldt u aan voor toegang tot deze service,  graag inloggen"
+
+msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
+msgstr "Let op: Wilt u de volgende lijsten voorgoed verwijderen?  Deze aktie kan niet meer ongedaan gemaakt worden. Elke instructeur die toegang probeert te krijgen tot deze lijsten, vindt een lege lijst."
+
+msgid "NEVER accessed since update"
+msgstr "NIET geopend sinds update"
+
+msgid "LAST ACCESSED"
+msgstr "LAATST GEOPEND"
+
+msgid "DELETE"
+msgstr "Verwijderen"
+
+msgid "this list"
+msgstr "deze lijst"
+
+msgid "these "
+msgstr "Deze "
+
+msgid "lists"
+msgstr "lijsten"
+
+msgid "or"
+msgstr "of"
+
+msgid "Cancel"
+msgstr "Annuleren"
+
+msgid "No lists selected to delete."
+msgstr "Geen lijsten geselecteerd om te verwijderen."
+
+msgid "Back to Administration Screen"
+msgstr "Terug naar admin scherm"
+
+msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
+msgstr "Oeps! Er is een fout opgetreden. De data voor een of meer records is incompleet. Probeer opnieuw, en voeg het complete record toe voor elke leeslijst."
+
+msgid "Enter bibliographic info from the list into this box:"
+msgstr "Voer bibliografische informatie uit de lijst in dit vak in:"
+
+msgid "CB Version 2.3"
+msgstr "CB Versie  2.3"
+
+msgid "List ID"
+msgstr "Lijst ID"
+
+msgid "Login"
+msgstr "Log in"
+
+msgid "Invalid login -- pleasae try again"
+msgstr "Ongeldige log in -- Probeer opnieuw"
+
+msgid "Username:"
+msgstr "Gebuikersnaam:"
+
+msgid "Password:"
+msgstr "Wachtwoord:"
+
+msgid "Successfully logged in."
+msgstr "Succesvol ingelogd."
+
+msgid "Successfully updated expiration date for "
+msgstr "De vervaldatum is bijgewerkt voor "
+
+msgid "Successfully deleted "
+msgstr "Verwijderd "
+
+msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
+msgstr "Vul Consumer Key in of uw Wachtwoord en stel een afloopdatum in. Probeer aub opnieuw."
+
+msgid "Consumer key "
+msgstr "Consumer key "
+
+msgid "already exists. Please delete the existing one first before creating a new one."
+msgstr "Bestaat al. Verwijder aub voordat u een nieuwe aanmaakt."
+
+msgid "Successfully inserted consumer key: "
+msgstr "Consumer key succesvol toegevoegd:"
+
+msgid "Unrecognized Actions.  Try again."
+msgstr "Onbekende actie. Probeer opnieuw."
+
+msgid "Create New Access Key Pair"
+msgstr "Maak een nieuwe  Access Key Pair aan"
+
+msgid "Consumer Key"
+msgstr "Consumer Key"
+
+msgid "Secret"
+msgstr "Geheim"
+
+msgid "Expiration Date"
+msgstr "Afloopdatum"
+
+msgid "Edit or Delete Existing Access Key Pair"
+msgstr "Bewerk of verwijder huidige  Access Key Pair"
+
+msgid "Warning:"
+msgstr "Waarschuwing:"
+
+msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
+msgstr "Het verwijderen van een Consumer Key/Secret pairing of het instellen van een incorrecte afloopdatum, heeft als gevolg dat u geen toegang heeft tot de leeslijst waarvoor deze keypair is ingesteld."
+
+msgid "Expiration"
+msgstr "Afloop"
+
+msgid "Configure / Admin"
+msgstr "Configureer  / Admin"
+
+msgid "Are you sure you want to delete this key"
+msgstr "Weet u zeker dat u deze Key wilt verwijderen?"
+
+msgid "You have been logged out."
+msgstr "U bent uitgelogd"
+
+msgid "Your login credentials are incorrect.  Please try again."
+msgstr "Uw login gegevens zijn onjuist. Probeer opnieuw."
+
+msgid "Manage Access to the Reading List Tool"
+msgstr "Toegang instellen tot de Leeslijst tool"
+
+msgid "Create New Key Pair"
+msgstr "Maak een nieuwe Key pair aan"
+
+msgid "Log Out"
+msgstr "Log uit"
+
+msgid "Notes may not save properly."
+msgstr "Notities worden mogelijk niet correct opgeslagen."
+
+msgid "Import from Existing List"
+msgstr "Importeer van bestaande lijst."
+
+msgid "Import from EBSCO Folder (beta)"
+msgstr "Importeer van EBSCO Folder (beta)"
+
+msgid "This list is"
+msgstr "Deze lijst is"
+
+msgid "public"
+msgstr "Openbaar"
+
+msgid "private"
+msgstr "Privé"
+
+msgid "student(s) have accessed this list."
+msgstr "student(en) hebben toegang gekregen tot deze lijst"
+
+msgid "Students that have accessed this list:"
+msgstr "Studenten die toegang hebben tot deze lijst:"
+
+msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
+msgstr "Geen enkele student heeft toegang gehad tot deze lijst. Een lijst van namen zal hier verschijnen wanneer tenminste 1 student deze lijst heeft geopend."
+
+msgid "Add Folder"
+msgstr "Folder toevoegen"
+
+msgid "Create Folder"
+msgstr "Folder aanmaken"
+
+msgid "Add Text or Instructions"
+msgstr "Voeg tekst of instructies toe"
+
+msgid "Text"
+msgstr "Tekst"
+
+msgid "Folder"
+msgstr "Folder"
+
+msgid "e.g., Read Chapter 5 in Textbook"
+msgstr "bijvoorbeeld, Lees hoofstuk 5 in Tekstboek"
+
+msgid "Main list of Readings"
+msgstr "Hoofdlijst van lezingen"
+
+msgid "Add Web Resource"
+msgstr "Voeg web bron toe"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "e.g., http://library.edu/"
+msgstr "bijvoorbeeld, http://library.edu/"
+
+msgid "Link label"
+msgstr "Link label"
+
+msgid " Back to main list"
+msgstr " Terug naar hoofdlijst"
+
+msgid "This list has folders:"
+msgstr "Deze lijst bevat mappen:"
+
+msgid "Sort Order:"
+msgstr "Zet op volgorde:"
+
+msgid "Removing..."
+msgstr "Aan het verwijderen.."
+
+msgid "Move to folder"
+msgstr "Verplaats naar folder"
+
+msgid "No Folder"
+msgstr "Geen Folder"
+
+msgid "Delete"
+msgstr "Verwijder"
+
+msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
+msgstr "Er is een probleem met het laden van dit item. Uw bibliotheek heeft mogelijk geen abonnement meer ,of dit item is een duplicaat van eerder toegevoegd item. Contacteer uw bibliotheek voor assistentie."
+
+msgid "By : "
+msgstr "Door : "
+
+msgid "Published:"
+msgstr "Gepubliceerd:"
+
+msgid "Start Page: "
+msgstr "Start pagina: "
+
+msgid "Page Count: "
+msgstr "Aantal Pagina’s:"
+
+msgid "Language:"
+msgstr "Taal:"
+
+msgid "Full Text"
+msgstr "Full Text"
+
+msgid "Online Access"
+msgstr "Online toegang"
+
+msgid "Students that have clicked this reading: "
+msgstr "Studenten die deze lezing hebben aangeklikt: "
+
+msgid "student(s) have clicked this reading."
+msgstr "Student(en) die dit item hebben aangeklikt."
+
+msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
+msgstr "Op dit moment heeft niemand dit item gelezen.  Een lijst van namen zal verschijnen zodra tenminste 1 student het item heeft aangeklikt."
+
+msgid "Characters remaining"
+msgstr "Resterende tekens"
+
+msgid "Removing... please wait."
+msgstr "Wordt verwijderd.. even geduld aub."
+
+msgid "Update Notes and Sort Order"
+msgstr "Notities en sorteervolgorde bijwerken"
+
+msgid "Currently, there are no readings."
+msgstr "Momenteel zijn er geen lezingen."
+
+msgid "Select a folder above to see readings."
+msgstr "Selecteer een map hierboven om lezingen te zien."
+
+msgid "Currently, there are no readings on this list."
+msgstr "Momenteel zijn er geen lezingen op deze lijst."
+
+msgid "<< Back to Results"
+msgstr "Terug naar resultaten"
+
+msgid "Retrieve response XML"
+msgstr "Antwoord XML ophalen"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
+msgstr "Uh oh!  Het is artikel is mogelijk niet langer meer beschikbaar via de bibliotheek.  Informeer de bibliotheek  over deze foutmelding:"
+
+msgid "This record from"
+msgstr "Dit artikel van"
+
+msgid "cannot be displayed to guests."
+msgstr "Niet beschikbaar voor gastgebruikers"
+
+msgid "for full access."
+msgstr "voor volledige toegang."
+
+msgid "See it in EDS"
+msgstr "Zie het in EDS"
+
+msgid " Online Access"
+msgstr "Online toegang"
+
+msgid "Refine Search"
+msgstr "Verfijn zoekopdracht"
+
+msgid "Remove Facets"
+msgstr "Facetten verwijderen"
+
+msgid "Limiter: "
+msgstr "Limiter: "
+
+msgid "Limit your results"
+msgstr "Beperk uw resultaten"
+
+msgid "Expand your results"
+msgstr "Uw resultaten uitbreiden"
+
+msgid "Search response XML"
+msgstr "XML voor zoek reactie"
+
+msgid "Results"
+msgstr "Resultaten"
+
+msgid "Showing"
+msgstr "Weergegeven"
+
+msgid "of"
+msgstr "van"
+
+msgid "for"
+msgstr "voor"
+
+msgid "Sort"
+msgstr "Sorteer"
+
+msgid "Page options"
+msgstr "Pagina-opties"
+
+msgid "Detailed"
+msgstr "Gedetailleerd"
+
+msgid "Brief"
+msgstr "Korte"
+
+msgid "Title Only"
+msgstr "Alleen titel"
+
+msgid "Results per page"
+msgstr "Resultaten per pagina"
+
+msgid "Research Starter"
+msgstr "Onderzoek starter"
+
+msgid "for full access"
+msgstr "voor volledige toegang"
+
+msgid "Published: "
+msgstr "Gepubliceerd: "
+
+msgid "No results were found."
+msgstr "Er zijn geen resultaten gevonden."
+
+msgid "Result #"
+msgstr "Resultaat#"
+
+msgid "Title is not available"
+msgstr "Titel is niet beschikbaar"
+
+msgid "By :"
+msgstr "Door:"
+
+msgid "Start Page:"
+msgstr "Start pagina:"
+
+msgid "Page Count:"
+msgstr "Aantal Pagina’s:"
+
+msgid "Abstract:"
+msgstr "Abstract:"
+
+msgid "Subjects:"
+msgstr "Onderwerpen:"
+
+msgid "Key:"
+msgstr "Key:"
+
+msgid "Secret:"
+msgstr "Geheim"
+
+msgid "Administration"
+msgstr "Administratie"
+
+msgid "Total Lists"
+msgstr "Totaal aantal lijsten"
+
+msgid "Total People Using Tool"
+msgstr "Totaal aantal personen die deze tool gebruiken"
+
+msgid "Users"
+msgstr "Gebruikers"
+
+msgid "Total Courses Using Tool"
+msgstr "Totaal cursussen die deze tool gebruiken"
+
+msgid "Courses"
+msgstr "Cursussen"
+
+msgid "Search"
+msgstr "Zoek"
+
+msgid "Return to Course"
+msgstr "Terug naar cursus"
+
+msgid "See Current Reading List"
+msgstr "Zie huidige leeslijst"
+
+msgid "Update"
+msgstr "Bijwerken"
+
+msgid "Add"
+msgstr "Toevoegen"
+
+msgid " notes"
+msgstr " Notities"
+
+msgid "Save notes"
+msgstr "Notities opslaan"
+
+msgid "edit notes"
+msgstr "notities bewerken"
+
+msgid "items"
+msgstr "items"
+
+msgid "currently selected"
+msgstr "Geselecteerde"
+
+msgid "Result"
+msgstr "Resultaat"
+
+msgid "Folder name"
+msgstr "Naam map"
+
+msgid "Back to the main list"
+msgstr "Terug naar de hoofdlijst"
+
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "for assistance with this tool."
+msgstr "voor hulp bij deze tool"
+
+msgid "Download Export File"
+msgstr "Download Export-bestand"
+
+msgid "Import from Export File"
+msgstr "Importeren uit export bestand"
+
+msgid "Download Student Data"
+msgstr "Download student gegevens"
+
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "Wees voorzichtig met het bewerken van deze instellingen, omdat ze de instellingen overschrijven die oorspronkelijk zijn ingesteld in het configuratiescherm van het LMS.  Open ten minste één leeslijst van uw LMS om deze velden te vullen, of neem contact op met eds@ebscohost.com voor hulp bij deze instellingen."
+
+msgid "If you change the "
+msgstr "Verandert u "
+
+msgid "user id"
+msgstr "gebruikersnaam"
+
+msgid "password"
+msgstr "wachtwoord"
+
+msgid "API profile ID"
+msgstr "EDS API Profiel ID"
+
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "log dan uit en log weer opnieuw in om accurate statistieken en lijsten te zien."
+
+msgid "Select"
+msgstr "Selecteer"
+
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "een gebruikers-ID & wachtwoord combi uit EBSCOadmin authenticatie sectie."
+
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "De gebruikersnaam/wachtwoord combinatie moet worden geassocieerd met de groep met het profiel hieronder aangegeven."
+
+msgid "Total Readings"
+msgstr "Totaal aantal lezingen"
+
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "Dit is het eds API-profiel dat u wilt gebruiken in de curriculum Builder. Gebruik het EBSCO groep ID waar het userid en password voor gecreeerd is."
+
+msgid "EDS API Profile ID"
+msgstr "EDS API-profiel-id"
+
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "LMS-rollen die lijsten kunnen bewerken (door komma's gescheiden)"
+
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "Standaard kunnen alleen docenten en onderwijs assistenten lijsten bewerken. U kunt hier echter rollen toevoegen om andere typen gebruikers in staat te stellen lijsten te bewerken."
+
+msgid "Default:"
+msgstr "Standaard:"
+
+msgid "Proxy Prefix for CustomLinks"
+msgstr "Proxy prefix voor CustomLinks"
+
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "Als dit is ingevuld, wordt deze proxy toegepast op alle CustomLinks die in curriculum Builder worden weergegeven."
+
+msgid "Examples"
+msgstr "Voorbeelden"
+
+msgid "Proxy should encode target URL"
+msgstr "Proxy moet target url encoderen"
+
+msgid "If your proxy prefix ends with"
+msgstr "Als uw proxy prefix eindigt met"
+
+msgid "this probably needs to be set to"
+msgstr "moet dit waarschijnlijk ingesteld worden op"
+
+msgid "otherwise"
+msgstr "eindigt de proxy prefix anders dan kiest u"
+
+msgid "is probably correct."
+msgstr "is waarschijnlijk juist."
+
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "Als uw LMS toegang heeft tot curriculum Builder via https, moet uw logo ook beschikbaar zijn via https."
+
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "Deze tekst wordt weergegeven onder de titel van de lijst in de koptekst. Url's worden automatisch ge-hyperlinkt."
+
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "Dit is het label voor de link die aan de linkerkant van gedetailleerde records wordt weergegeven waarmee de gebruiker wordt doorgestuurd naar het EBSCO Discovery-service record voor de lezing. Indien leeg gelaten, zal geen link naar eds verschijnen."
+
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "Voer de URL van een CSS-bestand in. Stijlen in dit bestand worden toegepast op de curriculum Builder-schermen. Gebruik een HTTPS adres als uw LMS alleen HTTPS ondersteunt."
+
+msgid "Optional."
+msgstr "Optioneel."
+
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "verzamelt studenten namen, e-mailadressen en id's. Deze gegevens zullen worden gebruikt om cursus instructeurs te informeren wanneer een student op een lezing klikt. Deze velden worden ook ingevuld in de rapporten die aan de bibliotheek worden verstrekt. Als u de e-mail verzameling alleen wilt uitschakelen, kan uw LMS-instructeur ervoor kiezen deze informatie niet met de provider te delen."
+
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "zal geen faculteit met namen van studenten voorzien die geklikt hebben op lezingen. Echter, bibliotheken zullen worden voorzien van een rapport waaruit blijkt wanneer en welke lezingen werden benaderd met alleen het LMS userid."
+
+msgid "Anonymized"
+msgstr "Anoniem"
+
+msgid "None"
+msgstr "Geen"
+
+msgid "will collect no student activity. No reporting will be available."
+msgstr "zal geen student activiteit verzamelen. Er zal geen rapportering beschikbaar zijn."
+
+msgid "Link to Help Pages"
+msgstr "Link naar Help pagina's"
+
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "voor deze optie betekent dat instructeurs zal worden gevraagd bij het maken van een nieuwe lijst om ofwel een nieuwe lijst te maken vanaf het begin, of te selecteren uit een lijst van identieke naamlijsten  om de nieuwe lijst vooraf invullen. Als"
+
+msgid "is selected, all new lists will be blank."
+msgstr "is geselecteerd, zullen alle nieuwe lijsten leeg zijn."
+
+msgid "Hide"
+msgstr "Verberg"
+
+msgid "and"
+msgstr "en"
+
+msgid "Available in Library Collection"
+msgstr "Beschikbaar in bibliotheekcollectie"
+
+msgid "Limiters"
+msgstr "Limiters"
+
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "Het verbergen van deze limiters  zal voorkomen dat de faculteit deze uncheckt, waardoor het onmogelijk is om items buiten uw verzamelingen aan de leeslijst toe te voegen."
+
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "Deze link wordt geleverd door het LMS. Als het LMS correct is geconfigureerd, wordt de gebruiker teruggestuurd naar de site van de cursus."
+
+msgid "Show First Full Text Link Only"
+msgstr "Toon alleen eerste volledige tekst link "
+
+msgid "Language"
+msgstr "Taal"
+
+msgid "Spanish"
+msgstr "Spaans"
+
+msgid "German"
+msgstr "Duits"
+
+msgid "Italian"
+msgstr "Italiaans"
+
+msgid "Portuguese"
+msgstr "Portugees"
+
+msgid "French"
+msgstr "Frans"
+
+msgid "Simplified Chinese"
+msgstr " Chinees (vereenvoudigd)"
+
+msgid "traditional Chinese"
+msgstr "Chinees (tradtioneel)"
+
+msgid "Japanese"
+msgstr "Japans"
+
+msgid "Polish"
+msgstr "Pools"
+
+msgid "Swedish"
+msgstr "Zweeds"
+
+msgid "Thai"
+msgstr "Thais"
+
+msgid "Turkish"
+msgstr "Turks"
+
+msgid "Required"
+msgstr "Verplicht"
+
+msgid "e.g., Instructor"
+msgstr "bijvoorbeeld, instructeur"
+
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Proxy prefix hier; Als u WAM gebruikt, uw {targetURLdomain} gebruiken om het domein van uw WAM-proxy op te geven-de rest zal aan het eind worden geplaatst"
+
+msgid "Email for contact person for tool"
+msgstr "E-mail voor contactpersoon voor de tool"
+
+msgid "Branding text at top of screen"
+msgstr "Branding tekst aan de bovenkant van het scherm"
+
+msgid "e.g., See Record in EDS"
+msgstr "Zie bijvoorbeeld record in EDS"
+
+msgid "e.g., Search for Library Resources"
+msgstr "bijvoorbeeld zoeken naar bibliotheekbronnen"
+
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Optioneel.  URL voor  CSS Stylesheet"
+
+msgid "URL for LibGuide or other help pages"
+msgstr "URL voor  Literatuurgids of andere helppagina's"
+
+msgid "e.g., a copyright notice"
+msgstr "bijvoorbeeld een auteursrechtverklaring"
+
+msgid "Label for Link to EDS"
+msgstr "Label voor link naar EDS"
+
+msgid "Label for Search Box"
+msgstr "Label voor zoekbox"
+
+msgid "Collect Student Data"
+msgstr "Studenten gegevens verzamelen"
+
+msgid "URL to Library Home Page"
+msgstr "URL naar bibliotheek Startpagina"
+
+msgid "Search Library Resources"
+msgstr "Zoek in beschikbare bronnen"
+
+msgid "Update Settings"
+msgstr "Instellingen Bijwerken"
+
+msgid "Expander: "
+msgstr "Expander: "
+
+msgid "Edit"
+msgstr "Bewerk"
+
+msgid "Relevance"
+msgstr "Relevantie"
+
+msgid "Source Type"
+msgstr "Brontype"
+
+msgid "Subject"
+msgstr "Onderwerp"
+
+msgid "Publication"
+msgstr "Publicatie"
+
+msgid "Geography"
+msgstr "Geografie"
+
+msgid "Content Provider"
+msgstr "Uitgever"
+
+msgid "Academic Journal"
+msgstr "Academisch Tijdschrift"
+
+msgid "Biographie"
+msgstr "Biografie"
+
+msgid "Book"
+msgstr "Boek"
+
+msgid "Conference Material"
+msgstr "Conferentiemateriaal"
+
+msgid "Magazine"
+msgstr "Magazine"
+
+msgid "New"
+msgstr "Nieuw"
+
+msgid "Primary Source Document"
+msgstr "Primair bron document"
+
+msgid "Report"
+msgstr "Rapport"
+
+msgid "Review"
+msgstr "Beoordeling"
+
+msgid "Trade Publication"
+msgstr "Vakblad"
+
+msgid "Date Newest"
+msgstr "Datum nieuwste"
+
+msgid "Date Oldest"
+msgstr "Datum oudste"
+
+msgid "Authors"
+msgstr "Auteurs"
+
+msgid "Document Type"
+msgstr "Document Type"
+
+msgid "Subject Terms"
+msgstr "Subject Termen"
+
+msgid "Author-Supplied Keywords"
+msgstr "Door de auteur geleverde zoekwoorden"
+
+msgid "Abstract"
+msgstr "Abstract"
+
+msgid "Author Affiliations"
+msgstr "Auteur affiliaties"
+
+msgid "Accession Number"
+msgstr "Accession Nummer"
+
+msgid "Publisher"
+msgstr "Uitgever"
+
+msgid "Source"
+msgstr "Bron"
+
+msgid "Geographic Terms"
+msgstr "Geografische termen"
+
+msgid "Academic Journals"
+msgstr "Academische Tijdschriften"
+
+msgid "Books"
+msgstr "Boeken"
+
+msgid "Conference Materials"
+msgstr "Conferentiemateriaal"
+
+msgid "Magazines"
+msgstr "Magazines"
+
+msgid "Biographies"
+msgstr "Biografieën"
+
+msgid "News"
+msgstr "Nieuws"
+
+msgid "Primary Source Documents"
+msgstr "Primaire brondocumenten"
+
+msgid "Reports"
+msgstr "Rapporten"
+
+msgid "Reviews"
+msgstr "Beoordelingen"
+
+msgid "Trade Publications"
+msgstr "Vakpublikaties"
+
+msgid "Apply equivalent subjects"
+msgstr "Pas gelijkwaardige onderwerpen toe"
+
+msgid "Apply related words"
+msgstr "Pas verwante woorden toe"
+
+msgid "Also search within the full text of the articles"
+msgstr "Zoek ook in full text van de artikelen"
+
+msgid "References Available"
+msgstr "Referenties beschikbaar"
+
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Wetenschappelijke (Peer Reviewed) Tijdschriften"
+
+msgid "Library Home"
+msgstr "Bibliotheek homepage"
+
+msgid "Periodical"
+msgstr "Tijdschrift"
+
+msgid "Selecting"
+msgstr "Keuze"
+
+msgid "Publication Year"
+msgstr "Publikatie jaar"
+
+msgid "You have no other reading lists."
+msgstr "U heeft geen andere leeslijsten."
+
+msgid "No statistics to report yet."
+msgstr "Geen stastistieken op dit moment."
+
+msgid "Select one:"
+msgstr "Selecteer een:"
+
+msgid "Hebrew"
+msgstr "Hebreeuws"
+
+msgid "University"
+msgstr "Universiteit"
+
+msgid "Collection"
+msgstr "Collectie"
+
+msgid "Category"
+msgstr "Categorie"
+
+msgid "Generate list"
+msgstr "Genereer lijst"

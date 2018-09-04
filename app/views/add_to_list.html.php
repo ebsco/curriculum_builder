@@ -1,4 +1,32 @@
 <?php
+	// save current language to cookie by default
+	if (!isset($_SESSION["language"])){
+		$_SESSION["language"]=$customparams['language'];
+	}
+	// check if parameters are passed from url, language change 
+	if (isset($_REQUEST["language"])) {
+		$_SESSION["language"]=urldecode($_REQUEST["language"]);
+	}
+	$language = $_SESSION["language"];
+	if (stripos($language,"utf-8")===false) {
+	   $language.=".UTF-8";
+	}
+	putenv("LC_ALL=$language");
+	setlocale(LC_ALL, $language);
+	if (defined('LC_MESSAGES')) // available if PHP was compiled with libintl
+	{
+	   setlocale(LC_MESSAGES, $language);
+	}   
+	else
+	{       
+	   setlocale(LC_ALL, $language);
+	}       
+			
+	bindtextdomain("messages", dirname(__FILE__)."/locale");                                
+	bind_textdomain_codeset('messages', 'UTF-8');
+	textdomain("messages");
+
+
 
 libxml_use_internal_errors(true);
 
@@ -32,11 +60,11 @@ echo '<div class="readingListLink"><a href="reading_list.php">Back to Reading Li
      <div class="record table">
 <?php if ($error) { ?>
     <div class="error">
-        Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: <?php echo $error; ?>
+        <?php echo _("Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: ");?><?php echo $error; ?>
     </div>
 <?php } ?>
 <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==1){ ?>
-         <p>This record from <b>[<?php echo $result['DbLabel']; ?>]</b> cannot be displayed to guests.<br><a href="login.php?path=record&db=<?php echo $clean['db']?>&an=<?php echo $clean['an']?>&<?php echo $encodedHighLigtTerm;?>&resultId=<?php echo $clean['resultId'] ?>&recordCount=<?php echo $clean['recordCount'] ?>&<?php echo $encodedQuery;?>&fieldcode=<?php echo urlencode($clean['fieldcode']); ?>">Login</a> for full access.</p>
+         <p><?php echo _("This record from ");?><b>[<?php echo $result['DbLabel']; ?>]</b><?php echo _(" cannot be displayed to guests.");?><br><a href="login.php?path=record&db=<?php echo $clean['db']?>&an=<?php echo $clean['an']?>&<?php echo $encodedHighLigtTerm;?>&resultId=<?php echo $clean['resultId'] ?>&recordCount=<?php echo $clean['recordCount'] ?>&<?php echo $encodedQuery;?>&fieldcode=<?php echo urlencode($clean['fieldcode']); ?>"><?php echo _("Login")."</a>"._(" for full access.");?></p>
 <?php }else{ ?>     
     <h1>
       <?php if (!empty($result['Items'])) { 
@@ -64,7 +92,7 @@ Foldering
 		}
 ?>;">
 
-<button class="addFolder" id="addbutton1" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($resultTitle); ?>',1,1,1,1); alert('Added.'); window.close();">Add to Reading List</button>
+<button class="addFolder" id="addbutton1" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($resultTitle); ?>',1,1,1,1); alert('Added.'); window.close();"><?php echo _("Add to Reading List"?;?></button>
 
 </div>
 <!-- END item in NOT in folder -->
@@ -77,7 +105,7 @@ Foldering
   			echo "none";
 		}
 ?>;">
-<button class="removeFolder" id="removebutton1" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($resultTitle); ?>',2,1,1,1)">Remove from Reading List</button>
+<button class="removeFolder" id="removebutton1" onclick="addToFolder(xmlhttp,<?php echo decryptCookie($_COOKIE['currentListId']); ?>,<?php echo decryptCookie($_COOKIE['currentAuthorId']); ?>,'<?php echo $result['An']; ?>', '<?php echo $result['DbId']; ?>','none','none','<?php echo urlencode($resultTitle); ?>',2,1,1,1)"><?php echo _("Remove from Reading List");?></button>
 
 </div>
 <!-- END item is in the folder -->
@@ -112,12 +140,12 @@ Foldering
                       <?php if((!isset($_COOKIE['login']))&&$result['AccessLevel']==2){ ?> 
                       <li>
                          <a target="_blank" class="icon html fulltext" href="login.php?path=HTML&an=<?php echo $clean['an']; ?>&db=<?php echo $clean['db']; ?>&<?php echo $encodedHighLigtTerm ?>&resultId=<?php echo $clean['resultId'];?>&recordCount=<?php echo $clean['recordCount']?>&<?php echo $encodedQuery;?>&fieldcode=<?php echo urlencode($clean['fieldcode']); ?>">
-                        HTML full text
+                        <?php echo _("HTML full text");?>
                         </a>
                       </li>
                           <?php } else{?>
                       <li>
-                          <a class="icon html fulltext" href="#html">HTML Full Text</a>                       
+                          <a class="icon html fulltext" href="#html"><?php echo _("HTML Full Text");?></a>                       
                       </li>                      
                          <?php } ?>           
                       <?php } ?>
@@ -196,14 +224,14 @@ Foldering
         <?php } ?>
         <?php if(!empty($result['pubType'])){ ?> 
                      <tr>
-                         <td><strong>PubType:</strong></td>
+                         <td><strong><?php echo _("PubType:");?></strong></td>
                          <td><?php echo $result['pubType'] ?></td>
                      </tr>
         <?php } ?>
         <?php if (!empty($result['DbLabel'])) { ?>
             <tr>
                 <td><strong>
-                    Database:
+                    <?php echo _("Database:");?>
             </strong></td>
                 <td>
                     <?php echo $result['DbLabel']; ?>
@@ -217,7 +245,7 @@ Foldering
                 <td><br></td>
             </tr>
              <tr>
-                 <td colspan="2">This record from <b>[<?php echo $result['DbLabel']; ?>]</b> cannot be displayed to guests.<br><a href="login.php?path=record&db=<?php echo $clean['db']?>&an=<?php echo $clean['an']?>&<?php echo $encodedHighLigtTerm?>&resultId=<?php echo $clean['resultId'] ?>&recordCount=<?php echo $clean['recordCount'] ?>&<?php echo $encodedQuery;?>&fieldcode=<?php echo urlencode($clean['fieldcode']); ?>">Login</a> for full access.</td>
+                 <td colspan="2"><?php echo _("This record from ");?><b>[<?php echo $result['DbLabel']; ?>]</b><?php echo _(" cannot be displayed to guests.");?><br><a href="login.php?path=record&db=<?php echo $clean['db']?>&an=<?php echo $clean['an']?>&<?php echo $encodedHighLigtTerm?>&resultId=<?php echo $clean['resultId'] ?>&recordCount=<?php echo $clean['recordCount'] ?>&<?php echo $encodedQuery;?>&fieldcode=<?php echo urlencode($clean['fieldcode']); ?>"><?php echo _("Login")."</a>"._(" for full access.");?></td>
             </tr>
             <?php } ?>
         </table> 

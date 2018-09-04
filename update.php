@@ -512,6 +512,24 @@ if ($v3 == 0) {
     echo "<p><em>Version 2.3c Update</em>: <strong>Role Empowerment</strong> is already included in your installation.  No update needed.</p>";
 }
 
+$sql = "SHOW COLUMNS FROM oauth;";
+$results = mysqli_query($c,$sql);
+$v3 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'language') {
+        $v3 = 1;
+    }
+}
+if ($v3 == 0) {
+    $sql = "ALTER TABLE oauth ADD language VARCHAR(25); ";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)." Adding <strong>language</strong> to lists.</p>";
+} else {
+    echo "<p><em>Version 2.3c Update</em>: <strong>language</strong> is already included in your installation.  No update needed.</p>";
+}
+
 $sql = "SHOW COLUMNS FROM studentreading;";
 $results = mysqli_query($c,$sql);
 $v3 = 0;
@@ -530,6 +548,26 @@ if ($v3 == 0) {
     echo "<p>".mysqli_error($c)." Adding <strong>Granular Student Statistics</strong> to lists.</p>";
 } else {
     echo "<p><em>Version 2.3c Update</em>: <strong>Granular Student Statistics</strong> is already included in your installation.  No update needed.</p>";
+}
+
+$sql = "SHOW COLUMNS FROM lists;";
+$results = mysqli_query($c,$sql);
+$v4 = 0;
+
+while ($row = mysqli_fetch_array($results)) {
+    if ($row['Field'] == 'consumerid') {
+        $v4 = 1;
+    }
+}
+if ($v4 == 0) {
+    $sql = "ALTER TABLE lists ADD consumerid VARCHAR(200); ";
+    mysqli_query($c,$sql);
+    $sql = "UPDATE lists INNER JOIN credentialconsumers ON lists.credentialconsumerid = credentialconsumers.id SET lists.consumerid = credentialconsumers.consumerid";
+    mysqli_query($c,$sql);
+    
+    echo "<p>".mysqli_error($c)."Adjusting for upcoming <strong>UID Password Changes</strong></p>";
+} else {
+    echo "<p><em>Version 2.3d Update</em>: <strong>UID Password Changes</strong> is already included in your installation.  No update needed.</p>";
 }
 
 ?>

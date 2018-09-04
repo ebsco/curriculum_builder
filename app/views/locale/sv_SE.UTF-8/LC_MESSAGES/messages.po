@@ -1,0 +1,1018 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"Project-Id-Version: CB2\n"
+"Language: sv\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgid "English"
+msgstr "English"
+
+msgid "Back to Reading List"
+msgstr "Tillbaka till Läslista"
+
+msgid " << Back to Results"
+msgstr " << Tillbaka till resultat"
+
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
+msgstr "Attans, det verkar som artikeln inte är längre är tillgänglig genom ditt bibliotek. Vänligen informera bibliotek och lärare om detta problem."
+
+msgid "This record from "
+msgstr "Denna post från "
+
+msgid " cannot be displayed to guests."
+msgstr " kan inte visas via gäståtkomst."
+
+msgid "Login</a> for full access."
+msgstr "Logga in</a> för full åtkomst."
+
+msgid "Add to Reading List"
+msgstr "Lägg till i Läslista"
+
+msgid "Remove from Reading List"
+msgstr "Ta bort från Läslista"
+
+msgid "PDF full text"
+msgstr "PDF full text"
+
+msgid "HTML full text"
+msgstr "HTML full text"
+
+msgid "HTML Full Text"
+msgstr "HTML Full Text"
+
+msgid "Full Text:"
+msgstr "Full Text:"
+
+msgid "PubType:"
+msgstr "PubTyp:"
+
+msgid "Database:"
+msgstr "Databas:"
+
+msgid "Statistics"
+msgstr "Statistik"
+
+msgid "Curriculum Builder Settings"
+msgstr "Curriculum Builder Inställningar"
+
+#, fuzzy
+msgid "EBSCO User ID"
+msgstr "Ditt EBSCO Användarid"
+
+#, fuzzy
+msgid "EBSCO Password"
+msgstr "Ditt EBSCO Lösenord"
+
+msgid "Your EDS API Profile"
+msgstr "Din EDS API Profil"
+
+msgid "URL for your library logo"
+msgstr "URL till din bibliotekslogotyp"
+
+msgid "Contact Email"
+msgstr "Kontakt e-post"
+
+msgid "Link to Library Home Page"
+msgstr "Länk till bibliotekets hemsida"
+
+msgid "Text to display at top of screen"
+msgstr "Text att visa på toppen av skärmen"
+
+msgid "Link to EDS Label"
+msgstr "Länk till EDS etikett"
+
+msgid "Custom CSS File"
+msgstr "Anpassad CSS Fil"
+
+msgid "Collect student names as they access assigned readings?"
+msgstr "Samla studenternas namn när de använder resurserna?"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nej"
+
+msgid "Footer text"
+msgstr "Fottext"
+
+msgid "Copy Course Support"
+msgstr "Kopiera kursreferenser"
+
+msgid "Remove Full Text and Available in Library Collection Limiters from view"
+msgstr "Ta bort 'Full Text' och 'Finns i bibliotekets samling' begränsare i vyn"
+
+msgid "Show 'Return to Course' Link at top of page"
+msgstr "Visa 'Tillbaka till kurs' länk på toppen av sidan"
+
+msgid "Open all Lists in a New Window"
+msgstr "Öppna alla listor i ett nytt fönster"
+
+msgid "View Lists"
+msgstr "Visa listor"
+
+msgid "Select one: "
+msgstr "Välj en:"
+
+msgid "Preview Selected List"
+msgstr "Förhandsvisa vald lista"
+
+msgid "Delete Lists"
+msgstr "Ta bort listor"
+
+msgid "Delete Selected Lists"
+msgstr "Ta bort vald lista"
+
+msgid "Basic Search"
+msgstr "Enkel sökning"
+
+msgid "Keyword"
+msgstr "Nyckelord"
+
+msgid "Author"
+msgstr "Författare"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "View this list"
+msgstr "Visa denna lista:"
+
+msgid "Untitled List"
+msgstr "Lista utan namn"
+
+msgid "All Public Lists:"
+msgstr "Alla publika listor:"
+
+msgid "There are no public reading lists to copy."
+msgstr "Det finns inga publika listor att kopiera."
+
+msgid "Options"
+msgstr "Inställningar"
+
+msgid "Include Notes in the Import Process"
+msgstr "Inkludera anteckningar i importprocessen"
+
+msgid "Preserve Sort Order"
+msgstr "Bevara sorteringsordning"
+
+msgid "Check/Uncheck All"
+msgstr "Markera/avmarkera alla"
+
+msgid "Notes:"
+msgstr "Anteckningar:"
+
+msgid "There are no readings in this list."
+msgstr "Det finns inga poster i denna lista."
+
+msgid "Copy Selected Readings"
+msgstr "Kopiera valda poster"
+
+msgid "You are unauthorized to access this page."
+msgstr "Du är inte autentiserad för åtkomst till denna sida."
+
+msgid "You must be logged in to access that service, please login"
+msgstr "Du måste vara inloggad för att använda tjänsten, vänligen logga in"
+
+msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
+msgstr "Varning: du är på väg att ta bort följande listor permanent. Denna åtgärd går ej att göra ogjord. Alla lärare som försöker komma åt dessa listor från deras kurser kommer finna en tom lista."
+
+msgid "NEVER accessed since update"
+msgstr "ALDRIG använd sedan uppdatering"
+
+msgid "LAST ACCESSED"
+msgstr "SENAST ANVÄND"
+
+msgid "DELETE"
+msgstr "TA BORT"
+
+msgid "this list"
+msgstr "den här listan"
+
+msgid "these "
+msgstr "dessa  "
+
+msgid "lists"
+msgstr "listor"
+
+msgid "or"
+msgstr "eller"
+
+msgid "Cancel"
+msgstr "Avbryt"
+
+msgid "No lists selected to delete."
+msgstr "Inga listor valda för borttagning"
+
+msgid "Back to Administration Screen"
+msgstr "Tillbaka till Administrationsvyn"
+
+msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
+msgstr "Attans! Ett fel uppstod. Datan från en eller flera poster är ej komplett. Vänligen försök igen, säkerställ att inkludera hela posten för varje läspost."
+
+msgid "Enter bibliographic info from the list into this box:"
+msgstr " Ange bibliografisk information från listan in i denna ruta:"
+
+msgid "CB Version 2.3"
+msgstr "CB Version 2.3"
+
+msgid "List ID"
+msgstr "List ID"
+
+msgid "Login"
+msgstr "Logga in"
+
+msgid "Invalid login -- pleasae try again"
+msgstr "Felaktig inloggning -- försök igen"
+
+msgid "Username:"
+msgstr "Användarnamn:"
+
+msgid "Password:"
+msgstr "Lösenord:"
+
+msgid "Successfully logged in."
+msgstr "Inloggning lyckades."
+
+msgid "Successfully updated expiration date for "
+msgstr "Förfallodatumet uppdaterat för "
+
+msgid "Successfully deleted "
+msgstr "Borttagning lyckades"
+
+msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
+msgstr "Du kan inte tömma Användarnyckel eller Lösenord och du måste sätta ett förfallodatum, vänligen försök igen."
+
+msgid "Consumer key "
+msgstr "Användarnyckel "
+
+msgid "already exists. Please delete the existing one first before creating a new one."
+msgstr "finns redan. Vänligen ta bort den befintliga innan du skapar en ny."
+
+msgid "Successfully inserted consumer key: "
+msgstr "Användarnyckel sparades: "
+
+msgid "Unrecognized Actions.  Try again."
+msgstr "Okänd Aktivitet. Försök igen."
+
+msgid "Create New Access Key Pair"
+msgstr "Skapa ny Åtkomstnyckelpar."
+
+msgid "Consumer Key"
+msgstr "Användarnyckel Key"
+
+msgid "Secret"
+msgstr "Hemlighet"
+
+msgid "Expiration Date"
+msgstr "Förfallodatumet"
+
+msgid "Edit or Delete Existing Access Key Pair"
+msgstr "Ändra eller ta bort existerande nyckelpar"
+
+msgid "Warning:"
+msgstr "Varning:"
+
+msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
+msgstr "Att ta bort Användarnyckel / hemlighet eller att sätta ett felaktigt förfallodatum medför att alla sidor som använder det nyckelparet tappar åtkomst till läslistan. "
+
+msgid "Expiration"
+msgstr "Förfaller"
+
+msgid "Configure / Admin"
+msgstr "Konfigurera / Admin"
+
+msgid "Are you sure you want to delete this key"
+msgstr "Är du säker på att du vill ta bort denna nyckel"
+
+msgid "You have been logged out."
+msgstr "Du är utloggad."
+
+msgid "Your login credentials are incorrect.  Please try again."
+msgstr "Dina inloggningsuppgifter är felaktiga, vänligen försök igen."
+
+msgid "Manage Access to the Reading List Tool"
+msgstr "Hantera åtkomst till Läslistverktyget"
+
+msgid "Create New Key Pair"
+msgstr "Skapa nytt Nyckelpar"
+
+msgid "Log Out"
+msgstr "Logga ut"
+
+msgid "Notes may not save properly."
+msgstr "Anteckningar sparades eventuellt inte korrekt."
+
+msgid "Import from Existing List"
+msgstr "Importera från befintlig lista"
+
+msgid "Import from EBSCO Folder (beta)"
+msgstr "Importa från  EBSCO Folder (beta)"
+
+msgid "This list is"
+msgstr "Denna lista är"
+
+msgid "public"
+msgstr "publik"
+
+msgid "private"
+msgstr "privat"
+
+msgid "student(s) have accessed this list."
+msgstr "student(er) har åtkomst till denna lista."
+
+msgid "Students that have accessed this list:"
+msgstr "Studenter som använt denna lista:"
+
+msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
+msgstr "Inga studenter har använt denna lista. Lista med namn visas här när den första har använt den."
+
+msgid "Add Folder"
+msgstr "Lägg till Mapp"
+
+msgid "Create Folder"
+msgstr "Skapa mapp"
+
+msgid "Add Text or Instructions"
+msgstr "Lägg till text eller instruktioner"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Folder"
+msgstr "Mapp"
+
+msgid "e.g., Read Chapter 5 in Textbook"
+msgstr "t.ex., Läs kapitel 5 i kursboken"
+
+msgid "Main list of Readings"
+msgstr "Läslista"
+
+msgid "Add Web Resource"
+msgstr "Lägg till webbresurs"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "e.g., http://library.edu/"
+msgstr "t.ex., http://library.edu/"
+
+msgid "Link label"
+msgstr "Länk etikett"
+
+msgid " Back to main list"
+msgstr " Tillbaka till huvudlista"
+
+msgid "This list has folders:"
+msgstr "Denna lista har mappar:"
+
+msgid "Sort Order:"
+msgstr "Sorteringsordning:"
+
+msgid "Removing..."
+msgstr "Tar bort..."
+
+#, fuzzy
+msgid "Move to folder"
+msgstr "Flytta till mapp: "
+
+msgid "No Folder"
+msgstr "Ingen Map"
+
+msgid "Delete"
+msgstr "Ta bort"
+
+msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
+msgstr "Problem uppstod under laddningen av data för denna post. Ditt bibliotek kanske inte längre prenumererar på denna post alternativt så är detta ett duplikat av en annan post i listan. Vänligen kontakta biblioteket för assistans om du har problem med åtkomst av denna post. "
+
+msgid "By : "
+msgstr "Av : "
+
+msgid "Published:"
+msgstr "Publicerad:"
+
+msgid "Start Page: "
+msgstr "Startsida: "
+
+msgid "Page Count: "
+msgstr "Antal sidor: "
+
+msgid "Language:"
+msgstr "Språk:"
+
+msgid "Full Text"
+msgstr "Full Text"
+
+msgid "Online Access"
+msgstr "Webbåtkomst"
+
+msgid "Students that have clicked this reading: "
+msgstr "Studenter som klickat på denna post: "
+
+msgid "student(s) have clicked this reading."
+msgstr "student(er) har klickat på denna post."
+
+msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
+msgstr "Inga studenter har läst denna post. Namnen på studenterna visas så fort någon klickat på den."
+
+#, fuzzy
+msgid "Characters remaining"
+msgstr "Tecken kvar: "
+
+msgid "Removing... please wait."
+msgstr "Tar bort... Vänligen vänta."
+
+msgid "Update Notes and Sort Order"
+msgstr "Updatera anteckningar och sorteringsordning"
+
+msgid "Currently, there are no readings."
+msgstr "För närvarande finns inga poster."
+
+msgid "Select a folder above to see readings."
+msgstr "Välj en mapp ovanför för att ser poster."
+
+msgid "Currently, there are no readings on this list."
+msgstr "För närvarande finns inga poster i denna lista."
+
+msgid "<< Back to Results"
+msgstr "<< Tillbaka till resultat"
+
+msgid "Retrieve response XML"
+msgstr "Hämta XML svar"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
+msgstr "Attans! Det verkar som denna artikel inte längre är tillgänglig genom ditt bibliotek. Vänligen informera biblioteket och läraren om detta problem:"
+
+msgid "This record from"
+msgstr "Denna post från"
+
+msgid "cannot be displayed to guests."
+msgstr "kan inte visas för gäster."
+
+msgid "for full access."
+msgstr "för full åtkomst."
+
+msgid "See it in EDS"
+msgstr "Se den i EDS"
+
+msgid " Online Access"
+msgstr " Webåtkomst"
+
+msgid "Refine Search"
+msgstr "Förfina sökningen"
+
+msgid "Remove Facets"
+msgstr "Ta bort facetter"
+
+msgid "Limiter: "
+msgstr "Avgränsare: "
+
+msgid "Limit your results"
+msgstr "Begränsa dina resultat"
+
+msgid "Expand your results"
+msgstr "Expandera dina resultat"
+
+msgid "Search response XML"
+msgstr "Söksvar XML"
+
+msgid "Results"
+msgstr "Resultat"
+
+msgid "Showing"
+msgstr "Visar"
+
+msgid "of"
+msgstr "av"
+
+msgid "for"
+msgstr "för"
+
+msgid "Sort"
+msgstr "Sortera"
+
+msgid "Page options"
+msgstr "Sidalternativ"
+
+msgid "Detailed"
+msgstr "Detaljerad"
+
+msgid "Brief"
+msgstr "Kortfattad"
+
+msgid "Title Only"
+msgstr "Endast titel"
+
+msgid "Results per page"
+msgstr "Resultat per sida"
+
+msgid "Research Starter"
+msgstr "Research Starter"
+
+msgid "for full access"
+msgstr "för full åtkomst"
+
+msgid "Published: "
+msgstr "Publicerad:"
+
+msgid "No results were found."
+msgstr "Inga resultat hittades"
+
+msgid "Result #"
+msgstr "Resultat nr."
+
+msgid "Title is not available"
+msgstr "Titeln är inte tillgänglig"
+
+msgid "By :"
+msgstr "Av:"
+
+msgid "Start Page:"
+msgstr "Startsida: "
+
+msgid "Page Count:"
+msgstr "Antal sidor: "
+
+msgid "Abstract:"
+msgstr "Sammanfattning:"
+
+msgid "Subjects:"
+msgstr "Ämnen:"
+
+msgid "Key:"
+msgstr "Nyckel:"
+
+msgid "Secret:"
+msgstr "Hemlighet:"
+
+msgid "Administration"
+msgstr "Administration"
+
+msgid "Total Lists"
+msgstr "Alla listor"
+
+msgid "Total People Using Tool"
+msgstr "Alla personer som använder verktyget"
+
+msgid "Users"
+msgstr "Användare"
+
+msgid "Total Courses Using Tool"
+msgstr "Antal kurser som använder verktyget"
+
+msgid "Courses"
+msgstr "Kurser"
+
+msgid "Search"
+msgstr "Sök"
+
+msgid "Return to Course"
+msgstr "Tillbaka till kursen"
+
+msgid "See Current Reading List"
+msgstr "Se aktuell läslista"
+
+msgid "Update"
+msgstr "Uppdatera"
+
+msgid "Add"
+msgstr "Lägg till"
+
+msgid " notes"
+msgstr " anteckningar"
+
+msgid "Save notes"
+msgstr "spara anteckningar"
+
+msgid "edit notes"
+msgstr "uppdatera anteckningar"
+
+msgid "items"
+msgstr "resurser"
+
+msgid "currently selected"
+msgstr "valda"
+
+msgid "Result"
+msgstr "Resultat"
+
+msgid "Folder name"
+msgstr "Mappnamn"
+
+msgid "Back to the main list"
+msgstr "Tillbaka till huvudlista"
+
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "for assistance with this tool."
+msgstr "för hjälp med detta verktyg."
+
+msgid "Download Export File"
+msgstr "Ladda ned Exportfil"
+
+msgid "Import from Export File"
+msgstr "Importera från Exportfil"
+
+msgid "Download Student Data"
+msgstr "Ladda ned studentdata"
+
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "Var vaksam när du redigerar dessa inställningar, då de överskrider originaluppsättningen i ert LMS LTI konfiguration. Vänligen aktivera minst en läslista från ditt LMS för att fylla dessa fält eller kontakta eds@ebscohost.com för hjälp med inställningarna."
+
+msgid "If you change the "
+msgstr "Om du ändrar"
+
+msgid "user id"
+msgstr "användarid"
+
+msgid "password"
+msgstr "lösenord"
+
+msgid "API profile ID"
+msgstr "API profilid"
+
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "du kommer att behöva logga ut och in igen för att se aktuell statistik och aktuella listor."
+
+msgid "Select"
+msgstr "Välj"
+
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "en kombination av Användarid & Lösenord från EBSCOAdmin:s Authentication flik."
+
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "Kombinationen användarnamn/lösenord måste vara kopplade till den grupp som innehåller profilen som är specificerad nedan."
+
+msgid "Total Readings"
+msgstr "Totalt läst"
+
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "Detta är den EDS API profil som du vill använda i Curriculum Builder. Den måste vara i den grupp som Användarnamnet/Lösenordet du specificerat har tillgång till."
+
+msgid "EDS API Profile ID"
+msgstr "EDS API Profil ID"
+
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "LMS roller som kan editera läslistor (kommaseparerade)"
+
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "Som standard kan endast Instruktörer och Amanuenser redigera listor. Du kan dock lägga till fler roller genom att aktivera dem här."
+
+msgid "Default:"
+msgstr "Standard:"
+
+msgid "Proxy Prefix for CustomLinks"
+msgstr "Proxyprefix för CustomLinks"
+
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "Om ifyllt så kommer denna proxy användas på alla CustomLinks som dyker upp i Curriculum Builder."
+
+msgid "Examples"
+msgstr "Exempel"
+
+msgid "Proxy should encode target URL"
+msgstr "Proxyn ska koda mål URL:en"
+
+msgid "If your proxy prefix ends with"
+msgstr "Om ditt Proxy prefix slutar med"
+
+msgid "this probably needs to be set to"
+msgstr "behöver detta nog sättas till"
+
+msgid "otherwise"
+msgstr "annars"
+
+msgid "is probably correct."
+msgstr "är det säkerligen korrekt."
+
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "Om ditt LMS system anropar Curriculum Builder över HTTPS så ska din logotyp också pekas ut via HTTPS."
+
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "Denna text kommer dyka upp under titeln av läslistan i sidohuvudet. URL:er kommer automatiskt bli länkade."
+
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "Detta är märkningen för länken som visas till vänster om detaljposterna som länkar användaren till EBSCO Discovery Service för att läsa. Om den lämnas tom så kommer inga länkar till EDS visas. "
+
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "Lägg till en URL till en CSS fil. Stilarna i filen kommer användas i Curriculum Builders vyer. Måste vara HTTPS om ditt LMS använder HTTPS."
+
+msgid "Optional."
+msgstr "Valfritt."
+
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "kommer samla studenternas namn, e-post och ID:n. Denna data kommer användas för informera kursledaren om att en student klickat på resursen. Datan kommer även användas för att fylla rapporten til biblioteket. För att inaktivera sparandet av e-post så kan din LMS ansvariga välja att inte dela den informationen med verktyget."
+
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "kommer inte delge fakulteten med namn på studenter som klickat på en läsning. Däremot kommer biblioteket få en rapport som visas när och vad som använts med endast LMS:ets användarnamn."
+
+msgid "Anonymized"
+msgstr "Anonymiserad"
+
+msgid "None"
+msgstr "Ingen"
+
+msgid "will collect no student activity. No reporting will be available."
+msgstr "ingen studentaktivitet sparas. Ingen rapport kommer vara tillgänglig."
+
+msgid "Link to Help Pages"
+msgstr "Länk till hjälpsidor."
+
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "för detta val kommer instruktörer bli tvungna att skapa en lista från grunden eller välja från en lista med liknande namn när de skapar en ny läslista. Om"
+
+msgid "is selected, all new lists will be blank."
+msgstr "vald så kommer alla lista vara tomma."
+
+msgid "Hide"
+msgstr "Göm"
+
+msgid "and"
+msgstr "och"
+
+msgid "Available in Library Collection"
+msgstr "Tillgänglig i Bibliotekets bestånd"
+
+msgid "Limiters"
+msgstr "Avgränsare"
+
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "Genom att dölja dessa avgränsare så kommer inte personal inte kunna avmarkera dem och därigenom aldrig kunna hitta källor utanför beståndet till läslistan. "
+
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "Denna länk är skapad av ert LMS. Om LMS:et är korrekt konfigurerat så kommer den skicka tillbaka användaren till kurssidan. "
+
+msgid "Show First Full Text Link Only"
+msgstr "Visa enbart första tillgängliga Fulltext länk "
+
+msgid "Language"
+msgstr "Språk"
+
+msgid "Spanish"
+msgstr "Spanska"
+
+msgid "German"
+msgstr "Tyska"
+
+msgid "Italian"
+msgstr "Italienska"
+
+msgid "Portuguese"
+msgstr "Portugisiska"
+
+msgid "French"
+msgstr "Franska"
+
+msgid "Simplified Chinese"
+msgstr "Kinesiska (enkel) "
+
+msgid "traditional Chinese"
+msgstr "Kinesiska (traditionell)"
+
+msgid "Japanese"
+msgstr "Japanska"
+
+msgid "Polish"
+msgstr "Polska"
+
+msgid "Swedish"
+msgstr "Svenska"
+
+msgid "Thai"
+msgstr "Thailändska"
+
+msgid "Turkish"
+msgstr "Turkiska"
+
+msgid "Required"
+msgstr "Obligatorisk"
+
+msgid "e.g., Instructor"
+msgstr "t.ex. Instruktör"
+
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Proxy prefix här; om WAM används så kan du använda {targetURLdomain} för att specificera domänen av din WAM proxy, resterande kommer placeras i slutet."
+
+msgid "Email for contact person for tool"
+msgstr "E-post för kontaktperson av verktyget"
+
+msgid "Branding text at top of screen"
+msgstr "Brandingtext i toppen av skärmen"
+
+msgid "e.g., See Record in EDS"
+msgstr "t.ex. Se post i EDS"
+
+msgid "e.g., Search for Library Resources"
+msgstr "t.ex. Sök bland Bibliotekets resurser"
+
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Valfritt. URL till CSS fil"
+
+msgid "URL for LibGuide or other help pages"
+msgstr "URL till LibGuide eller andra hjälpsidor"
+
+msgid "e.g., a copyright notice"
+msgstr "t.ex. copyright information"
+
+msgid "Label for Link to EDS"
+msgstr "Etikett för länk till EDS"
+
+msgid "Label for Search Box"
+msgstr "Etikett för Sökruta"
+
+msgid "Collect Student Data"
+msgstr "Samla in Studentdata"
+
+msgid "URL to Library Home Page"
+msgstr "URL till Bibliotekets hemsida"
+
+msgid "Search Library Resources"
+msgstr "Sök i Bibliotekets resurser"
+
+msgid "Update Settings"
+msgstr "Uppdatera inställningar"
+
+msgid "Expander: "
+msgstr "Expandera: "
+
+msgid "Edit"
+msgstr "Redigera"
+
+msgid "Relevance"
+msgstr "Relevans"
+
+msgid "Source Type"
+msgstr "Källtyp"
+
+msgid "Subject"
+msgstr "Ämne"
+
+msgid "Publication"
+msgstr "Publikation"
+
+msgid "Geography"
+msgstr "Geografi"
+
+msgid "Content Provider"
+msgstr "Databas"
+
+msgid "Academic Journal"
+msgstr "Akademisk tidskrift"
+
+msgid "Biographie"
+msgstr "Biografi"
+
+msgid "Book"
+msgstr "Bok"
+
+msgid "Conference Material"
+msgstr "Konferensmaterial"
+
+msgid "Magazine"
+msgstr "Magasin"
+
+msgid "New"
+msgstr "Ny"
+
+msgid "Primary Source Document"
+msgstr "Primärkälla"
+
+msgid "Report"
+msgstr "Rapport"
+
+msgid "Review"
+msgstr "Recension"
+
+msgid "Trade Publication"
+msgstr "Affärspublikation"
+
+msgid "Date Newest"
+msgstr "Senaste datum"
+
+msgid "Date Oldest"
+msgstr "Äldsta datum"
+
+msgid "Authors"
+msgstr "Författare"
+
+msgid "Document Type"
+msgstr "Dokumenttyp"
+
+msgid "Subject Terms"
+msgstr "Ämnesord"
+
+msgid "Author-Supplied Keywords"
+msgstr "Författarens nyckelord"
+
+msgid "Abstract"
+msgstr "Sammanfattning"
+
+msgid "Author Affiliations"
+msgstr "Författarens kopplingar"
+
+msgid "Accession Number"
+msgstr "Unik identifierare"
+
+msgid "Publisher"
+msgstr "Förlag"
+
+msgid "Source"
+msgstr "Källa"
+
+msgid "Geographic Terms"
+msgstr "Geografiska termer"
+
+msgid "Academic Journals"
+msgstr "Akademiska tidskrifter"
+
+msgid "Books"
+msgstr "Böcker"
+
+msgid "Conference Materials"
+msgstr "Konferensmaterial"
+
+msgid "Magazines"
+msgstr "Magasin"
+
+msgid "Biographies"
+msgstr "Biografier"
+
+msgid "News"
+msgstr "Nyheter"
+
+msgid "Primary Source Documents"
+msgstr "Primärkällor"
+
+msgid "Reports"
+msgstr "Rapporter"
+
+msgid "Reviews"
+msgstr "Recensioner"
+
+msgid "Trade Publications"
+msgstr "Affärspublikationer"
+
+msgid "Apply equivalent subjects"
+msgstr "Använd motsvarande ämnesord"
+
+msgid "Apply related words"
+msgstr "Använd synononymer"
+
+msgid "Also search within the full text of the articles"
+msgstr "Sök även inom fulltext av artiklar"
+
+msgid "References Available"
+msgstr "Referenser finns tillgängliga"
+
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Peer-reviewed Tidskrifter"
+
+msgid "Library Home"
+msgstr "Biblioteket"
+
+msgid "Periodical"
+msgstr "Periodisk"
+
+msgid "Selecting"
+msgstr "Väljer"
+
+msgid "Publication Year"
+msgstr "Publikationsår"
+
+msgid "You have no other reading lists."
+msgstr "Du har inga fler läslistor."
+
+msgid "No statistics to report yet."
+msgstr "Ingen statistik att rapportera ännu."
+
+msgid "Select one:"
+msgstr "Välj en:"
+
+msgid "Hebrew"
+msgstr "Hebreiska"
+
+msgid "University"
+msgstr "Universitet"
+
+msgid "Collection"
+msgstr "Samling"
+
+msgid "Category"
+msgstr "Kategori"
+
+msgid "Generate list"
+msgstr "Generera lista"

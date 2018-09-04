@@ -1,4 +1,36 @@
-<h2>Login</h2>
+<?php
+	// save current language to cookie by default
+	if (!isset($_SESSION["language"])){
+		if(!isset($customparams)){
+			$customparams['language']= "en_US.UTF-8";
+	}		
+	$_SESSION["language"]=$customparams['language'];
+	}
+	// check if parameters are passed from url, language change 
+	if (isset($_REQUEST["language"])) {
+		$_SESSION["language"]=urldecode($_REQUEST["language"]);
+	}
+	$language = $_SESSION["language"];
+	if (stripos($language,"utf-8")===false) {
+	   $language.=".UTF-8";
+	}
+	putenv("LC_ALL=$language");
+	setlocale(LC_ALL, $language);
+	if (defined('LC_MESSAGES')) // available if PHP was compiled with libintl
+	{
+	   setlocale(LC_MESSAGES, $language);
+	}   
+	else
+	{       
+	   setlocale(LC_ALL, $language);
+	}       
+			
+	bindtextdomain("messages", dirname(__FILE__)."/locale");                                
+	bind_textdomain_codeset('messages', 'UTF-8');
+	textdomain("messages");
+
+?>
+<h2><?php echo _("Login");?></h2>
     		
 <?php
 
@@ -81,9 +113,9 @@ if (isset($message)) {
   }
 ?>
 
-        <tr><td><label style="font-size: 80%"><b>Key:</b> </label></td><td><input type="text" name="admin_key" value="<?php if (isset($loginvars[0])) { echo $loginvars[0]; } ?>" /></td></tr>
-		<tr><td><label style="font-size: 80%"><b>Secret:</b> </label></td><td><input type="password" name="admin_secret" value="<?php if (isset($loginvars[1])) { echo $loginvars[1]; } ?>" /></td></tr>
-        <tr><td></td><td><input type="submit" value="Login" /></td></tr>
+        <tr><td><label style="font-size: 80%"><b><?php echo _("Key:");?></b> </label></td><td><input type="text" name="admin_key" value="<?php if (isset($loginvars[0])) { echo $loginvars[0]; } ?>" /></td></tr>
+		<tr><td><label style="font-size: 80%"><b><?php echo _("Secret:");?></b> </label></td><td><input type="password" name="admin_secret" value="<?php if (isset($loginvars[1])) { echo $loginvars[1]; } ?>" /></td></tr>
+        <tr><td></td><td><input type="submit" value="<?php echo _('Login');?>" /></td></tr>
 
 	</table>
 </form>

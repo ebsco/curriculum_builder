@@ -146,7 +146,8 @@ CREATE TABLE oauth (
   proxyprefix varchar(100) DEFAULT NULL,
   proxyencode varchar(1) DEFAULT 'n',
   searchlabel varchar(200) DEFAULT 'Search Library Resources',
-  empowered_roles varchar(200) DEFAULT 'Instructor,TeachingAssistant'
+  empowered_roles varchar(200) DEFAULT 'Instructor,TeachingAssistant',
+  `language` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

@@ -512,7 +512,7 @@ function loadCustomParams() {
     $c = func_get_arg(0);
     $oauth_consumer_key = func_get_arg(1);
     
-    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow, firstftonly, helppages, searchlabel, proxyprefix, proxyencode, empowered_roles FROM oauth WHERE oauth_consumer_key = ?';
+    $sql = 'SELECT libemail, libname, liblogo, liblink, profile, userid, password, studentdata, EDSlabel, copyright, copylist, css, forceft, courselink, quicklaunch, newwindow, firstftonly, helppages, searchlabel, proxyprefix, proxyencode, empowered_roles, language   FROM oauth WHERE oauth_consumer_key = ?';
     $stmt = $c->prepare($sql);
     $stmt->bind_param('s',$oauth_consumer_key);
     $stmt->execute();
@@ -834,45 +834,99 @@ function export_readings($c,$credentialconsumerid) {
      }  
 }
 
-function export_all_sql($c,$credentialconsumerid) {
-    $sql = 'SELECT authors.fullname AS authors_fullname, authors.email AS authors_emails, authors.lms_id AS authors_lmsid, readings.id AS readings_id, readings.an AS readings_an, readings.db AS readings_db, readings.title AS readings_title, readings.priority AS readings_priority, readings.notes AS readings_notes, readings.url AS readings_url, readings.type AS readings_type, readings.instruct AS readings_instruct, readings.folderid AS readings_folderid, folders.label AS folders_label, lists.linklabel AS lists_linklabel, lists.course AS lists_course, lists.linkid AS lists_linkid, lists.private AS lists_private, lists.last_access AS lists_last_access, credentials.userid AS credentials_userid, credentials.password AS credentials_password, credentials.profile AS credentials_profile, credentialconsumers.credentialid AS credentialconsumers_credentialid, credentialconsumers.consumerid AS credentialconsumers_consumerid FROM readings INNER JOIN lists ON readings.listid = lists.id INNER JOIN credentialconsumers ON credentialconsumers.id = lists.credentialconsumerid INNER JOIN credentials ON credentials.id = credentialconsumers.credentialid INNER JOIN authors ON authors.id = readings.authorid LEFT OUTER JOIN folders ON folders.id = readings.folderid WHERE credentials.id=?;';
-    $stmt = $c->prepare($sql);
-    
-    $stmt->bind_param('i',$credentialconsumerid);
-    $stmt->execute();
-    $folderitems = $stmt->get_result();
-    
-     if ($folderitems) {
-          $numFolderItems = mysqli_num_rows($folderitems);
-          if ($numFolderItems > 0) {
-            return $folderitems;
-          } else {
-            return false;
-          }
-     } else {
+function export_all_sql($c,$consumerids) {
+    $rowsObj = array();
+    $first = true;
+    foreach ($consumerids['logged_in_consumerid'] as $consumerid) {
+        $sql = 'SELECT lists.consumerid AS lms_id, authors.fullname AS authors_fullname, authors.email AS authors_emails, authors.lms_id AS authors_lmsid, readings.id AS readings_id, readings.an AS readings_an, readings.db AS readings_db, readings.title AS readings_title, readings.priority AS readings_priority, readings.notes AS readings_notes, readings.url AS readings_url, readings.type AS readings_type, readings.instruct AS readings_instruct, readings.folderid AS readings_folderid, folders.label AS folders_label, lists.linklabel AS lists_linklabel, lists.course AS lists_course, lists.linkid AS lists_linkid, lists.private AS lists_private, lists.last_access AS lists_last_access FROM readings INNER JOIN lists ON readings.listid = lists.id INNER JOIN authors ON authors.id = readings.authorid LEFT OUTER JOIN folders ON folders.id = readings.folderid WHERE lists.consumerid = ?;';        
+        $stmt = $c->prepare($sql);
+        $stmt->bind_param('s',$consumerid);
+        $stmt->execute();
+        $folderitems = $stmt->get_result();
+        if ($folderitems) {
+            $numFolderItems = mysqli_num_rows($folderitems);
+            if ($numFolderItems > 0) {
+                while ($row = mysqli_fetch_assoc($folderitems)) {
+                    array_push($rowsObj,$row);
+                }
+            }
+        }
+        if ($first) {
+            $first = false;
+            $fields = mysqli_fetch_fields($folderitems);
+            $names = array();
+            foreach ($fields as $val){
+                $names[] = $val->name;
+            }
+        }
+    }
+
+    if (sizeof($rowsObj) > 0) {
+        $returnArray = array();
+        $returnArray["results"] = $rowsObj;
+        $returnArray["headers"] = $names;
+        return $returnArray;
+    } else {
         return false;
-     }  
+    }
+    // $consumeridstring = implode('","',$consumerids['logged_in_consumerid']);
+    // $consumeridstring = '"'.$consumeridstring.'"';
+
+    // $sql = 'SELECT authors.fullname AS authors_fullname, authors.email AS authors_emails, authors.lms_id AS authors_lmsid, readings.id AS readings_id, readings.an AS readings_an, readings.db AS readings_db, readings.title AS readings_title, readings.priority AS readings_priority, readings.notes AS readings_notes, readings.url AS readings_url, readings.type AS readings_type, readings.instruct AS readings_instruct, readings.folderid AS readings_folderid, folders.label AS folders_label, lists.linklabel AS lists_linklabel, lists.course AS lists_course, lists.linkid AS lists_linkid, lists.private AS lists_private, lists.last_access AS lists_last_access FROM readings INNER JOIN lists ON readings.listid = lists.id INNER JOIN authors ON authors.id = readings.authorid LEFT OUTER JOIN folders ON folders.id = readings.folderid WHERE lists.consumerid IN ('.$consumeridstring.');';
+
+    // $stmt = $c->prepare($sql);
+    
+    // $stmt->execute();
+    // $folderitems = $stmt->get_result();
+    
+    //  if ($folderitems) {
+    //       $numFolderItems = mysqli_num_rows($folderitems);
+    //       if ($numFolderItems > 0) {
+    //         return $folderitems;
+    //       } else {
+    //         return false;
+    //       }
+    //  } else {
+    //     return false;
+    //  }  
 }
 
-function student_export_all_sql($c,$credentialconsumerid) {
-    $sql = 'SELECT studentreading.name AS student_name, studentreading.email AS email_address, studentreading.user_id AS lms_user_id, studentreading.accessed_time AS time_of_access, readings.title AS reading_title, readings.an AS accession_number, readings.db AS database_code, lists.linklabel AS list_name, lists.course AS course_name FROM studentreading INNER JOIN readings ON studentreading.readingid = readings.id INNER JOIN lists ON readings.listid = lists.id INNER JOIN credentialconsumers ON lists.credentialconsumerid = credentialconsumers.id WHERE readings.type = 1 AND credentialconsumers.credentialid = ?';
+function student_export_all_sql($c,$consumerids) {
 
-    $stmt = $c->prepare($sql);
-    
-    $stmt->bind_param('i',$credentialconsumerid);
-    $stmt->execute();
-    $folderitems = $stmt->get_result();
-    
-     if ($folderitems) {
-          $numFolderItems = mysqli_num_rows($folderitems);
-          if ($numFolderItems > 0) {
-            return $folderitems;
-          } else {
-            return false;
-          }
-     } else {
+    $rowsObj = array();
+    $first = true;
+    foreach ($consumerids['logged_in_consumerid'] as $consumerid) {
+        $sql = 'SELECT lists.consumerid AS lms_id, studentreading.name AS student_name, studentreading.email AS email_address, studentreading.user_id AS lms_user_id, studentreading.accessed_time AS time_of_access, readings.title AS reading_title, readings.an AS accession_number, readings.db AS database_code, lists.linklabel AS list_name, lists.course AS course_name FROM studentreading INNER JOIN readings ON studentreading.readingid = readings.id INNER JOIN lists ON readings.listid = lists.id INNER JOIN credentialconsumers ON lists.credentialconsumerid = credentialconsumers.id WHERE readings.type = 1 AND credentialconsumers.consumerid = ?;';
+        $stmt = $c->prepare($sql);
+        $stmt->bind_param('s',$consumerid);
+        $stmt->execute();
+        $folderitems = $stmt->get_result();
+        if ($folderitems) {
+            $numFolderItems = mysqli_num_rows($folderitems);
+            if ($numFolderItems > 0) {
+                while ($row = mysqli_fetch_assoc($folderitems)) {
+                    array_push($rowsObj,$row);
+                }
+            }
+        }
+        if ($first) {
+            $first = false;
+            $fields = mysqli_fetch_fields($folderitems);
+            $names = array();
+            foreach ($fields as $val){
+                $names[] = $val->name;
+            }
+        }
+    }
+
+    if (sizeof($rowsObj) > 0) {
+        $returnArray = array();
+        $returnArray["results"] = $rowsObj;
+        $returnArray["headers"] = $names;
+        return $returnArray;
+    } else {
         return false;
-     }  
+    }
 }
 
 function fixprotocol ($url) {

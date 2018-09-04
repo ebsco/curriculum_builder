@@ -14,11 +14,11 @@ $(document).ready(function(){
 </script>
 <div class="readingListLink">
 <?php
+    $consumerID = decryptCookie($_COOKIE['tool_consumer_instance_guid']);
     $currlistid = decryptCookie($_COOKIE['currentListId']);
     $currauthid = decryptCookie($_COOKIE['currentAuthorId']);
-    $sql = $c->prepare("SELECT id, course, linklabel, private FROM lists WHERE id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND id != ? AND credentialconsumerid = ?;");
-    $credconsumerID = getCredentialConsumerID();
-	$sql->bind_param('iii', $currauthid, $currlistid, $credconsumerID);
+    $sql = $c->prepare("SELECT id, course, linklabel, private FROM lists WHERE id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND id != ?;");
+	$sql->bind_param('ii', $currauthid, $currlistid);
 	$sql->execute();
 	$sql->store_result();
 	$sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel, $mylists_private);
@@ -53,8 +53,8 @@ $(document).ready(function(){
     }
     ?></div><div class="readingListLink">
     <?php
-		$sql = $c->prepare("SELECT id, course, linklabel FROM lists WHERE id != ? AND private = 0 AND credentialconsumerid = ?;");
-		$sql->bind_param('ii', $currlistid, $credconsumerID);
+		$sql = $c->prepare("SELECT id, course, linklabel FROM lists WHERE id != ? AND private = 0 AND consumerid = ?;");
+		$sql->bind_param('ii', $currlistid, $consumerID);
 		$sql->execute();
 		$sql->store_result();
 		$sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel);

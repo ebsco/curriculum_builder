@@ -78,9 +78,9 @@
     if (isset($clean['link'])) {
         $clean['roles'] = 'student (overriden by link)';
         // if link is specified, check to see it if exists.
-        $sql = 'SELECT id, linklabel, course FROM lists WHERE credentialconsumerid = ? AND linkid = ?';
+        $sql = 'SELECT id, linklabel, course FROM lists WHERE consumerid = ? AND linkid = ?';
         $stmt = $c->prepare($sql);
-        $stmt->bind_param('ss',$clean['credential_consumer_id'],$clean['link']);
+        $stmt->bind_param('ss',$clean['tool_consumer_instance_guid'],$clean['link']);
         $stmt->execute();
         $foundList = $stmt->get_result();
         
@@ -170,9 +170,9 @@
     }
     
     // look to see if this list already exists
-    $sql = 'SELECT id, linklabel, course FROM lists WHERE credentialconsumerid = ? AND linkid = ?';
+    $sql = 'SELECT id, linklabel, course FROM lists WHERE consumerid = ? AND linkid = ?';
     $stmt = $c->prepare($sql);
-    $stmt->bind_param('ss',$clean['credential_consumer_id'],$clean['resource_link_id']);
+    $stmt->bind_param('ss',$clean['tool_consumer_instance_guid'],$clean['resource_link_id']);
     $stmt->execute();
     $foundList = $stmt->get_result();
     $copy_target = "none";    
@@ -191,14 +191,14 @@
                 die("<p>Uh oh!  It looks like your course instructor hasn't added any readings to this list yet.</p><p>If you are a course instructor, it looks as if your account does not indicate that you are.  Your current role appears to be: ".$clean['roles']."<br/><br/>".$sql." with ".$clean['credential_consumer_id']."-".$clean['resource_link_id']."</p>");
             }
 
-            $sql = 'INSERT INTO lists (linklabel, course, credentialconsumerid, linkid, private) VALUES (?,?,?,?,1)';
+            $sql = 'INSERT INTO lists (linklabel, course, consumerid, credentialconsumerid, linkid, private) VALUES (?,?,?,?,?,1)';
             $stmt = $c->prepare($sql);
-            $stmt->bind_param('ssss',$clean['resource_link_title'],$clean['context_label'],$clean['credential_consumer_id'],$clean['resource_link_id']);
+            $stmt->bind_param('sssss',$clean['resource_link_title'],$clean['context_label'],$clean['tool_consumer_instance_guid'],$clean['credential_consumer_id'],$clean['resource_link_id']);
             $stmt->execute();
 
-            $sql = 'SELECT id, linklabel, course FROM lists WHERE credentialconsumerid = ? AND linkid = ?';
+            $sql = 'SELECT id, linklabel, course FROM lists WHERE consumerid = ? AND linkid = ?';
             $stmt = $c->prepare($sql);
-            $stmt->bind_param('ss',$clean['credential_consumer_id'],$clean['resource_link_id']);
+            $stmt->bind_param('ss',$clean['tool_consumer_instance_guid'],$clean['resource_link_id']);
             $stmt->execute();
             $foundList = $stmt->get_result();
 
@@ -342,14 +342,14 @@
     } else if (($newlist) && ((isset($customparams['copylist'])) && ($customparams['copylist'] == 'y'))) {
         if (substr_count($clean['roles'],"Instructor") > 0) {
 
-            $sql = "SELECT id, linklabel, course, linkid FROM lists WHERE (id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND linklabel = ? AND linkid != ? AND credentialconsumerid = ?) OR (private = 0 AND credentialconsumerid = ? AND linklabel = ?) ORDER BY private, last_access DESC;";
+            $sql = "SELECT id, linklabel, course, linkid FROM lists WHERE (id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND linklabel = ? AND linkid != ? AND credentialconsumerid = ?) OR (private = 0 AND consumerid = ? AND linklabel = ?) ORDER BY private, last_access DESC;";
             $stmt = $c->prepare($sql);
-            $stmt->bind_param('issiis',$authorID,$clean['resource_link_title'],$clean['resource_link_id'],$clean['credential_consumer_id'],$clean['credential_consumer_id'],$clean['resource_link_title']);
+            $stmt->bind_param('issiis',$authorID,$clean['resource_link_title'],$clean['resource_link_id'],$clean['tool_consumer_instance_guid'],$clean['credential_consumer_id'],$clean['resource_link_title']);
 
         } else {
-            $sql = "SELECT id, linklabel, course, linkid FROM lists WHERE private = 0 AND credentialconsumerid = ? AND linklabel = ? ORDER BY private, last_access DESC";            
+            $sql = "SELECT id, linklabel, course, linkid FROM lists WHERE private = 0 AND consumerid = ? AND linklabel = ? ORDER BY private, last_access DESC";
             $stmt = $c->prepare($sql);
-            $stmt->bind_param('is',$clean['credential_consumer_id'],$clean['resource_link_title']);
+            $stmt->bind_param('is',$clean['tool_consumer_instance_guid'],$clean['resource_link_title']);
         }
         $stmt->execute();
         $results = $stmt->get_result();  

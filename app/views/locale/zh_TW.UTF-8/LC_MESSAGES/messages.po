@@ -1,0 +1,1018 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"Project-Id-Version: CB2\n"
+"Language: zh_TW\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgid "English"
+msgstr "英文"
+
+msgid "Back to Reading List"
+msgstr "返回閱讀清單"
+
+msgid " << Back to Results"
+msgstr "<<返回結果清單"
+
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
+msgstr "看起來您的圖書館可能不再訂購這篇文章。請讓你的圖書館和老師知道這個錯誤信息："
+
+msgid "This record from "
+msgstr "該條記錄來自"
+
+msgid " cannot be displayed to guests."
+msgstr "訪客不能查看該記錄。"
+
+msgid "Login</a> for full access."
+msgstr "請先登錄獲得所有權限。"
+
+msgid "Add to Reading List"
+msgstr "添加至閱讀清單"
+
+msgid "Remove from Reading List"
+msgstr "從閱讀清單中移除"
+
+msgid "PDF full text"
+msgstr "PDF全文"
+
+msgid "HTML full text"
+msgstr "HTML全文"
+
+msgid "HTML Full Text"
+msgstr "HTML全文"
+
+msgid "Full Text:"
+msgstr "全文："
+
+msgid "PubType:"
+msgstr "出版物類型："
+
+msgid "Database:"
+msgstr "數據庫："
+
+msgid "Statistics"
+msgstr "統計"
+
+msgid "Curriculum Builder Settings"
+msgstr "Curriculum Builder 設置"
+
+#, fuzzy
+msgid "EBSCO User ID"
+msgstr "您的EBSCO賬戶ID"
+
+#, fuzzy
+msgid "EBSCO Password"
+msgstr "您的EBSCO賬戶密碼"
+
+msgid "Your EDS API Profile"
+msgstr "您的EDS API Profile"
+
+msgid "URL for your library logo"
+msgstr "圖書館logo的鏈接地址"
+
+msgid "Contact Email"
+msgstr "聯繫Email地址"
+
+msgid "Link to Library Home Page"
+msgstr "圖書館主頁鏈接地址"
+
+msgid "Text to display at top of screen"
+msgstr "屏幕頂部顯示的文字"
+
+msgid "Link to EDS Label"
+msgstr "EDS標籤的鏈接"
+
+msgid "Custom CSS File"
+msgstr "自定義CSS文件"
+
+msgid "Collect student names as they access assigned readings?"
+msgstr "是否在學生訪問閱讀清單時收集他們的名字？"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Footer text"
+msgstr "腳註文字"
+
+msgid "Copy Course Support"
+msgstr "拷貝課程說明"
+
+msgid "Remove Full Text and Available in Library Collection Limiters from view"
+msgstr "從視圖中移除“全文”和“圖書館提供全文”等限制條件"
+
+msgid "Show 'Return to Course' Link at top of page"
+msgstr "在頁面頂部顯示\"返回課程\""
+
+msgid "Open all Lists in a New Window"
+msgstr "在新窗口中開打清單"
+
+msgid "View Lists"
+msgstr "查看清單"
+
+msgid "Select one: "
+msgstr "請選擇一個清單"
+
+msgid "Preview Selected List"
+msgstr "預覽已選清單"
+
+msgid "Delete Lists"
+msgstr "刪除清單"
+
+msgid "Delete Selected Lists"
+msgstr "刪除已選清單"
+
+msgid "Basic Search"
+msgstr "基本檢索"
+
+msgid "Keyword"
+msgstr "關鍵字"
+
+msgid "Author"
+msgstr "作者"
+
+msgid "Title"
+msgstr "標題"
+
+msgid "View this list"
+msgstr "查看此清單"
+
+msgid "Untitled List"
+msgstr "未命名的清單"
+
+msgid "All Public Lists:"
+msgstr "所有公開清單："
+
+msgid "There are no public reading lists to copy."
+msgstr "沒有公開閱讀清單需要複製。"
+
+msgid "Options"
+msgstr "選項"
+
+msgid "Include Notes in the Import Process"
+msgstr "在導入過程中附加備註"
+
+msgid "Preserve Sort Order"
+msgstr "保留排序"
+
+msgid "Check/Uncheck All"
+msgstr "選擇所有/清除所有"
+
+msgid "Notes:"
+msgstr "備註"
+
+msgid "There are no readings in this list."
+msgstr "本清單中沒有記錄。"
+
+msgid "Copy Selected Readings"
+msgstr "複製已選的記錄"
+
+msgid "You are unauthorized to access this page."
+msgstr "您未經授權訪問此頁面。"
+
+msgid "You must be logged in to access that service, please login"
+msgstr "您必須登錄才能訪問該服務，請登錄"
+
+msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
+msgstr "警告：您將永久刪除以下清單。此操作無法撤消。任何嘗試從課程中訪問這些清單的老師將得到一個空結果。"
+
+msgid "NEVER accessed since update"
+msgstr "自更新後沒有訪問記錄"
+
+msgid "LAST ACCESSED"
+msgstr "最近訪問"
+
+msgid "DELETE"
+msgstr "刪除"
+
+msgid "this list"
+msgstr "本清單"
+
+msgid "these "
+msgstr "這些"
+
+msgid "lists"
+msgstr "清單"
+
+msgid "or"
+msgstr "或者"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "No lists selected to delete."
+msgstr "還沒有選擇刪除清單"
+
+msgid "Back to Administration Screen"
+msgstr "返回管理界面"
+
+msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
+msgstr "哎呀！發生錯誤。一個或多個記錄的數據不完整。請再試一次，確保每個記錄都包含完整內容。"
+
+msgid "Enter bibliographic info from the list into this box:"
+msgstr "在此框中輸入清單的書目信息："
+
+msgid "CB Version 2.3"
+msgstr "CB 版本 2.3"
+
+msgid "List ID"
+msgstr "清單ID"
+
+msgid "Login"
+msgstr "登錄"
+
+msgid "Invalid login -- pleasae try again"
+msgstr "登錄無效 - 請重試"
+
+msgid "Username:"
+msgstr "用戶名："
+
+msgid "Password:"
+msgstr "密碼："
+
+msgid "Successfully logged in."
+msgstr "登錄成功"
+
+msgid "Successfully updated expiration date for "
+msgstr "成功更新到期日"
+
+msgid "Successfully deleted "
+msgstr "刪除成功"
+
+msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
+msgstr "您不能使用空的Consumer Key或密碼，您必須設置到期日。請再試一次。"
+
+msgid "Consumer key "
+msgstr "Consumer key "
+
+msgid "already exists. Please delete the existing one first before creating a new one."
+msgstr "已經存在。在創建新的之前請先刪除現有的。"
+
+msgid "Successfully inserted consumer key: "
+msgstr "成功增加consumer key："
+
+msgid "Unrecognized Actions.  Try again."
+msgstr "無法識別的操作。再試一次。"
+
+msgid "Create New Access Key Pair"
+msgstr "創建新的訪問Access Key Pair"
+
+msgid "Consumer Key"
+msgstr "Consumer Key"
+
+msgid "Secret"
+msgstr "Secret"
+
+msgid "Expiration Date"
+msgstr "過期日期"
+
+msgid "Edit or Delete Existing Access Key Pair"
+msgstr "編輯或刪除現有Access Key Pair"
+
+msgid "Warning:"
+msgstr "警告："
+
+msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
+msgstr "刪除Consumer Key / Secret pairing或設置不正確的過期日期，將拒絕使用該pairing訪問任何站點的讀取清單。"
+
+msgid "Expiration"
+msgstr "過期"
+
+msgid "Configure / Admin"
+msgstr "設置/管理"
+
+msgid "Are you sure you want to delete this key"
+msgstr "確定要刪除此Consumer Key嗎？"
+
+msgid "You have been logged out."
+msgstr "您已登出。"
+
+msgid "Your login credentials are incorrect.  Please try again."
+msgstr "您的登錄資料不正確。請再試一次。"
+
+msgid "Manage Access to the Reading List Tool"
+msgstr "閱讀清單的管理工具"
+
+msgid "Create New Key Pair"
+msgstr "創建新的Key Pair"
+
+msgid "Log Out"
+msgstr "登出"
+
+msgid "Notes may not save properly."
+msgstr "備註可能無法正常儲存。"
+
+msgid "Import from Existing List"
+msgstr "從現有清單導入"
+
+msgid "Import from EBSCO Folder (beta)"
+msgstr "從EBSCO文件夾中導入（Beta測試）"
+
+msgid "This list is"
+msgstr "本清單是"
+
+msgid "public"
+msgstr "公開的"
+
+msgid "private"
+msgstr "私人的"
+
+msgid "student(s) have accessed this list."
+msgstr "學生已訪問過此清單。"
+
+msgid "Students that have accessed this list:"
+msgstr "已訪問此清單的學生："
+
+msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
+msgstr "沒有學生訪問過此清單。當至少有一個學生訪問時，這裡會出現一個名字列表。"
+
+msgid "Add Folder"
+msgstr "新增文件夾"
+
+msgid "Create Folder"
+msgstr "創建文件夾"
+
+msgid "Add Text or Instructions"
+msgstr "添加文本或說明"
+
+msgid "Text"
+msgstr "文本"
+
+msgid "Folder"
+msgstr "文件夾"
+
+msgid "e.g., Read Chapter 5 in Textbook"
+msgstr "例如：閱讀教科書中的第5章"
+
+msgid "Main list of Readings"
+msgstr "主要閱讀清單"
+
+msgid "Add Web Resource"
+msgstr "添加Web資源"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "e.g., http://library.edu/"
+msgstr "例如：http://library.edu/"
+
+msgid "Link label"
+msgstr "鏈接的標籤"
+
+msgid " Back to main list"
+msgstr "返回主清單"
+
+msgid "This list has folders:"
+msgstr "此清單包含文件夾："
+
+msgid "Sort Order:"
+msgstr "排序："
+
+msgid "Removing..."
+msgstr "正在移除……"
+
+#, fuzzy
+msgid "Move to folder"
+msgstr "移到文件夾："
+
+msgid "No Folder"
+msgstr "沒有文件夾"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
+msgstr "下載此讀物的詳細信息時出現問題。您的圖書館可能不再訂閱此項目，也可能與此清單中已有的其他閱讀材料重複。如果訪問此項目有困難，請聯繫您的圖書館以獲取進一步的幫助。"
+
+msgid "By : "
+msgstr "按："
+
+msgid "Published:"
+msgstr "出版時間："
+
+msgid "Start Page: "
+msgstr "起始頁："
+
+msgid "Page Count: "
+msgstr "頁碼："
+
+msgid "Language:"
+msgstr "語言："
+
+msgid "Full Text"
+msgstr "全文"
+
+msgid "Online Access"
+msgstr "在線訪問"
+
+msgid "Students that have clicked this reading: "
+msgstr "點擊了此讀物的學生："
+
+msgid "student(s) have clicked this reading."
+msgstr "學生點擊了這個讀物。"
+
+msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
+msgstr "沒有學生看過這個項目。當至少有一個學生點擊此項目時，名單列表將顯示在此處。"
+
+#, fuzzy
+msgid "Characters remaining"
+msgstr "剩餘字數："
+
+msgid "Removing... please wait."
+msgstr "正在移除……請稍候。"
+
+msgid "Update Notes and Sort Order"
+msgstr "更新備註和排序順序"
+
+msgid "Currently, there are no readings."
+msgstr "目前沒有讀物。"
+
+msgid "Select a folder above to see readings."
+msgstr "選擇上面的文件夾以查看讀物。"
+
+msgid "Currently, there are no readings on this list."
+msgstr "目前，該列表中沒有任何讀物。"
+
+msgid "<< Back to Results"
+msgstr "<< 返回結果頁"
+
+msgid "Retrieve response XML"
+msgstr "獲取返回的XML"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
+msgstr "看起來您的圖書館可能不再訂購這篇文章。請讓你的圖書館和老師知道這個錯誤信息："
+
+msgid "This record from"
+msgstr "該記錄來自"
+
+msgid "cannot be displayed to guests."
+msgstr "無法向訪客顯示。"
+
+msgid "for full access."
+msgstr "完全訪問。"
+
+msgid "See it in EDS"
+msgstr "在EDS中查看"
+
+msgid " Online Access"
+msgstr "在線訪問"
+
+msgid "Refine Search"
+msgstr "精確搜索結果"
+
+msgid "Remove Facets"
+msgstr "移除分面選項(Facet)"
+
+msgid "Limiter: "
+msgstr "限制條件："
+
+msgid "Limit your results"
+msgstr "限制您的結果"
+
+msgid "Expand your results"
+msgstr "擴展您的結果"
+
+msgid "Search response XML"
+msgstr "搜索返回的XML"
+
+msgid "Results"
+msgstr "結果"
+
+msgid "Showing"
+msgstr "展示"
+
+msgid "of"
+msgstr "的（of）"
+
+msgid "for"
+msgstr "為"
+
+msgid "Sort"
+msgstr "排序"
+
+msgid "Page options"
+msgstr "頁面選項"
+
+msgid "Detailed"
+msgstr "詳細的"
+
+msgid "Brief"
+msgstr "簡要"
+
+msgid "Title Only"
+msgstr "只顯示標題"
+
+msgid "Results per page"
+msgstr "每頁結果數量"
+
+msgid "Research Starter"
+msgstr "Research Starter"
+
+msgid "for full access"
+msgstr "完全訪問。"
+
+msgid "Published: "
+msgstr "出版時間："
+
+msgid "No results were found."
+msgstr "沒有找到結果。"
+
+msgid "Result #"
+msgstr "結果 #"
+
+msgid "Title is not available"
+msgstr "該條目不可用"
+
+msgid "By :"
+msgstr "按："
+
+msgid "Start Page:"
+msgstr "起始頁："
+
+msgid "Page Count:"
+msgstr "頁碼："
+
+msgid "Abstract:"
+msgstr "摘要："
+
+msgid "Subjects:"
+msgstr "主題："
+
+msgid "Key:"
+msgstr "Key:"
+
+msgid "Secret:"
+msgstr "Secret:"
+
+msgid "Administration"
+msgstr "管理"
+
+msgid "Total Lists"
+msgstr "總清單數"
+
+msgid "Total People Using Tool"
+msgstr "使用工具的總人數"
+
+msgid "Users"
+msgstr "用戶數"
+
+msgid "Total Courses Using Tool"
+msgstr "使用工具的總課程數"
+
+msgid "Courses"
+msgstr "課程數"
+
+msgid "Search"
+msgstr "搜尋"
+
+msgid "Return to Course"
+msgstr "回到課程"
+
+msgid "See Current Reading List"
+msgstr "查看目前的閱讀清單"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Add"
+msgstr "新增"
+
+msgid " notes"
+msgstr "␣筆記"
+
+msgid "Save notes"
+msgstr "儲存筆記"
+
+msgid "edit notes"
+msgstr "編輯筆記"
+
+msgid "items"
+msgstr "項目"
+
+msgid "currently selected"
+msgstr "目前選擇的"
+
+msgid "Result"
+msgstr "結果"
+
+msgid "Folder name"
+msgstr "資料夾名稱"
+
+msgid "Back to the main list"
+msgstr "回到主要清單"
+
+msgid "Save Changes"
+msgstr "儲存變更"
+
+msgid "Contact"
+msgstr "聯絡人"
+
+msgid "for assistance with this tool."
+msgstr "尋求關於這個工具的協助"
+
+msgid "Download Export File"
+msgstr "下載匯出檔案"
+
+msgid "Import from Export File"
+msgstr "從匯出檔案匯入"
+
+msgid "Download Student Data"
+msgstr "下載學生檔案"
+
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "編輯這些設定時請多留意，因為這些設定會取代您原本在學習管理系統（LMS）的LTI 設定。請從您的學習管理系統（LMS）至少先執行一次閱讀清單再使用與編輯這些欄位，或聯繫 eds@ebscohost.com 尋求設定上的協助。"
+
+msgid "If you change the "
+msgstr "如果您改變了␣"
+
+msgid "user id"
+msgstr "使用者ID"
+
+msgid "password"
+msgstr "密碼"
+
+msgid "API profile ID"
+msgstr "API profile ID"
+
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "您需要先登出再登入以看到正確的統計與清單"
+
+msgid "Select"
+msgstr "選擇"
+
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "EBSCOadmin's Authentication 項目中的使用者 ID 與密碼的組合 "
+
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "使用者名稱與密碼的組合必須存在於包含以下Profile的Group中。"
+
+msgid "Total Readings"
+msgstr "總共閱讀篇數"
+
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "這是您將用來使用 Curriculum Builder 的 EDS API profile。這個Profile必須位於您的使用者ID與密碼能存取的Group之中。"
+
+msgid "EDS API Profile ID"
+msgstr "EDS API Profile ID"
+
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "在LMS（學習管理系統）中可以編輯清單的角色（請用逗號分開 comma-separated）"
+
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "預設上，只有教師與助教（TA）可以編輯清單。然而，您可以在這裡增加其他角色並使這些角色可以編輯清單。"
+
+msgid "Default:"
+msgstr "預設:"
+
+msgid "Proxy Prefix for CustomLinks"
+msgstr "CustomLinks 的 Proxy Prefix"
+
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "如果填入，這個 proxy 將會應用在所有在 Curriculum Builder 出現的 CustomLinks "
+
+msgid "Examples"
+msgstr "範例"
+
+msgid "Proxy should encode target URL"
+msgstr "Proxy 應將目的URL 進行 encode "
+
+msgid "If your proxy prefix ends with"
+msgstr "如果您的 proxy prefix 結束詞是"
+
+msgid "this probably needs to be set to"
+msgstr "這大致需要被設定為"
+
+msgid "otherwise"
+msgstr "此外"
+
+msgid "is probably correct."
+msgstr "大致正確"
+
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "如果您的學習管理系統（LMS）是透過HTTPS連線到Curriculum Builder，您的logo也必須要能透過HTTPS連線存取。"
+
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "這段文字會出現在清單的標題下方。URL 會自動變成超連結。"
+
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "這個標籤會出現來標注在詳目頁左邊的連結，這些連結將引導使用者到 EBSCO Discovery Service 的閱讀紀錄。如果留空白，將不會出現連到EDS的連結。"
+
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "輸入CSS檔案所在的URL。在這個檔案中描述的樣式會套用在Curriculum Builder 的介面。如果您的LMS只能透過HTTPS存取，這個檔案的URL也必須是使用HTTPS存取。"
+
+msgid "Optional."
+msgstr "可選擇的"
+
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "將會搜集學生的姓名、電子郵箱、及ID帳號。這些資料將會在學生點擊一個閱讀時通知課程教師。這些資訊也會應用在提供給圖書館的報表中。如果要取消電子郵箱的搜集，您LMS的教師可以選擇不要向工具提供者分享這些資訊。"
+
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "將不會提供教師有點擊閱讀的學生的姓名。然而，提供給圖書館的報表中仍會呈現那些有點墼閱讀的LMS的使用者ID，包括存取時間及閱讀的項目。"
+
+msgid "Anonymized"
+msgstr "匿名的"
+
+msgid "None"
+msgstr "無"
+
+msgid "will collect no student activity. No reporting will be available."
+msgstr "將不會收集學生的活動紀錄。將無法提供相關報表"
+
+msgid "Link to Help Pages"
+msgstr "連結到幫助（Help）頁面"
+
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "這個選項表示教師在啟用時將會被通知有新清單，不論是全新創建的清單，或是選擇自相似名稱的新建清單。如果"
+
+msgid "is selected, all new lists will be blank."
+msgstr "如果選擇了，所有新的清單將會空白"
+
+msgid "Hide"
+msgstr "隱藏"
+
+msgid "and"
+msgstr "與"
+
+msgid "Available in Library Collection"
+msgstr "圖書館之館藏"
+
+msgid "Limiters"
+msgstr "限制條件"
+
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "隱藏這些限制條件將會使教師無法取消選擇這些限制條件，導致無法閱讀清單中新增不在您館藏的項目。"
+
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "此連結是由學習管理系統（LMS）提供。如果設定正確，它能連結回課程網站。"
+
+msgid "Show First Full Text Link Only"
+msgstr "只顯示第一筆全文連結"
+
+msgid "Language"
+msgstr "語言"
+
+msgid "Spanish"
+msgstr "西班牙文"
+
+msgid "German"
+msgstr "德文"
+
+msgid "Italian"
+msgstr "義大利文"
+
+msgid "Portuguese"
+msgstr "葡萄牙文"
+
+msgid "French"
+msgstr "法文"
+
+msgid "Simplified Chinese"
+msgstr "中文（檢體）"
+
+msgid "traditional Chinese"
+msgstr "中文（繁體）"
+
+msgid "Japanese"
+msgstr "日本語"
+
+msgid "Polish"
+msgstr "波蘭文"
+
+msgid "Swedish"
+msgstr "瑞典文"
+
+msgid "Thai"
+msgstr "泰文"
+
+msgid "Turkish"
+msgstr "土而其語"
+
+msgid "Required"
+msgstr "必須的"
+
+msgid "e.g., Instructor"
+msgstr "例如：教師（Instructoe）"
+
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Proxy 的前置詞（prefix）設定於此；如果使用 WAM，您可以使用 {targetURLdomain} 來設定您的 WAM proxy 的 domain。剩下的將會被至於最後。"
+
+msgid "Email for contact person for tool"
+msgstr "要求工具的聯絡人的電子郵箱"
+
+msgid "Branding text at top of screen"
+msgstr "螢幕上方的客製化文字"
+
+msgid "e.g., See Record in EDS"
+msgstr "例如：查看EDS中的紀錄"
+
+msgid "e.g., Search for Library Resources"
+msgstr "例如：搜尋圖書館資源"
+
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "可選擇的。連結到CSS Stylesheet的URL"
+
+msgid "URL for LibGuide or other help pages"
+msgstr "連結到 LibGuide 或其他幫助頁面的URL"
+
+msgid "e.g., a copyright notice"
+msgstr "例如：一個版權提示"
+
+msgid "Label for Link to EDS"
+msgstr "連結到EDS的標籤"
+
+msgid "Label for Search Box"
+msgstr "搜尋框的標籤"
+
+msgid "Collect Student Data"
+msgstr "搜集學生資料"
+
+msgid "URL to Library Home Page"
+msgstr "連結到圖書館首頁的URL"
+
+msgid "Search Library Resources"
+msgstr "搜尋圖書館資源"
+
+msgid "Update Settings"
+msgstr "更新設定"
+
+msgid "Expander: "
+msgstr "擴增詞：␣"
+
+msgid "Edit"
+msgstr "編輯"
+
+msgid "Relevance"
+msgstr "相關度"
+
+msgid "Source Type"
+msgstr "來源類型"
+
+msgid "Subject"
+msgstr "主題"
+
+msgid "Publication"
+msgstr "出版品"
+
+msgid "Geography"
+msgstr "地理學"
+
+msgid "Content Provider"
+msgstr "內容提供者"
+
+msgid "Academic Journal"
+msgstr "學術期刊"
+
+msgid "Biographie"
+msgstr "傳記"
+
+msgid "Book"
+msgstr "書籍"
+
+msgid "Conference Material"
+msgstr "研討會資料"
+
+msgid "Magazine"
+msgstr "雜誌"
+
+msgid "New"
+msgstr "新"
+
+msgid "Primary Source Document"
+msgstr "一次文獻"
+
+msgid "Report"
+msgstr "報告"
+
+msgid "Review"
+msgstr "評論"
+
+msgid "Trade Publication"
+msgstr "貿易出版品"
+
+msgid "Date Newest"
+msgstr "日期從最新"
+
+msgid "Date Oldest"
+msgstr "日期從最舊"
+
+msgid "Authors"
+msgstr "作者"
+
+msgid "Document Type"
+msgstr "文件類型"
+
+msgid "Subject Terms"
+msgstr "主題詞"
+
+msgid "Author-Supplied Keywords"
+msgstr "作者提供的關鍵字"
+
+msgid "Abstract"
+msgstr "摘要"
+
+msgid "Author Affiliations"
+msgstr "作者所屬機構"
+
+msgid "Accession Number"
+msgstr "登錄號"
+
+msgid "Publisher"
+msgstr "出版者"
+
+msgid "Source"
+msgstr "來源"
+
+msgid "Geographic Terms"
+msgstr "地理名詞"
+
+msgid "Academic Journals"
+msgstr "學術期刊"
+
+msgid "Books"
+msgstr "書籍"
+
+msgid "Conference Materials"
+msgstr "研討會資料"
+
+msgid "Magazines"
+msgstr "雜誌"
+
+msgid "Biographies"
+msgstr "傳記"
+
+msgid "News"
+msgstr "新聞"
+
+msgid "Primary Source Documents"
+msgstr "第一手文件"
+
+msgid "Reports"
+msgstr "報告"
+
+msgid "Reviews"
+msgstr "評論"
+
+msgid "Trade Publications"
+msgstr "貿易出版品"
+
+msgid "Apply equivalent subjects"
+msgstr "採用對應的主題"
+
+msgid "Apply related words"
+msgstr "採用相關的字詞"
+
+msgid "Also search within the full text of the articles"
+msgstr "同時也查詢文章中的全文"
+
+msgid "References Available"
+msgstr "有參考文獻"
+
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "學術期刊（具同儕審查）"
+
+msgid "Library Home"
+msgstr "圖書館首頁"
+
+msgid "Periodical"
+msgstr "期刊"
+
+msgid "Selecting"
+msgstr "選擇"
+
+msgid "Publication Year"
+msgstr "出版年"
+
+msgid "You have no other reading lists."
+msgstr "你沒有其他閱讀清單。"
+
+msgid "No statistics to report yet."
+msgstr "沒有統計報告。"
+
+msgid "Select one:"
+msgstr "選擇一個："
+
+msgid "Hebrew"
+msgstr "希伯來語"
+
+msgid "University"
+msgstr "大學"
+
+msgid "Collection"
+msgstr "选集"
+
+msgid "Category"
+msgstr "類別"
+
+msgid "Generate list"
+msgstr "生成列表"

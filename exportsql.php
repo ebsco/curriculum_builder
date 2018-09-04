@@ -2,15 +2,15 @@
 
 include("app/app.php");
 
-if (isset($_COOKIE['logged_in_cust_id'])) {
-    $credentialconsumerid = decryptCookie($_COOKIE['logged_in_cust_id']);
+if (isset($_COOKIE['consumeridsArray'])) {
+    $consumerids = decryptCookie($_COOKIE['consumeridsArray']);
 } else {
     die("You are unauthorized to perform this action.");
 }
 
-$rows = export_all_sql($c,$credentialconsumerid);
+$queryResults = export_all_sql($c,$consumerids);
 
-if ($rows) {
+if ($queryResults) {
     
 } else {
     die("No readings to export.");
@@ -24,14 +24,9 @@ header('Content-Disposition: attachment; filename=data.csv');
 $output = fopen('php://output', 'w');
 
 // output the column headings
-$fields = mysqli_fetch_fields($rows);
-$names = array();
-foreach ($fields as $val){
-	$names[] = $val->name;
-}
        
-fputcsv($output,$names);
+fputcsv($output,$queryResults["headers"]);
 // loop over the rows, outputting them
-while ($row = mysqli_fetch_assoc($rows)) fputcsv($output, $row);
+while ($row = array_pop($queryResults["results"])) fputcsv($output, $row);
 
 ?>
