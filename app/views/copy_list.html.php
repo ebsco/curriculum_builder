@@ -1,7 +1,5 @@
 <?php
-
   $clean = strip_tags_deep($_GET);
-
   if (isInstructor()) {
 ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -14,11 +12,11 @@ $(document).ready(function(){
 </script>
 <div class="readingListLink">
 <?php
-    $consumerID = decryptCookie($_COOKIE['tool_consumer_instance_guid']);
     $currlistid = decryptCookie($_COOKIE['currentListId']);
     $currauthid = decryptCookie($_COOKIE['currentAuthorId']);
-    $sql = $c->prepare("SELECT id, course, linklabel, private FROM lists WHERE id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND id != ?;");
-	$sql->bind_param('ii', $currauthid, $currlistid);
+    $sql = $c->prepare("SELECT id, course, linklabel, private FROM lists WHERE id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND id != ? AND credentialconsumerid = ?;");
+    $credconsumerID = getCredentialConsumerID();
+	$sql->bind_param('iii', $currauthid, $currlistid, $credconsumerID);
 	$sql->execute();
 	$sql->store_result();
 	$sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel, $mylists_private);
@@ -53,8 +51,8 @@ $(document).ready(function(){
     }
     ?></div><div class="readingListLink">
     <?php
-		$sql = $c->prepare("SELECT id, course, linklabel FROM lists WHERE id != ? AND private = 0 AND consumerid = ?;");
-		$sql->bind_param('ii', $currlistid, $consumerID);
+		$sql = $c->prepare("SELECT id, course, linklabel FROM lists WHERE id != ? AND private = 0 AND credentialconsumerid = ?;");
+		$sql->bind_param('ii', $currlistid, $credconsumerID);
 		$sql->execute();
 		$sql->store_result();
 		$sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel);
@@ -85,7 +83,6 @@ $(document).ready(function(){
         if (substr_count($clean['submit'],'View') > 0) {
             $targetlistid = $clean['listid'];
             $readingList = getOtherReadingList($c, $targetlistid);
-
             ?>
             <form action="process_copy.php" method="get" name="otherreadings">
             <div class="readingListLink">

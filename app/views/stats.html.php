@@ -25,7 +25,6 @@
 	bindtextdomain("messages", dirname(__FILE__)."/locale");                                
 	bind_textdomain_codeset('messages', 'UTF-8');
 	textdomain("messages");
-
 ?>
 <?php
   include_once("app/app.php");
@@ -39,7 +38,6 @@
 <div class="readingListLink">
 
 <?php
-
   if (decryptCookie($_COOKIE['logged_in_cust_id']) != "none") {
 ?>
     <p><strong>Total Lists</strong>: 
@@ -50,13 +48,15 @@
       if (!(isset($_COOKIE['consumeridsArray']))) {
 	echo " 0";
       } else {
-
       $consumerids = decryptCookie($_COOKIE['consumeridsArray']);
       
       foreach ($consumerids['logged_in_consumerid'] as $consumerid) {
-
-          $sql = $c->prepare("SELECT id, private FROM lists WHERE consumerid = ?;");
-	  $sql->bind_param('s', $consumerid);
+          $querystring = 'SELECT id FROM credentialconsumers WHERE credentialid = ' . decryptCookie($_COOKIE['logged_in_cust_id']) . ' AND consumerid = "' . $consumerid . '";';
+          $credconsumresults = mysqli_query($c,$querystring);
+          $credconsumrow = mysqli_fetch_array($credconsumresults);
+	  $credconsumer = $credconsumrow['id'];
+          $sql = $c->prepare("SELECT id, private FROM lists WHERE credentialconsumerid = ?;");
+	  $sql->bind_param('i', $credconsumer);
 	  $sql->execute();
 	  $sql->store_result();
 	  $sql->bind_result($results_id, $results_private);
@@ -77,13 +77,15 @@
     ?></p>
     <p><strong><?php echo _("Total Readings");?></strong>: 
     <?php
-
     $numReadings = 0;
     foreach($consumerids['logged_in_consumerid'] as $consumerid) {
-
+          $querystring = 'SELECT id FROM credentialconsumers WHERE credentialid = ' . decryptCookie($_COOKIE['logged_in_cust_id']) . ' AND consumerid = "' . $consumerid . '";';
+          $credconsumresults = mysqli_query($c,$querystring);
+          $credconsumrow = mysqli_fetch_array($credconsumresults);
+	  $credconsumer = $credconsumrow['id'];
 	  //Find the number of readings for the given institution
-	  $sql = $c->prepare("SELECT readings.id, lists.id FROM readings, lists WHERE readings.listid = lists.id AND lists.consumerid = ?");
-	  $sql->bind_param('s', $consumerid);
+	  $sql = $c->prepare("SELECT readings.id, lists.id FROM readings, lists WHERE readings.listid = lists.id AND lists.credentialconsumerid = ?");
+	  $sql->bind_param('i', $credconsumer);
 	  $sql->execute();
 	  $sql->store_result();
 	  
@@ -94,18 +96,21 @@
 	  }
     }
     echo $numReadings;
-
 	?></p>
     <p><strong><?php echo _("Total People Using Tool");?></strong>: 
     <?php
       // Find the number of authors (instructors) using the tool at the institution.
      $numPeople = 0;
 	  $ids = array(); //used in next stat
-
 		foreach($consumerids['logged_in_consumerid'] as $consumerid) {
-				 
-			$sql = $c->prepare("SELECT DISTINCT authors.id FROM authors, authorlists, lists WHERE authors.id = authorlists.authorid AND authorlists.listid = lists.id AND lists.consumerid = ?;");
-			$sql->bind_param('s', $consumerid);
+            
+			$querystring = 'SELECT id FROM credentialconsumers WHERE credentialid = ' . decryptCookie($_COOKIE['logged_in_cust_id']) . ' AND consumerid = "' . $consumerid . '";';
+			$credconsumresults = mysqli_query($c,$querystring);
+			$credconsumrow = mysqli_fetch_array($credconsumresults);
+			$credconsumer = $credconsumrow['id'];
+         
+			$sql = $c->prepare("SELECT DISTINCT authors.id FROM authors, authorlists, lists WHERE authors.id = authorlists.authorid AND authorlists.listid = lists.id AND lists.credentialconsumerid = ?;");
+			$sql->bind_param('i', $credconsumer);
 			$sql->execute();
 			$sql->store_result();
 			$sql->bind_result($authorsId);
@@ -146,7 +151,7 @@
 			if ($numListsByAuthor != 1) {
 				echo "s";
 			}
-			echo " authored across all LMSs)</em>";
+			echo " authored)</em>";
 		}
 		
       ?>
@@ -155,21 +160,19 @@
       <?php
       $numCourses = 0;
 		$courses=array(); //will be used in next stat.
-$fixedCourses = array();
          foreach($consumerids['logged_in_consumerid'] as $consumerid) {
            $courses[$consumerid] = array();
-                    
-        $sql = $c->prepare("SELECT DISTINCT course FROM lists WHERE consumerid = ?;");
-		$sql->bind_param('s',$consumerid);
+          $querystring = 'SELECT id FROM credentialconsumers WHERE credentialid = ' . decryptCookie($_COOKIE['logged_in_cust_id']) . ' AND consumerid = "' . $consumerid . '";';
+          $credconsumresults = mysqli_query($c,$querystring);
+          $credconsumrow = mysqli_fetch_array($credconsumresults);
+	  $credconsumer = $credconsumrow['id'];
+          
+        $sql = $c->prepare("SELECT DISTINCT course FROM lists WHERE credentialconsumerid = ?;");
+		$sql->bind_param('i',$credconsumer);
 		$sql->execute();
 		$sql->store_result();
 		$sql->bind_result($course);//will be used to populate the courses array.
 		while($sql->fetch()){ //populate the array
-			
-                        
-                        //if (!(in_array($course,$fixedCourses))) {
-                        //    array_push($fixedCourses,$course);
-                        //}
 			$courses[$consumerid][] = $course;
 		}
 		$numCourses += $sql->num_rows;
@@ -182,38 +185,35 @@ $fixedCourses = array();
       ?>
       </p>
     <p><strong><?php echo _("Courses");?></strong>:<span style="font-size:smaller;">
-      
-    <table>
-      <tr>
-        <th>LMS ID</th>
-        <th>Course Name/ID</th>
-        <th>Number of Lists</th>
-      <tr>
-    <?php
+      <?php
         
         foreach ($consumerids['logged_in_consumerid'] as $consumerid) {
-
+            
+          $querystring = 'SELECT id FROM credentialconsumers WHERE credentialid = ' . decryptCookie($_COOKIE['logged_in_cust_id']) . ' AND consumerid = "' . $consumerid . '";';
+          $credconsumresults = mysqli_query($c,$querystring);
+          $credconsumrow = mysqli_fetch_array($credconsumresults);
+	  $credconsumer = $credconsumrow['id'];
           
         foreach ($courses[$consumerid] as $course) {
             
             
-          echo "<tr><td>".$consumerid."</td><td>" . $course."</td><td>";
-          $sql = $c->prepare("SELECT id FROM lists WHERE course = ? AND consumerid = ?;");
-		  $sql->bind_param('si', $course, $consumerid);
+          echo "<br />" . $course;
+          $sql = $c->prepare("SELECT id FROM lists WHERE course = ? AND credentialconsumerid = ?;");
+		  $sql->bind_param('si', $course, $credconsumer);
 		  $sql->execute();
 		  $sql->store_result();
 		  
           $numListsInCourse = $sql->num_rows;
-          echo $numListsInCourse . " list";
+          echo " <em>(" . $numListsInCourse . " list";
           if ($numListsInCourse != 1) {
             echo "s";
           }
-          echo "</td></tr>";
+          echo ")</em>";
         }
         }
 		mysqli_close($c);
       ?>
-      </table></span></p>
+      </span></p>
 <?php
       }
   } else {
