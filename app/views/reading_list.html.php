@@ -340,7 +340,7 @@
 		    if (isset($clean['folderid']) && ($folder['id'] == $clean['folderid'])) {
 			echo "<strong id=\"folderlabel".$folder['id']."\">".$folder['label']."</strong></span> <span id=\"foldernameedit".$folder['id']."\" style=\"display:none;\"><input id=\"foldernewname".$folder['id']."\" type=\"text\" value=\"".$folder['label']."\" style=\"height: 12px;font-size: small;\" /></span> ("._("currently selected").")";
 		    } else {
-			echo '<a href="reading_list.php?folderid='.$folder['id'].'" id="folderlabel'.$folder['id'].'">'.$folder['label']."</a></span> <span id=\"foldernameedit".$folder['id']."\" style=\"display:none;\"><input id=\"foldernewname".$folder['id']."\" type=\"text\" value=\"".$folder['label']."\" style=\"height: 12px;font-size: small;\" /></span> (".folderitemcount($c,$folder['id'])." ".("items").")";
+			echo '<a href="reading_list.php?folderid='.$folder['id'].'" id="folderlabel'.$folder['id'].'">'.$folder['label']."</a></span> <span id=\"foldernameedit".$folder['id']."\" style=\"display:none;\"><input id=\"foldernewname".$folder['id']."\" type=\"text\" value=\"".$folder['label']."\" style=\"height: 12px;font-size: small;\" /></span> (".folderitemcount($c,$folder['id'])." "._("items").")";
 		    }
 		    
 		    if (isInstructor()) {

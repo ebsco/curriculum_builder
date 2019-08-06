@@ -21,7 +21,7 @@
         
     // Insure we have a valid launch
     if ( empty($clean["oauth_consumer_key"]) ) {
-        die("You are missing a valid consumer key.  Please contact your LMS Administrator to ensure the proper consumer key and secret have been configured.<br/>".$debug);
+        die("You are missing a valid consumer key.  Please contact your LMS Administrator to ensure the proper consumer key and secret have been configured.<br/>");
     }
     $oauth_consumer_key = $clean["oauth_consumer_key"];
 

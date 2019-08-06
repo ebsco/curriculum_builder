@@ -15,15 +15,15 @@ if (!(isset($_COOKIE))) {
 }
 $cookieDCd = decryptCookie($_COOKIE['oauth_consumer_key']);
 
-$_SESSION['debug'] .= "<p>Cookie dump: ";
+//$_SESSION['debug'] .= "<p>Cookie dump: ";
 $accepted = array('oauth_consumer_key', 'roles', 'context_label', 'user_id', 'context_title', 'lis_person_name_full', 'lis_person_contact_email_primary', 'resource_link_title', 'resource_link_id', 'tool_consumer_instance_guid', 'launch_presentation_return_url');
 
 foreach($_COOKIE as $index => $thecookie) {
      if (in_array($index, $accepted)) {
-         $_SESSION['debug'].="<br />".$index.": ".decryptCookie($thecookie);
+         //$_SESSION['debug'].="<br />".$index.": ".decryptCookie($thecookie);
      }
 }
-$_SESSION['debug'] .= "</p>";
+//$_SESSION['debug'] .= "</p>";
 
 $customparams = loadCustomParams($c,$cookieDCd);
 $profile = $customparams['profile'];
@@ -35,10 +35,10 @@ try {
 }
 
 try {
-     $_SESSION['debug'] .= "<p>Using AuthToken ".$api->getAuthToken()."</p>";
+//     $_SESSION['debug'] .= "<p>Using AuthToken ".$api->getAuthToken()."</p>";
      $newSessionToken = $api->apiSessionToken($api->getAuthToken(), $profile,'n');
 } catch (Exception $e) {
-     echo "<div style='display:none;'>".$_SESSION['debug']."</div>";
+     //echo "<div style='display:none;'>".$_SESSION['debug']."</div>";
      die ("It looks like your profile id for your EDS API profile is incorrect.  Please check your settings in the <a href='http://curriculumbuilder.ebscohost.com/admin.php' target='_top'>admin panel</a>.<p style='display:none;'>".var_export($customparams,TRUE)."</p><p style='display:none;'>".$e->getMessage()."</p>");
 }
 

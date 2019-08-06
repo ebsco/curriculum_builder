@@ -91,7 +91,7 @@ $Info = $api->getInfo();
 </div>
     <?php if (isset($customparams['helppages']) && ($customparams['helppages'] != '')) {
         ?>
-        <div class="helppages" style="margin:20px auto;width:500px;"><img src="web/help.png" style="padding-right:5px;float:left;"><?php echo _(" What does this tool do?  Check");?><a target="_blank" href="<?php echo $customparams['helppages']; ?>"><?php echo _("our help pages on using it")."</a>"._("for more information.");?></div>
+        <div class="helppages" style="margin:20px auto;width:500px;"><img src="web/help.png" style="padding-right:5px;float:left;"><?php echo _(" What does this tool do?  Check");?> &nbsp; <a target="_blank" href="<?php echo $customparams['helppages']; ?>"><?php echo _("our help pages on using it")."</a> &nbsp; "._("for more information.");?></div>
         <?php
     } ?>
 </div>

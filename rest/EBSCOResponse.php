@@ -355,7 +355,7 @@ private function buildRecords()
                
                if($record->RecordInfo->BibRecord->BibRelationships->HasContributorRelationships){
                foreach($record->RecordInfo->BibRecord->BibRelationships->HasContributorRelationships->HasContributor as $contributor){
-                   $nameFull = $contributor->PersonEntity->Name->NameFull? (string)$contributor->PersonEntity->Name->NameFull:'';
+                   $nameFull = isset($contributor->PersonEntity->Name->NameFull)? (string)$contributor->PersonEntity->Name->NameFull:'';
                    $result['RecordInfo']['BibRelationships']['HasContributorRelationships'][]=array(
                        'NameFull'=>$nameFull
                    );

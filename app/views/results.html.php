@@ -539,11 +539,6 @@ if (!(isInstructor())) {
 
 <div class="table-cell" style="width:100%;">
 
-<?php if($debug=='y'){?>
-
-    <div style="float:right"><a target="_blank" href="debug.php?result=y"><?php echo _("Search response XML");?></a></div>
-
-<?php } ?>
 
 <div class="top-menu">
 

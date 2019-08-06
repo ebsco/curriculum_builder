@@ -1,0 +1,1011 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+"X-Generator: Poedit 2.2.1\n"
+
+msgid "English"
+msgstr "English"
+
+msgid "Back to Reading List"
+msgstr "Zpět na Seznam literatury"
+
+msgid " << Back to Results"
+msgstr " Zpět na výsledky"
+
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr ""
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
+msgstr "Jejda. Zdá se, že hledaný dokument již není ve Vaší knihovně k dispozici.  Informujte prosím vyučujícího o této chybové hlášce:"
+
+msgid "This record from "
+msgstr "Tento záznam z "
+
+msgid " cannot be displayed to guests."
+msgstr " nelze zobrazit bez autorizace."
+
+msgid "Login</a> for full access."
+msgstr "Přihlašte se</a> pro plný přístup."
+
+msgid "Add to Reading List"
+msgstr "Přidat na Seznam literatury"
+
+msgid "Remove from Reading List"
+msgstr "Odstranit ze Seznamu literatury"
+
+msgid "PDF full text"
+msgstr "Plný text PDF"
+
+msgid "HTML full text"
+msgstr "Plný text HTML"
+
+msgid "HTML Full Text"
+msgstr "Plný text HTML"
+
+msgid "Full Text:"
+msgstr "Plný text:"
+
+msgid "PubType:"
+msgstr "Typ publikace:"
+
+msgid "Database:"
+msgstr "Databáze:"
+
+msgid "Statistics"
+msgstr "Statistiky"
+
+msgid "Curriculum Builder Settings"
+msgstr "Nastavení Curriculum Builderu"
+
+msgid "EBSCO User ID"
+msgstr "EBSCO Uživatelské jméno"
+
+msgid "EBSCO Password"
+msgstr "EBSCO Heslo"
+
+msgid "Your EDS API Profile"
+msgstr "Váš EDS API profil"
+
+msgid "URL for your library logo"
+msgstr "Logo Vaší knihovny (URL adresa)"
+
+msgid "Contact Email"
+msgstr "Kontaktní e-mail"
+
+msgid "Link to Library Home Page"
+msgstr "Odkaz na web knihovny"
+
+msgid "Text to display at top of screen"
+msgstr "Text ve vrchní části obrazovky"
+
+msgid "Link to EDS Label"
+msgstr "Text odkazu do EDS"
+
+msgid "Custom CSS File"
+msgstr "Vlastní soubor CSS"
+
+msgid "Collect student names as they access assigned readings?"
+msgstr "Ukládat jména uživatelů na základě jejich přístupu k doporučené literatuře?"
+
+msgid "Yes"
+msgstr "Ano"
+
+msgid "No"
+msgstr "Ne"
+
+msgid "Footer text"
+msgstr "Text v patičce stránky"
+
+msgid "Copy Course Support"
+msgstr "Podpora kopírování kurzů"
+
+msgid "Remove Full Text and Available in Library Collection Limiters from view"
+msgstr "Odstranit z obrazovky omezení plného textu a indikaci dostupnosti v knihovně"
+
+msgid "Show 'Return to Course' Link at top of page"
+msgstr "Zobrazit odkaz \"Návrat ke kurzu\" ve vrchní části stránky"
+
+msgid "Open all Lists in a New Window"
+msgstr "Otevřít všechny seznamy v novém okně"
+
+msgid "View Lists"
+msgstr "Zobrazit seznamy"
+
+msgid "Select one: "
+msgstr "Zvolte z následujících: "
+
+msgid "Preview Selected List"
+msgstr "Náhled vybraných seznamů"
+
+msgid "Delete Lists"
+msgstr "Odstranit seznamy"
+
+msgid "Delete Selected Lists"
+msgstr "Odstranit vybrané seznamy"
+
+msgid "Basic Search"
+msgstr "Jednoduché vyhledávání"
+
+msgid "Keyword"
+msgstr "Klíčové slovo"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Title"
+msgstr "Název"
+
+msgid "View this list"
+msgstr "Zobrazit tento seznam"
+
+msgid "Untitled List"
+msgstr "Seznam bez názvu"
+
+msgid "All Public Lists:"
+msgstr "Všechny veřejné seznamy:"
+
+msgid "There are no public reading lists to copy."
+msgstr "Žádné veřejné seznamy ke kopírování."
+
+msgid "Options"
+msgstr "Možnosti"
+
+msgid "Include Notes in the Import Process"
+msgstr "Zahrnout poznámky při exportu"
+
+msgid "Preserve Sort Order"
+msgstr "Zachovat pořadí záznamů"
+
+msgid "Check/Uncheck All"
+msgstr "Vybrat/zrušit výběr"
+
+msgid "Notes:"
+msgstr "Poznámky:"
+
+msgid "There are no readings in this list."
+msgstr "Seznam neobsahuje žádné dokumenty."
+
+msgid "Copy Selected Readings"
+msgstr "Zkopírovat vybrané dokumenty"
+
+msgid "You are unauthorized to access this page."
+msgstr "Nemáte dostatečná oprávnění zobrazit tuto stránku."
+
+msgid "You must be logged in to access that service, please login"
+msgstr "Pro přístup k této službě je nutné nejprve se přihlásit"
+
+msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
+msgstr "Upozornění: Chystáte se odstranit následující seznamy. Jejich odstranění nelze vzít zpět. Kdokoli se pokusí zorazit tento seznam, jej nalezne prázdný."
+
+msgid "NEVER accessed since update"
+msgstr "NIKDY nezobrazeno od poslední aktualizace"
+
+msgid "LAST ACCESSED"
+msgstr "POSLEDNÍ NAVŠTÍVENÉ"
+
+msgid "DELETE"
+msgstr "ODSTRANIT"
+
+msgid "this list"
+msgstr "tento seznam"
+
+msgid "these "
+msgstr "tyto "
+
+msgid "lists"
+msgstr "seznamy"
+
+msgid "or"
+msgstr "nebo"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "No lists selected to delete."
+msgstr "Nebyly vybrány žádné seznamy k odstranění."
+
+msgid "Back to Administration Screen"
+msgstr "Zpět na obrazovku administrace"
+
+msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
+msgstr "Jejda. Došlo k problému. Data jednoho nebo více záznamů nejsou kompletní. Zkuste to prosím ještě jednou a ujistěte se, že vkládáte kompletní data ke každému záznamu."
+
+msgid "Enter bibliographic info from the list into this box:"
+msgstr "Vložit bibliografické informace ze seznamu do tohoto okna:"
+
+msgid "CB Version 2.3"
+msgstr "CB Verze 2.3"
+
+msgid "List ID"
+msgstr "ID seznamu"
+
+msgid "Login"
+msgstr "Přihlásit se"
+
+msgid "Invalid login -- pleasae try again"
+msgstr "Neplatné uživatelské jméno -- prosím, zkuste to ještě jednou"
+
+msgid "Username:"
+msgstr "Uživatelské jméno:"
+
+msgid "Password:"
+msgstr "Heslo:"
+
+msgid "Successfully logged in."
+msgstr "Přihlášení proběhlo úspěšně."
+
+msgid "Successfully updated expiration date for "
+msgstr "Aktualizace termínu expirace pro "
+
+msgid "Successfully deleted "
+msgstr "Odstranění proběhlo úspěšně "
+
+msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
+msgstr "Uživatelský klíč nebo heslo nemohou zůstat prázdné. Zároveň je nutné doplnit datum expirace. Zkuste to, prosím ještě jednou."
+
+msgid "Consumer key "
+msgstr "Uživatelský klíč "
+
+msgid "already exists. Please delete the existing one first before creating a new one."
+msgstr "již existuje. Prosím odstraňte ten stávající, než vytvoříte nový."
+
+msgid "Successfully inserted consumer key: "
+msgstr "Uživatelský klíč byl úspěšně zadán: "
+
+msgid "Unrecognized Actions.  Try again."
+msgstr "Chyba. Zkuste to, prosím ještě jednou."
+
+msgid "Create New Access Key Pair"
+msgstr "Vytvořit novou dvojicipřístupových klíčů"
+
+msgid "Consumer Key"
+msgstr "Uživatelský klíč"
+
+msgid "Secret"
+msgstr "Skryté"
+
+msgid "Expiration Date"
+msgstr "Datum expirace"
+
+msgid "Edit or Delete Existing Access Key Pair"
+msgstr "Editovat nebo odstranit dvojici přístupových klíčů"
+
+msgid "Warning:"
+msgstr "Upozornění:"
+
+msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
+msgstr "Odstranění uživatelského klíče nebo skrytého párování, nebo nastavení nesprávného data expirace způsobí odstranění přístupu ke stránce dostupné na základě daného párování."
+
+msgid "Expiration"
+msgstr "Expirace"
+
+msgid "Configure / Admin"
+msgstr "Konfigurace / Administrace"
+
+msgid "Are you sure you want to delete this key"
+msgstr "Opravdu si přejeet ostranit tento klíč"
+
+msgid "You have been logged out."
+msgstr "Byli jste odhlášeni."
+
+msgid "Your login credentials are incorrect.  Please try again."
+msgstr "Vaše přihlašovací údaje jsou nesprávné. Prosím, zkuste to ještě jednou."
+
+msgid "Manage Access to the Reading List Tool"
+msgstr "Upravit přístupová práva k nástroji Seznamy literatury"
+
+msgid "Create New Key Pair"
+msgstr "Vytvořit nové párovací klíče"
+
+msgid "Log Out"
+msgstr "Odhlásit"
+
+msgid "Notes may not save properly."
+msgstr "Poznámky se nemusejí uložit správně."
+
+msgid "Import from Existing List"
+msgstr "Importovat ze stávajícího seznamu"
+
+msgid "Import from EBSCO Folder (beta)"
+msgstr "Importovat ze složky EBSCO (beta verze)"
+
+msgid "This list is"
+msgstr "Seznam je"
+
+msgid "public"
+msgstr "veřejný"
+
+msgid "private"
+msgstr "skrytý"
+
+msgid "student(s) have accessed this list."
+msgstr "…počet uživatelů, kteří zobrazili tento seznam."
+
+msgid "Students that have accessed this list:"
+msgstr "Studenti, kteří si zobrazili tento seznam:"
+
+msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
+msgstr "Nikdo zatím nenavštívil tento seznam. Seznam jmen se objeví, jakmile jej alespoň jeden uživatel zobrazí."
+
+msgid "Add Folder"
+msgstr "Přidat složku"
+
+msgid "Create Folder"
+msgstr "Vytvořit složku"
+
+msgid "Add Text or Instructions"
+msgstr "Přidat text nebo instrukce"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Folder"
+msgstr "Složka"
+
+msgid "e.g., Read Chapter 5 in Textbook"
+msgstr "např.: Přeštěte si kapitolu č. 5 ve skriptech"
+
+msgid "Main list of Readings"
+msgstr "Hlavní seznam literatury"
+
+msgid "Add Web Resource"
+msgstr "Doplnit webové zdroje"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "e.g., http://library.edu/"
+msgstr "např.: http://library.edu/"
+
+msgid "Link label"
+msgstr "Text odkazu"
+
+msgid " Back to main list"
+msgstr " Zpět na hlavní seznam"
+
+msgid "This list has folders:"
+msgstr "Tento seznam obsahuje složky:"
+
+msgid "Sort Order:"
+msgstr "Řazení záznamů:"
+
+msgid "Removing..."
+msgstr "Odstraňuji…."
+
+msgid "Move to folder"
+msgstr "Přesunout do složky"
+
+msgid "No Folder"
+msgstr "Žádná složka"
+
+msgid "Delete"
+msgstr "Odstranit"
+
+msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
+msgstr "Vyskytl se problém při nahrávání podrobností o tomto dokumentu. Vaše nihovna pravděpodobně již k němu nemá přístup, nebo se může jednat o duplikát jiného záznamu na tomto seznamu. Prosím kontaktujte administrátora knihovny pro další asistenci, pokud se Vám nedaří získat přístup k tomuto dokumentu."
+
+msgid "By : "
+msgstr "Podle: "
+
+msgid "Published:"
+msgstr "Publikováno:"
+
+msgid "Start Page: "
+msgstr "Úvodní stránka: "
+
+msgid "Page Count: "
+msgstr "Počet stránek: "
+
+msgid "Language:"
+msgstr "Jazyk:"
+
+msgid "Full Text"
+msgstr "Plný  text"
+
+msgid "Online Access"
+msgstr "Online přístup"
+
+msgid "Students that have clicked this reading: "
+msgstr "Studenti, kteří otevřeli toto čtení: "
+
+msgid "student(s) have clicked this reading."
+msgstr "uživatel(ů) otevřelo toto čtení."
+
+msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
+msgstr "Zatím nikdo neotevřel toto čtení. Seznam uživatelů se následně zobrazí zde."
+
+msgid "Characters remaining"
+msgstr "Zbývající počet znaků"
+
+msgid "Removing... please wait."
+msgstr "Odstraňuji…prosím čekejte."
+
+msgid "Update Notes and Sort Order"
+msgstr "Aktualizace poznámek a způsob řazení"
+
+msgid "Currently, there are no readings."
+msgstr "Aktuálně není vybráno žádné čtení."
+
+msgid "Select a folder above to see readings."
+msgstr "Vybrat složku pro zobrazení dokumentů ke čtení."
+
+msgid "Currently, there are no readings on this list."
+msgstr "Aktuálně na tomto seznamu nejsou žádné dokumenty ke čtení."
+
+msgid "<< Back to Results"
+msgstr "<< Zpět na výsledky"
+
+msgid "Retrieve response XML"
+msgstr "Stáhnout výsledek v XML"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
+msgstr "Jejda. Vypadá to, že tento dokument již není ve Vaší knihovně k dispozici. Informujte prosím Vaši knihovnu ohledně této chybové hlášky: "
+
+msgid "This record from"
+msgstr "Tento záznam z"
+
+msgid "cannot be displayed to guests."
+msgstr "může být zobrazen pouze autorizovaným uživatelům."
+
+msgid "for full access."
+msgstr "pro plný přístup."
+
+msgid "See it in EDS"
+msgstr "Otevřít v EDS"
+
+msgid " Online Access"
+msgstr " Online přístup"
+
+msgid "Refine Search"
+msgstr "Upravit hledání"
+
+msgid "Remove Facets"
+msgstr "Odstranit filtry"
+
+msgid "Limiter: "
+msgstr "Filtry: "
+
+msgid "Limit your results"
+msgstr "Upřesnit výsledky"
+
+msgid "Expand your results"
+msgstr "Rozšířit výsledky"
+
+msgid "Search response XML"
+msgstr "Výsledek hledání v XML"
+
+msgid "Results"
+msgstr "Výsledky"
+
+msgid "Showing"
+msgstr "Ukazující"
+
+msgid "of"
+msgstr "z"
+
+msgid "for"
+msgstr "pro"
+
+msgid "Sort"
+msgstr "Seřadit"
+
+msgid "Page options"
+msgstr "Možnosti stránky"
+
+msgid "Detailed"
+msgstr "Detailní"
+
+msgid "Brief"
+msgstr "Stručný"
+
+msgid "Title Only"
+msgstr "Pouze název"
+
+msgid "Results per page"
+msgstr "Počet výsledků na stránku"
+
+msgid "Research Starter"
+msgstr "Úvod do tématu"
+
+msgid "for full access"
+msgstr "pro plný přístup"
+
+msgid "Published: "
+msgstr "Publikováno: "
+
+msgid "No results were found."
+msgstr "Nebyly nalezeny žádné výsledky."
+
+msgid "Result #"
+msgstr "Výsledek #"
+
+msgid "Title is not available"
+msgstr "Titul není k dispozici"
+
+msgid "By :"
+msgstr "Podle :"
+
+msgid "Start Page:"
+msgstr "Úvodní stránka:"
+
+msgid "Page Count:"
+msgstr "Počet stránek:"
+
+msgid "Abstract:"
+msgstr "Abstrakt:"
+
+msgid "Subjects:"
+msgstr "Předmětová hesla:"
+
+msgid "Key:"
+msgstr "Klíč:"
+
+msgid "Secret:"
+msgstr "Skryté:"
+
+msgid "Administration"
+msgstr "Administrace"
+
+msgid "Total Lists"
+msgstr "Celkové seznamy"
+
+msgid "Total People Using Tool"
+msgstr "Počet lidí využívajících tento nástroj"
+
+msgid "Users"
+msgstr "Uživatelé"
+
+msgid "Total Courses Using Tool"
+msgstr "Počet kurzů v tomto nástroji"
+
+msgid "Courses"
+msgstr "Kurzy"
+
+msgid "Search"
+msgstr "Hledat"
+
+msgid "Return to Course"
+msgstr "Zpět na Kurzy"
+
+msgid "See Current Reading List"
+msgstr "Zobrazit aktuální seznam četby"
+
+msgid "Update"
+msgstr "Aktualizace"
+
+msgid "Add"
+msgstr "Přidat"
+
+msgid " notes"
+msgstr " poznámky"
+
+msgid "Save notes"
+msgstr "Uložit poznámky"
+
+msgid "edit notes"
+msgstr "upravit poznámky"
+
+msgid "items"
+msgstr "položky"
+
+msgid "currently selected"
+msgstr "aktuálně vybrané"
+
+msgid "Result"
+msgstr "Výsledek"
+
+msgid "Folder name"
+msgstr "Název složky"
+
+msgid "Back to the main list"
+msgstr "Zpět na hlavní seznam"
+
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+msgid "Contact"
+msgstr "Pro pomoc s tímto nástrojem nás kontaktujte zde:"
+
+msgid "for assistance with this tool."
+msgstr "."
+
+msgid "Download Export File"
+msgstr "Stáhnout exportovaný soubor"
+
+msgid "Import from Export File"
+msgstr "Importovat soubor"
+
+msgid "Download Student Data"
+msgstr "Stáhnout data o studentech"
+
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "Pozor, při změně nastavení dojde k přepsání původní konfigurace nastavené na této obrazovce. Prosím spusťte alespoň jeden seznam četby z Vašeho LMS pro vyplnění těchto polí, nebo nás kontaktujte na eds@ebscohost.com pro pomoc s aktualizací těchto nastavení."
+
+msgid "If you change the "
+msgstr "Pokud změníte"
+
+msgid "user id"
+msgstr "ID uživatele"
+
+msgid "password"
+msgstr "heslo"
+
+msgid "API profile ID"
+msgstr "API ID profilu"
+
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "budete se muset odhlásit a znovu přihlásit, abyste viděli aktuální statistiky a seznamy."
+
+msgid "Select"
+msgstr "Vybrat"
+
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "ID uživatele & heslo s EBSCOadmin (sekce Authentication)."
+
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "Uživatelské jméno a heslo musí být asociované se skupinou obsahující níže uvedený profil."
+
+msgid "Total Readings"
+msgstr "Celkem dokumentů ke čtení"
+
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "Toto je Váš EDS API profil pro využiví s Curriculum Builderem. Musí být propojený s uživatelskou skupinou, ke které máte oprávnění přístupu (uživ. jméno a heslo)"
+
+msgid "EDS API Profile ID"
+msgstr "ID profilu v EDS API"
+
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "Typy uživatelů, kteří mohou editovat seznamy (oddělené středníkem)"
+
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "Ve výchozím nastavení tento seznam mohou editovat pouze vyučující. Nicméně můžete přidat i další typy uživatelů s oprávněním k editaci."
+
+msgid "Default:"
+msgstr "Výchozí nastavení:"
+
+msgid "Proxy Prefix for CustomLinks"
+msgstr "Proxy přesměrování pro CustomLinky"
+
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "V případě vyplnění bude tato proxy využita pro linkování k dokumentům přes CustomLinky."
+
+msgid "Examples"
+msgstr "Příklady"
+
+msgid "Proxy should encode target URL"
+msgstr "Proxy by měla pozměnit cílovou URL adresu"
+
+msgid "If your proxy prefix ends with"
+msgstr "Pokud Vaše proxy přesměrování končí tímto znakem"
+
+msgid "this probably needs to be set to"
+msgstr "pravděpodobně bude nutné nastavit linkování následovně"
+
+msgid "otherwise"
+msgstr "jinak"
+
+msgid "is probably correct."
+msgstr "je pravděpodobně správně."
+
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "Pokud Váš eLearning přistupuje do Curriculum Builderu prostřednictvím HTTPS, pak by také obrázek s logem měl být dostupný na HTTPS."
+
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "Tento text se zobrazí pod názvem seznamu. Odkazy budou automaticky zvýrazněné."
+
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "Toto je název odkazu, který se zobrazí uživateli po levé straně podrobného záznamu a který směruje uživatele do záznamu v EBSCO Discovery Service. Pokud je pole prázdné, žádný odkaz se nezobrazí."
+
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "Vložit URL nebo CSS soubor. Uložené styly budou aplikovány v celém Curriculum Builderu. Pokud Váš eLearning využívá HTTPS, pak musí i zde být HTTPS."
+
+msgid "Optional."
+msgstr "Volitelné."
+
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "jména, e-mailové adresy a ID studentů budou uložena. Tato data budou poskytnuta instruktorům v případě návštěvy dané literatury ke čtení. Data budou také dostupné ve statistikách využívanosti pro knihovnu. Pro odstranění e-mailových adres může Váš instruktor kurzu (administrátor) zakázat sdílení těchto dat s poskytovatelem."
+
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "jména studentů, již navštívili tuto četbu nebudou s vyučujícími sdílena. Nicméně statistiky využití umožní analyzovat podle ID uživatele, které dokumenty byly navštíveny."
+
+msgid "Anonymized"
+msgstr "Anonymizované"
+
+msgid "None"
+msgstr "Žádné"
+
+msgid "will collect no student activity. No reporting will be available."
+msgstr "žádná data o aktivitě studentů nebudou shromažďována. Uživatelské statistiky nebudou dostupné."
+
+msgid "Link to Help Pages"
+msgstr "Odkaz na stránky uživatelské podpory"
+
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "instruktoři budou upozorněni na tuto možnost při tvorbě nového seznamu. Při výběru z podobně pojmenovaného seznamu budou instruktoři požádáni o předvýběr literatury do seznamu. Pokud"
+
+msgid "is selected, all new lists will be blank."
+msgstr "je vybráno, všechny nové seznamy budou prázdné."
+
+msgid "Hide"
+msgstr "Skrýt"
+
+msgid "and"
+msgstr "a"
+
+msgid "Available in Library Collection"
+msgstr "Dostupné v kolekci knihovny"
+
+msgid "Limiters"
+msgstr "Filtry"
+
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "Skrytím těchto filtrů nebude možné tyto funkce využívat a nebude možné přidávat literaturu mimo kolekci Vaší knihovny."
+
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "Tento odkaz je poskytnut z Vašeho eLearningového systému. Pokud je eLearning nastaven správně, přesměruje uživatele zpět na stránky kurzu."
+
+msgid "Show First Full Text Link Only"
+msgstr "Zobrazit pouze první odkaz k plnému textu"
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "Spanish"
+msgstr "Španělština"
+
+msgid "German"
+msgstr "Němčina"
+
+msgid "Italian"
+msgstr "Italština"
+
+msgid "Portuguese"
+msgstr "Portugalština"
+
+msgid "French"
+msgstr "Francais"
+
+msgid "Simplified Chinese"
+msgstr "Zjednodušená čínština"
+
+msgid "traditional Chinese"
+msgstr "tradiční čínština"
+
+msgid "Japanese"
+msgstr "Japonština"
+
+msgid "Polish"
+msgstr "Polština"
+
+msgid "Swedish"
+msgstr "Švédština"
+
+msgid "Thai"
+msgstr "Thajština"
+
+msgid "Turkish"
+msgstr "Turečtina"
+
+msgid "Required"
+msgstr "Povinné"
+
+msgid "e.g., Instructor"
+msgstr "např. Instruktor"
+
+msgid "\"Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Proxy přesměrování; pokud používáte WAM, můžete použít {targetURLdomain} pro určení domény Vaší proxy - zbytek adresy bude vložen na konec URL"
+
+msgid "Email for contact person for tool"
+msgstr "E-mailová adresa hlavního administrátora"
+
+msgid "Branding text at top of screen"
+msgstr "Text brandingu ve vrchní části obrazovky"
+
+msgid "e.g., See Record in EDS"
+msgstr "např. Zobrazit záznam v EDS"
+
+msgid "e.g., Search for Library Resources"
+msgstr "např. Hledat v kolekci knihovny"
+
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Volitelné. URL adresa CSS stylů"
+
+msgid "URL for LibGuide or other help pages"
+msgstr "URL adresa Vašich LibGuides nebo jiných stránek podpory uživatelů"
+
+msgid "e.g., a copyright notice"
+msgstr "např. údaj o autorských právech"
+
+msgid "Label for Link to EDS"
+msgstr "Název odkazu do EDS"
+
+msgid "Label for Search Box"
+msgstr "Název vyhledávacího okna"
+
+msgid "Collect Student Data"
+msgstr "Sběr uživatelských dat"
+
+msgid "URL to Library Home Page"
+msgstr "URL adresa domácí stránky"
+
+msgid "Search Library Resources"
+msgstr "Hledat zrdoje knihovny"
+
+msgid "Update Settings"
+msgstr "Aktualizovat Nastavení"
+
+msgid "Expander: "
+msgstr "Rozšířit vyhledávání: "
+
+msgid "Edit"
+msgstr "Upravit"
+
+msgid "Relevance"
+msgstr "Relevance"
+
+msgid "Source Type"
+msgstr "Typ zdroje"
+
+msgid "Subject"
+msgstr "Předmět"
+
+msgid "Publication"
+msgstr "Publikace"
+
+msgid "Geography"
+msgstr "Geografické pojmy"
+
+msgid "Content Provider"
+msgstr "Poskytovatel Obsahu"
+
+msgid "Academic Journal"
+msgstr "Akademický časopis"
+
+msgid "Biographie"
+msgstr "Biografie"
+
+msgid "Book"
+msgstr "Kniha"
+
+msgid "Conference Material"
+msgstr "Konferenční Materiál"
+
+msgid "Magazine"
+msgstr "Časopis"
+
+msgid "New"
+msgstr "Nový"
+
+msgid "Primary Source Document"
+msgstr "Primární dokument"
+
+msgid "Report"
+msgstr "Report"
+
+msgid "Review"
+msgstr "Recenze"
+
+msgid "Trade Publication"
+msgstr "Obchodní publikace"
+
+msgid "Date Newest"
+msgstr "Nejnovější"
+
+msgid "Date Oldest"
+msgstr "Nejstarší"
+
+msgid "Authors"
+msgstr "Autoři"
+
+msgid "Document Type"
+msgstr "Typ dokumentu"
+
+msgid "Subject Terms"
+msgstr "Předmětová hesla"
+
+msgid "Author-Supplied Keywords"
+msgstr "Autorská klíčová slova"
+
+msgid "Abstract"
+msgstr "Abstrakt"
+
+msgid "Author Affiliations"
+msgstr "Autorské afiliace"
+
+msgid "Accession Number"
+msgstr "Unikátní identifikátor dokumentu"
+
+msgid "Publisher"
+msgstr "Vydavatel"
+
+msgid "Source"
+msgstr "Zdroj"
+
+msgid "Geographic Terms"
+msgstr "Geografické pojmy"
+
+msgid "Academic Journals"
+msgstr "Akademické časopisy"
+
+msgid "Books"
+msgstr "Knihy"
+
+msgid "Conference Materials"
+msgstr "Konferenční materiál"
+
+msgid "Magazines"
+msgstr "Časopisy"
+
+msgid "Biographies"
+msgstr "Bibliografie"
+
+msgid "News"
+msgstr "Zprávy"
+
+msgid "Primary Source Documents"
+msgstr "Primární dokumenty"
+
+msgid "Reports"
+msgstr "Reporty"
+
+msgid "Reviews"
+msgstr "Recenze"
+
+msgid "Trade Publications"
+msgstr "Obchodní publikace"
+
+msgid "Apply equivalent subjects"
+msgstr "Používání ekvivalentních předmětů"
+
+msgid "Apply related words"
+msgstr "Použít související slova"
+
+msgid "Also search within the full text of the articles"
+msgstr "Hledat také v plných textech článků"
+
+msgid "References Available"
+msgstr "Dostupné reference"
+
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Recenzované dokumenty"
+
+msgid "Library Home"
+msgstr "Domácí stránka knihovny"
+
+msgid "Periodical"
+msgstr "Periodické publikace"
+
+msgid "Selecting"
+msgstr "Výběr"
+
+msgid "Publication Year"
+msgstr "Rok vydání"
+
+msgid "You have no other reading lists."
+msgstr "Nemáte žádný další seznam ke čtení."
+
+msgid "No statistics to report yet."
+msgstr "Statistiky zatím nejsou dostupné."
+
+msgid "Select one:"
+msgstr "Zvolte jednu možnost:"
+
+msgid "Hebrew"
+msgstr "Hebrejština"
+
+msgid "University"
+msgstr "Univerzita"
+
+msgid "Collection"
+msgstr "Kolekce"
+
+msgid "Generate list"
+msgstr "Generovat seznam"

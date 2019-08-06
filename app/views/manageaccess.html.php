@@ -87,6 +87,23 @@ td {
                     <?php
                     }
                 }
+            } else if ($clean['action'] == "reassign") {
+              $sql = "UPDATE lists SET oauth_consumer_key = '".$clean['toKey']."' WHERE oauth_consumer_key = '".$clean['fromKey']."';";
+              mysqli_query($c,$sql);
+              ?>
+                        <div class="readingListLink">
+                          <h3 style="color:green;"><strong>Successfully reassigned lists from consumer key <?php echo $clean['fromKey']; ?> to <?php echo $clean['toKey']; ?></strong></h3>
+                        </div>   
+              <?php
+            } else if ($clean['action'] == "relink") {
+              $sql = "UPDATE lists SET oauth_consumer_key = '".$clean['consumerKey']."' WHERE id = '".$clean['listid']."';";
+              mysqli_query($c,$sql);
+              ?>
+                        <div class="readingListLink">
+                          <h3 style="color:green;"><strong>Successfully reassigned list <?php echo $clean['listid']; ?> to consumer key <?php echo $clean['consumerKey']; ?> </strong></h3>
+                        </div>   
+              <?php
+        
             } else {
                 ?>
             <div class="readingListLink">
@@ -233,7 +250,16 @@ td {
               <form action="manageaccess.php" method="post">
                 <input type="submit" name="logout" value="Log Out" />
               </form>
-            </div>            
+            </div>  
+            <div class="lseONLY">
+            <h1>LSE ONLY</h1>
+            <form action="manageaccess.php" method="post" onsubmit="return confirm('Are you sure you want to re-assign lists?  This can\'t be undone.  LSE ONLY!');">
+                <input type="hidden" name="action" value="reassign" />Reassign lists from Consumer Key <input type="text" name="fromKey" placeholder="FROM" /> to Consumer Key <input type="text" name="toKey" placeholder="TO" /> <input type="submit" /> 
+            </form>
+            <form action="manageaccess.php" method="post" onsubmit="return confirm('Are you sure you want to re-assign lists?  This can\'t be undone.  LSE ONLY!');">
+                <input type="hidden" name="action" value="relink" />Link a list to a consumer key:  ListID: <input type="text" name="listid" placeholder="LIST ID" /> | Consumer Key: <input type="text" name="consumerKey" placeholder="Consumer Key" /> <input type="submit" /> 
+            </form>
+            </div>          
         <?php
   } else {
     if ((isset($clean['logout']) || isset($loggedout))) {

@@ -14,18 +14,20 @@ $(document).ready(function(){
 <?php
     $currlistid = decryptCookie($_COOKIE['currentListId']);
     $currauthid = decryptCookie($_COOKIE['currentAuthorId']);
-    $sql = $c->prepare("SELECT id, course, linklabel, private FROM lists WHERE id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND id != ? AND credentialconsumerid = ?;");
-    $credconsumerID = getCredentialConsumerID();
-	$sql->bind_param('iii', $currauthid, $currlistid, $credconsumerID);
+    $oauth_consumer_key = decryptCookie($_COOKIE['oauth_consumer_key']);
+    $sql = $c->prepare("SELECT id, course, linklabel, private FROM lists WHERE id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND id != ? AND oauth_consumer_key = ?;");
+	$sql->bind_param('iis', $currauthid, $currlistid, $oauth_consumer_key);
 	$sql->execute();
 	$sql->store_result();
 	$sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel, $mylists_private);
-	
+
+    //echo "<div>SELECT id, course, linklabel, private FROM lists WHERE id IN (SELECT listid FROM authorlists WHERE authorid = ".$currauthid.") AND id != ".$currlistid." AND oauth_consumer_key = ".$oauth_consumer_key.";</div>";
+
     if ($sql->num_rows > 0) {
-        echo '<form id="mylist" action="copy_list.php" method="get">Your Lists: <select id="mylists" name="listid">';    
+        echo '<form id="mylist" action="copy_list.php" method="get">'._("Your Lists").': <select id="mylists" name="listid">';    
         while ($sql->fetch()) {
             if (strlen($mylists_linklabel) <= 0) {
-                $mylists_linklabel= 'Untitled List';
+                $mylists_linklabel= _('Untitled List');
             }
             if (strlen($mylists_linklabel) >= 100) {
                 $mylists_linklabel = substr($mylists_linklabel,0,99) . "...";
@@ -38,21 +40,21 @@ $(document).ready(function(){
             }
             echo '>' . $mylists_course . ' - ' . $mylists_linklabel;
             if ($mylists_private == 1) {
-                echo ' (private)';
+                echo _(' (private)');
             }
             echo '</option>';
         }
-        echo '</select> <input type="submit" value="View this list" name="submit" /></form>';
+        echo '</select> <input type="submit" value="'._("View this list").'" name="submit" /></form>';
     } else {
-        echo '<p>You have no other reading lists.</p>';
+        echo '<p>'._("You have no other reading lists.").'</p>';
     }
     if ($c->more_results()) {
 	$c->next_result();
     }
     ?></div><div class="readingListLink">
     <?php
-		$sql = $c->prepare("SELECT id, course, linklabel FROM lists WHERE id != ? AND private = 0 AND credentialconsumerid = ?;");
-		$sql->bind_param('ii', $currlistid, $credconsumerID);
+		$sql = $c->prepare("SELECT id, course, linklabel FROM lists WHERE id != ? AND private = 0 AND oauth_consumer_key = ?;");
+		$sql->bind_param('is', $currlistid, $oauth_consumer_key);
 		$sql->execute();
 		$sql->store_result();
 		$sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel);
@@ -61,7 +63,7 @@ $(document).ready(function(){
         echo '<form id="mylist" action="copy_list.php" method="get">All Public Lists: <select id="mylists" name="listid">';    
         while ($sql->fetch()) {
             if (strlen($mylists_linklabel) <= 0) {
-                $mylists_linklabel= 'Untitled List';
+                $mylists_linklabel= _('Untitled List');
             }
 			
 			echo '<option value="' . $mylists_id . '"';
@@ -72,9 +74,9 @@ $(document).ready(function(){
             }
             echo '>' . $mylists_course . ' - ' . $mylists_linklabel . '</option>';
         }
-        echo '</select> <input type="submit" value="View this list" name="submit" /></form>';
+        echo '</select> <input type="submit" value="'._("View this list").'" name="submit" /></form>';
     } else {
-        echo '<p>There are no public reading lists to copy.</p>';
+        echo '<p>'.("There are no public reading lists to copy.").'</p>';
     }
     ?>
     </div>
@@ -87,12 +89,12 @@ $(document).ready(function(){
             <form action="process_copy.php" method="get" name="otherreadings">
             <div class="readingListLink">
             <strong>Options</strong>
-                <p><input type="checkbox" name="include_notes" value="1" checked="checked">Include Notes in the Import Process</p>
-                <p><input type="checkbox" name="preserve_order" value="1" checked="checked">Preserve Sort Order</p>
-				<p><input type="checkbox" name="include_folders" value="1" checked="checked">Include Folders where applicable</p>
+                <p><input type="checkbox" name="include_notes" value="1" checked="checked"><?php echo _("Include Notes in the Import Process"); ?></p>
+                <p><input type="checkbox" name="preserve_order" value="1" checked="checked"><?php echo _("Preserve Sort Order"); ?></p>
+				<p><input type="checkbox" name="include_folders" value="1" checked="checked"><?php echo _("Include Folders where applicable"); ?></p>
             </div>
             <div class="readingListLink">
-                <p><input type="checkbox" id="chkAll" /> <strong>Check/Uncheck All</strong></p>
+                <p><input type="checkbox" id="chkAll" /> <strong><?php echo _('Check/Uncheck All'); ?></strong></p>
             </div>
             <div class="readingListLink">
                 <?php
@@ -115,10 +117,10 @@ $(document).ready(function(){
                             <?php
                         }
                     } else {
-                        echo '<p>There are no readings in this list.</p>';
+                        echo '<p>'._("There are no readings in this list.").'</p>';
                     }
                 ?>
-                <p><input type="submit" value="Copy Selected Readings" /></p>
+                <p><input type="submit" value='<?php echo _("Copy Selected Readings"); ?>' /></p>
             </div>
             </form>
             <?php
@@ -126,6 +128,6 @@ $(document).ready(function(){
     }
     mysqli_close($c);
   } else {
-    echo "<p>You are unauthorized to access this page.</p>";
+    echo "<p>"._("You are unauthorized to access this page.")."</p>";
   }
 ?>

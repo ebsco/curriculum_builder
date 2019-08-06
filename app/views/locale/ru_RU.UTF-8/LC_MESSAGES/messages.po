@@ -1,0 +1,1085 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-12 00:18+0100\n"
+"PO-Revision-Date: 2019-04-18 15:51+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+
+#: ﻿dommycol
+msgid "English"
+msgstr "English"
+
+msgid "Back to Reading List"
+msgstr "Вернуться к списку чтения"
+
+msgid " << Back to Results"
+msgstr " << Вернуться к результатам"
+
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr "&nbsp;&nbsp;&nbsp;&nbsp;"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
+msgstr "Ой! Кажется, данная статья больше не доступна в Вашей библиотеке. Пожалуйста, сообщите Вашему преподавателю либо сотруднику библиотеки о данной неполадке."
+
+msgid "This record from "
+msgstr "Данная запись от "
+
+msgid " cannot be displayed to guests."
+msgstr "недоступна гостям."
+
+msgid "Login</a> for full access."
+msgstr "Войдите в систему</a> чтобы получить доступ "
+
+msgid "Add to Reading List"
+msgstr "Добавить в список чтения"
+
+msgid "Remove from Reading List"
+msgstr "Удалить из списка чтения"
+
+msgid "PDF full text"
+msgstr "Полнотекстовая версия PDF"
+
+msgid "HTML full text"
+msgstr "полнотекстовая версия HTML"
+
+msgid "HTML Full Text"
+msgstr "Полнотекстовая версия HTML"
+
+msgid "Full Text:"
+msgstr "полный текст:"
+
+msgid "PubType:"
+msgstr "Формат:"
+
+msgid "Database:"
+msgstr "База данных:"
+
+msgid "Statistics"
+msgstr "Статистика"
+
+msgid "Curriculum Builder Settings"
+msgstr "Настройки Curriculum Builder "
+
+msgid "EBSCO User ID"
+msgstr "Аккаунт EBSCO"
+
+msgid "EBSCO Password"
+msgstr "Пароль EBSCO "
+
+msgid "Your EDS API Profile"
+msgstr "Ваш профиль EDS API"
+
+msgid "URL for your library logo"
+msgstr "Ссылка на лого Вашей библиотеки"
+
+msgid "Contact Email"
+msgstr "Контактный адрес электронной почты"
+
+msgid "Link to Library Home Page"
+msgstr "Ссылка на домашнюю страницу Вашей библиотеки"
+
+msgid "Text to display at top of screen"
+msgstr "Текст, отображенный в верхней части экрана"
+
+msgid "Link to EDS Label"
+msgstr "Ссылка на лого EDS "
+
+msgid "Custom CSS File"
+msgstr "Пользовательский CSS файл"
+
+msgid "Collect student names as they access assigned readings?"
+msgstr "Список студентов, прочитавших работы из обязательного перечня"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Footer text"
+msgstr "Нижний колонтитул "
+
+msgid "Copy Course Support"
+msgstr "Возможность повторения курса"
+
+msgid "Remove Full Text and Available in Library Collection Limiters from view"
+msgstr "Исключить функцию поиска ТОЛЬКО полных текстов и работ доступных в коллекции из настроек фильтра"
+
+msgid "Show 'Return to Course' Link at top of page"
+msgstr "Отображать \"вернуться к курсу\" в верхней части страницы"
+
+msgid "Open all Lists in a New Window"
+msgstr "Открыть списки в новом окне"
+
+msgid "View Lists"
+msgstr "Посмотреть список"
+
+msgid "Select one: "
+msgstr "Выберите действие:"
+
+msgid "Preview Selected List"
+msgstr "Просмотреть выбранный список"
+
+msgid "Delete Lists"
+msgstr "Удалить списки"
+
+msgid "Delete Selected Lists"
+msgstr "Удалить выбранные списки"
+
+msgid "Basic Search"
+msgstr "Обычный поиск"
+
+msgid "Keyword"
+msgstr "Ключевое слово"
+
+msgid "Author"
+msgstr "Автор"
+
+msgid "Title"
+msgstr "Название"
+
+msgid "View this list"
+msgstr "Посмотреть список"
+
+msgid "Untitled List"
+msgstr "Список без названия"
+
+msgid "All Public Lists:"
+msgstr "Все общедоступные списки"
+
+msgid "There are no public reading lists to copy."
+msgstr "Нет общедоступных списков "
+
+msgid "Options"
+msgstr "Варианты"
+
+msgid "Include Notes in the Import Process"
+msgstr "Включить заметки в импорт"
+
+msgid "Preserve Sort Order"
+msgstr "Сохранить параметры сортировки"
+
+msgid "Check/Uncheck All"
+msgstr "Выбрать/Отменить все"
+
+msgid "Notes:"
+msgstr "Заметки:"
+
+msgid "There are no readings in this list."
+msgstr "Нет доступных списков чтения."
+
+msgid "Copy Selected Readings"
+msgstr "Скопировать выбранные названия"
+
+msgid "You are unauthorized to access this page."
+msgstr "К сожалению, у Вас нет доступа к данной странице."
+
+msgid "You must be logged in to access that service, please login"
+msgstr "Чтобы получить доступ к данной услуге, пожалуйста, войдите в систему"
+
+msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
+msgstr "Внимание: Данные списки будут удалены без возможности восстановления. Вместо удаленных списков будут отображаться пустые страницы."
+
+msgid "NEVER accessed since update"
+msgstr "НЕ ИСПОЛЬЗОВАН с момента обновления"
+
+msgid "LAST ACCESSED"
+msgstr "ПОСЛЕДНИЙ РАЗ ИСПОЛЬЗОВАН"
+
+msgid "DELETE"
+msgstr "УДАЛИТЬ"
+
+msgid "this list"
+msgstr "данный список"
+
+msgid "these "
+msgstr "данные"
+
+msgid "lists"
+msgstr "списки"
+
+msgid "or"
+msgstr "или"
+
+msgid "Cancel"
+msgstr "Отменить"
+
+msgid "No lists selected to delete."
+msgstr "Нет выбранных списков для удаления "
+
+msgid "Back to Administration Screen"
+msgstr "Вернуться к Панели Администратора"
+
+msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
+msgstr "Ой! Кажется, произошла ошибка. Не хватает данных для одной или более записей. Пожалуйста, убедитесь, что все данные включены, и попробуйте снова. "
+
+msgid "Enter bibliographic info from the list into this box:"
+msgstr "Добавьте библиографическую информацию из списка"
+
+msgid "CB Version 2.3"
+msgstr "Версия CB 2.3"
+
+msgid "List ID"
+msgstr "ID списка"
+
+msgid "Login"
+msgstr "Войти"
+
+msgid "Invalid login -- pleasae try again"
+msgstr "Неправильный логин или пароль -- попробуйте еще раз"
+
+msgid "Username:"
+msgstr "Логин:"
+
+msgid "Password:"
+msgstr "Пароль:"
+
+msgid "Successfully logged in."
+msgstr "Успешная авторизация."
+
+msgid "Successfully updated expiration date for "
+msgstr "Срок действия успешно изменен на "
+
+msgid "Successfully deleted "
+msgstr "Успешно удалено"
+
+msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
+msgstr "Поле пароля и срока действия не могут быть пустыми. Пожалуйста, проверьте все поля и попробуйте еще раз "
+
+msgid "Consumer key "
+msgstr "Данный ключ"
+
+msgid "already exists. Please delete the existing one first before creating a new one."
+msgstr "уже существует. Пожалуйста, создайте новый. "
+
+msgid "Successfully inserted consumer key: "
+msgstr "Ключ успешно добавлен:"
+
+msgid "Unrecognized Actions.  Try again."
+msgstr "Неизвестная ошибка. Попробуйте еще раз."
+
+msgid "Create New Access Key Pair"
+msgstr "Создать новую связку ключей доступа "
+
+msgid "Consumer Key"
+msgstr "Пользовательский ключ"
+
+msgid "Secret"
+msgstr "Секретный"
+
+msgid "Expiration Date"
+msgstr "Срок действия"
+
+msgid "Edit or Delete Existing Access Key Pair"
+msgstr "Изменить или удалить существующую связку ключей доступа"
+
+msgid "Warning:"
+msgstr "Внимание:"
+
+msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
+msgstr "При удалении пользовательского ключа доступа или неправильной даты срока действия, списки могут быть недоступны "
+
+msgid "Expiration"
+msgstr "Истечение"
+
+msgid "Configure / Admin"
+msgstr "Настройки / Администрация"
+
+msgid "Are you sure you want to delete this key"
+msgstr "Вы уверены, что хотите удалить данный ключ"
+
+msgid "You have been logged out."
+msgstr "Вы вышли из системы."
+
+msgid "Your login credentials are incorrect.  Please try again."
+msgstr "Неверный логин или пароль. Пожалуйста, попробуйте еще раз. "
+
+msgid "Manage Access to the Reading List Tool"
+msgstr "Инструмент для управления доступом к спискам чтения"
+
+msgid "Create New Key Pair"
+msgstr "Создать новую связку ключей доступа "
+
+msgid "Log Out"
+msgstr "Выйти"
+
+msgid "Notes may not save properly."
+msgstr "Заметки могут не сохраниться."
+
+msgid "Import from Existing List"
+msgstr "Импортировать список"
+
+msgid "Import from EBSCO Folder (beta)"
+msgstr "Импортировать список из личной папки EBSCO (Бета)"
+
+msgid "This list is"
+msgstr "Данный список"
+
+msgid "public"
+msgstr "доступен всем"
+
+msgid "private"
+msgstr "закрыт для личного пользования "
+
+msgid "student(s) have accessed this list."
+msgstr "студент(ы) пользовались данным списком"
+
+msgid "Students that have accessed this list:"
+msgstr "Студенты пользовались данным списком:"
+
+msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
+msgstr "Студенты еще не пользовались данным списком. Список студентов появится после использования."
+
+msgid "Add Folder"
+msgstr "Добавить папку"
+
+msgid "Create Folder"
+msgstr "Создать папку"
+
+msgid "Add Text or Instructions"
+msgstr "Добавить текст/инструкции"
+
+msgid "Text"
+msgstr "Текст"
+
+msgid "Folder"
+msgstr "Папка"
+
+msgid "e.g., Read Chapter 5 in Textbook"
+msgstr "например, прочитайте главу 5 в учебнике"
+
+msgid "Main list of Readings"
+msgstr "Основной список чтения"
+
+msgid "Add Web Resource"
+msgstr "Добавить веб ресурсы"
+
+msgid "URL"
+msgstr "Ссылка"
+
+msgid "e.g., http://library.edu/"
+msgstr "например, http://library.edu/"
+
+msgid "Link label"
+msgstr "Лого ссылки"
+
+msgid " Back to main list"
+msgstr "Вернуться к основному списку"
+
+msgid "This list has folders:"
+msgstr "Папки в данном списке:"
+
+msgid "Sort Order:"
+msgstr "Сортировать по:"
+
+msgid "Removing..."
+msgstr "Удаление…"
+
+msgid "Move to folder"
+msgstr "Переместить в папку"
+
+msgid "No Folder"
+msgstr "Папка не существует"
+
+msgid "Delete"
+msgstr "Удалить "
+
+msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
+msgstr "Ошибка, информация о данном списке не может быть отображена. Возможно, Ваша библиотека отменила подписку или список дублируется. Пожалуйста, обратитесь за помощью к работнику библиотеки."
+
+msgid "By : "
+msgstr "по:"
+
+msgid "Published:"
+msgstr "Опубликовано:"
+
+msgid "Start Page: "
+msgstr "Первая страница:"
+
+msgid "Page Count: "
+msgstr "Количество страниц:"
+
+msgid "Language:"
+msgstr "Язык:"
+
+msgid "Full Text"
+msgstr "Полный текст"
+
+msgid "Online Access"
+msgstr "Доступ онлайн"
+
+msgid "Students that have clicked this reading: "
+msgstr "Студенты, которые прочитали:"
+
+msgid "student(s) have clicked this reading."
+msgstr "студент(ы) пользовались данным списком."
+
+msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
+msgstr "Студенты еще не пользовались данным списком. Список студентов появится после использования."
+
+msgid "Characters remaining"
+msgstr "Оставшееся кол-во символов"
+
+msgid "Removing... please wait."
+msgstr "Удаление…пожалуйста подождите"
+
+msgid "Update Notes and Sort Order"
+msgstr "Обновить заметки и порядок"
+
+msgid "Currently, there are no readings."
+msgstr "В данный момент список чтения пуст."
+
+msgid "Select a folder above to see readings."
+msgstr "Откройте папку выше, чтобы просмотреть список. "
+
+msgid "Currently, there are no readings on this list."
+msgstr "В данный момент список чтения пуст."
+
+msgid "<< Back to Results"
+msgstr "<< Вернуться к результатам поиска"
+
+msgid "Retrieve response XML"
+msgstr "Ответ XML "
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
+msgstr "Ой! Кажется, данная статья больше не доступна в Вашей библиотеке. Пожалуйста, сообщите Вашему преподавателю либо сотруднику библиотеки о данной неполадке. "
+
+msgid "This record from"
+msgstr "Запись от "
+
+msgid "cannot be displayed to guests."
+msgstr "недоступна гостям."
+
+msgid "for full access."
+msgstr "для полного доступа."
+
+msgid "See it in EDS"
+msgstr "Посмотреть в EDS "
+
+msgid " Online Access"
+msgstr "Доступ онлайн"
+
+msgid "Refine Search"
+msgstr "Уточнить поиск"
+
+msgid "Remove Facets"
+msgstr "Отменить ограничения"
+
+msgid "Limiter: "
+msgstr "Ограничения:"
+
+msgid "Limit your results"
+msgstr "Ограничить результаты"
+
+msgid "Expand your results"
+msgstr "Расширить результаты поиска"
+
+msgid "Search response XML"
+msgstr "Ответ XML "
+
+msgid "Results"
+msgstr "Результаты"
+
+msgid "Showing"
+msgstr "Отображение"
+
+msgid "of"
+msgstr "-"
+
+msgid "for"
+msgstr "для "
+
+msgid "Sort"
+msgstr "Сортировать"
+
+msgid "Page options"
+msgstr "Настройки страницы"
+
+msgid "Detailed"
+msgstr "Подробнее"
+
+msgid "Brief"
+msgstr "Краткая информация"
+
+msgid "Title Only"
+msgstr "Только названия"
+
+msgid "Results per page"
+msgstr "Результатов на странице"
+
+msgid "Research Starter"
+msgstr "Помощь в начале исследований"
+
+msgid "for full access"
+msgstr "для полного доступа"
+
+msgid "Published: "
+msgstr "Опубликовано:"
+
+msgid "No results were found."
+msgstr "Нет результатов:"
+
+msgid "Result #"
+msgstr "Результат №"
+
+msgid "Title is not available"
+msgstr "публикация недоступна"
+
+msgid "By :"
+msgstr "от:"
+
+msgid "Start Page:"
+msgstr "Первая страница:"
+
+msgid "Page Count:"
+msgstr "Количество страниц:"
+
+msgid "Abstract:"
+msgstr "Краткое содержание:"
+
+msgid "Subjects:"
+msgstr "Предметы:"
+
+msgid "Key:"
+msgstr "Ключ:"
+
+msgid "Secret:"
+msgstr "Секретный пароль:"
+
+msgid "Administration"
+msgstr "Администрация"
+
+msgid "Total Lists"
+msgstr "Все списки"
+
+msgid "Total People Using Tool"
+msgstr "Инструмент для подсчета кол-ва пользователей"
+
+msgid "Users"
+msgstr "Пользователи"
+
+msgid "Total Courses Using Tool"
+msgstr "Инструмент для подсчета кол-ва пользователей курса"
+
+msgid "Courses"
+msgstr "Курсы"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Return to Course"
+msgstr "Вернуться к курсу"
+
+msgid "See Current Reading List"
+msgstr "Посмотреть актуальный список чтения"
+
+msgid "Update"
+msgstr "Обновить"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid " notes"
+msgstr "заметки"
+
+msgid "Save notes"
+msgstr "Сохранить заметки"
+
+msgid "edit notes"
+msgstr "Исправить заметки"
+
+msgid "items"
+msgstr "Предметы:"
+
+msgid "currently selected"
+msgstr "Выбраны в данный момент"
+
+msgid "Result"
+msgstr "Результат"
+
+msgid "Folder name"
+msgstr "Название папки"
+
+msgid "Back to the main list"
+msgstr "Вернуться к основному списку"
+
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+msgid "Contact"
+msgstr "Контакты"
+
+msgid "for assistance with this tool."
+msgstr "для помощи с данным инструментом."
+
+msgid "Download Export File"
+msgstr "Скачать файл "
+
+msgid "Import from Export File"
+msgstr "Импортировать файл"
+
+msgid "Download Student Data"
+msgstr "Скачать данные о студентах "
+
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "Не меняйте данные параметры без необходимости, так как это изменит настройки системы Вашей библиотеки. Запустите хотя бы один список чтения с помощью Вашей системы или свяжитесь с поддержкой  eds@ebscohost.com"
+
+msgid "If you change the "
+msgstr "Если вы измените "
+
+msgid "user id"
+msgstr "Логин"
+
+msgid "password"
+msgstr "Пароль"
+
+msgid "API profile ID"
+msgstr "профиль API"
+
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "зайдите снова в систему, чтобы статистика была наиболее точной. "
+
+msgid "Select"
+msgstr "Выбрать"
+
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "связку логина и пароля для авторизации в EBSCOAdmin. "
+
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "Логин и пароль должны относиться к группе ниже."
+
+msgid "Total Readings"
+msgstr "Публикаций всего"
+
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "Данный профиль EDS API выбран для использования в Curriculum Builder. Данный профиль должен быть присвоен аккаунту, выбранному выше. "
+
+msgid "EDS API Profile ID"
+msgstr "ID профиля EDS API"
+
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "Пользователи, которые могут редактировать списки"
+
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "по умолчанию, редактировать списки могут только преподаватели и инструкторы. Вы можете добавить и других пользователей. "
+
+msgid "Default:"
+msgstr "По умолчанию: "
+
+msgid "Proxy Prefix for CustomLinks"
+msgstr "Proxy Prefix для кастомных ссылок"
+
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "Если заполнено, прокси будут активны для всех ссылок Curriculum Builder."
+
+msgid "Examples"
+msgstr "Примеры"
+
+msgid "Proxy should encode target URL"
+msgstr "Прокси должны включать в себя исходные ссылки"
+
+msgid "If your proxy prefix ends with"
+msgstr "Если префикс прокси заканчивается на"
+
+msgid "this probably needs to be set to"
+msgstr "то возможно, стоит установить, как"
+
+msgid "otherwise"
+msgstr "иначе"
+
+msgid "is probably correct."
+msgstr "возможно правильно."
+
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "Если Ваша система использует HТTPS для доступа к Curriculum Builder, Ваше лого также будет доступно через HTTPS. "
+
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "Данный текст будет отображаться под названием списка.  Гиперссылки будут доступны автоматически. "
+
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "Данная ссылка в виде значка будет отображаться в левой стороне вкладки \"подробная информация\", и будет вести к EBSCO Discovery Service. Если оставить данное поле пустым, ссылка не появится."
+
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "Введите ссылку на CSS файл. Стиль будет применен в дизайне Curriculum Builder. Если Ваша система использует HTTPS, адрес должен использовать то же.  "
+
+msgid "Optional."
+msgstr "Необязательно. "
+
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "собирает имена студентов, адреса эл. почты, ID. Данная информация будет предоставлена только преподавателям, после того как студенты прочитают работы. Также, данная информация будет использована для внутренних отчетов библиотеки. Администратор может изменять данные настройки. "
+
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "Данные о студентах предоставлены не будут. Для отчетов использования библиотеки будут использованы только названия работ и ID пользователей, без имен. "
+
+msgid "Anonymized"
+msgstr "Анонимно"
+
+msgid "None"
+msgstr "Ничего "
+
+msgid "will collect no student activity. No reporting will be available."
+msgstr "Данные об активности собраны не будут. Статистика не будет доступна."
+
+msgid "Link to Help Pages"
+msgstr "Ссылка на страницу поддержки"
+
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "инструкторы и администратор смогут создать новые списки или выбрать готовые/похожие."
+
+msgid "is selected, all new lists will be blank."
+msgstr "выбрав, все списки будут пустыми."
+
+msgid "Hide"
+msgstr "Спрятать"
+
+msgid "and"
+msgstr "и"
+
+msgid "Available in Library Collection"
+msgstr "Доступны в коллекции библиотеки"
+
+msgid "Limiters"
+msgstr "Фильтры"
+
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "Спрятав данную опцию, пользователи не смогут удалить фильтр \"доступно в коллекции\" и добавлять сторонние публикации.  "
+
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "Ссылка предоставлена системой вашей библиотеки. Если система работает исправно, ссылка приведет пользователей обратно к курсу."
+
+msgid "Show First Full Text Link Only"
+msgstr "Отображать только первую ссылку на полный текст "
+
+msgid "Spanish"
+msgstr "Испанский"
+
+msgid "German"
+msgstr "Немецкий"
+
+msgid "Italian"
+msgstr "Итальянский"
+
+msgid "Portuguese"
+msgstr "Португальский"
+
+msgid "French"
+msgstr "Французский"
+
+msgid "Simplified Chinese"
+msgstr "Упрощенный китайский"
+
+msgid "traditional Chinese"
+msgstr "Традиционный китайский"
+
+msgid "Japanese"
+msgstr "Японский"
+
+msgid "Polish"
+msgstr "Польский"
+
+msgid "Swedish"
+msgstr "Шведский"
+
+msgid "Thai"
+msgstr "Тайский"
+
+msgid "Turkish"
+msgstr "Турецкий"
+
+msgid "Required"
+msgstr "Обязательно"
+
+msgid "e.g., Instructor"
+msgstr "Например, инструктор"
+
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Введите префикс прокси. Если вы используете WAM, введите домен {targetURLdomain}, чтобы уточнить WAM прокси"
+
+msgid "Email for contact person for tool"
+msgstr "Эл. почта поддержки инструмента "
+
+msgid "Branding text at top of screen"
+msgstr "текст организации на верху"
+
+msgid "e.g., See Record in EDS"
+msgstr "например, посмотреть в EDS "
+
+msgid "e.g., Search for Library Resources"
+msgstr "например, искать среди ресурсов библиотеки"
+
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Необязательно. Ссылка на CSS."
+
+msgid "URL for LibGuide or other help pages"
+msgstr "Ссылки на инструкции и вспомогательные страницы"
+
+msgid "e.g., a copyright notice"
+msgstr "например, политика конфиденциальности"
+
+msgid "Label for Link to EDS"
+msgstr "Ссылка на EDS в виде значка"
+
+msgid "Label for Search Box"
+msgstr "Значок поиска"
+
+msgid "Collect Student Data"
+msgstr "Данные студентов"
+
+msgid "URL to Library Home Page"
+msgstr "Ссылка на домашнюю страницу библиотеки"
+
+msgid "Search Library Resources"
+msgstr "Поиск среди ресурсов библиотеки"
+
+msgid "Update Settings"
+msgstr "Обновить настройки"
+
+msgid "Expander: "
+msgstr "Расширение поиска:"
+
+msgid "Edit"
+msgstr "Изменить"
+
+msgid "Relevance"
+msgstr "Релевантность"
+
+msgid "Source Type"
+msgstr "Тип источника"
+
+msgid "Subject"
+msgstr "Предмет"
+
+msgid "Publication"
+msgstr "Публикация "
+
+msgid "Geography"
+msgstr "География"
+
+msgid "Content Provider"
+msgstr "Поставщик информации"
+
+msgid "Academic Journal"
+msgstr "Научный журнал"
+
+msgid "Biographie"
+msgstr "Биография"
+
+msgid "Book"
+msgstr "Книга"
+
+msgid "Conference Material"
+msgstr "Материалы конференции"
+
+msgid "Magazine"
+msgstr "Журнал"
+
+msgid "New"
+msgstr "Новинка"
+
+msgid "Primary Source Document"
+msgstr "Документ из первоисточника"
+
+msgid "Report"
+msgstr "Отчет"
+
+msgid "Review"
+msgstr "Обзор"
+
+msgid "Trade Publication"
+msgstr "Публикация рынка"
+
+msgid "Date Newest"
+msgstr "Самая новая работа"
+
+msgid "Date Oldest"
+msgstr "Самая старая работа"
+
+msgid "Authors"
+msgstr "Авторы"
+
+msgid "Document Type"
+msgstr "Тип документа"
+
+msgid "Subject Terms"
+msgstr "Предметные термины"
+
+msgid "Author-Supplied Keywords"
+msgstr "Ключевые слова, предложенные авторами"
+
+msgid "Abstract"
+msgstr "Краткое содержание"
+
+msgid "Author Affiliations"
+msgstr "Авторские права"
+
+msgid "Accession Number"
+msgstr "Идентификационный номер"
+
+msgid "Publisher"
+msgstr "Издательство"
+
+msgid "Source"
+msgstr "Источник"
+
+msgid "Geographic Terms"
+msgstr "Географические термины"
+
+msgid "Academic Journals"
+msgstr "Научные журналы"
+
+msgid "Books"
+msgstr "Книги"
+
+msgid "Conference Materials"
+msgstr "Материалы конференций"
+
+msgid "Magazines"
+msgstr "Журналы"
+
+msgid "Biographies"
+msgstr "Биографии"
+
+msgid "News"
+msgstr "Новости"
+
+msgid "Primary Source Documents"
+msgstr "Документы из первоисточников"
+
+msgid "Reports"
+msgstr "Отчеты"
+
+msgid "Reviews"
+msgstr "Обзоры"
+
+msgid "Trade Publications"
+msgstr "Публикации рынка"
+
+msgid "Apply equivalent subjects"
+msgstr "Использовать похожие предметы"
+
+msgid "Apply related words"
+msgstr "Использовать связаванные термины"
+
+msgid "Also search within the full text of the articles"
+msgstr "Также, искать среди полнотекстовых статей"
+
+msgid "References Available"
+msgstr "Доступные отзывы"
+
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Журналы, одобренные экспертами"
+
+msgid "Library Home"
+msgstr "Домашняя страница библиотеки"
+
+msgid "Periodical"
+msgstr "Периодика"
+
+msgid "Selecting"
+msgstr "Выбор"
+
+msgid "Publication Year"
+msgstr "Год издания"
+
+msgid "You have no other reading lists."
+msgstr "Другие списки отсутствуют"
+
+msgid "No statistics to report yet."
+msgstr "Статистика еще недоступна"
+
+msgid "Select one:"
+msgstr "Выберите:"
+
+msgid "Hebrew"
+msgstr "Иврит"
+
+msgid "University"
+msgstr "Университет"
+
+msgid "Collection"
+msgstr "Коллекция"
+
+msgid "Generate list"
+msgstr "Создать список"
+
+msgid "Peer reviewed"
+msgstr "Одобрено экспертами"
+
+msgid "Category"
+msgstr "Категории"
+
+msgid "eBooks"
+msgstr "Электронные книги"
+
+msgid "Electronic Resources"
+msgstr "Электронные ресурсы"
+
+msgid "Non-Print Resources"
+msgstr "Непечатные ресурсы"
+
+msgid "Audio"
+msgstr "Аудио"
+
+msgid "Dissertations"
+msgstr "Диссертации и другие научные работы"
+
+msgid "Videos"
+msgstr "Видео"
+
+msgid "Maps"
+msgstr "Карты и графики"
+
+msgid "Series"
+msgstr "Серия"
+
+msgid "Publication Information"
+msgstr "Информация о публикации"
+
+msgid "Resource Type"
+msgstr "Тип ресурса"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Subjects"
+msgstr "Предметы"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Related ISBNs"
+msgstr "ISBN"
+
+msgid "Publisher Permissions"
+msgstr "Издательские ограничения"
+
+msgid "Print/Save"
+msgstr "Скачивание/Печать"
+
+msgid "Pages"
+msgstr "Страниц"
+
+msgid "Restricted"
+msgstr "Запрещено"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Allowed"
+msgstr "Разрешено"
+
+msgid "User"
+msgstr "пользователь"
+
+msgid "Geographic"
+msgstr "Географически"
+
+msgid "First page"
+msgstr "Со страницы"
