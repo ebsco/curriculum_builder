@@ -31,6 +31,8 @@
 ?>
 <?php
 $time = 0; // store for session only
+
+$oauth_consumer_key = decryptCookie($_COOKIE['admin_key']);
 if (! isset($_COOKIE['logged_in_cust_id'] ) ) {
   setcookie('message',encryptCookie("You were not logged in, please login"),$time,'/');
   setcookie('forward_to_admin',encryptCookie(" "),$time,'/');
@@ -184,11 +186,12 @@ include_once("app/app.php");
       <td><?php echo _("Language");?></td>
       <td>
 		<select name="language">
-      <option value="en_US.UTF-8" <?php if ($customparams['language'] == 'en_US.UTF-8') echo 'selected' ?>><?php echo _("English");?></option>
+			<option value="en_US.UTF-8" <?php if ($customparams['language'] == 'en_US.UTF-8') echo 'selected' ?>><?php echo _("English");?></option>
 			<option value="es_CO.UTF-8" <?php if ($customparams['language'] == 'es_CO.UTF-8') echo 'selected' ?>><?php echo _("Spanish");?></option>
 			<option value="de_DE.UTF-8" <?php if ($customparams['language'] == 'de_DE.UTF-8') echo 'selected' ?>><?php echo _("German");?></option>
+			<option value="pt_PT.UTF-8" <?php if ($customparams['language'] == 'pt_PT.UTF-8') echo 'selected' ?>>Português (Portugal)</option>
+			<option value="pt_BR.UTF-8" <?php if ($customparams['language'] == 'pt_BR.UTF-8') echo 'selected' ?>>Português (Brasil)</option>
 			<option value="it_IT.UTF-8" <?php if ($customparams['language'] == 'it_IT.UTF-8') echo 'selected' ?>><?php echo _("Italian");?></option>
-			<option value="pt_PT.UTF-8" <?php if ($customparams['language'] == 'pt_PT.UTF-8') echo 'selected' ?>><?php echo _("Portuguese");?></option>
 			<option value="fr_FR.UTF-8" <?php if ($customparams['language'] == 'fr_FR.UTF-8') echo 'selected' ?>><?php echo _("French");?></option>
 			<option value="th_TH.UTF-8" <?php if ($customparams['language'] == 'th_TH.UTF-8') echo 'selected' ?>><?php echo _("Thai");?></option>
 			<option value="zh_TW.UTF-8" <?php if ($customparams['language'] == 'zh_TW.UTF-8') echo 'selected' ?>><?php echo _("traditional Chinese");?></option>
@@ -198,6 +201,13 @@ include_once("app/app.php");
 			<option value="sv_SE.UTF-8" <?php if ($customparams['language'] == 'sv_SE.UTF-8') echo 'selected' ?>><?php echo _("Swedish");?></option>
 			<option value="he_IL.UTF-8" <?php if ($customparams['language'] == 'he_IL.UTF-8') echo 'selected' ?>><?php echo _("Hebrew");?></option>
             <option value="ko_KR.UTF-8" <?php if ($customparams['language'] == 'ko_KR.UTF-8') echo 'selected' ?>><?php echo _("Korean");?></option>
+
+            <option value="nl_NL.UTF-8" <?php if ($customparams['language'] == 'nl_NL.UTF-8') echo 'selected' ?>>Nederlands</option>
+            <option value="ar_AE.UTF-8" <?php if ($customparams['language'] == 'ar_AE.UTF-8') echo 'selected' ?>>عربي</option>
+
+            <option value="cs_CZ.UTF-8" <?php if ($customparams['language'] == 'cs_CZ.UTF-8') echo 'selected' ?>>Čeština</option>
+            <option value="el_GR.UTF-8" <?php if ($customparams['language'] == 'el_GR.UTF-8') echo 'selected' ?>>Ελληνικά</option>
+            <option value="ru_RU.UTF-8" <?php if ($customparams['language'] == 'ru_RU.UTF-8') echo 'selected' ?>>Русский</option>					
 		</select>
 	  </td>
 </tr>
@@ -223,15 +233,10 @@ include_once("app/app.php");
     <p><?php echo _("Select one:")." ";?></p>
         <select name="copyid" id="selectList">
     <?php
-    foreach ($consumeridsArray['logged_in_consumerid'] as $consumerid) {
-          $querystring = 'SELECT id FROM credentialconsumers WHERE credentialid = ' . decryptCookie($_COOKIE['logged_in_cust_id']) . ' AND consumerid = "' . $consumerid . '";';
-          $credconsumresults = mysqli_query($c,$querystring);
-          $credconsumrow = mysqli_fetch_array($credconsumresults);
-	  $credconsumer = $credconsumrow['id'];
 	  
-	  $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE credentialconsumerid = ? ORDER BY course;");
+	  $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE oauth_consumer_key = ? ORDER BY course;");
       
-	  $sql->bind_param('i', $credconsumer); // set parameter so it only pulls lists from the user's institution
+	  $sql->bind_param('s', $oauth_consumer_key); // set parameter so it only pulls lists from the user's institution
 	  $sql->execute();
 	  $sql->store_result();
 	  $sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel, $mylists_private, $mylists_last_access, $mylists_linkid); 
@@ -261,7 +266,6 @@ include_once("app/app.php");
       } else {
 	  echo '<p>You have no other reading lists.</p>';
       }
-    }
     ?>
         </select> <button onclick="launchlist(); return false;" id="previewbutton"><?php echo _("Preview Selected List");?></button>
 </div>
@@ -270,15 +274,10 @@ include_once("app/app.php");
 <?php
 	//create and execute the query.
     echo '<form id="mylist" action="delete_list.php" method="get"><select id="mylists" name="listid[]" multiple="multiple" size="15">';
-    foreach ($consumeridsArray['logged_in_consumerid'] as $consumerid) {
-          $querystring = 'SELECT id FROM credentialconsumers WHERE credentialid = ' . decryptCookie($_COOKIE['logged_in_cust_id']) . ' AND consumerid = "' . $consumerid . '";';
-          $credconsumresults = mysqli_query($c,$querystring);
-          $credconsumrow = mysqli_fetch_array($credconsumresults);
-	  $credconsumer = $credconsumrow['id'];
-	  
-	  $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE credentialconsumerid = ? ORDER BY last_access;");
+
+    $sql = $c->prepare("SELECT id, course, linklabel, private, last_access, linkid FROM lists WHERE oauth_consumer_key = ? ORDER BY last_access;");
       
-	  $sql->bind_param('i', $credconsumer); // set parameter so it only pulls lists from the user's institution
+	  $sql->bind_param('s', $oauth_consumer_key); // set parameter so it only pulls lists from the user's institution
 	  $sql->execute();
 	  $sql->store_result();
 	  $sql->bind_result($mylists_id, $mylists_course, $mylists_linklabel, $mylists_private, $mylists_last_access, $mylists_linkid); 
@@ -313,7 +312,6 @@ include_once("app/app.php");
       } else {
 	  echo '<p>You have no other reading lists.</p>';
       }
-    }
     echo '</select> <br /> <input type="submit" value="'._("Delete Selected Lists").'" name="submit" /></form>';
 ?></div><?php
     }

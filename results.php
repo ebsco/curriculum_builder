@@ -29,7 +29,7 @@ $amount = isset($clean['view'])?$clean['view']:'detailed';
 $mode = 'all';
 $expander = isset($clean['expander'])? $clean['expander']:'';
 $limiter = isset($clean['limiter'])? $clean['limiter']:'';
-$debug = isset($clean['debug'])? $clean['debug']:'';
+//$debug = isset($clean['debug'])? $clean['debug']:'';
 $Info = $api->getInfo();
 
 // If user come back from the detailed record 
@@ -43,7 +43,7 @@ if(isset($clean['back'] )&&isset($_SESSION['results'])){
 }
     
 } else if(isset($clean['back'])&&isset($clean['backpath'])){
-    $_SESSION['debug'] = "<p>PARAMS AFTER RESULTS.PHP: ".urldecode($clean['backpath'])."</p>";
+    //$_SESSION['debug'] = "<p>PARAMS AFTER RESULTS.PHP: ".urldecode($clean['backpath'])."</p>";
 
     $results = $api->apiSearch(urldecode($clean['backpath']));
 
@@ -85,7 +85,7 @@ if(isset($clean['back'] )&&isset($_SESSION['results'])){
     $params = array_merge($actions,$view);
     $url = $queryStringUrl.'&'.http_build_query($params);
 
-    $_SESSION['debug'] = "<p>PARAMS AFTER RESULTS.PHP: ".$url."</p>";
+    //$_SESSION['debug'] = "<p>PARAMS AFTER RESULTS.PHP: ".$url."</p>";
 
     $results = $api->apiSearch($url);    
     // Will save the result into the session with the new SessionToken as index    
@@ -120,7 +120,7 @@ if(isset($clean['back'] )&&isset($_SESSION['results'])){
     $params = http_build_query($refineActions);
     
     $url = $queryStringUrl.'&'.$params;
-    $_SESSION['debug'] = "<p>PARAMS AFTER RESULTS.PHP: ".$url."</p>";
+    //$_SESSION['debug'] = "<p>PARAMS AFTER RESULTS.PHP: ".$url."</p>";
     $results = $api->apiSearch($url);
 
     $_SESSION['results'] = $results;
@@ -192,7 +192,7 @@ if(isset($clean['back'] )&&isset($_SESSION['results'])){
                 $params .= "&limiter=".urlencode($selectedLimiter);
             }
         }
-    $_SESSION['debug'] = "<p>PARAMS AFTER RESULTS.PHP: ".$params."</p>";
+    //$_SESSION['debug'] = "<p>PARAMS AFTER RESULTS.PHP: ".$params."</p>";
 
     $results = $api->apiSearch($params);
     if (isset($results['queryString'])) {
@@ -217,9 +217,9 @@ if (isset($results['error'])) {
 }
 
 //save debug into session
-if($debug == 'y'||$debug == 'n'){
-    $_SESSION['debug'] = $debug;
-}
+// if($debug == 'y'||$debug == 'n'){
+    // $_SESSION['debug'] = $debug;
+// }
 
 // Variables used in view
 $variables = array(
@@ -235,7 +235,6 @@ $variables = array(
     'id'             => 'results',
     'Info'           => $Info,
     'backpath'       => urlencode(urlencode($backpath)) ? urlencode(urlencode($backpath)):'',
-    'debug'          => isset($_SESSION['debug'])? $_SESSION['debug']:'',
     'c'              => $c,
     'customparams'   => $customparams
     

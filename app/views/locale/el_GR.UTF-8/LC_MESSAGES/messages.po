@@ -1,0 +1,1017 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"X-Generator: Poedit 2.2.1\n"
+
+msgid "English"
+msgstr "English"
+
+msgid "Back to Reading List"
+msgstr "Επιστροφή στη Λίστα Ανάγνωσης"
+
+msgid " << Back to Results"
+msgstr " << Επιστροφή στα αποτελέσματα"
+
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr "& nbsp; & nbsp; & nbsp; & nbsp;"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message:"
+msgstr "Ωχ!  Φαίνεται ότι το άρθρο ενδέχεται να μην είναι πλέον διαθέσιμο στη βιβλιοθήκη σας.  Παρακαλείσθε να ενημερώσετε τη βιβλιοθήκη και τον καθηγητή \"σας για αυτό το μήνυμα σφάλματος:"
+
+msgid "This record from "
+msgstr "Αυτό το αρχείο από "
+
+msgid " cannot be displayed to guests."
+msgstr " δεν μπορεί να εμφανιστεί στους επισκέπτες."
+
+msgid "Login</a> for full access."
+msgstr "Συνδεθείτε </a> να αποκτήσετε πλήρη πρόσβαση."
+
+msgid "Add to Reading List"
+msgstr "Προσθήκη στη λίστα ανάγνωσης"
+
+msgid "Remove from Reading List"
+msgstr "Κατάργηση από τη λίστα ανάγνωσης"
+
+msgid "PDF full text"
+msgstr "Πλήρες κείμενο PDF"
+
+msgid "HTML full text"
+msgstr "Πλήρες κείμενο HTML"
+
+msgid "HTML Full Text"
+msgstr "Πλήρες κείμενο HTML"
+
+msgid "Full Text:"
+msgstr "Πλήρες κείμενο:"
+
+msgid "PubType:"
+msgstr "PubType:"
+
+msgid "Database:"
+msgstr "Βάση δεδομένων:"
+
+msgid "Statistics"
+msgstr "Στατιστικά στοιχεία"
+
+msgid "Curriculum Builder Settings"
+msgstr "Ρυθμίσεις Οδηγού Δημιουργίας Διδακτέας ύλης"
+
+msgid "EBSCO User ID"
+msgstr "Αναγνωριστικό χρήστη EBSCO"
+
+msgid "EBSCO Password"
+msgstr "Κωδικός πρόσβασης EBSCO"
+
+msgid "Your EDS API Profile"
+msgstr "Το προφίλ EDS API  σας"
+
+msgid "URL for your library logo"
+msgstr "Διεύθυνση URL για το λογότυπο της βιβλιοθήκης σας"
+
+msgid "Contact Email"
+msgstr "Email επικοινωνίας"
+
+msgid "Link to Library Home Page"
+msgstr "Σύνδεση με την Αρχική σελίδα της Βιβλιοθήκης"
+
+msgid "Text to display at top of screen"
+msgstr "Κείμενο που εμφανίζεται στο επάνω μέρος της οθόνης"
+
+msgid "Link to EDS Label"
+msgstr "Σύνδεση με την ετικέτα EDS"
+
+msgid "Custom CSS File"
+msgstr "Προσαρμοσμένο αρχείο CSS"
+
+msgid "Collect student names as they access assigned readings?"
+msgstr "Καταγραφή των ονομάτων των σπουδαστών καθώς αποκτούν πρόσβαση στο ανατεθειμένο υλικό προς ανάγνωση;"
+
+msgid "Yes"
+msgstr "Ναι"
+
+msgid "No"
+msgstr "Όχι"
+
+msgid "Footer text"
+msgstr "Κείμενο υποσέλιδου"
+
+msgid "Copy Course Support"
+msgstr "Αντιγραφή υποστήριξης μαθημάτων"
+
+msgid "Remove Full Text and Available in Library Collection Limiters from view"
+msgstr "Κατάργηση του Πλήρους κειμένου και της επιλογής Διαθέσιμο στους περιορισμούς συλλογής βιβλιοθηκών από την προβολή"
+
+msgid "Show 'Return to Course' Link at top of page"
+msgstr "Εμφάνιση του συνδέσμου \"Επιστροφή στο μάθημα\" στο επάνω μέρος της σελίδας"
+
+msgid "Open all Lists in a New Window"
+msgstr "Άνοιγμα όλων των λιστών σε νέο παράθυρο"
+
+msgid "View Lists"
+msgstr "Προβολή λιστών"
+
+msgid "Select one: "
+msgstr "Επέλεξε ένα: "
+
+msgid "Preview Selected List"
+msgstr "Προεπισκόπηση της επιλεγμένης λίστας"
+
+msgid "Delete Lists"
+msgstr "Διαγραφή λιστών"
+
+msgid "Delete Selected Lists"
+msgstr "Διαγραφή επιλεγμένων λιστών"
+
+msgid "Basic Search"
+msgstr "Βασική αναζήτηση"
+
+msgid "Keyword"
+msgstr "Λέξη κλειδί"
+
+msgid "Author"
+msgstr "Συντάκτης"
+
+msgid "Title"
+msgstr "Τίτλος"
+
+msgid "View this list"
+msgstr "Προβολή αυτής της λίστας"
+
+msgid "Untitled List"
+msgstr "Λίστα χωρίς τίτλους"
+
+msgid "All Public Lists:"
+msgstr "Όλες οι δημόσιες λίστες:"
+
+msgid "There are no public reading lists to copy."
+msgstr "Δεν υπάρχουν δημόσιες λίστες ανάγνωσης για αντιγραφή."
+
+msgid "Options"
+msgstr "Επιλογές"
+
+msgid "Include Notes in the Import Process"
+msgstr "Συμπερίληψη σημειώσεων στη διαδικασία εισαγωγής"
+
+msgid "Preserve Sort Order"
+msgstr "Διατήρηση της σειράς ταξινόμησης"
+
+msgid "Check/Uncheck All"
+msgstr "Επιλέξτε / Καταργήστε την επιλογή όλων"
+
+msgid "Notes:"
+msgstr "Σημειώσεις:"
+
+msgid "There are no readings in this list."
+msgstr "Δεν υπάρχουν υλικά ανάγνωσης σε αυτήν τη λίστα."
+
+msgid "Copy Selected Readings"
+msgstr "Αντιγραφή επιλεγμένων υλικών ανάγνωσης"
+
+msgid "You are unauthorized to access this page."
+msgstr "Δεν έχετε δικαίωμα πρόσβασης σε αυτήν τη σελίδα."
+
+msgid "You must be logged in to access that service, please login"
+msgstr "Πρέπει να είστε συνδεδεμένοι για να αποκτήσετε πρόσβαση στην υπηρεσία αυτή -  παρακαλούμε συνδεθείτε"
+
+msgid "Warning: you are about to delete the following lists permanently.  This action cannot be undone.  Any instructor that tries to access these lists from their course will find an empty list."
+msgstr "Προειδοποίηση: πρόκειται να διαγράψετε μόνιμα τις ακόλουθες λίστες.  Αυτή η πράξη δε μπορεί να αναιρεθεί.  Κάθε εκπαιδευτής που προσπαθεί να έχει πρόσβαση σε αυτές τις λίστες από το μάθημά τους θα βρίσκει μια κενή λίστα."
+
+msgid "NEVER accessed since update"
+msgstr "ΠΟΤΕ δεν πραγματοποιήθηκε πρόσβαση από την ενημέρωση"
+
+msgid "LAST ACCESSED"
+msgstr "ΤΕΛΕΥΤΑΙΑ ΠΡΟΣΒΑΣΗ"
+
+msgid "DELETE"
+msgstr "ΔΙΑΓΡΑΦΗ"
+
+msgid "this list"
+msgstr "αυτής της λίστας"
+
+msgid "these "
+msgstr "αυτών των  "
+
+msgid "lists"
+msgstr "λιστών"
+
+msgid "or"
+msgstr "ή"
+
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+msgid "No lists selected to delete."
+msgstr "Δεν έχουν επιλεγεί λίστες για διαγραφή."
+
+msgid "Back to Administration Screen"
+msgstr "Επιστροφή στην οθόνη διαχείρισης"
+
+msgid "Oops! An error occurred. The data for one or more records is incomplete. Please try again, being sure to include the entire record for each reading."
+msgstr "Ωχ! Παρουσιάστηκε σφάλμα. Τα δεδομένα για ένα ή περισσότερα αρχεία είναι ελλιπή. Δοκιμάστε ξανά, φροντίζοντας να συμπεριλάβετε ολόκληρη την εγγραφή για κάθε υλικό ανάγνωσης."
+
+msgid "Enter bibliographic info from the list into this box:"
+msgstr "Εισάγετε βιβλιογραφικές πληροφορίες από τη λίστα σε αυτό το πλαίσιο:"
+
+msgid "CB Version 2.3"
+msgstr "CB Έκδοση 2.3"
+
+msgid "List ID"
+msgstr "Αναγνωριστικό λίστας"
+
+msgid "Login"
+msgstr "Σύνδεση"
+
+msgid "Invalid login -- pleasae try again"
+msgstr "Μη έγκυρη σύνδεση - δοκιμάστε ξανά"
+
+msgid "Username:"
+msgstr "Όνομα Χρήστη:"
+
+msgid "Password:"
+msgstr "Κωδικός πρόσβασης:"
+
+msgid "Successfully logged in."
+msgstr "Έχετε συνδεθεί με επιτυχία."
+
+msgid "Successfully updated expiration date for "
+msgstr "Η ημερομηνία λήξης ενημερώθηκε με επιτυχία για "
+
+msgid "Successfully deleted "
+msgstr "Διαγράφηκε με επιτυχία "
+
+msgid "You cannot have an empty Consumer Key or Password, and you must set an expiration date.  Please try again."
+msgstr "Δεν μπορείτε να έχετε κενό Κλειδί Καταναλωτή ή Κωδικό Πρόσβασης και πρέπει να ορίσετε μια ημερομηνία λήξης.  Προσπαθήστε ξανά."
+
+msgid "Consumer key "
+msgstr "Το Κλειδί Καταναλωτή "
+
+msgid "already exists. Please delete the existing one first before creating a new one."
+msgstr "υπάρχει ήδη. Διαγράψτε πρώτα το υφιστάμενο πριν δημιουργήσετε ένα νέο."
+
+msgid "Successfully inserted consumer key: "
+msgstr "Επιτυχής εισαγωγή κλειδί καταναλωτή: "
+
+msgid "Unrecognized Actions.  Try again."
+msgstr "Μη αναγνωρισμένες ενέργειες.  Προσπαθήστε ξανά."
+
+msgid "Create New Access Key Pair"
+msgstr "Δημιουργία νέου ζεύγους κλειδιών πρόσβασης"
+
+msgid "Consumer Key"
+msgstr "Κλειδί καταναλωτή"
+
+msgid "Secret"
+msgstr "Μυστικό"
+
+msgid "Expiration Date"
+msgstr "Ημερομηνία Λήξης"
+
+msgid "Edit or Delete Existing Access Key Pair"
+msgstr "Επεξεργασία ή διαγραφή υφιστάμενων ζευγών κλειδιών πρόσβασης"
+
+msgid "Warning:"
+msgstr "Προειδοποίηση:"
+
+msgid "Removing a Consumer Key / Secret pairing or setting an incorrect expiration date will deny access to the reading list to any site using that key pair."
+msgstr "Η κατάργηση ενός ζεύγους Κλειδιού Καταναλωτή / Μυστικού ή ο ορισμός μιας εσφαλμένης ημερομηνίας λήξης θα εμποδίσει την πρόσβαση στη λίστα ανάγνωσης σε οποιονδήποτε ιστότοπο που χρησιμοποιεί αυτό το ζεύγος κλειδιών."
+
+msgid "Expiration"
+msgstr "Λήξη"
+
+msgid "Configure / Admin"
+msgstr "Διαμόρφωση / Διαχείριση"
+
+msgid "Are you sure you want to delete this key"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το κλειδί"
+
+msgid "You have been logged out."
+msgstr "Έχετε αποσυνδεθεί."
+
+msgid "Your login credentials are incorrect.  Please try again."
+msgstr "Τα διαπιστευτήρια σύνδεσης είναι λανθασμένα.  Προσπαθήστε ξανά."
+
+msgid "Manage Access to the Reading List Tool"
+msgstr "Διαχείριση πρόσβασης στο εργαλείο λίστας ανάγνωσης"
+
+msgid "Create New Key Pair"
+msgstr "Δημιουργία νέου ζεύγους κλειδιών"
+
+msgid "Log Out"
+msgstr "Αποσύνδεση"
+
+msgid "Notes may not save properly."
+msgstr "Οι σημειώσεις ενδέχεται να μην αποθηκευτούν σωστά."
+
+msgid "Import from Existing List"
+msgstr "Εισαγωγή από την Υφιστάμενη λίστα"
+
+msgid "Import from EBSCO Folder (beta)"
+msgstr "Εισαγωγή από το φάκελο EBSCO (beta)"
+
+msgid "This list is"
+msgstr "Αυτή η λίστα είναι"
+
+msgid "public"
+msgstr "δημόσια"
+
+msgid "private"
+msgstr "ιδιωτική"
+
+msgid "student(s) have accessed this list."
+msgstr "οι σπουδαστές έχουν πρόσβαση στη λίστα αυτή."
+
+msgid "Students that have accessed this list:"
+msgstr "Οι σπουδαστές που έχουν αποκτήσει πρόσβαση σε αυτή τη λίστα:"
+
+msgid "No students have accessed this list.  A list of names will appear here when at least one student accesses it."
+msgstr "Κανένας σπουδαστής δεν έχει αποκτήσει πρόσβαση σε αυτήν τη λίστα.  Μια λίστα με τα ονόματα θα εμφανιστεί εδώ όταν τουλάχιστον ένας σπουδαστής έχει αποκτήσει πρόσβαση σε αυτήν."
+
+msgid "Add Folder"
+msgstr "Προσθήκη φακέλου"
+
+msgid "Create Folder"
+msgstr "Δημιουργία φακέλου"
+
+msgid "Add Text or Instructions"
+msgstr "Προσθέστε κείμενο ή οδηγίες"
+
+msgid "Text"
+msgstr "Κείμενο"
+
+msgid "Folder"
+msgstr "Φάκελος"
+
+msgid "e.g., Read Chapter 5 in Textbook"
+msgstr "π.χ. Διαβάστε το Κεφάλαιο 5 στο Βιβλίο Εργασιών"
+
+msgid "Main list of Readings"
+msgstr "Κύρια λίστα υλικών ανάγνωσης"
+
+msgid "Add Web Resource"
+msgstr "Προσθήκη πόρων ιστού"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "e.g., http://library.edu/"
+msgstr "π.χ., http://library.edu/"
+
+msgid "Link label"
+msgstr "Ετικέτα σύνδεσης"
+
+msgid " Back to main list"
+msgstr " Επιστροφή στην κύρια λίστα"
+
+msgid "This list has folders:"
+msgstr "Αυτή η λίστα έχει φακέλους:"
+
+msgid "Sort Order:"
+msgstr "Σειρά ταξινόμησης:"
+
+msgid "Removing..."
+msgstr "Κατάργηση..."
+
+msgid "Move to folder"
+msgstr "Μετακίνηση στον φάκελο"
+
+msgid "No Folder"
+msgstr "Δεν υπάρχει φάκελος"
+
+msgid "Delete"
+msgstr "Διαγραφή"
+
+msgid "There was a problem loading details for this reading.  Your library may no longer subscribe to this item, or it may be a duplicate of another reading already in this list.  Please contact your library for further assistance if you have any difficulty accessing this item."
+msgstr "Παρουσιάστηκε πρόβλημα κατά τη φόρτωση των λεπτομερειών για αυτό το υλικό ανάγνωσης.  Η βιβλιοθήκη σας δεν μπορεί πλέον να εγγραφεί σε αυτό το στοιχείο ή μπορεί να είναι αντίγραφο κάποιου άλλου υλικού ανάγνωσης που βρίσκεται ήδη σε αυτήν τη λίστα.  Επικοινωνήστε με τη βιβλιοθήκη σας για περαιτέρω βοήθεια αν έχετε δυσκολία πρόσβασης σε αυτό το στοιχείο."
+
+msgid "By : "
+msgstr "Από: "
+
+msgid "Published:"
+msgstr "Εκδόθηκε:"
+
+msgid "Start Page: "
+msgstr "Αρχική σελίδα: "
+
+msgid "Page Count: "
+msgstr "Αριθμός σελίδων: "
+
+msgid "Language:"
+msgstr "Γλώσσα:"
+
+msgid "Full Text"
+msgstr "Πλήρες κείμενο"
+
+msgid "Online Access"
+msgstr "Ηλεκτρονική πρόσβαση"
+
+msgid "Students that have clicked this reading: "
+msgstr "Οι σπουδαστές που έχουν κάνει κλικ σε αυτό το υλικό ανάγνωσης:  "
+
+msgid "student(s) have clicked this reading."
+msgstr "οι σπουδαστές έχουν κάνει κλικ σε αυτό το υλικό ανάγνωσης."
+
+msgid "No students have read this item.  A list of names will appear here when at least one student clicks this item."
+msgstr "Κανένας σπουδαστής δεν έχει διαβάσει αυτό το στοιχείο.   Θα εμφανιστεί μια λίστα με ονόματα όταν τουλάχιστον ένας σπουδαστής κάνει κλικ σε αυτό το στοιχείο."
+
+msgid "Characters remaining"
+msgstr "Χαρακτήρες που απομένουν"
+
+msgid "Removing... please wait."
+msgstr "Κατάργηση... παρακαλώ περιμένετε."
+
+msgid "Update Notes and Sort Order"
+msgstr "Ενημέρωση σημειώσεων και σειράς ταξινόμησης"
+
+msgid "Currently, there are no readings."
+msgstr "Επί του παρόντος, δεν υπάρχουν υλικά προς ανάγνωση."
+
+msgid "Select a folder above to see readings."
+msgstr "Επιλέξτε έναν φάκελο παραπάνω για να δείτε τα υλικά προς ανάγνωση."
+
+msgid "Currently, there are no readings on this list."
+msgstr "Επί του παρόντος, δεν υπάρχουν υλικά προς ανάγνωση σε αυτή τη λίστα."
+
+msgid "<< Back to Results"
+msgstr "<< Επιστροφή στα αποτελέσματα"
+
+msgid "Retrieve response XML"
+msgstr "Ανάκτηση απόκρισης XML"
+
+msgid "Uh oh!  It looks like the article may no longer be available through your library.  Please let your library and teacher know about this error message: "
+msgstr "Ωχ!  Φαίνεται ότι το άρθρο ενδέχεται να μην είναι πλέον διαθέσιμο στη βιβλιοθήκη σας.  Παρακαλείσθε να ενημερώσετε τη βιβλιοθήκη και τον δάσκαλο σας για αυτό το μήνυμα σφάλματος: "
+
+msgid "This record from"
+msgstr "Αυτό το αρχείο από"
+
+msgid "cannot be displayed to guests."
+msgstr "δεν μπορεί να εμφανιστεί στους επισκέπτες."
+
+msgid "for full access."
+msgstr "για πλήρη πρόσβαση."
+
+msgid "See it in EDS"
+msgstr "Δείτε το στο EDS"
+
+msgid " Online Access"
+msgstr " Ηλεκτρονική πρόσβαση"
+
+msgid "Refine Search"
+msgstr "Περιορισμός αναζήτησης"
+
+msgid "Remove Facets"
+msgstr "Κατάργηση όψεων"
+
+msgid "Limiter: "
+msgstr "Στοιχείο περιορισμού "
+
+msgid "Limit your results"
+msgstr "Περιορίστε τα αποτελέσματά σας"
+
+msgid "Expand your results"
+msgstr "Διευρύνετε τα αποτελέσματά σας"
+
+msgid "Search response XML"
+msgstr "Αναζήτηση απόκρισης XML"
+
+msgid "Results"
+msgstr "Αποτελέσματα"
+
+msgid "Showing"
+msgstr "Προβολή"
+
+msgid "of"
+msgstr "από"
+
+msgid "for"
+msgstr "για"
+
+msgid "Sort"
+msgstr "Ταξινόμηση"
+
+msgid "Page options"
+msgstr "Επιλογές σελίδας"
+
+msgid "Detailed"
+msgstr "Αναλυτικές"
+
+msgid "Brief"
+msgstr "Περιεκτικές"
+
+msgid "Title Only"
+msgstr "Μόνο ο τίτλος"
+
+msgid "Results per page"
+msgstr "Αποτελέσματα ανά σελίδα"
+
+msgid "Research Starter"
+msgstr "Στοιχείο εκκίνησης έρευνας"
+
+msgid "for full access"
+msgstr "για πλήρη πρόσβαση"
+
+msgid "Published: "
+msgstr "Εκδόθηκε: "
+
+msgid "No results were found."
+msgstr "Δεν βρέθηκαν αποτελέσματα."
+
+msgid "Result #"
+msgstr "Αποτέλεσμα αρ."
+
+msgid "Title is not available"
+msgstr "Ο τίτλος δεν είναι διαθέσιμος"
+
+msgid "By :"
+msgstr "Από:"
+
+msgid "Start Page:"
+msgstr "Αρχική σελίδα:"
+
+msgid "Page Count:"
+msgstr "Αριθμός σελίδων:"
+
+msgid "Abstract:"
+msgstr "Σύνοψη:"
+
+msgid "Subjects:"
+msgstr "Θεματικοί άξονες:"
+
+msgid "Key:"
+msgstr "Λέξη κλειδί:"
+
+msgid "Secret:"
+msgstr "Μυστικό:"
+
+msgid "Administration"
+msgstr "Διαχείριση"
+
+msgid "Total Lists"
+msgstr "Σύνολο λιστών"
+
+msgid "Total People Using Tool"
+msgstr "Σύνολο ατόμων που χρησιμοποιούν το εργαλείο"
+
+msgid "Users"
+msgstr "Χρήστες"
+
+msgid "Total Courses Using Tool"
+msgstr "Σύνολο μαθημάτων που χρησιμοποιούν το εργαλείο"
+
+msgid "Courses"
+msgstr "Μαθήματα"
+
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgid "Return to Course"
+msgstr "Επιστροφή στο μάθημα"
+
+msgid "See Current Reading List"
+msgstr "Προβολή της τρέχουσας λίστας υλικών προς ανάγνωση"
+
+msgid "Update"
+msgstr "Ενημέρωση"
+
+msgid "Add"
+msgstr "Προσθήκη"
+
+msgid " notes"
+msgstr " σημειώσεων"
+
+msgid "Save notes"
+msgstr "Αποθήκευση σημειώσεων"
+
+msgid "edit notes"
+msgstr "επεξεργασία σημειώσεων"
+
+msgid "items"
+msgstr "Στοιχεία"
+
+msgid "currently selected"
+msgstr "τρέχοντα επιλεγμένα"
+
+msgid "Result"
+msgstr "Αποτέλεσμα"
+
+msgid "Folder name"
+msgstr "Ονομασία φακέλου"
+
+msgid "Back to the main list"
+msgstr "Επιστροφή στην κύρια λίστα"
+
+msgid "Save Changes"
+msgstr "Αποθήκευση Αλλαγών"
+
+msgid "Contact"
+msgstr "Επικοινωνία"
+
+msgid "for assistance with this tool."
+msgstr "για βοήθεια με αυτό το εργαλείο."
+
+msgid "Download Export File"
+msgstr "Λήψη του αρχείου εξαγωγής"
+
+msgid "Import from Export File"
+msgstr "Εισαγωγή από αρχείο εξαγωγής"
+
+msgid "Download Student Data"
+msgstr "Λήψη στοιχείων σπουδαστών"
+
+msgid "Be careful editing these settings, as they will override the settings originally set up in your LMS's LTI configuration screen.  Please launch at least one reading list from your LMS to populate these fields, or contact eds@ebscohost.com for assistance with these settings."
+msgstr "Προσοχή στην επεξεργασία αυτών των ρυθμίσεων, καθώς θα παρακάμψουν τις ρυθμίσεις που είχαν ρυθμιστεί αρχικά στην οθόνη διαμόρφωσης LTI της LMS.  Εκκινήστε τουλάχιστον μία λίστα ανάγνωσης από την LMS σας για να συμπληρώσετε αυτά τα πεδία ή επικοινωνήστε με την διεύθυνση eds@ebscohost. com για βοήθεια σχετικά με αυτές τις ρυθμίσεις."
+
+msgid "If you change the "
+msgstr "Εάν αλλάξετε  "
+
+msgid "user id"
+msgstr "το αναγνωριστικό χρήστη"
+
+msgid "password"
+msgstr "τον κωδικό πρόσβασης"
+
+msgid "API profile ID"
+msgstr "Αναγνωριστικό προφίλ API"
+
+msgid "you will need to log out and log back in to see accurate statistics and lists."
+msgstr "θα χρειαστεί να αποσυνδεθείτε και να συνδεθείτε ξανά για να δείτε τα ακριβή στατιστικά στοιχεία και τις λίστες."
+
+msgid "Select"
+msgstr "Επιλέξτε"
+
+msgid "a User ID & Password combo from EBSCOadmin's Authentication section."
+msgstr "ένα σύνθετο αναγνωριστικό χρήστη & κωδικό πρόσβασης από την ενότητα Πιστοποίηση χρήστη (Authentication) του Διαχειριστή του EBSCO."
+
+msgid "The username/password combo must be associated with the group containing the profile specified below."
+msgstr "Ο συνδυασμός ονόματος  χρήστη / κωδικού πρόσβασης πρέπει να συσχετιστεί με την ομάδα που περιέχει το προφίλ που καθορίζεται παρακάτω."
+
+msgid "Total Readings"
+msgstr "Σύνολο υλικών προς ανάγνωση"
+
+msgid "This the the EDS API profile you want to use in Curriculum Builder. It needs to be in the group that the User ID and Password you entered above has access to."
+msgstr "Αυτό είναι το προφίλ API EDS που θέλετε να χρησιμοποιήσετε στην εφαρμογή δημιουργίας της διδακτέας ύλης. Πρέπει να βρίσκεται στην ομάδα στην οποία έχει πρόσβαση το αναγνωριστικό χρήστη και ο κωδικός πρόσβασης που καταχωρίσατε παραπάνω."
+
+msgid "EDS API Profile ID"
+msgstr "Αναγνωριστικό προφίλ API EDS"
+
+msgid "LMS Roles that can edit lists (comma-separated)"
+msgstr "Ρόλοι LMS που μπορούν να επεξεργαστούν λίστες (διαχωρισμένες με κόμμα)"
+
+msgid "By default, only Instructors and Teaching Assistants can edit lists. However, you can add roles here to enable other types of users to edit lists."
+msgstr "Από προεπιλογή, μόνο οι εκπαιδευτικοί και οι βοηθοί διδασκαλίας μπορούν να επεξεργάζονται λίστες. Ωστόσο, μπορείτε να προσθέσετε ρόλους εδώ για να επιτρέψετε και σε άλλους τύπους χρηστών να επεξεργάζονται τις λίστες."
+
+msgid "Default:"
+msgstr "Προεπιλογή:"
+
+msgid "Proxy Prefix for CustomLinks"
+msgstr "Πρόθεμα διακομιστή μεσολάβησης για CustomLinks"
+
+msgid "If filled in, this proxy will be applied to all CustomLinks that appear in Curriculum Builder."
+msgstr "Αν συμπληρωθεί, αυτός ο διακομιστής μεσολάβησης θα εφαρμοστεί σε όλες τα CustomLinks που εμφανίζονται στην εφαρμογή δημιουργίας διδακτέας ύλης."
+
+msgid "Examples"
+msgstr "Παραδείγματα"
+
+msgid "Proxy should encode target URL"
+msgstr "Ο διακομιστής μεσολάβησης πρέπει να κωδικοποιεί τη διεύθυνση URL προορισμού"
+
+msgid "If your proxy prefix ends with"
+msgstr "Εάν το πρόθεμα του διακομιστή μεσολάβησης τελειώνει με"
+
+msgid "this probably needs to be set to"
+msgstr "αυτό πρέπει να ρυθμιστεί σε"
+
+msgid "otherwise"
+msgstr "σε διαφορετική περίπτωση"
+
+msgid "is probably correct."
+msgstr "είναι πιθανώς σωστό."
+
+msgid "If your LMS accesses Curriculum Builder via HTTPS, your logo should also be available via HTTPS."
+msgstr "Αν το LMS σας έχει πρόσβαση στην εφαρμογή δημιουργίας διδακτέας ύλης μέσω HTTPS, το λογότυπό σας πρέπει και αυτό να είναι διαθέσιμο μέσω HTTPS."
+
+msgid "This text will appear underneath the title of the list in the header. URLs will automatically be hyperlinked."
+msgstr "Αυτό το κείμενο θα εμφανιστεί κάτω από τον τίτλο της λίστας στην κεφαλίδα. Οι διευθύνσεις URL θα συνδέονται αυτόματα με υπερσύνδεση."
+
+msgid "This is the label for the link that will appear on the left side of detailed records that directs the user to the EBSCO Discovery Service record for the reading. If left blank, no link to EDS will appear."
+msgstr "Αυτή είναι η ετικέτα του συνδέσμου που θα εμφανιστεί στην αριστερή πλευρά των αναλυτικών αρχείων και θα κατευθύνει το χρήστη στο αρχείο της Discovery Service του EBSCO για την ανάγνωση. Αν παραμείνει κενό, δεν θα εμφανιστεί σύνδεσμος για την EDS."
+
+msgid "Enter the URL of a CSS file. Styles in this file will be applied to Curriculum Builder screens. Must be at an HTTPS address if your LMS is HTTPS only."
+msgstr "Καταχωρίστε τη διεύθυνση URL ενός αρχείου CSS. Οι μορφές σε αυτό το αρχείο θα εφαρμοστούν στις οθόνες της εφαρμογής δημιουργίας διδακτέας ύλης. Πρέπει να είναι σε μια διεύθυνση HTTPS, αν το LMS σας είναι μόνο HTTPS."
+
+msgid "Optional."
+msgstr "Προαιρετικό."
+
+msgid "will collect students names, email addresses, and IDs. These data will be used to inform course instructors when a student clicks on a reading. It will also populate these fields in the reports provided to the library. To disable email collection only, your LMS instructor can elect to NOT share this information with the tool provider."
+msgstr "θα συγκεντρώσει τα ονόματα των σπουδαστών, τις διευθύνσεις ηλεκτρονικού ταχυδρομείου και τα αναγνωριστικά των χρηστών. Αυτά τα δεδομένα θα χρησιμοποιηθούν για να ενημερώνουν τους διδάσκοντες όταν ένας σπουδαστής κάνει κλικ σε ένα υλικό ανάγνωσης. Επίσης, θα συμπληρώσει αυτά τα πεδία στις αναφορές που παρέχονται στη βιβλιοθήκη. Για να απενεργοποιήσετε μόνο τη συλλογή διευθύνσεων ηλεκτρονικού ταχυδρομείου, ο εκπαιδευτής του LMS μπορεί να επιλέξει να ΜΗΝ μοιράζεται αυτές τις πληροφορίες με τον πάροχο των εργαλείων."
+
+msgid "will not provide faculty with names of students who clicked on readings. However, libraries will be provided with a report showing when and which readings were accessed with only the LMS userID."
+msgstr "δεν θα παράσχει στην σχολή ονόματα σπουδαστών που έκαναν κλικ στα υλικά προς ανάγνωση. Ωστόσο, στις βιβλιοθήκες θα παρέχεται μια αναφορά που θα δείχνει πότε και με ποια υλικά ανάγνωσης προσπελάστηκαν μόνο με το αναγνωριστικό χρήστη LMS."
+
+msgid "Anonymized"
+msgstr "Ανωνυμοποιημένα"
+
+msgid "None"
+msgstr "Κανένα"
+
+msgid "will collect no student activity. No reporting will be available."
+msgstr "δεν θα συλλέγει καμία δραστηριότητα σπουδαστών. Δεν θα υπάρχουν διαθέσιμες αναφορές."
+
+msgid "Link to Help Pages"
+msgstr "Σύνδεση στις σελίδες βοήθειας"
+
+msgid "for this option means instructors will be prompted at the launch of a new list to either create a new list from scratch, or select from a list of similarly named lists to use to prepopulate the new list. If"
+msgstr "για αυτή την επιλογή, θα ζητηθεί από τους εκπαιδευτικούς κατά την εκκίνηση μιας νέας λίστας είτε για να δημιουργήσουν μια νέα λίστα από το μηδέν είτε να επιλέξουν από έναν κατάλογο λιστών παρόμοιας ονομασίας για την προσυμπλήρωση της νέας λίστας. Αν"
+
+msgid "is selected, all new lists will be blank."
+msgstr "έχει επιλεχθεί, όλες οι νέες λίστες θα είναι κενές."
+
+msgid "Hide"
+msgstr "Απόκρυψη"
+
+msgid "and"
+msgstr "και"
+
+msgid "Available in Library Collection"
+msgstr "Διατίθεται στη συλλογή βιβλιοθηκών"
+
+msgid "Limiters"
+msgstr "Στοιχεία περιορισμού"
+
+msgid "Hiding these limiters will prevent faculty from unchecking these, making it impossible to add items outside of your collections to the reading list."
+msgstr "Η απόκρυψη αυτών των στοιχείων περιορισμού θα αποτρέψει την αφαίρεση της επιλογής από το διδακτικό προσωπικό, καθιστώντας αδύνατη την προσθήκη στοιχείων εκτός των συλλογών σας στη λίστα ανάγνωσης."
+
+msgid "This link is provided by the LMS. If the LMS is configured correctly, it will redirect the user back to the course's site."
+msgstr "Αυτός ο σύνδεσμος παρέχεται από τη LMS. Εάν η LMS έχει ρυθμιστεί σωστά, θα παραπέμπει τον χρήστη στον ιστοτόπο του μαθήματος."
+
+msgid "Show First Full Text Link Only"
+msgstr "Εμφάνιση μόνο του πρώτου συνδέσμου πλήρους κειμένου"
+
+msgid "Language"
+msgstr "Γλώσσα"
+
+msgid "Spanish"
+msgstr "Ισπανικά"
+
+msgid "German"
+msgstr "Γερμανικά"
+
+msgid "Italian"
+msgstr "Italiano"
+
+msgid "Portuguese"
+msgstr "Πορτογαλικά"
+
+msgid "French"
+msgstr "Γαλλικά"
+
+msgid "Simplified Chinese"
+msgstr "Απλοποιημένα Κινέζικα"
+
+msgid "traditional Chinese"
+msgstr "Παραδοσιακά κινεζικά"
+
+msgid "Japanese"
+msgstr "Ιαπωνικά"
+
+msgid "Polish"
+msgstr "Πολωνικά"
+
+msgid "Swedish"
+msgstr "Σουηδικά"
+
+msgid "Thai"
+msgstr "Ταϊλανδικά"
+
+msgid "Turkish"
+msgstr "Τουρκικά"
+
+msgid "Required"
+msgstr "Απαιτείται"
+
+msgid "e.g., Instructor"
+msgstr "π.χ., Διδάσκων"
+
+msgid "Proxy prefix here; if using WAM, you can use {targetURLdomain} to specify the domain of your WAM proxy - the remainder will be placed at the end"
+msgstr "Πρόθεμα του διακομιστή μεσολάβησης  (proxy)  εδώ - αν χρησιμοποιείτε WAM, μπορείτε να χρησιμοποιήσετε το {targetURLdomain} για να ορίσετε τον τομέα του διακομιστή μεσολάβησης WAM - το υπόλοιπο θα τοποθετηθεί στο τέλος"
+
+msgid "Email for contact person for tool"
+msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου για το άτομο επικοινωνίας σχετικά με το εργαλείο"
+
+msgid "Branding text at top of screen"
+msgstr "Κείμενο επωνυμίας στο επάνω μέρος της οθόνης"
+
+msgid "e.g., See Record in EDS"
+msgstr "π.χ., βλέπε Εγγραφή στο EDS"
+
+msgid "e.g., Search for Library Resources"
+msgstr "π.χ. Αναζήτηση πηγών βιβλιοθήκης"
+
+msgid "Optional.  URL for CSS Stylesheet"
+msgstr "Προαιρετικό.  Διεύθυνση URL for CSS Stylesheet"
+
+msgid "URL for LibGuide or other help pages"
+msgstr "Διεύθυνση URL για LibGuide ή άλλες σελίδες βοήθειας"
+
+msgid "e.g., a copyright notice"
+msgstr "π.χ. μια ειδοποίηση περί πνευματικών δικαιωμάτων"
+
+msgid "Label for Link to EDS"
+msgstr "Ετικέτα για σύνδεση με το EDS"
+
+msgid "Label for Search Box"
+msgstr "Ετικέτα για το πλαίσιο αναζήτησης"
+
+msgid "Collect Student Data"
+msgstr "Συλλογή δεδομένων σπουδαστών"
+
+msgid "URL to Library Home Page"
+msgstr "Διεύθυνση URL στην Αρχική Σελίδα της Βιβλιοθήκης"
+
+msgid "Search Library Resources"
+msgstr "Αναζήτηση πόρων βιβλιοθήκης"
+
+msgid "Update Settings"
+msgstr "Ρυθμίσεις ενημέρωσης"
+
+msgid "Expander: "
+msgstr "Στοιχείο διεύρυνσης: "
+
+msgid "Edit"
+msgstr "Eπεξεργασία"
+
+msgid "Relevance"
+msgstr "Συνάφεια"
+
+msgid "Source Type"
+msgstr "Τύπος πηγής"
+
+msgid "Subject"
+msgstr "Θέμα"
+
+msgid "Publication"
+msgstr "Έκδοση"
+
+msgid "Geography"
+msgstr "Γεωγραφική περιοχή"
+
+msgid "Content Provider"
+msgstr "Πάροχος περιεχομένου"
+
+msgid "Academic Journal"
+msgstr "Ακαδημαϊκό έντυπο"
+
+msgid "Biographie"
+msgstr "Βιογραφία"
+
+msgid "Book"
+msgstr "Βιβλίο"
+
+msgid "Conference Material"
+msgstr "Υλικό συνεδρίου"
+
+msgid "Magazine"
+msgstr "Περιοδικό"
+
+msgid "New"
+msgstr "Νέο"
+
+msgid "Primary Source Document"
+msgstr "Έγγραφο πρωτεύουσας πηγής"
+
+msgid "Report"
+msgstr "Αναφορά"
+
+msgid "Review"
+msgstr "Ανασκόπηση"
+
+msgid "Trade Publication"
+msgstr "Κλαδική έκδοση"
+
+msgid "Date Newest"
+msgstr "Ταξινόμηση με βάση το νεότερο"
+
+msgid "Date Oldest"
+msgstr "Ταξινόμηση με βάση το παλαιότερο"
+
+msgid "Authors"
+msgstr "Συγγραφείς"
+
+msgid "Document Type"
+msgstr "Είδος αρχείου"
+
+msgid "Subject Terms"
+msgstr "Θεματικοί Όροι"
+
+msgid "Author-Supplied Keywords"
+msgstr "Συγγραφείς-παρεχόμενες λέξεις κλειδιά"
+
+msgid "Abstract"
+msgstr "Περίληψη"
+
+msgid "Author Affiliations"
+msgstr "Συνεργασίες συγγραφέων"
+
+msgid "Accession Number"
+msgstr "Αριθμός πρόσβασης"
+
+msgid "Publisher"
+msgstr "Εκδότης"
+
+msgid "Source"
+msgstr "Πηγή"
+
+msgid "Geographic Terms"
+msgstr "Γεωγραφικοί Όροι"
+
+msgid "Academic Journals"
+msgstr "Ακαδημαϊκά περιοδικά"
+
+msgid "Books"
+msgstr "Βιβλία"
+
+msgid "Conference Materials"
+msgstr "Υλικά Συνεδρίων"
+
+msgid "Magazines"
+msgstr "Περιοδικά"
+
+msgid "Biographies"
+msgstr "Βιογραφίες"
+
+msgid "News"
+msgstr "Ειδήσεις"
+
+msgid "Primary Source Documents"
+msgstr "Έγγραφα πρωτεύουσας πηγής"
+
+msgid "Reports"
+msgstr "Αναφορές"
+
+msgid "Reviews"
+msgstr "Κριτικές"
+
+msgid "Trade Publications"
+msgstr "Κλαδικές εκδόσεις"
+
+msgid "Apply equivalent subjects"
+msgstr "Εφαρμογή ισοδύναμων θεμάτων"
+
+msgid "Apply related words"
+msgstr "Εφαρμογή σχετικών λέξεων"
+
+msgid "Also search within the full text of the articles"
+msgstr "Επίσης αναζήτηση στο πλήρες κείμενο των άρθρων"
+
+msgid "References Available"
+msgstr "Διαθέσιμες αναφορές"
+
+msgid "Scholarly (Peer Reviewed) Journals"
+msgstr "Επιστημονικά (αξιολογημένα από συναδέρφους) περιοδικά"
+
+msgid "Library Home"
+msgstr "Κεντρική σελίδα βιβλιοθήκης"
+
+msgid "Periodical"
+msgstr "Περιοδικός"
+
+msgid "Selecting"
+msgstr "Επιλογή"
+
+msgid "Publication Year"
+msgstr "Έτος δημοσίευσης"
+
+msgid "You have no other reading lists."
+msgstr "Δεν έχετε άλλες λίστες ανάγνωσης."
+
+msgid "No statistics to report yet."
+msgstr "Δεν υπάρχουν στατιστικά στοιχεία προς αναφορά ακόμα."
+
+msgid "Select one:"
+msgstr "Επέλεξε ένα:"
+
+msgid "Hebrew"
+msgstr "Εβραϊκά"
+
+msgid "University"
+msgstr "Πανεπιστήμιο"
+
+msgid "Collection"
+msgstr "Συλλογή"
+
+msgid "Generate list"
+msgstr "Δημιουργία λίστας"
+
+msgid "Category"
+msgstr "Κατηγορία"
+
+msgid "Peer Reviewed"
+msgstr "Αξιολογημένα από Συναδέρφους"

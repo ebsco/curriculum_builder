@@ -225,9 +225,9 @@ BODY;
             'Content-Type: application/xml',
             'Conent-Length: ' . strlen($params)
         );
-        $_SESSION['debug'] .= "<p>Requested New Authentication Token with call to ".$url." and body ".var_export($params,true)." with headers ".var_export($headers,TRUE)."</p>";
+        //$_SESSION['debug'] .= "<p>Requested New Authentication Token with call to ".$url." and body ".var_export($params,true)." with headers ".var_export($headers,TRUE)."</p>";
         $response = $this->request($url, $params, $headers, 'POST');
-        $_SESSION['debug'] .= "<p>Received response: ".var_export($response,true);
+        //$_SESSION['debug'] .= "<p>Received response: ".var_export($response,true);
         return $response;
     }
 
@@ -250,11 +250,11 @@ BODY;
             'org'     => $this->orgId,
             'guest'   => $guest
         );
-        $_SESSION['debug'] .= "<p>Requested New Session Token with call to ".$url." and params ".var_export($params,true)." with headers ".var_export($headers,TRUE)."</p>";
+        //$_SESSION['debug'] .= "<p>Requested New Session Token with call to ".$url." and params ".var_export($params,true)." with headers ".var_export($headers,TRUE)."</p>";
         $params = http_build_query($params);
         
         $response = $this->request($url, $params, $headers);
-        $_SESSION['debug'] .= "<p>Received response: ".var_export($response,true);
+        //$_SESSION['debug'] .= "<p>Received response: ".var_export($response,true);
         return $response;
     }
     
@@ -399,7 +399,7 @@ BODY;
                 case self::HTTP_OK:
                     $xml = simplexml_load_string($response);
                     if ($xml === false) {
-                         throw new Exception('There was an error connecting to the library.<p style="display:none;">Error while parsing the response for URL '.$url.' with headers '.var_export($headers,TRUE).':' . var_export($response,TRUE)."</p>");
+                         throw new Exception('There was an error connecting to the library.');
                     } else {                    
                          return $xml;
                     }
@@ -407,7 +407,7 @@ BODY;
                 case self::HTTP_BAD_REQUEST:
                     $xml = simplexml_load_string($response);
                     if ($xml === false) {
-                         throw new Exception('There was an error connecting to the library.<p style="display:none;">Error while parsing the response for URL '.$url.' with headers '.var_export($headers,TRUE).':' . var_export($response,TRUE)."</p>");
+                         throw new Exception('There was an error connecting to the library.');
                     } else {
                         // If the response is an API error
                         $error = ''; $code = 0;
@@ -425,18 +425,17 @@ BODY;
                             } else if (isset($xml->ErrorCode)) {
                                 $code = (integer) $xml->ErrorCode;
                             }
-                            $error .= "<p style='display:none;'> (Request was ".$url." with params ".$params;
-                            if (!empty($headers)) {
-                                $error .= " and headers ".var_export($headers,TRUE).")";
-                            } else {
-                                $error .= " with no headers.)";
-                            }
-                            if (isset($_SESSION['debug'])) {
-                                $error .= " -- Session Debug: ".$_SESSION['debug'];
-                            } else {
-                                $error .= " -- No Session Debug";
-                            }
-                            $error .= "</p>";
+                            //$error .= "<p style='display:none;'> (Request was ".$url." with params ".$params;
+                            //if (!empty($headers)) {
+                            //    $error .= " and headers ".var_export($headers,TRUE).")";
+                            //} else {
+                            //    $error .= " with no headers.)";
+                            //}
+                            //if (isset($_SESSION['debug'])) {
+                            //    $error .= " -- Session Debug: ".$_SESSION['debug'];
+                            //} else {
+                            //    $error .= " -- No Session Debug";
+                            //}
                             throw new EBSCOException($error, $code);
                         } else {
                             throw new Exception('The request could not be understood by the server 

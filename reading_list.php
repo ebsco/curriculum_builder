@@ -54,7 +54,6 @@ if (sizeof($readingList) >= 75) {
     $mode = 'all';
     $expander = '';
     $limiter = '';
-    $debug = '';
     
     $params = array(
         // Specifies the sort. Valid options are:

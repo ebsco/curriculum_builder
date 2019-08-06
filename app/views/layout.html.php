@@ -32,7 +32,8 @@
 	//define direction of the page RTL support
 	$langRTL = array (
 			"he_HE.UTF-8",
-			"he_IL.UTF-8"
+			"he_IL.UTF-8",
+			"ar_AE.UTF-8"
 		);
 	
 	$pageDir="ltr";
@@ -103,6 +104,11 @@
 					"language=he_IL.UTF-8&",
                     "language=ko_KR.UTF-8&",
                     "language=nl_NL.UTF-8&",
+                    "language=ar_AE.UTF-8&",
+					
+                    "language=cs_CZ.UTF-8&",
+                    "language=el_GR.UTF-8&",
+                    "language=ru_RU.UTF-8&"
 				);
 				$queryString=str_replace($a1,"",$queryString);
 				
@@ -129,6 +135,13 @@
 					<option value="<?php echo $urlWithoutparameters."?language=he_IL.UTF-8&".$queryString; ?>"  <?php echo ($language=='he_IL.UTF-8'?' selected ':''); ?> >עברית</option>	
                     <option value="<?php echo $urlWithoutparameters."?language=ko_KR.UTF-8&".$queryString; ?>"  <?php echo ($language=='ko_KR.UTF-8'?' selected ':''); ?> >한국어</option>	
                     <option value="<?php echo $urlWithoutparameters."?language=nl_NL.UTF-8&".$queryString; ?>"  <?php echo ($language=='nl_NL.UTF-8'?' selected ':''); ?> >Nederlands</option>	
+					
+                    <option value="<?php echo $urlWithoutparameters."?language=ar_AE.UTF-8&".$queryString; ?>"  <?php echo ($language=='ar_AE.UTF-8'?' selected ':''); ?> >عربي</option>	
+					
+                    <option value="<?php echo $urlWithoutparameters."?language=cs_CZ.UTF-8&".$queryString; ?>"  <?php echo ($language=='cs_CZ.UTF-8'?' selected ':''); ?> >Čeština</option>	
+                    <option value="<?php echo $urlWithoutparameters."?language=el_GR.UTF-8&".$queryString; ?>"  <?php echo ($language=='el_GR.UTF-8'?' selected ':''); ?> >Ελληνικά</option>	
+                    <option value="<?php echo $urlWithoutparameters."?language=ru_RU.UTF-8&".$queryString; ?>"  <?php echo ($language=='ru_RU.UTF-8'?' selected ':''); ?> >Русский</option>	
+                    
 				</select>
 				<script>
 					jQuery(function(){
@@ -218,7 +231,7 @@
 		}
 		if (isInstructor()) {
                 ?>
-                <span style="float:right; font-size:smaller; color:#999999;"><strong><?php echo _("CB Version 2.3");?></strong> - <strong><?php echo _("List ID");?></strong>: <?php echo decryptCookie($_COOKIE['currentLinkId']); ?></span>
+                <span style="float:right; font-size:smaller; color:#999999;"><strong><?php echo _("CB Version 2.3.24");?></strong> - <strong><?php echo _("List ID");?></strong>: <?php echo decryptCookie($_COOKIE['currentLinkId']); ?></span>
 		<?php
 		}
 		?>
@@ -226,7 +239,7 @@
            </div>
         </div>
         </div>
-	<div class="debug" style="display:none;"><?php if (isset($_SESSION['debug'])) { echo $_SESSION['debug']; } ?></div>
+	
     </body>
     <script type="text/javascript" id="custom_script" data-consumerkey="<?php echo decryptCookie($_COOKIE['oauth_consumer_key']); ?>" src="//widgets.ebscohost.com/prod/common/branding/curriculumbuilder.js"></script>
 </html>

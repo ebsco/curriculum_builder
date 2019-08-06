@@ -26,7 +26,7 @@ $highlight = str_replace(array(" ","&","-"), array(",",",",","), $highlight);
 
 $result = $api->apiRetrieve($an, $db, $highlight);
 
-$debug = isset($clean['debug'])? $clean['debug']:'';
+//$debug = isset($clean['debug'])? $clean['debug']:'';
 
 // Set error
 if (isset($result['error'])) {
@@ -36,15 +36,15 @@ if (isset($result['error'])) {
 }
 
 //save debug into session
-if($debug == 'y'||$debug == 'n'){
-    $_SESSION['debug'] = $debug;
-}
+// if($debug == 'y'||$debug == 'n'){
+    // $_SESSION['debug'] = $debug;
+// }
 // Variables used in view
 $variables = array(
     'result' => $result,   
     'error'  => $error,
     'id'     => 'record',
-    'debug'  => isset($_SESSION['debug'])? $_SESSION['debug']:'',
+//    'debug'  => isset($_SESSION['debug'])? $_SESSION['debug']:'',
     'backpath' => $backpath,
     'c'      => $c,
     'clean'  => $clean,

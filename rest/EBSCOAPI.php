@@ -249,7 +249,7 @@ function decryptCookie($value){
         $credential_id = decryptCookie($_COOKIE['credential_id']);
 
         $sql = "SELECT token, timeout, tokentimestamp FROM authtokens WHERE credentialid = ?";
-        $_SESSION['debug'].="<p>--getAuthToken() SQL: ".$sql."-- (credential ID = ".$credential_id.")--</p>";
+        //$_SESSION['debug'].="<p>--getAuthToken() SQL: ".$sql."-- (credential ID = ".$credential_id.")--</p>";
         $stmt = self::$c->prepare($sql);
         $stmt->bind_param('i',$credential_id);
         $stmt->execute();
@@ -262,7 +262,7 @@ function decryptCookie($value){
                 $authToken = $row['token'];
                 $timeout = $row['timeout'];
                 $timestamp = $row['tokentimestamp'];
-                $_SESSION['debug'].="<p>--Found an authToken in MySQL with details: ".var_export($row,TRUE)."--</p>";
+                //$_SESSION['debug'].="<p>--Found an authToken in MySQL with details: ".var_export($row,TRUE)."--</p>";
 
             } else {
                 $sql = "INSERT INTO authtokens (credentialid) VALUES (?)";
@@ -275,9 +275,9 @@ function decryptCookie($value){
         }
         // add five minutes to timestamp, that way it prevents token from expiring before it uses it
         if(time()-($timestamp)>=$timeout){
-                $_SESSION['debug'].="<p>Found existing authtoken to be expired. Requesting new one...</p>";
+               // $_SESSION['debug'].="<p>Found existing authtoken to be expired. Requesting new one...</p>";
                 $result = $this->apiAuthenticationToken();
-                $_SESSION['debug'].="<p>New one...".var_export($result,TRUE)."</p>";
+               // $_SESSION['debug'].="<p>New one...".var_export($result,TRUE)."</p>";
 
                 $sql = "UPDATE authtokens SET token = ?, timeout = ?, tokentimestamp = ? WHERE credentialid = ?"; 
                 $stmt = self::$c->prepare($sql);
@@ -285,7 +285,7 @@ function decryptCookie($value){
                 $stmt->execute();
                 return $result['authenticationToken'];
         }else{
-            $_SESSION['debug'] .= 'No new auth token generated  ' . time() . ' minus ' . $timestamp . ' is less than ' . $timeout;   
+           // $_SESSION['debug'] .= 'No new auth token generated  ' . time() . ' minus ' . $timestamp . ' is less than ' . $timeout;   
             return $authToken;
         }
     }
@@ -319,20 +319,20 @@ function decryptCookie($value){
         if(isset($_COOKIE['login'])){              
                if($invalid=='y'){                    
                    $profile = self::$cust_profile;
-                   $_SESSION['debug'] .= "--GetSession with INVALID is YES--";
+                   //$_SESSION['debug'] .= "--GetSession with INVALID is YES--";
                    $sessionToken = $this->apiSessionToken($authenToken, $profile,'n');
-                   $_SESSION['debug'] .= "---apiSessionToken got ".var_export($sessionToken,TRUE)."---";
+                   //$_SESSION['debug'] .= "---apiSessionToken got ".var_export($sessionToken,TRUE)."---";
 
                    $time = 0; // store for session only //store cookie for one hour
                    setcookie('sessionToken',encryptCookie($sessionToken),$time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
-                   $_SESSION['sessionToken'] = $sessionToken;
+                   //$_SESSION['sessionToken'] = $sessionToken;
                } else {
                    if (isset($_SESSION['sessionToken'])) {
                         $sessionToken = $_SESSION['sessionToken'];
-                        $_SESSION['debug'] .= "---Using EXISTING session token from SESSION var: ".var_export($sessionToken,TRUE)."---";
+                        //$_SESSION['debug'] .= "---Using EXISTING session token from SESSION var: ".var_export($sessionToken,TRUE)."---";
                    } else {
                         $sessionToken = decryptCookie($_COOKIE['sessionToken']);
-                        $_SESSION['debug'] .= "---Using EXISTING session token from Cookie var: ".var_export($sessionToken,TRUE)."---";
+                        //$_SESSION['debug'] .= "---Using EXISTING session token from Cookie var: ".var_export($sessionToken,TRUE)."---";
                    }
                }
                $token = $sessionToken['sessionToken'];            

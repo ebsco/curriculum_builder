@@ -74,9 +74,9 @@
     if (isset($clean['link'])) {
         $clean['roles'] = 'student (overriden by link)';
         // if link is specified, check to see it if exists.
-        $sql = 'SELECT id, linklabel, course FROM lists WHERE credentialconsumerid = ? AND linkid = ?';
+        $sql = 'SELECT id, linklabel, course FROM lists WHERE oauth_consumer_key = ? AND linkid = ?';
         $stmt = $c->prepare($sql);
-        $stmt->bind_param('ss',$clean['credential_consumer_id'],$clean['link']);
+        $stmt->bind_param('ss',$clean['oauth_consumer_key'],$clean['link']);
         $stmt->execute();
         $foundList = $stmt->get_result();
         
@@ -94,6 +94,8 @@
             setcookie($foo,$encryptedC,$time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
         }
     }
+
+    /* We may not need lines between here and find existing list */
     $sql = 'SELECT * FROM credentials WHERE '.
     'userid = ? AND '.
     'profile = ? AND '.
@@ -104,7 +106,7 @@
     if($stmt === false) {
       trigger_error('Wrong SQL: ' . $sql . ' Error: ' . $conn->errno . ' ' . $conn->error, E_USER_ERROR);
     }
-    $_SESSION['debug'] = "<p>Credentials: ".$customparams['userid']." / ".$customparams['profile']." / ".$customparams['password']."</p>";
+//    $_SESSION['debug'] = "<p>Credentials: ".$customparams['userid']." / ".$customparams['profile']." / ".$customparams['password']."</p>";
     /* Bind parameters. Types: s = string, i = integer, d = double,  b = blob */
     $stmt->bind_param('sss',$customparams['userid'],$customparams['profile'],$customparams['password']);
      
@@ -127,7 +129,7 @@
             $credentialsresults = $stmt->get_result();
         }
         $row = mysqli_fetch_array($credentialsresults);
-        $_SESSION['debug'] .= "<p>MySQL Resp: ".var_export($row,TRUE)."</p>";
+//        $_SESSION['debug'] .= "<p>MySQL Resp: ".var_export($row,TRUE)."</p>";
         setcookie('credential_id', encryptCookie($row['id']),$time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
         $clean['credential_id'] = $row['id'];
     } else {
@@ -160,9 +162,10 @@
     }
     
     // look to see if this list already exists
-    $sql = 'SELECT id, linklabel, course FROM lists WHERE credentialconsumerid = ? AND linkid = ?';
+    $sql = 'SELECT id, linklabel, course FROM lists WHERE oauth_consumer_key = ? AND linkid = ?';
+    //echo "<br />SQL: SELECT id, linklabel, course FROM lists WHERE oauth_consumer_key = '".$clean['oauth_consumer_key']."' AND linkid = '".$clean['resource_link_id']."'<br />";
     $stmt = $c->prepare($sql);
-    $stmt->bind_param('ss',$clean['credential_consumer_id'],$clean['resource_link_id']);
+    $stmt->bind_param('ss',$clean['oauth_consumer_key'],$clean['resource_link_id']);
     $stmt->execute();
     $foundList = $stmt->get_result();
     $copy_target = "none";    
@@ -179,13 +182,13 @@
             if (!((substr_count($clean['roles'],"Instructor") > 0))) {
                 die("<p>Uh oh!  It looks like your course instructor hasn't added any readings to this list yet.</p><p>If you are a course instructor, it looks as if your account does not indicate that you are.  Your current role appears to be: ".$clean['roles']."<br/><br/>".$sql." with ".$clean['credential_consumer_id']."-".$clean['resource_link_id']."</p>");
             }
-            $sql = 'INSERT INTO lists (linklabel, course, credentialconsumerid, linkid, private) VALUES (?,?,?,?,1)';
+            $sql = 'INSERT INTO lists (linklabel, course, credentialconsumerid, linkid, oauth_consumer_key, private) VALUES (?,?,?,?,?,1)';
             $stmt = $c->prepare($sql);
-            $stmt->bind_param('ssss',$clean['resource_link_title'],$clean['context_label'],$clean['credential_consumer_id'],$clean['resource_link_id']);
+            $stmt->bind_param('sssss',$clean['resource_link_title'],$clean['context_label'],$clean['credential_consumer_id'],$clean['resource_link_id'],$clean['oauth_consumer_key']);
             $stmt->execute();
-            $sql = 'SELECT id, linklabel, course FROM lists WHERE credentialconsumerid = ? AND linkid = ?';
+            $sql = 'SELECT id, linklabel, course FROM lists WHERE oauth_consumer_key = ? AND linkid = ?';
             $stmt = $c->prepare($sql);
-            $stmt->bind_param('ss',$clean['credential_consumer_id'],$clean['resource_link_id']);
+            $stmt->bind_param('ss',$clean['oauth_consumer_key'],$clean['resource_link_id']);
             $stmt->execute();
             $foundList = $stmt->get_result();
             $newlist = TRUE;
@@ -195,6 +198,7 @@
     }
     // load foundlist into ROW variable    
     $row = mysqli_fetch_array($foundList);
+    //echo "<br />".var_export($row,TRUE)."<br />";
     // update 'last access' timestamp
     $sqlUpdateTimestamp = 'UPDATE lists SET last_access=now() WHERE id = ?';
     $stmt = $c->prepare($sqlUpdateTimestamp);
@@ -312,13 +316,13 @@
         copyListByResourceLinkId($c,$copy_target,$currentListId,$authorID);
     } else if (($newlist) && ((isset($customparams['copylist'])) && ($customparams['copylist'] == 'y'))) {
         if (substr_count($clean['roles'],"Instructor") > 0) {
-            $sql = "SELECT id, linklabel, course, linkid FROM lists WHERE (id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND linklabel = ? AND linkid != ? AND credentialconsumerid = ?) OR (private = 0 AND credentialconsumerid = ? AND linklabel = ?) ORDER BY private, last_access DESC;";
+            $sql = "SELECT id, linklabel, course, linkid FROM lists WHERE (id IN (SELECT listid FROM authorlists WHERE authorid = ?) AND linklabel = ? AND linkid != ? AND oauth_consumer_key = ?) OR (private = 0 AND oauth_consumer_key = ? AND linklabel = ?) ORDER BY private, last_access DESC;";
             $stmt = $c->prepare($sql);
-            $stmt->bind_param('issiis',$authorID,$clean['resource_link_title'],$clean['resource_link_id'],$clean['credential_consumer_id'],$clean['credential_consumer_id'],$clean['resource_link_title']);
+            $stmt->bind_param('issiis',$authorID,$clean['resource_link_title'],$clean['resource_link_id'],$clean['oauth_consumer_key'],$clean['oauth_consumer_key'],$clean['resource_link_title']);
         } else {
-            $sql = "SELECT id, linklabel, course, linkid FROM lists WHERE private = 0 AND credentialconsumerid = ? AND linklabel = ? ORDER BY private, last_access DESC";            
+            $sql = "SELECT id, linklabel, course, linkid FROM lists WHERE private = 0 AND oauth_consumer_key = ? AND linklabel = ? ORDER BY private, last_access DESC";            
             $stmt = $c->prepare($sql);
-            $stmt->bind_param('is',$clean['credential_consumer_id'],$clean['resource_link_title']);
+            $stmt->bind_param('is',$clean['oauth_consumer_key'],$clean['resource_link_title']);
         }
         $stmt->execute();
         $results = $stmt->get_result();  

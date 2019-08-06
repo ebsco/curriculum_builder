@@ -31,7 +31,7 @@ if (isset( $_GET['logout'] ) && $_GET['logout'] == "YES") {
 		$key = decryptCookie($_COOKIE['admin_key']);
 		setcookie('oauth_consumer_key',encryptCookie($key),$time,"/",$_SERVER['SERVER_NAME'],FALSE,TRUE);
 
-		if ((isset($_POST['submit'])) && ($_POST['submit'] == "Update Settings")) {
+		if (isset($_POST['submit']) ) {
 		    $clean = strip_tags_deep($_POST);
 
 		    $sql = "UPDATE oauth SET userid = ?,
