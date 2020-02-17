@@ -583,10 +583,6 @@ if ($v5 == 0) {
     mysqli_query($c,$sql);
     $sql = "UPDATE lists INNER JOIN credentialconsumers ON lists.credentialconsumerid = credentialconsumers.id INNER JOIN credentials ON credentials.id = credentialconsumers.credentialid INNER JOIN oauth ON oauth.userid = credentials.userid AND oauth.password = credentials.password AND oauth.profile = credentials.profile SET lists.oauth_consumer_key = oauth.oauth_consumer_key;";
     mysqli_query($c,$sql);
-    $sql = "UPDATE lists SET oauth_consumer_key = \"dal1test\" WHERE credentialconsumerid IN (1490,1228,338);";
-    mysqli_query($c,$sql);
-    $sql = "UPDATE lists SET oauth_consumer_key = \"dal1\" WHERE credentialconsumerid IN (419,1442);";
-    mysqli_query($c,$sql);
     echo "<p>".mysqli_error($c)."Version 2.3e: Adjusting for upcoming <strong>UID Password Changes</strong> part 2 - Consumer Key fixes</p>";
 } else {
     echo "<p><em>Version 2.3e Update</em>: <strong>UID Password Changes</strong> is already included in your installation.  No update needed.</p>";
